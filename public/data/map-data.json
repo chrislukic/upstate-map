@@ -1,0 +1,1246 @@
+{
+  "mapConfig": {
+    "center": [42.9, -75.0],
+    "zoom": 7,
+    "crs": "EPSG3857"
+  },
+  "tileLayer": {
+    "url": "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+    "attribution": "© OpenStreetMap contributors © CartoDB",
+    "options": {
+      "detectRetina": false,
+      "maxNativeZoom": 18,
+      "maxZoom": 18,
+      "minZoom": 0,
+      "noWrap": false,
+      "opacity": 1,
+      "subdomains": "abc",
+      "tms": false
+    }
+  },
+  "scenicAreas": [
+    {
+      "id": "adirondack_high_peaks",
+      "name": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
+      "score": 10.0,
+      "driveTime": "5h 00m",
+      "color": "#c83737",
+      "coordinates": [[44.33, -74.06], [44.38, -73.91], [44.31, -73.74], [44.18, -73.66], [44.06, -73.8], [44.03, -74.02], [44.13, -74.16], [44.27, -74.13]],
+      "description": "46 High Peaks • alpine zones • Avalanche Pass, Marcy, Gothics",
+      "centerMarker": {
+        "coordinates": [44.15, -73.86],
+        "color": "#c83737"
+      }
+    },
+    {
+      "id": "lake_george_pharaoh",
+      "name": "Lake George & Pharaoh Lake Wilderness",
+      "score": 8.5,
+      "driveTime": "3h 48m",
+      "color": "#d6a62e",
+      "coordinates": [[43.58, -73.82], [43.61, -73.66], [43.55, -73.48], [43.38, -73.45], [43.29, -73.56], [43.31, -73.78], [43.45, -73.87]],
+      "description": "Ridge walks • island views • Tongue Mountain Range",
+      "centerMarker": {
+        "coordinates": [43.42, -73.71],
+        "color": "#d6a62e"
+      }
+    },
+    {
+      "id": "catskills",
+      "name": "Catskills (Slide, Hunter, Kaaterskill)",
+      "score": 9.2,
+      "driveTime": "2h 30m",
+      "color": "#c83737",
+      "coordinates": [[42.23, -74.68], [42.2, -74.39], [42.11, -74.06], [41.92, -74.21], [41.88, -74.55], [42.0, -74.74], [42.13, -74.76]],
+      "description": "Classic Northeast peaks • Spruce-fir summits • waterfalls",
+      "centerMarker": {
+        "coordinates": [42.03, -74.4],
+        "color": "#c83737"
+      }
+    },
+    {
+      "id": "shawangunks",
+      "name": "Shawangunks / Minnewaska & Mohonk Preserve",
+      "score": 8.8,
+      "driveTime": "2h 00m",
+      "color": "#e06b2e",
+      "coordinates": [[41.85, -74.08], [41.81, -74.16], [41.76, -74.23], [41.72, -74.28], [41.68, -74.35], [41.65, -74.39], [41.62, -74.33], [41.65, -74.22], [41.69, -74.13], [41.77, -74.03], [41.82, -73.99]],
+      "description": "Sky lakes • white cliffs • carriage roads & scrambles",
+      "centerMarker": {
+        "coordinates": [41.73, -74.22],
+        "color": "#e06b2e"
+      }
+    },
+    {
+      "id": "hudson_highlands",
+      "name": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
+      "score": 8.6,
+      "driveTime": "1h 18m",
+      "color": "#d6a62e",
+      "coordinates": [[41.53, -73.99], [41.5, -73.94], [41.47, -73.92], [41.43, -73.94], [41.41, -73.99], [41.43, -74.05], [41.48, -74.06], [41.52, -74.02]],
+      "description": "River panoramas • steep but short classics • train-access options",
+      "centerMarker": {
+        "coordinates": [41.45, -73.98],
+        "color": "#d6a62e"
+      }
+    },
+    {
+      "id": "harriman_bear_mountain",
+      "name": "Harriman–Bear Mountain State Parks",
+      "score": 8.0,
+      "driveTime": "1h 06m",
+      "color": "#7cb342",
+      "coordinates": [[41.41, -73.86], [41.34, -73.9], [41.3, -73.97], [41.28, -74.06], [41.23, -74.17], [41.19, -74.22], [41.25, -74.26], [41.33, -74.21], [41.38, -74.1], [41.41, -73.98]],
+      "description": "Hundreds of miles of trails • lakes • Appalachian Trail segments",
+      "centerMarker": {
+        "coordinates": [41.31, -74.02],
+        "color": "#7cb342"
+      }
+    },
+    {
+      "id": "finger_lakes_gorges",
+      "name": "Finger Lakes Gorges (Ithaca area)",
+      "score": 8.9,
+      "driveTime": "4h 12m",
+      "color": "#e06b2e",
+      "coordinates": [[42.55, -76.58], [42.54, -76.47], [42.52, -76.4], [42.45, -76.35], [42.38, -76.4], [42.35, -76.5], [42.38, -76.61], [42.47, -76.65]],
+      "description": "Stone-cut gorges • rim trails • waterfalls (Treman, Buttermilk, Taughannock)",
+      "centerMarker": {
+        "coordinates": [42.44, -76.5],
+        "color": "#e06b2e"
+      }
+    },
+    {
+      "id": "watkins_glen",
+      "name": "Watkins Glen & Surrounds",
+      "score": 8.4,
+      "driveTime": "4h 30m",
+      "color": "#d6a62e",
+      "coordinates": [[42.43, -76.99], [42.41, -76.94], [42.39, -76.88], [42.36, -76.85], [42.33, -76.88], [42.32, -76.95], [42.35, -77.0], [42.39, -77.02]],
+      "description": "Iconic gorge • stairways & bridges • Seneca Lake views",
+      "centerMarker": {
+        "coordinates": [42.37, -76.88],
+        "color": "#d6a62e"
+      }
+    },
+    {
+      "id": "letchworth_state_park",
+      "name": "Letchworth State Park (Genesee River Gorge)",
+      "score": 8.7,
+      "driveTime": "6h 00m",
+      "color": "#d6a62e",
+      "coordinates": [[42.74, -78.13], [42.71, -78.07], [42.67, -78.02], [42.63, -77.94], [42.6, -77.96], [42.58, -78.02], [42.61, -78.11], [42.67, -78.15]],
+      "description": "'Grand Canyon of the East' • three major falls • rim trails",
+      "centerMarker": {
+        "coordinates": [42.65, -77.95],
+        "color": "#d6a62e"
+      }
+    },
+    {
+      "id": "allegany_state_park",
+      "name": "Allegany State Park (Southern Tier)",
+      "score": 7.8,
+      "driveTime": "7h 00m",
+      "color": "#7cb342",
+      "coordinates": [[42.21, -78.92], [42.16, -78.95], [42.08, -78.9], [41.99, -78.82], [42.0, -78.64], [42.11, -78.58], [42.2, -78.73], [42.23, -78.85]],
+      "description": "Remote feel • rolling ridges • long multi-hour loops",
+      "centerMarker": {
+        "coordinates": [42.09, -78.75],
+        "color": "#7cb342"
+      }
+    },
+    {
+      "id": "niagara_gorge",
+      "name": "Niagara Gorge (NY side)",
+      "score": 8.2,
+      "driveTime": "6h 48m",
+      "color": "#d6a62e",
+      "coordinates": [[43.18, -79.06], [43.15, -79.06], [43.12, -79.04], [43.1, -79.02], [43.08, -78.99], [43.12, -78.98], [43.16, -79.0], [43.18, -79.02]],
+      "description": "Dramatic river gorge • whirlpool rapids • rim & gorge trails",
+      "centerMarker": {
+        "coordinates": [43.12, -79.05],
+        "color": "#d6a62e"
+      }
+    },
+    {
+      "id": "taconic_range",
+      "name": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
+      "score": 8.1,
+      "driveTime": "2h 18m",
+      "color": "#7cb342",
+      "coordinates": [[42.2, -73.6], [42.17, -73.52], [42.13, -73.45], [42.05, -73.36], [41.97, -73.4], [41.95, -73.55], [42.02, -73.62], [42.1, -73.64]],
+      "description": "Ridgetop views • state-line loop options • Bash Bish Falls nearby",
+      "centerMarker": {
+        "coordinates": [42.09, -73.48],
+        "color": "#7cb342"
+      }
+    },
+    {
+      "id": "long_island_forks",
+      "name": "Long Island North & South Fork highlights (Montauk bluffs)",
+      "score": 7.5,
+      "driveTime": "3h 00m",
+      "color": "#7cb342",
+      "coordinates": [[41.12, -71.94], [41.1, -71.92], [41.05, -71.91], [41.03, -71.88], [41.03, -71.8], [41.07, -71.8], [41.1, -71.83], [41.12, -71.88]],
+      "description": "Coastal bluffs • dune walks • lighthouse views • shoulder-season gems",
+      "centerMarker": {
+        "coordinates": [41.03, -71.94],
+        "color": "#7cb342"
+      }
+    },
+    {
+      "id": "caumsett_state_park",
+      "name": "Caumsett State Historic Park Preserve (Lloyd Neck)",
+      "score": 7.2,
+      "driveTime": "1h 18m",
+      "color": "#7cb342",
+      "coordinates": [[40.97, -73.49], [40.95, -73.5], [40.92, -73.47], [40.91, -73.44], [40.93, -73.41], [40.96, -73.42]],
+      "description": "Easy coastal loops • meadow & shoreline scenery • family friendly",
+      "centerMarker": {
+        "coordinates": [40.93, -73.46],
+        "color": "#7cb342"
+      }
+    }
+  ],
+  "cities": [
+    {
+      "name": "Lake Placid",
+      "population": 2350,
+      "driveTime": "5h 00m",
+      "restaurants": 45,
+      "coordinates": [44.28, -73.98],
+      "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
+      "description": "Olympic village in the heart of the Adirondacks. Home to two Winter Olympics (1932, 1980) with world-class skiing, hiking, and lake activities. Features Mirror Lake, Whiteface Mountain, and the Olympic Center."
+    },
+    {
+      "name": "Saranac Lake",
+      "population": 5400,
+      "driveTime": "5h 15m",
+      "coordinates": [44.33, -74.13],
+      "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
+      "description": "Historic Adirondack village known for its Victorian architecture, vibrant arts scene, and the famous Winter Carnival with ice palace. Gateway to the Saranac Lakes chain and numerous hiking trails."
+    },
+    {
+      "name": "Tupper Lake",
+      "population": 3300,
+      "driveTime": "5h 30m",
+      "coordinates": [44.22, -74.46],
+      "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
+      "description": "Gateway to the western Adirondacks with excellent fishing, boating, and hiking. Home to the Wild Center natural history museum and the Adirondack Sky Center observatory."
+    },
+    {
+      "name": "Keene",
+      "population": 1100,
+      "driveTime": "4h 45m",
+      "coordinates": [44.29, -73.79],
+      "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
+      "description": "Small mountain town surrounded by the High Peaks. Perfect base for hiking the 46 High Peaks, with access to Cascade, Porter, and other popular trailheads."
+    },
+    {
+      "name": "Keene Valley",
+      "population": 1100,
+      "driveTime": "4h 30m",
+      "coordinates": [44.19, -73.78],
+      "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
+      "description": "Historic trailhead village for the High Peaks. Starting point for hikes to Giant Mountain, Rocky Peak Ridge, and the famous Ausable Club trails."
+    },
+    {
+      "name": "Wilmington",
+      "population": 1250,
+      "driveTime": "4h 30m",
+      "coordinates": [44.38, -73.87],
+      "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
+      "description": "Mountain town with Whiteface Mountain ski resort and the Whiteface Veterans Memorial Highway. Gateway to the High Peaks with excellent hiking and skiing."
+    },
+    {
+      "name": "Lake George",
+      "population": 1000,
+      "driveTime": "3h 45m",
+      "coordinates": [43.43, -73.71],
+      "scenicArea": "Lake George & Pharaoh Lake Wilderness",
+      "description": "The 'Queen of American Lakes' with crystal-clear waters and 32 miles of shoreline. Popular for boating, fishing, and lake cruises. Historic village with shops, restaurants, and family attractions."
+    },
+    {
+      "name": "Glens Falls",
+      "population": 14830,
+      "driveTime": "3h 30m",
+      "coordinates": [43.31, -73.64],
+      "scenicArea": "Lake George & Pharaoh Lake Wilderness",
+      "description": "Historic mill city on the Hudson River. Home to the Hyde Collection art museum, Cooper's Cave, and the Charles R. Wood Theater. Gateway to Lake George and the Adirondacks."
+    },
+    {
+      "name": "Hudson Falls",
+      "population": 7427,
+      "driveTime": "3h 35m",
+      "coordinates": [43.30, -73.58],
+      "scenicArea": "Lake George & Pharaoh Lake Wilderness",
+      "description": "Village on the Hudson River with historic charm and outdoor recreation. Features the Feeder Canal Trail, Derby Park, and proximity to Lake George attractions."
+    },
+    {
+      "name": "Saratoga Springs",
+      "population": 28000,
+      "driveTime": "3h 15m",
+      "coordinates": [43.08, -73.78],
+      "scenicArea": "Lake George & Pharaoh Lake Wilderness",
+      "description": "Historic spa city famous for mineral springs, horse racing at Saratoga Race Course, and the Saratoga Performing Arts Center. Elegant Victorian architecture and vibrant downtown."
+    },
+    {
+      "name": "North Creek",
+      "population": 700,
+      "driveTime": "3h 45m",
+      "coordinates": [43.7, -73.99],
+      "scenicArea": "Lake George & Pharaoh Lake Wilderness",
+      "description": "Mountain village gateway to Gore Mountain ski resort and the Upper Hudson River. Historic railroad depot and access to whitewater rafting and hiking trails."
+    },
+    {
+      "name": "Schenectady",
+      "population": 67000,
+      "driveTime": "2h 45m",
+      "coordinates": [42.81, -73.94],
+      "scenicArea": "Lake George & Pharaoh Lake Wilderness",
+      "description": "Historic 'Electric City' with rich industrial heritage. Home to Union College, Proctors Theatre, and the Stockade Historic District. Gateway to the Adirondacks and Mohawk Valley."
+    },
+    {
+      "name": "Bolton",
+      "population": 2200,
+      "driveTime": "3h 30m",
+      "coordinates": [43.55, -73.65],
+      "scenicArea": "Lake George & Pharaoh Lake Wilderness",
+      "description": "Lakefront town on Lake George with beautiful beaches, marinas, and lake access. Popular for boating, fishing, and water sports with scenic mountain views."
+    },
+    {
+      "name": "Ticonderoga",
+      "population": 4800,
+      "driveTime": "4h 00m",
+      "coordinates": [43.84, -73.42],
+      "scenicArea": "Lake George & Pharaoh Lake Wilderness",
+      "description": "Historic town between Lake George and Lake Champlain. Home to Fort Ticonderoga, a key Revolutionary War site, with beautiful lake views and hiking trails."
+    },
+    {
+      "name": "Hunter",
+      "population": 2000,
+      "driveTime": "2h 30m",
+      "coordinates": [42.21, -74.21],
+      "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
+      "description": "Mountain town home to Hunter Mountain ski resort and the Hunter Mountain Festival Grounds. Access to hiking trails including Hunter Mountain Fire Tower and the Devil's Path."
+    },
+    {
+      "name": "Tannersville",
+      "population": 600,
+      "driveTime": "2h 45m",
+      "coordinates": [42.19, -74.13],
+      "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
+      "description": "Charming mountain village known for its colorful 'painted ladies' Victorian houses. Gateway to Kaaterskill Falls and numerous hiking trails in the Catskills."
+    },
+    {
+      "name": "Woodstock",
+      "population": 6000,
+      "driveTime": "2h 15m",
+      "coordinates": [42.04, -74.12],
+      "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
+      "description": "Legendary arts and music town that inspired the 1969 festival. Vibrant community with galleries, music venues, and outdoor recreation. Gateway to Overlook Mountain and the Catskills."
+    },
+    {
+      "name": "Kingston",
+      "population": 23000,
+      "driveTime": "2h 00m",
+      "coordinates": [41.93, -74.0],
+      "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
+      "description": "New York's first capital with rich colonial history. Features the Stockade Historic District, Rondout waterfront, and vibrant arts scene. Gateway to the Catskills and Hudson River."
+    },
+    {
+      "name": "Phoenicia",
+      "population": 300,
+      "driveTime": "2h 15m",
+      "coordinates": [42.08, -74.31],
+      "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
+      "description": "Tiny mountain hamlet known for tubing on the Esopus Creek and the Phoenicia Diner. Access to Slide Mountain and the Devil's Path hiking trails."
+    },
+    {
+      "name": "Windham",
+      "population": 1700,
+      "driveTime": "2h 45m",
+      "coordinates": [42.3, -74.25],
+      "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
+      "description": "Mountain town with Windham Mountain ski resort and the Windham Path. Access to hiking trails including Windham High Peak and the Blackhead Range."
+    },
+    {
+      "name": "New Paltz",
+      "population": 14000,
+      "driveTime": "1h 45m",
+      "coordinates": [41.75, -74.08],
+      "scenicArea": "Shawangunks / Minnewaska & Mohonk Preserve",
+      "description": "College town home to SUNY New Paltz with historic Huguenot Street. Gateway to the Shawangunk Mountains, Mohonk Preserve, and Minnewaska State Park for world-class rock climbing and hiking."
+    },
+    {
+      "name": "Gardiner",
+      "population": 6000,
+      "driveTime": "1h 45m",
+      "coordinates": [41.68, -74.15],
+      "scenicArea": "Shawangunks / Minnewaska & Mohonk Preserve",
+      "description": "Rural town with rolling hills and farms. Gateway to the Shawangunk Mountains with access to hiking trails and scenic countryside views."
+    },
+    {
+      "name": "Rosendale",
+      "population": 6000,
+      "driveTime": "1h 45m",
+      "coordinates": [41.85, -74.08],
+      "scenicArea": "Shawangunks / Minnewaska & Mohonk Preserve",
+      "description": "Historic town known for its cement industry heritage. Features the Rosendale Trestle, a popular rail trail, and access to the Shawangunk Mountains."
+    },
+    {
+      "name": "Ellenville",
+      "population": 4000,
+      "driveTime": "2h 00m",
+      "coordinates": [41.72, -74.4],
+      "scenicArea": "Shawangunks / Minnewaska & Mohonk Preserve",
+      "description": "Mountain town with historic charm and outdoor recreation. Gateway to the Shawangunk Mountains with hiking trails and scenic valley views."
+    },
+    {
+      "name": "Beacon",
+      "population": 14000,
+      "driveTime": "1h 15m",
+      "coordinates": [41.5, -73.97],
+      "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
+      "description": "Revitalized river town with the Dia:Beacon contemporary art museum, vibrant Main Street, and access to Breakneck Ridge hiking. Historic Mount Beacon and scenic Hudson River views."
+    },
+    {
+      "name": "Poughkeepsie",
+      "population": 30000,
+      "driveTime": "1h 30m",
+      "coordinates": [41.7, -73.9],
+      "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
+      "description": "Historic Hudson River city home to Vassar College and the Walkway Over the Hudson. Features the Mid-Hudson Children's Museum and access to the Hudson Highlands hiking trails."
+    },
+    {
+      "name": "Cold Spring",
+      "population": 2000,
+      "driveTime": "1h 15m",
+      "coordinates": [41.42, -73.95],
+      "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
+      "description": "Charming river village with historic Main Street, antique shops, and restaurants. Direct access to Breakneck Ridge and Bull Hill hiking trails with stunning Hudson River views."
+    },
+    {
+      "name": "Cornwall-on-Hudson",
+      "population": 3000,
+      "driveTime": "1h 15m",
+      "coordinates": [41.45, -74.02],
+      "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
+      "description": "Charming river village with historic architecture and scenic Hudson River views. Access to Storm King Mountain and the Hudson Highlands hiking trails."
+    },
+    {
+      "name": "Newburgh",
+      "population": 28000,
+      "driveTime": "1h 15m",
+      "coordinates": [41.5, -74.02],
+      "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
+      "description": "Historic river city with Washington's Headquarters and the Newburgh Waterfront. Access to Storm King Mountain and the Hudson Highlands with panoramic river views."
+    },
+    {
+      "name": "Troy",
+      "population": 51000,
+      "driveTime": "2h 45m",
+      "coordinates": [42.73, -73.69],
+      "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
+      "description": "Historic industrial city home to RPI and Emma Willard School. Features the Troy Farmers Market, historic architecture, and proximity to the Hudson River and Adirondacks."
+    },
+    {
+      "name": "White Plains",
+      "population": 59000,
+      "driveTime": "0h 45m",
+      "coordinates": [41.03, -73.76],
+      "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
+      "description": "Westchester County's commercial hub with shopping, dining, and entertainment. Features the Westchester County Center and proximity to the Hudson Highlands and Hudson River."
+    },
+    {
+      "name": "Harriman",
+      "population": 2600,
+      "driveTime": "1h 00m",
+      "coordinates": [41.3, -74.15],
+      "scenicArea": "Harriman–Bear Mountain State Parks",
+      "description": "Village surrounded by Harriman State Park with extensive hiking trails and lakes. Gateway to the Appalachian Trail and outdoor recreation."
+    },
+    {
+      "name": "Sloatsburg",
+      "population": 3100,
+      "driveTime": "1h 00m",
+      "coordinates": [41.16, -74.19],
+      "scenicArea": "Harriman–Bear Mountain State Parks",
+      "description": "Historic village with charming Main Street and access to Harriman State Park. Gateway to hiking trails and outdoor recreation in the Ramapo Mountains."
+    },
+    {
+      "name": "Monroe",
+      "population": 19000,
+      "driveTime": "1h 00m",
+      "coordinates": [41.33, -74.19],
+      "scenicArea": "Harriman–Bear Mountain State Parks",
+      "description": "Growing town with historic charm and modern amenities. Gateway to Harriman State Park with access to hiking trails and outdoor recreation."
+    },
+    {
+      "name": "Stony Point",
+      "population": 15000,
+      "driveTime": "1h 00m",
+      "coordinates": [41.23, -73.98],
+      "scenicArea": "Harriman–Bear Mountain State Parks",
+      "description": "Historic town on the Hudson River with Stony Point Battlefield and lighthouse. Access to Harriman State Park and scenic river views."
+    },
+    {
+      "name": "Fort Montgomery",
+      "population": 1400,
+      "driveTime": "1h 00m",
+      "coordinates": [41.33, -73.98],
+      "scenicArea": "Harriman–Bear Mountain State Parks",
+      "description": "Historic village with Revolutionary War significance. Home to Fort Montgomery State Historic Site and access to Harriman State Park hiking trails."
+    },
+    {
+      "name": "Ithaca",
+      "population": 32000,
+      "driveTime": "4h 15m",
+      "coordinates": [42.44, -76.5],
+      "scenicArea": "Finger Lakes Gorges (Ithaca area)",
+      "description": "College town home to Cornell University and Ithaca College. Famous for its gorges, waterfalls, and vibrant downtown. Gateway to Cayuga Lake and the Finger Lakes wine region."
+    },
+    {
+      "name": "Skaneateles",
+      "population": 2500,
+      "driveTime": "4h 00m",
+      "coordinates": [42.95, -76.43],
+      "scenicArea": "Finger Lakes Gorges (Ithaca area)",
+      "description": "Charming village on pristine Skaneateles Lake with historic downtown, boutique shops, and restaurants. Known for its crystal-clear waters and scenic lake views."
+    },
+    {
+      "name": "Canandaigua",
+      "population": 10000,
+      "driveTime": "5h 00m",
+      "coordinates": [42.89, -77.28],
+      "scenicArea": "Finger Lakes Gorges (Ithaca area)",
+      "description": "Historic town on Canandaigua Lake with the Sonnenberg Gardens, Finger Lakes Wine Center, and charming Main Street. Gateway to the Finger Lakes wine trail and outdoor recreation."
+    },
+    {
+      "name": "Utica",
+      "population": 64000,
+      "driveTime": "4h 00m",
+      "coordinates": [43.1, -75.23],
+      "scenicArea": "Finger Lakes Gorges (Ithaca area)",
+      "description": "Historic Mohawk Valley city with the Munson-Williams-Proctor Arts Institute and Stanley Theater. Gateway to the Adirondacks and Finger Lakes with rich cultural heritage."
+    },
+    {
+      "name": "Dryden",
+      "population": 14000,
+      "driveTime": "4h 15m",
+      "coordinates": [42.49, -76.3],
+      "scenicArea": "Finger Lakes Gorges (Ithaca area)",
+      "description": "Rural town with rolling hills and farms. Gateway to the Finger Lakes region with access to hiking trails and scenic countryside."
+    },
+    {
+      "name": "Trumansburg",
+      "population": 1800,
+      "driveTime": "4h 15m",
+      "coordinates": [42.54, -76.66],
+      "scenicArea": "Finger Lakes Gorges (Ithaca area)",
+      "description": "Charming village near Taughannock Falls State Park. Gateway to the Finger Lakes with access to waterfalls and hiking trails."
+    },
+    {
+      "name": "Watkins Glen",
+      "population": 1800,
+      "driveTime": "4h 30m",
+      "coordinates": [42.38, -76.87],
+      "scenicArea": "Watkins Glen & Surrounds",
+      "description": "Village famous for Watkins Glen State Park with its stunning gorge and waterfalls. Home to Watkins Glen International racetrack and gateway to Seneca Lake wine country."
+    },
+    {
+      "name": "Montour Falls",
+      "population": 1600,
+      "driveTime": "4h 30m",
+      "coordinates": [42.35, -76.85],
+      "scenicArea": "Watkins Glen & Surrounds",
+      "description": "Village known for its beautiful waterfall and historic charm. Gateway to Watkins Glen State Park and the Finger Lakes wine region."
+    },
+    {
+      "name": "Odessa",
+      "population": 600,
+      "driveTime": "4h 30m",
+      "coordinates": [42.33, -76.8],
+      "scenicArea": "Watkins Glen & Surrounds",
+      "description": "Small village in the Finger Lakes region with rural charm. Gateway to Watkins Glen State Park and the surrounding wine country."
+    },
+    {
+      "name": "Mount Morris",
+      "population": 4300,
+      "driveTime": "6h 00m",
+      "coordinates": [42.72, -77.87],
+      "scenicArea": "Letchworth State Park (Genesee River Gorge)",
+      "description": "Historic town near Letchworth State Park, the 'Grand Canyon of the East'. Gateway to the Genesee River Gorge with stunning waterfalls and hiking trails."
+    },
+    {
+      "name": "Perry",
+      "population": 3600,
+      "driveTime": "6h 00m",
+      "coordinates": [42.72, -78.0],
+      "scenicArea": "Letchworth State Park (Genesee River Gorge)",
+      "description": "Village near Letchworth State Park with historic charm. Gateway to the Genesee River Gorge and the 'Grand Canyon of the East'."
+    },
+    {
+      "name": "Castile",
+      "population": 2800,
+      "driveTime": "6h 00m",
+      "coordinates": [42.63, -78.05],
+      "scenicArea": "Letchworth State Park (Genesee River Gorge)",
+      "description": "Village near Letchworth State Park with rural charm. Gateway to the Genesee River Gorge and the 'Grand Canyon of the East'."
+    },
+    {
+      "name": "Salamanca",
+      "population": 5900,
+      "driveTime": "7h 00m",
+      "coordinates": [42.16, -78.72],
+      "scenicArea": "Allegany State Park (Southern Tier)",
+      "description": "City on the Allegany Indian Reservation with rich Native American heritage. Gateway to Allegany State Park and the Southern Tier region."
+    },
+    {
+      "name": "Binghamton",
+      "population": 47000,
+      "driveTime": "3h 30m",
+      "coordinates": [42.1, -75.91],
+      "scenicArea": "Allegany State Park (Southern Tier)",
+      "description": "Historic 'Carousel Capital of the World' with six antique carousels. Home to Binghamton University and the Roberson Museum. Gateway to the Southern Tier and Finger Lakes."
+    },
+    {
+      "name": "Limestone",
+      "population": 1000,
+      "driveTime": "7h 00m",
+      "coordinates": [42.03, -78.63],
+      "scenicArea": "Allegany State Park (Southern Tier)",
+      "description": "Small village in the Southern Tier with rural charm. Gateway to Allegany State Park and the surrounding wilderness areas."
+    },
+    {
+      "name": "Great Valley",
+      "population": 2000,
+      "driveTime": "7h 00m",
+      "coordinates": [42.21, -78.64],
+      "scenicArea": "Allegany State Park (Southern Tier)",
+      "description": "Village in the Southern Tier with rural charm and outdoor recreation. Gateway to Allegany State Park and the surrounding wilderness areas."
+    },
+    {
+      "name": "Niagara Falls (NY)",
+      "population": 48000,
+      "driveTime": "6h 45m",
+      "coordinates": [43.1, -79.06],
+      "scenicArea": "Niagara Gorge (NY side)",
+      "description": "Home to the iconic Niagara Falls, one of the world's most famous natural wonders. Features Niagara Falls State Park, Maid of the Mist boat tours, and Cave of the Winds."
+    },
+    {
+      "name": "Lewiston",
+      "population": 2600,
+      "driveTime": "6h 45m",
+      "coordinates": [43.17, -79.04],
+      "scenicArea": "Niagara Gorge (NY side)",
+      "description": "Historic village near Niagara Falls with charming Main Street and waterfront. Gateway to the Niagara Gorge and Niagara Falls attractions."
+    },
+    {
+      "name": "Millerton",
+      "population": 1000,
+      "driveTime": "2h 15m",
+      "coordinates": [41.95, -73.52],
+      "scenicArea": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
+      "description": "Charming village in the Harlem Valley with historic charm. Gateway to the Taconic Range and Bash Bish Falls hiking trails."
+    },
+    {
+      "name": "Amenia",
+      "population": 4000,
+      "driveTime": "2h 15m",
+      "coordinates": [41.85, -73.55],
+      "scenicArea": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
+      "description": "Village in the Harlem Valley with rural charm and historic architecture. Gateway to the Taconic Range and Bash Bish Falls hiking trails."
+    },
+    {
+      "name": "Hillsdale",
+      "population": 1900,
+      "driveTime": "2h 15m",
+      "coordinates": [42.18, -73.52],
+      "scenicArea": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
+      "description": "Small village in the Harlem Valley with rural charm. Gateway to the Taconic Range and Bash Bish Falls hiking trails."
+    },
+    {
+      "name": "Copake",
+      "population": 3300,
+      "driveTime": "2h 15m",
+      "coordinates": [42.1, -73.55],
+      "scenicArea": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
+      "description": "Village in the Harlem Valley with rural charm and historic architecture. Gateway to the Taconic Range and Bash Bish Falls hiking trails."
+    },
+    {
+      "name": "Montauk",
+      "population": 4000,
+      "driveTime": "3h 00m",
+      "coordinates": [41.07, -71.86],
+      "scenicArea": "Long Island North & South Fork highlights (Montauk bluffs)",
+      "description": "Easternmost point of Long Island with dramatic bluffs, Montauk Point Lighthouse, and world-class fishing. Popular beach destination with surfing, hiking, and scenic ocean views."
+    },
+    {
+      "name": "Amagansett",
+      "population": 1100,
+      "driveTime": "2h 45m",
+      "coordinates": [40.98, -72.14],
+      "scenicArea": "Long Island North & South Fork highlights (Montauk bluffs)",
+      "description": "Charming hamlet on the South Fork with beautiful beaches and historic charm. Gateway to Montauk and the Long Island coastal attractions."
+    },
+    {
+      "name": "Lloyd Harbor",
+      "population": 3800,
+      "driveTime": "1h 15m",
+      "coordinates": [40.91, -73.46],
+      "scenicArea": "Caumsett State Historic Park Preserve (Lloyd Neck)",
+      "description": "Exclusive village on the North Shore with beautiful waterfront properties. Gateway to Caumsett State Park and Long Island Sound recreation."
+    },
+    {
+      "name": "Cold Spring Harbor",
+      "population": 5000,
+      "driveTime": "1h 15m",
+      "coordinates": [40.87, -73.46],
+      "scenicArea": "Caumsett State Historic Park Preserve (Lloyd Neck)",
+      "description": "Historic village on the North Shore with charming harbor and historic architecture. Gateway to Caumsett State Park and Long Island Sound recreation."
+    }
+  ],
+  "trainRoutes": [
+    {
+      "id": "metro_north_hudson",
+      "name": "Metro-North Hudson Line",
+      "operator": "Metro-North",
+      "color": "#003366",
+      "stops": [
+        {
+          "name": "Grand Central Terminal",
+          "coordinates": [40.7527, -73.9772],
+          "travelTime": "0h 00m",
+          "type": "terminal"
+        },
+        {
+          "name": "Yonkers",
+          "coordinates": [40.9312, -73.8988],
+          "travelTime": "0h 25m",
+          "type": "station"
+        },
+        {
+          "name": "Tarrytown",
+          "coordinates": [41.0765, -73.8587],
+          "travelTime": "0h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Peekskill",
+          "coordinates": [41.2901, -73.9204],
+          "travelTime": "1h 05m",
+          "type": "station"
+        },
+        {
+          "name": "Cold Spring",
+          "coordinates": [41.4201, -73.9544],
+          "travelTime": "1h 20m",
+          "type": "station"
+        },
+        {
+          "name": "Beacon",
+          "coordinates": [41.5045, -73.9696],
+          "travelTime": "1h 30m",
+          "type": "station"
+        },
+        {
+          "name": "New Hamburg",
+          "coordinates": [41.5884, -73.9487],
+          "travelTime": "1h 40m",
+          "type": "station"
+        },
+        {
+          "name": "Poughkeepsie",
+          "coordinates": [41.7054, -73.9301],
+          "travelTime": "1h 50m",
+          "type": "terminal"
+        }
+      ]
+    },
+    {
+      "id": "metro_north_harlem",
+      "name": "Metro-North Harlem Line",
+      "operator": "Metro-North",
+      "color": "#0066CC",
+      "stops": [
+        {
+          "name": "Grand Central Terminal",
+          "coordinates": [40.7527, -73.9772],
+          "travelTime": "0h 00m",
+          "type": "terminal"
+        },
+        {
+          "name": "Harlem-125th St",
+          "coordinates": [40.8076, -73.9456],
+          "travelTime": "0h 10m",
+          "type": "station"
+        },
+        {
+          "name": "Mount Vernon West",
+          "coordinates": [40.9126, -73.8371],
+          "travelTime": "0h 30m",
+          "type": "station"
+        },
+        {
+          "name": "White Plains",
+          "coordinates": [41.0339, -73.7625],
+          "travelTime": "0h 45m",
+          "type": "station"
+        },
+        {
+          "name": "North White Plains",
+          "coordinates": [41.0614, -73.7778],
+          "travelTime": "0h 55m",
+          "type": "station"
+        },
+        {
+          "name": "Valhalla",
+          "coordinates": [41.0742, -73.7778],
+          "travelTime": "1h 05m",
+          "type": "station"
+        },
+        {
+          "name": "Mount Kisco",
+          "coordinates": [41.2042, -73.7292],
+          "travelTime": "1h 15m",
+          "type": "station"
+        },
+        {
+          "name": "Bedford Hills",
+          "coordinates": [41.2347, -73.6944],
+          "travelTime": "1h 25m",
+          "type": "station"
+        },
+        {
+          "name": "Katonah",
+          "coordinates": [41.2583, -73.6847],
+          "travelTime": "1h 35m",
+          "type": "station"
+        },
+        {
+          "name": "Golden's Bridge",
+          "coordinates": [41.2931, -73.6708],
+          "travelTime": "1h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Purdy's",
+          "coordinates": [41.3250, -73.6583],
+          "travelTime": "1h 55m",
+          "type": "station"
+        },
+        {
+          "name": "Croton Falls",
+          "coordinates": [41.3472, -73.6611],
+          "travelTime": "2h 05m",
+          "type": "station"
+        },
+        {
+          "name": "Brewster",
+          "coordinates": [41.3972, -73.6167],
+          "travelTime": "2h 15m",
+          "type": "terminal"
+        }
+      ]
+    },
+    {
+      "id": "metro_north_new_haven",
+      "name": "Metro-North New Haven Line",
+      "operator": "Metro-North",
+      "color": "#FF6600",
+      "stops": [
+        {
+          "name": "Grand Central Terminal",
+          "coordinates": [40.7527, -73.9772],
+          "travelTime": "0h 00m",
+          "type": "terminal"
+        },
+        {
+          "name": "Harlem-125th St",
+          "coordinates": [40.8076, -73.9456],
+          "travelTime": "0h 10m",
+          "type": "station"
+        },
+        {
+          "name": "Fordham",
+          "coordinates": [40.8611, -73.8944],
+          "travelTime": "0h 20m",
+          "type": "station"
+        },
+        {
+          "name": "Mount Vernon East",
+          "coordinates": [40.9126, -73.8371],
+          "travelTime": "0h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Pelham",
+          "coordinates": [40.9097, -73.8083],
+          "travelTime": "0h 40m",
+          "type": "station"
+        },
+        {
+          "name": "New Rochelle",
+          "coordinates": [40.9111, -73.7833],
+          "travelTime": "0h 50m",
+          "type": "station"
+        },
+        {
+          "name": "Larchmont",
+          "coordinates": [40.9278, -73.7583],
+          "travelTime": "1h 00m",
+          "type": "station"
+        },
+        {
+          "name": "Mamaroneck",
+          "coordinates": [40.9500, -73.7333],
+          "travelTime": "1h 10m",
+          "type": "station"
+        },
+        {
+          "name": "Rye",
+          "coordinates": [40.9806, -73.6833],
+          "travelTime": "1h 20m",
+          "type": "station"
+        },
+        {
+          "name": "Port Chester",
+          "coordinates": [41.0000, -73.6667],
+          "travelTime": "1h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Greenwich",
+          "coordinates": [41.0250, -73.6250],
+          "travelTime": "1h 40m",
+          "type": "station"
+        },
+        {
+          "name": "Cos Cob",
+          "coordinates": [41.0333, -73.6000],
+          "travelTime": "1h 50m",
+          "type": "station"
+        },
+        {
+          "name": "Riverside",
+          "coordinates": [41.0417, -73.5833],
+          "travelTime": "2h 00m",
+          "type": "station"
+        },
+        {
+          "name": "Old Greenwich",
+          "coordinates": [41.0500, -73.5667],
+          "travelTime": "2h 10m",
+          "type": "station"
+        },
+        {
+          "name": "Stamford",
+          "coordinates": [41.0500, -73.5333],
+          "travelTime": "2h 20m",
+          "type": "terminal"
+        }
+      ]
+    },
+    {
+      "id": "amtrak_empire_service",
+      "name": "Amtrak Empire Service",
+      "operator": "Amtrak",
+      "color": "#003399",
+      "stops": [
+        {
+          "name": "Penn Station (NYC)",
+          "coordinates": [40.7505, -73.9934],
+          "travelTime": "0h 00m",
+          "type": "terminal"
+        },
+        {
+          "name": "Yonkers",
+          "coordinates": [40.9312, -73.8988],
+          "travelTime": "0h 20m",
+          "type": "station"
+        },
+        {
+          "name": "Croton-Harmon",
+          "coordinates": [41.1944, -73.8889],
+          "travelTime": "0h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Poughkeepsie",
+          "coordinates": [41.7054, -73.9301],
+          "travelTime": "1h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Rhinecliff",
+          "coordinates": [41.9208, -73.9528],
+          "travelTime": "1h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Hudson",
+          "coordinates": [42.2528, -73.7917],
+          "travelTime": "2h 15m",
+          "type": "station"
+        },
+        {
+          "name": "Albany-Rensselaer",
+          "coordinates": [42.6417, -73.7417],
+          "travelTime": "2h 45m",
+          "type": "terminal"
+        }
+      ]
+    },
+    {
+      "id": "amtrak_adirondack",
+      "name": "Amtrak Adirondack",
+      "operator": "Amtrak",
+      "color": "#006600",
+      "stops": [
+        {
+          "name": "Penn Station (NYC)",
+          "coordinates": [40.7505, -73.9934],
+          "travelTime": "0h 00m",
+          "type": "terminal"
+        },
+        {
+          "name": "Yonkers",
+          "coordinates": [40.9312, -73.8988],
+          "travelTime": "0h 20m",
+          "type": "station"
+        },
+        {
+          "name": "Croton-Harmon",
+          "coordinates": [41.1944, -73.8889],
+          "travelTime": "0h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Poughkeepsie",
+          "coordinates": [41.7054, -73.9301],
+          "travelTime": "1h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Rhinecliff",
+          "coordinates": [41.9208, -73.9528],
+          "travelTime": "1h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Hudson",
+          "coordinates": [42.2528, -73.7917],
+          "travelTime": "2h 15m",
+          "type": "station"
+        },
+        {
+          "name": "Albany-Rensselaer",
+          "coordinates": [42.6417, -73.7417],
+          "travelTime": "2h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Schenectady",
+          "coordinates": [42.8167, -73.9333],
+          "travelTime": "3h 15m",
+          "type": "station"
+        },
+        {
+          "name": "Saratoga Springs",
+          "coordinates": [43.0833, -73.8167],
+          "travelTime": "3h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Fort Edward",
+          "coordinates": [43.2667, -73.5833],
+          "travelTime": "4h 15m",
+          "type": "station"
+        },
+        {
+          "name": "Whitehall",
+          "coordinates": [43.5500, -73.4000],
+          "travelTime": "4h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Ticonderoga",
+          "coordinates": [43.8500, -73.4167],
+          "travelTime": "5h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Port Henry",
+          "coordinates": [44.0500, -73.4500],
+          "travelTime": "6h 00m",
+          "type": "station"
+        },
+        {
+          "name": "Westport",
+          "coordinates": [44.1833, -73.4333],
+          "travelTime": "6h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Port Kent",
+          "coordinates": [44.5167, -73.4167],
+          "travelTime": "7h 15m",
+          "type": "station"
+        },
+        {
+          "name": "Plattsburgh",
+          "coordinates": [44.7000, -73.4500],
+          "travelTime": "7h 45m",
+          "type": "terminal"
+        }
+      ]
+    },
+    {
+      "id": "amtrak_lake_shore_limited",
+      "name": "Amtrak Lake Shore Limited",
+      "operator": "Amtrak",
+      "color": "#CC0000",
+      "stops": [
+        {
+          "name": "Penn Station (NYC)",
+          "coordinates": [40.7505, -73.9934],
+          "travelTime": "0h 00m",
+          "type": "terminal"
+        },
+        {
+          "name": "Yonkers",
+          "coordinates": [40.9312, -73.8988],
+          "travelTime": "0h 20m",
+          "type": "station"
+        },
+        {
+          "name": "Croton-Harmon",
+          "coordinates": [41.1944, -73.8889],
+          "travelTime": "0h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Poughkeepsie",
+          "coordinates": [41.7054, -73.9301],
+          "travelTime": "1h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Rhinecliff",
+          "coordinates": [41.9208, -73.9528],
+          "travelTime": "1h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Hudson",
+          "coordinates": [42.2528, -73.7917],
+          "travelTime": "2h 15m",
+          "type": "station"
+        },
+        {
+          "name": "Albany-Rensselaer",
+          "coordinates": [42.6417, -73.7417],
+          "travelTime": "2h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Schenectady",
+          "coordinates": [42.8167, -73.9333],
+          "travelTime": "3h 15m",
+          "type": "station"
+        },
+        {
+          "name": "Amsterdam",
+          "coordinates": [42.9500, -74.1833],
+          "travelTime": "3h 45m",
+          "type": "station"
+        },
+        {
+          "name": "Utica",
+          "coordinates": [43.1000, -75.2333],
+          "travelTime": "4h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Rome",
+          "coordinates": [43.2167, -75.4500],
+          "travelTime": "5h 00m",
+          "type": "station"
+        },
+        {
+          "name": "Syracuse",
+          "coordinates": [43.0500, -76.1500],
+          "travelTime": "5h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Rochester",
+          "coordinates": [43.1667, -77.6167],
+          "travelTime": "6h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Buffalo-Depew",
+          "coordinates": [42.9000, -78.7167],
+          "travelTime": "7h 30m",
+          "type": "station"
+        },
+        {
+          "name": "Buffalo-Exchange Street",
+          "coordinates": [42.8833, -78.8667],
+          "travelTime": "7h 45m",
+          "type": "terminal"
+        }
+      ]
+    }
+  ],
+  "legend": {
+    "title": "NY Hiking & Scenery — Highlight Guide",
+    "categories": [
+      {
+        "color": "#c83737",
+        "label": "World-class (9.2–10)"
+      },
+      {
+        "color": "#e06b2e",
+        "label": "Exceptional (8.8–9.1)"
+      },
+      {
+        "color": "#d6a62e",
+        "label": "Great (8.2–8.7)"
+      },
+      {
+        "color": "#7cb342",
+        "label": "Strong (≤8.1)"
+      }
+    ],
+    "trainRoutes": [
+      {
+        "color": "#003366",
+        "label": "Metro-North Hudson Line"
+      },
+      {
+        "color": "#0066CC",
+        "label": "Metro-North Harlem Line"
+      },
+      {
+        "color": "#FF6600",
+        "label": "Metro-North New Haven Line"
+      },
+      {
+        "color": "#003399",
+        "label": "Amtrak Empire Service"
+      },
+      {
+        "color": "#006600",
+        "label": "Amtrak Adirondack"
+      },
+      {
+        "color": "#CC0000",
+        "label": "Amtrak Lake Shore Limited"
+      }
+    ],
+    "note": "Populations are approximate (2020–2023 ACS). Drive times assume Midtown origin, off‑peak. Train times are approximate and may vary."
+  }
+}

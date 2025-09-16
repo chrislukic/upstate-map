@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Fishkill Farms",
+    "address": "9 Fishkill Farm Rd, Hopewell Junction, NY 12533",
+    "lat": 41.5208333,
+    "lng": -73.8233333,
+    "website": "https://www.fishkillfarms.com/",
+    "u_pick_apples": true,
+    "reservation_required": "often (esp. weekends)",
+    "notes": "Organic & eco-grown blocks; book timed PYO slots in season"
+  },
+  {
+    "name": "Wilkens Fruit & Fir Farm",
+    "address": "1335 White Hill Rd, Yorktown Heights, NY 10598",
+    "lat": 41.277338816,
+    "lng": -73.827073574,
+    "website": "https://wilkensfarm.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Classic Westchester PYO; bakery & market on site"
+  },
+  {
+    "name": "Harvest Moon Farm & Orchard",
+    "address": "130 Hardscrabble Rd, North Salem, NY 10560",
+    "lat": 41.349961,
+    "lng": -73.635145,
+    "website": "https://harvestmoonfarmandorchard.com/",
+    "u_pick_apples": true,
+    "reservation_required": "often (festival tickets/bags)",
+    "notes": "Fall festival weekends, onsite cidery/food"
+  },
+  {
+    "name": "Stuart’s Fruit Farm",
+    "address": "62 Granite Springs Rd, Granite Springs, NY 10527",
+    "lat": 41.3084272,
+    "lng": -73.7662442,
+    "website": "https://www.stuartsfarm.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Cash/check often preferred; low-key, old-school vibe"
+  },
+  {
+    "name": "Dr. Davies Farm",
+    "address": "306 NY-304, Congers, NY 10920",
+    "lat": 41.171538,
+    "lng": -73.950537,
+    "website": "https://www.drdaviesfarm.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Daily PYO when in season; hayrides & pumpkin patch; cash only for PYO"
+  },
+  {
+    "name": "Orchards of Concklin",
+    "address": "2 S Mountain Rd, Pomona, NY 10970",
+    "lat": 41.1869,
+    "lng": -74.0452,
+    "website": "https://www.orchardsofconcklin.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Weekend PYO with bag purchase; longtime Rockland fixture"
+  },
+  {
+    "name": "Masker Orchards",
+    "address": "45 Ball Rd, Warwick, NY 10990",
+    "lat": 41.2406096,
+    "lng": -74.3489671,
+    "website": "https://www.maskers.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Drive-to-rows style; dog-friendly; one PYO bag per car policy"
+  },
+  {
+    "name": "Apple Dave’s Orchards",
+    "address": "82 Four Corners Rd, Warwick, NY 10990",
+    "lat": 41.2949097,
+    "lng": -74.3080258,
+    "website": "https://www.appledavesorchards.com/",
+    "u_pick_apples": true,
+    "reservation_required": "typically no",
+    "notes": "Orchard + distillery; admission on peak weekends"
+  },
+  {
+    "name": "Apple Ridge Orchards",
+    "address": "101 Jessup Rd, Warwick, NY 10990",
+    "lat": 41.2797,
+    "lng": -74.3756,
+    "website": "https://appleridgeorchards.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Thu–Sun hours; cash for admission/PYO; family activities"
+  },
+  {
+    "name": "DuBois Farms",
+    "address": "209 Perkinsville Rd, Highland, NY 12528",
+    "lat": 41.680432,
+    "lng": -73.969864,
+    "website": "https://duboisfarms.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Large variety of apples; tavern, pizzeria, donuts"
+  },
+  {
+    "name": "Hurds Family Farm",
+    "address": "2187 NY-32, Modena, NY 12548",
+    "lat": 41.6753647,
+    "lng": -74.1046159,
+    "website": "https://www.hurdsfamilyfarm.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Kid-maximal farm attractions; timed activities on certain days"
+  },
+  {
+    "name": "Greig Farm",
+    "address": "227 Pitcher Ln, Red Hook, NY 12571",
+    "lat": 42.0243194,
+    "lng": -73.8562917,
+    "website": "https://www.thegreigfarm.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Scenic paths & goats; multiple apple varieties"
+  },
+  {
+    "name": "Twin Star Orchards",
+    "address": "155 N Ohioville Rd, New Paltz, NY 12561",
+    "lat": 41.745453,
+    "lng": -74.090012,
+    "website": "https://www.twinstarorchards.com/",
+    "u_pick_apples": true,
+    "reservation_required": "sometimes (weekend time slots)",
+    "notes": "PYO + wood-fired pizza/BBQ & Brooklyn Cider House; coords approximate to New Paltz centroid"
+  },
+  {
+    "name": "Barton Orchards",
+    "address": "63 Apple Tree Ln, Poughquag, NY 12570",
+    "lat": 41.6086016,
+    "lng": -73.7057222,
+    "website": "https://www.bartonorchards.com/",
+    "u_pick_apples": true,
+    "reservation_required": "varies by event",
+    "notes": "Large festival-style farm; zipline/adventure features; Apple Core shop in Poughkeepsie"
+  },
+  {
+    "name": "Harbes Orchard (North Fork)",
+    "address": "5698 Sound Ave, Riverhead, NY 11901",
+    "lat": 40.9656,
+    "lng": -72.6609,
+    "website": "https://harbesfamilyfarm.com/harbes-orchard/",
+    "u_pick_apples": true,
+    "reservation_required": "admission ticket on peak days",
+    "notes": "Big Long Island operation; orchard-only location in Riverhead"
+  },
+  {
+    "name": "Pennings Orchard",
+    "address": "169 State Route 94 S, Warwick, NY 10990",
+    "lat": 41.23568,
+    "lng": -74.38675,
+    "website": "https://www.penningsorchard.com/",
+    "u_pick_apples": true,
+    "reservation_required": "weekends (vehicle reservation); weekdays no",
+    "notes": "Multiple sites (market, cidery, east/west orchards)"
+  },
+  {
+    "name": "Lawrence Farms Orchards",
+    "address": "306 Frozen Ridge Rd, Newburgh, NY 12550",
+    "lat": 41.572088,
+    "lng": -74.025382,
+    "website": "https://lawrencefarmsorchards.org/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Family orchard with wide mix of PYO; scenic hilltop views"
+  },
+  {
+    "name": "Rose Hill Farm",
+    "address": "19 Rose Hill Farm, Red Hook, NY 12571",
+    "lat": 42.007824,
+    "lng": -73.852215,
+    "website": "https://www.pickrosehillfarm.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Historic orchard; quiet/low-key PYO; onsite cider/ferments nearby"
+  },
+  {
+    "name": "Prospect Hill Orchards (Hilltop)",
+    "address": "340 Milton Turnpike, Milton, NY 12547",
+    "lat": 41.655942,
+    "lng": -73.976127,
+    "website": "https://prospecthillorchards.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Multiple sites; Hilltop is the apple PYO location"
+  },
+  {
+    "name": "Wright's Farm",
+    "address": "699 NY-208, Gardiner, NY 12525",
+    "lat": 41.6729,
+    "lng": -74.1598,
+    "website": "https://eatapples.com/pick/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Daily PYO Sept–Oct; entrance closes ~4:30pm; dogs welcome"
+  },
+  {
+    "name": "Soons Orchards (U-Pick Orchard)",
+    "address": "634 County Route 50, New Hampton, NY 10958",
+    "lat": 41.3813,
+    "lng": -74.3968,
+    "website": "https://www.soonsorchards.com/u-pick",
+    "u_pick_apples": true,
+    "reservation_required": "no (weekends + select holidays)",
+    "notes": "Weekend PYO in season; check hotline for status"
+  },
+  {
+    "name": "Outhouse Orchards",
+    "address": "139 Hardscrabble Rd, North Salem, NY 10560",
+    "lat": 41.3359,
+    "lng": -73.6406,
+    "website": "https://www.outhouseorchardsny.com/u-pick-1",
+    "u_pick_apples": true,
+    "reservation_required": "tickets on peak days",
+    "notes": "PYO apples Sept–Oct; corn maze & hayrides"
+  },
+  {
+    "name": "Weed Orchards & Winery",
+    "address": "43 Mount Zion Rd, Marlboro, NY 12542",
+    "lat": 41.6146,
+    "lng": -73.9803,
+    "website": "https://www.weedorchards.com/",
+    "u_pick_apples": true,
+    "reservation_required": "tickets for festival days",
+    "notes": "Multiple apple varieties; live music & food on event weekends"
+  },
+  {
+    "name": "Minard's Family Farm",
+    "address": "250 Hurds Rd, Clintondale, NY 12515",
+    "lat": 41.6749,
+    "lng": -74.038,
+    "website": "https://www.minardsfamilyfarms.com/",
+    "u_pick_apples": true,
+    "reservation_required": "varies",
+    "notes": "Large family attraction; U‑Pick calendar; hayrides; kids activities"
+  },
+  {
+    "name": "Indian Ladder Farms",
+    "address": "342 Altamont Voorheesville Rd, Altamont, NY 12009",
+    "lat": 42.653,
+    "lng": -74.022,
+    "website": "https://www.indianladderfarms.com/pick-your-own/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Daily PYO (weather permitting); cidery & biergarten on site"
+  },
+  {
+    "name": "Samascott Orchards",
+    "address": "5 Sunset Ave, Kinderhook, NY 12106",
+    "lat": 42.3952,
+    "lng": -73.7056,
+    "website": "https://www.samascottorchards.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Open Wed–Mon 9–5 (last entry 4pm); broad crop list; check status"
+  },
+  {
+    "name": "Saratoga Apple",
+    "address": "1174 NY-29, Schuylerville, NY 12871",
+    "lat": 43.0907,
+    "lng": -73.6167,
+    "website": "https://www.saratogaapple.farm/index.php/pick-your-own/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Daily PYO during harvest; farm stand open year‑round"
+  },
+  {
+    "name": "Golden Harvest Farms",
+    "address": "3074 US-9, Valatie, NY 12184",
+    "lat": 42.4302,
+    "lng": -73.6823,
+    "website": "https://www.goldenharvestfarms.com/",
+    "u_pick_apples": true,
+    "reservation_required": "check site",
+    "notes": "Historic orchard; cider donuts & distillery; confirm PYO status each season"
+  },
+  {
+    "name": "Fix Brothers Fruit Farm",
+    "address": "222 White Birch Rd, Hudson, NY 12534",
+    "lat": 42.2324,
+    "lng": -73.7396,
+    "website": "https://www.fixbrosfruitfarm.com/visit",
+    "u_pick_apples": true,
+    "reservation_required": "no (cash/check only)",
+    "notes": "PYO apples daily in season 10–5; simple, low‑key setup"
+  },
+  {
+    "name": "Yonder Fruit Farms",
+    "address": "Valatie, NY (see site for directions)",
+    "lat": 42.412,
+    "lng": -73.68,
+    "website": "https://www.yonderfruitfarms.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Weekend PYO with posted variety/pricing; local favorite"
+  },
+  {
+    "name": "Stone Ridge Orchard",
+    "address": "3012 NY-213, Stone Ridge, NY 12484",
+    "lat": 41.8599,
+    "lng": -74.1449,
+    "website": "https://www.stoneridgeorchard.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "U‑Pick apples & Asian pears from Labor Day weekend through Oct"
+  },
+  {
+    "name": "Lewin Farms",
+    "address": "812 Sound Ave, Calverton, NY 11933",
+    "lat": 40.9424,
+    "lng": -72.748,
+    "website": "https://www.lewinfarm.com/new-page-1",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Long Island original U‑Pick; daily hours typically 9–4:30 (closed Tue)"
+  },
+  {
+    "name": "Wickham's Fruit Farm",
+    "address": "28700 Main Rd, Cutchogue, NY 11935",
+    "lat": 41.0106,
+    "lng": -72.4646,
+    "website": "https://wickhamsfruitfarm.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Historic North Fork farm; seasonal PYO incl. apples; closed Sundays"
+  },
+  {
+    "name": "The Milk Pail U‑Pick",
+    "address": "50 Horsemill Ln, Water Mill, NY 11976",
+    "lat": 40.8968,
+    "lng": -72.3657,
+    "website": "https://milk-pail.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no (open Fri–Sun in season)",
+    "notes": "Hamptons U‑Pick apples & pumpkins; typical hours 10–5:30 on weekends"
+  },
+  {
+    "name": "Beak & Skiff Apple Orchards",
+    "address": "2708 Lords Hill Rd, LaFayette, NY 13084",
+    "lat": 42.9331,
+    "lng": -76.171,
+    "website": "https://beakandskiff.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Apple Hill PYO; large destination orchard (≈3.5–4h depending on traffic)"
+  },
+  {
+    "name": "Bowman Orchards",
+    "address": "147 Sugar Hill Rd, Rexford, NY 12148",
+    "lat": 42.8742,
+    "lng": -73.7733,
+    "website": "https://www.bowmanorchards.com/",
+    "u_pick_apples": true,
+    "reservation_required": "no",
+    "notes": "Capital Region PYO with many varieties; daily hours in season"
+  }
+]

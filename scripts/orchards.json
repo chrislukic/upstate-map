@@ -1,0 +1,158 @@
+{
+  "source": "User-supplied list (2025-09)",
+  "orchards": [
+    {
+      "name": "Fishkill Farms",
+      "town": "Hopewell Junction",
+      "state": "NY",
+      "notes": "Organic + eco-grown apples; reservations required.",
+      "approx_drive": "~1h45",
+      "url": "https://www.fishkillfarms.com/"
+    },
+    {
+      "name": "Wilkens Fruit & Fir Farm",
+      "town": "Yorktown Heights",
+      "state": "NY",
+      "notes": "Classic Westchester PYO; season opens late Aug; cashless not required.",
+      "approx_drive": "~1h",
+      "url": "https://wilkensfarm.com/"
+    },
+    {
+      "name": "Harvest Moon Farm & Orchard",
+      "town": "North Salem",
+      "state": "NY",
+      "notes": "U-pick apples during Fall Festival; bags/tickets.",
+      "approx_drive": "~1h15",
+      "url": "https://harvestmoonfarmandorchard.com/"
+    },
+    {
+      "name": "Stuart’s Fruit Farm",
+      "town": "Granite Springs",
+      "state": "NY",
+      "notes": "Daily apple picking Sept–Nov; cash/check only.",
+      "approx_drive": "~1h10",
+      "url": "https://www.stuartsfarm.com/"
+    },
+    {
+      "name": "Dr. Davies Farm",
+      "town": "Congers",
+      "state": "NY",
+      "notes": "PYO apples daily 10–5.",
+      "approx_drive": "~45–60 min",
+      "url": "https://drdaviesfarm.com/"
+    },
+    {
+      "name": "Orchards of Concklin",
+      "town": "Pomona",
+      "state": "NY",
+      "notes": "Weekends PYO with bag purchase.",
+      "approx_drive": "~1h",
+      "url": "https://www.orchardsofconcklin.com/"
+    },
+    {
+      "name": "Masker Orchards",
+      "town": "Warwick",
+      "state": "NY",
+      "notes": "Drive-through style rows; no reservations; dog-friendly; one bag per car.",
+      "approx_drive": "~1h45",
+      "url": "https://www.maskers.com/"
+    },
+    {
+      "name": "Apple Dave’s Orchards",
+      "town": "Warwick",
+      "state": "NY",
+      "notes": "PYO with per-person weekend admission; peck/half-bushel pricing.",
+      "approx_drive": "~1h45",
+      "url": "https://appledavesorchards.com/"
+    },
+    {
+      "name": "Apple Ridge Orchards",
+      "town": "Warwick",
+      "state": "NY",
+      "notes": "\"50 miles from NYC,\" scenic PYO setup.",
+      "approx_drive": "~1h45",
+      "url": "https://www.appleridgeorchards.com/"
+    },
+    {
+      "name": "DuBois Farms",
+      "town": "Highland",
+      "state": "NY",
+      "notes": "Voted ‘Best Pick-Your-Own’; extensive apple varieties.",
+      "approx_drive": "~1h45–2h",
+      "url": "https://www.duboisfarmsny.com/"
+    },
+    {
+      "name": "Hurds Family Farm",
+      "town": "Modena",
+      "state": "NY",
+      "notes": "125-acre orchard; lots of kid activities.",
+      "approx_drive": "~1h30–1h45",
+      "url": "https://www.hurdsfamilyfarm.com/pick-your-own"
+    },
+    {
+      "name": "Greig Farm",
+      "town": "Red Hook",
+      "state": "NY",
+      "notes": "Apples daily late Aug–Oct; open every day.",
+      "approx_drive": "~2h",
+      "url": "https://greigfarm.com/"
+    },
+    {
+      "name": "Twin Star Orchards",
+      "town": "New Paltz",
+      "state": "NY",
+      "notes": "PYO with posted bag prices; pizza/cider on site.",
+      "approx_drive": "~1h45–2h",
+      "url": "https://www.hvcidery.com/"
+    },
+    {
+      "name": "Barton Orchards",
+      "town": "Poughquag",
+      "state": "NY",
+      "notes": "Large PYO operation; active 2025 season materials.",
+      "approx_drive": "~1h45–2h",
+      "url": "https://www.bartonorchards.com/"
+    },
+    {
+      "name": "Demarest Farms",
+      "town": "Hillsdale",
+      "state": "NJ",
+      "notes": "PYO apples (book ahead when listed).",
+      "approx_drive": "~45–60 min",
+      "url": "https://demarestfarms.com/"
+    },
+    {
+      "name": "Alstede Farms",
+      "town": "Chester",
+      "state": "NJ",
+      "notes": "Daily PYO with entry tickets that include containers; hayrides.",
+      "approx_drive": "~1h15",
+      "url": "https://www.alstedefarms.com/"
+    },
+    {
+      "name": "Battleview Orchards",
+      "town": "Freehold",
+      "state": "NJ",
+      "notes": "Long-running NJ PYO; check hotline for fields open.",
+      "approx_drive": "~1h15",
+      "url": "https://www.battlevieworchards.com/"
+    },
+    {
+      "name": "Eastmont Orchards",
+      "town": "Colts Neck",
+      "state": "NJ",
+      "notes": "Call ahead for daily status.",
+      "approx_drive": "~1h15",
+      "url": "https://eastmontorchards.com/"
+    },
+    {
+      "name": "Harbes Orchard",
+      "town": "Riverhead",
+      "state": "NY",
+      "notes": "Big Long Island PYO site (apples + family attractions).",
+      "approx_drive": "~2h15–2h45",
+      "url": "https://harbesfamilyfarm.com/"
+    }
+  ]
+}
+

@@ -1,0 +1,463 @@
+[
+  {
+    "name": "Phoenicia Diner",
+    "lat": 42.0828,
+    "lng": -74.3155,
+    "location": "Phoenicia, NY",
+    "atmosphere": "Retro 1960s diner with chrome and glass architecture, counter seating, and mountain views.",
+    "specialty": "Local, seasonal diner classics with creative twists.",
+    "description": "Iconic Catskills diner with a nostalgic yet modern vibe, drawing both locals and weekenders.",
+    "family_friendly": true
+  },
+  {
+    "name": "Cochecton Pump House",
+    "lat": 41.7175,
+    "lng": -75.0489,
+    "location": "Cochecton, NY",
+    "atmosphere": "Outdoor bar and restaurant set in the ruins of an 1880s Standard Oil pumping station.",
+    "specialty": "Casual elevated pub fare, rotating food trucks, and live music.",
+    "description": "Unique open-air venue combining industrial history with community events and food culture.",
+    "family_friendly": true
+  },
+  {
+    "name": "Stissing House",
+    "lat": 41.9795,
+    "lng": -73.6563,
+    "location": "Pine Plains, NY",
+    "atmosphere": "Historic 18th-century tavern with rustic elegance and wood-fired hearth.",
+    "specialty": "Regionally inspired, seasonal American cuisine.",
+    "description": "A centuries-old tavern revitalized as a modern culinary landmark.",
+    "family_friendly": true
+  },
+  {
+    "name": "Gracie’s Luncheonette",
+    "lat": 42.2422,
+    "lng": -73.8949,
+    "location": "Leeds, NY",
+    "atmosphere": "Retro luncheonette with soda fountain and bright, casual interiors.",
+    "specialty": "House-made comfort food and baked goods.",
+    "description": "Charming roadside spot with a nostalgic yet fresh atmosphere.",
+    "family_friendly": true
+  },
+  {
+    "name": "Lil' Deb's Oasis",
+    "lat": 42.253,
+    "lng": -73.7919,
+    "location": "Hudson, NY",
+    "atmosphere": "Colorful, artistic restaurant blending food with performance art and community.",
+    "specialty": "Tropical comfort food and inventive cocktails.",
+    "description": "Playful, inclusive space that doubles as both restaurant and art installation.",
+    "family_friendly": true
+  },
+  {
+    "name": "Roscoe Diner",
+    "lat": 41.933,
+    "lng": -74.9137,
+    "location": "Roscoe, NY",
+    "atmosphere": "Classic roadside diner known as a stop for travelers and fly-fishers.",
+    "specialty": "Traditional American diner fare with oversized portions.",
+    "description": "A Catskills institution with nostalgic small-town appeal.",
+    "family_friendly": true
+  },
+  {
+    "name": "Deer Mountain Inn",
+    "lat": 42.2142,
+    "lng": -74.0803,
+    "location": "Tannersville, NY",
+    "atmosphere": "Rustic yet refined lodge with fireplaces, mountain art, and upscale cabin dining.",
+    "specialty": "Farm-to-table New American cuisine with local sourcing.",
+    "description": "An atmospheric mountain inn offering elevated dining and sweeping views.",
+    "family_friendly": true
+  },
+  {
+    "name": "Blue Hill at Stone Barns",
+    "lat": 41.1036,
+    "lng": -73.8291,
+    "location": "Pocantico Hills, NY",
+    "atmosphere": "Modern farmhouse setting at a working farm and education center.",
+    "specialty": "Innovative farm-to-table tasting menus.",
+    "description": "Michelin-starred destination restaurant redefining American farm cuisine.",
+    "family_friendly": true
+  },
+  {
+    "name": "Brushland Eating House",
+    "lat": 42.1928,
+    "lng": -74.7872,
+    "location": "Bovina, NY",
+    "atmosphere": "Minimalist rustic-chic space in a converted Catskills general store.",
+    "specialty": "Seasonal comfort food with refined execution.",
+    "description": "A sought-after rural dining experience focused on convivial, thoughtful food.",
+    "family_friendly": true
+  },
+  {
+    "name": "Peekamoose Restaurant",
+    "lat": 41.984,
+    "lng": -74.4326,
+    "location": "Big Indian, NY",
+    "atmosphere": "Rustic Catskills farmhouse with cozy lodge-like interiors and art installations.",
+    "specialty": "Seasonal New American cuisine with local sourcing.",
+    "description": "Catskills fine dining institution blending warmth, creativity, and terroir.",
+    "family_friendly": true
+  },
+  {
+    "name": "West Taghkanic Diner",
+    "lat": 42.099,
+    "lng": -73.7305,
+    "location": "Ancram, NY",
+    "atmosphere": "Restored midcentury diner with contemporary design and creative flair.",
+    "specialty": "Inventive comfort food and cocktails.",
+    "description": "A retro diner reimagined as a modern dining and social space.",
+    "family_friendly": true
+  },
+  {
+    "name": "The Amsterdam",
+    "lat": 42.0372,
+    "lng": -73.9115,
+    "location": "Rhinebeck, NY",
+    "atmosphere": "Elegant farmhouse restaurant with a blend of rustic and modern décor.",
+    "specialty": "Locally sourced seasonal New American dishes.",
+    "description": "Stylish Hudson Valley hotspot with sophisticated yet comfortable dining.",
+    "family_friendly": true
+  },
+  {
+    "name": "Terrapin Restaurant",
+    "lat": 41.9273,
+    "lng": -73.9128,
+    "location": "Rhinebeck, NY",
+    "atmosphere": "Grand 1825 former church converted into a dramatic dining room and bistro.",
+    "specialty": "Seasonal New American with Hudson Valley sourcing.",
+    "description": "A Rhinebeck landmark marrying historic architecture with a lively bistro energy.",
+    "family_friendly": true
+  },
+  {
+    "name": "The Roundhouse",
+    "lat": 41.5069,
+    "lng": -73.9693,
+    "location": "Beacon, NY",
+    "atmosphere": "Restored 19th‑century factory complex overlooking a waterfall and creek gorge.",
+    "specialty": "Modern American; strong cocktail and brunch program.",
+    "description": "Atmospheric brick‑and‑beam setting with glass walls framing the falls.",
+    "family_friendly": true
+  },
+  {
+    "name": "Cochecton Fire Station",
+    "lat": 41.707,
+    "lng": -75.052,
+    "location": "Cochecton, NY",
+    "atmosphere": "Revived historic firehouse with indoor/outdoor seating and rotating food pop‑ups.",
+    "specialty": "Casual fare, cocktails, and events.",
+    "description": "Sister venue to the Pump House with a cozy, communal vibe.",
+    "family_friendly": true
+  },
+  {
+    "name": "Prospect at Scribner’s Lodge",
+    "lat": 42.2053,
+    "lng": -74.2145,
+    "location": "Hunter, NY",
+    "atmosphere": "Design‑forward mountain lodge dining room with fireplaces and ridge views.",
+    "specialty": "Wood‑fired, seasonal Catskills cuisine.",
+    "description": "A sceney lodge restaurant perfect for post‑hike dinners and winter weekends.",
+    "family_friendly": true
+  },
+  {
+    "name": "Troutbeck Dining Room",
+    "lat": 41.7906,
+    "lng": -73.5479,
+    "location": "Amenia, NY",
+    "atmosphere": "Gilded‑age estate turned understated country retreat; fireplaces and salons.",
+    "specialty": "Refined farm‑to‑table with a British‑country twist.",
+    "description": "Gentle‑luxury Hudson Valley hideaway with soulful dining rooms.",
+    "family_friendly": true
+  },
+  {
+    "name": "The DeBruce",
+    "lat": 41.8504,
+    "lng": -74.7897,
+    "location": "Livingston Manor, NY",
+    "atmosphere": "Intimate tasting‑menu lodge with panoramic river‑valley views.",
+    "specialty": "Foraged, hyper‑seasonal tasting menu.",
+    "description": "One of the Catskills’ most lauded destination dining rooms.",
+    "family_friendly": true
+  },
+  {
+    "name": "The Maker Restaurant",
+    "lat": 42.2523,
+    "lng": -73.7818,
+    "location": "Hudson, NY",
+    "atmosphere": "Sumptuous, art‑deco‑meets‑bohemian interiors in a boutique hotel.",
+    "specialty": "Mediterranean‑leaning New American and craft cocktails.",
+    "description": "Mood‑driven dining with lush textures and candlelit corners.",
+    "family_friendly": true
+  },
+  {
+    "name": "Wm. Farmer and Sons",
+    "lat": 42.2536,
+    "lng": -73.7931,
+    "location": "Hudson, NY",
+    "atmosphere": "Brick‑and‑tin ceiling tavern with vintage hotel rooms upstairs.",
+    "specialty": "Hearty, seasonal tavern fare and a strong whiskey list.",
+    "description": "A handsome, lived‑in space ideal for late dinners and nightcaps.",
+    "family_friendly": false
+  },
+  {
+    "name": "Rivertown Lodge Tavern",
+    "lat": 42.2527,
+    "lng": -73.7885,
+    "location": "Hudson, NY",
+    "atmosphere": "Midcentury cinema turned design‑centric lodge and tavern.",
+    "specialty": "Small plates, natural wine, and cocktails.",
+    "description": "A minimalist, wood‑warm room beloved by design nerds.",
+    "family_friendly": false
+  },
+  {
+    "name": "Ole Savannah Southern Table & Bar",
+    "lat": 41.9223,
+    "lng": -73.9856,
+    "location": "Kingston, NY",
+    "atmosphere": "Expansive waterfront brick foundry with outdoor decks on the Rondout Creek.",
+    "specialty": "BBQ and Southern comfort staples.",
+    "description": "Bustling industrial‑heritage space with marina views.",
+    "family_friendly": true
+  },
+  {
+    "name": "Diamond Mills Tavern",
+    "lat": 42.0776,
+    "lng": -73.9471,
+    "location": "Saugerties, NY",
+    "atmosphere": "Modern dining room perched over a dramatic waterfall and dam.",
+    "specialty": "Steaks, seafood, and upscale tavern fare.",
+    "description": "Floor‑to‑ceiling windows put the falls front and center.",
+    "family_friendly": true
+  },
+  {
+    "name": "Hotel Kinsley (Restaurant Kinsley)",
+    "lat": 41.9254,
+    "lng": -73.9952,
+    "location": "Kingston, NY",
+    "atmosphere": "19th‑century bank building with high ceilings and artful minimalism.",
+    "specialty": "Seasonal New American with a sleek cocktail program.",
+    "description": "Historic‑meets‑modern dining in the Stockade District.",
+    "family_friendly": true
+  },
+  {
+    "name": "The Heron",
+    "lat": 41.6026,
+    "lng": -75.0611,
+    "location": "Narrowsburg, NY",
+    "atmosphere": "Riverside Main Street spot with tin ceilings and vintage touches.",
+    "specialty": "Upscale comfort food and brunch.",
+    "description": "Small‑town charm with big‑city execution overlooking the Delaware.",
+    "family_friendly": true
+  },
+  {
+    "name": "Callicoon Hills (The Conover Club)",
+    "lat": 41.7687,
+    "lng": -74.9467,
+    "location": "Callicoon Center, NY",
+    "atmosphere": "Restored 1905 boarding house with lodge bar and vaulted dining room.",
+    "specialty": "Seasonal Catskills comfort cuisine.",
+    "description": "Handsome camp‑lodge energy with cocktails by the fire.",
+    "family_friendly": true
+  },
+  {
+    "name": "North Branch Inn Restaurant & Bar Room",
+    "lat": 41.8464,
+    "lng": -74.9065,
+    "location": "North Branch, NY",
+    "atmosphere": "Historic inn with a vintage two‑lane bowling alley and intimate dining.",
+    "specialty": "Hyper‑local Catskills fare.",
+    "description": "Cozy heritage setting with playful, old‑time features.",
+    "family_friendly": true
+  },
+  {
+    "name": "Kenoza Hall Restaurant",
+    "lat": 41.6757,
+    "lng": -74.9689,
+    "location": "Kenoza Lake, NY",
+    "atmosphere": "Revived early‑1900s lakeside resort with a bright, airy dining room.",
+    "specialty": "Seasonal New American; aperitivo‑friendly.",
+    "description": "Golden‑hour magnet with grand‑porch energy.",
+    "family_friendly": true
+  },
+  {
+    "name": "Bluebird Hunter Tavern",
+    "lat": 42.2083,
+    "lng": -74.2233,
+    "location": "Hunter, NY",
+    "atmosphere": "Modern lodge tavern with mountain‑modern interiors.",
+    "specialty": "Casual alpine‑leaning comfort food.",
+    "description": "After‑ski hangout with a design‑hotel polish.",
+    "family_friendly": true
+  },
+  {
+    "name": "Hutton Brickyards (Seasonal Dining)",
+    "lat": 41.938,
+    "lng": -73.9725,
+    "location": "Kingston, NY",
+    "atmosphere": "Restored 19th‑century riverfront brickworks; open‑air kilns and river views.",
+    "specialty": "Seasonal wood‑fired menus and events.",
+    "description": "Striking Hudson waterfront campus with rotating chefs and pop‑ups.",
+    "family_friendly": true
+  },
+  {
+    "name": "American Bounty (CIA)",
+    "lat": 41.7453,
+    "lng": -73.9359,
+    "location": "Hyde Park, NY",
+    "atmosphere": "Culinary Institute of America flagship with polished open‑kitchen dining.",
+    "specialty": "Farm‑driven American cuisine by student‑chefs and instructors.",
+    "description": "A rite of passage for food‑obsessed Hudson Valley visitors.",
+    "family_friendly": true
+  },
+  {
+    "name": "The View (Mirror Lake Inn)",
+    "lat": 44.2809,
+    "lng": -73.9839,
+    "location": "Lake Placid, NY",
+    "atmosphere": "Refined Adirondack‑lodge dining with lake and mountain panoramas.",
+    "specialty": "Seasonal fine dining with regional game and produce.",
+    "description": "White‑tablecloth classic in an alpine resort town.",
+    "family_friendly": true
+  },
+  {
+    "name": "Roycroft Inn Restaurant",
+    "lat": 42.7679,
+    "lng": -78.612,
+    "location": "East Aurora, NY",
+    "atmosphere": "National Historic Landmark from the Arts & Crafts movement.",
+    "specialty": "Classic American dishes in an arts‑and‑crafts setting.",
+    "description": "Mission furniture, stained glass, and a deep sense of craft history.",
+    "family_friendly": true
+  },
+  {
+    "name": "Radio Social",
+    "lat": 43.1752,
+    "lng": -77.6122,
+    "location": "Rochester, NY",
+    "atmosphere": "Bowling + restaurant + lounge in a massive former factory.",
+    "specialty": "Mediterranean‑leaning plates, burgers, and cocktails.",
+    "description": "Playful industrial space built for groups and events.",
+    "family_friendly": false
+  },
+  {
+    "name": "The Cub Room",
+    "lat": 43.1438,
+    "lng": -77.6043,
+    "location": "Rochester, NY",
+    "atmosphere": "Dimly lit, clubby room with leather banquettes and a speakeasy vibe.",
+    "specialty": "Steaks, chops, and classic cocktails.",
+    "description": "Date‑night standby in Rochester’s South Wedge.",
+    "family_friendly": true
+  },
+  {
+    "name": "Good Luck",
+    "lat": 43.161,
+    "lng": -77.5887,
+    "location": "Rochester, NY",
+    "atmosphere": "Lofty industrial dining room with dramatic bar and shareable plates.",
+    "specialty": "Seasonal small plates; formidable burger.",
+    "description": "Design‑savvy pioneer of Rochester’s modern dining scene.",
+    "family_friendly": true
+  },
+  {
+    "name": "Genesee Brew House Restaurant",
+    "lat": 43.168,
+    "lng": -77.6119,
+    "location": "Rochester, NY",
+    "atmosphere": "Brewpub and museum with rooftop views of High Falls.",
+    "specialty": "Classic pub fare and brewery‑fresh beers.",
+    "description": "Sit with a pint while a 96‑ft waterfall thunders across the river.",
+    "family_friendly": true
+  },
+  {
+    "name": "FLX Table",
+    "lat": 42.868,
+    "lng": -76.9859,
+    "location": "Geneva, NY",
+    "atmosphere": "Tiny communal tasting‑menu room on Linden Street.",
+    "specialty": "Multi‑course seasonal menus with wine pairings.",
+    "description": "An intimate Finger Lakes destination with dinner‑party energy.",
+    "family_friendly": true
+  },
+  {
+    "name": "Kindred Fare",
+    "lat": 42.8622,
+    "lng": -76.993,
+    "location": "Geneva, NY",
+    "atmosphere": "Warm, wood‑and‑brick brasserie near the Seneca Lake shore.",
+    "specialty": "Live‑fire grill and regional sourcing.",
+    "description": "Neighborhood‑meets‑destination spot with a deep wine list.",
+    "family_friendly": true
+  },
+  {
+    "name": "1833 Kitchen & Bar (Inns of Aurora)",
+    "lat": 42.7458,
+    "lng": -76.7027,
+    "location": "Aurora, NY",
+    "atmosphere": "Historic lakefront inn with genteel dining rooms and porches.",
+    "specialty": "Elevated American fare with Finger Lakes wines.",
+    "description": "Picture‑postcard charm on the east shore of Cayuga Lake.",
+    "family_friendly": true
+  },
+  {
+    "name": "Belhurst Castle (Edgar’s)",
+    "lat": 42.8459,
+    "lng": -76.9872,
+    "location": "Geneva, NY",
+    "atmosphere": "Victorian stone castle with stained glass and lake views.",
+    "specialty": "Steaks, classics, and estate wines.",
+    "description": "Over‑the‑top romantic setting in a bona fide castle.",
+    "family_friendly": true
+  },
+  {
+    "name": "Tailor & The Cook",
+    "lat": 43.1016,
+    "lng": -75.2292,
+    "location": "Utica, NY",
+    "atmosphere": "Brick‑walled storefront with open kitchen and intimate seating.",
+    "specialty": "Farm‑to‑table tasting and à la carte menus.",
+    "description": "A Mohawk Valley standard‑bearer for local sourcing.",
+    "family_friendly": true
+  },
+  {
+    "name": "City Beer Hall",
+    "lat": 42.6507,
+    "lng": -73.7502,
+    "location": "Albany, NY",
+    "atmosphere": "Grand former telephone company HQ with long bars and high ceilings.",
+    "specialty": "Hearty pub fare and a deep draft list.",
+    "description": "Rowdy in the best way—plus a mechanical bull downstairs.",
+    "family_friendly": false
+  },
+  {
+    "name": "The Mouzon House",
+    "lat": 43.0808,
+    "lng": -73.7864,
+    "location": "Saratoga Springs, NY",
+    "atmosphere": "Victorian house with garden patio and live jazz vibes.",
+    "specialty": "Creole‑leaning farm‑to‑table.",
+    "description": "Romantic, quirky, and very Saratoga.",
+    "family_friendly": true
+  },
+  {
+    "name": "Morrissey's Lounge & Bistro (The Adelphi)",
+    "lat": 43.08,
+    "lng": -73.7856,
+    "location": "Saratoga Springs, NY",
+    "atmosphere": "Glam hotel lounge with gilded mirrors and vintage racing lore.",
+    "specialty": "Raw bar, sushi, and bistro classics.",
+    "description": "A swanky perch in one of Saratoga's crown‑jewel hotels.",
+    "family_friendly": false
+  },
+  {
+    "name": "The Amsterdam (Saratoga satellite)",
+    "lat": 43.0839,
+    "lng": -73.7856,
+    "location": "Saratoga Springs, NY",
+    "atmosphere": "Chic farm‑to‑table sibling to the Rhinebeck favorite.",
+    "specialty": "Seasonal New American and craft cocktails.",
+    "description": "Polished, lively room a short stroll from the track.",
+    "family_friendly": true
+  }
+]
+
