@@ -1,0 +1,1934 @@
+[
+  {
+    "name": "Kaaterskill Falls",
+    "type": "waterfall",
+    "place_id": "ChIJGUwPTcav3YkRGp21Rj0dUgY",
+    "current": [
+      42.1937,
+      -74.0715
+    ],
+    "google": [
+      42.1934218,
+      -74.06319239999999
+    ],
+    "distance_m": 685.0963401780197
+  },
+  {
+    "name": "Bastion Falls (Lower Kaaterskill)",
+    "type": "waterfall",
+    "place_id": "ChIJcZpQA7av3YkRD1cNt3kgKQ4",
+    "current": [
+      42.1965,
+      -74.0745
+    ],
+    "google": [
+      42.1916379,
+      -74.07044479999999
+    ],
+    "distance_m": 635.5292723529537
+  },
+  {
+    "name": "Plattekill Falls",
+    "type": "waterfall",
+    "place_id": "ChIJV6KfNiyp3YkR3ri77EVlxps",
+    "current": [
+      42.089,
+      -74.0865
+    ],
+    "google": [
+      42.13238860000001,
+      -74.08544429999999
+    ],
+    "distance_m": 4825.378077319963
+  },
+  {
+    "name": "Diamond Notch Falls",
+    "type": "waterfall",
+    "place_id": "ChIJ83UiT3pT3IkRnwZyXXQrgUQ",
+    "current": [
+      42.1632,
+      -74.1809
+    ],
+    "google": [
+      42.1681441,
+      -74.2570894
+    ],
+    "distance_m": 6303.431522173064
+  },
+  {
+    "name": "Awosting Falls",
+    "type": "waterfall",
+    "place_id": "ChIJsap49J7f3IkRZn6AMMA-170",
+    "current": [
+      41.7275,
+      -74.2465
+    ],
+    "google": [
+      41.7345911,
+      -74.23721979999999
+    ],
+    "distance_m": 1102.1639300530355
+  },
+  {
+    "name": "Stony Kill Falls (Minnewaska)",
+    "type": "waterfall",
+    "place_id": "ChIJu8ULapre3IkR_EsLfUu1al0",
+    "current": [
+      41.7365,
+      -74.284
+    ],
+    "google": [
+      41.7275935,
+      -74.30153969999999
+    ],
+    "distance_m": 1760.4479394322764
+  },
+  {
+    "name": "Verkeerderkill Falls",
+    "type": "waterfall",
+    "place_id": "ChIJ-XKtBYPc3IkRInp0V2auRIg",
+    "current": [
+      41.6766,
+      -74.3737
+    ],
+    "google": [
+      41.67043,
+      -74.36085059999999
+    ],
+    "distance_m": 1268.7273854650603
+  },
+  {
+    "name": "Taughannock Falls",
+    "type": "waterfall",
+    "place_id": "ChIJI-5UFjGF0IkRHdu1Ky5auhw",
+    "current": [
+      42.5445,
+      -76.6072
+    ],
+    "google": [
+      42.5356258,
+      -76.6107735
+    ],
+    "distance_m": 1029.2828896772237
+  },
+  {
+    "name": "Buttermilk Falls (Ithaca)",
+    "type": "waterfall",
+    "place_id": "ChIJ4ZlsaR6B0IkRx_TASduKuRM",
+    "current": [
+      42.4292,
+      -76.5207
+    ],
+    "google": [
+      42.4077016,
+      -76.5118592
+    ],
+    "distance_m": 2498.245684280909
+  },
+  {
+    "name": "Lucifer Falls (Robert H. Treman)",
+    "type": "waterfall",
+    "place_id": "ChIJhyW3cXKH0IkREv06g0utYtg",
+    "current": [
+      42.3977,
+      -76.5671
+    ],
+    "google": [
+      42.400628,
+      -76.5841109
+    ],
+    "distance_m": 1434.2678163555902
+  },
+  {
+    "name": "Ithaca Falls",
+    "type": "waterfall",
+    "place_id": "ChIJlfRieyiC0IkRwKCvYP5XxCs",
+    "current": [
+      42.452,
+      -76.4872
+    ],
+    "google": [
+      42.4529252,
+      -76.4916542
+    ],
+    "distance_m": 379.6443197172005
+  },
+  {
+    "name": "Triphammer Falls",
+    "type": "waterfall",
+    "place_id": "ChIJeYCkWSCC0IkR4lc5DpbABoA",
+    "current": [
+      42.4535,
+      -76.4818
+    ],
+    "google": [
+      42.4515727,
+      -76.4803428
+    ],
+    "distance_m": 245.39811065195173
+  },
+  {
+    "name": "Cascadilla Falls",
+    "type": "waterfall",
+    "place_id": "ChIJMyyCHYWB0IkRiSh1RGfEJag",
+    "current": [
+      42.4398,
+      -76.4853
+    ],
+    "google": [
+      42.4429001,
+      -76.4940396
+    ],
+    "distance_m": 795.7029207896251
+  },
+  {
+    "name": "Hector Falls",
+    "type": "waterfall",
+    "place_id": "ChIJJS_883310IkRwnVsZg8veW0",
+    "current": [
+      42.396,
+      -76.8527
+    ],
+    "google": [
+      42.41785040000001,
+      -76.86523609999999
+    ],
+    "distance_m": 2638.6712798003423
+  },
+  {
+    "name": "Watkins Glen (Rainbow Falls)",
+    "type": "waterfall",
+    "place_id": "ChIJyXgDpRFf0IkRm9D5PEwTujA",
+    "current": [
+      42.3756,
+      -76.8731
+    ],
+    "google": [
+      42.372588,
+      -76.8825703
+    ],
+    "distance_m": 846.981915890641
+  },
+  {
+    "name": "Shequaga Falls (Montour Falls)",
+    "type": "waterfall",
+    "place_id": "ChIJl_o6EnNe0IkRsHkD2kzlsFo",
+    "current": [
+      42.3468,
+      -76.8527
+    ],
+    "google": [
+      42.3446586,
+      -76.851546
+    ],
+    "distance_m": 256.3050655228568
+  },
+  {
+    "name": "Aunt Sarah’s Falls",
+    "type": "waterfall",
+    "place_id": "ChIJz-cmpW9e0IkR63qMyFm3e7s",
+    "current": [
+      42.3299,
+      -76.8407
+    ],
+    "google": [
+      42.3509069,
+      -76.8585691
+    ],
+    "distance_m": 2759.208936944618
+  },
+  {
+    "name": "Eagle Cliff Falls (Havana Glen)",
+    "type": "waterfall",
+    "place_id": "ChIJ12z3pwBe0IkRDf8JuqOyF9w",
+    "current": [
+      42.3259,
+      -76.8378
+    ],
+    "google": [
+      42.3358429,
+      -76.8295504
+    ],
+    "distance_m": 1297.0067903935478
+  },
+  {
+    "name": "Deckertown Falls",
+    "type": "waterfall",
+    "place_id": "ChIJdUM5dgNe0IkR6qjOBvt_h88",
+    "current": [
+      42.333,
+      -76.8532
+    ],
+    "google": [
+      42.3434453,
+      -76.8307683
+    ],
+    "distance_m": 2179.0728423788337
+  },
+  {
+    "name": "Chittenango Falls",
+    "type": "waterfall",
+    "place_id": "ChIJcbT3qoOG2YkR9PNIey8jovQ",
+    "current": [
+      42.9812,
+      -75.8675
+    ],
+    "google": [
+      42.9777694,
+      -75.8425178
+    ],
+    "distance_m": 2067.79204385448
+  },
+  {
+    "name": "Carpenter Falls",
+    "type": "waterfall",
+    "place_id": "ChIJ36Wmy10P2okRLoq3reUWfUI",
+    "current": [
+      42.8117,
+      -76.4229
+    ],
+    "google": [
+      42.8117349,
+      -76.3432658
+    ],
+    "distance_m": 6495.888918041173
+  },
+  {
+    "name": "Tinker Falls",
+    "type": "waterfall",
+    "place_id": "ChIJlUwQZysj2okRUEHvdumkuew",
+    "current": [
+      42.7595,
+      -76.0285
+    ],
+    "google": [
+      42.782557,
+      -76.0331288
+    ],
+    "distance_m": 2591.511802963285
+  },
+  {
+    "name": "Fillmore Glen (Cowsheds Falls)",
+    "type": "waterfall",
+    "place_id": "ChIJ6wVIphUL2okR6noBYlczIMY",
+    "current": [
+      42.7427,
+      -76.3934
+    ],
+    "google": [
+      42.6920639,
+      -76.390018
+    ],
+    "distance_m": 5637.252453758583
+  },
+  {
+    "name": "Middle Falls (Letchworth)",
+    "type": "waterfall",
+    "place_id": "ChIJneD7UQDT04kRpobpH2nBgMI",
+    "current": [
+      42.6406,
+      -77.9879
+    ],
+    "google": [
+      42.5831218,
+      -78.042675
+    ],
+    "distance_m": 7806.48863679758
+  },
+  {
+    "name": "Upper Falls (Letchworth)",
+    "type": "waterfall",
+    "place_id": "ChIJIUCtcg7T04kRrhJwNao-nCI",
+    "current": [
+      42.6418,
+      -77.9837
+    ],
+    "google": [
+      42.5785169,
+      -78.0488712
+    ],
+    "distance_m": 8829.566087666564
+  },
+  {
+    "name": "Lower Falls (Letchworth)",
+    "type": "waterfall",
+    "place_id": "ChIJ2ZLtE4DT04kRZwAwjBPOdZ8",
+    "current": [
+      42.6255,
+      -78.0392
+    ],
+    "google": [
+      42.5853411,
+      -78.020561
+    ],
+    "distance_m": 4718.84069960106
+  },
+  {
+    "name": "Niagara Falls (American Falls & Bridal Veil)",
+    "type": "waterfall",
+    "place_id": "ChIJiQiWmgRD04kRfUK6HRoEaMM",
+    "current": [
+      43.0828,
+      -79.0747
+    ],
+    "google": [
+      43.0835108,
+      -79.0707955
+    ],
+    "distance_m": 326.7966792495911
+  },
+  {
+    "name": "Eternal Flame Falls",
+    "type": "waterfall",
+    "place_id": "ChIJ_6tDDQEE04kRQ0IG6MeyR6s",
+    "current": [
+      42.7029,
+      -78.7441
+    ],
+    "google": [
+      42.7016984,
+      -78.75156059999999
+    ],
+    "distance_m": 624.118120348999
+  },
+  {
+    "name": "Akron Falls",
+    "type": "waterfall",
+    "place_id": "ChIJdZOEeGWa04kRDUHv3XkioEM",
+    "current": [
+      43.0194,
+      -78.4938
+    ],
+    "google": [
+      43.01448690000001,
+      -78.4952686
+    ],
+    "distance_m": 559.206938758025
+  },
+  {
+    "name": "Wiscoy Falls",
+    "type": "waterfall",
+    "place_id": "ChIJg3boWi0t0okRrCHsf7I-11Y",
+    "current": [
+      42.5437,
+      -78.1176
+    ],
+    "google": [
+      42.5048294,
+      -78.0824471
+    ],
+    "distance_m": 5194.26197754513
+  },
+  {
+    "name": "Cohoes Falls",
+    "type": "waterfall",
+    "place_id": "ChIJx2nJUsgR3okREyGBwJgpkTI",
+    "current": [
+      42.7687,
+      -73.7007
+    ],
+    "google": [
+      42.7889667,
+      -73.7095633
+    ],
+    "distance_m": 2366.808386369903
+  },
+  {
+    "name": "Barberville Falls",
+    "type": "waterfall",
+    "place_id": "ChIJTe3SPeoD3okRbGS26L8Nfj4",
+    "current": [
+      42.9152,
+      -73.5851
+    ],
+    "google": [
+      42.6837429,
+      -73.5383113
+    ],
+    "distance_m": 26018.41787027132
+  },
+  {
+    "name": "Mine Kill Falls",
+    "type": "waterfall",
+    "place_id": "ChIJIfv1pJk43IkRS0ItVqsROLo",
+    "current": [
+      42.3999,
+      -74.4555
+    ],
+    "google": [
+      42.4289682,
+      -74.4720916
+    ],
+    "distance_m": 3507.5020190948353
+  },
+  {
+    "name": "Shelving Rock Falls",
+    "type": "waterfall",
+    "place_id": "ChIJxRjKyf7m34kRaZeAau9SPAo",
+    "current": [
+      43.5556,
+      -73.5684
+    ],
+    "google": [
+      43.5535108,
+      -73.6021949
+    ],
+    "distance_m": 2733.253338103683
+  },
+  {
+    "name": "OK Slip Falls",
+    "type": "waterfall",
+    "place_id": "ChIJ14EPiXmD34kRr6nF4UwPZnE",
+    "current": [
+      43.7686,
+      -74.1255
+    ],
+    "google": [
+      43.772307,
+      -74.12968280000001
+    ],
+    "distance_m": 531.7059033441186
+  },
+  {
+    "name": "Split Rock Falls",
+    "type": "waterfall",
+    "place_id": "ChIJ6VIQQ12VykwRQXTA1pqCo8o",
+    "current": [
+      44.1417,
+      -73.6904
+    ],
+    "google": [
+      44.12389450000001,
+      -73.6574665
+    ],
+    "distance_m": 3290.6132656450814
+  },
+  {
+    "name": "Roaring Brook Falls",
+    "type": "waterfall",
+    "place_id": "ChIJRfOwG-vF54kR1h25X2MLj6U",
+    "current": [
+      44.1647,
+      -73.835
+    ],
+    "google": [
+      41.4817701,
+      -72.9349434
+    ],
+    "distance_m": 307220.5823812193
+  },
+  {
+    "name": "High Falls Gorge (AuSable)",
+    "type": "waterfall",
+    "place_id": "ChIJsWIiQ2_8ykwRxH9mgS7ml9s",
+    "current": [
+      44.3629,
+      -73.8619
+    ],
+    "google": [
+      44.3475359,
+      -73.87685909999999
+    ],
+    "distance_m": 2081.6360085404094
+  },
+  {
+    "name": "Rainbow Falls (Ausable Lakes)",
+    "type": "waterfall",
+    "place_id": "ChIJc9ZwVFvCykwRJCwVy9b6E7M",
+    "current": [
+      44.1259,
+      -73.7895
+    ],
+    "google": [
+      44.1186634,
+      -73.8245831
+    ],
+    "distance_m": 2913.7154416878816
+  },
+  {
+    "name": "Lampson Falls",
+    "type": "waterfall",
+    "place_id": "ChIJd7_9N-mTzEwRM7Vg6XnPwc0",
+    "current": [
+      44.4779,
+      -74.9215
+    ],
+    "google": [
+      44.4056176,
+      -75.0713116
+    ],
+    "distance_m": 14354.55040053532
+  },
+  {
+    "name": "Indian Brook Falls",
+    "type": "waterfall",
+    "place_id": "ChIJmT1u3IPLwokRJGlmbLoAL1c",
+    "current": [
+      41.4204,
+      -73.9465
+    ],
+    "google": [
+      41.4036149,
+      -73.9268889
+    ],
+    "distance_m": 2481.562153298696
+  },
+  {
+    "name": "Oxbow Falls",
+    "type": "waterfall",
+    "place_id": "ChIJoay3YMyD2YkRkoBl3tjQiXs",
+    "current": [
+      43.0626,
+      -75.6893
+    ],
+    "google": [
+      43.031118,
+      -75.74262399999999
+    ],
+    "distance_m": 5570.5164106085895
+  },
+  {
+    "name": "Ommegang Brewery",
+    "type": "brewery",
+    "place_id": "ChIJvQ37ngMH3IkR5IUUwPQdxX4",
+    "current": [
+      42.7022,
+      -74.9226
+    ],
+    "google": [
+      42.6264642,
+      -74.9445514
+    ],
+    "distance_m": 8610.58412594537
+  },
+  {
+    "name": "Saranac Brewery (Matt Brewing Company)",
+    "type": "brewery",
+    "place_id": "ChIJRUoXCYxH2YkRZFpGqjlzUuk",
+    "current": [
+      43.1009,
+      -75.2313
+    ],
+    "google": [
+      43.10444589999999,
+      -75.2455361
+    ],
+    "distance_m": 1221.1865823418705
+  },
+  {
+    "name": "Genesee Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJsV5Z9VG01okRe3DPZHBhekk",
+    "current": [
+      43.1667,
+      -77.6126
+    ],
+    "google": [
+      43.163626,
+      -77.6146588
+    ],
+    "distance_m": 380.41749970465753
+  },
+  {
+    "name": "Brown’s Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJrfIU5aUP3okRRq4zNu2eFkk",
+    "current": [
+      42.7323,
+      -73.6901
+    ],
+    "google": [
+      42.73573589999999,
+      -73.6875501
+    ],
+    "distance_m": 435.13008583509486
+  },
+  {
+    "name": "Druthers Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJP-GoINE53okRMhKuV5jYycY",
+    "current": [
+      43.0848,
+      -73.7846
+    ],
+    "google": [
+      43.0808898,
+      -73.7860269
+    ],
+    "distance_m": 449.9722554079648
+  },
+  {
+    "name": "Southern Tier Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJbYsFSPyr0okRo5bTWrIGxoA",
+    "current": [
+      42.0981,
+      -79.2587
+    ],
+    "google": [
+      42.0889244,
+      -79.3491744
+    ],
+    "distance_m": 7534.657101217072
+  },
+  {
+    "name": "Ithaca Beer Company",
+    "type": "brewery",
+    "place_id": "ChIJqZyIGdmA0IkRiFPSkwebidY",
+    "current": [
+      42.4152,
+      -76.545
+    ],
+    "google": [
+      42.4164137,
+      -76.5351988
+    ],
+    "distance_m": 815.8379952240856
+  },
+  {
+    "name": "Woodstock Brewing",
+    "type": "brewery",
+    "place_id": "ChIJD7Qql7L43IkR4868BkTTOlM",
+    "current": [
+      42.0315,
+      -74.2795
+    ],
+    "google": [
+      42.0627376,
+      -74.3073886
+    ],
+    "distance_m": 4167.493589053964
+  },
+  {
+    "name": "Common Roots Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJQQkGpfbR34kRBSVPp1cqRpQ",
+    "current": [
+      43.3093,
+      -73.6493
+    ],
+    "google": [
+      43.2952392,
+      -73.6365465
+    ],
+    "distance_m": 1873.3909497827594
+  },
+  {
+    "name": "Nine Pin Ciderworks",
+    "type": "brewery",
+    "place_id": "ChIJlRNexYEJ3okRll4mvPcFmSk",
+    "current": [
+      42.6511,
+      -73.761
+    ],
+    "google": [
+      42.6618766,
+      -73.743796
+    ],
+    "distance_m": 1848.0332226534292
+  },
+  {
+    "name": "Equilibrium Brewery",
+    "type": "brewery",
+    "place_id": "ChIJKV4hjk8zw4kReJUMS9kmsaY",
+    "current": [
+      41.455,
+      -74.422
+    ],
+    "google": [
+      41.4445578,
+      -74.4196852
+    ],
+    "distance_m": 1177.038388362645
+  },
+  {
+    "name": "Suarez Family Brewery",
+    "type": "brewery",
+    "place_id": "ChIJTTz58sOY3YkRwVNTY8_v1xE",
+    "current": [
+      42.109,
+      -73.734
+    ],
+    "google": [
+      42.110981,
+      -73.812344
+    ],
+    "distance_m": 6466.423631699451
+  },
+  {
+    "name": "Plan Bee Farm Brewery",
+    "type": "brewery",
+    "place_id": "ChIJbe4oqdU_3YkRKAGcKq7anU8",
+    "current": [
+      41.76,
+      -73.808
+    ],
+    "google": [
+      41.71909710000001,
+      -73.886528
+    ],
+    "distance_m": 7945.987919715831
+  },
+  {
+    "name": "Hudson Valley Brewery",
+    "type": "brewery",
+    "place_id": "ChIJj8DOGGEx3YkRtiDRswEn-uk",
+    "current": [
+      41.9973,
+      -73.8721
+    ],
+    "google": [
+      41.5015261,
+      -73.9630052
+    ],
+    "distance_m": 55640.96420096334
+  },
+  {
+    "name": "Rare Form Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJP2g0RBkP3okRiVAQkC5CzKA",
+    "current": [
+      42.7306,
+      -73.6903
+    ],
+    "google": [
+      42.7285026,
+      -73.690044
+    ],
+    "distance_m": 234.15573878859612
+  },
+  {
+    "name": "Rushing Duck Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJ3azbdAwpw4kRg2rqWM0aWME",
+    "current": [
+      41.3734,
+      -74.3586
+    ],
+    "google": [
+      41.3620328,
+      -74.2694956
+    ],
+    "distance_m": 7542.422738590913
+  },
+  {
+    "name": "Barrier Brewing Co.",
+    "type": "brewery",
+    "place_id": "ChIJN91hFQdvwokRrdfb--i_97U",
+    "current": [
+      40.6364,
+      -73.6537
+    ],
+    "google": [
+      40.5888063,
+      -73.65980669999999
+    ],
+    "distance_m": 5317.2230560757935
+  },
+  {
+    "name": "Crossroads Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJoWJgWtK93YkRlq2zQmUpCFQ",
+    "current": [
+      42.2992,
+      -73.997
+    ],
+    "google": [
+      42.2167307,
+      -73.8729178
+    ],
+    "distance_m": 13724.843383517747
+  },
+  {
+    "name": "Big Ditch Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJU62G4EUS04kRWLcUPix2qpE",
+    "current": [
+      42.8864,
+      -78.8784
+    ],
+    "google": [
+      42.8880772,
+      -78.8709245
+    ],
+    "distance_m": 636.9572279245355
+  },
+  {
+    "name": "Resurgence Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJ_7isEhET04kRw9GsTic7deA",
+    "current": [
+      42.919,
+      -78.8941
+    ],
+    "google": [
+      42.8695957,
+      -78.86862649999999
+    ],
+    "distance_m": 5872.377560290135
+  },
+  {
+    "name": "Prison City Pub & Brewery",
+    "type": "brewery",
+    "place_id": "ChIJcbHzches0IkRrZhtSDlWWqQ",
+    "current": [
+      42.9326,
+      -76.5661
+    ],
+    "google": [
+      42.9318309,
+      -76.56834549999999
+    ],
+    "distance_m": 201.82616575669576
+  },
+  {
+    "name": "Community Beer Works",
+    "type": "brewery",
+    "place_id": "ChIJKfZgumkT04kRyM8l85r9mio",
+    "current": [
+      42.9026,
+      -78.8799
+    ],
+    "google": [
+      42.8986651,
+      -78.8918783
+    ],
+    "distance_m": 1069.2985967563147
+  },
+  {
+    "name": "Swiftwater Brewing Company",
+    "type": "brewery",
+    "place_id": "ChIJQb9FvOO01okRPiKZVPT9wik",
+    "current": [
+      43.1428,
+      -77.6032
+    ],
+    "google": [
+      43.1424151,
+      -77.6119478
+    ],
+    "distance_m": 711.0316819045564
+  },
+  {
+    "name": "Grimm Artisanal Ales (Upstate Taproom)",
+    "type": "brewery",
+    "place_id": "ChIJO0onUVNZwokRAuTHAAO2OA0",
+    "current": [
+      42.403,
+      -73.705
+    ],
+    "google": [
+      40.7142805,
+      -73.936528
+    ],
+    "distance_m": 188762.37990735672
+  },
+  {
+    "name": "Phoenicia Diner",
+    "type": "restaurant",
+    "place_id": "ChIJDQ64ybr43IkRrTaCpz0syFQ",
+    "current": [
+      42.0828,
+      -74.3155
+    ],
+    "google": [
+      42.0710505,
+      -74.3077531
+    ],
+    "distance_m": 1454.5488390245782
+  },
+  {
+    "name": "Cochecton Pump House",
+    "type": "restaurant",
+    "place_id": "ChIJF7Wl6dNX24kRn6ztBiO53VI",
+    "current": [
+      41.7175,
+      -75.0489
+    ],
+    "google": [
+      41.6850422,
+      -75.04778619999999
+    ],
+    "distance_m": 3610.3270460183912
+  },
+  {
+    "name": "Gracie’s Luncheonette",
+    "type": "restaurant",
+    "place_id": "ChIJ2_wSAjK83YkRwv4qMsr1-9s",
+    "current": [
+      42.2422,
+      -73.8949
+    ],
+    "google": [
+      42.253562,
+      -73.8947084
+    ],
+    "distance_m": 1263.49518549469
+  },
+  {
+    "name": "Lil' Deb's Oasis",
+    "type": "restaurant",
+    "place_id": "ChIJ3dZzhSeU3YkRfKEwhHXup-w",
+    "current": [
+      42.253,
+      -73.7919
+    ],
+    "google": [
+      42.2472782,
+      -73.7807923
+    ],
+    "distance_m": 1113.8489035505704
+  },
+  {
+    "name": "Roscoe Diner",
+    "type": "restaurant",
+    "place_id": "ChIJXekLV4We3IkRXQTw5pR0OBE",
+    "current": [
+      41.933,
+      -74.9137
+    ],
+    "google": [
+      41.9308339,
+      -74.9090858
+    ],
+    "distance_m": 451.33796202665974
+  },
+  {
+    "name": "Deer Mountain Inn",
+    "type": "restaurant",
+    "place_id": "ChIJQ6v75v2x3YkRwPpalS4DT_s",
+    "current": [
+      42.2142,
+      -74.0803
+    ],
+    "google": [
+      42.2207973,
+      -74.1193351
+    ],
+    "distance_m": 3297.217667089443
+  },
+  {
+    "name": "Brushland Eating House",
+    "type": "restaurant",
+    "place_id": "ChIJZ535hi173IkR0GgCgTlWdOY",
+    "current": [
+      42.1928,
+      -74.7872
+    ],
+    "google": [
+      42.2622347,
+      -74.7840167
+    ],
+    "distance_m": 7725.234090573042
+  },
+  {
+    "name": "Peekamoose Restaurant",
+    "type": "restaurant",
+    "place_id": "ChIJx-od54BY3IkR7dx2QbSxCnE",
+    "current": [
+      41.984,
+      -74.4326
+    ],
+    "google": [
+      42.1075361,
+      -74.4504917
+    ],
+    "distance_m": 13815.807589998272
+  },
+  {
+    "name": "West Taghkanic Diner",
+    "type": "restaurant",
+    "place_id": "ChIJR9oba6ib3YkRgl8lUXKud9o",
+    "current": [
+      42.099,
+      -73.7305
+    ],
+    "google": [
+      42.1195294,
+      -73.7173729
+    ],
+    "distance_m": 2526.587469553635
+  },
+  {
+    "name": "The Amsterdam",
+    "type": "restaurant",
+    "place_id": "ChIJiyw6JkgM3YkRJPE6_u08-pw",
+    "current": [
+      42.0372,
+      -73.9115
+    ],
+    "google": [
+      41.9262769,
+      -73.91225709999999
+    ],
+    "distance_m": 12334.24472447945
+  },
+  {
+    "name": "Terrapin Restaurant",
+    "type": "restaurant",
+    "place_id": "ChIJJWLiADgM3YkRvu4eiB5eucY",
+    "current": [
+      41.9273,
+      -73.9128
+    ],
+    "google": [
+      41.92828,
+      -73.912547
+    ],
+    "distance_m": 110.96284855210136
+  },
+  {
+    "name": "The Roundhouse",
+    "type": "restaurant",
+    "place_id": "ChIJhwhP1mAx3YkRO3FXmFj7Dkk",
+    "current": [
+      41.5069,
+      -73.9693
+    ],
+    "google": [
+      41.5025939,
+      -73.962295
+    ],
+    "distance_m": 754.6813706343792
+  },
+  {
+    "name": "Cochecton Fire Station",
+    "type": "restaurant",
+    "place_id": "ChIJ7z3yLqRR24kRAPsowCXmI18",
+    "current": [
+      41.707,
+      -75.052
+    ],
+    "google": [
+      41.7078582,
+      -75.0619481
+    ],
+    "distance_m": 831.3147694904421
+  },
+  {
+    "name": "Prospect at Scribner’s Lodge",
+    "type": "restaurant",
+    "place_id": "ChIJn-N_sT2t3YkRcbsjslnnOIY",
+    "current": [
+      42.2053,
+      -74.2145
+    ],
+    "google": [
+      42.203389,
+      -74.19676319999999
+    ],
+    "distance_m": 1476.3182438996516
+  },
+  {
+    "name": "Troutbeck Dining Room",
+    "type": "restaurant",
+    "place_id": "ChIJh-gIjv183YkRqrSPG325fgI",
+    "current": [
+      41.7906,
+      -73.5479
+    ],
+    "google": [
+      41.854537,
+      -73.51648519999999
+    ],
+    "distance_m": 7571.061639228408
+  },
+  {
+    "name": "The DeBruce",
+    "type": "restaurant",
+    "place_id": "ChIJIYyfKbWW3IkRgDTzL21PWmU",
+    "current": [
+      41.8504,
+      -74.7897
+    ],
+    "google": [
+      41.9105274,
+      -74.7472513
+    ],
+    "distance_m": 7553.207360708194
+  },
+  {
+    "name": "The Maker Restaurant",
+    "type": "restaurant",
+    "place_id": "ChIJpSEo2QqV3YkRXbpSDtiGHSM",
+    "current": [
+      42.2523,
+      -73.7818
+    ],
+    "google": [
+      42.2528966,
+      -73.79084449999999
+    ],
+    "distance_m": 747.3586564559424
+  },
+  {
+    "name": "Wm. Farmer and Sons",
+    "type": "restaurant",
+    "place_id": "ChIJ4cM-H9OV3YkRdzbbJJKMOX0",
+    "current": [
+      42.2536,
+      -73.7931
+    ],
+    "google": [
+      42.2557142,
+      -73.79628249999999
+    ],
+    "distance_m": 351.95526781395597
+  },
+  {
+    "name": "Rivertown Lodge Tavern",
+    "type": "restaurant",
+    "place_id": "ChIJLV4xfnCX3YkRBjDCgpfsSgM",
+    "current": [
+      42.2527,
+      -73.7885
+    ],
+    "google": [
+      42.24639270000001,
+      -73.78276439999999
+    ],
+    "distance_m": 845.4279058930508
+  },
+  {
+    "name": "Ole Savannah Southern Table & Bar",
+    "type": "restaurant",
+    "place_id": "ChIJleW1XVIO3YkRoXhKN0uof6w",
+    "current": [
+      41.9223,
+      -73.9856
+    ],
+    "google": [
+      41.9196284,
+      -73.97958430000001
+    ],
+    "distance_m": 579.6315477735375
+  },
+  {
+    "name": "Diamond Mills Tavern",
+    "type": "restaurant",
+    "place_id": "ChIJAQCQyyWn3YkRVx6NLTtTsGY",
+    "current": [
+      42.0776,
+      -73.9471
+    ],
+    "google": [
+      42.07268639999999,
+      -73.95036189999999
+    ],
+    "distance_m": 609.0972676116269
+  },
+  {
+    "name": "Hotel Kinsley (Restaurant Kinsley)",
+    "type": "restaurant",
+    "place_id": "ChIJS8bIzbcP3YkRwlV3XHRVjEA",
+    "current": [
+      41.9254,
+      -73.9952
+    ],
+    "google": [
+      41.9338881,
+      -74.02002829999999
+    ],
+    "distance_m": 2260.406583729198
+  },
+  {
+    "name": "The Heron",
+    "type": "restaurant",
+    "place_id": "ChIJUf-91n9T24kR0-4vSw5HrS4",
+    "current": [
+      41.6026,
+      -75.0611
+    ],
+    "google": [
+      41.6085952,
+      -75.0613802
+    ],
+    "distance_m": 667.0427810829322
+  },
+  {
+    "name": "Callicoon Hills (The Conover Club)",
+    "type": "restaurant",
+    "place_id": "ChIJeS-APgOh3IkRxu_814m8Ob4",
+    "current": [
+      41.7687,
+      -74.9467
+    ],
+    "google": [
+      41.8401783,
+      -74.94623109999999
+    ],
+    "distance_m": 7948.119351866257
+  },
+  {
+    "name": "North Branch Inn Restaurant & Bar Room",
+    "type": "restaurant",
+    "place_id": "ChIJeTsJCTdf24kRrfnEn_i2V74",
+    "current": [
+      41.8464,
+      -74.9065
+    ],
+    "google": [
+      41.8061094,
+      -74.9925998
+    ],
+    "distance_m": 8424.226815615959
+  },
+  {
+    "name": "Kenoza Hall Restaurant",
+    "type": "restaurant",
+    "place_id": "ChIJ0_0OMqin3IkRUGDYt_q7_Xo",
+    "current": [
+      41.6757,
+      -74.9689
+    ],
+    "google": [
+      41.7281455,
+      -74.9517288
+    ],
+    "distance_m": 6003.383373566503
+  },
+  {
+    "name": "Bluebird Hunter Tavern",
+    "type": "restaurant",
+    "place_id": "ChIJq6q64jyt3YkRu1uBd-IBiM4",
+    "current": [
+      42.2083,
+      -74.2233
+    ],
+    "google": [
+      42.2020045,
+      -74.1974316
+    ],
+    "distance_m": 2242.750849110283
+  },
+  {
+    "name": "Hutton Brickyards (Seasonal Dining)",
+    "type": "restaurant",
+    "place_id": "ChIJUwKzMw8P3YkR94e0Y7KRbyE",
+    "current": [
+      41.938,
+      -73.9725
+    ],
+    "google": [
+      41.932923,
+      -73.96678519999999
+    ],
+    "distance_m": 736.3159306439602
+  },
+  {
+    "name": "American Bounty (CIA)",
+    "type": "restaurant",
+    "place_id": "ChIJey_Z8OAV3YkRl5QmS6H-qeQ",
+    "current": [
+      41.7453,
+      -73.9359
+    ],
+    "google": [
+      41.7455155,
+      -73.9328702
+    ],
+    "distance_m": 252.5030978912907
+  },
+  {
+    "name": "The View (Mirror Lake Inn)",
+    "type": "restaurant",
+    "place_id": "ChIJ-3AurpniykwRhwYKy6Gdr84",
+    "current": [
+      44.2809,
+      -73.9839
+    ],
+    "google": [
+      44.293927,
+      -73.98263109999999
+    ],
+    "distance_m": 1452.053353504093
+  },
+  {
+    "name": "Roycroft Inn Restaurant",
+    "type": "restaurant",
+    "place_id": "ChIJC8JNVNGn04kRfwH73YiAQwc",
+    "current": [
+      42.7679,
+      -78.612
+    ],
+    "google": [
+      42.7669454,
+      -78.61754789999999
+    ],
+    "distance_m": 465.1482139536776
+  },
+  {
+    "name": "Radio Social",
+    "type": "restaurant",
+    "place_id": "ChIJsTO_63_K1okR5NDixR-ikKw",
+    "current": [
+      43.1752,
+      -77.6122
+    ],
+    "google": [
+      43.1504168,
+      -77.5610609
+    ],
+    "distance_m": 4979.757657038032
+  },
+  {
+    "name": "The Cub Room",
+    "type": "restaurant",
+    "place_id": "ChIJ1wDTEBu11okRXrnQQp3SP0M",
+    "current": [
+      43.1438,
+      -77.6043
+    ],
+    "google": [
+      43.1430156,
+      -77.59985499999999
+    ],
+    "distance_m": 371.032658834556
+  },
+  {
+    "name": "Good Luck",
+    "type": "restaurant",
+    "place_id": "ChIJG-nPopi11okRlRujsz5PfRE",
+    "current": [
+      43.161,
+      -77.5887
+    ],
+    "google": [
+      43.1579538,
+      -77.5841054
+    ],
+    "distance_m": 503.60591443949727
+  },
+  {
+    "name": "Genesee Brew House Restaurant",
+    "type": "restaurant",
+    "place_id": "ChIJsV5Z9VG01okRe3DPZHBhekk",
+    "current": [
+      43.168,
+      -77.6119
+    ],
+    "google": [
+      43.163626,
+      -77.6146588
+    ],
+    "distance_m": 535.3645479865633
+  },
+  {
+    "name": "FLX Table",
+    "type": "restaurant",
+    "place_id": "ChIJW4rY7hbF0IkRoFY6xW1bKMw",
+    "current": [
+      42.868,
+      -76.9859
+    ],
+    "google": [
+      42.8675513,
+      -76.9836083
+    ],
+    "distance_m": 193.31746601270302
+  },
+  {
+    "name": "Kindred Fare",
+    "type": "restaurant",
+    "place_id": "ChIJWfRvk9XE0IkRwgoAybxKdo8",
+    "current": [
+      42.8622,
+      -76.993
+    ],
+    "google": [
+      42.8570029,
+      -77.0070739
+    ],
+    "distance_m": 1284.4808026942799
+  },
+  {
+    "name": "1833 Kitchen & Bar (Inns of Aurora)",
+    "type": "restaurant",
+    "place_id": "ChIJj1Pp_QS90IkRrleskvclhaY",
+    "current": [
+      42.7458,
+      -76.7027
+    ],
+    "google": [
+      42.75455849999999,
+      -76.70288839999999
+    ],
+    "distance_m": 974.0222523817298
+  },
+  {
+    "name": "Belhurst Castle (Edgar’s)",
+    "type": "restaurant",
+    "place_id": "ChIJGVfl--3E0IkRX4ompBHlECQ",
+    "current": [
+      42.8459,
+      -76.9872
+    ],
+    "google": [
+      42.8388948,
+      -76.97482219999999
+    ],
+    "distance_m": 1274.8284136499556
+  },
+  {
+    "name": "Tailor & The Cook",
+    "type": "restaurant",
+    "place_id": "ChIJDV2TACNH2YkRc8rDJXS4azk",
+    "current": [
+      43.1016,
+      -75.2292
+    ],
+    "google": [
+      43.104257,
+      -75.2240679
+    ],
+    "distance_m": 510.7746775033759
+  },
+  {
+    "name": "City Beer Hall",
+    "type": "restaurant",
+    "place_id": "ChIJoVmR9CMK3okRM47bivOAQoA",
+    "current": [
+      42.6507,
+      -73.7502
+    ],
+    "google": [
+      42.6496204,
+      -73.754931
+    ],
+    "distance_m": 405.11659885147907
+  },
+  {
+    "name": "The Mouzon House",
+    "type": "restaurant",
+    "place_id": "ChIJv1wEFtg53okR4LQtI-Lm1_Q",
+    "current": [
+      43.0808,
+      -73.7864
+    ],
+    "google": [
+      43.08472219999999,
+      -73.7819444
+    ],
+    "distance_m": 566.6976688052436
+  },
+  {
+    "name": "The Amsterdam (Saratoga satellite)",
+    "type": "restaurant",
+    "place_id": "ChIJ80M3-ugJxkcRCFAyQobPpRM",
+    "current": [
+      43.0839,
+      -73.7856
+    ],
+    "google": [
+      52.3640585,
+      4.8834947
+    ],
+    "distance_m": 5677241.7281440785
+  },
+  {
+    "name": "Fishkill Farms",
+    "type": "orchard",
+    "place_id": "ChIJbUwNsDRI3YkR8aUEiWs_1MU",
+    "current": [
+      41.5208333,
+      -73.8233333
+    ],
+    "google": [
+      41.5180421,
+      -73.82306009999999
+    ],
+    "distance_m": 311.19960811881054
+  },
+  {
+    "name": "Wilkens Fruit & Fir Farm",
+    "type": "orchard",
+    "place_id": "ChIJZXLvw863wokR2JyXrb1MnAw",
+    "current": [
+      41.277338816,
+      -73.827073574
+    ],
+    "google": [
+      41.2780064,
+      -73.825319
+    ],
+    "distance_m": 164.34194548745157
+  },
+  {
+    "name": "Orchards of Concklin",
+    "type": "orchard",
+    "place_id": "ChIJO088Aa7cwokR8UR9tT5rG9U",
+    "current": [
+      41.1869,
+      -74.0452
+    ],
+    "google": [
+      41.1786064,
+      -74.0320457
+    ],
+    "distance_m": 1436.0761854092386
+  },
+  {
+    "name": "Masker Orchards",
+    "type": "orchard",
+    "place_id": "ChIJm1OL23kkw4kRY4nd7KwGHRo",
+    "current": [
+      41.2406096,
+      -74.3489671
+    ],
+    "google": [
+      41.239093,
+      -74.3457698
+    ],
+    "distance_m": 316.0832163433981
+  },
+  {
+    "name": "Apple Ridge Orchards",
+    "type": "orchard",
+    "place_id": "ChIJ9R6QZiIlw4kRFpVPNnUQzdk",
+    "current": [
+      41.2797,
+      -74.3756
+    ],
+    "google": [
+      41.2908643,
+      -74.3831829
+    ],
+    "distance_m": 1393.7534438698117
+  },
+  {
+    "name": "Greig Farm",
+    "type": "orchard",
+    "place_id": "ChIJW0ukxAmg3YkRUGLQv_Yc2Gw",
+    "current": [
+      42.0243194,
+      -73.8562917
+    ],
+    "google": [
+      42.02818329999999,
+      -73.8538773
+    ],
+    "distance_m": 473.6746720486571
+  },
+  {
+    "name": "Twin Star Orchards",
+    "type": "orchard",
+    "place_id": "ChIJVZoPWRMY3YkRBbKNNVrLqPw",
+    "current": [
+      41.745453,
+      -74.090012
+    ],
+    "google": [
+      41.7572604,
+      -74.04958839999999
+    ],
+    "distance_m": 3601.2409316839066
+  },
+  {
+    "name": "Barton Orchards",
+    "type": "orchard",
+    "place_id": "ChIJIZmdtHxE3YkRY9bepNNHq2g",
+    "current": [
+      41.6086016,
+      -73.7057222
+    ],
+    "google": [
+      41.607343,
+      -73.7054021
+    ],
+    "distance_m": 142.45792524784648
+  },
+  {
+    "name": "Harbes Orchard (North Fork)",
+    "type": "orchard",
+    "place_id": "ChIJEboXVgKM6IkRcypwNG26FBM",
+    "current": [
+      40.9656,
+      -72.6609
+    ],
+    "google": [
+      40.978909,
+      -72.6039461
+    ],
+    "distance_m": 5005.352009708628
+  },
+  {
+    "name": "Lawrence Farms Orchards",
+    "type": "orchard",
+    "place_id": "ChIJtUotWxww3YkRpx3IfbhQLVs",
+    "current": [
+      41.572088,
+      -74.025382
+    ],
+    "google": [
+      41.574655,
+      -74.02487119999999
+    ],
+    "distance_m": 288.58274529297626
+  },
+  {
+    "name": "Rose Hill Farm",
+    "type": "orchard",
+    "place_id": "ChIJySsB7LYK3YkRV3SyLPKEKL4",
+    "current": [
+      42.007824,
+      -73.852215
+    ],
+    "google": [
+      42.0093311,
+      -73.84949139999999
+    ],
+    "distance_m": 280.57589893577244
+  },
+  {
+    "name": "Prospect Hill Orchards (Hilltop)",
+    "type": "orchard",
+    "place_id": "ChIJXctnp3g83YkR_3WaPcgoGwU",
+    "current": [
+      41.655942,
+      -73.976127
+    ],
+    "google": [
+      41.6670029,
+      -73.9933614
+    ],
+    "distance_m": 1887.4458400435506
+  },
+  {
+    "name": "Wright's Farm",
+    "type": "orchard",
+    "place_id": "ChIJeRc_77om3YkRi8ARdHWVEj4",
+    "current": [
+      41.6729,
+      -74.1598
+    ],
+    "google": [
+      41.66738429999999,
+      -74.1375185
+    ],
+    "distance_m": 1949.6999174541118
+  },
+  {
+    "name": "Soons Orchards (U-Pick Orchard)",
+    "type": "orchard",
+    "place_id": "ChIJ5VfFQgAuw4kRNXhCq9dWTd0",
+    "current": [
+      41.3813,
+      -74.3968
+    ],
+    "google": [
+      41.4026718,
+      -74.4036622
+    ],
+    "distance_m": 2444.408016583423
+  },
+  {
+    "name": "Outhouse Orchards",
+    "type": "orchard",
+    "place_id": "ChIJfei--GutwokRJ-e1ch6ip3g",
+    "current": [
+      41.3359,
+      -73.6406
+    ],
+    "google": [
+      41.3467189,
+      -73.6309866
+    ],
+    "distance_m": 1446.144311226012
+  },
+  {
+    "name": "Weed Orchards & Winery",
+    "type": "orchard",
+    "place_id": "ChIJLyrEZB473YkRFkOx4bcPJGs",
+    "current": [
+      41.6146,
+      -73.9803
+    ],
+    "google": [
+      41.623137,
+      -74.0009154
+    ],
+    "distance_m": 1959.049108194818
+  },
+  {
+    "name": "Minard's Family Farm",
+    "type": "orchard",
+    "place_id": "ChIJRceB4hgj3YkReyZIOcHLYog",
+    "current": [
+      41.6749,
+      -74.038
+    ],
+    "google": [
+      41.7086397,
+      -74.0695538
+    ],
+    "distance_m": 4575.976776341457
+  },
+  {
+    "name": "Indian Ladder Farms",
+    "type": "orchard",
+    "place_id": "ChIJy9vCWYLY3YkRiFl0KM-PU8Y",
+    "current": [
+      42.653,
+      -74.022
+    ],
+    "google": [
+      42.655366,
+      -73.97335199999999
+    ],
+    "distance_m": 3987.0764850589694
+  },
+  {
+    "name": "Samascott Orchards",
+    "type": "orchard",
+    "place_id": "ChIJ0Rpn9Yju3YkRSrbeGbj-MAM",
+    "current": [
+      42.3952,
+      -73.7056
+    ],
+    "google": [
+      42.3988457,
+      -73.70410389999999
+    ],
+    "distance_m": 423.5904151834172
+  },
+  {
+    "name": "Saratoga Apple",
+    "type": "orchard",
+    "place_id": "ChIJT5BYHOYu3okR9EbbjFmTIsE",
+    "current": [
+      43.0907,
+      -73.6167
+    ],
+    "google": [
+      43.105695,
+      -73.58952339999999
+    ],
+    "distance_m": 2765.672592990705
+  },
+  {
+    "name": "Golden Harvest Farms",
+    "type": "orchard",
+    "place_id": "ChIJM3wi87rv3YkRtEMGFDTrZUg",
+    "current": [
+      42.4302,
+      -73.6823
+    ],
+    "google": [
+      42.4353744,
+      -73.6865542
+    ],
+    "distance_m": 673.012781745883
+  },
+  {
+    "name": "Fix Brothers Fruit Farm",
+    "type": "orchard",
+    "place_id": "ChIJQcoOjOWX3YkRMVQVFEgsnj8",
+    "current": [
+      42.2324,
+      -73.7396
+    ],
+    "google": [
+      42.1890551,
+      -73.83051499999999
+    ],
+    "distance_m": 8904.82902934439
+  },
+  {
+    "name": "Yonder Fruit Farms",
+    "type": "orchard",
+    "place_id": "ChIJaySqnMTv3YkRuvS4e0aUPyA",
+    "current": [
+      42.412,
+      -73.68
+    ],
+    "google": [
+      42.4516637,
+      -73.6942977
+    ],
+    "distance_m": 4563.832953381756
+  },
+  {
+    "name": "Stone Ridge Orchard",
+    "type": "orchard",
+    "place_id": "ChIJvUryiR4c3YkRMaqvMTTngnc",
+    "current": [
+      41.8599,
+      -74.1449
+    ],
+    "google": [
+      41.838664,
+      -74.1485038
+    ],
+    "distance_m": 2380.127664565282
+  },
+  {
+    "name": "Lewin Farms",
+    "type": "orchard",
+    "place_id": "ChIJFfArEk5n6IkRtsa8BhztdPo",
+    "current": [
+      40.9424,
+      -72.748
+    ],
+    "google": [
+      40.9471371,
+      -72.81008489999999
+    ],
+    "distance_m": 5241.057244449498
+  },
+  {
+    "name": "Wickham's Fruit Farm",
+    "type": "orchard",
+    "place_id": "ChIJXeGjPVCQ6IkRR-JIBvbB1Vk",
+    "current": [
+      41.0106,
+      -72.4646
+    ],
+    "google": [
+      41.0121351,
+      -72.4840136
+    ],
+    "distance_m": 1637.8251775059562
+  },
+  {
+    "name": "The Milk Pail U‑Pick",
+    "type": "orchard",
+    "place_id": "ChIJ-z9yoDq-6IkR68I8eP-Ie2M",
+    "current": [
+      40.8968,
+      -72.3657
+    ],
+    "google": [
+      40.9085078,
+      -72.32028489999999
+    ],
+    "distance_m": 4032.7626160709733
+  },
+  {
+    "name": "Beak & Skiff Apple Orchards",
+    "type": "orchard",
+    "place_id": "ChIJkbBgLV8c2okRHnSkqSCGN74",
+    "current": [
+      42.9331,
+      -76.171
+    ],
+    "google": [
+      42.903087,
+      -76.22279
+    ],
+    "distance_m": 5378.039147950494
+  },
+  {
+    "name": "Bowman Orchards",
+    "type": "orchard",
+    "place_id": "ChIJU-1VW8wS3okR4NTk-IEd-E0",
+    "current": [
+      42.8742,
+      -73.7733
+    ],
+    "google": [
+      42.8168812,
+      -73.8385153
+    ],
+    "distance_m": 8300.040547852312
+  }
+]

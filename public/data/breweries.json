@@ -1,253 +1,302 @@
 [
   {
     "name": "Ommegang Brewery",
-    "lat": 42.7022,
-    "lng": -74.9226,
+    "lat": 42.6264642,
+    "lng": -74.9445514,
     "location": "Cooperstown, NY",
     "founded": 1997,
     "specialty": "Belgian-style ales",
     "visitor_experience": "Tours, tastings, café, concerts, and seasonal events.",
-    "description": "A renowned Belgian-inspired brewery with scenic grounds and a major role in the upstate craft beer scene."
+    "description": "A renowned Belgian-inspired brewery with scenic grounds and a major role in the upstate craft beer scene.",
+    "place_id": "ChIJvQ37ngMH3IkR5IUUwPQdxX4",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvQ37ngMH3IkR5IUUwPQdxX4"
   },
   {
     "name": "Saranac Brewery (Matt Brewing Company)",
-    "lat": 43.1009,
-    "lng": -75.2313,
+    "lat": 43.10444589999999,
+    "lng": -75.2455361,
     "location": "Utica, NY",
     "founded": 1888,
     "specialty": "Wide variety including lagers, IPAs, and root beer",
     "visitor_experience": "Historic tours, tastings, beer garden, and concerts.",
-    "description": "One of the oldest breweries in New York State, known for its rich history and wide-ranging beer portfolio."
+    "description": "One of the oldest breweries in New York State, known for its rich history and wide-ranging beer portfolio.",
+    "place_id": "ChIJRUoXCYxH2YkRZFpGqjlzUuk",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRUoXCYxH2YkRZFpGqjlzUuk"
   },
   {
     "name": "Genesee Brewing Company",
-    "lat": 43.1667,
-    "lng": -77.6126,
+    "lat": 43.163626,
+    "lng": -77.6146588,
     "location": "Rochester, NY",
     "founded": 1878,
     "specialty": "Classic American lagers and Cream Ale",
     "visitor_experience": "Brew house museum, taproom, and scenic views of High Falls.",
-    "description": "A staple of NY beer heritage, producing iconic Cream Ale and accessible classics."
+    "description": "A staple of NY beer heritage, producing iconic Cream Ale and accessible classics.",
+    "place_id": "ChIJsV5Z9VG01okRe3DPZHBhekk",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsV5Z9VG01okRe3DPZHBhekk"
   },
   {
     "name": "Brown’s Brewing Company",
-    "lat": 42.7323,
-    "lng": -73.6901,
+    "lat": 42.73573589999999,
+    "lng": -73.6875501,
     "location": "Troy, NY",
     "founded": 1993,
     "specialty": "Ales and lagers with seasonal rotations",
     "visitor_experience": "Brewpub with Hudson River views, live music, and full dining menu.",
-    "description": "Among the pioneers of the craft beer renaissance in the Capital Region."
+    "description": "Among the pioneers of the craft beer renaissance in the Capital Region.",
+    "place_id": "ChIJrfIU5aUP3okRRq4zNu2eFkk",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJrfIU5aUP3okRRq4zNu2eFkk"
   },
   {
     "name": "Druthers Brewing Company",
-    "lat": 43.0848,
-    "lng": -73.7846,
+    "lat": 43.0808898,
+    "lng": -73.7860269,
     "location": "Saratoga Springs, NY",
     "founded": 2012,
     "specialty": "IPAs, lagers, and experimental seasonal brews",
     "visitor_experience": "Brewpubs in Saratoga, Albany, and Schenectady with dining and events.",
-    "description": "A modern brewpub group with popular community-focused spaces across upstate."
+    "description": "A modern brewpub group with popular community-focused spaces across upstate.",
+    "place_id": "ChIJP-GoINE53okRMhKuV5jYycY",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP-GoINE53okRMhKuV5jYycY"
   },
   {
     "name": "Southern Tier Brewing Company",
-    "lat": 42.0981,
-    "lng": -79.2587,
+    "lat": 42.0889244,
+    "lng": -79.3491744,
     "location": "Lakewood, NY",
     "founded": 2002,
     "specialty": "IPAs, stouts, and seasonal series (Pumpking, 2XIPA)",
     "visitor_experience": "Large taproom, tours, and seasonal outdoor events.",
-    "description": "Nationally recognized for bold IPAs and dessert-inspired stouts."
+    "description": "Nationally recognized for bold IPAs and dessert-inspired stouts.",
+    "place_id": "ChIJbYsFSPyr0okRo5bTWrIGxoA",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbYsFSPyr0okRo5bTWrIGxoA"
   },
   {
     "name": "Ithaca Beer Company",
-    "lat": 42.4152,
-    "lng": -76.545,
+    "lat": 42.4164137,
+    "lng": -76.5351988,
     "location": "Ithaca, NY",
     "founded": 1998,
     "specialty": "Flower Power IPA and rotating craft lineup",
     "visitor_experience": "Taproom, beer garden, brewery tours, and farm-to-table restaurant.",
-    "description": "One of NY’s best-known craft breweries, rooted in the Finger Lakes region."
+    "description": "One of NY’s best-known craft breweries, rooted in the Finger Lakes region.",
+    "place_id": "ChIJqZyIGdmA0IkRiFPSkwebidY",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJqZyIGdmA0IkRiFPSkwebidY"
   },
   {
     "name": "Woodstock Brewing",
-    "lat": 42.0315,
-    "lng": -74.2795,
+    "lat": 42.0627376,
+    "lng": -74.3073886,
     "location": "Phoenicia, NY",
     "founded": 2018,
     "specialty": "IPAs, sours, and creative small-batch beers",
     "visitor_experience": "Taproom with rotating taps, food, and live events.",
-    "description": "A vibrant Catskills brewery with a community feel and adventurous beer styles."
+    "description": "A vibrant Catskills brewery with a community feel and adventurous beer styles.",
+    "place_id": "ChIJD7Qql7L43IkR4868BkTTOlM",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJD7Qql7L43IkR4868BkTTOlM"
   },
   {
     "name": "Common Roots Brewing Company",
-    "lat": 43.3093,
-    "lng": -73.6493,
+    "lat": 43.2952392,
+    "lng": -73.6365465,
     "location": "South Glens Falls, NY",
     "founded": 2014,
     "specialty": "IPAs, lagers, and mixed-fermentation beers",
     "visitor_experience": "Taproom, food service, and events; rebuilt after 2019 fire.",
-    "description": "Known for resilience and innovation, with a strong community ethos."
+    "description": "Known for resilience and innovation, with a strong community ethos.",
+    "place_id": "ChIJQQkGpfbR34kRBSVPp1cqRpQ",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQQkGpfbR34kRBSVPp1cqRpQ"
   },
   {
     "name": "Nine Pin Ciderworks",
-    "lat": 42.6511,
-    "lng": -73.761,
+    "lat": 42.6618766,
+    "lng": -73.743796,
     "location": "Albany, NY",
     "founded": 2013,
     "specialty": "Hard cider from NY apples",
     "visitor_experience": "Taproom with rotating ciders, tours, and food pairings.",
-    "description": "New York’s first licensed farm cidery, pioneering craft cider culture in the state."
+    "description": "New York’s first licensed farm cidery, pioneering craft cider culture in the state.",
+    "place_id": "ChIJlRNexYEJ3okRll4mvPcFmSk",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlRNexYEJ3okRll4mvPcFmSk"
   },
   {
     "name": "Equilibrium Brewery",
-    "lat": 41.455,
-    "lng": -74.422,
+    "lat": 41.4445578,
+    "lng": -74.4196852,
     "location": "Middletown, NY",
     "founded": 2016,
     "specialty": "Hazy IPAs and stouts",
     "visitor_experience": "Taproom, beer garden, and food truck rotations.",
-    "description": "Widely acclaimed for juicy, hazy IPAs and innovative dark beers."
+    "description": "Widely acclaimed for juicy, hazy IPAs and innovative dark beers.",
+    "place_id": "ChIJKV4hjk8zw4kReJUMS9kmsaY",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJKV4hjk8zw4kReJUMS9kmsaY"
   },
   {
     "name": "Suarez Family Brewery",
-    "lat": 42.109,
-    "lng": -73.734,
+    "lat": 42.110981,
+    "lng": -73.812344,
     "location": "Livingston, NY",
     "founded": 2016,
     "specialty": "Pilsners, lagers, farmhouse ales",
     "visitor_experience": "Relaxed tasting room with pastoral Hudson Valley setting.",
-    "description": "Known for delicate, balanced beers; one of NY’s most respected small breweries."
+    "description": "Known for delicate, balanced beers; one of NY’s most respected small breweries.",
+    "place_id": "ChIJTTz58sOY3YkRwVNTY8_v1xE",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTTz58sOY3YkRwVNTY8_v1xE"
   },
   {
     "name": "Plan Bee Farm Brewery",
-    "lat": 41.76,
-    "lng": -73.808,
+    "lat": 41.71909710000001,
+    "lng": -73.886528,
     "location": "Poughkeepsie, NY",
     "founded": 2013,
     "specialty": "Farmhouse ales with 100% NY ingredients",
     "visitor_experience": "Farm-based taproom with outdoor seating and events.",
-    "description": "Dedicated to using only NY-grown ingredients, with a strong terroir focus."
+    "description": "Dedicated to using only NY-grown ingredients, with a strong terroir focus.",
+    "place_id": "ChIJbe4oqdU_3YkRKAGcKq7anU8",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbe4oqdU_3YkRKAGcKq7anU8"
   },
   {
     "name": "Hudson Valley Brewery",
-    "lat": 41.9973,
-    "lng": -73.8721,
+    "lat": 41.5015261,
+    "lng": -73.9630052,
     "location": "Beacon, NY",
     "founded": 2016,
     "specialty": "Sour IPAs and experimental ales",
     "visitor_experience": "Industrial-chic taproom with rotating beers and art shows.",
-    "description": "Renowned for pushing boundaries with sour IPAs and fruited sours."
+    "description": "Renowned for pushing boundaries with sour IPAs and fruited sours.",
+    "place_id": "ChIJj8DOGGEx3YkRtiDRswEn-uk",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj8DOGGEx3YkRtiDRswEn-uk"
   },
   {
     "name": "Catskill Brewery",
-    "lat": 41.8559,
-    "lng": -74.4436,
+    "lat": 41.9067953,
+    "lng": -74.8244409,
     "location": "Livingston Manor, NY",
     "founded": 2014,
     "specialty": "IPAs, pilsners, and seasonal ales",
     "visitor_experience": "Eco-friendly brewery with rustic tasting room.",
-    "description": "A Catskills favorite with an environmentally sustainable ethos."
+    "description": "A Catskills favorite with an environmentally sustainable ethos.",
+    "place_id": "ChIJO6QEAqGZ3IkREsSJipJtWfg",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJO6QEAqGZ3IkREsSJipJtWfg"
   },
   {
     "name": "Rare Form Brewing Company",
-    "lat": 42.7306,
-    "lng": -73.6903,
+    "lat": 42.7285026,
+    "lng": -73.690044,
     "location": "Troy, NY",
     "founded": 2014,
     "specialty": "Experimental ales and lagers",
     "visitor_experience": "Eclectic taproom in downtown Troy.",
-    "description": "Creative brewery exploring unique flavor combinations and styles."
+    "description": "Creative brewery exploring unique flavor combinations and styles.",
+    "place_id": "ChIJP2g0RBkP3okRiVAQkC5CzKA",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP2g0RBkP3okRiVAQkC5CzKA"
   },
   {
     "name": "Rushing Duck Brewing Company",
-    "lat": 41.3734,
-    "lng": -74.3586,
+    "lat": 41.3620328,
+    "lng": -74.2694956,
     "location": "Chester, NY",
     "founded": 2012,
     "specialty": "IPAs, porters, and Belgian styles",
     "visitor_experience": "Taproom with rotating food trucks and events.",
-    "description": "A Hudson Valley staple with a loyal following for bold, flavorful beers."
+    "description": "A Hudson Valley staple with a loyal following for bold, flavorful beers.",
+    "place_id": "ChIJ3azbdAwpw4kRg2rqWM0aWME",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3azbdAwpw4kRg2rqWM0aWME"
   },
   {
     "name": "Barrier Brewing Co.",
-    "lat": 40.6364,
-    "lng": -73.6537,
+    "lat": 40.5888063,
+    "lng": -73.65980669999999,
     "location": "Oceanside, NY (Long Island)",
     "founded": 2009,
     "specialty": "IPAs, pale ales, and lagers",
     "visitor_experience": "Taproom and limited tours.",
-    "description": "One of Long Island’s most respected craft breweries with broad distribution."
+    "description": "One of Long Island’s most respected craft breweries with broad distribution.",
+    "place_id": "ChIJN91hFQdvwokRrdfb--i_97U",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJN91hFQdvwokRrdfb--i_97U"
   },
   {
     "name": "Crossroads Brewing Company",
-    "lat": 42.2992,
-    "lng": -73.997,
+    "lat": 42.2167307,
+    "lng": -73.8729178,
     "location": "Athens, NY",
     "founded": 2009,
     "specialty": "Lagers, pale ales, and seasonal specialties",
     "visitor_experience": "Brewpub in historic brick building, plus Catskill Taproom.",
-    "description": "Community-oriented brewery with classic and seasonal offerings."
+    "description": "Community-oriented brewery with classic and seasonal offerings.",
+    "place_id": "ChIJoWJgWtK93YkRlq2zQmUpCFQ",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoWJgWtK93YkRlq2zQmUpCFQ"
   },
   {
     "name": "Big Ditch Brewing Company",
-    "lat": 42.8864,
-    "lng": -78.8784,
+    "lat": 42.8880772,
+    "lng": -78.8709245,
     "location": "Buffalo, NY",
     "founded": 2014,
     "specialty": "Hayburner IPA and other hop-forward beers",
     "visitor_experience": "Large taproom and restaurant in downtown Buffalo.",
-    "description": "Prominent Buffalo brewery with a focus on hop-forward, drinkable beers."
+    "description": "Prominent Buffalo brewery with a focus on hop-forward, drinkable beers.",
+    "place_id": "ChIJU62G4EUS04kRWLcUPix2qpE",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU62G4EUS04kRWLcUPix2qpE"
   },
   {
     "name": "Resurgence Brewing Company",
-    "lat": 42.919,
-    "lng": -78.8941,
+    "lat": 42.8695957,
+    "lng": -78.86862649999999,
     "location": "Buffalo, NY",
     "founded": 2014,
     "specialty": "IPAs, cream ales, and fruited sours",
     "visitor_experience": "Taproom, beer garden, and events venue.",
-    "description": "Known for creative beers and major presence in Buffalo’s beer scene."
+    "description": "Known for creative beers and major presence in Buffalo’s beer scene.",
+    "place_id": "ChIJ_7isEhET04kRw9GsTic7deA",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_7isEhET04kRw9GsTic7deA"
   },
   {
     "name": "Prison City Pub & Brewery",
-    "lat": 42.9326,
-    "lng": -76.5661,
+    "lat": 42.9318309,
+    "lng": -76.56834549999999,
     "location": "Auburn, NY",
     "founded": 2014,
     "specialty": "Juicy IPAs and award-winning stouts",
     "visitor_experience": "Taproom, restaurant, and outdoor beer garden.",
-    "description": "Nationally recognized for hazy IPAs and innovative dark beers."
+    "description": "Nationally recognized for hazy IPAs and innovative dark beers.",
+    "place_id": "ChIJcbHzches0IkRrZhtSDlWWqQ",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcbHzches0IkRrZhtSDlWWqQ"
   },
   {
     "name": "Community Beer Works",
-    "lat": 42.9026,
-    "lng": -78.8799,
+    "lat": 42.8986651,
+    "lng": -78.8918783,
     "location": "Buffalo, NY",
     "founded": 2012,
     "specialty": "IPAs, lagers, and community-driven beers",
     "visitor_experience": "Taproom with rotating taps, events, and food pop-ups.",
-    "description": "Community-focused brewery with a mission of inclusivity and collaboration."
+    "description": "Community-focused brewery with a mission of inclusivity and collaboration.",
+    "place_id": "ChIJKfZgumkT04kRyM8l85r9mio",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJKfZgumkT04kRyM8l85r9mio"
   },
   {
     "name": "Swiftwater Brewing Company",
-    "lat": 43.1428,
-    "lng": -77.6032,
+    "lat": 43.1424151,
+    "lng": -77.6119478,
     "location": "Rochester, NY",
     "founded": 2015,
     "specialty": "Farmhouse ales and hop-forward beers",
     "visitor_experience": "Taproom with food menu and rotating taps.",
-    "description": "A Rochester favorite blending farmhouse traditions with modern craft."
+    "description": "A Rochester favorite blending farmhouse traditions with modern craft.",
+    "place_id": "ChIJQb9FvOO01okRPiKZVPT9wik",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQb9FvOO01okRPiKZVPT9wik"
   },
   {
     "name": "Grimm Artisanal Ales (Upstate Taproom)",
-    "lat": 42.403,
-    "lng": -73.705,
+    "lat": 40.7142805,
+    "lng": -73.936528,
     "location": "Chatham, NY",
     "founded": 2013,
     "specialty": "Mixed-fermentation ales and IPAs",
     "visitor_experience": "Rustic tasting room and experimental brewery.",
-    "description": "Cutting-edge Brooklyn brewery with upstate presence in the Hudson Valley."
+    "description": "Cutting-edge Brooklyn brewery with upstate presence in the Hudson Valley.",
+    "place_id": "ChIJO0onUVNZwokRAuTHAAO2OA0",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJO0onUVNZwokRAuTHAAO2OA0"
   }
 ]
-

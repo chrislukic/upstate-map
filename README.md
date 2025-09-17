@@ -64,28 +64,10 @@ This project visualizes New York State's premier scenic destinations, ranked by 
 - **Caumsett State Historic Park Preserve** (Score: 7.2/10)
   - Lloyd Neck
 
-## How to Use
-
-1. **Open the Map**: Open `ny_hiking_map_polygons_times_centers.html` in your web browser
-2. **Explore**: Click on colored polygons to see detailed information about each scenic area
-3. **Filter by Distance**: Use the drive times to find destinations that fit your travel preferences
-4. **Plan Your Trip**: Combine multiple nearby destinations for extended adventures
-
-## Perfect For
-
-- **Weekend Warriors**: Find scenic destinations within 2-4 hours of NYC
-- **Relocation Planning**: Discover beautiful areas to live near nature
-- **Adventure Planning**: Plan multi-day trips combining multiple scenic areas
-- **Day Trip Discovery**: Find quick escapes under 2 hours from the city
 
 ## Data Notes
 
 - Drive times are calculated from Midtown Manhattan during off-peak hours
 - Population data is approximate (2020–2023 ACS)
 - Scenery scores are based on natural beauty, hiking quality, and overall outdoor experience
-- All locations are accessible by car from NYC
-
-## Getting Started
-
-Simply open the HTML file in any modern web browser to start exploring New York's most scenic destinations. The interactive map will help you discover your next outdoor adventure or scenic home base!
 

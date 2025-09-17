@@ -8,6 +8,11 @@ class ScenicNYMap {
         this.scenicAreas = [];
         this.cities = [];
         this.layerControl = null; // layers control for overlays
+        // Prefetched datasets
+        this.waterfalls = null;
+        this.breweries = null;
+        this.restaurants = null;
+        this.orchardPoints = null;
     }
 
     // Convert drive time string to color based on gradient
@@ -44,10 +49,24 @@ class ScenicNYMap {
 
     async loadData() {
         try {
-            const response = await fetch('data/map-data.json');
-            this.data = await response.json();
-            this.scenicAreas = this.data.scenicAreas;
-            this.cities = this.data.cities;
+            const ts = Date.now();
+            const [mapRes, wfRes, brRes, rsRes, orchRes] = await Promise.all([
+                fetch(`data/map-data.json?t=${ts}`),
+                fetch(`data/waterfalls.json?t=${ts}`),
+                fetch(`data/breweries.json?t=${ts}`),
+                fetch(`data/restaurants.json?t=${ts}`),
+                fetch(`data/orchards_points.json?t=${ts}`)
+            ]);
+
+            this.data = await mapRes.json();
+            this.scenicAreas = this.data.scenicAreas || [];
+            this.cities = this.data.cities || [];
+
+            this.waterfalls = wfRes.ok ? await wfRes.json() : [];
+            this.breweries = brRes.ok ? await brRes.json() : [];
+            this.restaurants = rsRes.ok ? await rsRes.json() : [];
+            this.orchardPoints = orchRes.ok ? await orchRes.json() : [];
+
             return this.data;
         } catch (error) {
             console.error('Error loading map data:', error);
@@ -189,12 +208,18 @@ class ScenicNYMap {
 
             // Create popup
             const popup = L.popup({ maxWidth: 260 });
+            const googleMapsLink = city.google_maps_url ? 
+                `<br/><a href="${city.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                    <i class="fa fa-map-marker"></i> View on Google Maps
+                </a>` : '';
+            
             const popupContent = $(`
                 <div style="width: 100.0%; height: 100.0%;">
                     <b>${city.name}</b><br>
                     Population (approx): ${city.population.toLocaleString()}<br>
                     Drive time: <b>${city.driveTime}</b><br>
                     <i>${city.scenicArea}</i>
+                    ${googleMapsLink}
                 </div>
             `)[0];
             popup.setContent(popupContent);
@@ -280,10 +305,7 @@ class ScenicNYMap {
 
     async renderOrchards() {
         try {
-            // Load already-merged orchards points file
-            const resp = await fetch('data/orchards_points.json');
-            if (!resp.ok) return;
-            const points = await resp.json();
+            const points = Array.isArray(this.orchardPoints) ? this.orchardPoints : [];
 
             const orchards = Array.isArray(points)
                 ? points.map(p => ({
@@ -292,7 +314,9 @@ class ScenicNYMap {
                     website: p.website,
                     approx_drive: p.approx_drive,
                     notes: p.notes,
-                    coords: [p.lat, p.lng]
+                    coords: [p.lat, p.lng],
+                    place_id: p.place_id,
+                    google_maps_url: p.google_maps_url
                 }))
                 : [];
  
@@ -312,16 +336,32 @@ class ScenicNYMap {
                 const notes = o.notes ? `<br/><small>${o.notes}</small>` : '';
                 marker.bindTooltip(`<div>${o.name}${notes}</div>`, { sticky: true });
                 const linkHtml = o.website ? `<a href="${o.website}" target="_blank" rel="noopener">Website</a>` : '';
+                const googleMapsLink = o.google_maps_url ? 
+                    `<a href="${o.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                        <i class="fa fa-map-marker"></i> View on Google Maps
+                    </a>` : '';
                 const addr = o.address ? `${o.address}<br/>` : '';
                 const drive = o.approx_drive ? `Drive: <b>${o.approx_drive}</b><br/>` : '';
                 const popupNotes = o.notes ? `<i>${o.notes}</i><br/>` : '';
+                const links = [linkHtml, googleMapsLink].filter(Boolean).join(' • ');
+                
+                // Debug: Log popup content for first orchard
+                if (o.name === 'Fishkill Farms') {
+                    console.log('Orchard popup content for Fishkill Farms:', {
+                        name: o.name,
+                        google_maps_url: o.google_maps_url,
+                        googleMapsLink: googleMapsLink,
+                        links: links
+                    });
+                }
+                
                 marker.bindPopup(`
                     <div style="width:100%">
                         <b>${o.name}</b><br/>
                         ${addr}
                         ${drive}
                         ${popupNotes}
-                        ${linkHtml}
+                        ${links}
                     </div>
                 `);
             });
@@ -336,22 +376,39 @@ class ScenicNYMap {
 
     async renderWaterfalls() {
         try {
-            const r = await fetch('data/waterfalls.json');
+            const r = await fetch(`data/waterfalls.json?t=${Date.now()}`);
             if (!r.ok) return;
             const waterfalls = await r.json();
             if (!Array.isArray(waterfalls) || !waterfalls.length) return;
-
+            
             const wfGroup = L.featureGroup({});
-            const waterDivIcon = (L.divIcon({
-                className: 'icon-marker icon-water',
-                html: '<i class="fa fa-tint"></i>',
-                iconSize: [20, 20],
-                iconAnchor: [10, 10]
-            }));
+            
+            // Calculate scaling range based on waterfall heights
+            const heights = waterfalls.map(w => w.height_ft || 0).filter(h => h > 0);
+            const minHeight = Math.min(...heights);
+            const maxHeight = Math.max(...heights);
+            
+            // Scale icons from 12px to 32px based on height for more visible difference
+            const minIconSize = 12;
+            const maxIconSize = 32;
 
             waterfalls.forEach(w => {
-                if (isNaN(w.lat) || isNaN(w.lng)) return;
+                if (w.lat === null || w.lng === null || isNaN(w.lat) || isNaN(w.lng)) return;
                 const coords = [w.lat, w.lng];
+                
+                // Calculate icon size based on waterfall height
+                const height = w.height_ft || minHeight;
+                const heightRatio = (height - minHeight) / (maxHeight - minHeight);
+                const iconSize = Math.round(minIconSize + (maxIconSize - minIconSize) * heightRatio);
+                const iconAnchor = iconSize / 2;
+                
+                const waterDivIcon = L.divIcon({
+                    className: 'icon-marker icon-water',
+                    html: `<i class="fa fa-tint" style="font-size: ${iconSize}px;"></i>`,
+                    iconSize: [iconSize, iconSize],
+                    iconAnchor: [iconAnchor, iconAnchor]
+                });
+                
                 const marker = L.marker(coords, { icon: waterDivIcon }).addTo(wfGroup);
 
                 const description = w.description ? `<br/><small>${w.description}</small>` : '';
@@ -365,14 +422,20 @@ class ScenicNYMap {
                 if (w.access) meta.push(w.access);
 
                 const desc = w.description ? `<br/><i>${w.description}</i>` : '';
+                const googleMapsLink = w.google_maps_url ? 
+                    `<br/><a href="${w.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                        <i class="fa fa-map-marker"></i> View on Google Maps
+                    </a>` : '';
 
-                marker.bindPopup(`
+                const popupContent = `
                     <div style="width:100%">
                         <b>${w.name}</b><br/>
                         ${meta.join(' • ')}
                         ${desc}
+                        ${googleMapsLink}
                     </div>
-                `);
+                `;
+                marker.bindPopup(popupContent);
             });
 
             // Add to map by default and register as overlay for toggling
@@ -387,7 +450,7 @@ class ScenicNYMap {
 
     async renderBreweries() {
         try {
-            const r = await fetch('data/breweries.json');
+            const r = await fetch(`data/breweries.json?t=${Date.now()}`);
             if (!r.ok) return;
             const breweries = await r.json();
             if (!Array.isArray(breweries) || !breweries.length) return;
@@ -401,7 +464,7 @@ class ScenicNYMap {
             }));
 
             breweries.forEach(b => {
-                if (isNaN(b.lat) || isNaN(b.lng)) return;
+                if (b.lat === null || b.lng === null || isNaN(b.lat) || isNaN(b.lng)) return;
                 const coords = [b.lat, b.lng];
                 const marker = L.marker(coords, { icon: beerDivIcon }).addTo(brGroup);
 
@@ -415,12 +478,17 @@ class ScenicNYMap {
                 if (b.visitor_experience) meta.push(b.visitor_experience);
 
                 const desc = b.description ? `<br/><i>${b.description}</i>` : '';
+                const googleMapsLink = b.google_maps_url ? 
+                    `<br/><a href="${b.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                        <i class="fa fa-map-marker"></i> View on Google Maps
+                    </a>` : '';
 
                 marker.bindPopup(`
                     <div style="width:100%">
                         <b>${b.name}</b><br/>
                         ${meta.join(' • ')}
                         ${desc}
+                        ${googleMapsLink}
                     </div>
                 `);
             });
@@ -436,7 +504,7 @@ class ScenicNYMap {
 
     async renderRestaurants() {
         try {
-            const r = await fetch('data/restaurants.json');
+            const r = await fetch(`data/restaurants.json?t=${Date.now()}`);
             if (!r.ok) return;
             const restaurants = await r.json();
             if (!Array.isArray(restaurants) || !restaurants.length) return;
@@ -450,7 +518,10 @@ class ScenicNYMap {
             }));
 
             restaurants.forEach(rst => {
-                if (isNaN(rst.lat) || isNaN(rst.lng)) return;
+                // Hide restaurants that are marked closed (temporary or permanent)
+                const isClosed = (rst && (rst.closed_flag === 'temporary' || rst.closed_flag === 'permanent' || rst.business_status === 'CLOSED_TEMPORARILY' || rst.business_status === 'CLOSED_PERMANENTLY'));
+                if (isClosed) return;
+                if (rst.lat === null || rst.lng === null || isNaN(rst.lat) || isNaN(rst.lng)) return;
                 const coords = [rst.lat, rst.lng];
                 const marker = L.marker(coords, { icon: foodDivIcon }).addTo(rsGroup);
 
@@ -463,12 +534,17 @@ class ScenicNYMap {
                 if (rst.atmosphere) meta.push(rst.atmosphere);
                 if (typeof rst.family_friendly === 'boolean') meta.push(rst.family_friendly ? 'Family-friendly' : 'Adults-oriented');
                 const desc = rst.description ? `<br/><i>${rst.description}</i>` : '';
+                const googleMapsLink = rst.google_maps_url ? 
+                    `<br/><a href="${rst.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                        <i class="fa fa-map-marker"></i> View on Google Maps
+                    </a>` : '';
 
                 marker.bindPopup(`
-                    <div style=\"width:100%\">
+                    <div style="width:100%">
                         <b>${rst.name}</b><br/>
                         ${meta.join(' • ')}
                         ${desc}
+                        ${googleMapsLink}
                     </div>
                 `);
             });

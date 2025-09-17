@@ -27,20 +27,32 @@ html, body {
 .leaflet-tooltip {
     max-width: 450px !important;
     min-width: 200px !important;
-    white-space: normal !important;
-    word-wrap: break-word !important;
-    word-break: break-word !important;
     line-height: 1.4 !important;
-    overflow-wrap: break-word !important;
+    overflow: visible !important;
 }
 
 .leaflet-tooltip-content {
     max-width: 450px !important;
     min-width: 200px !important;
+    overflow: visible !important;
+}
+
+/* Keep titles on one line, allow descriptions to wrap */
+.leaflet-tooltip b {
+    white-space: nowrap !important;
+    word-wrap: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    display: block !important;
+}
+
+.leaflet-tooltip small {
     white-space: normal !important;
     word-wrap: break-word !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
+    display: block !important;
+    margin-top: 4px !important;
 }
 
 /* Legend Styles */

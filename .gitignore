@@ -3,30 +3,41 @@
 Thumbs.db
 
 # Python
-__pycache__/
-*.py[cod]
-*.pyo
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
 
 # Logs and dumps
 *.log
 *.stackdump
 
 # Env and local settings
-.env
-.env.*
+**/.env
+**/.env.*
+.envrc
+.python-version
 
 # Node (in case used later)
 node_modules/
+.vite/
+.cache/
+npm-debug.log*
+yarn-error.log
+pnpm-debug.log*
 
 # Editor/IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+Desktop.ini
 
 # Build artifacts (if any added later)
 dist/
 build/
 coverage/
+
+# Vercel
+.vercel/
 
 
