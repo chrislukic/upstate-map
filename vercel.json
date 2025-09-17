@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "**/*.{js,css,woff,woff2,svg,png,jpg,jpeg,gif,webp,avif}",
+      "source": "/assets/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
     },
     {
@@ -13,7 +13,12 @@
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=60, stale-while-revalidate=86400" }]
     }
   ],
-  "rewrites": []
+  "rewrites": [
+    {
+      "source": "/((?!api/|data/).*)",
+      "destination": "/index.html"
+    }
+  ]
 }
 
 

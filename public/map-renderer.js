@@ -51,11 +51,11 @@ class ScenicNYMap {
         try {
             const ts = Date.now();
             const [mapRes, wfRes, brRes, rsRes, orchRes] = await Promise.all([
-                fetch(`data/map-data.json?t=${ts}`),
-                fetch(`data/waterfalls.json?t=${ts}`),
-                fetch(`data/breweries.json?t=${ts}`),
-                fetch(`data/restaurants.json?t=${ts}`),
-                fetch(`data/orchards_points.json?t=${ts}`)
+                fetch(`/data/map-data.json?t=${ts}`),
+                fetch(`/data/waterfalls.json?t=${ts}`),
+                fetch(`/data/breweries.json?t=${ts}`),
+                fetch(`/data/restaurants.json?t=${ts}`),
+                fetch(`/data/orchards_points.json?t=${ts}`)
             ]);
 
             this.data = await mapRes.json();
@@ -376,7 +376,7 @@ class ScenicNYMap {
 
     async renderWaterfalls() {
         try {
-            const r = await fetch(`data/waterfalls.json?t=${Date.now()}`);
+            const r = await fetch(`/data/waterfalls.json?t=${Date.now()}`);
             if (!r.ok) return;
             const waterfalls = await r.json();
             if (!Array.isArray(waterfalls) || !waterfalls.length) return;
@@ -450,7 +450,7 @@ class ScenicNYMap {
 
     async renderBreweries() {
         try {
-            const r = await fetch(`data/breweries.json?t=${Date.now()}`);
+            const r = await fetch(`/data/breweries.json?t=${Date.now()}`);
             if (!r.ok) return;
             const breweries = await r.json();
             if (!Array.isArray(breweries) || !breweries.length) return;
@@ -504,7 +504,7 @@ class ScenicNYMap {
 
     async renderRestaurants() {
         try {
-            const r = await fetch(`data/restaurants.json?t=${Date.now()}`);
+            const r = await fetch(`/data/restaurants.json?t=${Date.now()}`);
             if (!r.ok) return;
             const restaurants = await r.json();
             if (!Array.isArray(restaurants) || !restaurants.length) return;
