@@ -9,7 +9,8 @@
     "visitor_experience": "Tours, tastings, café, concerts, and seasonal events.",
     "description": "A renowned Belgian-inspired brewery with scenic grounds and a major role in the upstate craft beer scene.",
     "place_id": "ChIJvQ37ngMH3IkR5IUUwPQdxX4",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvQ37ngMH3IkR5IUUwPQdxX4"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvQ37ngMH3IkR5IUUwPQdxX4",
+    "place_query": "Ommegang Brewery, Cooperstown, NY"
   },
   {
     "name": "Saranac Brewery (Matt Brewing Company)",
@@ -21,7 +22,8 @@
     "visitor_experience": "Historic tours, tastings, beer garden, and concerts.",
     "description": "One of the oldest breweries in New York State, known for its rich history and wide-ranging beer portfolio.",
     "place_id": "ChIJRUoXCYxH2YkRZFpGqjlzUuk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRUoXCYxH2YkRZFpGqjlzUuk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRUoXCYxH2YkRZFpGqjlzUuk",
+    "place_query": "Saranac Brewery, Matt Brewing Company, NY"
   },
   {
     "name": "Genesee Brewing Company",
@@ -33,7 +35,8 @@
     "visitor_experience": "Brew house museum, taproom, and scenic views of High Falls.",
     "description": "A staple of NY beer heritage, producing iconic Cream Ale and accessible classics.",
     "place_id": "ChIJsV5Z9VG01okRe3DPZHBhekk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsV5Z9VG01okRe3DPZHBhekk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsV5Z9VG01okRe3DPZHBhekk",
+    "place_query": "Genesee Brewing Company, Rochester, NY"
   },
   {
     "name": "Brown’s Brewing Company",
@@ -45,7 +48,8 @@
     "visitor_experience": "Brewpub with Hudson River views, live music, and full dining menu.",
     "description": "Among the pioneers of the craft beer renaissance in the Capital Region.",
     "place_id": "ChIJrfIU5aUP3okRRq4zNu2eFkk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJrfIU5aUP3okRRq4zNu2eFkk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJrfIU5aUP3okRRq4zNu2eFkk",
+    "place_query": "Brown’s Brewing Company, Troy, NY"
   },
   {
     "name": "Druthers Brewing Company",
@@ -57,7 +61,8 @@
     "visitor_experience": "Brewpubs in Saratoga, Albany, and Schenectady with dining and events.",
     "description": "A modern brewpub group with popular community-focused spaces across upstate.",
     "place_id": "ChIJP-GoINE53okRMhKuV5jYycY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP-GoINE53okRMhKuV5jYycY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP-GoINE53okRMhKuV5jYycY",
+    "place_query": "Druthers Brewing Company, Saratoga Springs, NY"
   },
   {
     "name": "Southern Tier Brewing Company",
@@ -69,7 +74,8 @@
     "visitor_experience": "Large taproom, tours, and seasonal outdoor events.",
     "description": "Nationally recognized for bold IPAs and dessert-inspired stouts.",
     "place_id": "ChIJbYsFSPyr0okRo5bTWrIGxoA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbYsFSPyr0okRo5bTWrIGxoA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbYsFSPyr0okRo5bTWrIGxoA",
+    "place_query": "Southern Tier Brewing Company, Lakewood, NY"
   },
   {
     "name": "Ithaca Beer Company",
@@ -81,7 +87,8 @@
     "visitor_experience": "Taproom, beer garden, brewery tours, and farm-to-table restaurant.",
     "description": "One of NY’s best-known craft breweries, rooted in the Finger Lakes region.",
     "place_id": "ChIJqZyIGdmA0IkRiFPSkwebidY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJqZyIGdmA0IkRiFPSkwebidY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJqZyIGdmA0IkRiFPSkwebidY",
+    "place_query": "Ithaca Beer Company, Ithaca, NY"
   },
   {
     "name": "Woodstock Brewing",
@@ -93,7 +100,8 @@
     "visitor_experience": "Taproom with rotating taps, food, and live events.",
     "description": "A vibrant Catskills brewery with a community feel and adventurous beer styles.",
     "place_id": "ChIJD7Qql7L43IkR4868BkTTOlM",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJD7Qql7L43IkR4868BkTTOlM"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJD7Qql7L43IkR4868BkTTOlM",
+    "place_query": "Woodstock Brewing, Phoenicia, NY"
   },
   {
     "name": "Common Roots Brewing Company",
@@ -105,7 +113,8 @@
     "visitor_experience": "Taproom, food service, and events; rebuilt after 2019 fire.",
     "description": "Known for resilience and innovation, with a strong community ethos.",
     "place_id": "ChIJQQkGpfbR34kRBSVPp1cqRpQ",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQQkGpfbR34kRBSVPp1cqRpQ"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQQkGpfbR34kRBSVPp1cqRpQ",
+    "place_query": "Common Roots Brewing Company, South Glens Falls, NY"
   },
   {
     "name": "Nine Pin Ciderworks",
@@ -117,7 +126,8 @@
     "visitor_experience": "Taproom with rotating ciders, tours, and food pairings.",
     "description": "New York’s first licensed farm cidery, pioneering craft cider culture in the state.",
     "place_id": "ChIJlRNexYEJ3okRll4mvPcFmSk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlRNexYEJ3okRll4mvPcFmSk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlRNexYEJ3okRll4mvPcFmSk",
+    "place_query": "Nine Pin Ciderworks, Albany, NY"
   },
   {
     "name": "Equilibrium Brewery",
@@ -129,7 +139,8 @@
     "visitor_experience": "Taproom, beer garden, and food truck rotations.",
     "description": "Widely acclaimed for juicy, hazy IPAs and innovative dark beers.",
     "place_id": "ChIJKV4hjk8zw4kReJUMS9kmsaY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJKV4hjk8zw4kReJUMS9kmsaY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJKV4hjk8zw4kReJUMS9kmsaY",
+    "place_query": "Equilibrium Brewery, Middletown, NY"
   },
   {
     "name": "Suarez Family Brewery",
@@ -141,7 +152,8 @@
     "visitor_experience": "Relaxed tasting room with pastoral Hudson Valley setting.",
     "description": "Known for delicate, balanced beers; one of NY’s most respected small breweries.",
     "place_id": "ChIJTTz58sOY3YkRwVNTY8_v1xE",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTTz58sOY3YkRwVNTY8_v1xE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTTz58sOY3YkRwVNTY8_v1xE",
+    "place_query": "Suarez Family Brewery, Livingston, NY"
   },
   {
     "name": "Plan Bee Farm Brewery",
@@ -153,7 +165,8 @@
     "visitor_experience": "Farm-based taproom with outdoor seating and events.",
     "description": "Dedicated to using only NY-grown ingredients, with a strong terroir focus.",
     "place_id": "ChIJbe4oqdU_3YkRKAGcKq7anU8",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbe4oqdU_3YkRKAGcKq7anU8"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbe4oqdU_3YkRKAGcKq7anU8",
+    "place_query": "Plan Bee Farm Brewery, Poughkeepsie, NY"
   },
   {
     "name": "Hudson Valley Brewery",
@@ -165,7 +178,8 @@
     "visitor_experience": "Industrial-chic taproom with rotating beers and art shows.",
     "description": "Renowned for pushing boundaries with sour IPAs and fruited sours.",
     "place_id": "ChIJj8DOGGEx3YkRtiDRswEn-uk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj8DOGGEx3YkRtiDRswEn-uk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj8DOGGEx3YkRtiDRswEn-uk",
+    "place_query": "Hudson Valley Brewery, Beacon, NY"
   },
   {
     "name": "Catskill Brewery",
@@ -177,7 +191,8 @@
     "visitor_experience": "Eco-friendly brewery with rustic tasting room.",
     "description": "A Catskills favorite with an environmentally sustainable ethos.",
     "place_id": "ChIJO6QEAqGZ3IkREsSJipJtWfg",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJO6QEAqGZ3IkREsSJipJtWfg"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJO6QEAqGZ3IkREsSJipJtWfg",
+    "place_query": "Catskill Brewery, Livingston Manor, NY"
   },
   {
     "name": "Rare Form Brewing Company",
@@ -189,7 +204,8 @@
     "visitor_experience": "Eclectic taproom in downtown Troy.",
     "description": "Creative brewery exploring unique flavor combinations and styles.",
     "place_id": "ChIJP2g0RBkP3okRiVAQkC5CzKA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP2g0RBkP3okRiVAQkC5CzKA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP2g0RBkP3okRiVAQkC5CzKA",
+    "place_query": "Rare Form Brewing Company, Troy, NY"
   },
   {
     "name": "Rushing Duck Brewing Company",
@@ -201,7 +217,8 @@
     "visitor_experience": "Taproom with rotating food trucks and events.",
     "description": "A Hudson Valley staple with a loyal following for bold, flavorful beers.",
     "place_id": "ChIJ3azbdAwpw4kRg2rqWM0aWME",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3azbdAwpw4kRg2rqWM0aWME"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3azbdAwpw4kRg2rqWM0aWME",
+    "place_query": "Rushing Duck Brewing Company, Chester, NY"
   },
   {
     "name": "Barrier Brewing Co.",
@@ -213,7 +230,8 @@
     "visitor_experience": "Taproom and limited tours.",
     "description": "One of Long Island’s most respected craft breweries with broad distribution.",
     "place_id": "ChIJN91hFQdvwokRrdfb--i_97U",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJN91hFQdvwokRrdfb--i_97U"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJN91hFQdvwokRrdfb--i_97U",
+    "place_query": "Barrier Brewing Co., Oceanside, NY (Long Island)"
   },
   {
     "name": "Crossroads Brewing Company",
@@ -225,7 +243,8 @@
     "visitor_experience": "Brewpub in historic brick building, plus Catskill Taproom.",
     "description": "Community-oriented brewery with classic and seasonal offerings.",
     "place_id": "ChIJoWJgWtK93YkRlq2zQmUpCFQ",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoWJgWtK93YkRlq2zQmUpCFQ"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoWJgWtK93YkRlq2zQmUpCFQ",
+    "place_query": "Crossroads Brewing Company, Athens, NY"
   },
   {
     "name": "Big Ditch Brewing Company",
@@ -237,7 +256,8 @@
     "visitor_experience": "Large taproom and restaurant in downtown Buffalo.",
     "description": "Prominent Buffalo brewery with a focus on hop-forward, drinkable beers.",
     "place_id": "ChIJU62G4EUS04kRWLcUPix2qpE",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU62G4EUS04kRWLcUPix2qpE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU62G4EUS04kRWLcUPix2qpE",
+    "place_query": "Big Ditch Brewing Company, Buffalo, NY"
   },
   {
     "name": "Resurgence Brewing Company",
@@ -249,7 +269,8 @@
     "visitor_experience": "Taproom, beer garden, and events venue.",
     "description": "Known for creative beers and major presence in Buffalo’s beer scene.",
     "place_id": "ChIJ_7isEhET04kRw9GsTic7deA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_7isEhET04kRw9GsTic7deA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_7isEhET04kRw9GsTic7deA",
+    "place_query": "Resurgence Brewing Company, Buffalo, NY"
   },
   {
     "name": "Prison City Pub & Brewery",
@@ -261,7 +282,8 @@
     "visitor_experience": "Taproom, restaurant, and outdoor beer garden.",
     "description": "Nationally recognized for hazy IPAs and innovative dark beers.",
     "place_id": "ChIJcbHzches0IkRrZhtSDlWWqQ",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcbHzches0IkRrZhtSDlWWqQ"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcbHzches0IkRrZhtSDlWWqQ",
+    "place_query": "Prison City Pub & Brewery, Auburn, NY"
   },
   {
     "name": "Community Beer Works",
@@ -273,7 +295,8 @@
     "visitor_experience": "Taproom with rotating taps, events, and food pop-ups.",
     "description": "Community-focused brewery with a mission of inclusivity and collaboration.",
     "place_id": "ChIJKfZgumkT04kRyM8l85r9mio",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJKfZgumkT04kRyM8l85r9mio"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJKfZgumkT04kRyM8l85r9mio",
+    "place_query": "Community Beer Works, Buffalo, NY"
   },
   {
     "name": "Swiftwater Brewing Company",
@@ -285,18 +308,7 @@
     "visitor_experience": "Taproom with food menu and rotating taps.",
     "description": "A Rochester favorite blending farmhouse traditions with modern craft.",
     "place_id": "ChIJQb9FvOO01okRPiKZVPT9wik",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQb9FvOO01okRPiKZVPT9wik"
-  },
-  {
-    "name": "Grimm Artisanal Ales (Upstate Taproom)",
-    "lat": 40.7142805,
-    "lng": -73.936528,
-    "location": "Chatham, NY",
-    "founded": 2013,
-    "specialty": "Mixed-fermentation ales and IPAs",
-    "visitor_experience": "Rustic tasting room and experimental brewery.",
-    "description": "Cutting-edge Brooklyn brewery with upstate presence in the Hudson Valley.",
-    "place_id": "ChIJO0onUVNZwokRAuTHAAO2OA0",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJO0onUVNZwokRAuTHAAO2OA0"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQb9FvOO01okRPiKZVPT9wik",
+    "place_query": "Swiftwater Brewing Company, Rochester, NY"
   }
 ]

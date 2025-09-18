@@ -9,7 +9,8 @@
     "description": "Iconic Catskills diner with a nostalgic yet modern vibe, drawing both locals and weekenders.",
     "family_friendly": true,
     "place_id": "ChIJDQ64ybr43IkRrTaCpz0syFQ",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJDQ64ybr43IkRrTaCpz0syFQ"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJDQ64ybr43IkRrTaCpz0syFQ",
+    "place_query": "Phoenicia Diner, Phoenicia, NY"
   },
   {
     "name": "Cochecton Pump House",
@@ -21,7 +22,8 @@
     "description": "Unique open-air venue combining industrial history with community events and food culture.",
     "family_friendly": true,
     "place_id": "ChIJF7Wl6dNX24kRn6ztBiO53VI",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJF7Wl6dNX24kRn6ztBiO53VI"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJF7Wl6dNX24kRn6ztBiO53VI",
+    "place_query": "Cochecton Pump House, Cochecton, NY"
   },
   {
     "name": "Stissing House",
@@ -33,7 +35,8 @@
     "description": "A centuries-old tavern revitalized as a modern culinary landmark.",
     "family_friendly": true,
     "place_id": "ChIJZ0ke4PR33YkRxij7SvRy2V0",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ0ke4PR33YkRxij7SvRy2V0"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ0ke4PR33YkRxij7SvRy2V0",
+    "place_query": "Stissing House, Pine Plains, NY"
   },
   {
     "name": "Gracie’s Luncheonette",
@@ -45,7 +48,8 @@
     "description": "Charming roadside spot with a nostalgic yet fresh atmosphere.",
     "family_friendly": true,
     "place_id": "ChIJ2_wSAjK83YkRwv4qMsr1-9s",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2_wSAjK83YkRwv4qMsr1-9s"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2_wSAjK83YkRwv4qMsr1-9s",
+    "place_query": "Gracie’s Luncheonette, Leeds, NY"
   },
   {
     "name": "Lil' Deb's Oasis",
@@ -57,7 +61,8 @@
     "description": "Playful, inclusive space that doubles as both restaurant and art installation.",
     "family_friendly": true,
     "place_id": "ChIJ3dZzhSeU3YkRfKEwhHXup-w",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3dZzhSeU3YkRfKEwhHXup-w"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3dZzhSeU3YkRfKEwhHXup-w",
+    "place_query": "Lil' Deb's Oasis, Hudson, NY"
   },
   {
     "name": "Roscoe Diner",
@@ -69,7 +74,8 @@
     "description": "A Catskills institution with nostalgic small-town appeal.",
     "family_friendly": true,
     "place_id": "ChIJXekLV4We3IkRXQTw5pR0OBE",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXekLV4We3IkRXQTw5pR0OBE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXekLV4We3IkRXQTw5pR0OBE",
+    "place_query": "Roscoe Diner, Roscoe, NY"
   },
   {
     "name": "Deer Mountain Inn",
@@ -81,7 +87,8 @@
     "description": "An atmospheric mountain inn offering elevated dining and sweeping views.",
     "family_friendly": true,
     "place_id": "ChIJQ6v75v2x3YkRwPpalS4DT_s",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQ6v75v2x3YkRwPpalS4DT_s"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQ6v75v2x3YkRwPpalS4DT_s",
+    "place_query": "Deer Mountain Inn, Tannersville, NY"
   },
   {
     "name": "Blue Hill at Stone Barns",
@@ -93,7 +100,8 @@
     "description": "Michelin-starred destination restaurant redefining American farm cuisine.",
     "family_friendly": true,
     "place_id": "ChIJExcPIfK_wokRtc6K_3jkhgM",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJExcPIfK_wokRtc6K_3jkhgM"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJExcPIfK_wokRtc6K_3jkhgM",
+    "place_query": "Blue Hill at Stone Barns, Pocantico Hills, NY"
   },
   {
     "name": "Brushland Eating House",
@@ -105,7 +113,8 @@
     "description": "A sought-after rural dining experience focused on convivial, thoughtful food.",
     "family_friendly": true,
     "place_id": "ChIJZ535hi173IkR0GgCgTlWdOY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ535hi173IkR0GgCgTlWdOY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ535hi173IkR0GgCgTlWdOY",
+    "place_query": "Brushland Eating House, Bovina, NY"
   },
   {
     "name": "Peekamoose Restaurant",
@@ -117,7 +126,8 @@
     "description": "Catskills fine dining institution blending warmth, creativity, and terroir.",
     "family_friendly": true,
     "place_id": "ChIJx-od54BY3IkR7dx2QbSxCnE",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJx-od54BY3IkR7dx2QbSxCnE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJx-od54BY3IkR7dx2QbSxCnE",
+    "place_query": "Peekamoose Restaurant, Big Indian, NY"
   },
   {
     "name": "West Taghkanic Diner",
@@ -129,7 +139,8 @@
     "description": "A retro diner reimagined as a modern dining and social space.",
     "family_friendly": true,
     "place_id": "ChIJR9oba6ib3YkRgl8lUXKud9o",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJR9oba6ib3YkRgl8lUXKud9o"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJR9oba6ib3YkRgl8lUXKud9o",
+    "place_query": "West Taghkanic Diner, Ancram, NY"
   },
   {
     "name": "The Amsterdam",
@@ -141,7 +152,8 @@
     "description": "Stylish Hudson Valley hotspot with sophisticated yet comfortable dining.",
     "family_friendly": true,
     "place_id": "ChIJiyw6JkgM3YkRJPE6_u08-pw",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJiyw6JkgM3YkRJPE6_u08-pw"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJiyw6JkgM3YkRJPE6_u08-pw",
+    "place_query": "The Amsterdam, Rhinebeck, NY"
   },
   {
     "name": "Terrapin Restaurant",
@@ -153,7 +165,8 @@
     "description": "A Rhinebeck landmark marrying historic architecture with a lively bistro energy.",
     "family_friendly": true,
     "place_id": "ChIJJWLiADgM3YkRvu4eiB5eucY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJWLiADgM3YkRvu4eiB5eucY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJWLiADgM3YkRvu4eiB5eucY",
+    "place_query": "Terrapin Restaurant, Rhinebeck, NY"
   },
   {
     "name": "The Roundhouse",
@@ -165,7 +178,8 @@
     "description": "Atmospheric brick‑and‑beam setting with glass walls framing the falls.",
     "family_friendly": true,
     "place_id": "ChIJhwhP1mAx3YkRO3FXmFj7Dkk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhwhP1mAx3YkRO3FXmFj7Dkk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhwhP1mAx3YkRO3FXmFj7Dkk",
+    "place_query": "The Roundhouse, Beacon, NY"
   },
   {
     "name": "Cochecton Fire Station",
@@ -177,7 +191,8 @@
     "description": "Sister venue to the Pump House with a cozy, communal vibe.",
     "family_friendly": true,
     "place_id": "ChIJ7z3yLqRR24kRAPsowCXmI18",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ7z3yLqRR24kRAPsowCXmI18"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ7z3yLqRR24kRAPsowCXmI18",
+    "place_query": "Cochecton Fire Station, Cochecton, NY"
   },
   {
     "name": "Prospect at Scribner’s Lodge",
@@ -189,7 +204,8 @@
     "description": "A sceney lodge restaurant perfect for post‑hike dinners and winter weekends.",
     "family_friendly": true,
     "place_id": "ChIJn-N_sT2t3YkRcbsjslnnOIY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJn-N_sT2t3YkRcbsjslnnOIY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJn-N_sT2t3YkRcbsjslnnOIY",
+    "place_query": "Prospect at Scribner’s Lodge, Hunter, NY"
   },
   {
     "name": "Troutbeck Dining Room",
@@ -201,7 +217,8 @@
     "description": "Gentle‑luxury Hudson Valley hideaway with soulful dining rooms.",
     "family_friendly": true,
     "place_id": "ChIJh-gIjv183YkRqrSPG325fgI",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJh-gIjv183YkRqrSPG325fgI"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJh-gIjv183YkRqrSPG325fgI",
+    "place_query": "Troutbeck Dining Room, Amenia, NY"
   },
   {
     "name": "The DeBruce",
@@ -213,7 +230,8 @@
     "description": "One of the Catskills’ most lauded destination dining rooms.",
     "family_friendly": true,
     "place_id": "ChIJIYyfKbWW3IkRgDTzL21PWmU",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIYyfKbWW3IkRgDTzL21PWmU"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIYyfKbWW3IkRgDTzL21PWmU",
+    "place_query": "The DeBruce, Livingston Manor, NY"
   },
   {
     "name": "The Maker Restaurant",
@@ -225,7 +243,8 @@
     "description": "Mood‑driven dining with lush textures and candlelit corners.",
     "family_friendly": true,
     "place_id": "ChIJpSEo2QqV3YkRXbpSDtiGHSM",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJpSEo2QqV3YkRXbpSDtiGHSM"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJpSEo2QqV3YkRXbpSDtiGHSM",
+    "place_query": "The Maker Restaurant, Hudson, NY"
   },
   {
     "name": "Wm. Farmer and Sons",
@@ -237,7 +256,8 @@
     "description": "A handsome, lived‑in space ideal for late dinners and nightcaps.",
     "family_friendly": false,
     "place_id": "ChIJ4cM-H9OV3YkRdzbbJJKMOX0",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4cM-H9OV3YkRdzbbJJKMOX0"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4cM-H9OV3YkRdzbbJJKMOX0",
+    "place_query": "Wm. Farmer and Sons, Hudson, NY"
   },
   {
     "name": "Rivertown Lodge Tavern",
@@ -249,7 +269,8 @@
     "description": "A minimalist, wood‑warm room beloved by design nerds.",
     "family_friendly": false,
     "place_id": "ChIJLV4xfnCX3YkRBjDCgpfsSgM",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJLV4xfnCX3YkRBjDCgpfsSgM"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJLV4xfnCX3YkRBjDCgpfsSgM",
+    "place_query": "Rivertown Lodge Tavern, Hudson, NY"
   },
   {
     "name": "Ole Savannah Southern Table & Bar",
@@ -261,7 +282,8 @@
     "description": "Bustling industrial‑heritage space with marina views.",
     "family_friendly": true,
     "place_id": "ChIJleW1XVIO3YkRoXhKN0uof6w",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJleW1XVIO3YkRoXhKN0uof6w"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJleW1XVIO3YkRoXhKN0uof6w",
+    "place_query": "Ole Savannah Southern Table & Bar, Kingston, NY"
   },
   {
     "name": "Diamond Mills Tavern",
@@ -272,8 +294,9 @@
     "specialty": "Steaks, seafood, and upscale tavern fare.",
     "description": "Floor‑to‑ceiling windows put the falls front and center.",
     "family_friendly": true,
-    "place_id": "ChIJAQCQyyWn3YkRVx6NLTtTsGY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAQCQyyWn3YkRVx6NLTtTsGY"
+    "place_id": "ChIJlZ_bWiSn3YkR2YzOdTUWiaI",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlZ_bWiSn3YkR2YzOdTUWiaI",
+    "place_query": "Diamond Mills Tavern, Saugerties, NY"
   },
   {
     "name": "Hotel Kinsley (Restaurant Kinsley)",
@@ -285,7 +308,8 @@
     "description": "Historic‑meets‑modern dining in the Stockade District.",
     "family_friendly": true,
     "place_id": "ChIJS8bIzbcP3YkRwlV3XHRVjEA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJS8bIzbcP3YkRwlV3XHRVjEA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJS8bIzbcP3YkRwlV3XHRVjEA",
+    "place_query": "Hotel Kinsley, Restaurant Kinsley, NY"
   },
   {
     "name": "The Heron",
@@ -297,7 +321,8 @@
     "description": "Small‑town charm with big‑city execution overlooking the Delaware.",
     "family_friendly": true,
     "place_id": "ChIJUf-91n9T24kR0-4vSw5HrS4",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUf-91n9T24kR0-4vSw5HrS4"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUf-91n9T24kR0-4vSw5HrS4",
+    "place_query": "The Heron, Narrowsburg, NY"
   },
   {
     "name": "Callicoon Hills (The Conover Club)",
@@ -309,7 +334,8 @@
     "description": "Handsome camp‑lodge energy with cocktails by the fire.",
     "family_friendly": true,
     "place_id": "ChIJeS-APgOh3IkRxu_814m8Ob4",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeS-APgOh3IkRxu_814m8Ob4"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeS-APgOh3IkRxu_814m8Ob4",
+    "place_query": "Callicoon Hills, The Conover Club, NY"
   },
   {
     "name": "North Branch Inn Restaurant & Bar Room",
@@ -321,7 +347,8 @@
     "description": "Cozy heritage setting with playful, old‑time features.",
     "family_friendly": true,
     "place_id": "ChIJeTsJCTdf24kRrfnEn_i2V74",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeTsJCTdf24kRrfnEn_i2V74"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeTsJCTdf24kRrfnEn_i2V74",
+    "place_query": "North Branch Inn Restaurant & Bar Room, North Branch, NY"
   },
   {
     "name": "Kenoza Hall Restaurant",
@@ -333,7 +360,8 @@
     "description": "Golden‑hour magnet with grand‑porch energy.",
     "family_friendly": true,
     "place_id": "ChIJ0_0OMqin3IkRUGDYt_q7_Xo",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0_0OMqin3IkRUGDYt_q7_Xo"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0_0OMqin3IkRUGDYt_q7_Xo",
+    "place_query": "Kenoza Hall Restaurant, Kenoza Lake, NY"
   },
   {
     "name": "Bluebird Hunter Tavern",
@@ -345,7 +373,8 @@
     "description": "After‑ski hangout with a design‑hotel polish.",
     "family_friendly": true,
     "place_id": "ChIJq6q64jyt3YkRu1uBd-IBiM4",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJq6q64jyt3YkRu1uBd-IBiM4"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJq6q64jyt3YkRu1uBd-IBiM4",
+    "place_query": "Bluebird Hunter Tavern, Hunter, NY"
   },
   {
     "name": "Hutton Brickyards (Seasonal Dining)",
@@ -357,7 +386,8 @@
     "description": "Striking Hudson waterfront campus with rotating chefs and pop‑ups.",
     "family_friendly": true,
     "place_id": "ChIJUwKzMw8P3YkR94e0Y7KRbyE",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUwKzMw8P3YkR94e0Y7KRbyE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUwKzMw8P3YkR94e0Y7KRbyE",
+    "place_query": "Hutton Brickyards, Seasonal Dining, NY"
   },
   {
     "name": "American Bounty (CIA)",
@@ -369,7 +399,8 @@
     "description": "A rite of passage for food‑obsessed Hudson Valley visitors.",
     "family_friendly": true,
     "place_id": "ChIJey_Z8OAV3YkRl5QmS6H-qeQ",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJey_Z8OAV3YkRl5QmS6H-qeQ"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJey_Z8OAV3YkRl5QmS6H-qeQ",
+    "place_query": "American Bounty, CIA, NY"
   },
   {
     "name": "The View (Mirror Lake Inn)",
@@ -381,7 +412,8 @@
     "description": "White‑tablecloth classic in an alpine resort town.",
     "family_friendly": true,
     "place_id": "ChIJ-3AurpniykwRhwYKy6Gdr84",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-3AurpniykwRhwYKy6Gdr84"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-3AurpniykwRhwYKy6Gdr84",
+    "place_query": "The View, Mirror Lake Inn, NY"
   },
   {
     "name": "Roycroft Inn Restaurant",
@@ -393,7 +425,8 @@
     "description": "Mission furniture, stained glass, and a deep sense of craft history.",
     "family_friendly": true,
     "place_id": "ChIJC8JNVNGn04kRfwH73YiAQwc",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJC8JNVNGn04kRfwH73YiAQwc"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJC8JNVNGn04kRfwH73YiAQwc",
+    "place_query": "Roycroft Inn Restaurant, East Aurora, NY"
   },
   {
     "name": "Radio Social",
@@ -405,7 +438,8 @@
     "description": "Playful industrial space built for groups and events.",
     "family_friendly": false,
     "place_id": "ChIJsTO_63_K1okR5NDixR-ikKw",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsTO_63_K1okR5NDixR-ikKw"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsTO_63_K1okR5NDixR-ikKw",
+    "place_query": "Radio Social, Rochester, NY"
   },
   {
     "name": "The Cub Room",
@@ -417,7 +451,8 @@
     "description": "Date‑night standby in Rochester’s South Wedge.",
     "family_friendly": true,
     "place_id": "ChIJ1wDTEBu11okRXrnQQp3SP0M",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ1wDTEBu11okRXrnQQp3SP0M"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ1wDTEBu11okRXrnQQp3SP0M",
+    "place_query": "The Cub Room, Rochester, NY"
   },
   {
     "name": "Good Luck",
@@ -429,7 +464,8 @@
     "description": "Design‑savvy pioneer of Rochester’s modern dining scene.",
     "family_friendly": true,
     "place_id": "ChIJG-nPopi11okRlRujsz5PfRE",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJG-nPopi11okRlRujsz5PfRE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJG-nPopi11okRlRujsz5PfRE",
+    "place_query": "Good Luck, Rochester, NY"
   },
   {
     "name": "Genesee Brew House Restaurant",
@@ -441,7 +477,8 @@
     "description": "Sit with a pint while a 96‑ft waterfall thunders across the river.",
     "family_friendly": true,
     "place_id": "ChIJsV5Z9VG01okRe3DPZHBhekk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsV5Z9VG01okRe3DPZHBhekk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsV5Z9VG01okRe3DPZHBhekk",
+    "place_query": "Genesee Brew House Restaurant, Rochester, NY"
   },
   {
     "name": "FLX Table",
@@ -453,7 +490,8 @@
     "description": "An intimate Finger Lakes destination with dinner‑party energy.",
     "family_friendly": true,
     "place_id": "ChIJW4rY7hbF0IkRoFY6xW1bKMw",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJW4rY7hbF0IkRoFY6xW1bKMw"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJW4rY7hbF0IkRoFY6xW1bKMw",
+    "place_query": "FLX Table, Geneva, NY"
   },
   {
     "name": "Kindred Fare",
@@ -465,7 +503,8 @@
     "description": "Neighborhood‑meets‑destination spot with a deep wine list.",
     "family_friendly": true,
     "place_id": "ChIJWfRvk9XE0IkRwgoAybxKdo8",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWfRvk9XE0IkRwgoAybxKdo8"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWfRvk9XE0IkRwgoAybxKdo8",
+    "place_query": "Kindred Fare, Geneva, NY"
   },
   {
     "name": "1833 Kitchen & Bar (Inns of Aurora)",
@@ -477,7 +516,8 @@
     "description": "Picture‑postcard charm on the east shore of Cayuga Lake.",
     "family_friendly": true,
     "place_id": "ChIJj1Pp_QS90IkRrleskvclhaY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj1Pp_QS90IkRrleskvclhaY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj1Pp_QS90IkRrleskvclhaY",
+    "place_query": "1833 Kitchen & Bar, Inns of Aurora, NY"
   },
   {
     "name": "Belhurst Castle (Edgar’s)",
@@ -489,7 +529,8 @@
     "description": "Over‑the‑top romantic setting in a bona fide castle.",
     "family_friendly": true,
     "place_id": "ChIJGVfl--3E0IkRX4ompBHlECQ",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGVfl--3E0IkRX4ompBHlECQ"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGVfl--3E0IkRX4ompBHlECQ",
+    "place_query": "Belhurst Castle, Edgar’s, NY"
   },
   {
     "name": "Tailor & The Cook",
@@ -501,7 +542,8 @@
     "description": "A Mohawk Valley standard‑bearer for local sourcing.",
     "family_friendly": true,
     "place_id": "ChIJDV2TACNH2YkRc8rDJXS4azk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJDV2TACNH2YkRc8rDJXS4azk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJDV2TACNH2YkRc8rDJXS4azk",
+    "place_query": "Tailor & The Cook, Utica, NY"
   },
   {
     "name": "City Beer Hall",
@@ -513,7 +555,8 @@
     "description": "Rowdy in the best way—plus a mechanical bull downstairs.",
     "family_friendly": false,
     "place_id": "ChIJoVmR9CMK3okRM47bivOAQoA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoVmR9CMK3okRM47bivOAQoA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoVmR9CMK3okRM47bivOAQoA",
+    "place_query": "City Beer Hall, Albany, NY"
   },
   {
     "name": "The Mouzon House",
@@ -525,7 +568,8 @@
     "description": "Romantic, quirky, and very Saratoga.",
     "family_friendly": true,
     "place_id": "ChIJv1wEFtg53okR4LQtI-Lm1_Q",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJv1wEFtg53okR4LQtI-Lm1_Q"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJv1wEFtg53okR4LQtI-Lm1_Q",
+    "place_query": "The Mouzon House, Saratoga Springs, NY"
   },
   {
     "name": "Morrissey's Lounge & Bistro (The Adelphi)",
@@ -537,7 +581,8 @@
     "description": "A swanky perch in one of Saratoga's crown‑jewel hotels.",
     "family_friendly": false,
     "place_id": "ChIJBeVvINE53okRpZJWPX1dchI",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBeVvINE53okRpZJWPX1dchI"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBeVvINE53okRpZJWPX1dchI",
+    "place_query": "Morrissey's Lounge & Bistro, The Adelphi, NY"
   },
   {
     "name": "The Amsterdam (Saratoga satellite)",
@@ -549,7 +594,8 @@
     "description": "Polished, lively room a short stroll from the track.",
     "family_friendly": true,
     "place_id": "ChIJ80M3-ugJxkcRCFAyQobPpRM",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ80M3-ugJxkcRCFAyQobPpRM"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ80M3-ugJxkcRCFAyQobPpRM",
+    "place_query": "The Amsterdam, Saratoga satellite, NY"
   },
   {
     "name": "Cafe Mutton",
@@ -561,7 +607,8 @@
     "description": "James Beard–noticed, personality-forward cooking in a casual setting.",
     "family_friendly": true,
     "place_id": "ChIJm30q7XiV3YkRQDqssuycFkE",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm30q7XiV3YkRQDqssuycFkE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm30q7XiV3YkRQDqssuycFkE",
+    "place_query": "Cafe Mutton, Hudson, NY"
   },
   {
     "name": "Silvia",
@@ -573,7 +620,8 @@
     "description": "A Catskills fixture that pairs sustainability with polish.",
     "family_friendly": true,
     "place_id": "ChIJhyVCzzYH3YkRZWFfV8TAJOw",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhyVCzzYH3YkRZWFfV8TAJOw"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhyVCzzYH3YkRZWFfV8TAJOw",
+    "place_query": "Silvia, Woodstock, NY"
   },
   {
     "name": "Cucina",
@@ -585,7 +633,8 @@
     "description": "Enduring Hudson Valley favorite for Italian in a pastoral setting.",
     "family_friendly": true,
     "place_id": "ChIJNb7zMDoH3YkR16KUq-HAY4Y",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJNb7zMDoH3YkR16KUq-HAY4Y"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJNb7zMDoH3YkR16KUq-HAY4Y",
+    "place_query": "Cucina, Woodstock, NY"
   },
   {
     "name": "Butterfield at Hasbrouck House",
@@ -597,7 +646,8 @@
     "description": "Upscale but grounded—date-night energy without the stuffiness.",
     "family_friendly": true,
     "place_id": "ChIJQRlQ7xcc3YkR23OmzjYYJto",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQRlQ7xcc3YkR23OmzjYYJto"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQRlQ7xcc3YkR23OmzjYYJto",
+    "place_query": "Butterfield at Hasbrouck House, Stone Ridge, NY"
   },
   {
     "name": "Foxfire Mountain House",
@@ -609,7 +659,8 @@
     "description": "Design-forward Catskills hideaway with a quietly ambitious kitchen. Open only Sundays + Mondays.",
     "family_friendly": true,
     "place_id": "ChIJ54CR2yD_3IkRHWULMvXbeFM",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ54CR2yD_3IkRHWULMvXbeFM"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ54CR2yD_3IkRHWULMvXbeFM",
+    "place_query": "Foxfire Mountain House, Mount Tremper, NY"
   },
   {
     "name": "The Arnold House Tavern",
@@ -621,7 +672,8 @@
     "description": "Community hub with a serious soft spot for trout country.",
     "family_friendly": true,
     "place_id": "ChIJswRQ7kyf3IkR3GommTrPZng",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJswRQ7kyf3IkR3GommTrPZng"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJswRQ7kyf3IkR3GommTrPZng",
+    "place_query": "The Arnold House Tavern, Livingston Manor, NY"
   },
   {
     "name": "The Laundrette",
@@ -633,7 +685,8 @@
     "description": "Low-key Delaware River favorite; better than it needs to be.",
     "family_friendly": true,
     "place_id": "ChIJnyNhOH5T24kRc9USAj3Vzrs",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJnyNhOH5T24kRc9USAj3Vzrs"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJnyNhOH5T24kRc9USAj3Vzrs",
+    "place_query": "The Laundrette, Narrowsburg, NY"
   },
   {
     "name": "Seminary Hill Cidery Restaurant",
@@ -645,7 +698,8 @@
     "description": "Architecture, views, and careful cooking in one package.",
     "family_friendly": true,
     "place_id": "ChIJl7Xll5xZ24kRaQSaQiA39Bs",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl7Xll5xZ24kRaQSaQiA39Bs"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl7Xll5xZ24kRaQSaQiA39Bs",
+    "place_query": "Seminary Hill Cidery Restaurant, Callicoon, NY"
   },
   {
     "name": "Rose Tavern at The Lake House",
@@ -657,7 +711,8 @@
     "description": "Elegant but relaxed; a showcase for Seneca/Canandaigua produce.",
     "family_friendly": true,
     "place_id": "ChIJiw651Mwn0YkR8X56jhbFFNA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJiw651Mwn0YkR8X56jhbFFNA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJiw651Mwn0YkR8X56jhbFFNA",
+    "place_query": "Rose Tavern at The Lake House, Canandaigua, NY"
   },
   {
     "name": "The Park Inn",
@@ -669,7 +724,8 @@
     "description": "Keuka Lake gem with an outsized cellar.",
     "family_friendly": true,
     "place_id": "ChIJ4eogTxer0YkRamlNt1Vpk4Y",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4eogTxer0YkRamlNt1Vpk4Y"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4eogTxer0YkRamlNt1Vpk4Y",
+    "place_query": "The Park Inn, Hammondsport, NY"
   },
   {
     "name": "Local 111",
@@ -681,7 +737,8 @@
     "description": "One of the region's early, still-relevant locavore rooms.",
     "family_friendly": true,
     "place_id": "ChIJR7vk3nSS3YkRCSImJ92Hbp8",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJR7vk3nSS3YkRCSImJ92Hbp8"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJR7vk3nSS3YkRCSImJ92Hbp8",
+    "place_query": "Local 111, Philmont, NY"
   },
   {
     "name": "The Brewster Inn",
@@ -693,7 +750,8 @@
     "description": "Old-school elegance on Cazenovia Lake that still delivers.",
     "family_friendly": true,
     "place_id": "ChIJxctJHZmH2YkR0szFfJTb8xw",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxctJHZmH2YkR0szFfJTb8xw"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxctJHZmH2YkR0szFfJTb8xw",
+    "place_query": "The Brewster Inn, Cazenovia, NY"
   },
   {
     "name": "The Grist Mill",
@@ -705,7 +763,8 @@
     "description": "Historic setting that's half museum, half dining room.",
     "family_friendly": true,
     "place_id": "ChIJp_sk3GLB34kRl7ag3QkwGLw",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJp_sk3GLB34kRl7ag3QkwGLw"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJp_sk3GLB34kRl7ag3QkwGLw",
+    "place_query": "The Grist Mill, Warrensburg, NY"
   },
   {
     "name": "Friends Lake Inn (Dining Room)",
@@ -717,7 +776,8 @@
     "description": "Quiet-lux basecamp for hiking and snow season alike.",
     "family_friendly": true,
     "place_id": "ChIJ8yl2IUiT34kRBc_KwV_L8_w",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8yl2IUiT34kRBc_KwV_L8_w"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8yl2IUiT34kRBc_KwV_L8_w",
+    "place_query": "Friends Lake Inn, Dining Room, NY"
   },
   {
     "name": "The Chateau on the Lake",
@@ -729,7 +789,8 @@
     "description": "A Lake George date-night staple with real finesse.",
     "family_friendly": false,
     "place_id": "ChIJWQuJpyrm34kRlQ0SPVnGslc",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWQuJpyrm34kRlQ0SPVnGslc"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWQuJpyrm34kRlQ0SPVnGslc",
+    "place_query": "The Chateau on the Lake, Bolton Landing, NY"
   },
   {
     "name": "Fiddlehead Bistro",
@@ -741,7 +802,8 @@
     "description": "Beloved locals' spot with destination-worthy cooking.",
     "family_friendly": true,
     "place_id": "ChIJl9vaetcay0wRHn79V8FQnjU",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl9vaetcay0wRHn79V8FQnjU"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl9vaetcay0wRHn79V8FQnjU",
+    "place_query": "Fiddlehead Bistro, Saranac Lake, NY"
   },
   {
     "name": "Origins Café at Carefree Gardens",
@@ -753,7 +815,8 @@
     "description": "Wholesome, soulful cooking in a botanical daydream.",
     "family_friendly": true,
     "place_id": "ChIJ20WLSf8G3IkRrWCR761LgKk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ20WLSf8G3IkRrWCR761LgKk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ20WLSf8G3IkRrWCR761LgKk",
+    "place_query": "Origins Café at Carefree Gardens, Cooperstown, NY"
   },
   {
     "name": "Hawkeye Bar & Grill (The Otesaga)",
@@ -765,7 +828,8 @@
     "description": "Otsego Lake views with easygoing resort service.",
     "family_friendly": true,
     "place_id": "ChIJtwu0ASYH3IkR1rL-v5i7nec",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtwu0ASYH3IkR1rL-v5i7nec"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtwu0ASYH3IkR1rL-v5i7nec",
+    "place_query": "Hawkeye Bar & Grill, The Otesaga, NY"
   },
   {
     "name": "The Aviary",
@@ -777,7 +841,8 @@
     "description": "Sharp technique and unexpected flavors in a small village.",
     "family_friendly": false,
     "place_id": "ChIJYwZvw5Dv3YkRnbs5mMJvbUY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJYwZvw5Dv3YkRnbs5mMJvbUY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJYwZvw5Dv3YkRnbs5mMJvbUY",
+    "place_query": "The Aviary, Kinderhook, NY"
   },
   {
     "name": "Morningbird",
@@ -789,7 +854,8 @@
     "description": "The Aviary's casual sister; lines for a reason.",
     "family_friendly": true,
     "place_id": "ChIJJ0Z9ZOzv3YkRMvdz39477oY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJ0Z9ZOzv3YkRMvdz39477oY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJ0Z9ZOzv3YkRMvdz39477oY",
+    "place_query": "Morningbird, Kinderhook, NY"
   },
   {
     "name": "Feast & Floret",
@@ -801,7 +867,8 @@
     "description": "Flower-shop roots, dinner-party spirit.",
     "family_friendly": true,
     "place_id": "ChIJdWQzHHKV3YkRpIVefILlOy4",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdWQzHHKV3YkRpIVefILlOy4"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdWQzHHKV3YkRpIVefILlOy4",
+    "place_query": "Feast & Floret, Hudson, NY"
   },
   {
     "name": "Saint Lawrence Spirits Chateau Restaurant",
@@ -812,7 +879,8 @@
     "specialty": "Farm-to-table with spirits pairings; seasonal hours.",
     "description": "Thousand Islands showpiece for sunsets and sips.",
     "family_friendly": true,
-    "place_id": "ChIJqXVJyhZLzUwR4CFs8ad6_rI",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJqXVJyhZLzUwR4CFs8ad6_rI"
+    "place_id": "ChIJWQSCeuBLzUwRGhKLXCzppp8",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWQSCeuBLzUwRGhKLXCzppp8",
+    "place_query": "Saint Lawrence Spirits Chateau Restaurant, Clayton, NY"
   }
 ]

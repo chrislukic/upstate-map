@@ -720,52 +720,56 @@
       "driveTime": "5h 00m",
       "restaurants": 45,
       "coordinates": [
-        44.28,
-        -73.98
+        44.2794911,
+        -73.9798713
       ],
       "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
       "description": "Olympic village in the heart of the Adirondacks. Home to two Winter Olympics (1932, 1980) with world-class skiing, hiking, and lake activities. Features Mirror Lake, Whiteface Mountain, and the Olympic Center.",
-      "place_id": "ChIJ92uRTEEFy0wRpobm7abY8Qs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ92uRTEEFy0wRpobm7abY8Qs"
+      "place_id": "ChIJWzFivmPiykwRwtMl3eajLCg",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWzFivmPiykwRwtMl3eajLCg",
+      "place_query": "Lake Placid village, NY"
     },
     {
       "name": "Saranac Lake",
       "population": 5400,
       "driveTime": "5h 15m",
       "coordinates": [
-        44.33,
-        -74.13
+        44.325031,
+        -74.131784
       ],
       "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
       "description": "Historic Adirondack village known for its Victorian architecture, vibrant arts scene, and the famous Winter Carnival with ice palace. Gateway to the Saranac Lakes chain and numerous hiking trails.",
-      "place_id": "ChIJ92uRTEEFy0wRpobm7abY8Qs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ92uRTEEFy0wRpobm7abY8Qs"
+      "place_id": "ChIJQR9DETIQy0wRjBai5VZB6fw",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQR9DETIQy0wRjBai5VZB6fw",
+      "place_query": "Saranac Lake village, NY"
     },
     {
       "name": "Tupper Lake",
       "population": 3300,
       "driveTime": "5h 30m",
       "coordinates": [
-        44.22,
-        -74.46
+        44.2239488,
+        -74.4640575
       ],
       "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
       "description": "Gateway to the western Adirondacks with excellent fishing, boating, and hiking. Home to the Wild Center natural history museum and the Adirondack Sky Center observatory.",
-      "place_id": "ChIJ92uRTEEFy0wRpobm7abY8Qs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ92uRTEEFy0wRpobm7abY8Qs"
+      "place_id": "ChIJ-bZf2x5Ay0wRktQBglxmvOY",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-bZf2x5Ay0wRktQBglxmvOY",
+      "place_query": "Tupper Lake, NY"
     },
     {
       "name": "Keene",
       "population": 1100,
       "driveTime": "4h 45m",
       "coordinates": [
-        44.29,
-        -73.79
+        44.25615819999999,
+        -73.7920851
       ],
       "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
       "description": "Small mountain town surrounded by the High Peaks. Perfect base for hiking the 46 High Peaks, with access to Cascade, Porter, and other popular trailheads.",
-      "place_id": "ChIJ92uRTEEFy0wRpobm7abY8Qs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ92uRTEEFy0wRpobm7abY8Qs"
+      "place_id": "ChIJ32hRmJvvykwRGgyWBORi5RQ",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ32hRmJvvykwRGgyWBORi5RQ",
+      "place_query": "Keene town, NY"
     },
     {
       "name": "Keene Valley",
@@ -777,125 +781,135 @@
       ],
       "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
       "description": "Historic trailhead village for the High Peaks. Starting point for hikes to Giant Mountain, Rocky Peak Ridge, and the famous Ausable Club trails.",
-      "place_id": "ChIJ92uRTEEFy0wRpobm7abY8Qs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ92uRTEEFy0wRpobm7abY8Qs"
+      "place_id": "ChIJazAFoRnpykwRHkKQS0C38RI",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJazAFoRnpykwRHkKQS0C38RI",
+      "place_query": "Keene Valley village, NY"
     },
     {
       "name": "Wilmington",
       "population": 1250,
       "driveTime": "4h 30m",
       "coordinates": [
-        44.38,
-        -73.87
+        44.3886137,
+        -73.8154356
       ],
       "scenicArea": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
       "description": "Mountain town with Whiteface Mountain ski resort and the Whiteface Veterans Memorial Highway. Gateway to the High Peaks with excellent hiking and skiing.",
-      "place_id": "ChIJ92uRTEEFy0wRpobm7abY8Qs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ92uRTEEFy0wRpobm7abY8Qs"
+      "place_id": "ChIJszmftwH8ykwRNqAPea4icTw",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJszmftwH8ykwRNqAPea4icTw",
+      "place_query": "Wilmington town, NY"
     },
     {
       "name": "Lake George",
       "population": 1000,
       "driveTime": "3h 45m",
       "coordinates": [
-        43.43,
-        -73.71
+        43.4261809,
+        -73.71234079999999
       ],
       "scenicArea": "Lake George & Pharaoh Lake Wilderness",
       "description": "The 'Queen of American Lakes' with crystal-clear waters and 32 miles of shoreline. Popular for boating, fishing, and lake cruises. Historic village with shops, restaurants, and family attractions.",
-      "place_id": "ChIJg9BOr3T434kRDCrAnlevZjs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg9BOr3T434kRDCrAnlevZjs"
+      "place_id": "ChIJgT4FoB3A34kR0mLPT7P86Ds",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJgT4FoB3A34kR0mLPT7P86Ds",
+      "place_query": "Lake George village, NY"
     },
     {
       "name": "Glens Falls",
       "population": 14830,
       "driveTime": "3h 30m",
       "coordinates": [
-        43.31,
-        -73.64
+        43.3095164,
+        -73.6440058
       ],
       "scenicArea": "Lake George & Pharaoh Lake Wilderness",
       "description": "Historic mill city on the Hudson River. Home to the Hyde Collection art museum, Cooper's Cave, and the Charles R. Wood Theater. Gateway to Lake George and the Adirondacks.",
-      "place_id": "ChIJg9BOr3T434kRDCrAnlevZjs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg9BOr3T434kRDCrAnlevZjs"
+      "place_id": "ChIJQymuEA3P34kRZUMSL3CdrCQ",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQymuEA3P34kRZUMSL3CdrCQ",
+      "place_query": "Glens Falls city, NY"
     },
     {
       "name": "Hudson Falls",
       "population": 7427,
       "driveTime": "3h 35m",
       "coordinates": [
-        43.3,
-        -73.58
+        43.3006281,
+        -73.5859487
       ],
       "scenicArea": "Lake George & Pharaoh Lake Wilderness",
       "description": "Village on the Hudson River with historic charm and outdoor recreation. Features the Feeder Canal Trail, Derby Park, and proximity to Lake George attractions.",
-      "place_id": "ChIJg9BOr3T434kRDCrAnlevZjs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg9BOr3T434kRDCrAnlevZjs"
+      "place_id": "ChIJJY8_sz_R34kR6sQLQdVCFn4",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJY8_sz_R34kR6sQLQdVCFn4",
+      "place_query": "Hudson Falls village, NY"
     },
     {
       "name": "Saratoga Springs",
       "population": 28000,
       "driveTime": "3h 15m",
       "coordinates": [
-        43.08,
-        -73.78
+        43.08337059999999,
+        -73.7849756
       ],
       "scenicArea": "Lake George & Pharaoh Lake Wilderness",
       "description": "Historic spa city famous for mineral springs, horse racing at Saratoga Race Course, and the Saratoga Performing Arts Center. Elegant Victorian architecture and vibrant downtown.",
-      "place_id": "ChIJg9BOr3T434kRDCrAnlevZjs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg9BOr3T434kRDCrAnlevZjs"
+      "place_id": "ChIJOdRbx0443okRqKKUG2pFHWQ",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJOdRbx0443okRqKKUG2pFHWQ",
+      "place_query": "Saratoga Springs city, NY"
     },
     {
       "name": "North Creek",
       "population": 700,
       "driveTime": "3h 45m",
       "coordinates": [
-        43.7,
-        -73.99
+        43.6978427,
+        -73.9859658
       ],
       "scenicArea": "Lake George & Pharaoh Lake Wilderness",
       "description": "Mountain village gateway to Gore Mountain ski resort and the Upper Hudson River. Historic railroad depot and access to whitewater rafting and hiking trails.",
-      "place_id": "ChIJg9BOr3T434kRDCrAnlevZjs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg9BOr3T434kRDCrAnlevZjs"
+      "place_id": "ChIJH6SsYkqQ34kR2D2aV907xck",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJH6SsYkqQ34kR2D2aV907xck",
+      "place_query": "North Creek village, NY"
     },
     {
       "name": "Schenectady",
       "population": 67000,
       "driveTime": "2h 45m",
       "coordinates": [
-        42.81,
-        -73.94
+        42.8143509,
+        -73.93874199999999
       ],
       "scenicArea": "Lake George & Pharaoh Lake Wilderness",
       "description": "Historic 'Electric City' with rich industrial heritage. Home to Union College, Proctors Theatre, and the Stockade Historic District. Gateway to the Adirondacks and Mohawk Valley.",
-      "place_id": "ChIJg9BOr3T434kRDCrAnlevZjs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg9BOr3T434kRDCrAnlevZjs"
+      "place_id": "ChIJpfh1Nf1t3okRerISb41wshk",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJpfh1Nf1t3okRerISb41wshk",
+      "place_query": "Schenectady city, NY"
     },
     {
       "name": "Bolton",
       "population": 2200,
       "driveTime": "3h 30m",
       "coordinates": [
-        43.55,
-        -73.65
+        43.5581144,
+        -73.65490199999999
       ],
       "scenicArea": "Lake George & Pharaoh Lake Wilderness",
       "description": "Lakefront town on Lake George with beautiful beaches, marinas, and lake access. Popular for boating, fishing, and water sports with scenic mountain views.",
-      "place_id": "ChIJg9BOr3T434kRDCrAnlevZjs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg9BOr3T434kRDCrAnlevZjs"
+      "place_id": "ChIJc4E1NBLo34kRCgPGK8u7Yy0",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJc4E1NBLo34kRCgPGK8u7Yy0",
+      "place_query": "Bolton town, NY"
     },
     {
       "name": "Ticonderoga",
       "population": 4800,
       "driveTime": "4h 00m",
       "coordinates": [
-        43.84,
-        -73.42
+        43.8486707,
+        -73.4234531
       ],
       "scenicArea": "Lake George & Pharaoh Lake Wilderness",
       "description": "Historic town between Lake George and Lake Champlain. Home to Fort Ticonderoga, a key Revolutionary War site, with beautiful lake views and hiking trails.",
-      "place_id": "ChIJg9BOr3T434kRDCrAnlevZjs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg9BOr3T434kRDCrAnlevZjs"
+      "place_id": "ChIJoy1NGfhVtUwR2JyCcz-G3TA",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoy1NGfhVtUwR2JyCcz-G3TA",
+      "place_query": "Ticonderoga town, NY"
     },
     {
       "name": "Hunter",
@@ -907,8 +921,9 @@
       ],
       "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
       "description": "Mountain town home to Hunter Mountain ski resort and the Hunter Mountain Festival Grounds. Access to hiking trails including Hunter Mountain Fire Tower and the Devil's Path.",
-      "place_id": "ChIJna477zKt3YkRexgxLVn2fj4",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJna477zKt3YkRexgxLVn2fj4"
+      "place_id": "ChIJP3oiVzOt3YkRmngpTVpCHtI",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP3oiVzOt3YkRmngpTVpCHtI",
+      "place_query": "Hunter town, NY"
     },
     {
       "name": "Tannersville",
@@ -920,47 +935,51 @@
       ],
       "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
       "description": "Charming mountain village known for its colorful 'painted ladies' Victorian houses. Gateway to Kaaterskill Falls and numerous hiking trails in the Catskills.",
-      "place_id": "ChIJna477zKt3YkRexgxLVn2fj4",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJna477zKt3YkRexgxLVn2fj4"
+      "place_id": "ChIJM1t46MSt3YkRa8-xVZAoqz0",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJM1t46MSt3YkRa8-xVZAoqz0",
+      "place_query": "Tannersville village, NY"
     },
     {
       "name": "Woodstock",
       "population": 6000,
       "driveTime": "2h 15m",
       "coordinates": [
-        42.04,
-        -74.12
+        42.0409247,
+        -74.1181971
       ],
       "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
       "description": "Legendary arts and music town that inspired the 1969 festival. Vibrant community with galleries, music venues, and outdoor recreation. Gateway to Overlook Mountain and the Catskills.",
-      "place_id": "ChIJIy6plHev3YkRlU6XSix38vc",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIy6plHev3YkRlU6XSix38vc"
+      "place_id": "ChIJK0zPwDMH3YkR_HEHiO--XLg",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJK0zPwDMH3YkR_HEHiO--XLg",
+      "place_query": "Woodstock town, NY"
     },
     {
       "name": "Kingston",
       "population": 23000,
       "driveTime": "2h 00m",
       "coordinates": [
-        41.93,
-        -74.0
+        41.9270367,
+        -73.9973608
       ],
       "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
       "description": "New York's first capital with rich colonial history. Features the Stockade Historic District, Rondout waterfront, and vibrant arts scene. Gateway to the Catskills and Hudson River.",
-      "place_id": "ChIJna477zKt3YkRexgxLVn2fj4",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJna477zKt3YkRexgxLVn2fj4"
+      "place_id": "ChIJJ4HJLQEP3YkRE8kyWFqJ10E",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJ4HJLQEP3YkRE8kyWFqJ10E",
+      "place_query": "Kingston, NY"
     },
     {
       "name": "Phoenicia",
       "population": 300,
       "driveTime": "2h 15m",
       "coordinates": [
-        42.08,
-        -74.31
+        42.0848126,
+        -74.3154254
       ],
       "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
       "description": "Tiny mountain hamlet known for tubing on the Esopus Creek and the Phoenicia Diner. Access to Slide Mountain and the Devil's Path hiking trails.",
-      "place_id": "ChIJBafKRxv63IkRkD0Iwp7KG-E",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBafKRxv63IkRkD0Iwp7KG-E"
+      "place_id": "ChIJ1dAzT6z43IkR0n4-Q6jWwkM",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ1dAzT6z43IkR0n4-Q6jWwkM",
+      "place_query": "Phoenicia hamlet, NY"
     },
     {
       "name": "Windham",
@@ -972,86 +991,93 @@
       ],
       "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
       "description": "Mountain town with Windham Mountain ski resort and the Windham Path. Access to hiking trails including Windham High Peak and the Blackhead Range.",
-      "place_id": "ChIJna477zKt3YkRexgxLVn2fj4",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJna477zKt3YkRexgxLVn2fj4"
+      "place_id": "ChIJh79KTSdN3IkR0bb__QzlVVg",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJh79KTSdN3IkR0bb__QzlVVg",
+      "place_query": "Windham town, NY"
     },
     {
       "name": "New Paltz",
       "population": 14000,
       "driveTime": "1h 45m",
       "coordinates": [
-        41.75,
-        -74.08
+        41.7475933,
+        -74.0868095
       ],
       "scenicArea": "Shawangunks / Minnewaska & Mohonk Preserve",
       "description": "College town home to SUNY New Paltz with historic Huguenot Street. Gateway to the Shawangunk Mountains, Mohonk Preserve, and Minnewaska State Park for world-class rock climbing and hiking.",
-      "place_id": "ChIJyf4izXXf3IkRgVmKpPFt4ic",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJyf4izXXf3IkRgVmKpPFt4ic"
+      "place_id": "ChIJjY_uvYQY3YkRbyvjZUt-wYI",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJjY_uvYQY3YkRbyvjZUt-wYI",
+      "place_query": "New Paltz town, NY"
     },
     {
       "name": "Gardiner",
       "population": 6000,
       "driveTime": "1h 45m",
       "coordinates": [
-        41.68,
-        -74.15
+        41.6798157,
+        -74.1504231
       ],
       "scenicArea": "Shawangunks / Minnewaska & Mohonk Preserve",
       "description": "Rural town with rolling hills and farms. Gateway to the Shawangunk Mountains with access to hiking trails and scenic countryside views.",
-      "place_id": "ChIJyyA_CNkh3YkRqQVQztRHTF4",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJyyA_CNkh3YkRqQVQztRHTF4"
+      "place_id": "ChIJcbZOPLkg3YkRTyce9pzU05Y",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcbZOPLkg3YkRTyce9pzU05Y",
+      "place_query": "Gardiner town, NY"
     },
     {
       "name": "Rosendale",
       "population": 6000,
       "driveTime": "1h 45m",
       "coordinates": [
-        41.85,
-        -74.08
+        41.8443125,
+        -74.0810669
       ],
       "scenicArea": "Shawangunks / Minnewaska & Mohonk Preserve",
       "description": "Historic town known for its cement industry heritage. Features the Rosendale Trestle, a popular rail trail, and access to the Shawangunk Mountains.",
-      "place_id": "ChIJyf4izXXf3IkRgVmKpPFt4ic",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJyf4izXXf3IkRgVmKpPFt4ic"
+      "place_id": "ChIJtUNXckwa3YkR-vZztKD1j_M",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUNXckwa3YkR-vZztKD1j_M",
+      "place_query": "Rosendale town, NY"
     },
     {
       "name": "Ellenville",
       "population": 4000,
       "driveTime": "2h 00m",
       "coordinates": [
-        41.72,
-        -74.4
+        41.7170379,
+        -74.3957099
       ],
       "scenicArea": "Shawangunks / Minnewaska & Mohonk Preserve",
       "description": "Mountain town with historic charm and outdoor recreation. Gateway to the Shawangunk Mountains with hiking trails and scenic valley views.",
-      "place_id": "ChIJyf4izXXf3IkRgVmKpPFt4ic",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJyf4izXXf3IkRgVmKpPFt4ic"
+      "place_id": "ChIJgc1ChHnb3IkRYg4uANW_g6w",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJgc1ChHnb3IkRYg4uANW_g6w",
+      "place_query": "Ellenville town, NY"
     },
     {
       "name": "Beacon",
       "population": 14000,
       "driveTime": "1h 15m",
       "coordinates": [
-        41.5,
-        -73.97
+        41.5048158,
+        -73.9695832
       ],
       "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
       "description": "Revitalized river town with the Dia:Beacon contemporary art museum, vibrant Main Street, and access to Breakneck Ridge hiking. Historic Mount Beacon and scenic Hudson River views.",
-      "place_id": "ChIJsf_5TVzNwokR45fRdph8g10",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsf_5TVzNwokR45fRdph8g10"
+      "place_id": "ChIJcV1uwFQz3YkRW1hFAG6ib7I",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcV1uwFQz3YkRW1hFAG6ib7I",
+      "place_query": "Beacon town, NY"
     },
     {
       "name": "Poughkeepsie",
       "population": 30000,
       "driveTime": "1h 30m",
       "coordinates": [
-        41.7,
-        -73.9
+        41.7055897,
+        -73.9283885
       ],
       "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
       "description": "Historic Hudson River city home to Vassar College and the Walkway Over the Hudson. Features the Mid-Hudson Children's Museum and access to the Hudson Highlands hiking trails.",
-      "place_id": "ChIJsf_5TVzNwokR45fRdph8g10",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsf_5TVzNwokR45fRdph8g10"
+      "place_id": "ChIJO7vgK2Q-3YkRSfMg--tdqF4",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJO7vgK2Q-3YkRSfMg--tdqF4",
+      "place_query": "Poughkeepsie city, NY"
     },
     {
       "name": "Cold Spring",
@@ -1063,112 +1089,121 @@
       ],
       "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
       "description": "Charming river village with historic Main Street, antique shops, and restaurants. Direct access to Breakneck Ridge and Bull Hill hiking trails with stunning Hudson River views.",
-      "place_id": "ChIJ3SDWu5LMwokROvp_Vf8saUw",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3SDWu5LMwokROvp_Vf8saUw"
+      "place_id": "ChIJSX93IUsz3YkRINRJpnb3q0o",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSX93IUsz3YkRINRJpnb3q0o",
+      "place_query": "Cold Spring village, NY"
     },
     {
       "name": "Cornwall-on-Hudson",
       "population": 3000,
       "driveTime": "1h 15m",
       "coordinates": [
-        41.45,
-        -74.02
+        41.444816,
+        -74.0156961
       ],
       "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
       "description": "Charming river village with historic architecture and scenic Hudson River views. Access to Storm King Mountain and the Hudson Highlands hiking trails.",
-      "place_id": "ChIJsf_5TVzNwokR45fRdph8g10",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsf_5TVzNwokR45fRdph8g10"
+      "place_id": "ChIJvY36v7cy3YkRp1qwR_NOqDw",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvY36v7cy3YkRp1qwR_NOqDw",
+      "place_query": "Cornwall-on-Hudson village, NY"
     },
     {
       "name": "Newburgh",
       "population": 28000,
       "driveTime": "1h 15m",
       "coordinates": [
-        41.5,
-        -74.02
+        41.5034271,
+        -74.0104178
       ],
       "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
       "description": "Historic river city with Washington's Headquarters and the Newburgh Waterfront. Access to Storm King Mountain and the Hudson Highlands with panoramic river views.",
-      "place_id": "ChIJsf_5TVzNwokR45fRdph8g10",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsf_5TVzNwokR45fRdph8g10"
+      "place_id": "ChIJJ9lrg_Er3YkRbhA87I3WRfc",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJ9lrg_Er3YkRbhA87I3WRfc",
+      "place_query": "Newburgh city, NY"
     },
     {
       "name": "Troy",
       "population": 51000,
       "driveTime": "2h 45m",
       "coordinates": [
-        42.73,
-        -73.69
+        42.7284117,
+        -73.69178509999999
       ],
       "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
       "description": "Historic industrial city home to RPI and Emma Willard School. Features the Troy Farmers Market, historic architecture, and proximity to the Hudson River and Adirondacks.",
-      "place_id": "ChIJsf_5TVzNwokR45fRdph8g10",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsf_5TVzNwokR45fRdph8g10"
+      "place_id": "ChIJc4cQTKcP3okRPHKk9fl-ETM",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJc4cQTKcP3okRPHKk9fl-ETM",
+      "place_query": "Troy city, NY"
     },
     {
       "name": "White Plains",
       "population": 59000,
       "driveTime": "0h 45m",
       "coordinates": [
-        41.03,
-        -73.76
+        41.0332209,
+        -73.7650415
       ],
       "scenicArea": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
       "description": "Westchester County's commercial hub with shopping, dining, and entertainment. Features the Westchester County Center and proximity to the Hudson Highlands and Hudson River.",
-      "place_id": "ChIJq8yX2UEz3YkRm91SFVn0LI8",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJq8yX2UEz3YkRm91SFVn0LI8"
+      "place_id": "ChIJ2TWj4iKUwokRbPxbGhAEFFQ",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2TWj4iKUwokRbPxbGhAEFFQ",
+      "place_query": "White Plains, NY"
     },
     {
       "name": "Harriman",
       "population": 2600,
       "driveTime": "1h 00m",
       "coordinates": [
-        41.3,
-        -74.15
+        41.30842699999999,
+        -74.1445899
       ],
       "scenicArea": "Harriman–Bear Mountain State Parks",
       "description": "Village surrounded by Harriman State Park with extensive hiking trails and lakes. Gateway to the Appalachian Trail and outdoor recreation.",
-      "place_id": "ChIJn673zCTQwokR3JMNGgUljew",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJn673zCTQwokR3JMNGgUljew"
+      "place_id": "ChIJZX2TekDXwokRLU83qVyNuwU",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZX2TekDXwokRLU83qVyNuwU",
+      "place_query": "Harriman village, NY"
     },
     {
       "name": "Sloatsburg",
       "population": 3100,
       "driveTime": "1h 00m",
       "coordinates": [
-        41.16,
-        -74.19
+        41.15453950000001,
+        -74.19292399999999
       ],
       "scenicArea": "Harriman–Bear Mountain State Parks",
       "description": "Historic village with charming Main Street and access to Harriman State Park. Gateway to hiking trails and outdoor recreation in the Ramapo Mountains.",
-      "place_id": "ChIJm8LniavPwokR8YUrl6yQAz8",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm8LniavPwokR8YUrl6yQAz8"
+      "place_id": "ChIJU1pcZKrfwokRXN-uvuO_Eoo",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU1pcZKrfwokRXN-uvuO_Eoo",
+      "place_query": "Sloatsburg village, NY"
     },
     {
       "name": "Monroe",
       "population": 19000,
       "driveTime": "1h 00m",
       "coordinates": [
-        41.33,
-        -74.19
+        41.3046016,
+        -74.1827119
       ],
       "scenicArea": "Harriman–Bear Mountain State Parks",
       "description": "Growing town with historic charm and modern amenities. Gateway to Harriman State Park with access to hiking trails and outdoor recreation.",
-      "place_id": "ChIJn673zCTQwokR3JMNGgUljew",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJn673zCTQwokR3JMNGgUljew"
+      "place_id": "ChIJG2pT228nw4kRqvXNFCylTQU",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJG2pT228nw4kRqvXNFCylTQU",
+      "place_query": "Monroe town, NY"
     },
     {
       "name": "Stony Point",
       "population": 15000,
       "driveTime": "1h 00m",
       "coordinates": [
-        41.23,
-        -73.98
+        41.2295386,
+        -73.9870847
       ],
       "scenicArea": "Harriman–Bear Mountain State Parks",
       "description": "Historic town on the Hudson River with Stony Point Battlefield and lighthouse. Access to Harriman State Park and scenic river views.",
-      "place_id": "ChIJm8LniavPwokR8YUrl6yQAz8",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm8LniavPwokR8YUrl6yQAz8"
+      "place_id": "ChIJ78ewgeLEwokRKK2zHi7QkYA",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ78ewgeLEwokRKK2zHi7QkYA",
+      "place_query": "Stony Point town, NY"
     },
     {
       "name": "Fort Montgomery",
@@ -1180,21 +1215,23 @@
       ],
       "scenicArea": "Harriman–Bear Mountain State Parks",
       "description": "Historic village with Revolutionary War significance. Home to Fort Montgomery State Historic Site and access to Harriman State Park hiking trails.",
-      "place_id": "ChIJm8LniavPwokR8YUrl6yQAz8",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm8LniavPwokR8YUrl6yQAz8"
+      "place_id": "ChIJL1tyXV7OwokR1dQqQWJlpYw",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJL1tyXV7OwokR1dQqQWJlpYw",
+      "place_query": "Fort Montgomery village, NY"
     },
     {
       "name": "Ithaca",
       "population": 32000,
       "driveTime": "4h 15m",
       "coordinates": [
-        42.44,
-        -76.5
+        42.4439614,
+        -76.5018807
       ],
       "scenicArea": "Finger Lakes Gorges (Ithaca area)",
       "description": "College town home to Cornell University and Ithaca College. Famous for its gorges, waterfalls, and vibrant downtown. Gateway to Cayuga Lake and the Finger Lakes wine region.",
-      "place_id": "ChIJMyyCHYWB0IkRiSh1RGfEJag",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMyyCHYWB0IkRiSh1RGfEJag"
+      "place_id": "ChIJ94iv4IKB0IkRdM5upWgn5Qo",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ94iv4IKB0IkRdM5upWgn5Qo",
+      "place_query": "Ithaca town, NY"
     },
     {
       "name": "Skaneateles",
@@ -1206,60 +1243,65 @@
       ],
       "scenicArea": "Finger Lakes Gorges (Ithaca area)",
       "description": "Charming village on pristine Skaneateles Lake with historic downtown, boutique shops, and restaurants. Known for its crystal-clear waters and scenic lake views.",
-      "place_id": "ChIJMyyCHYWB0IkRiSh1RGfEJag",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMyyCHYWB0IkRiSh1RGfEJag"
+      "place_id": "ChIJw99zq18A2okRu2-CtotpmY0",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJw99zq18A2okRu2-CtotpmY0",
+      "place_query": "Skaneateles town, NY"
     },
     {
       "name": "Canandaigua",
       "population": 10000,
       "driveTime": "5h 00m",
       "coordinates": [
-        42.89,
-        -77.28
+        42.887535,
+        -77.2816984
       ],
       "scenicArea": "Finger Lakes Gorges (Ithaca area)",
       "description": "Historic town on Canandaigua Lake with the Sonnenberg Gardens, Finger Lakes Wine Center, and charming Main Street. Gateway to the Finger Lakes wine trail and outdoor recreation.",
-      "place_id": "ChIJMyyCHYWB0IkRiSh1RGfEJag",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMyyCHYWB0IkRiSh1RGfEJag"
+      "place_id": "ChIJk4dmBckk0YkRaa4xO-xvEKc",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJk4dmBckk0YkRaa4xO-xvEKc",
+      "place_query": "Canandaigua town, NY"
     },
     {
       "name": "Utica",
       "population": 64000,
       "driveTime": "4h 00m",
       "coordinates": [
-        43.1,
-        -75.23
+        43.10109490000001,
+        -75.23558059999999
       ],
       "scenicArea": "Finger Lakes Gorges (Ithaca area)",
       "description": "Historic Mohawk Valley city with the Munson-Williams-Proctor Arts Institute and Stanley Theater. Gateway to the Adirondacks and Finger Lakes with rich cultural heritage.",
-      "place_id": "ChIJMyyCHYWB0IkRiSh1RGfEJag",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMyyCHYWB0IkRiSh1RGfEJag"
+      "place_id": "ChIJKXZqNVE32YkRhvztGCY2GhE",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJKXZqNVE32YkRhvztGCY2GhE",
+      "place_query": "Utica city, NY"
     },
     {
       "name": "Dryden",
-      "population": 14000,
+      "population": 1887,
       "driveTime": "4h 15m",
       "coordinates": [
-        42.49,
-        -76.3
+        42.4683542,
+        -76.317414
       ],
       "scenicArea": "Finger Lakes Gorges (Ithaca area)",
       "description": "Rural town with rolling hills and farms. Gateway to the Finger Lakes region with access to hiking trails and scenic countryside.",
-      "place_id": "ChIJMyyCHYWB0IkRiSh1RGfEJag",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMyyCHYWB0IkRiSh1RGfEJag"
+      "place_id": "ChIJCzELYi162okRa2tqb9gIrCI",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJCzELYi162okRa2tqb9gIrCI",
+      "place_query": "Dryden town, NY"
     },
     {
       "name": "Trumansburg",
       "population": 1800,
       "driveTime": "4h 15m",
       "coordinates": [
-        42.54,
-        -76.66
+        42.5422939,
+        -76.6660589
       ],
       "scenicArea": "Finger Lakes Gorges (Ithaca area)",
       "description": "Charming village near Taughannock Falls State Park. Gateway to the Finger Lakes with access to waterfalls and hiking trails.",
-      "place_id": "ChIJ6Ss7oNaa0IkRoviu66vdofk",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ6Ss7oNaa0IkRoviu66vdofk"
+      "place_id": "ChIJr4i0JNSL0IkRL7pTxzj2cO0",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJr4i0JNSL0IkRL7pTxzj2cO0",
+      "place_query": "Trumansburg village, NY"
     },
     {
       "name": "Watkins Glen",
@@ -1271,8 +1313,9 @@
       ],
       "scenicArea": "Watkins Glen & Surrounds",
       "description": "Village famous for Watkins Glen State Park with its stunning gorge and waterfalls. Home to Watkins Glen International racetrack and gateway to Seneca Lake wine country.",
-      "place_id": "ChIJS_CTFgBf0IkR3hZneHJBI38",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJS_CTFgBf0IkR3hZneHJBI38"
+      "place_id": "ChIJj2HZewpZ0IkRCRdRnhG9LNQ",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj2HZewpZ0IkRCRdRnhG9LNQ",
+      "place_query": "Watkins Glen village, NY"
     },
     {
       "name": "Montour Falls",
@@ -1284,99 +1327,107 @@
       ],
       "scenicArea": "Watkins Glen & Surrounds",
       "description": "Village known for its beautiful waterfall and historic charm. Gateway to Watkins Glen State Park and the Finger Lakes wine region.",
-      "place_id": "ChIJyXgDpRFf0IkRm9D5PEwTujA",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJyXgDpRFf0IkRm9D5PEwTujA"
+      "place_id": "ChIJnfPJHW1e0IkRQlWyA01K9Z0",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJnfPJHW1e0IkRQlWyA01K9Z0",
+      "place_query": "Montour Falls village, NY"
     },
     {
       "name": "Odessa",
       "population": 600,
       "driveTime": "4h 30m",
       "coordinates": [
-        42.33,
-        -76.8
+        42.3366545,
+        -76.7894627
       ],
       "scenicArea": "Watkins Glen & Surrounds",
       "description": "Small village in the Finger Lakes region with rural charm. Gateway to Watkins Glen State Park and the surrounding wine country.",
-      "place_id": "ChIJSUhYC9Jg0IkRPh0K6_guf74",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSUhYC9Jg0IkRPh0K6_guf74"
+      "place_id": "ChIJzcw-ONJg0IkRY_U0SxzW9C8",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJzcw-ONJg0IkRY_U0SxzW9C8",
+      "place_query": "Odessa village, NY"
     },
     {
       "name": "Mount Morris",
       "population": 4300,
       "driveTime": "6h 00m",
       "coordinates": [
-        42.72,
-        -77.87
+        42.7252361,
+        -77.8738056
       ],
       "scenicArea": "Letchworth State Park (Genesee River Gorge)",
       "description": "Historic town near Letchworth State Park, the 'Grand Canyon of the East'. Gateway to the Genesee River Gorge with stunning waterfalls and hiking trails.",
-      "place_id": "ChIJ4aMgQarT04kR7RksIwWa2RY",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4aMgQarT04kR7RksIwWa2RY"
+      "place_id": "ChIJPaX7lqlj0YkRQAQvmRGI4Lg",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPaX7lqlj0YkRQAQvmRGI4Lg",
+      "place_query": "Mount Morris town, NY"
     },
     {
       "name": "Perry",
       "population": 3600,
       "driveTime": "6h 00m",
       "coordinates": [
-        42.72,
-        -78.0
+        42.7156175,
+        -78.0055618
       ],
       "scenicArea": "Letchworth State Park (Genesee River Gorge)",
       "description": "Village near Letchworth State Park with historic charm. Gateway to the Genesee River Gorge and the 'Grand Canyon of the East'.",
-      "place_id": "ChIJy0ugdYrX04kRTaG5AwHwHSs",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJy0ugdYrX04kRTaG5AwHwHSs"
+      "place_id": "ChIJWaHQI37X04kR3V9VSBq4mlE",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWaHQI37X04kR3V9VSBq4mlE",
+      "place_query": "Perry village, NY"
     },
     {
       "name": "Castile",
       "population": 2800,
       "driveTime": "6h 00m",
       "coordinates": [
-        42.63,
-        -78.05
+        42.6289257,
+        -78.05478149999999
       ],
       "scenicArea": "Letchworth State Park (Genesee River Gorge)",
       "description": "Village near Letchworth State Park with rural charm. Gateway to the Genesee River Gorge and the 'Grand Canyon of the East'.",
-      "place_id": "ChIJhz7XjTfT04kRblD0QJU8tA0",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhz7XjTfT04kRblD0QJU8tA0"
+      "place_id": "ChIJi9LyXmPR04kRFah5OVLqdeo",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJi9LyXmPR04kRFah5OVLqdeo",
+      "place_query": "Castile village, NY"
     },
     {
       "name": "Salamanca",
       "population": 5900,
       "driveTime": "7h 00m",
       "coordinates": [
-        42.16,
-        -78.72
+        42.1578412,
+        -78.71503109999999
       ],
       "scenicArea": "Allegany State Park (Southern Tier)",
       "description": "City on the Allegany Indian Reservation with rich Native American heritage. Gateway to Allegany State Park and the Southern Tier region.",
-      "place_id": "ChIJX1yWuiCE0okRQLdhd-5pJpU",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJX1yWuiCE0okRQLdhd-5pJpU"
+      "place_id": "ChIJP3SBsZGI0okRe1dAuLHd9Tw",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP3SBsZGI0okRe1dAuLHd9Tw",
+      "place_query": "Salamanca city, NY"
     },
     {
       "name": "Binghamton",
       "population": 47000,
       "driveTime": "3h 30m",
       "coordinates": [
-        42.1,
-        -75.91
+        42.09712040000001,
+        -75.9116546
       ],
       "scenicArea": "Allegany State Park (Southern Tier)",
       "description": "Historic 'Carousel Capital of the World' with six antique carousels. Home to Binghamton University and the Roberson Museum. Gateway to the Southern Tier and Finger Lakes.",
-      "place_id": "ChIJX1yWuiCE0okRQLdhd-5pJpU",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJX1yWuiCE0okRQLdhd-5pJpU"
+      "place_id": "ChIJ0bet33Lv2okRfzPt9wOXjwY",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0bet33Lv2okRfzPt9wOXjwY",
+      "place_query": "Binghamton, NY"
     },
     {
       "name": "Limestone",
       "population": 1000,
       "driveTime": "7h 00m",
       "coordinates": [
-        42.03,
-        -78.63
+        42.0272856,
+        -78.6294717
       ],
       "scenicArea": "Allegany State Park (Southern Tier)",
       "description": "Small village in the Southern Tier with rural charm. Gateway to Allegany State Park and the surrounding wilderness areas.",
-      "place_id": "ChIJX1yWuiCE0okRQLdhd-5pJpU",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJX1yWuiCE0okRQLdhd-5pJpU"
+      "place_id": "ChIJ89EE3LR_0okR2jfwwEYlBSI",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ89EE3LR_0okR2jfwwEYlBSI",
+      "place_query": "Limestone village, NY"
     },
     {
       "name": "Great Valley",
@@ -1388,8 +1439,9 @@
       ],
       "scenicArea": "Allegany State Park (Southern Tier)",
       "description": "Village in the Southern Tier with rural charm and outdoor recreation. Gateway to Allegany State Park and the surrounding wilderness areas.",
-      "place_id": "ChIJX1yWuiCE0okRQLdhd-5pJpU",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJX1yWuiCE0okRQLdhd-5pJpU"
+      "place_id": "ChIJJV615xhi0okRwWt5_qhCo1w",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJV615xhi0okRwWt5_qhCo1w",
+      "place_query": "Great Valley village, NY"
     },
     {
       "name": "Niagara Falls (NY)",
@@ -1401,8 +1453,9 @@
       ],
       "scenicArea": "Niagara Gorge (NY side)",
       "description": "Home to the iconic Niagara Falls, one of the world's most famous natural wonders. Features Niagara Falls State Park, Maid of the Mist boat tours, and Cave of the Winds.",
-      "place_id": "ChIJXU20zN9C04kRZNIqZTh2BMY",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXU20zN9C04kRZNIqZTh2BMY"
+      "place_id": "ChIJeb6QQQJD04kRzPKlU55wfBc",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeb6QQQJD04kRzPKlU55wfBc",
+      "place_query": "Niagara Falls (NY), NY"
     },
     {
       "name": "Lewiston",
@@ -1414,34 +1467,37 @@
       ],
       "scenicArea": "Niagara Gorge (NY side)",
       "description": "Historic village near Niagara Falls with charming Main Street and waterfront. Gateway to the Niagara Gorge and Niagara Falls attractions.",
-      "place_id": "ChIJwR7P9Vxd04kRDjJA1h2gHtM",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJwR7P9Vxd04kRDjJA1h2gHtM"
+      "place_id": "ChIJcdJx2sFd04kRmTO2dGcqktw",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcdJx2sFd04kRmTO2dGcqktw",
+      "place_query": "Lewiston village, NY"
     },
     {
       "name": "Millerton",
       "population": 1000,
       "driveTime": "2h 15m",
       "coordinates": [
-        41.95,
-        -73.52
+        41.9538449,
+        -73.5103201
       ],
       "scenicArea": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
       "description": "Charming village in the Harlem Valley with historic charm. Gateway to the Taconic Range and Bash Bish Falls hiking trails.",
-      "place_id": "ChIJm57ItzGG3YkRye1FhTG3Xd0",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm57ItzGG3YkRye1FhTG3Xd0"
+      "place_id": "ChIJtWWOkaB_3YkRz13xSzhoRtE",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtWWOkaB_3YkRz13xSzhoRtE",
+      "place_query": "Millerton village, NY"
     },
     {
       "name": "Amenia",
       "population": 4000,
       "driveTime": "2h 15m",
       "coordinates": [
-        41.85,
-        -73.55
+        41.8492599,
+        -73.5567918
       ],
       "scenicArea": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
       "description": "Village in the Harlem Valley with rural charm and historic architecture. Gateway to the Taconic Range and Bash Bish Falls hiking trails.",
-      "place_id": "ChIJ_TXjeOqH3YkRW86fbeOYvds",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_TXjeOqH3YkRW86fbeOYvds"
+      "place_id": "ChIJ2RcqDGp73YkRAl9c7iRAc-k",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2RcqDGp73YkRAl9c7iRAc-k",
+      "place_query": "Amenia village, NY"
     },
     {
       "name": "Hillsdale",
@@ -1453,21 +1509,23 @@
       ],
       "scenicArea": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
       "description": "Small village in the Harlem Valley with rural charm. Gateway to the Taconic Range and Bash Bish Falls hiking trails.",
-      "place_id": "ChIJ_TXjeOqH3YkRW86fbeOYvds",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_TXjeOqH3YkRW86fbeOYvds"
+      "place_id": "ChIJT0oYtBqJ3YkR5jgqCYWNM24",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJT0oYtBqJ3YkR5jgqCYWNM24",
+      "place_query": "Hillsdale village, NY"
     },
     {
       "name": "Copake",
       "population": 3300,
       "driveTime": "2h 15m",
       "coordinates": [
-        42.1,
-        -73.55
+        42.103617,
+        -73.54996100000001
       ],
       "scenicArea": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
       "description": "Village in the Harlem Valley with rural charm and historic architecture. Gateway to the Taconic Range and Bash Bish Falls hiking trails.",
-      "place_id": "ChIJm57ItzGG3YkRye1FhTG3Xd0",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm57ItzGG3YkRye1FhTG3Xd0"
+      "place_id": "ChIJYTBrc3uG3YkR0YYBabIIyR4",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJYTBrc3uG3YkR0YYBabIIyR4",
+      "place_query": "Copake village, NY"
     },
     {
       "name": "Montauk",
@@ -1479,47 +1537,51 @@
       ],
       "scenicArea": "Long Island North & South Fork highlights (Montauk bluffs)",
       "description": "Easternmost point of Long Island with dramatic bluffs, Montauk Point Lighthouse, and world-class fishing. Popular beach destination with surfing, hiking, and scenic ocean views.",
-      "place_id": "ChIJeZ_yhjFU74kRq63W3jfBBaY",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeZ_yhjFU74kRq63W3jfBBaY"
+      "place_id": "ChIJbW4NoIxV74kRvfVmK1OSjKM",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbW4NoIxV74kRvfVmK1OSjKM",
+      "place_query": "Montauk, NY"
     },
     {
       "name": "Amagansett",
       "population": 1100,
       "driveTime": "2h 45m",
       "coordinates": [
-        40.98,
-        -72.14
+        40.9737117,
+        -72.1436884
       ],
       "scenicArea": "Long Island North & South Fork highlights (Montauk bluffs)",
       "description": "Charming hamlet on the South Fork with beautiful beaches and historic charm. Gateway to Montauk and the Long Island coastal attractions.",
-      "place_id": "ChIJeZ_yhjFU74kRq63W3jfBBaY",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeZ_yhjFU74kRq63W3jfBBaY"
+      "place_id": "ChIJBXLCWKa66IkRG8VtCCvfVus",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBXLCWKa66IkRG8VtCCvfVus",
+      "place_query": "Amagansett hamlet, NY"
     },
     {
       "name": "Lloyd Harbor",
       "population": 3800,
       "driveTime": "1h 15m",
       "coordinates": [
-        40.91,
-        -73.46
+        40.9034315,
+        -73.4598432
       ],
       "scenicArea": "Caumsett State Historic Park Preserve (Lloyd Neck)",
       "description": "Exclusive village on the North Shore with beautiful waterfront properties. Gateway to Caumsett State Park and Long Island Sound recreation.",
-      "place_id": "ChIJUd2__Y6dwokRNmI0nPBpHmk",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUd2__Y6dwokRNmI0nPBpHmk"
+      "place_id": "ChIJRdsn7H8n6IkRLgfk85mFNuE",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRdsn7H8n6IkRLgfk85mFNuE",
+      "place_query": "Lloyd Harbor village, NY"
     },
     {
       "name": "Cold Spring Harbor",
       "population": 5000,
       "driveTime": "1h 15m",
       "coordinates": [
-        40.87,
-        -73.46
+        40.8714873,
+        -73.456788
       ],
       "scenicArea": "Caumsett State Historic Park Preserve (Lloyd Neck)",
       "description": "Historic village on the North Shore with charming harbor and historic architecture. Gateway to Caumsett State Park and Long Island Sound recreation.",
-      "place_id": "ChIJUd2__Y6dwokRNmI0nPBpHmk",
-      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUd2__Y6dwokRNmI0nPBpHmk"
+      "place_id": "ChIJZwwahBEo6IkR6iZp_Aik0RQ",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZwwahBEo6IkR6iZp_Aik0RQ",
+      "place_query": "Cold Spring Harbor village, NY"
     },
     {
       "name": "Livingston Manor",
@@ -1531,47 +1593,51 @@
       ],
       "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
       "description": "Catskills fly-fishing hub on the Willowemoc with access to Beaverkill River; growing food and lodging scene.",
-      "place_id": null,
-      "google_maps_url": null
+      "place_id": "ChIJWXTW2OGT3IkRfnDpfSCeSkw",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWXTW2OGT3IkRfnDpfSCeSkw",
+      "place_query": "Livingston Manor, NY"
     },
     {
       "name": "Roscoe",
       "population": 600,
       "driveTime": "2h 30m",
       "coordinates": [
-        41.93,
-        -74.91
+        41.9331441,
+        -74.9134961
       ],
       "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
       "description": "\"Trout Town USA\" at the confluence of the Willowemoc and Beaverkill; classic Catskills angling destination.",
-      "place_id": null,
-      "google_maps_url": null
+      "place_id": "ChIJmwGnPYGe3IkRK-opCqy4hy8",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJmwGnPYGe3IkRK-opCqy4hy8",
+      "place_query": "Roscoe town, NY"
     },
     {
       "name": "Hancock",
       "population": 1000,
       "driveTime": "3h 10m",
       "coordinates": [
-        41.95,
-        -75.28
+        41.9539754,
+        -75.28045019999999
       ],
       "scenicArea": "Catskills (Slide, Hunter, Kaaterskill)",
       "description": "Gateway to Upper Delaware River system; renowned for drift-boat fly fishing on the East and West Branches.",
-      "place_id": null,
-      "google_maps_url": null
+      "place_id": "ChIJGQqqoq1r24kRbbiWhfx0azE",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGQqqoq1r24kRbbiWhfx0azE",
+      "place_query": "Hancock, NY"
     },
     {
       "name": "Pulaski",
       "population": 2300,
       "driveTime": "5h 15m",
       "coordinates": [
-        43.57,
-        -76.13
+        43.5670136,
+        -76.1277027
       ],
       "scenicArea": "Finger Lakes Gorges (Ithaca area)",
       "description": "Salmon River steelhead and salmon hotspot with year-round angling; access to Lake Ontario tribs.",
-      "place_id": null,
-      "google_maps_url": null
+      "place_id": "ChIJ6bNesSY12IkREz92MlEvFi8",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ6bNesSY12IkREz92MlEvFi8",
+      "place_query": "Pulaski, NY"
     }
   ],
   "trainRoutes": [

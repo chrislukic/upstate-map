@@ -107,6 +107,40 @@ html, body {
     color: #333;
 }
 
+.legend-toggle {
+    text-align: center;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #ddd;
+}
+
+.legend-toggle .btn {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.legend-toggle .btn:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.legend-toggle .btn i {
+    margin-right: 4px;
+}
+
+/* POI icon spacing in legend */
+.legend-expandable .legend-item i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
+}
+
 /* Minimal divIcon markers */
 .icon-marker {
     width: 20px;

@@ -13,6 +13,7 @@ class ScenicNYMap {
         this.breweries = null;
         this.restaurants = null;
         this.orchardPoints = null;
+        this.pointsOfInterest = null;
     }
 
     // Convert drive time string to color based on gradient
@@ -50,12 +51,13 @@ class ScenicNYMap {
     async loadData() {
         try {
             const ts = Date.now();
-            const [mapRes, wfRes, brRes, rsRes, orchRes] = await Promise.all([
+            const [mapRes, wfRes, brRes, rsRes, orchRes, poiRes] = await Promise.all([
                 fetch(`/data/map-data.json?t=${ts}`),
                 fetch(`/data/waterfalls.json?t=${ts}`),
                 fetch(`/data/breweries.json?t=${ts}`),
                 fetch(`/data/restaurants.json?t=${ts}`),
-                fetch(`/data/orchards_points.json?t=${ts}`)
+                fetch(`/data/orchards_points.json?t=${ts}`),
+                fetch(`/data/points_of_interest.json?t=${ts}`)
             ]);
 
             this.data = await mapRes.json();
@@ -66,6 +68,7 @@ class ScenicNYMap {
             this.breweries = brRes.ok ? await brRes.json() : [];
             this.restaurants = rsRes.ok ? await rsRes.json() : [];
             this.orchardPoints = orchRes.ok ? await orchRes.json() : [];
+            this.pointsOfInterest = poiRes.ok ? await poiRes.json() : [];
 
             return this.data;
         } catch (error) {
@@ -189,21 +192,17 @@ class ScenicNYMap {
             // Get color based on drive time
             const driveTimeColor = this.getDriveTimeColor(city.driveTime);
 
-            const marker = L.circleMarker(city.coordinates, {
-                bubblingMouseEvents: true,
-                color: driveTimeColor,
-                dashArray: null,
-                dashOffset: null,
-                fill: true,
-                fillColor: driveTimeColor,
-                fillOpacity: 0.8,
-                fillRule: "evenodd",
-                lineCap: "round",
-                lineJoin: "round",
-                opacity: 1.0,
-                radius: radius,
-                stroke: true,
-                weight: 2
+            // Create a div icon for cities to match other markers
+            const cityDivIcon = L.divIcon({
+                className: 'icon-marker icon-city',
+                html: `<div style="width: ${radius * 2}px; height: ${radius * 2}px; background-color: ${driveTimeColor}; border: 2px solid ${driveTimeColor}; border-radius: 50%; opacity: 0.8;"></div>`,
+                iconSize: [radius * 2, radius * 2],
+                iconAnchor: [radius, radius]
+            });
+
+            const marker = L.marker(city.coordinates, { 
+                icon: cityDivIcon,
+                zIndexOffset: 1000 // Ensure cities are always on top
             }).addTo(cityGroup);
 
             // Create popup
@@ -558,17 +557,121 @@ class ScenicNYMap {
         }
     }
 
+    async renderPointsOfInterest() {
+        try {
+            if (!this.pointsOfInterest || !Array.isArray(this.pointsOfInterest) || !this.pointsOfInterest.length) {
+                console.log('No points of interest data to render');
+                return;
+            }
+
+            const poiGroup = L.featureGroup({}).addTo(this.map);
+
+            this.pointsOfInterest.forEach(poi => {
+                // Skip if coordinates are invalid
+                if (poi.lat === null || poi.lng === null || isNaN(poi.lat) || isNaN(poi.lng)) {
+                    return;
+                }
+
+                // Create icon based on category (FontAwesome 4 compatible)
+                let iconClass = 'fa-map-marker'; // Default icon
+                let iconColor = '#8B4513'; // Brown color for cultural sites
+                
+                switch (poi.category) {
+                    case 'Museum':
+                        iconClass = 'fa-university';
+                        iconColor = '#4169E1'; // Royal blue
+                        break;
+                    case 'Art Museum':
+                    case 'Art Center':
+                        iconClass = 'fa-paint-brush';
+                        iconColor = '#FF6347'; // Tomato
+                        break;
+                    case 'Historic Site':
+                        iconClass = 'fa-building';
+                        iconColor = '#8B4513'; // Saddle brown
+                        break;
+                    case 'Educational Institution':
+                        iconClass = 'fa-graduation-cap';
+                        iconColor = '#228B22'; // Forest green
+                        break;
+                    case 'Performing Arts':
+                        iconClass = 'fa-music';
+                        iconColor = '#9370DB'; // Medium purple
+                        break;
+                    case 'Sports Venue':
+                        iconClass = 'fa-trophy';
+                        iconColor = '#FFD700'; // Gold
+                        break;
+                    case 'Natural Attraction':
+                    case 'State Park':
+                        iconClass = 'fa-tree';
+                        iconColor = '#32CD32'; // Lime green
+                        break;
+                    case 'Historic Garden':
+                        iconClass = 'fa-leaf';
+                        iconColor = '#228B22'; // Forest green
+                        break;
+                }
+
+                // Create div icon for points of interest
+                const poiIcon = L.divIcon({
+                    className: 'icon-marker icon-poi',
+                    html: `<i class="fa ${iconClass}" style="color: ${iconColor}; font-size: 16px; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);"></i>`,
+                    iconSize: [20, 20],
+                    iconAnchor: [10, 10]
+                });
+
+                const marker = L.marker([poi.lat, poi.lng], { 
+                    icon: poiIcon,
+                    zIndexOffset: 500 // Above restaurants/breweries but below cities
+                }).addTo(poiGroup);
+
+                // Create popup content
+                const websiteLink = poi.website ? 
+                    `<br/><a href="${poi.website}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                        <i class="fa fa-external-link-alt"></i> Visit Website
+                    </a>` : '';
+
+                const googleMapsLink = poi.place_id ? 
+                    `<br/><a href="https://www.google.com/maps/place/?q=place_id:${poi.place_id}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                        <i class="fa fa-map-marker"></i> View on Google Maps
+                    </a>` : '';
+
+                marker.bindPopup(`
+                    <div style="width:100%">
+                        <b>${poi.name}</b><br/>
+                        <small style="color: #666;">${poi.category}</small><br/>
+                        <small style="color: #666;">${poi.location}</small><br/>
+                        ${poi.description}
+                        ${websiteLink}
+                        ${googleMapsLink}
+                    </div>
+                `);
+            });
+
+            poiGroup.addTo(this.map);
+            if (this.layerControl) {
+                this.layerControl.addOverlay(poiGroup, 'Points of Interest');
+            }
+
+            console.log(`Rendered ${this.pointsOfInterest.length} points of interest`);
+        } catch (e) {
+            console.error('Failed to load points of interest:', e);
+        }
+    }
+
     async render() {
         try {
             await this.loadData();
             this.initializeMap();
             this.renderScenicAreas();
-            this.renderCities();
             this.renderTrainRoutes();
             await this.renderOrchards();
             await this.renderWaterfalls();
             await this.renderBreweries();
             await this.renderRestaurants();
+            await this.renderPointsOfInterest();
+            this.renderCities(); // Render cities last so they appear on top
             console.log('Map rendered successfully with', this.scenicAreas.length, 'scenic areas,', this.cities.length, 'cities, and', this.data.trainRoutes.length, 'train routes');
         } catch (error) {
             console.error('Error rendering map:', error);
