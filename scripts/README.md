@@ -1,7 +1,21 @@
 Scenic NY Map — Data Maintenance Guide
 
 Overview
-This folder contains scripts to enrich, validate, and maintain the datasets used by the Scenic NY Map. This guide explains what each script does, how often to run it, and prerequisites.
+This folder contains organized scripts to enrich, validate, and maintain the datasets used by the Scenic NY Map. This guide explains what each script does, how often to run it, and prerequisites.
+
+## Folder Structure
+
+### 📁 `maintenance/` - Active Maintenance Scripts
+Regular maintenance tasks that should be run periodically.
+
+### 📁 `utilities/` - Utility Scripts  
+One-time or occasional utility scripts for data processing.
+
+### 📁 `legacy/` - Legacy Scripts
+Superseded scripts kept for reference.
+
+### 📁 `data/` - Data Files
+Generated data files and reports.
 
 Setup
 - Python 3.9+
@@ -23,7 +37,7 @@ Key Datasets
 Maintenance Tasks & Cadence
 
 1) Restaurant open/closed status (operational hygiene)
-- Script: check_restaurant_status.py
+- Script: maintenance/check_restaurant_status.py
 - What it does: Queries Google Places business_status and updates fields on restaurants:
   - business_status: OPERATIONAL | CLOSED_TEMPORARILY | CLOSED_PERMANENTLY
   - closed_flag: null | temporary | permanent
@@ -34,38 +48,39 @@ Maintenance Tasks & Cadence
   - On demand after bulk data changes: add --force to re-check all
 - Commands:
   - cd scripts
-  - python check_restaurant_status.py
-  - python check_restaurant_status.py --force
+  - python maintenance/check_restaurant_status.py
+  - python maintenance/check_restaurant_status.py --force
 
 2) Places enrichment (place_id, google_maps_url, coordinates)
-- Script: enrich_with_google_maps.py (general) and enrich_new_restaurants.py (targeted)
+- Script: maintenance/enrich_with_google_maps_improved.py
 - What it does:
-  - enrich_with_google_maps.py: iterates waterfalls, breweries, restaurants, orchards_points, and cities to populate place_id and google_maps_url (and coordinates when missing)
-  - enrich_new_restaurants.py: only processes restaurants with null lat/lng/place_id/google_maps_url
+  - Enriches all datasets (waterfalls, breweries, restaurants, orchards, cities) with Google Places data
+  - Updates coordinates from Google Places API (source of truth)
+  - Prevents duplicate place IDs and validates matches
+  - Uses improved search queries and coordinate validation
 - When to run:
   - After adding new entries (restaurants/orchards/cities) or when you notice missing Google links
   - Monthly as a catch‑up, if desired
 - Commands:
   - cd scripts
-  - python enrich_new_restaurants.py
-  - python enrich_with_google_maps.py
+  - python maintenance/enrich_with_google_maps_improved.py
 
-3) Coordinate verification (spot check & safe corrections)
-- Scripts: verify_coordinates_google.py, apply_corrections_safe.py
-- What they do:
-  - verify_coordinates_google.py: compares current coordinates to Google Places locations, writes a discrepancy report
-  - apply_corrections_safe.py: applies coordinate updates with distance/geographic safeguards
+3) Coordinate verification (spot check)
+- Script: maintenance/verify_coordinates_google.py
+- What it does:
+  - Compares current coordinates to Google Places locations using existing place IDs
+  - Writes a discrepancy report for manual review
+  - Does NOT automatically apply corrections (manual review required)
 - When to run:
   - Quarterly, or after large data imports/edits
   - Before major releases to reduce location drift
 - Commands:
   - cd scripts
-  - python verify_coordinates_google.py
-  - Review scripts/google_coordinate_verification_report.json
-  - python apply_corrections_safe.py
+  - python maintenance/verify_coordinates_google.py
+  - Review scripts/data/google_coordinate_verification_report.json
 
 4) Orchard-specific utilities (legacy)
-- Scripts: geocode_orchards.py, merge_orchards.py
+- Scripts: utilities/geocode_orchards.py, utilities/merge_orchards.py
 - Generally not needed once orchards_points.json is enriched, but kept for provenance and re-runs.
 
 Operational Notes
@@ -73,14 +88,14 @@ Operational Notes
 - Rate limits: Scripts include light pacing; for large runs, consider spacing or running off-hours.
 - Encoding: All writers use UTF‑8 and ensure_ascii=False to preserve characters on Windows.
 - Safety:
-  - Prefer apply_corrections_safe.py over any older generated scripts if auto‑correcting coordinates.
+  - Always review coordinate verification reports before making changes.
   - Verify large diffs before committing.
 
 Suggested Schedule (example)
-- Weekly: check_restaurant_status.py
-- After adding new restaurants: enrich_new_restaurants.py
-- Monthly or after bulk edits: enrich_with_google_maps.py
-- Quarterly or pre‑release: verify_coordinates_google.py, then apply_corrections_safe.py (if needed)
+- Weekly: maintenance/check_restaurant_status.py
+- After adding new data: maintenance/enrich_with_google_maps_improved.py
+- Monthly or after bulk edits: maintenance/enrich_with_google_maps_improved.py
+- Quarterly or pre‑release: maintenance/verify_coordinates_google.py (review report manually)
 
 Troubleshooting
 - JSON parse error on data files: Look for unescaped quotes in strings; fix and re-run.

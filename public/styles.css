@@ -170,7 +170,51 @@ html, body {
     stroke-width: 2px;
 }
 
-/* Responsive adjustments */
+/* Legend content wrapper */
+.legend-content {
+    margin-top: 8px;
+}
+
+/* Secondary toggle button styling */
+.legend-toggle-secondary {
+    text-align: center;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #ddd;
+}
+
+.legend-toggle-secondary .btn {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.legend-toggle-secondary .btn:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.legend-toggle-secondary .btn i {
+    margin-right: 4px;
+}
+
+/* Desktop: Show essential legend by default, hide toggle button */
+@media (min-width: 769px) {
+    .legend-content {
+        display: block !important;
+    }
+    
+    .legend-toggle {
+        display: none;
+    }
+}
+
+/* Mobile: Hide legend content by default, show toggle button */
 @media (max-width: 768px) {
     .legend {
         width: 320px;
@@ -178,4 +222,194 @@ html, body {
         bottom: 10px;
         left: 10px;
     }
+    
+    .legend-content {
+        display: none;
+    }
+    
+    .legend-toggle {
+        display: block;
+    }
+}
+
+/* ===== MAP POPUP STYLES ===== */
+
+/* Base popup container */
+.map-popup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Popup titles */
+.popup-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    order: 1;
+}
+
+.popup-title-large {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    order: 1;
+}
+
+/* Popup descriptions */
+.popup-description {
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+    order: 2;
+}
+
+.popup-description-small {
+    margin: 0;
+    font-style: italic;
+    font-size: 13px;
+    order: 2;
+}
+
+/* Popup details sections */
+.popup-details {
+    margin: 0;
+    padding: 0;
+    border: none;
+    order: 3;
+}
+
+.popup-details-dark {
+    margin: 0;
+    padding: 0;
+    border: none;
+    order: 3;
+}
+
+.popup-details-text {
+    margin: 0;
+    font-size: 11px;
+    order: 3;
+}
+
+.popup-details-text-small {
+    margin: 0;
+    font-size: 12px;
+    order: 3;
+}
+
+/* Inline details for compact display */
+.popup-details-inline {
+    margin: 0 0 4px 0;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.popup-details-inline:not(:last-child)::after {
+    content: " • ";
+    margin: 0 4px;
+    color: #999;
+}
+
+/* Popup links */
+.popup-link {
+    color: #1976d2;
+    text-decoration: none;
+    order: 4;
+}
+
+.popup-link:hover {
+    text-decoration: underline;
+}
+
+.popup-links-container {
+    display: flex;
+    align-items: center;
+    order: 4;
+}
+
+.popup-link-spaced {
+    color: #1976d2;
+    text-decoration: none;
+    margin-left: 10px;
+    order: 4;
+}
+
+/* Expandable content */
+.popup-expandable {
+    display: none;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #ddd;
+    font-style: italic;
+}
+
+/* Popup metadata */
+.popup-meta {
+    color: #666;
+    font-size: 12px;
+    margin: 0;
+    display: inline-block;
+    order: 3;
+}
+
+.popup-meta:not(:last-child)::after {
+    content: " • ";
+    margin: 0 4px;
+    color: #999;
+}
+
+.popup-meta-small {
+    color: #666;
+    font-size: 11px;
+    margin: 0;
+    display: inline-block;
+    order: 3;
+}
+
+.popup-meta-small:not(:last-child)::after {
+    content: " • ";
+    margin: 0 4px;
+    color: #999;
+}
+
+/* Flexbox ordering utilities for easy reordering */
+.popup-order-1 { order: 1; }
+.popup-order-2 { order: 2; }
+.popup-order-3 { order: 3; }
+.popup-order-4 { order: 4; }
+.popup-order-5 { order: 5; }
+
+/* ===== MAP MARKER STYLES ===== */
+
+/* City markers */
+.city-marker {
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* Waterfall icons */
+.waterfall-icon {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+/* POI icons */
+.poi-icon {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+/* ===== TRAIN ROUTE STYLES ===== */
+.route-name {
+    font-weight: bold;
+}
+
+/* ===== TOOLTIP STYLES ===== */
+.map-tooltip {
+    font-size: 14px;
+}
+
+.map-tooltip small {
+    font-size: 12px;
+    color: #666;
 }

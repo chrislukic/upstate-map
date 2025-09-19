@@ -161,18 +161,18 @@ class ScenicNYMap {
 
             // Add tooltip
             polygon.bindTooltip(
-                `<div>${area.name} (Score ${area.score}) - ${area.driveTime}</div>`,
+                `<div class="map-tooltip">${area.name} (Score ${area.score}) - ${area.driveTime}</div>`,
                 { sticky: true }
             );
 
             // Create popup for the polygon itself
             const popup = L.popup({ maxWidth: 360 });
             const popupContent = $(`
-                <div style="width: 100.0%; height: 100.0%;">
-                    <b>${area.name}</b><br>
-                    Scenery/Hiking Score: ${area.score} / 10<br>
-                    Drive time from NYC (off‑peak): <b>${area.driveTime}</b><br>
-                    <i>${area.description}</i>
+                <div class="map-popup">
+                    <h3 class="popup-title">${area.name}</h3>
+                    <span class="popup-meta">Scenery/Hiking Score: ${area.score} / 10</span>
+                    <span class="popup-meta">Drive time from NYC (off‑peak): <strong>${area.driveTime}</strong></span>
+                    <div class="popup-description">${area.description}</div>
                 </div>
             `)[0];
             popup.setContent(popupContent);
@@ -194,8 +194,8 @@ class ScenicNYMap {
 
             // Create a div icon for cities to match other markers
             const cityDivIcon = L.divIcon({
-                className: 'icon-marker icon-city',
-                html: `<div style="width: ${radius * 2}px; height: ${radius * 2}px; background-color: ${driveTimeColor}; border: 2px solid ${driveTimeColor}; border-radius: 50%; opacity: 0.8;"></div>`,
+                className: 'icon-marker icon-city city-marker',
+                html: `<div style="width: ${radius * 2}px; height: ${radius * 2}px; background-color: ${driveTimeColor}; border: 2px solid ${driveTimeColor};"></div>`,
                 iconSize: [radius * 2, radius * 2],
                 iconAnchor: [radius, radius]
             });
@@ -208,16 +208,16 @@ class ScenicNYMap {
             // Create popup
             const popup = L.popup({ maxWidth: 260 });
             const googleMapsLink = city.google_maps_url ? 
-                `<br/><a href="${city.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                `<a href="${city.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
                     <i class="fa fa-map-marker"></i> View on Google Maps
                 </a>` : '';
             
             const popupContent = $(`
-                <div style="width: 100.0%; height: 100.0%;">
-                    <b>${city.name}</b><br>
-                    Population (approx): ${city.population.toLocaleString()}<br>
-                    Drive time: <b>${city.driveTime}</b><br>
-                    <i>${city.scenicArea}</i>
+                <div class="map-popup">
+                    <h3 class="popup-title">${city.name}</h3>
+                    <span class="popup-meta">Population (approx): ${city.population.toLocaleString()}</span>
+                    <span class="popup-meta">Drive time: <strong>${city.driveTime}</strong></span>
+                    <div class="popup-description">${city.scenicArea}</div>
                     ${googleMapsLink}
                 </div>
             `)[0];
@@ -227,7 +227,7 @@ class ScenicNYMap {
             // Add tooltip with drive time
             const description = city.description ? `<br/><small>${city.description}</small>` : '';
             marker.bindTooltip(
-                `<div>${city.name} (~${city.population.toLocaleString()}) - ${city.driveTime}${description}</div>`,
+                `<div class="map-tooltip">${city.name} (~${city.population.toLocaleString()}) - ${city.driveTime}${description}</div>`,
                 { sticky: true }
             );
         });
@@ -251,7 +251,7 @@ class ScenicNYMap {
 
             // Add route tooltip
             routeLine.bindTooltip(
-                `<div><b>${route.name}</b><br>${route.operator}</div>`,
+                `<div class="map-tooltip"><b>${route.name}</b><br>${route.operator}</div>`,
                 { sticky: true }
             );
 
@@ -281,11 +281,11 @@ class ScenicNYMap {
                 // Create station popup
                 const popup = L.popup({ maxWidth: 280 });
                 const popupContent = $(`
-                    <div style="width: 100.0%; height: 100.0%;">
-                        <b>${stop.name}</b><br>
-                        <span style="color: ${route.color}; font-weight: bold;">${route.name}</span><br>
-                        Travel time from NYC: <b>${stop.travelTime}</b><br>
-                        <i>${route.operator} • ${stop.type}</i>
+                    <div class="map-popup">
+                        <h3 class="popup-title">${stop.name}</h3>
+                        <span class="popup-meta route-name" style="color: ${route.color};">${route.name}</span>
+                        <span class="popup-meta">Travel time from NYC: <strong>${stop.travelTime}</strong></span>
+                        <div class="popup-description">${route.operator} • ${stop.type}</div>
                     </div>
                 `)[0];
                 popup.setContent(popupContent);
@@ -293,7 +293,7 @@ class ScenicNYMap {
 
                 // Add station tooltip
                 stationMarker.bindTooltip(
-                    `<div>${stop.name} - ${stop.travelTime}</div>`,
+                    `<div class="map-tooltip">${stop.name} - ${stop.travelTime}</div>`,
                     { sticky: true }
                 );
             });
@@ -333,34 +333,25 @@ class ScenicNYMap {
                 if (!o.coords || isNaN(o.coords[0]) || isNaN(o.coords[1])) return;
                 const marker = L.marker(o.coords, { icon: orchardDivIcon }).addTo(orchardGroup);
                 const notes = o.notes ? `<br/><small>${o.notes}</small>` : '';
-                marker.bindTooltip(`<div>${o.name}${notes}</div>`, { sticky: true });
+                marker.bindTooltip(`<div class="map-tooltip">${o.name}${notes}</div>`, { sticky: true });
                 const linkHtml = o.website ? `<a href="${o.website}" target="_blank" rel="noopener">Website</a>` : '';
                 const googleMapsLink = o.google_maps_url ? 
-                    `<a href="${o.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                    `<a href="${o.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
-                const addr = o.address ? `${o.address}<br/>` : '';
-                const drive = o.approx_drive ? `Drive: <b>${o.approx_drive}</b><br/>` : '';
-                const popupNotes = o.notes ? `<i>${o.notes}</i><br/>` : '';
-                const links = [linkHtml, googleMapsLink].filter(Boolean).join(' • ');
                 
-                // Debug: Log popup content for first orchard
-                if (o.name === 'Fishkill Farms') {
-                    console.log('Orchard popup content for Fishkill Farms:', {
-                        name: o.name,
-                        google_maps_url: o.google_maps_url,
-                        googleMapsLink: googleMapsLink,
-                        links: links
-                    });
-                }
+                const websiteLink = o.website ? 
+                    `<a href="${o.website}" target="_blank" rel="noopener" class="popup-link">Website</a>` : '';
+                
+                const links = [websiteLink, googleMapsLink].filter(Boolean).join(' • ');
                 
                 marker.bindPopup(`
-                    <div style="width:100%">
-                        <b>${o.name}</b><br/>
-                        ${addr}
-                        ${drive}
-                        ${popupNotes}
-                        ${links}
+                    <div class="map-popup">
+                        <h3 class="popup-title">${o.name}</h3>
+                        ${o.address ? `<span class="popup-meta">${o.address}</span>` : ''}
+                        ${o.approx_drive ? `<span class="popup-meta"><strong>Drive:</strong> ${o.approx_drive}</span>` : ''}
+                        ${o.notes ? `<div class="popup-description">${o.notes}</div>` : ''}
+                        ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
                     </div>
                 `);
             });
@@ -402,7 +393,7 @@ class ScenicNYMap {
                 const iconAnchor = iconSize / 2;
                 
                 const waterDivIcon = L.divIcon({
-                    className: 'icon-marker icon-water',
+                    className: 'icon-marker icon-water waterfall-icon',
                     html: `<i class="fa fa-tint" style="font-size: ${iconSize}px;"></i>`,
                     iconSize: [iconSize, iconSize],
                     iconAnchor: [iconAnchor, iconAnchor]
@@ -411,7 +402,7 @@ class ScenicNYMap {
                 const marker = L.marker(coords, { icon: waterDivIcon }).addTo(wfGroup);
 
                 const description = w.description ? `<br/><small>${w.description}</small>` : '';
-                marker.bindTooltip(`<div>${w.name}${description}</div>`, { sticky: true });
+                marker.bindTooltip(`<div class="map-tooltip">${w.name}${description}</div>`, { sticky: true });
 
                 const meta = [];
                 if (w.height_ft) meta.push(`Height: ${w.height_ft} ft`);
@@ -420,17 +411,17 @@ class ScenicNYMap {
                 if (w.best_season) meta.push(`Best: ${w.best_season}`);
                 if (w.access) meta.push(w.access);
 
-                const desc = w.description ? `<br/><i>${w.description}</i>` : '';
+                const hasDescription = w.description ? true : false;
                 const googleMapsLink = w.google_maps_url ? 
-                    `<br/><a href="${w.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                    `<a href="${w.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
 
                 const popupContent = `
-                    <div style="width:100%">
-                        <b>${w.name}</b><br/>
-                        ${meta.join(' • ')}
-                        ${desc}
+                    <div class="map-popup">
+                        <h3 class="popup-title">${w.name}</h3>
+                        <div class="popup-details-text-small">${meta.join(' • ')}</div>
+                        ${hasDescription ? `<div class="popup-description">${w.description}</div>` : ''}
                         ${googleMapsLink}
                     </div>
                 `;
@@ -467,8 +458,9 @@ class ScenicNYMap {
                 const coords = [b.lat, b.lng];
                 const marker = L.marker(coords, { icon: beerDivIcon }).addTo(brGroup);
 
-                const description = b.description ? `<br/><small>${b.description}</small>` : '';
-                marker.bindTooltip(`<div>${b.name}${description}</div>`, { sticky: true });
+                // Use description for tooltip (mouseover)
+                const shortDesc = b.description ? `<br/><small>${b.description}</small>` : '';
+                marker.bindTooltip(`<div class="map-tooltip">${b.name}${shortDesc}</div>`, { sticky: true });
 
                 const meta = [];
                 if (b.location) meta.push(b.location);
@@ -476,20 +468,22 @@ class ScenicNYMap {
                 if (b.specialty) meta.push(b.specialty);
                 if (b.visitor_experience) meta.push(b.visitor_experience);
 
-                const desc = b.description ? `<br/><i>${b.description}</i>` : '';
+                // Create popup with full description
                 const googleMapsLink = b.google_maps_url ? 
-                    `<br/><a href="${b.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                    `<a href="${b.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
 
-                marker.bindPopup(`
-                    <div style="width:100%">
-                        <b>${b.name}</b><br/>
-                        ${meta.join(' • ')}
-                        ${desc}
+                const popupContent = `
+                    <div class="map-popup">
+                        <h3 class="popup-title">${b.name}</h3>
+                        <div class="popup-details-text-small">${meta.join(' • ')}</div>
+                        ${b.full_description ? `<div class="popup-description">${b.full_description}</div>` : ''}
                         ${googleMapsLink}
                     </div>
-                `);
+                `;
+
+                marker.bindPopup(popupContent);
             });
 
             brGroup.addTo(this.map);
@@ -525,24 +519,24 @@ class ScenicNYMap {
                 const marker = L.marker(coords, { icon: foodDivIcon }).addTo(rsGroup);
 
                 const description = rst.description ? `<br/><small>${rst.description}</small>` : '';
-                marker.bindTooltip(`<div>${rst.name}${description}</div>`, { sticky: true });
+                marker.bindTooltip(`<div class="map-tooltip">${rst.name}${description}</div>`, { sticky: true });
 
                 const meta = [];
                 if (rst.location) meta.push(rst.location);
                 if (rst.specialty) meta.push(rst.specialty);
                 if (rst.atmosphere) meta.push(rst.atmosphere);
                 if (typeof rst.family_friendly === 'boolean') meta.push(rst.family_friendly ? 'Family-friendly' : 'Adults-oriented');
-                const desc = rst.description ? `<br/><i>${rst.description}</i>` : '';
+                const hasDescription = rst.description ? true : false;
                 const googleMapsLink = rst.google_maps_url ? 
-                    `<br/><a href="${rst.google_maps_url}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                    `<a href="${rst.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
 
                 marker.bindPopup(`
-                    <div style="width:100%">
-                        <b>${rst.name}</b><br/>
-                        ${meta.join(' • ')}
-                        ${desc}
+                    <div class="map-popup">
+                        <h3 class="popup-title">${rst.name}</h3>
+                        <div class="popup-details-text-small">${meta.join(' • ')}</div>
+                        ${hasDescription ? `<div class="popup-description">${rst.description}</div>` : ''}
                         ${googleMapsLink}
                     </div>
                 `);
@@ -615,8 +609,8 @@ class ScenicNYMap {
 
                 // Create div icon for points of interest
                 const poiIcon = L.divIcon({
-                    className: 'icon-marker icon-poi',
-                    html: `<i class="fa ${iconClass}" style="color: ${iconColor}; font-size: 16px; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);"></i>`,
+                    className: 'icon-marker icon-poi poi-icon',
+                    html: `<i class="fa ${iconClass}" style="color: ${iconColor}; font-size: 16px;"></i>`,
                     iconSize: [20, 20],
                     iconAnchor: [10, 10]
                 });
@@ -626,25 +620,31 @@ class ScenicNYMap {
                     zIndexOffset: 500 // Above restaurants/breweries but below cities
                 }).addTo(poiGroup);
 
+                // Add tooltip with brief description
+                const shortDesc = poi.description ? `<br/><small>${poi.description}</small>` : '';
+                marker.bindTooltip(`<div class="map-tooltip">${poi.name}${shortDesc}</div>`, { sticky: true });
+
                 // Create popup content
                 const websiteLink = poi.website ? 
-                    `<br/><a href="${poi.website}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                    `<a href="${poi.website}" target="_blank" rel="noopener" class="popup-link">
                         <i class="fa fa-external-link-alt"></i> Visit Website
                     </a>` : '';
 
                 const googleMapsLink = poi.place_id ? 
-                    `<br/><a href="https://www.google.com/maps/place/?q=place_id:${poi.place_id}" target="_blank" rel="noopener" style="color: #1976d2; text-decoration: none;">
+                    `<a href="https://www.google.com/maps/place/?q=place_id:${poi.place_id}" target="_blank" rel="noopener" class="popup-link">
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
 
                 marker.bindPopup(`
-                    <div style="width:100%">
-                        <b>${poi.name}</b><br/>
-                        <small style="color: #666;">${poi.category}</small><br/>
-                        <small style="color: #666;">${poi.location}</small><br/>
-                        ${poi.description}
-                        ${websiteLink}
-                        ${googleMapsLink}
+                    <div class="map-popup">
+                        <h3 class="popup-title">${poi.name}</h3>
+                        <span class="popup-meta">${poi.category}</span>
+                        <span class="popup-meta">${poi.location}</span>
+                        <div class="popup-description">${poi.description}</div>
+                        <div class="popup-links-container">
+                            ${websiteLink}
+                            ${googleMapsLink}
+                        </div>
                     </div>
                 `);
             });

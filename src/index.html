@@ -18,96 +18,106 @@
     <div class="legend">
       <h3>NY Hiking & Scenery — Highlight Guide</h3>
       
-      <!-- Essential Legend (always visible) -->
-      <div class="legend-essential">
-        <div class="legend-item">
-          <span class="legend-color" style="background:#c83737;"></span> World-class (9.2–10)
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#e06b2e;"></span> Exceptional (8.8–9.1)
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#d6a62e;"></span> Great (8.2–8.7)
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#7cb342;"></span> Strong (≤8.1)
-        </div>
-        <hr />
-        <div class="legend-section"><b>Cities (by drive time from NYC):</b></div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#228B22;"></span> 0-3 hours (Green to Orange)
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#FFA500;"></span> 3-4 hours (Orange to Red)
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#FF0000;"></span> 4+ hours (Red)
-        </div>
-        <div class="legend-item"><small><i>Dot size ≈ population</i></small></div>
-        <hr />
-        <div class="legend-section"><b>Orchards (PYO apples):</b></div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#4CAF50;"></span> Orchard marker (click for details)
-        </div>
-      </div>
-      
-      <!-- Expandable Legend (collapsed by default) -->
-      <div class="legend-expandable" id="legendExpandable" style="display: none;">
-        <hr />
-        <div class="legend-section"><b>Points of Interest:</b></div>
-        <div class="legend-item">
-          <i class="fa fa-university" style="color: #4169E1;"></i> Museums
-        </div>
-        <div class="legend-item">
-          <i class="fa fa-paint-brush" style="color: #FF6347;"></i> Art Centers
-        </div>
-        <div class="legend-item">
-          <i class="fa fa-building" style="color: #8B4513;"></i> Historic Sites
-        </div>
-        <div class="legend-item">
-          <i class="fa fa-graduation-cap" style="color: #228B22;"></i> Educational
-        </div>
-        <div class="legend-item">
-          <i class="fa fa-music" style="color: #9370DB;"></i> Performing Arts
-        </div>
-        <div class="legend-item">
-          <i class="fa fa-trophy" style="color: #FFD700;"></i> Sports Venues
-        </div>
-        <div class="legend-item">
-          <i class="fa fa-tree" style="color: #32CD32;"></i> Natural Attractions
-        </div>
-        <div class="legend-item">
-          <i class="fa fa-leaf" style="color: #228B22;"></i> Historic Gardens
-        </div>
-        <hr />
-        <div class="legend-section"><b>Train Routes:</b></div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#003366;"></span> Metro-North Hudson Line
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#0066CC;"></span> Metro-North Harlem Line
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#FF6600;"></span> Metro-North New Haven Line
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#003399;"></span> Amtrak Empire Service
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#006600;"></span> Amtrak Adirondack
-        </div>
-        <div class="legend-item">
-          <span class="legend-color" style="background:#CC0000;"></span> Amtrak Lake Shore Limited
-        </div>
-        <hr />
-        <small><i>Populations are approximate (2020–2023 ACS). Drive times assume Midtown origin, off‑peak. Train times are approximate and may vary.</i></small>
-      </div>
-      
-      <!-- Toggle Button -->
+      <!-- Toggle Button (always visible) -->
       <div class="legend-toggle">
         <button id="legendToggle" class="btn btn-sm btn-default">
-          <i class="fa fa-chevron-down"></i> Show More
+          <i class="fa fa-chevron-down"></i> Show Legend
         </button>
+      </div>
+      
+      <!-- Legend Content (collapsed by default on mobile) -->
+      <div class="legend-content" id="legendContent" style="display: none;">
+        <!-- Essential Legend -->
+        <div class="legend-essential">
+          <div class="legend-item">
+            <span class="legend-color" style="background:#c83737;"></span> World-class (9.2–10)
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#e06b2e;"></span> Exceptional (8.8–9.1)
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#d6a62e;"></span> Great (8.2–8.7)
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#7cb342;"></span> Strong (≤8.1)
+          </div>
+          <hr />
+          <div class="legend-section"><b>Cities (by drive time from NYC):</b></div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#228B22;"></span> 0-3 hours (Green to Orange)
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#FFA500;"></span> 3-4 hours (Orange to Red)
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#FF0000;"></span> 4+ hours (Red)
+          </div>
+          <div class="legend-item"><small><i>Dot size ≈ population</i></small></div>
+          <hr />
+          <div class="legend-section"><b>Orchards (PYO apples):</b></div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#4CAF50;"></span> Orchard marker (click for details)
+          </div>
+        </div>
+        
+        <!-- Expandable Legend (collapsed by default) -->
+        <div class="legend-expandable" id="legendExpandable" style="display: none;">
+          <hr />
+          <div class="legend-section"><b>Points of Interest:</b></div>
+          <div class="legend-item">
+            <i class="fa fa-university" style="color: #4169E1;"></i> Museums
+          </div>
+          <div class="legend-item">
+            <i class="fa fa-paint-brush" style="color: #FF6347;"></i> Art Centers
+          </div>
+          <div class="legend-item">
+            <i class="fa fa-building" style="color: #8B4513;"></i> Historic Sites
+          </div>
+          <div class="legend-item">
+            <i class="fa fa-graduation-cap" style="color: #228B22;"></i> Educational
+          </div>
+          <div class="legend-item">
+            <i class="fa fa-music" style="color: #9370DB;"></i> Performing Arts
+          </div>
+          <div class="legend-item">
+            <i class="fa fa-trophy" style="color: #FFD700;"></i> Sports Venues
+          </div>
+          <div class="legend-item">
+            <i class="fa fa-tree" style="color: #32CD32;"></i> Natural Attractions
+          </div>
+          <div class="legend-item">
+            <i class="fa fa-leaf" style="color: #228B22;"></i> Historic Gardens
+          </div>
+          <hr />
+          <div class="legend-section"><b>Train Routes:</b></div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#003366;"></span> Metro-North Hudson Line
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#0066CC;"></span> Metro-North Harlem Line
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#FF6600;"></span> Metro-North New Haven Line
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#003399;"></span> Amtrak Empire Service
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#006600;"></span> Amtrak Adirondack
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background:#CC0000;"></span> Amtrak Lake Shore Limited
+          </div>
+          <hr />
+          <small><i>Populations are approximate (2020–2023 ACS). Drive times assume Midtown origin, off‑peak. Train times are approximate and may vary.</i></small>
+        </div>
+        
+        <!-- Secondary Toggle Button for POI/Train details -->
+        <div class="legend-toggle-secondary">
+          <button id="legendToggleSecondary" class="btn btn-sm btn-default">
+            <i class="fa fa-chevron-down"></i> Show More
+          </button>
+        </div>
       </div>
     </div>
 
