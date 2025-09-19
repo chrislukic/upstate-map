@@ -13,7 +13,29 @@ class ScenicNYMap {
         this.breweries = null;
         this.restaurants = null;
         this.orchardPoints = null;
+        this.strawberryPoints = null;
+        this.cherryPoints = null;
         this.pointsOfInterest = null;
+        this.isMobile = this.detectMobile();
+    }
+
+    // Detect if the device is mobile/touch
+    detectMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
+               ('ontouchstart' in window) || 
+               (navigator.maxTouchPoints > 0);
+    }
+
+    // Get mobile-optimized popup options
+    getPopupOptions(maxWidth = 300) {
+        if (this.isMobile) {
+            return {
+                maxWidth: Math.min(maxWidth, window.innerWidth - 40),
+                maxHeight: window.innerHeight - 100,
+                className: 'mobile-popup'
+            };
+        }
+        return { maxWidth: maxWidth };
     }
 
     // Convert drive time string to color based on gradient
@@ -51,13 +73,14 @@ class ScenicNYMap {
     async loadData() {
         try {
             const ts = Date.now();
-            const [mapRes, wfRes, brRes, rsRes, orchRes, strawRes, poiRes] = await Promise.all([
+            const [mapRes, wfRes, brRes, rsRes, orchRes, strawRes, cherryRes, poiRes] = await Promise.all([
                 fetch(`/data/map-data.json?t=${ts}`),
                 fetch(`/data/waterfalls.json?t=${ts}`),
                 fetch(`/data/breweries.json?t=${ts}`),
                 fetch(`/data/restaurants.json?t=${ts}`),
                 fetch(`/data/pyo_apples.json?t=${ts}`),
                 fetch(`/data/pyo_strawberries.json?t=${ts}`),
+                fetch(`/data/pyo_cherries.json?t=${ts}`),
                 fetch(`/data/points_of_interest.json?t=${ts}`)
             ]);
 
@@ -70,6 +93,7 @@ class ScenicNYMap {
             this.restaurants = rsRes.ok ? await rsRes.json() : [];
             this.orchardPoints = orchRes.ok ? await orchRes.json() : [];
             this.strawberryPoints = strawRes.ok ? await strawRes.json() : [];
+            this.cherryPoints = cherryRes.ok ? await cherryRes.json() : [];
             this.pointsOfInterest = poiRes.ok ? await poiRes.json() : [];
 
             return this.data;
@@ -88,6 +112,16 @@ class ScenicNYMap {
             zoom: config.zoom,
             zoomControl: true,
             preferCanvas: false,
+            // Mobile-optimized settings
+            tap: !this.isMobile, // Disable tap delay on mobile
+            touchZoom: true,
+            doubleClickZoom: true,
+            scrollWheelZoom: !this.isMobile, // Disable scroll wheel zoom on mobile
+            dragging: true,
+            keyboard: !this.isMobile, // Disable keyboard navigation on mobile
+            // Mobile-specific zoom limits
+            minZoom: this.isMobile ? 6 : 4,
+            maxZoom: this.isMobile ? 16 : 18,
         });
 
         // Add tile layer
@@ -161,14 +195,16 @@ class ScenicNYMap {
                 weight: 2
             }).addTo(scenicGroup);
 
-            // Add tooltip
-            polygon.bindTooltip(
-                `<div class="map-tooltip">${area.name} (Score ${area.score}) - ${area.driveTime}</div>`,
-                { sticky: true }
-            );
+            // Add tooltip (only on non-mobile devices)
+            if (!this.isMobile) {
+                polygon.bindTooltip(
+                    `<div class="map-tooltip">${area.name} (Score ${area.score}) - ${area.driveTime}</div>`,
+                    { sticky: true }
+                );
+            }
 
             // Create popup for the polygon itself
-            const popup = L.popup({ maxWidth: 360 });
+            const popup = L.popup(this.getPopupOptions(360));
             const popupContent = $(`
                 <div class="map-popup">
                     <h3 class="popup-title">${area.name}</h3>
@@ -205,7 +241,7 @@ class ScenicNYMap {
             }).addTo(cityGroup);
 
             // Create popup
-            const popup = L.popup({ maxWidth: 260 });
+            const popup = L.popup(this.getPopupOptions(260));
             const googleMapsLink = city.google_maps_url ? 
                 `<a href="${city.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
                     <i class="fa fa-map-marker"></i> View on Google Maps
@@ -223,12 +259,14 @@ class ScenicNYMap {
             popup.setContent(popupContent);
             marker.bindPopup(popup);
 
-            // Add tooltip with drive time
-            const description = city.description ? `<br/><small>${city.description}</small>` : '';
-            marker.bindTooltip(
-                `<div class="map-tooltip">${city.name} (~${city.population.toLocaleString()}) - ${city.driveTime}${description}</div>`,
-                { sticky: true }
-            );
+            // Add tooltip with drive time (only on non-mobile devices)
+            if (!this.isMobile) {
+                const description = city.description ? `<br/><small>${city.description}</small>` : '';
+                marker.bindTooltip(
+                    `<div class="map-tooltip">${city.name} (~${city.population.toLocaleString()}) - ${city.driveTime}${description}</div>`,
+                    { sticky: true }
+                );
+            }
         });
 
         // Optionally register cities as overlay later
@@ -248,11 +286,13 @@ class ScenicNYMap {
                 dashArray: route.operator === 'Amtrak' ? '10, 5' : null
             }).addTo(trainGroup);
 
-            // Add route tooltip
-            routeLine.bindTooltip(
-                `<div class="map-tooltip"><b>${route.name}</b><br>${route.operator}</div>`,
-                { sticky: true }
-            );
+            // Add route tooltip (only on non-mobile devices)
+            if (!this.isMobile) {
+                routeLine.bindTooltip(
+                    `<div class="map-tooltip"><b>${route.name}</b><br>${route.operator}</div>`,
+                    { sticky: true }
+                );
+            }
 
             // Create station markers
             route.stops.forEach(stop => {
@@ -278,7 +318,7 @@ class ScenicNYMap {
                 }).addTo(stationGroup);
 
                 // Create station popup
-                const popup = L.popup({ maxWidth: 280 });
+                const popup = L.popup(this.getPopupOptions(280));
                 const popupContent = $(`
                     <div class="map-popup">
                         <h3 class="popup-title">${stop.name}</h3>
@@ -290,11 +330,13 @@ class ScenicNYMap {
                 popup.setContent(popupContent);
                 stationMarker.bindPopup(popup);
 
-                // Add station tooltip
-                stationMarker.bindTooltip(
-                    `<div class="map-tooltip">${stop.name} - ${stop.travelTime}</div>`,
-                    { sticky: true }
-                );
+                // Add station tooltip (only on non-mobile devices)
+                if (!this.isMobile) {
+                    stationMarker.bindTooltip(
+                        `<div class="map-tooltip">${stop.name} - ${stop.travelTime}</div>`,
+                        { sticky: true }
+                    );
+                }
             });
         });
 
@@ -332,7 +374,10 @@ class ScenicNYMap {
                 if (!o.coords || isNaN(o.coords[0]) || isNaN(o.coords[1])) return;
                 const marker = L.marker(o.coords, { icon: orchardDivIcon }).addTo(orchardGroup);
                 const notes = o.notes ? `<br/><small>${o.notes}</small>` : '';
-                marker.bindTooltip(`<div class="map-tooltip">${o.name}${notes}</div>`, { sticky: true });
+                // Only show tooltips on non-mobile devices
+                if (!this.isMobile) {
+                    marker.bindTooltip(`<div class="map-tooltip">${o.name}${notes}</div>`, { sticky: true });
+                }
                 const linkHtml = o.website ? `<a href="${o.website}" target="_blank" rel="noopener">Website</a>` : '';
                 const googleMapsLink = o.google_maps_url ? 
                     `<a href="${o.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
@@ -394,7 +439,10 @@ class ScenicNYMap {
                 if (!s.coords || isNaN(s.coords[0]) || isNaN(s.coords[1])) return;
                 const marker = L.marker(s.coords, { icon: strawberryDivIcon }).addTo(strawberryGroup);
                 const notes = s.notes ? `<br/><small>${s.notes}</small>` : '';
-                marker.bindTooltip(`<div class="map-tooltip">${s.name}${notes}</div>`, { sticky: true });
+                // Only show tooltips on non-mobile devices
+                if (!this.isMobile) {
+                    marker.bindTooltip(`<div class="map-tooltip">${s.name}${notes}</div>`, { sticky: true });
+                }
                 
                 const googleMapsLink = s.google_maps_url ? 
                     `<a href="${s.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
@@ -420,6 +468,72 @@ class ScenicNYMap {
             this.overlays = this.overlays || {};
             this.overlays['Strawberries (PYO)'] = strawberryGroup;
             strawberryGroup.addTo(this.map);
+        } catch (e) {
+            // swallow
+        }
+    }
+
+    async renderCherries() {
+        try {
+            const points = Array.isArray(this.cherryPoints) ? this.cherryPoints : [];
+
+            const cherries = Array.isArray(points)
+                ? points.map(p => ({
+                    name: p.name,
+                    address: p.address,
+                    website: p.website,
+                    reservation_required: p.reservation_required,
+                    notes: p.notes,
+                    coords: [p.lat, p.lng],
+                    place_id: p.place_id,
+                    google_maps_url: p.google_maps_url,
+                    organic: p.organic || false
+                }))
+                : [];
+ 
+            if (!cherries.length) return;
+
+            const cherryGroup = L.featureGroup({});
+            const cherryDivIcon = (L.divIcon({
+                className: 'icon-marker icon-cherry',
+                html: '<span style="font-size: 16px;">🍒</span>',
+                iconSize: [20, 20],
+                iconAnchor: [10, 10]
+            }));
+
+            cherries.forEach(c => {
+                if (!c.coords || isNaN(c.coords[0]) || isNaN(c.coords[1])) return;
+                const marker = L.marker(c.coords, { icon: cherryDivIcon }).addTo(cherryGroup);
+                const notes = c.notes ? `<br/><small>${c.notes}</small>` : '';
+                // Only show tooltips on non-mobile devices
+                if (!this.isMobile) {
+                    marker.bindTooltip(`<div class="map-tooltip">${c.name}${notes}</div>`, { sticky: true });
+                }
+                
+                const googleMapsLink = c.google_maps_url ? 
+                    `<a href="${c.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
+                        <i class="fa fa-map-marker"></i> View on Google Maps
+                    </a>` : '';
+                
+                const websiteLink = c.website ? 
+                    `<a href="${c.website}" target="_blank" rel="noopener" class="popup-link">Website</a>` : '';
+                
+                const links = [websiteLink, googleMapsLink].filter(Boolean).join(' • ');
+                
+                marker.bindPopup(`
+                    <div class="map-popup">
+                        <h3 class="popup-title">${c.name}${c.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}</h3>
+                        ${c.address ? `<span class="popup-meta">${c.address}</span>` : ''}
+                        ${c.reservation_required ? `<span class="popup-meta"><strong>Reservation:</strong> ${c.reservation_required}</span>` : ''}
+                        ${c.notes ? `<div class="popup-description">${c.notes}</div>` : ''}
+                        ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
+                    </div>
+                `);
+            });
+
+            this.overlays = this.overlays || {};
+            this.overlays['Cherries (PYO)'] = cherryGroup;
+            cherryGroup.addTo(this.map);
         } catch (e) {
             // swallow
         }
@@ -463,7 +577,10 @@ class ScenicNYMap {
                 const marker = L.marker(coords, { icon: waterDivIcon }).addTo(wfGroup);
 
                 const description = w.description ? `<br/><small>${w.description}</small>` : '';
-                marker.bindTooltip(`<div class="map-tooltip">${w.name}${description}</div>`, { sticky: true });
+                // Only show tooltips on non-mobile devices
+                if (!this.isMobile) {
+                    marker.bindTooltip(`<div class="map-tooltip">${w.name}${description}</div>`, { sticky: true });
+                }
 
                 const meta = [];
                 if (w.height_ft) meta.push(`Height: ${w.height_ft} ft`);
@@ -521,7 +638,10 @@ class ScenicNYMap {
 
                 // Use description for tooltip (mouseover)
                 const shortDesc = b.description ? `<br/><small>${b.description}</small>` : '';
-                marker.bindTooltip(`<div class="map-tooltip">${b.name}${shortDesc}</div>`, { sticky: true });
+                // Only show tooltips on non-mobile devices
+                if (!this.isMobile) {
+                    marker.bindTooltip(`<div class="map-tooltip">${b.name}${shortDesc}</div>`, { sticky: true });
+                }
 
                 const meta = [];
                 if (b.location) meta.push(b.location);
@@ -580,7 +700,10 @@ class ScenicNYMap {
                 const marker = L.marker(coords, { icon: foodDivIcon }).addTo(rsGroup);
 
                 const description = rst.description ? `<br/><small>${rst.description}</small>` : '';
-                marker.bindTooltip(`<div class="map-tooltip">${rst.name}${description}</div>`, { sticky: true });
+                // Only show tooltips on non-mobile devices
+                if (!this.isMobile) {
+                    marker.bindTooltip(`<div class="map-tooltip">${rst.name}${description}</div>`, { sticky: true });
+                }
 
                 const meta = [];
                 if (rst.location) meta.push(rst.location);
@@ -683,7 +806,10 @@ class ScenicNYMap {
 
                 // Add tooltip with brief description
                 const shortDesc = poi.description ? `<br/><small>${poi.description}</small>` : '';
-                marker.bindTooltip(`<div class="map-tooltip">${poi.name}${shortDesc}</div>`, { sticky: true });
+                // Only show tooltips on non-mobile devices
+                if (!this.isMobile) {
+                    marker.bindTooltip(`<div class="map-tooltip">${poi.name}${shortDesc}</div>`, { sticky: true });
+                }
 
                 // Create popup content
                 const websiteLink = poi.website ? 
@@ -729,6 +855,7 @@ class ScenicNYMap {
             this.renderTrainRoutes();
             await this.renderOrchards();
             await this.renderStrawberries();
+            await this.renderCherries();
             await this.renderWaterfalls();
             await this.renderBreweries();
             await this.renderRestaurants();

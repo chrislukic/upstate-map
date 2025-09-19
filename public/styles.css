@@ -217,10 +217,12 @@ html, body {
 /* Mobile: Hide legend content by default, show toggle button */
 @media (max-width: 768px) {
     .legend {
-        width: 320px;
+        width: calc(100vw - 20px);
+        max-width: 320px;
         font-size: 12px;
         bottom: 10px;
         left: 10px;
+        right: 10px;
     }
     
     .legend-content {
@@ -229,6 +231,100 @@ html, body {
     
     .legend-toggle {
         display: block;
+    }
+    
+    /* Make buttons more touch-friendly */
+    .legend-toggle .btn,
+    .legend-toggle-secondary .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+        min-height: 44px; /* iOS recommended touch target size */
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .legend {
+        width: calc(100vw - 16px);
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        font-size: 11px;
+        padding: 8px;
+    }
+    
+    .legend h3 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+}
+
+/* Mobile popup optimizations */
+@media (max-width: 768px) {
+    /* Prevent zoom on input focus (iOS Safari) */
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+    
+    /* Leaflet popup mobile optimizations */
+    .leaflet-popup-content-wrapper {
+        max-width: calc(100vw - 40px) !important;
+        max-height: calc(100vh - 100px) !important;
+        overflow-y: auto !important;
+    }
+    
+    .leaflet-popup-content {
+        max-width: calc(100vw - 60px) !important;
+        margin: 8px !important;
+    }
+    
+    /* Improve touch targets */
+    .leaflet-control-zoom a {
+        min-width: 44px;
+        min-height: 44px;
+        line-height: 44px;
+    }
+    
+    /* Make popup links more touch-friendly */
+    .popup-link {
+        display: inline-block;
+        padding: 8px 12px;
+        margin: 4px 0;
+        min-height: 44px;
+        line-height: 28px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+    }
+    
+    .popup-link:hover {
+        background-color: #e9ecef;
+    }
+    
+    /* Adjust popup text sizes for mobile */
+    .popup-title {
+        font-size: 16px !important;
+    }
+    
+    .popup-description {
+        font-size: 13px !important;
+    }
+    
+    .popup-meta,
+    .popup-meta-small {
+        font-size: 11px !important;
+    }
+    
+    /* Mobile popup specific styling */
+    .mobile-popup .leaflet-popup-content-wrapper {
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    .mobile-popup .leaflet-popup-content {
+        margin: 12px !important;
+        line-height: 1.4;
     }
 }
 
