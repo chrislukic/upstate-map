@@ -350,7 +350,7 @@ html, body {
     color: #666;
     font-size: 12px;
     margin: 0;
-    display: inline-block;
+    display: inline;
     order: 3;
 }
 
@@ -364,7 +364,7 @@ html, body {
     color: #666;
     font-size: 11px;
     margin: 0;
-    display: inline-block;
+    display: inline;
     order: 3;
 }
 

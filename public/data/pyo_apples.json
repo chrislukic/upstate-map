@@ -10,7 +10,8 @@
     "notes": "Organic & eco-grown blocks; book timed PYO slots in season",
     "place_id": "ChIJbUwNsDRI3YkR8aUEiWs_1MU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbUwNsDRI3YkR8aUEiWs_1MU",
-    "place_query": "Fishkill Farms, orchard, NY"
+    "place_query": "Fishkill Farms, orchard, NY",
+    "organic": true
   },
   {
     "name": "Wilkens Fruit & Fir Farm",
@@ -23,7 +24,8 @@
     "notes": "Classic Westchester PYO; bakery & market on site",
     "place_id": "ChIJZXLvw863wokR2JyXrb1MnAw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZXLvw863wokR2JyXrb1MnAw",
-    "place_query": "Wilkens Fruit & Fir Farm, orchard, NY"
+    "place_query": "Wilkens Fruit & Fir Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "Harvest Moon Farm & Orchard",
@@ -36,7 +38,8 @@
     "notes": "Fall festival weekends, onsite cidery/food",
     "place_id": "ChIJt-i--GutwokRPyo0w5TWmfo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJt-i--GutwokRPyo0w5TWmfo",
-    "place_query": "Harvest Moon Farm & Orchard, orchard, NY"
+    "place_query": "Harvest Moon Farm & Orchard, orchard, NY",
+    "organic": false
   },
   {
     "name": "Stuart’s Fruit Farm",
@@ -49,7 +52,8 @@
     "notes": "Cash/check often preferred; low-key, old-school vibe",
     "place_id": "ChIJGZ1WiqO2wokR7-7LGjMivgE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGZ1WiqO2wokR7-7LGjMivgE",
-    "place_query": "Stuart’s Fruit Farm, orchard, NY"
+    "place_query": "Stuart’s Fruit Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "Dr. Davies Farm",
@@ -62,7 +66,8 @@
     "notes": "Daily PYO when in season; hayrides & pumpkin patch; cash only for PYO",
     "place_id": "ChIJJwma9O7DwokRT7MsJqwlvpU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJwma9O7DwokRT7MsJqwlvpU",
-    "place_query": "Dr. Davies Farm, orchard, NY"
+    "place_query": "Dr. Davies Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "Orchards of Concklin",
@@ -75,7 +80,8 @@
     "notes": "Weekend PYO with bag purchase; longtime Rockland fixture",
     "place_id": "ChIJO088Aa7cwokR8UR9tT5rG9U",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJO088Aa7cwokR8UR9tT5rG9U",
-    "place_query": "Orchards of Concklin, orchard, NY"
+    "place_query": "Orchards of Concklin, orchard, NY",
+    "organic": false
   },
   {
     "name": "Masker Orchards",
@@ -88,7 +94,8 @@
     "notes": "Drive-to-rows style; dog-friendly; one PYO bag per car policy",
     "place_id": "ChIJm1OL23kkw4kRY4nd7KwGHRo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm1OL23kkw4kRY4nd7KwGHRo",
-    "place_query": "Masker Orchards, orchard, NY"
+    "place_query": "Masker Orchards, orchard, NY",
+    "organic": false
   },
   {
     "name": "Apple Dave’s Orchards",
@@ -101,7 +108,8 @@
     "notes": "Orchard + distillery; admission on peak weekends",
     "place_id": "ChIJ-WKYqOElw4kRnrRX163_VpI",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-WKYqOElw4kRnrRX163_VpI",
-    "place_query": "Apple Dave’s Orchards, orchard, NY"
+    "place_query": "Apple Dave’s Orchards, orchard, NY",
+    "organic": false
   },
   {
     "name": "Apple Ridge Orchards",
@@ -114,7 +122,8 @@
     "notes": "Thu–Sun hours; cash for admission/PYO; family activities",
     "place_id": "ChIJ9R6QZiIlw4kRFpVPNnUQzdk",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9R6QZiIlw4kRFpVPNnUQzdk",
-    "place_query": "Apple Ridge Orchards, orchard, NY"
+    "place_query": "Apple Ridge Orchards, orchard, NY",
+    "organic": false
   },
   {
     "name": "DuBois Farms",
@@ -127,7 +136,8 @@
     "notes": "Large variety of apples; tavern, pizzeria, donuts",
     "place_id": "ChIJt7wgj0Q83YkRfimjpamfJ9E",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJt7wgj0Q83YkRfimjpamfJ9E",
-    "place_query": "DuBois Farms, orchard, NY"
+    "place_query": "DuBois Farms, orchard, NY",
+    "organic": false
   },
   {
     "name": "Hurds Family Farm",
@@ -140,7 +150,8 @@
     "notes": "Kid-maximal farm attractions; timed activities on certain days",
     "place_id": "ChIJ42yLnvUj3YkR7KpQiPODc5g",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ42yLnvUj3YkR7KpQiPODc5g",
-    "place_query": "Hurds Family Farm, orchard, NY"
+    "place_query": "Hurds Family Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "Greig Farm",
@@ -153,7 +164,8 @@
     "notes": "Scenic paths & goats; multiple apple varieties",
     "place_id": "ChIJW0ukxAmg3YkRUGLQv_Yc2Gw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJW0ukxAmg3YkRUGLQv_Yc2Gw",
-    "place_query": "Greig Farm, orchard, NY"
+    "place_query": "Greig Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "Twin Star Orchards",
@@ -166,7 +178,8 @@
     "notes": "PYO + wood-fired pizza/BBQ & Brooklyn Cider House; coords approximate to New Paltz centroid",
     "place_id": "ChIJVZoPWRMY3YkRBbKNNVrLqPw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJVZoPWRMY3YkRBbKNNVrLqPw",
-    "place_query": "Twin Star Orchards, orchard, NY"
+    "place_query": "Twin Star Orchards, orchard, NY",
+    "organic": false
   },
   {
     "name": "Barton Orchards",
@@ -179,7 +192,8 @@
     "notes": "Large festival-style farm; zipline/adventure features; Apple Core shop in Poughkeepsie",
     "place_id": "ChIJIZmdtHxE3YkRY9bepNNHq2g",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIZmdtHxE3YkRY9bepNNHq2g",
-    "place_query": "Barton Orchards, orchard, NY"
+    "place_query": "Barton Orchards, orchard, NY",
+    "organic": false
   },
   {
     "name": "Harbes Orchard (North Fork)",
@@ -192,7 +206,8 @@
     "notes": "Big Long Island operation; orchard-only location in Riverhead",
     "place_id": "ChIJEboXVgKM6IkRcypwNG26FBM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJEboXVgKM6IkRcypwNG26FBM",
-    "place_query": "Harbes Orchard, North Fork, NY"
+    "place_query": "Harbes Orchard, North Fork, NY",
+    "organic": false
   },
   {
     "name": "Pennings Orchard",
@@ -205,7 +220,8 @@
     "notes": "Multiple sites (market, cidery, east/west orchards)",
     "place_id": "ChIJ9avc9kIjw4kRtffB80rcNMc",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9avc9kIjw4kRtffB80rcNMc",
-    "place_query": "Pennings Orchard, orchard, NY"
+    "place_query": "Pennings Orchard, orchard, NY",
+    "organic": false
   },
   {
     "name": "Lawrence Farms Orchards",
@@ -218,7 +234,8 @@
     "notes": "Family orchard with wide mix of PYO; scenic hilltop views",
     "place_id": "ChIJtUotWxww3YkRpx3IfbhQLVs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUotWxww3YkRpx3IfbhQLVs",
-    "place_query": "Lawrence Farms Orchards, orchard, NY"
+    "place_query": "Lawrence Farms Orchards, orchard, NY",
+    "organic": false
   },
   {
     "name": "Rose Hill Farm",
@@ -231,7 +248,8 @@
     "notes": "Historic orchard; quiet/low-key PYO; onsite cider/ferments nearby",
     "place_id": "ChIJySsB7LYK3YkRV3SyLPKEKL4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJySsB7LYK3YkRV3SyLPKEKL4",
-    "place_query": "Rose Hill Farm, orchard, NY"
+    "place_query": "Rose Hill Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "Prospect Hill Orchards (Hilltop)",
@@ -244,7 +262,8 @@
     "notes": "Multiple sites; Hilltop is the apple PYO location",
     "place_id": "ChIJXctnp3g83YkR_3WaPcgoGwU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXctnp3g83YkR_3WaPcgoGwU",
-    "place_query": "Prospect Hill Orchards, Hilltop, NY"
+    "place_query": "Prospect Hill Orchards, Hilltop, NY",
+    "organic": false
   },
   {
     "name": "Wright's Farm",
@@ -257,7 +276,8 @@
     "notes": "Daily PYO Sept–Oct; entrance closes ~4:30pm; dogs welcome",
     "place_id": "ChIJeRc_77om3YkRi8ARdHWVEj4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeRc_77om3YkRi8ARdHWVEj4",
-    "place_query": "Wright's Farm, orchard, NY"
+    "place_query": "Wright's Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "Soons Orchards (U-Pick Orchard)",
@@ -270,7 +290,8 @@
     "notes": "Weekend PYO in season; check hotline for status",
     "place_id": "ChIJ5VfFQgAuw4kRNXhCq9dWTd0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ5VfFQgAuw4kRNXhCq9dWTd0",
-    "place_query": "Soons Orchards, U-Pick Orchard, NY"
+    "place_query": "Soons Orchards, U-Pick Orchard, NY",
+    "organic": false
   },
   {
     "name": "Outhouse Orchards",
@@ -283,7 +304,8 @@
     "notes": "PYO apples Sept–Oct; corn maze & hayrides",
     "place_id": "ChIJfei--GutwokRJ-e1ch6ip3g",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJfei--GutwokRJ-e1ch6ip3g",
-    "place_query": "Outhouse Orchards, orchard, NY"
+    "place_query": "Outhouse Orchards, orchard, NY",
+    "organic": false
   },
   {
     "name": "Weed Orchards & Winery",
@@ -296,7 +318,8 @@
     "notes": "Multiple apple varieties; live music & food on event weekends",
     "place_id": "ChIJLyrEZB473YkRFkOx4bcPJGs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJLyrEZB473YkRFkOx4bcPJGs",
-    "place_query": "Weed Orchards & Winery, orchard, NY"
+    "place_query": "Weed Orchards & Winery, orchard, NY",
+    "organic": false
   },
   {
     "name": "Minard's Family Farm",
@@ -309,7 +332,8 @@
     "notes": "Large family attraction; U‑Pick calendar; hayrides; kids activities",
     "place_id": "ChIJRceB4hgj3YkReyZIOcHLYog",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRceB4hgj3YkReyZIOcHLYog",
-    "place_query": "Minard's Family Farm, orchard, NY"
+    "place_query": "Minard's Family Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "Indian Ladder Farms",
@@ -322,7 +346,8 @@
     "notes": "Daily PYO (weather permitting); cidery & biergarten on site",
     "place_id": "ChIJy9vCWYLY3YkRiFl0KM-PU8Y",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJy9vCWYLY3YkRiFl0KM-PU8Y",
-    "place_query": "Indian Ladder Farms, orchard, NY"
+    "place_query": "Indian Ladder Farms, orchard, NY",
+    "organic": false
   },
   {
     "name": "Samascott Orchards",
@@ -335,7 +360,8 @@
     "notes": "Open Wed–Mon 9–5 (last entry 4pm); broad crop list; check status",
     "place_id": "ChIJ0Rpn9Yju3YkRSrbeGbj-MAM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0Rpn9Yju3YkRSrbeGbj-MAM",
-    "place_query": "Samascott Orchards, orchard, NY"
+    "place_query": "Samascott Orchards, orchard, NY",
+    "organic": false
   },
   {
     "name": "Saratoga Apple",
@@ -348,7 +374,8 @@
     "notes": "Daily PYO during harvest; farm stand open year‑round",
     "place_id": "ChIJT5BYHOYu3okR9EbbjFmTIsE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJT5BYHOYu3okR9EbbjFmTIsE",
-    "place_query": "Saratoga Apple, orchard, NY"
+    "place_query": "Saratoga Apple, orchard, NY",
+    "organic": false
   },
   {
     "name": "Golden Harvest Farms",
@@ -361,7 +388,8 @@
     "notes": "Historic orchard; cider donuts & distillery; confirm PYO status each season",
     "place_id": "ChIJM3wi87rv3YkRtEMGFDTrZUg",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJM3wi87rv3YkRtEMGFDTrZUg",
-    "place_query": "Golden Harvest Farms, orchard, NY"
+    "place_query": "Golden Harvest Farms, orchard, NY",
+    "organic": false
   },
   {
     "name": "Fix Brothers Fruit Farm",
@@ -374,7 +402,8 @@
     "notes": "PYO apples daily in season 10–5; simple, low‑key setup",
     "place_id": "ChIJQcoOjOWX3YkRMVQVFEgsnj8",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQcoOjOWX3YkRMVQVFEgsnj8",
-    "place_query": "Fix Brothers Fruit Farm, orchard, NY"
+    "place_query": "Fix Brothers Fruit Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "Yonder Fruit Farms",
@@ -387,7 +416,8 @@
     "notes": "Weekend PYO with posted variety/pricing; local favorite",
     "place_id": "ChIJaySqnMTv3YkRuvS4e0aUPyA",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJaySqnMTv3YkRuvS4e0aUPyA",
-    "place_query": "Yonder Fruit Farms, orchard, NY"
+    "place_query": "Yonder Fruit Farms, orchard, NY",
+    "organic": false
   },
   {
     "name": "Stone Ridge Orchard",
@@ -400,7 +430,8 @@
     "notes": "U‑Pick apples & Asian pears from Labor Day weekend through Oct",
     "place_id": "ChIJvUryiR4c3YkRMaqvMTTngnc",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvUryiR4c3YkRMaqvMTTngnc",
-    "place_query": "Stone Ridge Orchard, orchard, NY"
+    "place_query": "Stone Ridge Orchard, orchard, NY",
+    "organic": false
   },
   {
     "name": "Lewin Farms",
@@ -413,7 +444,8 @@
     "notes": "Long Island original U‑Pick; daily hours typically 9–4:30 (closed Tue)",
     "place_id": "ChIJFfArEk5n6IkRtsa8BhztdPo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJFfArEk5n6IkRtsa8BhztdPo",
-    "place_query": "Lewin Farms, orchard, NY"
+    "place_query": "Lewin Farms, orchard, NY",
+    "organic": false
   },
   {
     "name": "Wickham's Fruit Farm",
@@ -426,7 +458,8 @@
     "notes": "Historic North Fork farm; seasonal PYO incl. apples; closed Sundays",
     "place_id": "ChIJXeGjPVCQ6IkRR-JIBvbB1Vk",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXeGjPVCQ6IkRR-JIBvbB1Vk",
-    "place_query": "Wickham's Fruit Farm, orchard, NY"
+    "place_query": "Wickham's Fruit Farm, orchard, NY",
+    "organic": false
   },
   {
     "name": "The Milk Pail U‑Pick",
@@ -439,7 +472,8 @@
     "notes": "Hamptons U‑Pick apples & pumpkins; typical hours 10–5:30 on weekends",
     "place_id": "ChIJ-z9yoDq-6IkR68I8eP-Ie2M",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-z9yoDq-6IkR68I8eP-Ie2M",
-    "place_query": "The Milk Pail U‑Pick, orchard, NY"
+    "place_query": "The Milk Pail U‑Pick, orchard, NY",
+    "organic": false
   },
   {
     "name": "Beak & Skiff Apple Orchards",
@@ -452,7 +486,8 @@
     "notes": "Apple Hill PYO; large destination orchard (≈3.5–4h depending on traffic)",
     "place_id": "ChIJs2zP3pvjj4cReqwNW9YNn6A",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJs2zP3pvjj4cReqwNW9YNn6A",
-    "place_query": "Beak & Skiff Apple Orchards, orchard, NY"
+    "place_query": "Beak & Skiff Apple Orchards, orchard, NY",
+    "organic": false
   },
   {
     "name": "Bowman Orchards",
@@ -465,6 +500,7 @@
     "notes": "Capital Region PYO with many varieties; daily hours in season",
     "place_id": "ChIJU-1VW8wS3okR4NTk-IEd-E0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU-1VW8wS3okR4NTk-IEd-E0",
-    "place_query": "Bowman Orchards, orchard, NY"
+    "place_query": "Bowman Orchards, orchard, NY",
+    "organic": false
   }
 ]

@@ -51,12 +51,13 @@ class ScenicNYMap {
     async loadData() {
         try {
             const ts = Date.now();
-            const [mapRes, wfRes, brRes, rsRes, orchRes, poiRes] = await Promise.all([
+            const [mapRes, wfRes, brRes, rsRes, orchRes, strawRes, poiRes] = await Promise.all([
                 fetch(`/data/map-data.json?t=${ts}`),
                 fetch(`/data/waterfalls.json?t=${ts}`),
                 fetch(`/data/breweries.json?t=${ts}`),
                 fetch(`/data/restaurants.json?t=${ts}`),
-                fetch(`/data/orchards_points.json?t=${ts}`),
+                fetch(`/data/pyo_apples.json?t=${ts}`),
+                fetch(`/data/pyo_strawberries.json?t=${ts}`),
                 fetch(`/data/points_of_interest.json?t=${ts}`)
             ]);
 
@@ -68,6 +69,7 @@ class ScenicNYMap {
             this.breweries = brRes.ok ? await brRes.json() : [];
             this.restaurants = rsRes.ok ? await rsRes.json() : [];
             this.orchardPoints = orchRes.ok ? await orchRes.json() : [];
+            this.strawberryPoints = strawRes.ok ? await strawRes.json() : [];
             this.pointsOfInterest = poiRes.ok ? await poiRes.json() : [];
 
             return this.data;
@@ -192,17 +194,14 @@ class ScenicNYMap {
             // Get color based on drive time
             const driveTimeColor = this.getDriveTimeColor(city.driveTime);
 
-            // Create a div icon for cities to match other markers
-            const cityDivIcon = L.divIcon({
-                className: 'icon-marker icon-city city-marker',
-                html: `<div style="width: ${radius * 2}px; height: ${radius * 2}px; background-color: ${driveTimeColor}; border: 2px solid ${driveTimeColor};"></div>`,
-                iconSize: [radius * 2, radius * 2],
-                iconAnchor: [radius, radius]
-            });
-
-            const marker = L.marker(city.coordinates, { 
-                icon: cityDivIcon,
-                zIndexOffset: 1000 // Ensure cities are always on top
+            const marker = L.circleMarker(city.coordinates, {
+                radius: radius,
+                fillColor: driveTimeColor,
+                color: driveTimeColor,
+                weight: 2,
+                opacity: 0.8,
+                fillOpacity: 0.6,
+                className: 'city-marker'
             }).addTo(cityGroup);
 
             // Create popup
@@ -347,7 +346,7 @@ class ScenicNYMap {
                 
                 marker.bindPopup(`
                     <div class="map-popup">
-                        <h3 class="popup-title">${o.name}</h3>
+                        <h3 class="popup-title">${o.name}${o.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}</h3>
                         ${o.address ? `<span class="popup-meta">${o.address}</span>` : ''}
                         ${o.approx_drive ? `<span class="popup-meta"><strong>Drive:</strong> ${o.approx_drive}</span>` : ''}
                         ${o.notes ? `<div class="popup-description">${o.notes}</div>` : ''}
@@ -359,6 +358,68 @@ class ScenicNYMap {
             this.overlays = this.overlays || {};
             this.overlays['Orchards (PYO)'] = orchardGroup;
             orchardGroup.addTo(this.map);
+        } catch (e) {
+            // swallow
+        }
+    }
+
+    async renderStrawberries() {
+        try {
+            const points = Array.isArray(this.strawberryPoints) ? this.strawberryPoints : [];
+
+            const strawberries = Array.isArray(points)
+                ? points.map(p => ({
+                    name: p.name,
+                    address: p.address,
+                    website: p.website,
+                    reservation_required: p.reservation_required,
+                    notes: p.notes,
+                    coords: [p.lat, p.lng],
+                    place_id: p.place_id,
+                    google_maps_url: p.google_maps_url
+                }))
+                : [];
+ 
+            if (!strawberries.length) return;
+
+            const strawberryGroup = L.featureGroup({});
+            const strawberryDivIcon = (L.divIcon({
+                className: 'icon-marker icon-strawberry',
+                html: '<span style="font-size: 16px;">🍓</span>',
+                iconSize: [20, 20],
+                iconAnchor: [10, 10]
+            }));
+
+            strawberries.forEach(s => {
+                if (!s.coords || isNaN(s.coords[0]) || isNaN(s.coords[1])) return;
+                const marker = L.marker(s.coords, { icon: strawberryDivIcon }).addTo(strawberryGroup);
+                const notes = s.notes ? `<br/><small>${s.notes}</small>` : '';
+                marker.bindTooltip(`<div class="map-tooltip">${s.name}${notes}</div>`, { sticky: true });
+                
+                const googleMapsLink = s.google_maps_url ? 
+                    `<a href="${s.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
+                        <i class="fa fa-map-marker"></i> View on Google Maps
+                    </a>` : '';
+                
+                const websiteLink = s.website ? 
+                    `<a href="${s.website}" target="_blank" rel="noopener" class="popup-link">Website</a>` : '';
+                
+                const links = [websiteLink, googleMapsLink].filter(Boolean).join(' • ');
+                
+                marker.bindPopup(`
+                    <div class="map-popup">
+                        <h3 class="popup-title">${s.name}${s.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}</h3>
+                        ${s.address ? `<span class="popup-meta">${s.address}</span>` : ''}
+                        ${s.reservation_required ? `<span class="popup-meta"><strong>Reservation:</strong> ${s.reservation_required}</span>` : ''}
+                        ${s.notes ? `<div class="popup-description">${s.notes}</div>` : ''}
+                        ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
+                    </div>
+                `);
+            });
+
+            this.overlays = this.overlays || {};
+            this.overlays['Strawberries (PYO)'] = strawberryGroup;
+            strawberryGroup.addTo(this.map);
         } catch (e) {
             // swallow
         }
@@ -667,6 +728,7 @@ class ScenicNYMap {
             this.renderScenicAreas();
             this.renderTrainRoutes();
             await this.renderOrchards();
+            await this.renderStrawberries();
             await this.renderWaterfalls();
             await this.renderBreweries();
             await this.renderRestaurants();
