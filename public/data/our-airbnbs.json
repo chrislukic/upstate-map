@@ -1,0 +1,132 @@
+[
+  {
+    "name": "382 Delaware Dr",
+    "address": "Narrowsburg, NY 12764",
+    "lat": 41.603374,
+    "lng": -75.0685675,
+    "place_id": "ChIJ108L6RJT24kRlFHy_zolhOI",
+    "url": "https://www.google.com/maps/place/163+Hobart+St,+Braintree,+MA+02184/@42.2276936,-90.4909064,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89e36321daca776b:0x7dc723238e2b888e!8m2!3d42.2276936!4d-70.9791876!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11c19my49c?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "382 Delaware Dr, Narrowsburg, NY 12764, USA"
+  },
+  {
+    "name": "46 Taylor Rd",
+    "address": "Jeffersonville, NY 12748",
+    "lat": 41.7795,
+    "lng": -74.9347,
+    "place_id": "ChIJxY6TUzen3IkRmJgO0ZF_ZnA",
+    "url": "https://www.google.com/maps/place/C.+de+Morat%C3%ADn,+33,+Centro,+28014+Madrid,+Spain/@40.415045,-23.2185748,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0xd422629dadf83a3:0x210cfbfb6e6853d3!8m2!3d40.4125392!4d-3.6960806!15sCgEqkgEKc3VicHJlbWlzZaoBMBABKgUiASooADIeEAEiGkvtqe8B1dJz93KzTaFDav7uXurP3Y43mwwTMgUQAiIBKuABAA!16s%2Fg%2F11rp2pmyth?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    "name": "815 Blue Mountain Rd",
+    "address": "Saugerties, NY 12477",
+    "lat": 42.077,
+    "lng": -73.9517,
+    "place_id": "ChIJV8V8V8V8V8V8V8V8V8V8V8V8V8V8",
+    "url": "https://www.google.com/maps/place/815+Blue+Mountain+Rd,+Saugerties,+NY+12477/@40.415045,-23.2185748,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89dda604147368db:0xdbaa1243e719c92!8m2!3d42.1215446!4d-74.0230301!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11c19cj44d?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    "name": "20 Knight Rd",
+    "address": "Glen Spey, NY 12737",
+    "lat": 41.45446,
+    "lng": -74.7655904,
+    "place_id": "ChIJmyU7YeJNw4kRfyYSkpWKGlE",
+    "url": "https://www.google.com/maps/place/20+Knight+Rd,+Glen+Spey,+NY+12737/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89c34de2613b259b:0x511a8a959212267f!8m2!3d41.45446!4d-74.7655904!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11gmfvzcc4?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "20 Knight Rd, Glen Spey, NY 12737, USA"
+  },
+  {
+    "name": "15 Cedar Ridge Rd",
+    "address": "New Paltz, NY 12561",
+    "lat": 41.7348119,
+    "lng": -74.0956023,
+    "place_id": "ChIJXTYTwmsi3YkRBBW03_tlz5s",
+    "url": "https://www.google.com/maps/place/15+Cedar+Ridge+Rd,+New+Paltz,+NY+12561/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89dd226bc213365d:0x9bcf65fbdfb41504!8m2!3d41.7348119!4d-74.0956023!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11c2f2xr_0?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "15 Cedar Ridge Rd, New Paltz, NY 12561, USA"
+  },
+  {
+    "name": "12 White Roe Lake Rd",
+    "address": "Livingston Manor, NY 12758",
+    "lat": 41.9,
+    "lng": -74.8333,
+    "place_id": "ChIJV8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8",
+    "url": "https://www.google.com/maps/place/12+White+Roe+Lake+Rd,+Livingston+Manor,+NY+12758/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89dc99a117510d5b:0xd1f743068cd121ef!8m2!3d41.9061078!4d-74.823633!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11dfjgb2ww?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    "name": "High Rocks Rd",
+    "address": "Livingston Manor, NY 12758",
+    "lat": 41.9,
+    "lng": -74.8333,
+    "place_id": "ChIJV8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8",
+    "url": "https://www.google.com/maps/place/High+Rocks+Rd/@42.1215446,-93.5347489,5z/data=!4m9!1m2!11m1!3e4!3m5!1s0x89dd013edcf92be5:0xe25483e7f7ebc071!8m2!3d42.013191!4d-74.143906!15sCgEqkgEFcm91dGWqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "High Rocks Rd, Georgia, USA"
+  },
+  {
+    "name": "30 Terrace Ave",
+    "address": "Jeffersonville, NY 12748",
+    "lat": 41.7795203,
+    "lng": -74.93866469999999,
+    "place_id": "ChIJxY6TUzen3IkRmJgO0ZF_ZnA",
+    "url": "https://www.google.com/maps/place/High+Rocks+Rd,+Hurley,+NY+12433/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89dd013edcf92be5:0xe25483e7f7ebc071!8m2!3d42.013191!4d-74.143906!15sCgEqkgEFcm91dGWqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F1tfxz0k1?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "30 Terrace Ave, Jeffersonville, NY 12748, USA"
+  },
+  {
+    "name": "36 Co Rd 116",
+    "address": "Lake Huntington, NY 12752",
+    "lat": 41.6833,
+    "lng": -74.9167,
+    "place_id": "ChIJV8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8",
+    "url": "https://www.google.com/maps/place/36+Co+Rd+116/@42.1215446,-93.5347489,5z/data=!4m9!1m2!11m1!3e4!3m5!1s0x89db57b475f2f96f:0xd59c59a68c2ece3f!8m2!3d41.6831935!4d-74.9968181!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    "name": "Dickenson Bay St",
+    "address": "Livingston Manor, NY 12758",
+    "lat": 41.9,
+    "lng": -74.8333,
+    "place_id": "ChIJV8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8",
+    "url": "https://www.google.com/maps/place/36+Co+Rd+116,+Lake+Huntington,+NY+12752/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89db57b475f2f96f:0xd59c59a68c2ece3f!8m2!3d41.6831935!4d-74.9968181!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11g5_3nfkw?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "Dickenson Bay St"
+  },
+  {
+    "name": "6223 NY-23A",
+    "address": "Tannersville, NY 12485",
+    "lat": 42.1953197,
+    "lng": -74.1437459,
+    "place_id": "ChIJYXRD98at3YkRY3USArGou84",
+    "url": "https://www.google.com/maps/place/Dickenson+Bay+St/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x8c1292346bc67661:0x5f09d3f4250b230!8m2!3d16.9667758!4d-62.1221424!15sCgEqkgEFcm91dGWqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F1thz2q19?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "6223 NY-23A, Tannersville, NY 12485, USA"
+  },
+  {
+    "name": "712 Sand Hill Rd",
+    "address": "Gardiner, NY 12525",
+    "lat": 41.6430975,
+    "lng": -74.1738828,
+    "place_id": "ChIJZQhx-Kon3YkRFFNhR19nBy0",
+    "url": "https://www.google.com/maps/place/Dickenson+Bay+St/@16.9667758,-81.6338611,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x8c1292346bc67661:0x5f09d3f4250b230!8m2!3d16.9667758!4d-62.1221424!15sCgEqkgEFcm91dGWqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F1thz2q19?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "712 Sand Hill Rd, Gardiner, NY 12525, USA"
+  },
+  {
+    "name": "833 Engleville Rd",
+    "address": "Sharon Springs, NY 13459",
+    "lat": 42.7833,
+    "lng": -74.6167,
+    "place_id": "ChIJV8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8",
+    "url": "https://www.google.com/maps/place/833+Engleville+Rd/@16.9667758,-81.6338611,5z/data=!4m9!1m2!11m1!3e4!3m5!1s0x89dea0f35370242f:0x2b70e9741b08b06a!8m2!3d42.770858!4d-74.6463181!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    "name": "221 High St",
+    "address": "Phoenicia, NY 12464",
+    "lat": 42.0797356,
+    "lng": -74.3210883,
+    "place_id": "ChIJ8Vq--7D43IkRBELqzCBK-m4",
+    "url": "https://www.google.com/maps/place/833+Engleville+Rd,+Sharon+Springs,+NY+13459/@16.9667758,-81.6338611,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89dea0f35370242f:0x2b70e9741b08b06a!8m2!3d42.770858!4d-74.6463181!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11gmfvxfdd?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "221 High St, Phoenicia, NY 12464, USA"
+  },
+  {
+    "name": "205 Shaver Hill Rd",
+    "address": "Andes, NY 13731",
+    "lat": 42.1063184,
+    "lng": -74.8359485,
+    "place_id": "ChIJc2tmHvOG3IkR8VPAhYXibyI",
+    "url": "https://www.google.com/maps/place/Jes%C3%BAs+del+Gran+Poder,+143/@42.770858,-94.1580369,5z/data=!4m9!1m2!11m1!3e4!3m5!1s0xd126c0805ef5d89:0xd999b7e3907fd630!8m2!3d37.4011652!4d-5.9942075!15sCgEqkgEKc3VicHJlbWlzZaoBMBABKgUiASooADIeEAEiGkvtqe8B1dJz93KzTaFDav7uXurP3Y43mwwTMgUQAiIBKuABAA?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
+    "geocoded_address": "205 Shaver Hill Rd, Andes, NY 13731, USA"
+  }
+]

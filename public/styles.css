@@ -25,34 +25,39 @@ html, body {
 
 /* Tooltip Styles */
 .leaflet-tooltip {
-    max-width: 450px !important;
-    min-width: 200px !important;
-    line-height: 1.4 !important;
+    max-width: 400px !important;
+    min-width: auto !important;
+    line-height: 1.5 !important;
     overflow: visible !important;
+    padding: 8px 12px !important;
 }
 
 .leaflet-tooltip-content {
-    max-width: 450px !important;
-    min-width: 200px !important;
+    max-width: 400px !important;
+    min-width: auto !important;
     overflow: visible !important;
 }
 
-/* Keep titles on one line, allow descriptions to wrap */
+/* Flexible text handling for different content types */
 .leaflet-tooltip b {
-    white-space: nowrap !important;
-    word-wrap: normal !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
     word-break: normal !important;
-    overflow-wrap: normal !important;
+    overflow-wrap: break-word !important;
     display: block !important;
+    font-weight: bold !important;
+    margin-bottom: 2px !important;
 }
 
 .leaflet-tooltip small {
     white-space: normal !important;
     word-wrap: break-word !important;
-    word-break: break-word !important;
+    word-break: normal !important;
     overflow-wrap: break-word !important;
     display: block !important;
     margin-top: 4px !important;
+    line-height: 1.4 !important;
+    min-width: 200px !important;
 }
 
 /* Legend Styles */
@@ -257,6 +262,31 @@ html, body {
         font-size: 14px;
         margin-bottom: 6px;
     }
+}
+
+/* PYO seasonal styling */
+.pyo-item.out-of-season {
+  opacity: 0.4;
+  color: #999;
+  cursor: pointer;
+}
+
+.pyo-item.out-of-season:hover {
+  opacity: 0.7;
+}
+
+.pyo-item.out-of-season span {
+  filter: grayscale(100%);
+}
+
+/* Greyed-out map icons for out-of-season PYO */
+.icon-marker.out-of-season {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+.icon-marker.out-of-season:hover {
+  opacity: 0.5;
 }
 
 /* Mobile popup optimizations */

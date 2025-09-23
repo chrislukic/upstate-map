@@ -11,7 +11,11 @@
     "place_id": "ChIJbUwNsDRI3YkR8aUEiWs_1MU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbUwNsDRI3YkR8aUEiWs_1MU",
     "place_query": "Fishkill Farms, orchard, NY",
-    "organic": true
+    "organic": true,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Wilkens Fruit & Fir Farm",
@@ -25,7 +29,11 @@
     "place_id": "ChIJZXLvw863wokR2JyXrb1MnAw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZXLvw863wokR2JyXrb1MnAw",
     "place_query": "Wilkens Fruit & Fir Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Harvest Moon Farm & Orchard",
@@ -39,7 +47,11 @@
     "place_id": "ChIJt-i--GutwokRPyo0w5TWmfo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJt-i--GutwokRPyo0w5TWmfo",
     "place_query": "Harvest Moon Farm & Orchard, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Stuart’s Fruit Farm",
@@ -53,7 +65,11 @@
     "place_id": "ChIJGZ1WiqO2wokR7-7LGjMivgE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGZ1WiqO2wokR7-7LGjMivgE",
     "place_query": "Stuart’s Fruit Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Dr. Davies Farm",
@@ -67,7 +83,11 @@
     "place_id": "ChIJJwma9O7DwokRT7MsJqwlvpU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJwma9O7DwokRT7MsJqwlvpU",
     "place_query": "Dr. Davies Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Orchards of Concklin",
@@ -81,7 +101,11 @@
     "place_id": "ChIJO088Aa7cwokR8UR9tT5rG9U",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJO088Aa7cwokR8UR9tT5rG9U",
     "place_query": "Orchards of Concklin, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Masker Orchards",
@@ -95,7 +119,11 @@
     "place_id": "ChIJm1OL23kkw4kRY4nd7KwGHRo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm1OL23kkw4kRY4nd7KwGHRo",
     "place_query": "Masker Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Apple Dave’s Orchards",
@@ -109,7 +137,11 @@
     "place_id": "ChIJ-WKYqOElw4kRnrRX163_VpI",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-WKYqOElw4kRnrRX163_VpI",
     "place_query": "Apple Dave’s Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Apple Ridge Orchards",
@@ -123,7 +155,11 @@
     "place_id": "ChIJ9R6QZiIlw4kRFpVPNnUQzdk",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9R6QZiIlw4kRFpVPNnUQzdk",
     "place_query": "Apple Ridge Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "DuBois Farms",
@@ -137,7 +173,11 @@
     "place_id": "ChIJt7wgj0Q83YkRfimjpamfJ9E",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJt7wgj0Q83YkRfimjpamfJ9E",
     "place_query": "DuBois Farms, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Hurds Family Farm",
@@ -151,7 +191,11 @@
     "place_id": "ChIJ42yLnvUj3YkR7KpQiPODc5g",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ42yLnvUj3YkR7KpQiPODc5g",
     "place_query": "Hurds Family Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Greig Farm",
@@ -165,7 +209,11 @@
     "place_id": "ChIJW0ukxAmg3YkRUGLQv_Yc2Gw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJW0ukxAmg3YkRUGLQv_Yc2Gw",
     "place_query": "Greig Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Twin Star Orchards",
@@ -179,7 +227,11 @@
     "place_id": "ChIJVZoPWRMY3YkRBbKNNVrLqPw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJVZoPWRMY3YkRBbKNNVrLqPw",
     "place_query": "Twin Star Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Barton Orchards",
@@ -193,7 +245,11 @@
     "place_id": "ChIJIZmdtHxE3YkRY9bepNNHq2g",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIZmdtHxE3YkRY9bepNNHq2g",
     "place_query": "Barton Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Harbes Orchard (North Fork)",
@@ -207,7 +263,11 @@
     "place_id": "ChIJEboXVgKM6IkRcypwNG26FBM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJEboXVgKM6IkRcypwNG26FBM",
     "place_query": "Harbes Orchard, North Fork, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Pennings Orchard",
@@ -221,7 +281,11 @@
     "place_id": "ChIJ9avc9kIjw4kRtffB80rcNMc",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9avc9kIjw4kRtffB80rcNMc",
     "place_query": "Pennings Orchard, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Lawrence Farms Orchards",
@@ -235,7 +299,11 @@
     "place_id": "ChIJtUotWxww3YkRpx3IfbhQLVs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUotWxww3YkRpx3IfbhQLVs",
     "place_query": "Lawrence Farms Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Rose Hill Farm",
@@ -249,7 +317,11 @@
     "place_id": "ChIJySsB7LYK3YkRV3SyLPKEKL4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJySsB7LYK3YkRV3SyLPKEKL4",
     "place_query": "Rose Hill Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Prospect Hill Orchards (Hilltop)",
@@ -263,7 +335,11 @@
     "place_id": "ChIJXctnp3g83YkR_3WaPcgoGwU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXctnp3g83YkR_3WaPcgoGwU",
     "place_query": "Prospect Hill Orchards, Hilltop, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Wright's Farm",
@@ -277,7 +353,11 @@
     "place_id": "ChIJeRc_77om3YkRi8ARdHWVEj4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeRc_77om3YkRi8ARdHWVEj4",
     "place_query": "Wright's Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Soons Orchards (U-Pick Orchard)",
@@ -291,7 +371,11 @@
     "place_id": "ChIJ5VfFQgAuw4kRNXhCq9dWTd0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ5VfFQgAuw4kRNXhCq9dWTd0",
     "place_query": "Soons Orchards, U-Pick Orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Outhouse Orchards",
@@ -305,7 +389,11 @@
     "place_id": "ChIJfei--GutwokRJ-e1ch6ip3g",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJfei--GutwokRJ-e1ch6ip3g",
     "place_query": "Outhouse Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Weed Orchards & Winery",
@@ -319,7 +407,11 @@
     "place_id": "ChIJLyrEZB473YkRFkOx4bcPJGs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJLyrEZB473YkRFkOx4bcPJGs",
     "place_query": "Weed Orchards & Winery, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Minard's Family Farm",
@@ -329,11 +421,15 @@
     "website": "https://www.minardsfamilyfarms.com/",
     "u_pick_apples": true,
     "reservation_required": "varies",
-    "notes": "Large family attraction; U‑Pick calendar; hayrides; kids activities",
+    "notes": "Large family attraction; U-Pick calendar; hayrides; kids activities",
     "place_id": "ChIJRceB4hgj3YkReyZIOcHLYog",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRceB4hgj3YkReyZIOcHLYog",
     "place_query": "Minard's Family Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Indian Ladder Farms",
@@ -347,7 +443,11 @@
     "place_id": "ChIJy9vCWYLY3YkRiFl0KM-PU8Y",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJy9vCWYLY3YkRiFl0KM-PU8Y",
     "place_query": "Indian Ladder Farms, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Samascott Orchards",
@@ -361,7 +461,11 @@
     "place_id": "ChIJ0Rpn9Yju3YkRSrbeGbj-MAM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0Rpn9Yju3YkRSrbeGbj-MAM",
     "place_query": "Samascott Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Saratoga Apple",
@@ -371,11 +475,15 @@
     "website": "https://www.saratogaapple.farm/index.php/pick-your-own/",
     "u_pick_apples": true,
     "reservation_required": "no",
-    "notes": "Daily PYO during harvest; farm stand open year‑round",
+    "notes": "Daily PYO during harvest; farm stand open year-round",
     "place_id": "ChIJT5BYHOYu3okR9EbbjFmTIsE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJT5BYHOYu3okR9EbbjFmTIsE",
     "place_query": "Saratoga Apple, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Golden Harvest Farms",
@@ -389,7 +497,11 @@
     "place_id": "ChIJM3wi87rv3YkRtEMGFDTrZUg",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJM3wi87rv3YkRtEMGFDTrZUg",
     "place_query": "Golden Harvest Farms, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Fix Brothers Fruit Farm",
@@ -399,11 +511,15 @@
     "website": "https://www.fixbrosfruitfarm.com/visit",
     "u_pick_apples": true,
     "reservation_required": "no (cash/check only)",
-    "notes": "PYO apples daily in season 10–5; simple, low‑key setup",
+    "notes": "PYO apples daily in season 10–5; simple, low-key setup",
     "place_id": "ChIJQcoOjOWX3YkRMVQVFEgsnj8",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQcoOjOWX3YkRMVQVFEgsnj8",
     "place_query": "Fix Brothers Fruit Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Yonder Fruit Farms",
@@ -417,7 +533,11 @@
     "place_id": "ChIJaySqnMTv3YkRuvS4e0aUPyA",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJaySqnMTv3YkRuvS4e0aUPyA",
     "place_query": "Yonder Fruit Farms, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Stone Ridge Orchard",
@@ -427,11 +547,15 @@
     "website": "https://www.stoneridgeorchard.com/",
     "u_pick_apples": true,
     "reservation_required": "no",
-    "notes": "U‑Pick apples & Asian pears from Labor Day weekend through Oct",
+    "notes": "U-Pick apples & Asian pears from Labor Day weekend through Oct",
     "place_id": "ChIJvUryiR4c3YkRMaqvMTTngnc",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvUryiR4c3YkRMaqvMTTngnc",
     "place_query": "Stone Ridge Orchard, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Lewin Farms",
@@ -441,11 +565,15 @@
     "website": "https://www.lewinfarm.com/new-page-1",
     "u_pick_apples": true,
     "reservation_required": "no",
-    "notes": "Long Island original U‑Pick; daily hours typically 9–4:30 (closed Tue)",
+    "notes": "Long Island original U-Pick; daily hours typically 9–4:30 (closed Tue)",
     "place_id": "ChIJFfArEk5n6IkRtsa8BhztdPo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJFfArEk5n6IkRtsa8BhztdPo",
     "place_query": "Lewin Farms, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Wickham's Fruit Farm",
@@ -459,21 +587,29 @@
     "place_id": "ChIJXeGjPVCQ6IkRR-JIBvbB1Vk",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXeGjPVCQ6IkRR-JIBvbB1Vk",
     "place_query": "Wickham's Fruit Farm, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
-    "name": "The Milk Pail U‑Pick",
+    "name": "The Milk Pail U-Pick",
     "address": "50 Horsemill Ln, Water Mill, NY 11976",
     "lat": 40.9085078,
     "lng": -72.32028489999999,
     "website": "https://milk-pail.com/",
     "u_pick_apples": true,
     "reservation_required": "no (open Fri–Sun in season)",
-    "notes": "Hamptons U‑Pick apples & pumpkins; typical hours 10–5:30 on weekends",
+    "notes": "Hamptons U-Pick apples & pumpkins; typical hours 10–5:30 on weekends",
     "place_id": "ChIJ-z9yoDq-6IkR68I8eP-Ie2M",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-z9yoDq-6IkR68I8eP-Ie2M",
-    "place_query": "The Milk Pail U‑Pick, orchard, NY",
-    "organic": false
+    "place_query": "The Milk Pail U-Pick, orchard, NY",
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Beak & Skiff Apple Orchards",
@@ -487,7 +623,11 @@
     "place_id": "ChIJs2zP3pvjj4cReqwNW9YNn6A",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJs2zP3pvjj4cReqwNW9YNn6A",
     "place_query": "Beak & Skiff Apple Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   },
   {
     "name": "Bowman Orchards",
@@ -501,6 +641,10 @@
     "place_id": "ChIJU-1VW8wS3okR4NTk-IEd-E0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU-1VW8wS3okR4NTk-IEd-E0",
     "place_query": "Bowman Orchards, orchard, NY",
-    "organic": false
+    "organic": false,
+    "season": "Fall",
+    "season_description": "Apple picking season typically runs from September through November",
+    "season_start_week": 34,
+    "season_end_week": 42
   }
 ]

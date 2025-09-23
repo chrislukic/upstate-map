@@ -11,7 +11,11 @@
     "place_id": "ChIJbUwNsDRI3YkR8aUEiWs_1MU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbUwNsDRI3YkR8aUEiWs_1MU",
     "place_query": "Fishkill Farms, strawberries, NY",
-    "organic": true
+    "organic": true,
+    "season": "Spring/Summer",
+    "season_description": "Strawberry picking season typically runs from May through July",
+    "season_start_week": 21,
+    "season_end_week": 27
   },
   {
     "name": "Lawrence Farms Orchards",
@@ -25,7 +29,11 @@
     "place_id": "ChIJtUotWxww3YkRpx3IfbhQLVs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUotWxww3YkRpx3IfbhQLVs",
     "place_query": "Lawrence Farms Orchards, strawberries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Spring/Summer",
+    "season_description": "Strawberry picking season typically runs from May through July",
+    "season_start_week": 21,
+    "season_end_week": 27
   },
   {
     "name": "Greig Farm",
@@ -39,7 +47,11 @@
     "place_id": "ChIJW0ukxAmg3YkRUGLQv_Yc2Gw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJW0ukxAmg3YkRUGLQv_Yc2Gw",
     "place_query": "Greig Farm, strawberries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Spring/Summer",
+    "season_description": "Strawberry picking season typically runs from May through July",
+    "season_start_week": 21,
+    "season_end_week": 27
   },
   {
     "name": "Hurds Family Farm",
@@ -53,7 +65,11 @@
     "place_id": "ChIJ42yLnvUj3YkR7KpQiPODc5g",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ42yLnvUj3YkR7KpQiPODc5g",
     "place_query": "Hurds Family Farm, strawberries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Spring/Summer",
+    "season_description": "Strawberry picking season typically runs from May through July",
+    "season_start_week": 21,
+    "season_end_week": 27
   },
   {
     "name": "Prospect Hill Orchards",
@@ -67,7 +83,11 @@
     "place_id": "ChIJXctnp3g83YkR_3WaPcgoGwU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXctnp3g83YkR_3WaPcgoGwU",
     "place_query": "Prospect Hill Orchards, strawberries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Spring/Summer",
+    "season_description": "Strawberry picking season typically runs from May through July",
+    "season_start_week": 21,
+    "season_end_week": 27
   },
   {
     "name": "Ochs Orchard",
@@ -81,7 +101,11 @@
     "place_id": "ChIJYdz0TXojw4kRf6owM41l_cs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJYdz0TXojw4kRf6owM41l_cs",
     "place_query": "Ochs Orchard, strawberries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Spring/Summer",
+    "season_description": "Strawberry picking season typically runs from May through July",
+    "season_start_week": 21,
+    "season_end_week": 27
   },
   {
     "name": "Soons Orchards",
@@ -95,7 +119,11 @@
     "place_id": "ChIJ5VfFQgAuw4kRNXhCq9dWTd0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ5VfFQgAuw4kRNXhCq9dWTd0",
     "place_query": "Soons Orchards, strawberries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Spring/Summer",
+    "season_description": "Strawberry picking season typically runs from May through July",
+    "season_start_week": 21,
+    "season_end_week": 27
   },
   {
     "name": "Wright's Farm",
@@ -109,7 +137,11 @@
     "place_id": "ChIJeRc_77om3YkRi8ARdHWVEj4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeRc_77om3YkRi8ARdHWVEj4",
     "place_query": "Wright's Farm, strawberries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Spring/Summer",
+    "season_description": "Strawberry picking season typically runs from May through July",
+    "season_start_week": 21,
+    "season_end_week": 27
   },
   {
     "name": "Minard's Family Farm",
@@ -123,6 +155,10 @@
     "place_id": "ChIJRceB4hgj3YkReyZIOcHLYog",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRceB4hgj3YkReyZIOcHLYog",
     "place_query": "Minard's Family Farm, strawberries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Spring/Summer",
+    "season_description": "Strawberry picking season typically runs from May through July",
+    "season_start_week": 21,
+    "season_end_week": 27
   }
 ]

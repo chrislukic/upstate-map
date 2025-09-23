@@ -11,7 +11,11 @@
     "place_id": "ChIJbUwNsDRI3YkR8aUEiWs_1MU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbUwNsDRI3YkR8aUEiWs_1MU",
     "place_query": "Fishkill Farms, cherries, NY",
-    "organic": true
+    "organic": true,
+    "season": "Summer",
+    "season_description": "Cherry picking season typically runs from June through July",
+    "season_start_week": 25,
+    "season_end_week": 29
   },
   {
     "name": "Mead Orchards",
@@ -25,7 +29,11 @@
     "place_id": "ChIJJUQF7Reg3YkRFUNVkd2IDBw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJUQF7Reg3YkRFUNVkd2IDBw",
     "place_query": "Mead Orchards, cherries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Summer",
+    "season_description": "Cherry picking season typically runs from June through July",
+    "season_start_week": 25,
+    "season_end_week": 29
   },
   {
     "name": "Rose Hill Farm",
@@ -39,7 +47,11 @@
     "place_id": "ChIJySsB7LYK3YkRV3SyLPKEKL4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJySsB7LYK3YkRV3SyLPKEKL4",
     "place_query": "Rose Hill Farm, cherries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Summer",
+    "season_description": "Cherry picking season typically runs from June through July",
+    "season_start_week": 25,
+    "season_end_week": 29
   },
   {
     "name": "Prospect Hill Orchards",
@@ -53,7 +65,11 @@
     "place_id": "ChIJXctnp3g83YkR_3WaPcgoGwU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXctnp3g83YkR_3WaPcgoGwU",
     "place_query": "Prospect Hill Orchards, cherries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Summer",
+    "season_description": "Cherry picking season typically runs from June through July",
+    "season_start_week": 25,
+    "season_end_week": 29
   },
   {
     "name": "Lawrence Farms Orchards",
@@ -67,7 +83,11 @@
     "place_id": "ChIJtUotWxww3YkRpx3IfbhQLVs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUotWxww3YkRpx3IfbhQLVs",
     "place_query": "Lawrence Farms Orchards, cherries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Summer",
+    "season_description": "Cherry picking season typically runs from June through July",
+    "season_start_week": 25,
+    "season_end_week": 29
   },
   {
     "name": "Ochs Orchard",
@@ -81,7 +101,11 @@
     "place_id": "ChIJYdz0TXojw4kRf6owM41l_cs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJYdz0TXojw4kRf6owM41l_cs",
     "place_query": "Ochs Orchard, cherries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Summer",
+    "season_description": "Cherry picking season typically runs from June through July",
+    "season_start_week": 25,
+    "season_end_week": 29
   },
   {
     "name": "Wright's Farm",
@@ -95,7 +119,11 @@
     "place_id": "ChIJeRc_77om3YkRi8ARdHWVEj4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeRc_77om3YkRi8ARdHWVEj4",
     "place_query": "Wright's Farm, cherries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Summer",
+    "season_description": "Cherry picking season typically runs from June through July",
+    "season_start_week": 25,
+    "season_end_week": 29
   },
   {
     "name": "Wickham's Fruit Farm",
@@ -109,7 +137,11 @@
     "place_id": "ChIJXeGjPVCQ6IkRR-JIBvbB1Vk",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXeGjPVCQ6IkRR-JIBvbB1Vk",
     "place_query": "Wickham's Fruit Farm, cherries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Summer",
+    "season_description": "Cherry picking season typically runs from June through July",
+    "season_start_week": 25,
+    "season_end_week": 29
   },
   {
     "name": "Fix Bros Fruit Farm",
@@ -123,258 +155,10 @@
     "place_id": "ChIJQcoOjOWX3YkRMVQVFEgsnj8",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQcoOjOWX3YkRMVQVFEgsnj8",
     "place_query": "Fix Bros Fruit Farm, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Don Baker Farm",
-    "address": "183 Route 14, Hudson, NY 12534",
-    "lat": 42.2004489,
-    "lng": -73.8174284,
-    "website": "",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Small family farm (Greenport). Offers both sweet cherries and sour pie cherries in season. Open daily 9am–5pm during June for cherry picking.",
-    "place_id": "ChIJSx5mPseX3YkRxBMi3gmpCyQ",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSx5mPseX3YkRxBMi3gmpCyQ",
-    "place_query": "Don Baker Farm, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Love Apple Farm",
-    "address": "1421 State Route 9H, Ghent, NY 12075",
-    "lat": 42.3111111,
-    "lng": -73.7022222,
-    "website": "http://www.loveapplefarm.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Family farm with market & petting zoo. PYO sweet cherries generally available late June through July (overlaps with tart cherry season). Call for daily availability.",
-    "place_id": "ChIJ9R0JYC-T3YkRIZZqcWHpZJI",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9R0JYC-T3YkRIZZqcWHpZJI",
-    "place_query": "Love Apple Farm, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Samascott Orchards",
-    "address": "5 Sunset Avenue, Kinderhook, NY 12106",
-    "lat": 42.3988457,
-    "lng": -73.70410389999999,
-    "website": "https://www.samascottorchards.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Large family-owned U-pick farm with wide variety. Offers sweet cherry picking in season (early summer) alongside many other fruits. No admission fee; open daily.",
-    "place_id": "ChIJ0Rpn9Yju3YkRSrbeGbj-MAM",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0Rpn9Yju3YkRSrbeGbj-MAM",
-    "place_query": "Samascott Orchards, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Smith Farms",
-    "address": "200 White Birch Road, Hudson, NY 12534",
-    "lat": 42.1904823,
-    "lng": -73.8304344,
-    "website": "",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Small orchard adjacent to Fix Bros in Hudson. Opens mid-June with sweet cherry picking (usually picked out by noon daily). Open daily 9am–5pm while supplies last.",
-    "place_id": "ChIJ_eCvnOWX3YkRW0r-8eDMhQM",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_eCvnOWX3YkRW0r-8eDMhQM",
-    "place_query": "Smith Farms, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Bowman Orchards",
-    "address": "141 Sugar Hill Road, Rexford, NY 12148",
-    "lat": 42.8168812,
-    "lng": -73.8385153,
-    "website": "https://www.bowmanorchards.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Popular Saratoga County PYO farm. Offers cherries, berries, apples, etc. Cherry picking typically in early July; no reservations required (check daily picking conditions).",
-    "place_id": "ChIJU-1VW8wS3okR4NTk-IEd-E0",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU-1VW8wS3okR4NTk-IEd-E0",
-    "place_query": "Bowman Orchards, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Hicks Orchard",
-    "address": "18 Hicks Road, Granville, NY 12832",
-    "lat": 43.4127778,
-    "lng": -73.3311111,
-    "website": "https://www.hicksorchard.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "NY's oldest U-pick orchard (est. 1905). Grows both sweet cherries and tart Montmorency cherries. Cherry season starts late June; also known for cider donuts and a cidery.",
-    "place_id": "ChIJ-1lgQMlz4IkRO1ttm-x_QMI",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-1lgQMlz4IkRO1ttm-x_QMI",
-    "place_query": "Hicks Orchard, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Grisamore Farms",
-    "address": "4069 Goose Street, Locke, NY 13092",
-    "lat": 42.655814,
-    "lng": -76.4720114,
-    "website": "http://www.grisamorefarms.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Cayuga County farm market and U-pick. Offers strawberries, raspberries, apples and both sweet and sour cherries. Cherry picking usually begins around early July.",
-    "place_id": "ChIJ512rUMmf0IkRltlsrPs_3B0",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ512rUMmf0IkRltlsrPs_3B0",
-    "place_query": "Grisamore Farms, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Bellinger's Orchard",
-    "address": "685 Argersinger Road, Fultonville, NY 12072",
-    "lat": 42.90324349999999,
-    "lng": -74.3923233,
-    "website": "http://www.bellingersorchard.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Montgomery County orchard (since 1930) with 50+ apple varieties plus summer fruits. Sweet and tart cherries ripen in late June; PYO usually runs through early July.",
-    "place_id": "ChIJ__sVws2P3okRC5vRLS9Bmek",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ__sVws2P3okRC5vRLS9Bmek",
-    "place_query": "Bellinger's Orchard, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Abbott Farms",
-    "address": "3275 Cold Springs Road, Baldwinsville, NY 13027",
-    "lat": 43.1446729,
-    "lng": -76.2826973,
-    "website": "https://abbottfarms.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Family-friendly farm near Syracuse. Offers PYO strawberries, berries, and sweet cherries (in early July). No reservations required; farm market and kid activities on-site.",
-    "place_id": "ChIJ5zzUC3Dl2YkRsAAwHtGJSS8",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ5zzUC3Dl2YkRsAAwHtGJSS8",
-    "place_query": "Abbott Farms, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Appledale Orchards",
-    "address": "6018 State Route 3, Mexico, NY 13114",
-    "lat": 43.4800761,
-    "lng": -76.23370659999999,
-    "website": "http://www.appledaleorchard.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Oswego County orchard with diverse PYO. Offers sweet cherry picking in early July (followed by sour cherries mid-July). Also has berries, peaches, grapes, apples.",
-    "place_id": "ChIJGxFM7K0DWkARyODUpTCRQF0",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGxFM7K0DWkARyODUpTCRQF0",
-    "place_query": "Appledale Orchards, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Littletree Orchards",
-    "address": "345 Shaffer Road, Newfield, NY 14867",
-    "lat": 42.351564,
-    "lng": -76.567582,
-    "website": "http://www.littletreeorchards.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Ithaca-area family orchard known for apples and donuts. Grows both sweet & tart cherries for U-pick (early July). Season and hours can vary; call or check Facebook for updates.",
-    "place_id": "ChIJX2QSB8990IkRQCMgios9nWs",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJX2QSB8990IkRQCMgios9nWs",
-    "place_query": "Littletree Orchards, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Schutt's Apple Mill",
-    "address": "1063 Plank Road, Webster, NY 14580",
-    "lat": 43.18203339999999,
-    "lng": -77.4526321,
-    "website": "https://schuttsapplemill.com",
-    "u_pick_cherries": true,
-    "reservation_required": "yes (if limited crop)",
-    "notes": "Historic farm & cider mill near Rochester. Offers U-pick sweet cherries when crop allows, typically late June. In 2024 a light crop led to restricted picking by online sign-up.",
-    "place_id": "ChIJi1OwU6LO1okRu6TjIStnMPw",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJi1OwU6LO1okRu6TjIStnMPw",
-    "place_query": "Schutt's Apple Mill, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Whittier Fruit Farm",
-    "address": "219 Whittier Road, Rochester, NY 14624",
-    "lat": 43.1493174,
-    "lng": -77.7773471,
-    "website": "http://whittierfruitfarm.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Family-run farm in Gates. Typically offers PYO sweet cherries around early July, though the 2024 cherry season was canceled due to weather-related quality issues. Also has berry picking.",
-    "place_id": "ChIJx9uMijut1okRyNLHss3HsEo",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJx9uMijut1okRyNLHss3HsEo",
-    "place_query": "Whittier Fruit Farm, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Bittner-Singer Orchards",
-    "address": "6620 Lake Road, Appleton, NY 14008",
-    "lat": 43.34420189999999,
-    "lng": -78.665729,
-    "website": "https://bittnersingerorchards.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Niagara County orchard with a large dwarf cherry planting. Open daily 8am–8pm in July for PYO sweet cherries. Season runs all month with multiple varieties ripening.",
-    "place_id": "ChIJXaFW_oKH1IkRSg5-1yTnUdw",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXaFW_oKH1IkRSg5-1yTnUdw",
-    "place_query": "Bittner-Singer Orchards, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Burnap's Farm Market & U-Pick",
-    "address": "7277 Maple Avenue, Sodus, NY 14551",
-    "lat": 43.2627455,
-    "lng": -77.0641891,
-    "website": "https://burnapsfarm.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Lake Ontario fruit farm with cafe and market. Sweet cherry U-pick typically opens in early July. No reservations; also offers PYO berries, peaches, apples and pumpkins.",
-    "place_id": "ChIJ33iF1lwk14kR25RpoMx3T1g",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ33iF1lwk14kR25RpoMx3T1g",
-    "place_query": "Burnap's Farm Market & U-Pick, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "G and S Orchards",
-    "address": "825 Atlantic Avenue, Walworth, NY 14568",
-    "lat": 43.1656914,
-    "lng": -77.3386965,
-    "website": "http://www.gandsorchards.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "Fruit farm just outside Rochester (Walworth). Offers PYO dark sweet cherries and white cherries from late June through mid-August, as well as tart cherries in July. No entry fee; open most days in season.",
-    "place_id": "ChIJxf3v1YbR1okROQEnnYTzGus",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxf3v1YbR1okROQEnnYTzGus",
-    "place_query": "G and S Orchards, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Hurd Orchards",
-    "address": "17260 West Ridge Road, Holley, NY 14470",
-    "lat": 43.255467,
-    "lng": -77.9980902,
-    "website": "http://hurdorchards.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no (call ahead for events)",
-    "notes": "Picturesque Orleans County farm and canning kitchen. Grows sweet cherries and sour cherries; PYO offered in July when crops are abundant. Often features special luncheons and events in cherry orchard.",
-    "place_id": "ChIJz_mlY5YD1IkRayzknqVsg28",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJz_mlY5YD1IkRayzknqVsg28",
-    "place_query": "Hurd Orchards, cherries, NY",
-    "organic": false
-  },
-  {
-    "name": "Kappus Farms",
-    "address": "6275 Jockey Road, Burt, NY 14028",
-    "lat": 43.32778099999999,
-    "lng": -78.691532,
-    "website": "http://kappusfarms.com",
-    "u_pick_cherries": true,
-    "reservation_required": "no",
-    "notes": "150-year-old family farm on Lake Ontario known as \"Crazy Cherries.\" Offers multiple varieties of sweet (dark & white) cherries and also tart cherries. Open daily 8am–7pm during cherry season (late June–July).",
-    "place_id": "ChIJdbVbJRqH1IkRLrd9a1p38mY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdbVbJRqH1IkRLrd9a1p38mY",
-    "place_query": "Kappus Farms, cherries, NY",
-    "organic": false
+    "organic": false,
+    "season": "Summer",
+    "season_description": "Cherry picking season typically runs from June through July",
+    "season_start_week": 25,
+    "season_end_week": 29
   }
 ]

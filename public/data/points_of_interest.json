@@ -10,16 +10,6 @@
     "scenicArea": "Hudson Valley"
   },
   {
-    "name": "Strong Museum of Play",
-    "lat": 43.1533,
-    "lng": -77.6023,
-    "category": "Museum",
-    "description": "The world's only museum devoted entirely to the history and exploration of play. Features the National Toy Hall of Fame and interactive exhibits.",
-    "website": "https://www.museumofplay.org/",
-    "location": "Rochester, NY",
-    "scenicArea": "Finger Lakes"
-  },
-  {
     "name": "Corning Museum of Glass",
     "lat": 42.1478,
     "lng": -77.0544,

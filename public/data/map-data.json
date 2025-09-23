@@ -24,7 +24,7 @@
   "scenicAreas": [
     {
       "id": "adirondack_high_peaks",
-      "name": "Adirondack High Peaks (Keene/Keene Valley, Lake Placid)",
+      "name": "Adirondack High Peaks",
       "score": 10.0,
       "driveTime": "5h 00m",
       "color": "#c83737",
@@ -69,7 +69,8 @@
           -73.86
         ],
         "color": "#c83737"
-      }
+      },
+      "location_info": "Keene/Keene Valley, Lake Placid"
     },
     {
       "id": "lake_george_pharaoh",
@@ -118,7 +119,7 @@
     },
     {
       "id": "catskills",
-      "name": "Catskills (Slide, Hunter, Kaaterskill)",
+      "name": "Catskills",
       "score": 9.2,
       "driveTime": "2h 30m",
       "color": "#c83737",
@@ -159,7 +160,8 @@
           -74.4
         ],
         "color": "#c83737"
-      }
+      },
+      "location_info": "Slide, Hunter, Kaaterskill"
     },
     {
       "id": "shawangunks",
@@ -224,7 +226,7 @@
     },
     {
       "id": "hudson_highlands",
-      "name": "Hudson Highlands (Breakneck, Storm King, Bull Hill)",
+      "name": "Hudson Highlands",
       "score": 8.6,
       "driveTime": "1h 18m",
       "color": "#d6a62e",
@@ -269,7 +271,8 @@
           -73.98
         ],
         "color": "#d6a62e"
-      }
+      },
+      "location_info": "Breakneck, Storm King, Bull Hill"
     },
     {
       "id": "harriman_bear_mountain",
@@ -330,7 +333,7 @@
     },
     {
       "id": "finger_lakes_gorges",
-      "name": "Finger Lakes Gorges (Ithaca area)",
+      "name": "Finger Lakes Gorges",
       "score": 8.9,
       "driveTime": "4h 12m",
       "color": "#e06b2e",
@@ -375,7 +378,8 @@
           -76.5
         ],
         "color": "#e06b2e"
-      }
+      },
+      "location_info": "Ithaca area"
     },
     {
       "id": "watkins_glen",
@@ -428,7 +432,7 @@
     },
     {
       "id": "letchworth_state_park",
-      "name": "Letchworth State Park (Genesee River Gorge)",
+      "name": "Letchworth State Park",
       "score": 8.7,
       "driveTime": "6h 00m",
       "color": "#d6a62e",
@@ -473,11 +477,12 @@
           -77.95
         ],
         "color": "#d6a62e"
-      }
+      },
+      "location_info": "Genesee River Gorge"
     },
     {
       "id": "allegany_state_park",
-      "name": "Allegany State Park (Southern Tier)",
+      "name": "Allegany State Park",
       "score": 7.8,
       "driveTime": "7h 00m",
       "color": "#7cb342",
@@ -522,11 +527,12 @@
           -78.75
         ],
         "color": "#7cb342"
-      }
+      },
+      "location_info": "Southern Tier"
     },
     {
       "id": "niagara_gorge",
-      "name": "Niagara Gorge (NY side)",
+      "name": "Niagara Gorge",
       "score": 8.2,
       "driveTime": "6h 48m",
       "color": "#d6a62e",
@@ -571,11 +577,12 @@
           -79.05
         ],
         "color": "#d6a62e"
-      }
+      },
+      "location_info": "NY side"
     },
     {
       "id": "taconic_range",
-      "name": "Taconic Range / Harlem Valley (incl. Bash Bish area)",
+      "name": "Taconic Range / Harlem Valley",
       "score": 8.1,
       "driveTime": "2h 18m",
       "color": "#7cb342",
@@ -620,11 +627,12 @@
           -73.48
         ],
         "color": "#7cb342"
-      }
+      },
+      "location_info": "incl. Bash Bish area"
     },
     {
       "id": "long_island_forks",
-      "name": "Long Island North & South Fork highlights (Montauk bluffs)",
+      "name": "Long Island North & South Fork highlights",
       "score": 7.5,
       "driveTime": "3h 00m",
       "color": "#7cb342",
@@ -669,11 +677,12 @@
           -71.94
         ],
         "color": "#7cb342"
-      }
+      },
+      "location_info": "Montauk bluffs"
     },
     {
       "id": "caumsett_state_park",
-      "name": "Caumsett State Historic Park Preserve (Lloyd Neck)",
+      "name": "Caumsett State Historic Park Preserve",
       "score": 7.2,
       "driveTime": "1h 18m",
       "color": "#7cb342",
@@ -710,7 +719,8 @@
           -73.46
         ],
         "color": "#7cb342"
-      }
+      },
+      "location_info": "Lloyd Neck"
     }
   ],
   "cities": [
@@ -1444,7 +1454,7 @@
       "place_query": "Great Valley village, NY"
     },
     {
-      "name": "Niagara Falls (NY)",
+      "name": "Niagara Falls",
       "population": 48000,
       "driveTime": "6h 45m",
       "coordinates": [
@@ -1455,7 +1465,8 @@
       "description": "Home to the iconic Niagara Falls, one of the world's most famous natural wonders. Features Niagara Falls State Park, Maid of the Mist boat tours, and Cave of the Winds.",
       "place_id": "ChIJeb6QQQJD04kRzPKlU55wfBc",
       "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeb6QQQJD04kRzPKlU55wfBc",
-      "place_query": "Niagara Falls (NY), NY"
+      "place_query": "Niagara Falls (NY), NY",
+      "location_info": "NY"
     },
     {
       "name": "Lewiston",
