@@ -1395,6 +1395,64 @@ class ScenicNYMap {
         }
     }
 
+    // Parse URL parameters for custom markers
+    parseUrlParameters() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const lat = parseFloat(urlParams.get('lat'));
+        const lng = parseFloat(urlParams.get('lng'));
+        const label = urlParams.get('label');
+        
+        if (!isNaN(lat) && !isNaN(lng) && lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180) {
+            return { lat, lng, label: label ? decodeURIComponent(label) : 'Custom Location' };
+        }
+        return null;
+    }
+
+    // Render custom marker from URL parameters
+    renderCustomMarker() {
+        const customLocation = this.parseUrlParameters();
+        if (!customLocation) return;
+
+        // Create a distinctive icon for custom markers
+        const customIcon = L.divIcon({
+            className: 'icon-marker icon-custom',
+            html: '<span style="font-size: 18px; color: #ff4444;">📍</span>',
+            iconSize: [24, 24],
+            iconAnchor: [12, 12]
+        });
+
+        // Add the custom marker
+        const marker = L.marker([customLocation.lat, customLocation.lng], { 
+            icon: customIcon,
+            zIndexOffset: 1000 // Above all other markers
+        }).addTo(this.map);
+
+        // Add tooltip
+        if (!this.isMobile) {
+            marker.bindTooltip(`<div class="map-tooltip"><b>${customLocation.label}</b></div>`, { sticky: true });
+        }
+
+        // Add popup
+        const popup = L.popup(this.getPopupOptions(300));
+        const popupContent = $(`
+            <div class="map-popup">
+                <h3 class="popup-title">${customLocation.label}</h3>
+                <span class="popup-meta">Custom Location</span>
+                <span class="popup-meta">Coordinates: ${customLocation.lat.toFixed(5)}, ${customLocation.lng.toFixed(5)}</span>
+            </div>
+        `)[0];
+        popup.setContent(popupContent);
+        marker.bindPopup(popup);
+
+        // Center map on the custom marker
+        this.map.setView([customLocation.lat, customLocation.lng], Math.max(this.map.getZoom(), 12));
+        
+        // Open the popup automatically
+        marker.openPopup();
+
+        console.log('Custom marker added:', customLocation);
+    }
+
     async render() {
         try {
             await this.loadData();
@@ -1414,6 +1472,9 @@ class ScenicNYMap {
             await this.renderRestaurants();
             await this.renderPointsOfInterest();
             this.renderCities(); // Render cities last so they appear on top
+            
+            // Render custom marker from URL parameters (after all other markers)
+            this.renderCustomMarker();
             
             // Update seasonal legend and add click handlers
             this.updateSeasonalLegend();
