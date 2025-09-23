@@ -1400,10 +1400,27 @@ class ScenicNYMap {
         const urlParams = new URLSearchParams(window.location.search);
         const lat = parseFloat(urlParams.get('lat'));
         const lng = parseFloat(urlParams.get('lng'));
-        const label = urlParams.get('label');
         
         if (!isNaN(lat) && !isNaN(lng) && lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180) {
-            return { lat, lng, label: label ? decodeURIComponent(label) : 'Custom Location' };
+            const data = {
+                lat,
+                lng,
+                id: urlParams.get('id'),
+                title: urlParams.get('title') ? decodeURIComponent(urlParams.get('title')) : null,
+                location: urlParams.get('location') ? decodeURIComponent(urlParams.get('location')) : null,
+                rating: urlParams.get('rating'),
+                bedrooms: urlParams.get('bedrooms'),
+                bathrooms: urlParams.get('bathrooms'),
+                airbnb_url: urlParams.get('airbnb_url') ? decodeURIComponent(urlParams.get('airbnb_url')) : null,
+                source: urlParams.get('source'),
+                // Legacy support for 'label' parameter
+                label: urlParams.get('label') ? decodeURIComponent(urlParams.get('label')) : null
+            };
+            
+            // Use title as the main label, fallback to legacy label, then default
+            data.displayLabel = data.title || data.label || 'Custom Location';
+            
+            return data;
         }
         return null;
     }
@@ -1429,18 +1446,70 @@ class ScenicNYMap {
 
         // Add tooltip
         if (!this.isMobile) {
-            marker.bindTooltip(`<div class="map-tooltip"><b>${customLocation.label}</b></div>`, { sticky: true });
+            marker.bindTooltip(`<div class="map-tooltip"><b>${customLocation.displayLabel}</b></div>`, { sticky: true });
         }
 
+        // Build rich popup content with better formatting
+        let popupContent = `<div class="map-popup custom-location-popup">
+            <h3 class="popup-title">${customLocation.displayLabel}</h3>`;
+        
+        // Add location if available
+        if (customLocation.location) {
+            popupContent += `<div class="popup-location">
+                <i class="fa fa-map-marker-alt" style="color: #ff4444; margin-right: 6px;"></i>
+                <span class="popup-meta">${customLocation.location}</span>
+            </div>`;
+        }
+        
+        // Add rating and accommodation info in a row
+        if (customLocation.rating || customLocation.bedrooms || customLocation.bathrooms) {
+            popupContent += `<div class="popup-details-row">`;
+            
+            // Add rating if available
+            if (customLocation.rating) {
+                const stars = '★'.repeat(Math.floor(parseFloat(customLocation.rating))) + 
+                             (parseFloat(customLocation.rating) % 1 >= 0.5 ? '☆' : '');
+                popupContent += `<div class="popup-rating">
+                    <span style="color: #ffd700; font-size: 14px;">${stars}</span>
+                    <span class="popup-meta-small" style="margin-left: 4px;">${customLocation.rating}/5.0</span>
+                </div>`;
+            }
+            
+            // Add bedrooms and bathrooms if available
+            if (customLocation.bedrooms || customLocation.bathrooms) {
+                const bedText = customLocation.bedrooms ? `${customLocation.bedrooms} bed${customLocation.bedrooms !== '1' ? 's' : ''}` : '';
+                const bathText = customLocation.bathrooms ? `${customLocation.bathrooms} bath${customLocation.bathrooms !== '1' ? 's' : ''}` : '';
+                const separator = bedText && bathText ? ' • ' : '';
+                popupContent += `<div class="popup-accommodation">
+                    <i class="fa fa-home" style="color: #666; margin-right: 4px; font-size: 12px;"></i>
+                    <span class="popup-meta-small">${bedText}${separator}${bathText}</span>
+                </div>`;
+            }
+            
+            popupContent += `</div>`;
+        }
+        
+        // Add source and coordinates in a subtle way
+        popupContent += `<div class="popup-footer">
+            <span class="popup-meta-small" style="color: #999;">
+                ${customLocation.source ? customLocation.source.charAt(0).toUpperCase() + customLocation.source.slice(1) : 'Custom'} • 
+                ${customLocation.lat.toFixed(5)}, ${customLocation.lng.toFixed(5)}
+            </span>
+        </div>`;
+        
+        // Add Airbnb link if available
+        if (customLocation.airbnb_url) {
+            popupContent += `<div class="popup-links-container">
+                <a href="${customLocation.airbnb_url}" target="_blank" rel="noopener" class="popup-link airbnb-link">
+                    <i class="fa fa-external-link-alt"></i> View on Airbnb
+                </a>
+            </div>`;
+        }
+        
+        popupContent += '</div>';
+
         // Add popup
-        const popup = L.popup(this.getPopupOptions(300));
-        const popupContent = $(`
-            <div class="map-popup">
-                <h3 class="popup-title">${customLocation.label}</h3>
-                <span class="popup-meta">Custom Location</span>
-                <span class="popup-meta">Coordinates: ${customLocation.lat.toFixed(5)}, ${customLocation.lng.toFixed(5)}</span>
-            </div>
-        `)[0];
+        const popup = L.popup(this.getPopupOptions(350));
         popup.setContent(popupContent);
         marker.bindPopup(popup);
 

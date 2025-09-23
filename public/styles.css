@@ -539,3 +539,76 @@ html, body {
     font-size: 12px;
     color: #666;
 }
+
+/* ===== CUSTOM LOCATION POPUP STYLES ===== */
+.custom-location-popup {
+    min-width: 280px;
+}
+
+.popup-location {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.popup-details-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 8px 0;
+    padding: 8px 0;
+}
+
+.popup-rating {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 4px 8px;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.popup-accommodation {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 4px 8px;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.popup-footer {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.airbnb-link {
+    background: linear-gradient(135deg, #ff5a5f 0%, #ff7e82 100%) !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 16px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 2px 4px rgba(255, 90, 95, 0.3) !important;
+}
+
+.airbnb-link:hover {
+    background: linear-gradient(135deg, #ff4444 0%, #ff6b6b 100%) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(255, 90, 95, 0.4) !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.airbnb-link i {
+    font-size: 14px !important;
+}
