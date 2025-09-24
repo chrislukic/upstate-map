@@ -1497,14 +1497,23 @@ class ScenicNYMap {
             </span>
         </div>`;
         
+        // Add action buttons
+        popupContent += `<div class="popup-links-container">`;
+        
+        // Add directions link
+        const directionsUrl = `https://www.google.com/maps/dir/Bedford+Stuyvesant,+Brooklyn,+NY/${customLocation.lat},${customLocation.lng}`;
+        popupContent += `<a href="${directionsUrl}" target="_blank" rel="noopener" class="popup-link directions-link">
+            <i class="fa fa-route"></i> Get Directions
+        </a>`;
+        
         // Add Airbnb link if available
         if (customLocation.airbnb_url) {
-            popupContent += `<div class="popup-links-container">
-                <a href="${customLocation.airbnb_url}" target="_blank" rel="noopener" class="popup-link airbnb-link">
-                    <i class="fa fa-external-link-alt"></i> View on Airbnb
-                </a>
-            </div>`;
+            popupContent += `<a href="${customLocation.airbnb_url}" target="_blank" rel="noopener" class="popup-link airbnb-link">
+                <i class="fa fa-external-link-alt"></i> View on Airbnb
+            </a>`;
         }
+        
+        popupContent += `</div>`;
         
         popupContent += '</div>';
 
