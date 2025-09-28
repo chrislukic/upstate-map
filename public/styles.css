@@ -1,5 +1,391 @@
 /* Scenic NY Map Styles */
 
+/* Trip Planning Widget */
+.trip-planner {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9998;
+    font-family: Arial, sans-serif;
+    backdrop-filter: blur(5px);
+}
+
+.trip-planner h4 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.current-trip, .trip-form, .trip-loading {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.trip-loading {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+
+.trip-loading i {
+    color: #4CAF50;
+}
+
+.current-trip {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.trip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.trip-header h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #4CAF50;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.trip-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trip-location, .trip-dates {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.trip-location {
+    color: #333;
+    font-weight: 500;
+}
+
+.trip-dates {
+    color: #666;
+}
+
+.trip-location i, .trip-dates i {
+    color: #4CAF50;
+    width: 16px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.form-group label {
+    position: absolute;
+    top: -6px;
+    left: 8px;
+    background: white;
+    padding: 0 4px;
+    font-size: 12px;
+    color: #666;
+}
+
+.form-row {
+    display: flex;
+    gap: 8px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background: #4CAF50;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-primary:hover {
+    background: #45a049;
+}
+
+.btn-clear {
+    background: #f44336;
+    color: white;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.btn-clear:hover {
+    background: #da190b;
+}
+
+.btn-clear-subtle {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    opacity: 0.6;
+}
+
+.trip-header:hover .btn-clear-subtle {
+    opacity: 1;
+}
+
+.btn-clear-subtle:hover {
+    background: #f5f5f5;
+    color: #666;
+    opacity: 1;
+}
+
+.btn-clear-subtle:active {
+    background: #e9ecef;
+    color: #333;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .trip-planner {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        width: auto;
+        max-width: none;
+    }
+    
+    .trip-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .trip-header h4 {
+        font-size: 15px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+/* Trip filtering indicators */
+.trip-filtered {
+    opacity: 0.3;
+    filter: grayscale(50%);
+}
+
+.trip-relevant {
+    opacity: 1;
+    filter: none;
+    border: 2px solid #4CAF50 !important;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3) !important;
+}
+
+/* Trip location marker */
+.trip-location-marker {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Trip radius circle styling */
+.leaflet-interactive.trip-radius-circle {
+    stroke-dasharray: 5, 5;
+    animation: dash 20s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: -100;
+    }
+}
+
+.trip-icon {
+    background: #4CAF50;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    animation: tripPulse 2s infinite;
+}
+
+@keyframes tripPulse {
+    0% {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+    70% {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}
+
+/* Trip popup styling */
+.trip-popup-content .leaflet-popup-content {
+    margin: 0;
+    padding: 0;
+}
+
+.trip-popup {
+    padding: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.trip-popup h4 {
+    margin: 0 0 8px 0;
+    color: #4CAF50;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.trip-popup p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.trip-popup p strong {
+    color: #333;
+}
+
+.trip-popup p small {
+    color: #666;
+    font-size: 12px;
+}
+
+.trip-popup i {
+    margin-right: 4px;
+    color: #4CAF50;
+}
+
+/* Directions link styling - integrated with other popup links */
+.popup-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.popup-link:hover {
+    color: #45a049;
+    text-decoration: underline;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.popup-link i {
+    color: #4CAF50;
+    font-size: 12px;
+}
+
+/* Unified popup architecture styling */
+.popup-meta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.popup-subtitle {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.popup-links {
+    margin-top: auto; /* Push to bottom of flexbox container */
+    padding-top: 8px;
+    font-size: 13px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+
+/* Geocoding error styling */
+.geocoding-error {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -366,6 +752,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    min-height: 100px; /* Ensure minimum height for proper flexbox behavior */
 }
 
 /* Popup titles */
@@ -509,6 +896,253 @@ html, body {
 .popup-order-4 { order: 4; }
 .popup-order-5 { order: 5; }
 
+/* ===== NEW POPUP ARCHITECTURE CSS ===== */
+
+/* Base popup structure using BEM-like naming */
+.popup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 100px;
+}
+
+.popup__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.3;
+}
+
+.popup__title--large {
+    font-size: 18px;
+}
+
+.popup__subtitle {
+    color: #666;
+    font-size: 13px;
+    margin: 0;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.popup__meta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 4px 0;
+}
+
+.popup__meta {
+    color: #666;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.popup__meta--warning {
+    color: #ff6b6b;
+    font-weight: 500;
+}
+
+.popup__meta--highlight {
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.popup__description {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.popup__description--small {
+    font-size: 13px;
+}
+
+.popup__custom-content {
+    margin: 8px 0;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.popup__address {
+    margin: 8px 0;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.popup__full-description {
+    margin: 8px 0;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.popup__links {
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.popup__link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    background: transparent;
+}
+
+.popup__link:hover {
+    color: #45a049;
+    text-decoration: underline;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.popup__link--primary {
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.popup__link--secondary {
+    color: #1976d2;
+}
+
+.popup__link--secondary:hover {
+    color: #1565c0;
+    background-color: rgba(25, 118, 210, 0.1);
+}
+
+.popup__link i {
+    color: inherit;
+    font-size: 12px;
+}
+
+/* Type-specific popup classes */
+.popup--event {
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.popup--farm {
+    min-width: 280px;
+    max-width: 300px;
+}
+
+.popup--restaurant {
+    min-width: 300px;
+    max-width: 320px;
+}
+
+.popup--brewery {
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.popup--waterfall {
+    min-width: 280px;
+    max-width: 300px;
+}
+
+.popup--trail {
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.popup--airbnb {
+    min-width: 350px;
+    max-width: 400px;
+}
+
+.popup--children {
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.popup--poi {
+    min-width: 280px;
+    max-width: 300px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .popup {
+        min-height: 80px;
+        gap: 6px;
+    }
+    
+    .popup__title {
+        font-size: 15px;
+    }
+    
+    .popup__title--large {
+        font-size: 16px;
+    }
+    
+    .popup__description {
+        font-size: 13px;
+    }
+    
+    .popup__meta {
+        font-size: 11px;
+    }
+    
+    .popup__link {
+        display: inline-block;
+        padding: 8px 12px;
+        margin: 4px 0;
+        min-height: 44px;
+        line-height: 28px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: #f8f9fa;
+    }
+    
+    .popup__link:hover {
+        background-color: #e9ecef;
+    }
+    
+    /* Adjust popup sizes for mobile */
+    .popup--event,
+    .popup--farm,
+    .popup--restaurant,
+    .popup--brewery,
+    .popup--waterfall,
+    .popup--trail,
+    .popup--children,
+    .popup--poi {
+        min-width: 250px;
+        max-width: 300px;
+    }
+    
+    .popup--airbnb {
+        min-width: 280px;
+        max-width: 320px;
+    }
+}
+
 /* ===== MAP MARKER STYLES ===== */
 
 /* City markers */
@@ -540,6 +1174,92 @@ html, body {
 .map-tooltip small {
     font-size: 12px;
     color: #666;
+}
+
+/* ===== EVENT MARKER AND POPUP STYLES ===== */
+.event-marker {
+    background: transparent !important;
+    border: none !important;
+}
+
+.event-icon {
+    background: #ff6b35;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+.event-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.event-popup {
+    min-width: 320px;
+}
+
+.event-popup .popup-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 8px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.event-popup .event-date,
+.event-popup .event-location,
+.event-popup .family-friendly {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+.event-popup .family-friendly {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.event-popup .popup-description {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.event-popup .popup-address {
+    margin: 8px 0;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.event-popup .event-website {
+    background: #ff6b35;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.event-popup .event-website:hover {
+    background: #e55a2b;
+    color: white;
+    text-decoration: none;
 }
 
 /* ===== CUSTOM LOCATION POPUP STYLES ===== */

@@ -21,6 +21,8 @@ class ScenicNYMap {
         this.airbnbs = null;
         this.pointsOfInterest = null;
         this.regions = null;
+        this.events = null;
+        this.tripPlan = null; // Trip planning data
         this.isMobile = this.detectMobile();
         this.seasonalVisibility = {
             apples: true,
@@ -28,6 +30,7 @@ class ScenicNYMap {
             cherries: true,
             peaches: true
         };
+        this.popupFactory = null; // Will be initialized after map is ready
     }
 
     // Detect if the device is mobile/touch
@@ -141,6 +144,461 @@ class ScenicNYMap {
         });
     }
 
+    // Trip planning functionality
+    initializeTripPlanning() {
+        this.tripPlan = this.loadTripPlan();
+        this.updateTripDisplay();
+        this.setInitialDateValues();
+    }
+
+    loadTripPlan() {
+        const cookie = document.cookie.split(';').find(c => c.trim().startsWith('tripPlan='));
+        if (cookie) {
+            try {
+                return JSON.parse(decodeURIComponent(cookie.split('=')[1]));
+            } catch (e) {
+                console.warn('Error parsing trip plan cookie:', e);
+            }
+        }
+        return null;
+    }
+
+    saveTripPlan(tripPlan) {
+        const maxAge = 30 * 24 * 60 * 60; // 30 days
+        document.cookie = `tripPlan=${encodeURIComponent(JSON.stringify(tripPlan))}; max-age=${maxAge}; path=/`;
+        this.tripPlan = tripPlan;
+    }
+
+    setInitialDateValues() {
+        const today = new Date();
+        const nextWeek = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+        
+        if (!this.tripPlan) {
+            const startDateEl = document.getElementById('tripStartDate');
+            const endDateEl = document.getElementById('tripEndDate');
+            
+            if (startDateEl && endDateEl) {
+                startDateEl.value = today.toISOString().split('T')[0];
+                endDateEl.value = nextWeek.toISOString().split('T')[0];
+            }
+        }
+    }
+
+    updateTripDisplay() {
+        const currentTripEl = document.getElementById('currentTrip');
+        const tripFormEl = document.getElementById('tripForm');
+        const tripDisplayEl = document.getElementById('tripDisplay');
+        const tripLoadingEl = document.getElementById('tripLoading');
+        
+        // Safety check for DOM elements
+        if (!currentTripEl || !tripFormEl || !tripLoadingEl) {
+            console.warn('Trip planning DOM elements not found');
+            return;
+        }
+        
+        // Hide loading state
+        tripLoadingEl.style.display = 'none';
+        
+        if (this.tripPlan) {
+            // Parse dates as local dates to avoid timezone issues
+            const startDate = new Date(this.tripPlan.startDate + 'T00:00:00').toLocaleDateString();
+            const endDate = new Date(this.tripPlan.endDate + 'T00:00:00').toLocaleDateString();
+            
+            // Update the new separate elements
+            const tripLocationEl = document.getElementById('tripLocation');
+            const tripDatesEl = document.getElementById('tripDates');
+            
+            if (tripLocationEl && tripDatesEl) {
+                if (this.tripPlan.address) {
+                    tripLocationEl.textContent = this.formatAddress(this.tripPlan.address);
+                } else {
+                    tripLocationEl.textContent = 'No location set';
+                }
+                tripDatesEl.textContent = `${startDate} - ${endDate}`;
+            }
+            
+            currentTripEl.style.display = 'block';
+            tripFormEl.style.display = 'none';
+            
+            // Apply trip filtering to map data
+            this.applyTripFiltering();
+            
+            // Plot trip location marker if coordinates are available
+            if (this.tripPlan.lat && this.tripPlan.lng) {
+                this.plotTripLocation();
+            } else if (this.tripPlan.address) {
+                // Geocode the address to get coordinates
+                this.geocodeTripAddress();
+            }
+        } else {
+            currentTripEl.style.display = 'none';
+            tripFormEl.style.display = 'block';
+            
+            // Remove trip location marker if it exists
+            this.removeTripLocationMarker();
+        }
+    }
+
+    applyTripFiltering() {
+        if (!this.tripPlan) return;
+        
+        // Filter events based on trip dates
+        this.filterEventsByTrip();
+        
+        // Filter PYO based on trip season
+        this.filterPYOByTrip();
+        
+        // Re-render other marker types to include directions links
+        this.renderRestaurants();
+        this.renderPointsOfInterest();
+        this.renderWaterfalls();
+        this.renderBreweries();
+        this.renderChildren();
+        this.renderTrailheads();
+        this.renderAirbnbs();
+        
+        console.log('Applied trip filtering for:', this.tripPlan);
+    }
+
+    filterEventsByTrip() {
+        if (!this.events || !this.events.events) return;
+        
+        const tripStart = new Date(this.tripPlan.startDate);
+        const tripEnd = new Date(this.tripPlan.endDate);
+        
+        // Re-render events with filtering
+        this.renderEvents(); // This will need to be modified to respect trip filtering
+    }
+
+    filterPYOByTrip() {
+        const tripStartMonth = new Date(this.tripPlan.startDate).getMonth() + 1;
+        const tripEndMonth = new Date(this.tripPlan.endDate).getMonth() + 1;
+        
+        // Update seasonal visibility based on trip dates
+        const seasonalStatus = this.getSeasonalStatusForTrip(tripStartMonth, tripEndMonth);
+        
+        // Update the seasonal visibility object with trip-based status
+        this.seasonalVisibility = seasonalStatus;
+        
+        // Re-render PYO layers with trip-based filtering
+        this.renderOrchards();
+        this.renderStrawberries();
+        this.renderCherries();
+        this.renderPeaches();
+        
+        // Update legend to reflect trip-based seasonal status
+        this.updateSeasonalLegend();
+    }
+
+    getSeasonalStatusForTrip(startMonth, endMonth) {
+        // Determine what's in season during the trip
+        return {
+            apples: this.isInSeasonDuringTrip([9, 10, 11], startMonth, endMonth),
+            strawberries: this.isInSeasonDuringTrip([5, 6, 7], startMonth, endMonth),
+            cherries: this.isInSeasonDuringTrip([6, 7], startMonth, endMonth),
+            peaches: this.isInSeasonDuringTrip([7, 8, 9], startMonth, endMonth)
+        };
+    }
+
+    isInSeasonDuringTrip(seasonMonths, tripStartMonth, tripEndMonth) {
+        for (let month = tripStartMonth; month <= tripEndMonth; month++) {
+            if (seasonMonths.includes(month)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    isEventRelevantToTrip(event) {
+        if (!this.tripPlan) return true;
+        
+        const tripStart = new Date(this.tripPlan.startDate);
+        const tripEnd = new Date(this.tripPlan.endDate);
+        const eventStart = new Date(event.start_date);
+        const eventEnd = event.end_date ? new Date(event.end_date) : eventStart;
+        
+        // Check if event overlaps with trip dates
+        return eventStart <= tripEnd && eventEnd >= tripStart;
+    }
+
+    clearTripFiltering() {
+        // Remove any trip-based filtering and restore normal display
+        if (this.map) {
+            this.map.eachLayer(layer => {
+                if (layer.getElement) {
+                    const element = layer.getElement();
+                    if (element) {
+                        element.classList.remove('trip-filtered', 'trip-relevant');
+                    }
+                }
+            });
+        }
+        
+        // Reset seasonal visibility to current status
+        this.seasonalVisibility = this.getSeasonalStatus();
+        
+        // Re-render PYO layers with current seasonal status
+        this.renderOrchards();
+        this.renderStrawberries();
+        this.renderCherries();
+        this.renderPeaches();
+        
+        // Re-render everything without trip filtering
+        this.updateSeasonalLegend();
+    }
+
+    formatAddress(address) {
+        if (!address) return '';
+        
+        // Handle common abbreviations and special cases
+        const abbreviations = {
+            'ny': 'NY',
+            'nyc': 'NYC', 
+            'usa': 'USA',
+            'us': 'US',
+            'st': 'St',
+            'ave': 'Ave',
+            'rd': 'Rd',
+            'blvd': 'Blvd',
+            'dr': 'Dr',
+            'ln': 'Ln',
+            'ct': 'Ct',
+            'pl': 'Pl',
+            'pkwy': 'Pkwy',
+            'hwy': 'Hwy'
+        };
+        
+        // Split by common separators and capitalize each part
+        return address
+            .split(/[,\s]+/) // Split by commas and spaces
+            .map(part => {
+                const lowerPart = part.toLowerCase().trim();
+                
+                // Handle abbreviations
+                if (abbreviations[lowerPart]) {
+                    return abbreviations[lowerPart];
+                }
+                
+                // Handle empty parts
+                if (!part.trim()) return '';
+                
+                // Capitalize first letter of each word
+                return part.charAt(0).toUpperCase() + part.slice(1).toLowerCase();
+            })
+            .filter(part => part.length > 0) // Remove empty parts
+            .join(' ')
+            .replace(/\s+/g, ' ') // Clean up multiple spaces
+            .trim();
+    }
+
+    createPopup(options) {
+        const {
+            title,
+            subtitle,
+            meta = [],
+            description,
+            links = [],
+            coordinates = null,
+            customContent = '',
+            maxWidth = 350
+        } = options;
+        
+        // Build meta information
+        const metaHtml = meta.length > 0 ? 
+            `<div class="popup__meta-container">${meta.map(item => `<span class="popup__meta">${item}</span>`).join('')}</div>` : '';
+        
+        // Add directions link if trip is set with location and coordinates provided
+        let finalLinks = [...links]; // Create a copy of the links array
+        if (this.tripPlan && this.tripPlan.address && this.tripPlan.lat && this.tripPlan.lng && coordinates) {
+            const [lat, lng] = coordinates;
+            const origin = `${this.tripPlan.lat},${this.tripPlan.lng}`;
+            const destination = `${lat},${lng}`;
+            const directionsUrl = `https://www.google.com/maps/dir/${origin}/${destination}`;
+            
+            const directionsLink = `<a href="${directionsUrl}" target="_blank" class="popup__link popup__link--primary">
+                <i class="fa fa-directions"></i> Directions from ${this.formatAddress(this.tripPlan.address)}
+            </a>`;
+            
+            // Add directions link to the links array
+            finalLinks.push(directionsLink);
+        }
+        
+        // Build links section with final links array
+        const linksHtml = finalLinks.length > 0 ? 
+            `<div class="popup__links">${finalLinks.join(' • ')}</div>` : '';
+        
+        // Build description
+        const descriptionHtml = description ? 
+            `<div class="popup__description">${description}</div>` : '';
+        
+        // Build subtitle
+        const subtitleHtml = subtitle ? 
+            `<div class="popup__subtitle">${subtitle}</div>` : '';
+        
+        // Create base popup content
+        let popupContent = `
+            <div class="popup">
+                <h3 class="popup__title">${title}</h3>
+                ${subtitleHtml}
+                ${metaHtml}
+                ${descriptionHtml}
+                ${customContent}
+                ${linksHtml}
+            </div>
+        `;
+        
+        return popupContent;
+    }
+
+    bindPopupToMarker(marker, options) {
+        const popupContent = this.createPopup(options);
+        const popup = L.popup(this.getPopupOptions(options.maxWidth || 350));
+        popup.setContent(popupContent);
+        marker.bindPopup(popup);
+        return popup;
+    }
+
+    async geocodeTripAddress() {
+        if (!this.tripPlan || !this.tripPlan.address) return;
+        
+        try {
+            console.log('Geocoding trip address:', this.tripPlan.address);
+            
+            // Use a simple geocoding service (Nominatim - free and no API key required)
+            const encodedAddress = encodeURIComponent(this.tripPlan.address);
+            const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodedAddress}&limit=1&countrycodes=us`);
+            
+            if (!response.ok) {
+                throw new Error(`Geocoding failed: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            if (data && data.length > 0) {
+                const result = data[0];
+                const lat = parseFloat(result.lat);
+                const lng = parseFloat(result.lon);
+                
+                // Update trip plan with coordinates
+                this.tripPlan.lat = lat;
+                this.tripPlan.lng = lng;
+                this.tripPlan.geocodedAddress = result.display_name;
+                
+                // Save updated trip plan
+                this.saveTripPlan(this.tripPlan);
+                
+                // Plot the location
+                this.plotTripLocation();
+                
+                console.log('Trip address geocoded successfully:', lat, lng);
+            } else {
+                console.warn('No geocoding results found for:', this.tripPlan.address);
+                this.showGeocodingError();
+            }
+        } catch (error) {
+            console.error('Error geocoding trip address:', error);
+            this.showGeocodingError();
+        }
+    }
+
+    plotTripLocation() {
+        if (!this.tripPlan || !this.tripPlan.address || !this.tripPlan.lat || !this.tripPlan.lng) return;
+        if (!this.map) {
+            console.warn('Map not ready for plotting trip location');
+            return;
+        }
+        
+        // Remove existing trip marker if it exists
+        this.removeTripLocationMarker();
+        
+        // Create custom trip location icon
+        const tripIcon = L.divIcon({
+            className: 'trip-location-marker',
+            html: '<div class="trip-icon">🏠</div>',
+            iconSize: [35, 35],
+            iconAnchor: [17, 17],
+            popupAnchor: [0, -17]
+        });
+        
+        // Create marker
+        this.tripLocationMarker = L.marker([this.tripPlan.lat, this.tripPlan.lng], { 
+            icon: tripIcon 
+        }).addTo(this.map);
+        
+        // Create 25-mile radius circle
+        this.tripRadiusCircle = L.circle([this.tripPlan.lat, this.tripPlan.lng], {
+            radius: 25 * 1609.34, // Convert 25 miles to meters
+            color: '#4CAF50',
+            fillColor: '#4CAF50',
+            fillOpacity: 0.05,
+            weight: 1,
+            opacity: 0.4,
+            interactive: false, // Make it non-interactive so it doesn't interfere with clicks
+            zIndexOffset: -1000 // Put it at the very bottom of the z-order
+        }).addTo(this.map);
+        
+        // Create popup content
+        const startDate = new Date(this.tripPlan.startDate + 'T00:00:00').toLocaleDateString();
+        const endDate = new Date(this.tripPlan.endDate + 'T00:00:00').toLocaleDateString();
+        const popupContent = `
+            <div class="trip-popup">
+                <h4><i class="fa fa-home"></i> Your Trip Location</h4>
+                <p><strong>${this.formatAddress(this.tripPlan.address)}</strong></p>
+                <p><i class="fa fa-calendar"></i> ${startDate} - ${endDate}</p>
+                <p><i class="fa fa-circle-o"></i> 25-mile exploration radius</p>
+                <p><small>${this.tripPlan.geocodedAddress || this.formatAddress(this.tripPlan.address)}</small></p>
+            </div>
+        `;
+        
+        this.tripLocationMarker.bindPopup(popupContent, {
+            maxWidth: 300,
+            className: 'trip-popup-content'
+        });
+        
+        // Center map on trip location with appropriate zoom
+        this.map.setView([this.tripPlan.lat, this.tripPlan.lng], Math.max(this.map.getZoom(), 10));
+        
+        console.log('Trip location plotted:', this.tripPlan.lat, this.tripPlan.lng);
+    }
+
+    removeTripLocationMarker() {
+        if (this.tripLocationMarker) {
+            this.map.removeLayer(this.tripLocationMarker);
+            this.tripLocationMarker = null;
+            console.log('Trip location marker removed');
+        }
+        
+        if (this.tripRadiusCircle) {
+            this.map.removeLayer(this.tripRadiusCircle);
+            this.tripRadiusCircle = null;
+            console.log('Trip radius circle removed');
+        }
+    }
+
+    showGeocodingError() {
+        // Show a user-friendly error message
+        const errorMsg = document.createElement('div');
+        errorMsg.className = 'geocoding-error';
+        errorMsg.innerHTML = `
+            <div style="background: #ffebee; border: 1px solid #f44336; border-radius: 4px; padding: 8px; margin: 8px 0; color: #c62828; font-size: 12px;">
+                <i class="fa fa-exclamation-triangle"></i> 
+                Could not find location for "${this.tripPlan.address}". Please try a more specific address.
+            </div>
+        `;
+        
+        const tripForm = document.getElementById('tripForm');
+        if (tripForm) {
+            tripForm.appendChild(errorMsg);
+            
+            // Remove error message after 5 seconds
+            setTimeout(() => {
+                if (errorMsg.parentNode) {
+                    errorMsg.parentNode.removeChild(errorMsg);
+                }
+            }, 5000);
+        }
+    }
+
     // Get mobile-optimized popup options
     getPopupOptions(maxWidth = 300) {
         if (this.isMobile) {
@@ -188,7 +646,7 @@ class ScenicNYMap {
     async loadData() {
         try {
             const ts = Date.now();
-            const [mapRes, wfRes, brRes, rsRes, orchRes, strawRes, cherryRes, peachRes, childrenRes, trailheadsRes, airbnbsRes, poiRes, regionsRes] = await Promise.all([
+            const [mapRes, wfRes, brRes, rsRes, orchRes, strawRes, cherryRes, peachRes, childrenRes, trailheadsRes, airbnbsRes, poiRes, regionsRes, eventsRes] = await Promise.all([
                 fetch(`/data/map-data.json?t=${ts}`),
                 fetch(`/data/waterfalls.json?t=${ts}`),
                 fetch(`/data/breweries.json?t=${ts}`),
@@ -201,7 +659,8 @@ class ScenicNYMap {
                 fetch(`/data/trail-heads.json?t=${ts}`),
                 fetch(`/data/our-airbnbs.json?t=${ts}`),
                 fetch(`/data/points_of_interest.json?t=${ts}`),
-                fetch(`/data/nys_regions_redc_simplified_200m_disjoint.geojson?t=${ts}`)
+                fetch(`/data/nys_regions_redc_simplified_200m_disjoint.geojson?t=${ts}`),
+                fetch(`/data/events.json?t=${ts}`)
             ]);
 
             this.data = await mapRes.json();
@@ -220,7 +679,9 @@ class ScenicNYMap {
             this.airbnbs = airbnbsRes.ok ? await airbnbsRes.json() : [];
             this.pointsOfInterest = poiRes.ok ? await poiRes.json() : [];
             this.regions = regionsRes.ok ? await regionsRes.json() : [];
+            this.events = eventsRes.ok ? await eventsRes.json() : null;
             console.log('Regions data loaded:', this.regions);
+            console.log('Events data loaded:', this.events);
             if (this.regions && this.regions.features) {
                 console.log('Number of features:', this.regions.features.length);
                 console.log('First feature:', this.regions.features[0]);
@@ -300,6 +761,9 @@ class ScenicNYMap {
             })
             .addTo(this.map);
         }
+
+        // Initialize popup factory after map is ready
+        this.popupFactory = new PopupFactory(this);
     }
 
     renderScenicAreas() {
@@ -477,6 +941,86 @@ class ScenicNYMap {
         }
     }
 
+    async renderEvents() {
+        if (!this.events || !this.events.events || !Array.isArray(this.events.events) || !this.events.events.length) {
+            console.log('No events data to render');
+            return;
+        }
+
+        console.log('Rendering events:', this.events.events.length, 'events');
+        const eventGroup = L.featureGroup({}).addTo(this.map);
+
+        for (const event of this.events.events) {
+            // Require precomputed coordinates
+            if (typeof event.lat !== 'number' || typeof event.lng !== 'number') {
+                console.warn('Skipping event without coordinates:', event.name, event.address);
+                continue;
+            }
+
+            console.log(`Creating event marker: ${event.name} at ${event.lat}, ${event.lng}`);
+
+            // Check if event is relevant to trip
+            const isRelevant = this.isEventRelevantToTrip(event);
+            const tripClass = this.tripPlan ? (isRelevant ? 'trip-relevant' : 'trip-filtered') : '';
+
+            // Create custom event icon
+            const eventIcon = L.divIcon({
+                className: `event-marker ${tripClass}`,
+                html: '<div class="event-icon">🎪</div>',
+                iconSize: [30, 30],
+                iconAnchor: [15, 15],
+                popupAnchor: [0, -15]
+            });
+
+            // Create marker
+            const marker = L.marker([event.lat, event.lng], { icon: eventIcon }).addTo(eventGroup);
+
+            // Format dates
+            const startDate = new Date(event.start_date);
+            const endDate = new Date(event.end_date);
+            const dateFormat = startDate.toLocaleDateString('en-US', { 
+                month: 'short', 
+                day: 'numeric',
+                year: startDate.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined
+            });
+            
+            let dateRange = dateFormat;
+            if (event.start_date !== event.end_date) {
+                const endDateFormat = endDate.toLocaleDateString('en-US', { 
+                    month: 'short', 
+                    day: 'numeric',
+                    year: endDate.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined
+                });
+                dateRange = `${dateFormat} - ${endDateFormat}`;
+            }
+
+            // Add tooltip (only on non-mobile devices)
+            if (!this.isMobile) {
+                marker.bindTooltip(
+                    `<div class="map-tooltip">
+                        <b>${event.name}</b>
+                        <small>${dateRange} • ${event.location_name}</small>
+                    </div>`,
+                    { sticky: true }
+                );
+            }
+
+            // Create popup using new popup architecture
+            this.popupFactory.bindPopupToMarker(marker, event, 'event');
+        }
+
+        console.log('Events processed. Group has', eventGroup.getLayers().length, 'markers');
+        
+        // Register as an overlay for toggling
+        if (this.layerControl) {
+            this.layerControl.addOverlay(eventGroup, 'Events');
+            console.log('Events layer registered with layer control');
+        }
+        
+        console.log('Events layer added to map with', eventGroup.getLayers().length, 'events');
+    }
+
+
     renderCities() {
         const cityGroup = L.featureGroup({}).addTo(this.map);
 
@@ -602,8 +1146,22 @@ class ScenicNYMap {
 
     async renderOrchards() {
         try {
+            // Clear existing orchard markers
+            if (this.overlays && this.overlays['Orchards (PYO)']) {
+                this.map.removeLayer(this.overlays['Orchards (PYO)']);
+            }
+            
             const points = Array.isArray(this.orchardPoints) ? this.orchardPoints : [];
-            const seasonalStatus = this.getSeasonalStatus();
+            
+            // Determine seasonal status based on trip or current season
+            let seasonalStatus;
+            if (this.tripPlan) {
+                const tripStartMonth = new Date(this.tripPlan.startDate).getMonth() + 1;
+                const tripEndMonth = new Date(this.tripPlan.endDate).getMonth() + 1;
+                seasonalStatus = this.getSeasonalStatusForTrip(tripStartMonth, tripEndMonth);
+            } else {
+                seasonalStatus = this.getSeasonalStatus();
+            }
 
             const orchards = Array.isArray(points)
                 ? points.map(p => ({
@@ -628,8 +1186,9 @@ class ScenicNYMap {
             orchards.forEach(o => {
                 if (!o.coords || isNaN(o.coords[0]) || isNaN(o.coords[1])) return;
                 
-                // Check if this specific farm is in season for apples
-                const farmInSeason = this.isInSeason(o.season_start_week, o.season_end_week);
+                // Use the seasonal status determined above (trip-based or current)
+                const farmInSeason = seasonalStatus.apples;
+                
                 
                 // Create icon with appropriate styling
                 const iconClass = farmInSeason ? 'icon-marker icon-apple' : 'icon-marker icon-apple out-of-season';
@@ -660,17 +1219,24 @@ class ScenicNYMap {
                 
                 const seasonStatus = farmInSeason ? '' : '<span class="popup-meta" style="color: #ff6b6b;"><strong>⚠️ Out of Season</strong></span>';
                 
-                marker.bindPopup(`
-                    <div class="map-popup">
-                        <h3 class="popup-title">${o.name}${o.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}</h3>
-                        ${o.address ? `<span class="popup-meta">${o.address}</span>` : ''}
-                        ${o.approx_drive ? `<span class="popup-meta"><strong>Drive:</strong> ${o.approx_drive}</span>` : ''}
-                        ${o.reservation_required ? `<span class="popup-meta"><strong>Reservation:</strong> ${o.reservation_required}</span>` : ''}
-                        ${seasonStatus}
-                        ${o.notes ? `<div class="popup-description">${o.notes}</div>` : ''}
-                        ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
-                    </div>
-                `);
+                // Create popup using unified architecture
+                const organicBadge = o.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : '';
+                
+                const popupOptions = {
+                    title: `${o.name}${organicBadge}`,
+                    meta: [
+                        ...(o.address ? [o.address] : []),
+                        ...(o.approx_drive ? [`<strong>Drive:</strong> ${o.approx_drive}`] : []),
+                        ...(o.reservation_required ? [`<strong>Reservation:</strong> ${o.reservation_required}`] : []),
+                        ...(seasonStatus ? [seasonStatus] : [])
+                    ],
+                    description: o.notes || '',
+                    links: links ? [links] : [],
+                    coordinates: [o.coords[0], o.coords[1]],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             this.overlays = this.overlays || {};
@@ -683,7 +1249,22 @@ class ScenicNYMap {
 
     async renderStrawberries() {
         try {
+            // Clear existing strawberry markers
+            if (this.overlays && this.overlays['Strawberries (PYO)']) {
+                this.map.removeLayer(this.overlays['Strawberries (PYO)']);
+            }
+            
             const points = Array.isArray(this.strawberryPoints) ? this.strawberryPoints : [];
+            
+            // Determine seasonal status based on trip or current season
+            let seasonalStatus;
+            if (this.tripPlan) {
+                const tripStartMonth = new Date(this.tripPlan.startDate).getMonth() + 1;
+                const tripEndMonth = new Date(this.tripPlan.endDate).getMonth() + 1;
+                seasonalStatus = this.getSeasonalStatusForTrip(tripStartMonth, tripEndMonth);
+            } else {
+                seasonalStatus = this.getSeasonalStatus();
+            }
 
             const strawberries = Array.isArray(points)
                 ? points.map(p => ({
@@ -708,8 +1289,8 @@ class ScenicNYMap {
             strawberries.forEach(s => {
                 if (!s.coords || isNaN(s.coords[0]) || isNaN(s.coords[1])) return;
                 
-                // Check if this specific farm is in season for strawberries
-                const farmInSeason = this.isInSeason(s.season_start_week, s.season_end_week);
+                // Use the seasonal status determined above (trip-based or current)
+                const farmInSeason = seasonalStatus.strawberries;
                 
                 // Create icon with appropriate styling
                 const iconClass = farmInSeason ? 'icon-marker icon-strawberry' : 'icon-marker icon-strawberry out-of-season';
@@ -736,20 +1317,24 @@ class ScenicNYMap {
                 const websiteLink = s.website ? 
                     `<a href="${s.website}" target="_blank" rel="noopener" class="popup-link">Website</a>` : '';
                 
-                const links = [websiteLink, googleMapsLink].filter(Boolean).join(' • ');
+                const links = [websiteLink, googleMapsLink].filter(Boolean);
                 
                 const seasonStatus = farmInSeason ? '' : '<span class="popup-meta" style="color: #ff6b6b;"><strong>⚠️ Out of Season</strong></span>';
                 
-                marker.bindPopup(`
-                    <div class="map-popup">
-                        <h3 class="popup-title">${s.name}${s.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}</h3>
-                        ${s.address ? `<span class="popup-meta">${s.address}</span>` : ''}
-                        ${s.reservation_required ? `<span class="popup-meta"><strong>Reservation:</strong> ${s.reservation_required}</span>` : ''}
-                        ${seasonStatus}
-                        ${s.notes ? `<div class="popup-description">${s.notes}</div>` : ''}
-                        ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
-                    </div>
-                `);
+                const popupOptions = {
+                    title: `${s.name}${s.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}`,
+                    meta: [
+                        s.address,
+                        s.reservation_required ? `Reservation: ${s.reservation_required}` : null,
+                        seasonStatus
+                    ].filter(Boolean),
+                    description: s.notes,
+                    links: links,
+                    coordinates: [s.coords[0], s.coords[1]],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             this.overlays = this.overlays || {};
@@ -762,7 +1347,22 @@ class ScenicNYMap {
 
     async renderCherries() {
         try {
+            // Clear existing cherry markers
+            if (this.overlays && this.overlays['Cherries (PYO)']) {
+                this.map.removeLayer(this.overlays['Cherries (PYO)']);
+            }
+            
             const points = Array.isArray(this.cherryPoints) ? this.cherryPoints : [];
+            
+            // Determine seasonal status based on trip or current season
+            let seasonalStatus;
+            if (this.tripPlan) {
+                const tripStartMonth = new Date(this.tripPlan.startDate).getMonth() + 1;
+                const tripEndMonth = new Date(this.tripPlan.endDate).getMonth() + 1;
+                seasonalStatus = this.getSeasonalStatusForTrip(tripStartMonth, tripEndMonth);
+            } else {
+                seasonalStatus = this.getSeasonalStatus();
+            }
 
             const cherries = Array.isArray(points)
                 ? points.map(p => ({
@@ -787,8 +1387,8 @@ class ScenicNYMap {
             cherries.forEach(c => {
                 if (!c.coords || isNaN(c.coords[0]) || isNaN(c.coords[1])) return;
                 
-                // Check if this specific farm is in season for cherries
-                const farmInSeason = this.isInSeason(c.season_start_week, c.season_end_week);
+                // Use the seasonal status determined above (trip-based or current)
+                const farmInSeason = seasonalStatus.cherries;
                 
                 // Create icon with appropriate styling
                 const iconClass = farmInSeason ? 'icon-marker icon-cherry' : 'icon-marker icon-cherry out-of-season';
@@ -815,20 +1415,24 @@ class ScenicNYMap {
                 const websiteLink = c.website ? 
                     `<a href="${c.website}" target="_blank" rel="noopener" class="popup-link">Website</a>` : '';
                 
-                const links = [websiteLink, googleMapsLink].filter(Boolean).join(' • ');
+                const links = [websiteLink, googleMapsLink].filter(Boolean);
                 
                 const seasonStatus = farmInSeason ? '' : '<span class="popup-meta" style="color: #ff6b6b;"><strong>⚠️ Out of Season</strong></span>';
                 
-                marker.bindPopup(`
-                    <div class="map-popup">
-                        <h3 class="popup-title">${c.name}${c.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}</h3>
-                        ${c.address ? `<span class="popup-meta">${c.address}</span>` : ''}
-                        ${c.reservation_required ? `<span class="popup-meta"><strong>Reservation:</strong> ${c.reservation_required}</span>` : ''}
-                        ${seasonStatus}
-                        ${c.notes ? `<div class="popup-description">${c.notes}</div>` : ''}
-                        ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
-                    </div>
-                `);
+                const popupOptions = {
+                    title: `${c.name}${c.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}`,
+                    meta: [
+                        c.address,
+                        c.reservation_required ? `Reservation: ${c.reservation_required}` : null,
+                        seasonStatus
+                    ].filter(Boolean),
+                    description: c.notes,
+                    links: links,
+                    coordinates: [c.coords[0], c.coords[1]],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             this.overlays = this.overlays || {};
@@ -841,7 +1445,22 @@ class ScenicNYMap {
 
     async renderPeaches() {
         try {
+            // Clear existing peach markers
+            if (this.overlays && this.overlays['Peaches (PYO)']) {
+                this.map.removeLayer(this.overlays['Peaches (PYO)']);
+            }
+            
             const points = Array.isArray(this.peachPoints) ? this.peachPoints : [];
+            
+            // Determine seasonal status based on trip or current season
+            let seasonalStatus;
+            if (this.tripPlan) {
+                const tripStartMonth = new Date(this.tripPlan.startDate).getMonth() + 1;
+                const tripEndMonth = new Date(this.tripPlan.endDate).getMonth() + 1;
+                seasonalStatus = this.getSeasonalStatusForTrip(tripStartMonth, tripEndMonth);
+            } else {
+                seasonalStatus = this.getSeasonalStatus();
+            }
 
             const peaches = Array.isArray(points)
                 ? points.map(p => ({
@@ -866,8 +1485,8 @@ class ScenicNYMap {
             peaches.forEach(p => {
                 if (!p.coords || isNaN(p.coords[0]) || isNaN(p.coords[1])) return;
                 
-                // Check if this specific farm is in season for peaches
-                const farmInSeason = this.isInSeason(p.season_start_week, p.season_end_week);
+                // Use the seasonal status determined above (trip-based or current)
+                const farmInSeason = seasonalStatus.peaches;
                 
                 // Create icon with appropriate styling
                 const iconClass = farmInSeason ? 'icon-marker icon-peach' : 'icon-marker icon-peach out-of-season';
@@ -894,20 +1513,24 @@ class ScenicNYMap {
                 const websiteLink = p.website ? 
                     `<a href="${p.website}" target="_blank" rel="noopener" class="popup-link">Website</a>` : '';
                 
-                const links = [websiteLink, googleMapsLink].filter(Boolean).join(' • ');
+                const links = [websiteLink, googleMapsLink].filter(Boolean);
                 
                 const seasonStatus = farmInSeason ? '' : '<span class="popup-meta" style="color: #ff6b6b;"><strong>⚠️ Out of Season</strong></span>';
                 
-                marker.bindPopup(`
-                    <div class="map-popup">
-                        <h3 class="popup-title">${p.name}${p.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}</h3>
-                        ${p.address ? `<span class="popup-meta">${p.address}</span>` : ''}
-                        ${p.reservation_required ? `<span class="popup-meta"><strong>Reservation:</strong> ${p.reservation_required}</span>` : ''}
-                        ${seasonStatus}
-                        ${p.notes ? `<div class="popup-description">${p.notes}</div>` : ''}
-                        ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
-                    </div>
-                `);
+                const popupOptions = {
+                    title: `${p.name}${p.organic ? ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : ''}`,
+                    meta: [
+                        p.address,
+                        p.reservation_required ? `Reservation: ${p.reservation_required}` : null,
+                        seasonStatus
+                    ].filter(Boolean),
+                    description: p.notes,
+                    links: links,
+                    coordinates: [p.coords[0], p.coords[1]],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             this.overlays = this.overlays || {};
@@ -950,18 +1573,22 @@ class ScenicNYMap {
                 const websiteLink = activity.website ? 
                     `<a href="${activity.website}" target="_blank" rel="noopener" class="popup-link">Website</a>` : '';
                 
-                const links = [websiteLink, googleMapsLink].filter(Boolean).join(' • ');
+                const links = [websiteLink, googleMapsLink].filter(Boolean);
                 
-                marker.bindPopup(`
-                    <div class="map-popup">
-                        <h3 class="popup-title">${activity.name}</h3>
-                        ${activity.location ? `<span class="popup-meta">${activity.location}</span>` : ''}
-                        ${activity.cost ? `<span class="popup-meta"><strong>Cost:</strong> ${activity.cost}</span>` : ''}
-                        ${activity.season ? `<span class="popup-meta"><strong>Season:</strong> ${activity.season}</span>` : ''}
-                        ${activity.full_description ? `<div class="popup-description">${activity.full_description}</div>` : ''}
-                        ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
-                    </div>
-                `);
+                const popupOptions = {
+                    title: activity.name,
+                    meta: [
+                        activity.location,
+                        activity.cost ? `Cost: ${activity.cost}` : null,
+                        activity.season ? `Season: ${activity.season}` : null
+                    ].filter(Boolean),
+                    description: activity.full_description,
+                    links: links,
+                    coordinates: [activity.lat, activity.lng],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             this.overlays = this.overlays || {};
@@ -1004,21 +1631,23 @@ class ScenicNYMap {
                                 <i class="fa fa-map-marker"></i> View on Google Maps
                             </a>` : '';
                         
-                        const links = googleMapsLink;
+                        const links = googleMapsLink ? [googleMapsLink] : [];
                         
-                        marker.bindPopup(`
-                            <div class="map-popup">
-                                <h3 class="popup-title">${trail.name}</h3>
-                                <div class="popup-meta-container">
-                                    ${trail.location ? `<span class="popup-meta">${trail.location}</span>` : ''}
-                                    ${trail.region ? `<span class="popup-meta"><strong>Region:</strong> ${trail.region}</span>` : ''}
-                                    ${trail.difficulty_range ? `<span class="popup-meta"><strong>Difficulty:</strong> ${trail.difficulty_range}</span>` : ''}
-                                    ${trail.season ? `<span class="popup-meta"><strong>Season:</strong> ${trail.season}</span>` : ''}
-                                </div>
-                                ${trail.full_description ? `<div class="popup-description">${trail.full_description}</div>` : ''}
-                                ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
-                            </div>
-                        `);
+                        const popupOptions = {
+                            title: trail.name,
+                            meta: [
+                                trail.location,
+                                trail.region ? `Region: ${trail.region}` : null,
+                                trail.difficulty_range ? `Difficulty: ${trail.difficulty_range}` : null,
+                                trail.season ? `Season: ${trail.season}` : null
+                            ].filter(Boolean),
+                            description: trail.full_description,
+                            links: links,
+                            coordinates: [trail.lat, trail.lng],
+                            maxWidth: 300
+                        };
+                        
+                        this.bindPopupToMarker(marker, popupOptions);
                     });
                 }
             });
@@ -1067,15 +1696,17 @@ class ScenicNYMap {
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
                 
-                const links = googleMapsLink;
+                const links = googleMapsLink ? [googleMapsLink] : [];
                 
-                marker.bindPopup(`
-                    <div class="map-popup">
-                        <h3 class="popup-title">${airbnb.name}</h3>
-                        ${airbnb.address ? `<span class="popup-meta">${airbnb.address}</span>` : ''}
-                        ${links ? `<div class="popup-details-text-small">${links}</div>` : ''}
-                    </div>
-                `);
+                const popupOptions = {
+                    title: airbnb.name,
+                    meta: [airbnb.address].filter(Boolean),
+                    links: links,
+                    coordinates: [airbnb.lat, airbnb.lng],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             this.overlays = this.overlays || {};
@@ -1143,15 +1774,17 @@ class ScenicNYMap {
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
 
-                const popupContent = `
-                    <div class="map-popup">
-                        <h3 class="popup-title">${w.name}</h3>
-                        <div class="popup-details-text-small">${meta.join(' • ')}</div>
-                        ${hasDescription ? `<div class="popup-description">${w.description}</div>` : ''}
-                        ${googleMapsLink}
-                    </div>
-                `;
-                marker.bindPopup(popupContent);
+                // Create popup using unified architecture
+                const popupOptions = {
+                    title: w.name,
+                    subtitle: meta.join(' • '),
+                    description: hasDescription ? w.description : '',
+                    links: googleMapsLink ? [googleMapsLink] : [],
+                    coordinates: [w.lat, w.lng],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             // Add to map by default and register as overlay for toggling
@@ -1203,16 +1836,17 @@ class ScenicNYMap {
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
 
-                const popupContent = `
-                    <div class="map-popup">
-                        <h3 class="popup-title">${b.name}</h3>
-                        <div class="popup-details-text-small">${meta.join(' • ')}</div>
-                        ${b.full_description ? `<div class="popup-description">${b.full_description}</div>` : ''}
-                        ${googleMapsLink}
-                    </div>
-                `;
-
-                marker.bindPopup(popupContent);
+                // Create popup using unified architecture
+                const popupOptions = {
+                    title: b.name,
+                    subtitle: meta.join(' • '),
+                    description: b.full_description || '',
+                    links: googleMapsLink ? [googleMapsLink] : [],
+                    coordinates: [b.lat, b.lng],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             brGroup.addTo(this.map);
@@ -1258,20 +1892,24 @@ class ScenicNYMap {
                 if (rst.specialty) meta.push(rst.specialty);
                 if (rst.atmosphere) meta.push(rst.atmosphere);
                 if (typeof rst.family_friendly === 'boolean') meta.push(rst.family_friendly ? 'Family-friendly' : 'Adults-oriented');
-                const hasDescription = rst.description ? true : false;
+                
                 const googleMapsLink = rst.google_maps_url ? 
                     `<a href="${rst.google_maps_url}" target="_blank" rel="noopener" class="popup-link">
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
 
-                marker.bindPopup(`
-                    <div class="map-popup">
-                        <h3 class="popup-title">${rst.name}</h3>
-                        <div class="popup-details-text-small">${meta.join(' • ')}</div>
-                        ${hasDescription ? `<div class="popup-description">${rst.description}</div>` : ''}
-                        ${googleMapsLink}
-                    </div>
-                `);
+                const links = googleMapsLink ? [googleMapsLink] : [];
+                
+                const popupOptions = {
+                    title: rst.name,
+                    meta: meta,
+                    description: rst.description,
+                    links: links,
+                    coordinates: [rst.lat, rst.lng],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             rsGroup.addTo(this.map);
@@ -1370,18 +2008,18 @@ class ScenicNYMap {
                         <i class="fa fa-map-marker"></i> View on Google Maps
                     </a>` : '';
 
-                marker.bindPopup(`
-                    <div class="map-popup">
-                        <h3 class="popup-title">${poi.name}</h3>
-                        <span class="popup-meta">${poi.category}</span>
-                        <span class="popup-meta">${poi.location}</span>
-                        <div class="popup-description">${poi.description}</div>
-                        <div class="popup-links-container">
-                            ${websiteLink}
-                            ${googleMapsLink}
-                        </div>
-                    </div>
-                `);
+                const links = [websiteLink, googleMapsLink].filter(Boolean);
+                
+                const popupOptions = {
+                    title: poi.name,
+                    meta: [poi.category, poi.location].filter(Boolean),
+                    description: poi.description,
+                    links: links,
+                    coordinates: [poi.lat, poi.lng],
+                    maxWidth: 300
+                };
+                
+                this.bindPopupToMarker(marker, popupOptions);
             });
 
             poiGroup.addTo(this.map);
@@ -1537,6 +2175,7 @@ class ScenicNYMap {
             this.initializeMap();
             this.renderRegions(); // Render regions first (behind everything)
             this.renderScenicAreas();
+            await this.renderEvents();
             this.renderTrainRoutes();
             await this.renderOrchards();
             await this.renderStrawberries();
@@ -1557,6 +2196,12 @@ class ScenicNYMap {
             // Update seasonal legend and add click handlers
             this.updateSeasonalLegend();
             this.addSeasonalClickHandlers();
+            
+            // Initialize trip planning
+            this.initializeTripPlanning();
+            
+            // Make map instance globally accessible for trip planning functions
+            window.mapInstance = this;
             
             // Debug: Log current week and seasonal status
             const currentWeek = this.getCurrentWeek();
@@ -1579,6 +2224,61 @@ class ScenicNYMap {
             console.error('Error rendering map:', error);
         }
     }
+}
+
+// Global functions for trip planning
+function setTrip(event) {
+    event.preventDefault();
+    
+    if (!window.mapInstance) {
+        console.error('Map instance not available yet');
+        alert('Map is still loading. Please wait a moment and try again.');
+        return;
+    }
+    
+    const address = document.getElementById('tripAddress').value.trim();
+    const startDate = document.getElementById('tripStartDate').value;
+    const endDate = document.getElementById('tripEndDate').value;
+    
+    if (!startDate || !endDate) {
+        alert('Please fill in start and end dates');
+        return;
+    }
+    
+    if (new Date(startDate) > new Date(endDate)) {
+        alert('End date must be after start date');
+        return;
+    }
+    
+    const tripPlan = {
+        address: address || null, // Allow null address
+        startDate: startDate,
+        endDate: endDate,
+        createdAt: new Date().toISOString()
+    };
+    
+    // Save trip plan
+    window.mapInstance.saveTripPlan(tripPlan);
+    window.mapInstance.updateTripDisplay();
+}
+
+function clearTrip() {
+    if (!window.mapInstance) {
+        console.error('Map instance not available yet');
+        alert('Map is still loading. Please wait a moment and try again.');
+        return;
+    }
+    
+    // Clear cookie
+    document.cookie = 'tripPlan=; max-age=0; path=/';
+    window.mapInstance.tripPlan = null;
+    window.mapInstance.updateTripDisplay();
+    
+    // Clear any trip filtering
+    window.mapInstance.clearTripFiltering();
+    
+    // Remove trip location marker
+    window.mapInstance.removeTripLocationMarker();
 }
 
 // Initialize the map when the page loads

@@ -318,6 +318,102 @@
         "full_description": "The Balsam Lake Mountain trailhead, located near the Beaverkill valley, provides a 3.6-mile round trip hike to the 3,720′ summit. The restored fire tower at the top offers sweeping 360° views of the western Catskills. It's considered one of the easier Catskill 3500 peaks, making it popular for families and history buffs alike. Accessible in all seasons, though the road may be challenging in winter.",
         "place_id": null,
         "place_query": "Balsam Lake Mountain trailhead Hardenburgh NY"
+      },
+      {
+        "name": "Sam's Point Preserve (Minnewaska)",
+        "lat": 41.67015,
+        "lng": -74.36167,
+        "location": "400 Sam's Point Road, Cragsmoor, Ulster County",
+        "region": "Catskills",
+        "difficulty_range": "Moderate–Hard",
+        "season": "Spring–Fall (reservations Apr–Oct weekends)",
+        "description": "Unique ridgetop hike featuring ice caves, cliff views, and a 180-foot waterfall.",
+        "full_description": "Sam's Point offers a remarkable 7.5-mile out-and-back hike through rare Shawangunk ridge terrain, with dramatic western vistas, the 180-foot Verkeerderkill Falls, rock scrambles and even hidden ice caves…",
+        "place_query": "Sam's Point Preserve Parking Area"
+      },
+      {
+        "name": "Ashokan Rail Trail (Ashokan Station)",
+        "lat": 41.97279,
+        "lng": -74.19879,
+        "location": "3045 NY-28, Shokan, Ulster County",
+        "region": "Catskills",
+        "difficulty_range": "Easy",
+        "season": "Year-round (dawn to dusk)",
+        "description": "An 11.5-mile accessible rail-trail along the Ashokan Reservoir, ideal for walking and biking.",
+        "full_description": "The Ashokan Rail Trail (ART) is a flat 11.5-mile path that opened in 2019 along the northern edge of the Ashokan Reservoir. Its 10–12 foot wide crushed-stone surface is ADA-friendly…",
+        "place_query": "Ashokan Rail Trail Ashokan Station Trailhead"
+      },
+      {
+        "name": "Ashokan High Point (Peekamoose Road)",
+        "lat": 41.935832,
+        "lng": -74.327768,
+        "location": "Kanape Brook Trailhead, 4 mi south of West Shokan (Ulster County)",
+        "region": "Catskills",
+        "difficulty_range": "Moderate",
+        "season": "Year-round",
+        "description": "Forest trail to a 3,086′ summit with rewarding views of the Ashokan Reservoir.",
+        "full_description": "This popular hike follows the Kanape Brook trail in Sundown Wild Forest to the summit of Ashokan High Point (3,086′). Easy brook-side start, then a steeper ~1,800′ climb to ridge views…",
+        "place_query": "Kanape Brook Trailhead Ashokan High Point"
+      },
+      {
+        "name": "Mount Tremper (Old Route 28)",
+        "lat": 42.070583,
+        "lng": -74.302233,
+        "location": "Trailhead on County Route 40 (Old Rt 28), Phoenicia, Ulster County",
+        "region": "Catskills",
+        "difficulty_range": "Hard",
+        "season": "Year-round",
+        "description": "Steep 6-mile hike to a fire tower with panoramic Catskill Mountain views.",
+        "full_description": "Though only 2,740′, Mount Tremper is a demanding ~6-mile, ~2,000′-gain climb on a rocky, relentlessly uphill trail. The summit fire tower delivers 360° views of the Burroughs Range…",
+        "place_query": "Mount Tremper Fire Tower Trailhead Phoenicia"
+      },
+      {
+        "name": "Indian Head & Twin (Prediger Road)",
+        "lat": 42.13407,
+        "lng": -74.10407,
+        "location": "End of Prediger Road, off Platte Clove Rd (Elka Park, Greene County)",
+        "region": "Catskills",
+        "difficulty_range": "Hard",
+        "season": "Year-round",
+        "description": "Eastern Devil's Path trailhead leading to steep scrambles and epic views on Indian Head and Twin.",
+        "full_description": "Prediger Road is the eastern gateway to the Devil's Path. From here, strong hikers tackle Indian Head (3,573′) and Twin (3,652′) via a rugged loop with hands-and-feet scrambles and big ledge vistas…",
+        "place_query": "Prediger Road Trailhead Devils Path"
+      },
+      {
+        "name": "West Kill Mountain (Spruceton Road)",
+        "lat": 42.1824,
+        "lng": -74.2695,
+        "location": "DEC Trailhead at end of Spruceton Rd (County Route 6), Town of Hunter, Greene County",
+        "region": "Catskills",
+        "difficulty_range": "Moderate–Hard",
+        "season": "Year-round",
+        "description": "Access point for West Kill Mountain (via Diamond Notch Falls) and Hunter's western trail.",
+        "full_description": "At the head of Spruceton Valley, this large lot serves West Kill's scenic route (Diamond Notch Falls, steady climb to Buck Ridge Lookout) and the blue-marked western approach to Hunter Mountain…",
+        "place_query": "Spruceton Road trailhead West Kill"
+      },
+      {
+        "name": "Frick Pond Loop (Beech Mountain Rd)",
+        "lat": 41.951114,
+        "lng": -74.706984,
+        "location": "Beech Mountain Road, Willowemoc Wild Forest (near DeBruce, Sullivan County)",
+        "region": "Catskills",
+        "difficulty_range": "Easy–Moderate",
+        "season": "Year-round",
+        "description": "A gentle 2.2-mile nature loop around a quiet pond, with boardwalks through wetlands.",
+        "full_description": "Short, family-friendly loop through forest and meadow around Frick Pond, with boardwalks over wet sections; great birding, mellow grades, and good winter snowshoeing…",
+        "place_query": "Frick Pond Trailhead Beech Mountain Road"
+      },
+      {
+        "name": "Bramley Mountain (Glen Burnie Rd)",
+        "lat": 42.2993,
+        "lng": -74.836,
+        "location": "3276 Glen Burnie Road, Town of Delhi, Delaware County",
+        "region": "Catskills",
+        "difficulty_range": "Moderate",
+        "season": "Year-round (best Spring–Fall)",
+        "description": "4-mile loop to a 2,817′ summit with a newly rebuilt fire tower, quarry ruins, and big views.",
+        "full_description": "A Catskill Mountain Club trail visiting a bluestone quarry, cliffs/caves, and a summit now crowned by a returned fire tower with sweeping views toward Pepacton and Pisgah…",
+        "place_query": "Bramley Mountain Trailhead Delhi NY"
       }
     ]
   },

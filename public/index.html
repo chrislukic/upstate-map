@@ -23,12 +23,67 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     
+    <!-- Popup Architecture -->
+    <script src="popup-architecture.js"></script>
+    
     <script>
         L_NO_TOUCH = false;
         L_DISABLE_3D = false;
     </script>
 </head>
 <body>
+    <!-- Trip Planning Widget -->
+    <div class="trip-planner" id="tripPlanner">
+        <!-- Loading State -->
+        <div class="trip-loading" id="tripLoading" style="display: flex; align-items: center; justify-content: center; padding: 20px;">
+            <i class="fa fa-spinner fa-spin" style="margin-right: 8px;"></i>
+            <span>Loading trip data...</span>
+        </div>
+        
+        <!-- Current Trip Display -->
+        <div class="current-trip" id="currentTrip" style="display: none;">
+            <div class="trip-header">
+                <h4><i class="fa fa-calendar-check-o"></i> Current Trip</h4>
+                <button class="btn-clear-subtle" onclick="clearTrip()" title="Clear trip">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="trip-details">
+                <div class="trip-location">
+                    <i class="fa fa-map-marker"></i>
+                    <span id="tripLocation"></span>
+                </div>
+                <div class="trip-dates">
+                    <i class="fa fa-calendar"></i>
+                    <span id="tripDates"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trip Planning Form -->
+        <div class="trip-form" id="tripForm" style="display: none;">
+            <h4><i class="fa fa-calendar"></i> Plan Your Trip</h4>
+            <form onsubmit="setTrip(event)">
+                    <div class="form-group">
+                        <input type="text" id="tripAddress" placeholder="Where are you staying? (optional - e.g., Saugerties, NY)">
+                    </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="tripStartDate" required>
+                        <label>Start Date</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="tripEndDate" required>
+                        <label>End Date</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-check"></i> Set Trip
+                </button>
+            </form>
+        </div>
+    </div>
+    
     <!-- Legend -->
     <div class="legend">
         <h3>NY Hiking & Scenery — Highlight Guide</h3>
@@ -88,6 +143,13 @@
         </div>
         <div class="legend-item">
             <span class="legend-color" style="background:#CC0000;"></span> Amtrak Lake Shore Limited
+        </div>
+        <hr>
+        <div class="legend-section">
+            <b>Trip Planning:</b>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#4CAF50; border-radius: 50%; width: 16px; height: 16px;"></span> Your trip location (25-mile radius)
         </div>
         <small><i>Populations are approximate (2020–2023 ACS). Drive times assume Midtown origin, off‑peak. Train times are approximate and may vary.</i></small>
     </div>
