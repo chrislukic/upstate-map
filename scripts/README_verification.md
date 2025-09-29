@@ -1,6 +1,6 @@
-# Coordinate Verification Script
+# Coordinate Verification — Overview
 
-This script cross-checks the GPS coordinates in your scenic NY map datasets against OpenStreetMap's Nominatim API to identify potential location discrepancies.
+Cross‑checks coordinates in datasets and reports discrepancies for review. Uses Google Places (when place_id exists) and/or Nominatim where applicable.
 
 ## What it does
 
@@ -12,29 +12,24 @@ This script cross-checks the GPS coordinates in your scenic NY map datasets agai
 
 ## Installation
 
-1. Install the required Python package:
-```bash
-pip install -r requirements_verify.txt
-```
+- See `scripts/README_configuration.md` for environment setup
+- Dependencies: `pip install -r requirements_verify.txt`
 
 ## Usage
 
-Run the verification script from the `scripts` directory:
+Run from the `scripts` directory:
 
 ```bash
 cd scripts
-python verify_coordinates.py
+python maintenance/verify_coordinates_google.py
 ```
 
 ## Output
 
 The script will:
-- Print real-time verification results for each location
-- Show ✅ for locations with small discrepancies (<1km)
-- Show ❌ for locations with large discrepancies (>1km)
-- Show ❓ for locations that couldn't be verified
-- Generate a summary report at the end
-- Save a detailed JSON report to `coordinate_verification_report.json`
+- Print real-time verification results per dataset
+- Flag items with large discrepancies (thresholds vary by feature)
+- Save a detailed JSON report to `scripts/data/google_coordinate_verification_report.json`
 
 ## Example Output
 
@@ -69,9 +64,9 @@ BREWERIES:
 📄 Detailed report saved to: coordinate_verification_report.json
 ```
 
-## Rate Limiting
+## Rate limiting
 
-The script includes a 1-second delay between API requests to be respectful to the OpenStreetMap Nominatim service. This means the script will take several minutes to complete, but it ensures reliable results.
+- Light pacing is applied to respect external services; total time depends on dataset size.
 
 ## Interpreting Results
 
