@@ -15,6 +15,8 @@ This script automatically assigns accurate Google Place IDs to JSON data files u
 
 ### 1. Install Dependencies
 
+See `scripts/README_configuration.md` for environment setup, then:
+
 ```bash
 pip install -r requirements_place_ids.txt
 ```
@@ -27,10 +29,18 @@ pip install -r requirements_place_ids.txt
 4. Create credentials (API Key)
 5. Restrict the API key to your domain/IP for security
 
-### 3. Set Environment Variable (Optional)
+### 3. Set Environment Variable
+
+Preferred: create `scripts/.env` with:
+
+```
+GOOGLE_MAPS_API_KEY=your_api_key_here
+```
+
+Or export in your shell (same key name used across scripts):
 
 ```bash
-export GOOGLE_PLACES_API_KEY="your_api_key_here"
+export GOOGLE_MAPS_API_KEY="your_api_key_here"
 ```
 
 ## Usage
@@ -49,6 +59,15 @@ python assign_place_ids.py --api-key YOUR_API_KEY --dry-run
 
 # Use different data directory
 python assign_place_ids.py --api-key YOUR_API_KEY --data-dir /path/to/data
+
+### Convenience wrapper
+
+From `scripts/` you can also run:
+
+```bash
+python run_place_id_assignment.py --dry-run    # preview
+python run_place_id_assignment.py              # apply
+```
 ```
 
 ### Advanced Usage
@@ -70,14 +89,14 @@ python assign_place_ids.py --api-key YOUR_API_KEY --pattern "pyo_*.json"
    - Uses coordinates as location bias for better accuracy
    - Assigns the found place_id and generates google_maps_url
 3. **Updates the JSON file** with the new place_id and google_maps_url
-4. **Logs the process** for monitoring and debugging
+4. **Creates backups** in `/backups` before writes
+5. **Logs the process** (console + log file)
 
-## API Quotas and Costs
+## API Quotas and Costs (indicative)
 
-- **Free Tier**: 1,000 requests per day
-- **Paid Tier**: $0.017 per request after free tier
-- **Rate Limiting**: Built-in 100ms delay between requests
-- **Estimated Cost**: ~$0.50-2.00 for all files depending on size
+- **Free Tier**: per Google Places pricing (subject to change)
+- **Rate Limiting**: Built-in ~100ms delay between requests
+- **Estimated Cost**: minimal for current dataset; use `--dry-run` to scope
 
 ## File Processing Order
 
@@ -93,6 +112,7 @@ The script processes files in this order:
 The script provides:
 - **Console output**: Real-time progress and results
 - **Log file**: `place_id_assignment.log` with detailed information
+- **Backups**: original files saved under `/backups`
 - **Updated JSON files**: With accurate place_ids and google_maps_urls
 
 ## Example Output
