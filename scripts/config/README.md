@@ -17,9 +17,10 @@ Usage
 - Override via per-script config files or command-line --config where supported.
 
 Backups
-- Scripts honor backup_before_changes and write to ./backups.
+- Scripts honor backup_before_changes and write to /backups.
 
 Tips
 - Keep API keys in scripts/.env; never commit them.
 - Run validate_config.py if changing schema or adding new keys.
+- Health check: `python scripts/config/health_check.py` for a one‑shot sanity check.
 
