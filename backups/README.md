@@ -13,4 +13,5 @@ Created by
 
 Retention
 - Manual cleanup policy (git tracks this directory). Consider pruning periodically or adding a retention script.
+- Large backups can bloat diffs; prefer reviewing and squashing when appropriate.
 
