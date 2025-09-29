@@ -12,15 +12,9 @@ This script cross-checks the GPS coordinates in your scenic NY map datasets agai
 
 ## Installation
 
-1. Install the required Python packages:
-```bash
-pip install -r requirements_verify.txt
-```
-
-2. Make sure your `.env` file contains your Google Maps API key:
-```
-GOOGLE_MAPS_API_KEY=your_api_key_here
-```
+- See `scripts/README_configuration.md` for environment setup
+- Install deps: `pip install -r requirements_verify.txt`
+- Ensure `scripts/.env` contains `GOOGLE_MAPS_API_KEY=your_api_key_here`
 
 ## Usage
 
@@ -28,7 +22,7 @@ Run the verification script from the `scripts` directory:
 
 ```bash
 cd scripts
-python verify_coordinates_google.py
+python maintenance/verify_coordinates_google.py
 ```
 
 ## Output
@@ -39,8 +33,7 @@ The script will:
 - Show ❌ for locations with large discrepancies (>100m)
 - Show ❓ for locations without place IDs
 - Generate a summary report at the end
-- Create an automatic correction script: `apply_coordinate_corrections.py`
-- Save a detailed JSON report to `google_coordinate_verification_report.json`
+- Save a detailed JSON report to `scripts/data/google_coordinate_verification_report.json`
 
 ## Example Output
 
@@ -81,16 +74,7 @@ BREWERIES:
 
 ## Applying Corrections
 
-After running the verification, you can automatically apply all corrections:
-
-```bash
-python apply_coordinate_corrections.py
-```
-
-This will:
-- Update all JSON files with the corrected coordinates from Google Places API
-- Show you exactly what changes were made
-- Preserve all other data in your files
+Review the report and update coordinates where appropriate (we recommend manual confirmation before bulk updates). Utility helpers exist in `scripts/utilities/` if you prefer scripted updates.
 
 ## Advantages over Nominatim
 
@@ -101,7 +85,7 @@ This will:
 
 ## Rate Limiting
 
-The script includes a 0.1-second delay between API requests. Since we're using place IDs (which are very reliable), this is much faster than the Nominatim version.
+Light pacing (~0.1s) is used to respect quotas.
 
 ## Interpreting Results
 
