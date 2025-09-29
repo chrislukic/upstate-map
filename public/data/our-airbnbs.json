@@ -1,76 +1,102 @@
 [
   {
-    "name": "382 Delaware Dr",
-    "address": "Narrowsburg, NY 12764",
-    "lat": 41.611374,
-    "lng": -75.0619554,
-    "place_id": "ChIJd2omXFVT24kRBnB17A2V1sg",
-    "url": "https://www.google.com/maps/place/163+Hobart+St,+Braintree,+MA+02184/@42.2276936,-90.4909064,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89e36321daca776b:0x7dc723238e2b888e!8m2!3d42.2276936!4d-70.9791876!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11c19my49c?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
-    "geocoded_address": "382 Delaware Dr, Narrowsburg, NY 12764, USA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJd2omXFVT24kRBnB17A2V1sg"
+    "name": "Wide and shallow delaware riverfront",
+    "address": "382 Delaware Dr, Narrowsburg, NY 12764, USA",
+    "start_date": "2025-06-30",
+    "end_date": "2025-07-03",
+    "lat": 41.603378,
+    "lng": -75.0711424,
+    "airbnb_url": "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM94HR8DFE",
+    "google_maps_url": "https://www.google.com/maps/place/382+Delaware+Dr,+Narrowsburg,+NY+12764/@41.603378,-75.0711424"    
   },
   {
-    "name": "46 Taylor Rd",
-    "address": "Jeffersonville, NY 12748",
-    "lat": 41.7797419,
-    "lng": -74.9352856,
-    "place_id": "ChIJPx8yZCin3IkRfySQXYrA2us",
-    "url": "https://www.google.com/maps/place/C.+de+Morat%C3%ADn,+33,+Centro,+28014+Madrid,+Spain/@40.415045,-23.2185748,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0xd422629dadf83a3:0x210cfbfb6e6853d3!8m2!3d40.4125392!4d-3.6960806!15sCgEqkgEKc3VicHJlbWlzZaoBMBABKgUiASooADIeEAEiGkvtqe8B1dJz93KzTaFDav7uXurP3Y43mwwTMgUQAiIBKuABAA!16s%2Fg%2F11rp2pmyth?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPx8yZCin3IkRfySQXYrA2us"
+    "name": "Christmas in house with kids toys with parents and Jack",
+    "address": "7 Clay Ct, Rhinebeck, NY 12572, USA",
+    "start_date": "2024-12-26",
+    "end_date": "2024-12-30",
+    "lat": 41.8750847,
+    "lng": -73.924647,
+    "airbnb_url": "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMCMN8RWSD",
+    "google_maps_url": "https://www.google.com/maps/place/7+Clay+Ct,+Rhinebeck,+NY+12572/@41.8750847,-73.924647"    
   },
   {
-    "name": "815 Blue Mountain Rd",
-    "address": "Saugerties, NY 12477",
-    "lat": 42.0772701,
-    "lng": -73.9520014,
-    "place_id": "ChIJqRSJFSen3YkRou1jqYaMsJc",
-    "url": "https://www.google.com/maps/place/815+Blue+Mountain+Rd,+Saugerties,+NY+12477/@40.415045,-23.2185748,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89dda604147368db:0xdbaa1243e719c92!8m2!3d42.1215446!4d-74.0230301!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11c19cj44d?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJqRSJFSen3YkRou1jqYaMsJc"
+    "name": "Old Farmhouse with parents. Smore's and Max's birthday",
+    "address": "46 Taylor A Rd, Jeffersonville, NY 12748, USA",
+    "start_date": "2024-06-26",
+    "end_date": "2024-06-30",
+    "lat": 41.7763737,
+    "lng": -74.9394019,
+    "airbnb_url": "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMBT9XCNDJ",
+    "google_maps_url": "https://www.google.com/maps/place/46+Taylor+Rd,+Jeffersonville,+NY+12748/@41.7763737,-74.9394019"
+  },
+  {
+    "name": "Terrible old woman's house with pool",
+    "address": "15 Cedar Ridge Road, New Paltz, NY 12561, USA",
+    "start_date": "2024-09-10",
+    "end_date": "2024-09-15",
+    "lat": 41.7348119,
+    "lng": -74.0956023,
+    "airbnb_url": "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM38PNWQF3",
+    "google_maps_url": "https://www.google.com/maps/place/15+Cedar+Ridge+Road,+New+Paltz,+NY+12561/@41.7348119,-74.0956023"
+  },
+  {
+    "name": "Mountain views trip with both families and dogs",
+    "address": "High Rocks Rd, Woodstock, NY 12498, USA",
+    "start_date": "2023-05-05",
+    "end_date": "2023-05-09",
+    "lat": 42.013195,
+    "lng": -74.1464809,
+    "airbnb_url": "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMPP83PWXX",    
+    "google_maps_url": "https://www.google.com/maps/place/High+Rocks+Rd,+Hurley,+NY+12433/@42.013195,-74.1464809"
+  },
+  {
+    "name": "Small home with trail leading to creek",
+    "address": "815 Blue Mountain Rd, Saugerties, NY 12477, USA",
+    "start_date": "2023-02-17",
+    "end_date": "2023-02-20",
+    "lat": 42.077,
+    "lng": -73.9517,    
+    "url": "https://www.google.com/maps/place/815+Blue+Mountain+Rd,+Saugerties,+NY+12477/@42.1212501,-74.035776"
+  },
+  {
+    "name": "Very cold Christmas with mom, dad, Zoe, and Jack",
+    "address": "30 Terrace Ave, Jeffersonville, NY 12748, USA",
+    "start_date": "2022-12-22",
+    "end_date": "2022-12-29",
+    "lat": 41.7795203,
+    "lng": -74.93866469999999,    
+    "airbnb_url": "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM2FEAEEHA",
+    "google_maps_url": "https://www.google.com/maps/place/30+Terrace+Ave,+Jeffersonville,+NY+12748/@41.780921,-74.9399887"
+  },
+  {
+    "name": "Mid-century modern walk to brewery (diner with Joni)",
+    "address": "12 White Roe Lake Rd, Livingston Manor, NY 12758, USA",
+    "start_date": "2022-10-09",
+    "end_date": "2022-10-12",
+    "lat": 41.9061118,
+    "lng": -74.8262079,    
+    "url": "hhttps://www.google.com/maps/place/12+White+Roe+Lake+Rd,+Livingston+Manor,+NY+12758/@41.9061118,-74.8262079"
+  },
+  {
+    "name": "Miles lure coursing trip to New Paltz",
+    "notes": "First trip to New Paltz. I felt bad Miles had so little attention since Joni was born 5 months ago, so signed him to do lure coursing. He was the most insane of all the dogs, but not the fastest. We both lost our Oura rings managing Miles and Joni. The Wallkill river flooded its banks.",
+    "address": "712 Sand Hill Rd, Gardiner, NY 12525, USA",
+    "start_date": "2022-04-08",
+    "end_date": "2022-04-10",
+    "lat": 41.6431015,
+    "lng": -74.1764577,
+    "url": "https://www.google.com/maps/place/712+Sand+Hill+Rd,+Gardiner,+NY+12525/@41.6431015,-74.1764577"
   },
   {
     "name": "20 Knight Rd",
-    "address": "Glen Spey, NY 12737",
+    "address": "20 Knight Rd, Glen Spey, NY 12737, USA",
+    "start_date": "2023-02-17",
+    "end_date": "2023-02-20",
     "lat": 41.45446,
     "lng": -74.7655904,
     "place_id": "ChIJmyU7YeJNw4kRfyYSkpWKGlE",
     "url": "https://www.google.com/maps/place/20+Knight+Rd,+Glen+Spey,+NY+12737/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89c34de2613b259b:0x511a8a959212267f!8m2!3d41.45446!4d-74.7655904!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11gmfvzcc4?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
     "geocoded_address": "20 Knight Rd, Glen Spey, NY 12737, USA"
-  },
-  {
-    "name": "15 Cedar Ridge Rd",
-    "address": "New Paltz, NY 12561",
-    "lat": 41.7348119,
-    "lng": -74.0956023,
-    "place_id": "ChIJVZxaawUj3YkRZXU8mcWlJZQ",
-    "url": "https://www.google.com/maps/place/15+Cedar+Ridge+Rd,+New+Paltz,+NY+12561/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89dd226bc213365d:0x9bcf65fbdfb41504!8m2!3d41.7348119!4d-74.0956023!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11c2f2xr_0?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
-    "geocoded_address": "15 Cedar Ridge Rd, New Paltz, NY 12561, USA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJVZxaawUj3YkRZXU8mcWlJZQ"
-  },
-  {
-    "name": "12 White Roe Lake Rd",
-    "address": "Livingston Manor, NY 12758",
-    "lat": 41.9,
-    "lng": -74.8333,
-    "place_id": "ChIJV8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8",
-    "url": "https://www.google.com/maps/place/12+White+Roe+Lake+Rd,+Livingston+Manor,+NY+12758/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89dc99a117510d5b:0xd1f743068cd121ef!8m2!3d41.9061078!4d-74.823633!15sCgEqkgERY29tcG91bmRfYnVpbGRpbmeqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F11dfjgb2ww?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
-  },
-  {
-    "name": "High Rocks Rd",
-    "address": "Livingston Manor, NY 12758",
-    "lat": 41.9,
-    "lng": -74.8333,
-    "place_id": "ChIJV8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8V8",
-    "url": "https://www.google.com/maps/place/High+Rocks+Rd/@42.1215446,-93.5347489,5z/data=!4m9!1m2!11m1!3e4!3m5!1s0x89dd013edcf92be5:0xe25483e7f7ebc071!8m2!3d42.013191!4d-74.143906!15sCgEqkgEFcm91dGWqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
-    "geocoded_address": "High Rocks Rd, Georgia, USA"
-  },
-  {
-    "name": "30 Terrace Ave",
-    "address": "Jeffersonville, NY 12748",
-    "lat": 41.7795203,
-    "lng": -74.93866469999999,
-    "place_id": "ChIJxY6TUzen3IkRmJgO0ZF_ZnA",
-    "url": "https://www.google.com/maps/place/High+Rocks+Rd,+Hurley,+NY+12433/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x89dd013edcf92be5:0xe25483e7f7ebc071!8m2!3d42.013191!4d-74.143906!15sCgEqkgEFcm91dGWqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F1tfxz0k1?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
-    "geocoded_address": "30 Terrace Ave, Jeffersonville, NY 12748, USA"
   },
   {
     "name": "36 Co Rd 116",
@@ -98,15 +124,6 @@
     "url": "https://www.google.com/maps/place/Dickenson+Bay+St/@42.1215446,-93.5347489,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x8c1292346bc67661:0x5f09d3f4250b230!8m2!3d16.9667758!4d-62.1221424!15sCgEqkgEFcm91dGWqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F1thz2q19?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
     "geocoded_address": "6223 NY-23A, Tannersville, NY 12485, USA",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQfJWmfWt3YkRdMrXQ7Iq788"
-  },
-  {
-    "name": "712 Sand Hill Rd",
-    "address": "Gardiner, NY 12525",
-    "lat": 41.6430975,
-    "lng": -74.1738828,
-    "place_id": "ChIJZQhx-Kon3YkRFFNhR19nBy0",
-    "url": "https://www.google.com/maps/place/Dickenson+Bay+St/@16.9667758,-81.6338611,5z/data=!4m10!1m2!11m1!3e4!3m6!1s0x8c1292346bc67661:0x5f09d3f4250b230!8m2!3d16.9667758!4d-62.1221424!15sCgEqkgEFcm91dGWqATAQASoFIgEqKAAyHhABIhpL7anvAdXSc_dys02hQ2r-7l7qz92ON5sMEzIFEAIiASrgAQA!16s%2Fg%2F1thz2q19?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D",
-    "geocoded_address": "712 Sand Hill Rd, Gardiner, NY 12525, USA"
   },
   {
     "name": "833 Engleville Rd",

@@ -6,16 +6,21 @@ Update peach farm GPS coordinates using Google Place IDs
 import json
 import requests
 import time
+import sys
 from pathlib import Path
-from dotenv import load_dotenv
-import os
 
-# Load environment variables
-load_dotenv(Path(__file__).parent.parent.parent / '.env')
+# Add the scripts directory to the path so we can import from config
+sys.path.append(str(Path(__file__).parent.parent))
 
-def get_place_details(place_id, api_key):
+# Import shared configuration loader
+from config.loader import load_script_config, setup_logging, validate_environment, get_api_key
+
+def get_place_details(place_id, api_key, config):
     """Get detailed place information including coordinates"""
     try:
+        # Get timeout from configuration
+        timeout = config.get("place_api", {}).get("timeout", 20)
+        
         url = "https://maps.googleapis.com/maps/api/place/details/json"
         params = {
             'place_id': place_id,
@@ -23,7 +28,7 @@ def get_place_details(place_id, api_key):
             'key': api_key
         }
         
-        response = requests.get(url, params=params)
+        response = requests.get(url, params=params, timeout=timeout)
         data = response.json()
         
         if data['status'] == 'OK' and 'result' in data:
@@ -46,20 +51,33 @@ def get_place_details(place_id, api_key):
         return None
 
 def main():
-    # Load peach data
-    peaches_file = Path(__file__).parent.parent.parent / 'public' / 'data' / 'pyo_peaches.json'
+    # Load configuration using centralized system
+    config = load_script_config('utilities', __file__)
+    
+    # Setup logging
+    logger = setup_logging(config, Path(__file__).stem)
+    
+    # Validate environment
+    if not validate_environment(['GOOGLE_MAPS_API_KEY']):
+        logger.error("Missing required environment variables")
+        return 1
+    
+    # Get API key using centralized system
+    api_key = get_api_key('google_maps')
+    if not api_key:
+        logger.error("Google Maps API key not found!")
+        return 1
+    
+    # Get file paths from configuration
+    data_dir = Path(config.get("file_paths", {}).get("data_dir", "../../public/data"))
+    peaches_file = data_dir / "pyo_peaches.json"
     
     if not peaches_file.exists():
-        print(f"❌ File not found: {peaches_file}")
-        return
+        logger.error(f"File not found: {peaches_file}")
+        return 1
     
     with open(peaches_file, 'r', encoding='utf-8') as f:
         peaches = json.load(f)
-    
-    api_key = os.getenv('GOOGLE_MAPS_API_KEY')
-    if not api_key:
-        print("❌ GOOGLE_MAPS_API_KEY not found in environment")
-        return
     
     print(f"🍑 Updating GPS coordinates for {len(peaches)} peach farms...")
     
@@ -75,7 +93,7 @@ def main():
         place_id = peach['place_id']
         print(f"  🔍 Getting details for place_id: {place_id}")
         
-        result = get_place_details(place_id, api_key)
+        result = get_place_details(place_id, api_key, config)
         if result and result['lat'] and result['lng']:
             old_lat = peach.get('lat')
             old_lng = peach.get('lng')

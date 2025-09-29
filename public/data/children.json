@@ -348,5 +348,77 @@
     "season": "Spring–Fall",
     "full_description": "Animal Adventure Park is an interactive zoo in rural Broome County that gained worldwide fame in 2017 when its giraffe, April, gave birth live on camera. Today, visitors can meet April’s offspring — giraffes Oliver and Tajiri — up close at the giraffe deck, feeding them lettuce by hand. The park features over 300 animals of 100 species, from big cats like Jaguars and lions to kangaroos, wallabies, zebra, bison, and capybara. Many exhibits are designed for interaction: you can hand-feed apples to camels, brush Nigerian dwarf goats in the petting area, and even book special encounters to hold a sloth or pet an anteater. There are multiple play areas for kids, including a prehistoric themed playground and a small dinosaur park with animatronic dinos. Generally open mid-April through late fall, Animal Adventure Park provides an unforgettable, hands-on animal experience that’s both fun and educational for children and adults.",
     "website": "https://www.theanimaladventurepark.com/"
-  }
-]
+  },
+    {
+      "name": "Catskill Animal Sanctuary",
+      "lat": 42.0487,
+      "lng": -74.0063,
+      "location": "316 Old Stage Rd, Saugerties, NY 12477",
+      "cost": "Admission fee (free under age 3)",
+      "description": "A 150-acre refuge for rescued farm animals, with family tours that let kids meet friendly cows, pigs, goats, and more.",
+      "place_id": null,
+      "place_query": "Catskill Animal Sanctuary, Saugerties, NY",
+      "season": "Spring–Fall (limited winter hours)",
+      "full_description": "Catskill Animal Sanctuary is a nonprofit refuge for rescued farm animals on 150 acres in Saugerties. Families can join guided tours to meet more than 300 residents—cows, pigs, goats, sheep, chickens, and horses—all living in a safe, humane environment. The sanctuary emphasizes kindness and education, giving children a chance to pet goats, scratch pigs behind the ears, and hear rescue stories that foster empathy. A small kids’ barnyard area and shaded walking paths make it manageable for little legs. Tours run April through November, with occasional winter events."
+    },
+    {
+      "name": "Rail Explorers Catskills",
+      "lat": 42.0847,
+      "lng": -74.3136,
+      "location": "70 Lower High St, Phoenicia, NY 12464",
+      "cost": "Ticketed admission",
+      "description": "Pedal-powered rail bikes that roll along scenic Esopus Creek, suitable for families with kids (child seats available).",
+      "place_id": null,
+      "place_query": "Rail Explorers Catskills, Phoenicia, NY",
+      "season": "Spring–Fall",
+      "full_description": "Rail Explorers offers a novel way for families to explore the Catskills: four- and two-seat pedal-powered rail bikes that glide along a historic Ulster & Delaware rail line. The 8-mile round trip hugs the Esopus Creek and winds through forested scenery. It’s safe and easy—geared for all ages—and child seats are available for toddlers. Kids love the novelty of riding the rails, while adults enjoy the leisurely pace and views. Tours operate seasonally from spring through late fall."
+    },
+    {
+      "name": "Ashokan Rail Trail",
+      "lat": 41.9619,
+      "lng": -74.2478,
+      "location": "1285 NY-28, West Hurley, NY 12491 (Trailhead)",
+      "cost": "Free",
+      "description": "An 11.5-mile, stroller-friendly trail along the Ashokan Reservoir with mountain views and birdwatching opportunities.",
+      "place_id": null,
+      "place_query": "Ashokan Rail Trail, West Hurley, NY",
+      "season": "Year-round",
+      "full_description": "The Ashokan Rail Trail is a smooth, wide, car-free path that runs 11.5 miles along the northern edge of the Ashokan Reservoir. Families can walk, bike, or push strollers while enjoying sweeping views of the water and Catskill peaks. Kids may spot bald eagles, herons, or turtles along the way. Multiple access points have parking and restrooms, and the trail surface is crushed stone, making it stroller- and wheelchair-friendly. Open year-round, it’s especially beautiful in fall foliage season."
+    },
+    {
+      "name": "Belleayre Mountain Beach",
+      "lat": 42.1413,
+      "lng": -74.4945,
+      "location": "33 Friendship Manor Rd, Pine Hill, NY 12465",
+      "cost": "Admission fee (per person, free under age 7)",
+      "description": "A family beach on a Catskills lake with swimming, pedal boats, picnic areas, and a sandy shoreline for young children.",
+      "place_id": null,
+      "place_query": "Belleayre Beach at Pine Hill Lake, NY",
+      "season": "Summer",
+      "full_description": "Belleayre Beach at Pine Hill Lake is a family-friendly summer spot in the Catskills. It offers a sandy swimming area with lifeguards, shallow entry for kids, and water rentals like pedal boats and kayaks. The park also features shaded picnic pavilions, a volleyball court, and a playground. With clean facilities and mountain scenery, it’s a low-key and affordable way to spend a warm day with children. Open Memorial Day through Labor Day."
+    },
+    {
+      "name": "Time and the Valleys Museum",
+      "lat": 41.8975,
+      "lng": -74.5219,
+      "location": "332 Main St, Grahamsville, NY 12740",
+      "cost": "Admission fee (free under age 6)",
+      "description": "A small history and water museum with interactive exhibits on local farms, reservoirs, and old-time Catskills life.",
+      "place_id": null,
+      "place_query": "Time and the Valleys Museum, Grahamsville, NY",
+      "season": "Spring–Fall",
+      "full_description": "The Time and the Valleys Museum brings Catskills history alive in a family-friendly way. Kids can step into a 1930s general store, handle old farming tools, and explore an interactive exhibit about how the New York City water supply reservoirs were built. The recreated one-room schoolhouse is a highlight for children who like role-playing. Seasonal outdoor programs and family days add hands-on crafts and demonstrations. Open April through October."
+    },
+    {
+      "name": "Woodstock Farm Sanctuary",
+      "lat": 41.6538,
+      "lng": -74.2796,
+      "location": "2 Rescue Rd, High Falls, NY 12440",
+      "cost": "Admission fee",
+      "description": "A nonprofit animal sanctuary where families can tour barns, meet rescued cows and goats, and picnic in a peaceful Catskills setting.",
+      "place_id": null,
+      "place_query": "Woodstock Farm Sanctuary, High Falls, NY",
+      "season": "Spring–Fall",
+      "full_description": "Woodstock Farm Sanctuary offers guided weekend tours introducing families to hundreds of rescued farm animals — from cows lounging in fields to friendly goats eager for attention. The sanctuary emphasizes compassion and humane education, making it both fun and meaningful for children. Picnic areas and wide open spaces add to the appeal. Tours are seasonal, typically running April through November."
+    }
+  ]

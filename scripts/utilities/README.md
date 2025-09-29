@@ -10,6 +10,13 @@ This folder contains utility scripts for one-time or occasional data processing 
 - `re_enrich_with_updated_queries.py` - Re-enrich data with updated queries
 - `remove_all_place_ids.py` - Remove all place IDs for fresh enrichment
 
+### Data Enrichment
+- `enrich_with_google_maps_improved.py` - Main enrichment script using Google Places API
+- `enrich_brewery_place_ids.py` - Enrich brewery data with Google Places IDs
+- `enrich_cherry_place_ids.py` - Enrich cherry farm data with Google Places IDs
+- `enrich_peach_place_ids.py` - Enrich peach farm data with Google Places IDs
+- `enrich_strawberry_place_ids.py` - Enrich strawberry farm data with Google Places IDs
+
 ### Data Quality Checks
 - `check_duplicate_poi_coordinates.py` - Check for overlapping POI coordinates
 - `check_population_data.py` - Verify population data accuracy

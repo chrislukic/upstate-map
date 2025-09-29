@@ -8,11 +8,17 @@ Enrich brewery data with Google Maps Place IDs
 
 import json
 import os
+import sys
 import time
 import requests
 from typing import List, Dict, Any, Optional
-from dotenv import load_dotenv
 from pathlib import Path
+
+# Add the scripts directory to the path so we can import from config
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+# Import shared configuration loader
+from config.loader import load_script_config, setup_logging, validate_environment, get_api_key
 
 def load_json_file(filepath) -> List[Dict[str, Any]]:
     """Load JSON data from file"""
@@ -31,9 +37,13 @@ def save_json_file(filepath, data: List[Dict[str, Any]]) -> None:
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-def get_google_place_id(query: str, api_key: str) -> Optional[Dict[str, str]]:
+def get_google_place_id(query: str, api_key: str, config: Dict) -> Optional[Dict[str, str]]:
     """Get place ID from Google Places API"""
     try:
+        # Get configuration values
+        place_api_config = config.get("place_api", {})
+        timeout = place_api_config.get("timeout", 20)
+        
         # Use Text Search API for better brewery matching
         url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
         params = {
@@ -42,7 +52,7 @@ def get_google_place_id(query: str, api_key: str) -> Optional[Dict[str, str]]:
             'type': 'establishment'
         }
         
-        response = requests.get(url, params=params, timeout=10)
+        response = requests.get(url, params=params, timeout=timeout)
         response.raise_for_status()
         data = response.json()
         
@@ -69,7 +79,7 @@ def get_google_place_id(query: str, api_key: str) -> Optional[Dict[str, str]]:
         print(f"[ERROR] Unexpected error for {query}: {e}")
         return None
 
-def enrich_brewery_place_ids(breweries: List[Dict[str, Any]], api_key: str) -> List[Dict[str, Any]]:
+def enrich_brewery_place_ids(breweries: List[Dict[str, Any]], api_key: str, config: Dict) -> List[Dict[str, Any]]:
     """Enrich breweries with place IDs"""
     
     enriched_count = 0
@@ -100,7 +110,7 @@ def enrich_brewery_place_ids(breweries: List[Dict[str, Any]], api_key: str) -> L
         print(f"[PROCESSING] {name} -> {query}")
         
         # Get place ID
-        result = get_google_place_id(query, api_key)
+        result = get_google_place_id(query, api_key, config)
         
         if result:
             brewery.update(result)
@@ -124,28 +134,28 @@ def enrich_brewery_place_ids(breweries: List[Dict[str, Any]], api_key: str) -> L
 def main():
     """Main function to enrich brewery place IDs"""
     
-    # Load environment variables from .env file in project root
-    script_dir = Path(__file__).parent
-    project_root = script_dir.parent.parent
-    env_file = project_root / '.env'
-    load_dotenv(env_file)
+    # Load configuration using centralized system
+    config = load_script_config('utilities', __file__)
     
-    # Debug: Show current working directory and .env file path
-    print(f"Current working directory: {os.getcwd()}")
-    print(f"Looking for .env file at: {env_file}")
-    print(f".env file exists: {env_file.exists()}")
+    # Setup logging
+    logger = setup_logging(config, Path(__file__).stem)
     
-    # Get API key from environment
-    api_key = os.getenv('GOOGLE_MAPS_API_KEY')
-    print(f"API key loaded: {'Yes' if api_key else 'No'}")
+    # Validate environment
+    if not validate_environment(['GOOGLE_MAPS_API_KEY']):
+        logger.error("Missing required environment variables")
+        return 1
+    
+    # Get API key using centralized system
+    api_key = get_api_key('google_maps')
     if not api_key:
-        print("Error: GOOGLE_MAPS_API_KEY environment variable not set")
-        print("Please set your Google Maps API key:")
-        print("export GOOGLE_MAPS_API_KEY='your_api_key_here'")
-        return
+        logger.error("Google Maps API key not found!")
+        return 1
     
-    # File paths
-    breweries_file = project_root / 'public' / 'data' / 'breweries.json'
+    logger.info(f"API key loaded: {'Yes' if api_key else 'No'}")
+    
+    # Get file paths from configuration
+    data_dir = Path(config.get("file_paths", {}).get("data_dir", "../../public/data"))
+    breweries_file = data_dir / "breweries.json"
     
     print("Starting brewery place ID enrichment...")
     
@@ -166,7 +176,7 @@ def main():
         return
     
     # Enrich breweries
-    enriched_breweries = enrich_brewery_place_ids(breweries, api_key)
+    enriched_breweries = enrich_brewery_place_ids(breweries, api_key, config)
     
     # Save enriched data
     save_json_file(breweries_file, enriched_breweries)

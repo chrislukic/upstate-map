@@ -4,26 +4,42 @@ Check Google Maps API key status
 """
 
 import os
+import sys
 import requests
 from pathlib import Path
-from dotenv import load_dotenv
+
+# Add the scripts directory to the path so we can import from config
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+# Import shared configuration loader
+from config.loader import load_script_config, setup_logging, validate_environment, get_api_key
 
 def main():
-    # Load environment variables
-    env_path = Path(__file__).parent.parent.parent / '.env'
-    print(f"Loading .env from: {env_path}")
-    load_dotenv(env_path)
+    # Load configuration using centralized system
+    config = load_script_config('utilities', __file__)
     
-    api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    # Setup logging
+    logger = setup_logging(config, Path(__file__).stem)
+    
+    # Validate environment
+    if not validate_environment(['GOOGLE_MAPS_API_KEY']):
+        logger.error("Missing required environment variables")
+        return 1
+    
+    # Get API key using centralized system
+    api_key = get_api_key('google_maps')
     if not api_key:
-        print("Error: GOOGLE_MAPS_API_KEY environment variable not set")
-        return
+        logger.error("Google Maps API key not found!")
+        return 1
     
     print(f"API key loaded: {api_key[:10]}...")
     
     # Test with a simple geocoding request
     test_address = "New York, NY"
-    url = "https://maps.googleapis.com/maps/api/geocode/json"
+    geocoding_endpoint = config.get("api", {}).get("google_maps", {}).get("geocoding_endpoint", 
+                                                                          "https://maps.googleapis.com/maps/api/geocode/json")
+    timeout = config.get("geocoding", {}).get("timeout", 20)
+    
     params = {
         'address': test_address,
         'key': api_key
@@ -31,7 +47,7 @@ def main():
     
     print(f"Testing geocoding API with: {test_address}")
     try:
-        response = requests.get(url, params=params)
+        response = requests.get(geocoding_endpoint, params=params, timeout=timeout)
         response.raise_for_status()
         data = response.json()
         
@@ -48,6 +64,9 @@ def main():
                 
     except Exception as e:
         print(f"❌ Request failed: {e}")
+        return 1
+    
+    return 0
 
 if __name__ == "__main__":
     main()
