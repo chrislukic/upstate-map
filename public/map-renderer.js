@@ -679,12 +679,12 @@ class ScenicNYMap {
             this.airbnbs = airbnbsRes.ok ? await airbnbsRes.json() : [];
             this.pointsOfInterest = poiRes.ok ? await poiRes.json() : [];
             this.regions = regionsRes.ok ? await regionsRes.json() : [];
-            this.events = eventsRes.ok ? await eventsRes.json() : null;
-            console.log('Regions data loaded:', this.regions);
-            console.log('Events data loaded:', this.events);
-            if (this.regions && this.regions.features) {
-                console.log('Number of features:', this.regions.features.length);
-                console.log('First feature:', this.regions.features[0]);
+            // Handle optional events.json gracefully (avoid parsing HTML fallback)
+            try {
+                const isJson = eventsRes.ok && (eventsRes.headers.get('content-type') || '').includes('application/json');
+                this.events = isJson ? await eventsRes.json() : null;
+            } catch (_) {
+                this.events = null;
             }
 
             return this.data;
@@ -697,7 +697,9 @@ class ScenicNYMap {
     initializeMap() {
         const config = this.data.mapConfig;
         
-        this.map = L.map('scenic-ny-map', {
+        // Support both legacy and new map IDs present in different HTML variants
+        const containerId = document.getElementById('scenic-ny-map') ? 'scenic-ny-map' : 'map_9eb96eb1fe9bc3ea56b51a20c1cf6a00';
+        this.map = L.map(containerId, {
             center: config.center,
             crs: L.CRS.EPSG3857,
             zoom: config.zoom,
