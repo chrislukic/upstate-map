@@ -1,73 +1,52 @@
 # Scenic NY Map
 
-An interactive map showcasing the most scenic hiking and outdoor destinations within driving distance of New York City, perfect for finding weekend getaways or places to live near beautiful natural areas.
+Interactive map of New York State’s scenic destinations, cities, POIs, trailheads, and PYO farms. Built for fast trip planning and high‑signal discovery.
 
-## Overview
+## Quick start
 
-This project visualizes New York State's premier scenic destinations, ranked by their natural beauty and hiking opportunities. Each location includes drive times from NYC and detailed scoring to help you plan your next adventure or find your ideal scenic home base.
+```bash
+# install deps
+npm install
 
-## Map Features
+# dev server (Vite)
+npm run dev
+# http://localhost:5173
 
-### 🏔️ Scenic Rating System
-- **World-class (9.2–10)**: Exceptional destinations worth the drive
-- **Exceptional (8.8–9.1)**: Outstanding natural beauty
-- **Great (8.2–8.7)**: Highly recommended scenic areas
-- **Strong (≤8.1)**: Solid options for day trips
+# build for production
+npm run build
+# output -> dist/
+```
 
-### 📍 Featured Destinations
+## Project overview
 
-#### World-Class Destinations (9.2+)
-- **Adirondack High Peaks** (Score: 10/10) - 5h drive
-  - 46 High Peaks, alpine zones, Avalanche Pass, Marcy, Gothics
-  - Located in Keene/Keene Valley, Lake Placid
+- Scenic areas with a simple rating legend; cities sized by population and colored by NYC drive time.
+- Multiple data layers: waterfalls, restaurants, breweries, trailheads, children’s activities, Airbnbs, POIs, PYO.
+- Tile + data driven via `public/data/*` JSON and GeoJSON.
 
-- **Catskills** (Score: 9.2/10) - 2h 30m drive
-  - Classic Northeast peaks, Spruce-fir summits, waterfalls
-  - Slide, Hunter, Kaaterskill areas
+## Data directory and schema
 
-#### Exceptional Destinations (8.8-9.1)
-- **Finger Lakes Gorges** (Score: 8.9/10) - 4h 12m drive
-  - Stone-cut gorges, rim trails, waterfalls (Treman, Buttermilk, Taughannock)
-  - Ithaca area
+- Authoritative data lives in `public/data/`.
+- Contracts and file descriptions: see `public/data/README.md`.
+- Optional files (e.g., `events.json`) are handled gracefully if absent.
 
-- **Shawangunks / Minnewaska & Mohonk Preserve** (Score: 8.8/10) - 2h drive
-  - Sky lakes, white cliffs, carriage roads & scrambles
+## Maintenance & automation
 
-#### Great Destinations (8.2-8.7)
-- **Letchworth State Park** (Score: 8.7/10) - 6h drive
-  - "Grand Canyon of the East", three major falls, rim trails
+- Data enrichment, verification, and utilities live in `scripts/`.
+- Start here: `scripts/README.md` and `scripts/maintenance/README.md`.
+- Google Place ID enrichment and backups supported.
 
-- **Hudson Highlands** (Score: 8.6/10) - 1h 18m drive
-  - River panoramas, steep but short classics, train-access options
-  - Breakneck, Storm King, Bull Hill
+## Tech stack
 
-- **Lake George & Pharaoh Lake Wilderness** (Score: 8.5/10) - 3h 48m drive
-  - Ridge walks, island views, Tongue Mountain Range
+- Vite, Leaflet, vanilla JS/CSS.
+- Build output in `dist/` with hashed assets.
 
-- **Watkins Glen & Surrounds** (Score: 8.4/10) - 4h 30m drive
-  - Iconic gorge, stairways & bridges, Seneca Lake views
+## Troubleshooting
 
-- **Niagara Gorge** (Score: 8.2/10) - NY side
+- Data not updating: hard refresh with cache disabled; fetches append `?t=timestamp`.
+- 404 on data: run Vite from the repo root; data is served from `public/` at `/`.
+- `events.json` missing: it’s optional; the map loads without it.
 
-- **Taconic Range / Harlem Valley** (Score: 8.1/10)
-  - Includes Bash Bish area
+## License & contributions
 
-#### Strong Options (≤8.1)
-- **Harriman–Bear Mountain State Parks** (Score: 8.0/10) - 1h 06m drive
-  - Hundreds of miles of trails, lakes, Appalachian Trail segments
-
-- **Allegany State Park** (Score: 7.8/10) - Southern Tier
-
-- **Long Island North & South Fork** (Score: 7.5/10)
-  - Montauk bluffs highlights
-
-- **Caumsett State Historic Park Preserve** (Score: 7.2/10)
-  - Lloyd Neck
-
-
-## Data Notes
-
-- Drive times are calculated from Midtown Manhattan during off-peak hours
-- Population data is approximate (2020–2023 ACS)
-- Scenery scores are based on natural beauty, hiking quality, and overall outdoor experience
+Internal project. PRs welcome from collaborators.
 
