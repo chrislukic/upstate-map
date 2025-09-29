@@ -104,12 +104,18 @@ class EnhancedGoogleMapsEnricher:
             self.logger.info("🔍 DRY RUN MODE - No changes will be made")
     
     def backup_file(self, file_path):
-        """Create backup of original file"""
+        """Create backup of original file in central ./backups directory"""
         if not self.config.get('backup_files', True):
             return
-            
-        backup_path = file_path.with_suffix(f'.json.backup_{datetime.now().strftime("%Y%m%d_%H%M%S")}')
+        
         try:
+            # Determine repository root (two levels up from scripts/maintenance)
+            repo_root = Path(__file__).resolve().parents[2]
+            backups_dir = repo_root / 'backups'
+            backups_dir.mkdir(parents=True, exist_ok=True)
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            backup_filename = f"{file_path.name}.backup_{timestamp}"
+            backup_path = backups_dir / backup_filename
             shutil.copy2(file_path, backup_path)
             self.logger.info(f"📁 Backup created: {backup_path}")
         except Exception as e:

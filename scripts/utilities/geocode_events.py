@@ -182,9 +182,14 @@ def main():
     
     # Save updated events
     try:
-        # Create backup if configured
+        # Create backup if configured (store in central ./backups directory)
         if config.get("data_processing", {}).get("backup_before_changes", True):
-            backup_file = events_file.with_suffix('.backup.json')
+            from datetime import datetime
+            repo_root = Path(__file__).resolve().parents[2]
+            backups_dir = repo_root / 'backups'
+            backups_dir.mkdir(parents=True, exist_ok=True)
+            ts = datetime.now().strftime('%Y%m%d_%H%M%S')
+            backup_file = backups_dir / f"{events_file.name}.backup_{ts}"
             with open(backup_file, 'w', encoding='utf-8') as f:
                 json.dump(events_data, f, indent=2, ensure_ascii=False)
             logger.info(f"Created backup: {backup_file}")

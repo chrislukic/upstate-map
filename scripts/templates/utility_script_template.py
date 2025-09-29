@@ -75,12 +75,19 @@ def save_data_file(file_path: Path, data: List[Dict[str, Any]], config: Dict[str
         logger: Logger instance
     """
     try:
-        # Create backup if configured
+        # Create backup if configured (store in central ./backups directory)
         if config.get("data_processing", {}).get("backup_before_changes", True):
-            backup_file = file_path.with_suffix('.backup.json')
-            if file_path.exists():
-                backup_file.write_text(file_path.read_text(encoding='utf-8'), encoding='utf-8')
-                logger.info(f"Created backup: {backup_file}")
+            try:
+                repo_root = Path(__file__).resolve().parents[2]
+                backups_dir = repo_root / 'backups'
+                backups_dir.mkdir(parents=True, exist_ok=True)
+                timestamp = __import__('datetime').datetime.now().strftime('%Y%m%d_%H%M%S')
+                backup_file = backups_dir / f"{file_path.name}.backup_{timestamp}"
+                if file_path.exists():
+                    backup_file.write_text(file_path.read_text(encoding='utf-8'), encoding='utf-8')
+                    logger.info(f"Created backup: {backup_file}")
+            except Exception as e:
+                logger.error(f"Failed to create backup: {e}")
         
         # Save the data
         with open(file_path, 'w', encoding='utf-8') as f:

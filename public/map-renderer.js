@@ -697,7 +697,7 @@ class ScenicNYMap {
     initializeMap() {
         const config = this.data.mapConfig;
         
-        this.map = L.map('map_9eb96eb1fe9bc3ea56b51a20c1cf6a00', {
+        this.map = L.map('scenic-ny-map', {
             center: config.center,
             crs: L.CRS.EPSG3857,
             zoom: config.zoom,
