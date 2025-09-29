@@ -11,7 +11,7 @@ Key files (examples)
 - children.json: Family-friendly activities.
 - trail-heads.json: Trailhead markers with lat/lng and metadata.
 - our-airbnbs.json: Trip stays; used for reference and trip planning.
-- events.json: Seasonal events by region.
+- events.json: Seasonal events by region (optional).
 
 Conventions
 - Coordinates: lat/lng (not lon). WGS84.
@@ -20,7 +20,7 @@ Conventions
 
 Update flow
 - Edit JSON → run maintenance/enrichment as needed → commit.
-- Scripts automatically back up originals to ./backups before writes.
+- Scripts automatically back up originals to /backups before writes.
 
 Quality checks
 - Duplicates: scripts/utilities/*duplicate* scripts.
