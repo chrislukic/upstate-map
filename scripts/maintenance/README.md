@@ -16,7 +16,7 @@ How to run
 - python maintenance/verify_coordinates_google.py
 
 Backups
-- All maintenance scripts create timestamped backups in ./backups before writing.
+- All maintenance scripts create timestamped backups in /backups before writing.
 - Example: backups/restaurants.json.backup_YYYYMMDD_HHMMSS
 
 Scripts index
@@ -47,7 +47,7 @@ This folder contains scripts for regular maintenance tasks that should be run pe
 
 
 ### `verify_coordinates_google.py`
-- **Purpose**: Verify and correct GPS coordinates using Google Places API
+- **Purpose**: Verify coordinates using Google Places API
 - **Frequency**: Quarterly or before major releases
 - **What it does**: Compares current coordinates to Google Places locations, writes discrepancy report
 - **Usage**: `python maintenance/verify_coordinates_google.py`
