@@ -1,0 +1,38 @@
+{
+  "research_events": {
+    "months_ahead": 3,
+    "sleep_between_regions": 0.8,
+    "geocode_delay_base": 0.15,
+    "geocode_delay_progressive": {
+      "after_5": 0.3,
+      "after_10": 0.5
+    },
+    "max_events_per_region": 50,
+    "max_retries": 3,
+    "exponential_backoff": {
+      "base_delay": 1.0,
+      "max_delay": 60.0
+    },
+    "filters": {
+      "notable_only": true,
+      "family_weight": 0.6,
+      "max_drive_hours_from_nyc": 3.5
+    },
+    "output": {
+      "events_file": "events_upstate_ny.json",
+      "annuals_file": "annual_events_index.json",
+      "worklog_file": "worklog.json"
+    }
+  },
+  "data_cleanup": {
+    "backup_before_changes": true,
+    "validate_after_changes": true,
+    "dry_run_default": false
+  },
+  "scheduling": {
+    "default_timeout": 3600,
+    "retry_failed_jobs": true,
+    "max_concurrent_jobs": 3
+  }
+}
+

@@ -1,0 +1,398 @@
+/* ===== IMPROVED POPUP CSS STRUCTURE ===== */
+/* BEM methodology with clear component hierarchy */
+
+/* ===== BASE POPUP COMPONENT ===== */
+.popup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 100px;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== POPUP ELEMENTS ===== */
+
+/* Header Elements */
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.popup__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.3;
+}
+
+.popup__subtitle {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+/* Content Elements */
+.popup__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.popup__description {
+  margin: 0;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.popup__meta-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 4px 0;
+}
+
+.popup__meta {
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.popup__meta--inline {
+  display: inline-block;
+}
+
+.popup__meta--inline:not(:last-child)::after {
+  content: " • ";
+  margin: 0 4px;
+  color: #999;
+}
+
+/* Footer Elements */
+.popup__footer {
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.popup__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.popup__link {
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.popup__link:hover {
+  color: #45a049;
+  text-decoration: underline;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.popup__link i {
+  color: #4CAF50;
+  font-size: 12px;
+}
+
+/* ===== SIZE MODIFIERS ===== */
+.popup--small {
+  min-height: 80px;
+  gap: 2px;
+}
+
+.popup--small .popup__title {
+  font-size: 14px;
+}
+
+.popup--small .popup__meta {
+  font-size: 11px;
+}
+
+.popup--small .popup__description {
+  font-size: 13px;
+}
+
+.popup--large {
+  min-height: 120px;
+  gap: 8px;
+}
+
+.popup--large .popup__title {
+  font-size: 18px;
+}
+
+.popup--large .popup__meta {
+  font-size: 13px;
+}
+
+.popup--large .popup__description {
+  font-size: 15px;
+}
+
+.popup--compact {
+  min-height: 60px;
+  gap: 2px;
+}
+
+.popup--compact .popup__title {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.popup--compact .popup__meta {
+  font-size: 10px;
+}
+
+.popup--compact .popup__description {
+  font-size: 12px;
+}
+
+/* ===== TYPE MODIFIERS ===== */
+.popup--trip {
+  min-width: 300px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.popup--trip .popup__title {
+  color: #4CAF50;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.popup--trip .popup__meta {
+  color: #4CAF50;
+}
+
+.popup--event {
+  min-width: 320px;
+}
+
+.popup--event .popup__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.popup--event .popup__meta--inline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.popup--event .popup__meta--family-friendly {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.popup--location {
+  min-width: 280px;
+}
+
+.popup--farm {
+  min-width: 300px;
+}
+
+.popup--farm .popup__meta--out-of-season {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+/* ===== STATE MODIFIERS ===== */
+.popup--loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.popup--error {
+  border-left: 4px solid #dc3545;
+  background-color: #f8d7da;
+}
+
+.popup--success {
+  border-left: 4px solid #28a745;
+  background-color: #d4edda;
+}
+
+/* ===== LAYOUT UTILITIES ===== */
+.popup__meta--stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.popup__meta--horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.popup__links--vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.popup__links--horizontal {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* ===== SPACING UTILITIES ===== */
+.popup__spacing--tight {
+  gap: 2px;
+  padding: 8px;
+}
+
+.popup__spacing--loose {
+  gap: 8px;
+  padding: 16px;
+}
+
+.popup__spacing--none {
+  gap: 0;
+  padding: 0;
+}
+
+/* ===== COLOR UTILITIES ===== */
+.popup__meta--muted {
+  color: #999;
+  font-size: 11px;
+}
+
+.popup__meta--accent {
+  color: #4CAF50;
+  font-weight: 500;
+}
+
+.popup__meta--warning {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.popup__meta--success {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.popup__link--primary {
+  color: #4CAF50;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.popup__link--secondary {
+  color: #6c757d;
+  background-color: rgba(108, 117, 125, 0.1);
+}
+
+.popup__link--danger {
+  color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* ===== MOBILE OPTIMIZATIONS ===== */
+@media (max-width: 768px) {
+  .popup {
+    min-height: 80px;
+    gap: 6px;
+  }
+  
+  .popup__title {
+    font-size: 16px;
+  }
+  
+  .popup__meta {
+    font-size: 11px;
+  }
+  
+  .popup__description {
+    font-size: 13px;
+  }
+  
+  .popup__link {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 4px 0;
+    min-height: 44px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 6px;
+  }
+  
+  .popup__links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .popup__links--horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+.popup__link:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+.popup__link:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.popup__link:focus-visible {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .popup__meta {
+    color: #000;
+  }
+  
+  .popup__link {
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  .popup__link:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .popup__link {
+    transition: none;
+  }
+}
+
+

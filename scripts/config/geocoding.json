@@ -1,0 +1,30 @@
+{
+  "rate_limiting": {
+    "base_delay": 0.15,
+    "progressive_delays": {
+      "after_5": 0.3,
+      "after_10": 0.5
+    },
+    "jitter_range": [0.8, 1.2]
+  },
+  "retry": {
+    "max_attempts": 3,
+    "exponential_backoff": {
+      "base_delay": 1.0,
+      "max_delay": 60.0
+    }
+  },
+  "validation": {
+    "coordinate_bounds": {
+      "lat_min": -90,
+      "lat_max": 90,
+      "lng_min": -180,
+      "lng_max": 180
+    },
+    "address_validation": {
+      "min_length": 3,
+      "required_components": ["locality", "administrative_area_level_1"]
+    }
+  }
+}
+
