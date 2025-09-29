@@ -19,20 +19,21 @@ Generated data files and reports.
 
 Setup
 - Python 3.9+
-- Install dependencies:
-  - Windows/macOS/Linux:
-    - cd scripts
-    - pip install -r requirements.txt
-- API Keys:
-  - Create scripts/.env with:
-    - GOOGLE_MAPS_API_KEY=your_api_key_here
+- Configuration & dependencies: see `scripts/README_configuration.md`
+- API key: create `scripts/.env` with `GOOGLE_MAPS_API_KEY=your_api_key_here`
 
-Key Datasets
+Key datasets (examples)
+- ../public/data/map-data.json (scenic areas, cities, tile layer)
 - ../public/data/waterfalls.json
 - ../public/data/breweries.json
 - ../public/data/restaurants.json
-- ../public/data/orchards_points.json
-- ../public/data/map-data.json (cities)
+- ../public/data/points_of_interest.json
+- ../public/data/children.json
+- ../public/data/trail-heads.json
+- ../public/data/our-airbnbs.json
+- ../public/data/pyo_apples.json, pyo_strawberries.json, pyo_cherries.json, pyo_peaches.json
+- ../public/data/regions.json (GeoJSON)
+- ../public/data/events.json (optional)
 
 Maintenance Tasks & Cadence
 
@@ -52,18 +53,18 @@ Maintenance Tasks & Cadence
   - python maintenance/check_restaurant_status.py --force
 
 2) Places enrichment (place_id, google_maps_url, coordinates)
-- Script: maintenance/enrich_with_google_maps_improved.py
+- Preferred script: `maintenance/enrich_with_google_maps_enhanced.py`
+- Legacy (still available): `utilities/enrich_with_google_maps_improved.py`
 - What it does:
-  - Enriches all datasets (waterfalls, breweries, restaurants, orchards, cities) with Google Places data
-  - Updates coordinates from Google Places API (source of truth)
-  - Prevents duplicate place IDs and validates matches
-  - Uses improved search queries and coordinate validation
+  - Enriches datasets (waterfalls, breweries, restaurants, PYO, cities, POIs, etc.) with Google Places data
+  - Updates coordinates from Google Places (source of truth)
+  - Prevents duplicates and validates matches; creates backups in `/backups`
 - When to run:
-  - After adding new entries (restaurants/orchards/cities) or when you notice missing Google links
-  - Monthly as a catch‑up, if desired
+  - After adding new entries or when missing Google links
+  - Periodically (e.g., monthly) to catch up
 - Commands:
   - cd scripts
-  - python maintenance/enrich_with_google_maps_improved.py
+  - python maintenance/enrich_with_google_maps_enhanced.py
 
 3) Coordinate verification (spot check)
 - Script: maintenance/verify_coordinates_google.py
