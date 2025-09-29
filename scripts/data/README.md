@@ -5,10 +5,10 @@ This folder contains generated data files and reports from various maintenance s
 ## Files
 
 ### Reports
-- `google_coordinate_verification_report.json` - Coordinate verification results from `maintenance/verify_coordinates_google.py`
+- `google_coordinate_verification_report.json` - Results from `maintenance/verify_coordinates_google.py`
 
 ### Source Data
-- `orchards.json` - Orchard data used for processing
+- `orchards.json` - Orchard data used for processing (reference)
 
 ## Usage
 

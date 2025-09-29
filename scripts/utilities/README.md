@@ -9,7 +9,7 @@ How to run
 - Set GOOGLE_MAPS_API_KEY in scripts/.env when required
 
 Backups
-- On write, utilities back up originals to ./backups with timestamped filenames.
+- On write, utilities back up originals to /backups with timestamped filenames.
 
 Notable utilities
 - geocode_events.py: Geocodes events in public/data/events.json using Google Maps; writes backups and updates file in place.

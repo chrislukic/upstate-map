@@ -45,7 +45,7 @@ The enhanced script now processes ALL files that need enrichment:
 ```bash
 cd scripts
 echo "GOOGLE_MAPS_API_KEY=your_api_key_here" > .env
-pip install requests python-dotenv
+pip install -r requirements.txt
 ```
 
 ### **2. Test with Dry Run (Recommended First)**

@@ -1,11 +1,11 @@
 # Legacy Scripts
 
-This folder contains superseded scripts that are kept for reference but are no longer actively used.
+This folder contains superseded scripts kept for reference; do not use in active workflows.
 
 ## Scripts
 
 ### Superseded Enrichment
-- `enrich_new_restaurants.py` - Legacy restaurant enrichment (superseded by `maintenance/enrich_with_google_maps_improved.py`)
+- `enrich_new_restaurants.py` - Legacy restaurant enrichment (superseded by enhanced/ improved enrichment)
 
 ### Superseded Fixes
 - `fix_duplicate_place_ids.py` - Comprehensive script to fix duplicate place IDs (superseded by improved enrichment)
