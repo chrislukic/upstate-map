@@ -197,9 +197,9 @@ class ScenicNYMap {
 
     // Trip planning functionality
     initializeTripPlanning() {
-        Logger.basic('Initializing trip planning...');
+        Logger.get('trip').basic('Initializing trip planning...');
         this.tripPlan = this.loadTripPlan();
-        Logger.extend('Loaded trip plan:', this.tripPlan);
+        Logger.get('trip').extend('Loaded trip plan:', this.tripPlan);
         this.updateTripDisplay();
         this.setInitialDateValues();
         
@@ -210,7 +210,7 @@ class ScenicNYMap {
             }, 60 * 60 * 1000); // Update every hour
         }
         
-        Logger.basic('Trip planning initialized');
+        Logger.get('trip').basic('Trip planning initialized');
     }
 
     loadTripPlan() {
@@ -442,13 +442,13 @@ class ScenicNYMap {
     }
 
     updateTripDisplay() {
-        Logger.extend('Updating trip display...');
+        Logger.get('trip').extend('Updating trip display...');
         const currentTripEl = document.getElementById('currentTrip');
         const tripFormEl = document.getElementById('tripForm');
         const tripDisplayEl = document.getElementById('tripDisplay');
         const tripLoadingEl = document.getElementById('tripLoading');
         
-        Logger.verbose('DOM elements found:', {
+        Logger.get('trip').verbose('DOM elements found:', {
             currentTrip: !!currentTripEl,
             tripForm: !!tripFormEl,
             tripLoading: !!tripLoadingEl
@@ -456,7 +456,7 @@ class ScenicNYMap {
         
         // Safety check for DOM elements
         if (!currentTripEl || !tripFormEl || !tripLoadingEl) {
-                Logger.warn('Trip planning DOM elements not found');
+                Logger.get('trip').warn('Trip planning DOM elements not found');
             return;
         }
         
@@ -532,7 +532,7 @@ class ScenicNYMap {
                 this.geocodeTripAddress();
             }
         } else {
-            Logger.basic('No trip plan - showing form');
+            Logger.get('trip').basic('No trip plan - showing form');
             currentTripEl.style.display = 'none';
             tripFormEl.style.display = 'block';
             
@@ -556,14 +556,10 @@ class ScenicNYMap {
         // Filter PYO based on trip season
         this.filterPYOByTrip();
         
-        // Re-render other marker types to include directions links
-        this.renderRestaurants();
-        this.renderPointsOfInterest();
-        this.renderWaterfalls();
-        this.renderBreweries();
-        this.renderChildren();
-        this.renderTrailheads();
-        this.renderAirbnbs();
+        // Update popup factory with current trip plan for directions links
+        if (this.popupFactory) {
+            this.popupFactory.updateTripPlan(this.tripPlan);
+        }
         
         Logger.extend('Applied trip filtering for:', this.tripPlan);
     }
