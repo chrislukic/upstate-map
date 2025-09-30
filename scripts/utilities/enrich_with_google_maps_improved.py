@@ -20,6 +20,7 @@ import requests
 import time
 import math
 from pathlib import Path
+from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -34,10 +35,53 @@ class ImprovedGoogleMapsEnricher:
         self.base_url = "https://maps.googleapis.com/maps/api/place"
         self.rate_limit_delay = 0.1  # 100ms between requests
         self.used_place_ids = set()  # Track used place IDs to prevent duplicates
+        # Cache/verification policy
+        self.cache_path = Path(__file__).parent / ".places_cache.json"
+        self.cache_ttl_days = 30
+        self.verify_ttl_days = 180
+        self.distance_threshold_meters = 30
+        self.cache = self._load_cache()
+
+    def _load_cache(self):
+        try:
+            if self.cache_path.exists():
+                with open(self.cache_path, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+        except Exception:
+            pass
+        return {}
+
+    def _save_cache(self):
+        try:
+            with open(self.cache_path, 'w', encoding='utf-8') as f:
+                json.dump(self.cache, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            print(f"    [WARN] Failed to save cache: {e}")
+
+    def _iso_now(self):
+        return datetime.now(timezone.utc).isoformat()
+
+    def _parse_iso(self, s):
+        try:
+            return datetime.fromisoformat(s.replace('Z', '+00:00'))
+        except Exception:
+            return None
         
     def get_place_details(self, place_id):
         """Get detailed information about a place using its place ID"""
         try:
+            # Cache check
+            cache_entry = self.cache.get(place_id)
+            if cache_entry:
+                fetched_at = self._parse_iso(cache_entry.get('fetched_at', ''))
+                if fetched_at and datetime.now(timezone.utc) - fetched_at < timedelta(days=self.cache_ttl_days):
+                    return {
+                        'lat': cache_entry['lat'],
+                        'lng': cache_entry['lng'],
+                        'name': cache_entry.get('name', ''),
+                        'address': cache_entry.get('formatted_address', '')
+                    }
+
             url = f"{self.base_url}/details/json"
             params = {
                 'place_id': place_id,
@@ -53,12 +97,22 @@ class ImprovedGoogleMapsEnricher:
             if data['status'] == 'OK':
                 result = data['result']
                 location = result['geometry']['location']
-                return {
+                details = {
                     'lat': location['lat'],
                     'lng': location['lng'],
                     'name': result['name'],
                     'address': result.get('formatted_address', '')
                 }
+                # Update cache
+                self.cache[place_id] = {
+                    'lat': details['lat'],
+                    'lng': details['lng'],
+                    'name': details['name'],
+                    'formatted_address': details['address'],
+                    'fetched_at': self._iso_now()
+                }
+                self._save_cache()
+                return details
             else:
                 print(f"    [ERROR] Place details failed: {data.get('status', 'Unknown error')}")
                 return None
@@ -214,46 +268,79 @@ class ImprovedGoogleMapsEnricher:
             name = item.get('name', 'Unknown')
             print(f"  Processing {i+1}/{total_count}: {name}")
             
-            # Check if already enriched (has valid place_id)
-            if 'place_id' in item and item['place_id'] is not None and 'google_maps_url' in item:
-                print(f"    Already enriched, skipping")
+            place_id = item.get('place_id')
+            if place_id:
+                # TTL check for verification
+                verified_at = item.get('google_verified_at')
+                verified_recent = False
+                if verified_at:
+                    dt = self._parse_iso(verified_at)
+                    if dt and datetime.now(timezone.utc) - dt < timedelta(days=self.verify_ttl_days):
+                        verified_recent = True
+
+                lat = item.get('lat')
+                lng = item.get('lng')
+                if verified_recent and lat is not None and lng is not None:
+                    print("    ✔ Verified recently, skipping")
+                    skipped_count += 1
+                else:
+                    details = self.get_place_details(place_id)
+                    if details:
+                        do_update_coords = False
+                        if lat is None or lng is None:
+                            do_update_coords = True
+                        else:
+                            drift = self.calculate_distance(lat, lng, details['lat'], details['lng'])
+                            if drift > self.distance_threshold_meters:
+                                do_update_coords = True
+                                print(f"    [DRIFT] {drift:.1f}m > {self.distance_threshold_meters}m -> updating coords")
+                        if do_update_coords:
+                            item['lat'] = details['lat']
+                            item['lng'] = details['lng']
+                            updated_coords_count += 1
+                            print(f"    [UPDATE] Coordinates set to {details['lat']:.6f},{details['lng']:.6f}")
+                        item['google_verified_lat'] = details['lat']
+                        item['google_verified_lng'] = details['lng']
+                        if details.get('address'):
+                            item['formatted_address'] = details['address']
+                        item['google_verified_at'] = self._iso_now()
+                        item['google_place_source'] = 'places_details_v1'
+                        enriched_count += 1
+                    else:
+                        print("    [WARN] Failed to fetch details for existing place_id")
+                        skipped_count += 1
+                time.sleep(self.rate_limit_delay)
                 continue
-            
-            # Get coordinates
+
+            # No place_id -> attempt to find one (existing behavior)
             lat = item.get('lat')
             lng = item.get('lng')
-            
             if lat is None or lng is None:
                 print(f"    No coordinates found, skipping")
                 skipped_count += 1
                 continue
-            
-            # Check for custom place query in the JSON object
             custom_query = item.get('place_query')
-            
-            # Find place ID and get updated coordinates
             result = self.find_place_id(
-                name, 
-                lat, 
-                lng, 
+                name,
+                lat,
+                lng,
                 location_context,
                 state,
                 is_city=is_city,
                 custom_query=custom_query
             )
-            
             if result:
-                # Update with place ID and Google Maps URL
                 item['place_id'] = result['place_id']
                 item['google_maps_url'] = self.create_google_maps_url(result['place_id'])
-                
-                # Update coordinates if they changed significantly
                 if abs(result['lat'] - lat) > 0.0001 or abs(result['lng'] - lng) > 0.0001:
                     item['lat'] = result['lat']
                     item['lng'] = result['lng']
                     updated_coords_count += 1
                     print(f"    [UPDATE] Updated coordinates for {name}")
-                
+                item['google_verified_lat'] = item['lat']
+                item['google_verified_lng'] = item['lng']
+                item['google_verified_at'] = self._iso_now()
+                item['google_place_source'] = 'places_details_v1'
                 enriched_count += 1
             else:
                 print(f"    [ERROR] No place ID found")
