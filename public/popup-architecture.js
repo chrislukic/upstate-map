@@ -672,10 +672,10 @@ class PopupFactory {
 
   // Update trip plan in all builders
   updateTripPlan(tripPlan) {
-    console.log('PopupFactory.updateTripPlan called with:', tripPlan);
+    Logger.get('popup').extend('PopupFactory.updateTripPlan called with:', tripPlan);
     Object.values(this.builders).forEach(builder => {
       builder.tripPlan = tripPlan;
-      console.log('Updated builder tripPlan:', builder.tripPlan);
+      Logger.get('popup').verbose('Updated builder tripPlan:', builder.tripPlan);
     });
   }
 

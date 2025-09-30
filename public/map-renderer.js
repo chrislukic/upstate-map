@@ -225,9 +225,15 @@ class ScenicNYMap {
         return null;
     }
 
-    saveTripPlan(tripPlan) {
+    saveTripPlan(tripPlan, forceRerender = false) {
         const maxAge = 30 * 24 * 60 * 60; // 30 days
         document.cookie = `tripPlan=${encodeURIComponent(JSON.stringify(tripPlan))}; max-age=${maxAge}; path=/`;
+        
+        // Check if trip plan actually changed
+        const tripChanged = !this.tripPlan || 
+            this.tripPlan.startDate !== tripPlan.startDate || 
+            this.tripPlan.endDate !== tripPlan.endDate;
+            
         this.tripPlan = tripPlan;
         
         // Update popup factory with new trip plan
@@ -245,8 +251,10 @@ class ScenicNYMap {
             this.updateTripDisplay();
         }, 60 * 60 * 1000); // Update every hour
         
-        // Re-render fruit farms to reflect new seasonal filtering based on trip dates
-        this.renderFruitFarms();
+        // Only re-render fruit farms if trip dates changed or forced
+        if (tripChanged || forceRerender) {
+            this.renderFruitFarms();
+        }
     }
 
     setInitialDateValues() {
@@ -2599,7 +2607,7 @@ window.setTrip = function(event) {
     Logger.basic('Setting trip plan:', tripPlan);
     
     // Save trip plan
-    window.mapInstance.saveTripPlan(tripPlan);
+    window.mapInstance.saveTripPlan(tripPlan, true);
     window.mapInstance.updateTripDisplay();
 }
 
