@@ -191,6 +191,14 @@ class ScenicNYMap {
         console.log('Loaded trip plan:', this.tripPlan);
         this.updateTripDisplay();
         this.setInitialDateValues();
+        
+        // Set up periodic countdown updates (every hour)
+        if (this.tripPlan) {
+            this.tripCountdownInterval = setInterval(() => {
+                this.updateTripDisplay();
+            }, 60 * 60 * 1000); // Update every hour
+        }
+        
         console.log('Trip planning initialized');
     }
 
@@ -211,6 +219,21 @@ class ScenicNYMap {
         document.cookie = `tripPlan=${encodeURIComponent(JSON.stringify(tripPlan))}; max-age=${maxAge}; path=/`;
         this.tripPlan = tripPlan;
         
+        // Update popup factory with new trip plan
+        if (this.popupFactory) {
+            this.popupFactory.updateTripPlan(tripPlan);
+        }
+        
+        // Clear existing countdown interval if it exists
+        if (this.tripCountdownInterval) {
+            clearInterval(this.tripCountdownInterval);
+        }
+        
+        // Set up new countdown interval
+        this.tripCountdownInterval = setInterval(() => {
+            this.updateTripDisplay();
+        }, 60 * 60 * 1000); // Update every hour
+        
         // Re-render fruit farms to reflect new seasonal filtering based on trip dates
         this.renderFruitFarms();
     }
@@ -226,6 +249,183 @@ class ScenicNYMap {
             if (startDateEl && endDateEl) {
                 startDateEl.value = today.toISOString().split('T')[0];
                 endDateEl.value = nextWeek.toISOString().split('T')[0];
+            }
+        }
+    }
+
+    // Format date range with smart year handling
+    formatDateRange(startDate, endDate) {
+        const start = new Date(startDate + 'T00:00:00');
+        const end = new Date(endDate + 'T00:00:00');
+        const currentYear = new Date().getFullYear();
+        
+        const startYear = start.getFullYear();
+        const endYear = end.getFullYear();
+        
+        // Format dates
+        const startFormatted = start.toLocaleDateString('en-US', { 
+            month: 'short', 
+            day: 'numeric',
+            year: startYear !== currentYear ? 'numeric' : undefined
+        });
+        
+        const endFormatted = end.toLocaleDateString('en-US', { 
+            month: 'short', 
+            day: 'numeric',
+            year: endYear !== currentYear ? 'numeric' : undefined
+        });
+        
+        // If same year, compress the display
+        if (startYear === endYear) {
+            if (startYear === currentYear) {
+                // Same year as current year - no year shown
+                return `${startFormatted} - ${endFormatted}`;
+            } else {
+                // Different year - show year only once
+                const startWithoutYear = start.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                return `${startWithoutYear} - ${endFormatted}`;
+            }
+        } else {
+            // Different years - show both years
+            return `${startFormatted} - ${endFormatted}`;
+        }
+    }
+
+    // Calculate countdown to trip start with friendly formatting
+    getTripCountdown(startDate) {
+        const today = new Date();
+        const tripStart = new Date(startDate + 'T00:00:00');
+        const diffTime = tripStart - today;
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        
+        if (diffDays < 0) {
+            return 'Trip has started';
+        } else if (diffDays === 0) {
+            return 'Trip starts today!';
+        } else if (diffDays === 1) {
+            return 'Trip starts tomorrow';
+        } else if (diffDays < 7) {
+            if (diffDays === 2) {
+                return 'Trip starts in 2 days';
+            } else if (diffDays === 3) {
+                return 'Trip starts in 3 days';
+            } else {
+                return `Trip starts in ${diffDays} days`;
+            }
+        } else if (diffDays < 30) {
+            const weeks = Math.floor(diffDays / 7);
+            const remainingDays = diffDays % 7;
+            
+            if (weeks === 1) {
+                if (remainingDays === 0) {
+                    return 'Trip starts in a week';
+                } else if (remainingDays <= 2) {
+                    return 'Trip starts in about a week';
+                } else if (remainingDays === 3 || remainingDays === 4) {
+                    return 'Trip starts in a week and a half';
+                } else {
+                    return 'Trip starts in a bit more than a week';
+                }
+            } else if (weeks === 2) {
+                if (remainingDays === 0) {
+                    return 'Trip starts in 2 weeks';
+                } else if (remainingDays <= 2) {
+                    return 'Trip starts in about 2 weeks';
+                } else {
+                    return 'Trip starts in a bit more than 2 weeks';
+                }
+            } else if (weeks === 3) {
+                if (remainingDays === 0) {
+                    return 'Trip starts in 3 weeks';
+                } else if (remainingDays <= 2) {
+                    return 'Trip starts in about 3 weeks';
+                } else {
+                    return 'Trip starts in around 3 weeks';
+                }
+            } else {
+                if (remainingDays === 0) {
+                    return `Trip starts in ${weeks} weeks`;
+                } else if (remainingDays <= 2) {
+                    return `Trip starts in about ${weeks} weeks`;
+                } else {
+                    return `Trip starts in around ${weeks} weeks`;
+                }
+            }
+        } else if (diffDays < 365) {
+            const months = Math.floor(diffDays / 30);
+            const remainingDays = diffDays % 30;
+            const weeks = Math.floor(remainingDays / 7);
+            
+            if (months === 1) {
+                if (weeks === 0) {
+                    return 'Trip starts in about a month';
+                } else if (weeks === 1) {
+                    return 'Trip starts in about a month';
+                } else if (weeks === 2) {
+                    return 'Trip starts in about a month and a half';
+                } else if (remainingDays >= 14 && remainingDays <= 16) {
+                    return 'Trip starts in a month and a half';
+                } else {
+                    return 'Trip starts in a bit more than a month';
+                }
+            } else if (months === 2) {
+                if (weeks === 0) {
+                    return 'Trip starts in about 2 months';
+                } else if (weeks <= 2) {
+                    return 'Trip starts in about 2 months';
+                } else {
+                    return 'Trip starts in around 2 months';
+                }
+            } else if (months === 3) {
+                if (weeks === 0) {
+                    return 'Trip starts in about 3 months';
+                } else if (weeks <= 2) {
+                    return 'Trip starts in about 3 months';
+                } else {
+                    return 'Trip starts in around 3 months';
+                }
+            } else if (months === 6) {
+                return 'Trip starts in about 6 months';
+            } else if (months < 12) {
+                if (weeks === 0) {
+                    return `Trip starts in about ${months} months`;
+                } else if (weeks <= 2) {
+                    return `Trip starts in about ${months} months`;
+                } else {
+                    return `Trip starts in around ${months} months`;
+                }
+            } else {
+                const years = Math.floor(months / 12);
+                const remainingMonths = months % 12;
+                if (remainingMonths === 0) {
+                    return `Trip starts in about ${years} year${years > 1 ? 's' : ''}`;
+                } else if (remainingMonths <= 3) {
+                    return `Trip starts in about ${years} year${years > 1 ? 's' : ''}`;
+                } else {
+                    return `Trip starts in around ${years} year${years > 1 ? 's' : ''}`;
+                }
+            }
+        } else {
+            const years = Math.floor(diffDays / 365);
+            const remainingDays = diffDays % 365;
+            const months = Math.floor(remainingDays / 30);
+            
+            if (years === 1) {
+                if (months === 0) {
+                    return 'Trip starts in about a year';
+                } else if (months <= 3) {
+                    return 'Trip starts in about a year';
+                } else {
+                    return 'Trip starts in around a year';
+                }
+            } else {
+                if (months === 0) {
+                    return `Trip starts in about ${years} years`;
+                } else if (months <= 3) {
+                    return `Trip starts in about ${years} years`;
+                } else {
+                    return `Trip starts in around ${years} years`;
+                }
             }
         }
     }
@@ -253,21 +453,58 @@ class ScenicNYMap {
         tripLoadingEl.style.display = 'none';
         
         if (this.tripPlan) {
-            // Parse dates as local dates to avoid timezone issues
-            const startDate = new Date(this.tripPlan.startDate + 'T00:00:00').toLocaleDateString();
-            const endDate = new Date(this.tripPlan.endDate + 'T00:00:00').toLocaleDateString();
-            
             // Update the new separate elements
             const tripLocationEl = document.getElementById('tripLocation');
             const tripDatesEl = document.getElementById('tripDates');
+            const countdownEl = document.getElementById('tripCountdown');
             
-            if (tripLocationEl && tripDatesEl) {
+            // Handle location display
+            if (tripLocationEl) {
                 if (this.tripPlan.address) {
-                    tripLocationEl.textContent = this.formatAddress(this.tripPlan.address);
+                    tripLocationEl.innerHTML = `<span>${this.formatAddress(this.tripPlan.address)}</span>`;
+                    // Show clear location button, hide set location button
+                    const clearLocationBtn = document.querySelector('.btn-clear-location');
+                    const setLocationBtn = document.querySelector('.btn-set-location');
+                    if (clearLocationBtn) clearLocationBtn.style.display = 'flex';
+                    if (setLocationBtn) setLocationBtn.style.display = 'none';
                 } else {
-                    tripLocationEl.textContent = 'No location set';
+                    tripLocationEl.innerHTML = `<span>No location set</span>`;
+                    // Hide clear location button, show set location button
+                    const clearLocationBtn = document.querySelector('.btn-clear-location');
+                    const setLocationBtn = document.querySelector('.btn-set-location');
+                    if (clearLocationBtn) clearLocationBtn.style.display = 'none';
+                    if (setLocationBtn) setLocationBtn.style.display = 'flex';
                 }
-                tripDatesEl.textContent = `${startDate} - ${endDate}`;
+            }
+            
+            // Handle dates display
+            if (tripDatesEl) {
+                if (this.tripPlan.startDate && this.tripPlan.endDate) {
+                    const dateRange = this.formatDateRange(this.tripPlan.startDate, this.tripPlan.endDate);
+                    tripDatesEl.innerHTML = `
+                        <div class="date-range">
+                            <span>${dateRange}</span>
+                        </div>
+                    `;
+                    // Show clear dates button
+                    const clearDatesBtn = document.querySelector('.btn-clear-dates');
+                    if (clearDatesBtn) clearDatesBtn.style.display = 'flex';
+                } else {
+                    tripDatesEl.innerHTML = `<span>No dates set</span>`;
+                    // Hide clear dates button
+                    const clearDatesBtn = document.querySelector('.btn-clear-dates');
+                    if (clearDatesBtn) clearDatesBtn.style.display = 'none';
+                }
+            }
+            
+            // Handle countdown display
+            if (countdownEl) {
+                if (this.tripPlan.startDate) {
+                    const countdown = this.getTripCountdown(this.tripPlan.startDate);
+                    countdownEl.innerHTML = `<span>${countdown}</span>`;
+                } else {
+                    countdownEl.innerHTML = `<span>No trip dates set</span>`;
+                }
             }
             
             currentTripEl.style.display = 'block';
@@ -288,11 +525,11 @@ class ScenicNYMap {
             currentTripEl.style.display = 'none';
             tripFormEl.style.display = 'block';
             
-            // Debug: Check if form is actually visible
-            console.log('Form display style:', tripFormEl.style.display);
-            console.log('Form computed style:', window.getComputedStyle(tripFormEl).display);
-            console.log('Form visibility:', window.getComputedStyle(tripFormEl).visibility);
-            console.log('Form offsetHeight:', tripFormEl.offsetHeight);
+            // Hide all clear buttons
+            const clearLocationBtn = document.querySelector('.btn-clear-location');
+            const clearDatesBtn = document.querySelector('.btn-clear-dates');
+            if (clearLocationBtn) clearLocationBtn.style.display = 'none';
+            if (clearDatesBtn) clearDatesBtn.style.display = 'none';
             
             // Remove trip location marker if it exists
             this.removeTripLocationMarker();
@@ -635,7 +872,6 @@ class ScenicNYMap {
                 <p><strong>${this.formatAddress(this.tripPlan.address)}</strong></p>
                 <p><i class="fa fa-calendar"></i> ${startDate} - ${endDate}</p>
                 <p><i class="fa fa-circle-o"></i> 25-mile exploration radius</p>
-                <p><small>${this.tripPlan.geocodedAddress || this.formatAddress(this.tripPlan.address)}</small></p>
             </div>
         `;
         
@@ -861,6 +1097,7 @@ class ScenicNYMap {
 
         // Initialize popup factory after map is ready
         this.popupFactory = new PopupFactory(this);
+        console.log('PopupFactory initialized:', this.popupFactory);
     }
 
     renderScenicAreas() {
@@ -1320,6 +1557,7 @@ class ScenicNYMap {
                 }
                 
                 // Use popup architecture for farms
+                console.log('Binding popup to farm marker, popupFactory available:', !!this.popupFactory);
                 this.popupFactory.bindPopupToMarker(marker, farm, 'farm');
             });
             
@@ -2362,9 +2600,21 @@ window.clearTrip = function() {
         return;
     }
     
+    // Clear countdown interval
+    if (window.mapInstance.tripCountdownInterval) {
+        clearInterval(window.mapInstance.tripCountdownInterval);
+        window.mapInstance.tripCountdownInterval = null;
+    }
+    
     // Clear cookie
     document.cookie = 'tripPlan=; max-age=0; path=/';
     window.mapInstance.tripPlan = null;
+    
+    // Update popup factory to clear trip plan
+    if (window.mapInstance.popupFactory) {
+        window.mapInstance.popupFactory.updateTripPlan(null);
+    }
+    
     window.mapInstance.updateTripDisplay();
     
     // Clear any trip filtering
@@ -2375,6 +2625,88 @@ window.clearTrip = function() {
     
     // Remove trip location marker
     window.mapInstance.removeTripLocationMarker();
+}
+
+window.clearTripLocation = function() {
+    if (!window.mapInstance || !window.mapInstance.tripPlan) {
+        return;
+    }
+    
+    // Clear location-related fields
+    window.mapInstance.tripPlan.address = null;
+    window.mapInstance.tripPlan.lat = null;
+    window.mapInstance.tripPlan.lng = null;
+    window.mapInstance.tripPlan.geocodedAddress = null;
+    
+    // Save updated trip plan
+    window.mapInstance.saveTripPlan(window.mapInstance.tripPlan);
+    window.mapInstance.updateTripDisplay();
+    
+    // Remove trip location marker
+    window.mapInstance.removeTripLocationMarker();
+}
+
+window.clearTripDates = function() {
+    if (!window.mapInstance || !window.mapInstance.tripPlan) {
+        return;
+    }
+    
+    // Clear date-related fields
+    window.mapInstance.tripPlan.startDate = null;
+    window.mapInstance.tripPlan.endDate = null;
+    
+    // Save updated trip plan
+    window.mapInstance.saveTripPlan(window.mapInstance.tripPlan);
+    window.mapInstance.updateTripDisplay();
+    
+    // Re-render fruit farms to reflect seasonal filtering based on current date
+    window.mapInstance.renderFruitFarms();
+}
+
+window.setTripLocation = function() {
+    if (!window.mapInstance) {
+        console.error('Map instance not available yet');
+        alert('Map is still loading. Please wait a moment and try again.');
+        return;
+    }
+    
+    // Show the trip form to set location
+    const tripFormEl = document.getElementById('tripForm');
+    const currentTripEl = document.getElementById('currentTrip');
+    
+    if (tripFormEl && currentTripEl) {
+        // Hide current trip display
+        currentTripEl.style.display = 'none';
+        
+        // Show form
+        tripFormEl.style.display = 'block';
+        
+        // Pre-populate form with existing trip data if available
+        if (window.mapInstance.tripPlan) {
+            const addressInput = document.getElementById('tripAddress');
+            const startDateInput = document.getElementById('tripStartDate');
+            const endDateInput = document.getElementById('tripEndDate');
+            
+            // Pre-fill address if it exists
+            if (addressInput && window.mapInstance.tripPlan.address) {
+                addressInput.value = window.mapInstance.tripPlan.address;
+            }
+            
+            // Pre-fill dates if they exist
+            if (startDateInput && window.mapInstance.tripPlan.startDate) {
+                startDateInput.value = window.mapInstance.tripPlan.startDate;
+            }
+            if (endDateInput && window.mapInstance.tripPlan.endDate) {
+                endDateInput.value = window.mapInstance.tripPlan.endDate;
+            }
+        }
+        
+        // Focus on address input
+        const addressInput = document.getElementById('tripAddress');
+        if (addressInput) {
+            addressInput.focus();
+        }
+    }
 }
 
 // Initialize the map when the page loads

@@ -40,19 +40,20 @@
 }
 
 .current-trip {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     border: 1px solid #e9ecef;
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .trip-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e9ecef;
 }
 
 .trip-header h4 {
@@ -68,14 +69,15 @@
 .trip-details {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
-.trip-location, .trip-dates {
+.trip-location, .trip-dates, .trip-countdown {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    align-items: flex-start;
+    gap: 10px;
     font-size: 14px;
+    line-height: 1.4;
 }
 
 .trip-location {
@@ -85,12 +87,112 @@
 
 .trip-dates {
     color: #666;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
 }
 
-.trip-location i, .trip-dates i {
+.trip-dates > span {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.trip-dates .date-range {
+    font-weight: 500;
+    color: #333;
+}
+
+.trip-countdown {
+    color: #4CAF50;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(76, 175, 80, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border-left: 3px solid #4CAF50;
+    font-size: 13px;
+}
+
+.trip-location i, .trip-dates i, .trip-countdown i {
     color: #4CAF50;
     width: 16px;
     text-align: center;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.trip-location, .trip-dates {
+    position: relative;
+}
+
+.btn-clear-location, .btn-clear-dates {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #999;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.btn-clear-location:hover, .btn-clear-dates:hover {
+    background: rgba(255, 107, 107, 0.1);
+    color: #ff6b6b;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.btn-clear-location {
+    display: none; /* Hidden by default, shown when location is set */
+}
+
+.btn-clear-dates {
+    display: none; /* Hidden by default, shown when dates are set */
+}
+
+.btn-set-location {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #4CAF50;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    opacity: 0.6;
+    z-index: 10;
+}
+
+.btn-set-location:hover {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.btn-set-location {
+    display: none; /* Hidden by default, shown when no location is set */
 }
 
 .form-group {
@@ -216,6 +318,15 @@
     
     .trip-header h4 {
         font-size: 15px;
+    }
+    
+    .trip-details {
+        gap: 10px;
+    }
+    
+    .trip-dates .countdown {
+        font-size: 12px;
+        padding: 3px 6px;
     }
     
     .form-row {

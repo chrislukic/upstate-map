@@ -35,10 +35,23 @@
                 <div class="trip-location">
                     <i class="fa fa-map-marker"></i>
                     <span id="tripLocation"></span>
+                    <button class="btn-clear-location" onclick="clearTripLocation()" title="Clear location">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <button class="btn-set-location" onclick="setTripLocation()" title="Set location">
+                        <i class="fa fa-plus"></i>
+                    </button>
                 </div>
                 <div class="trip-dates">
                     <i class="fa fa-calendar"></i>
                     <span id="tripDates"></span>
+                    <button class="btn-clear-dates" onclick="clearTripDates()" title="Clear dates">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+                <div class="trip-countdown">
+                    <i class="fa fa-clock-o"></i>
+                    <span id="tripCountdown"></span>
                 </div>
             </div>
         </div>

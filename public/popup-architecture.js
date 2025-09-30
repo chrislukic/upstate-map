@@ -1,6 +1,51 @@
 // Popup Architecture Implementation
 // Base classes for the new popup system
 
+// ===== GLOBAL DATA STORE =====
+class GlobalDataStore {
+  constructor() {
+    this.data = new Map(); // Store data by unique ID
+    this.nextId = 1;
+  }
+
+  // Generate unique ID for any data object
+  generateId() {
+    return `popup_${this.nextId++}`;
+  }
+
+  // Store data with unique ID
+  storeData(data, type) {
+    const id = this.generateId();
+    const storeItem = {
+      id,
+      type,
+      data,
+      timestamp: Date.now()
+    };
+    this.data.set(id, storeItem);
+    return id;
+  }
+
+  // Retrieve data by ID
+  getData(id) {
+    return this.data.get(id);
+  }
+
+  // Get all data of a specific type
+  getDataByType(type) {
+    return Array.from(this.data.values()).filter(item => item.type === type);
+  }
+
+  // Clear all data
+  clear() {
+    this.data.clear();
+    this.nextId = 1;
+  }
+}
+
+// Global instance
+const globalDataStore = new GlobalDataStore();
+
 // ===== BASE POPUP BUILDER =====
 class PopupBuilder {
   constructor(mapInstance) {
@@ -71,17 +116,23 @@ class PopupBuilder {
   }
 
   getDirectionsLink(data) {
+    console.log('getDirectionsLink called with tripPlan:', this.tripPlan);
+    
     if (!this.tripPlan || !this.tripPlan.address || !this.tripPlan.lat || !this.tripPlan.lng) {
+      console.log('No trip plan or missing coordinates/address');
       return null;
     }
 
     const coordinates = this.getCoordinates(data);
+    console.log('Coordinates for directions:', coordinates);
     if (!coordinates) return null;
 
     const [lat, lng] = coordinates;
     const origin = `${this.tripPlan.lat},${this.tripPlan.lng}`;
     const destination = `${lat},${lng}`;
     const directionsUrl = `https://www.google.com/maps/dir/${origin}/${destination}`;
+    
+    console.log('Creating directions link:', { origin, destination, directionsUrl });
     
     return {
       url: directionsUrl,
@@ -180,20 +231,14 @@ class FarmPopupBuilder extends PopupBuilder {
     
     // Address is already displayed as subtitle, so don't add it here
     
-    // Add fruit types available
+    // Add fruit types available with seasonal styling
     if (data.fruits && data.fruits.length > 0) {
-      const fruitTypes = data.fruits.map(fruit => fruit.type).join(', ');
+      const fruitTypes = data.fruits.map(fruit => {
+        const isInSeason = this.getSeasonalStatus(fruit, type);
+        const style = isInSeason ? '' : 'style="color: #999; text-decoration: line-through;"';
+        return `<span ${style}>${fruit.type}</span>`;
+      }).join(', ');
       meta.push(`<strong>Available:</strong> ${fruitTypes}`);
-    }
-    
-    // Add seasonal status for each fruit
-    if (data.fruits && data.fruits.length > 0) {
-      const inSeasonFruits = data.fruits.filter(fruit => this.getSeasonalStatus(fruit, type));
-      const outOfSeasonFruits = data.fruits.filter(fruit => !this.getSeasonalStatus(fruit, type));
-      
-      if (outOfSeasonFruits.length > 0) {
-        meta.push('<span class="popup__meta--warning"><strong>⚠️ Some fruits out of season</strong></span>');
-      }
     }
     
     return meta;
@@ -227,11 +272,20 @@ class FarmPopupBuilder extends PopupBuilder {
     if (data.fruits && data.fruits.length > 0) {
       content += '<div class="popup__fruit-info">';
       data.fruits.forEach(fruit => {
-        const seasonStatus = this.getSeasonalStatus(fruit, fruit.type) ? '✅' : '❌';
+        const isInSeason = this.getSeasonalStatus(fruit, fruit.type);
+        const seasonStatus = isInSeason ? '✅' : '❌';
         const reservationText = fruit.reservation_required ? ' (Reservation Required)' : '';
+        const fruitStyle = isInSeason ? '' : 'style="color: #999; text-decoration: line-through;"';
+        const descriptionStyle = isInSeason ? '' : 'style="color: #ccc;"';
+        
+        // Use specific season range if available, otherwise fall back to generic description
+        const seasonInfo = (fruit.season_start_week && fruit.season_end_week) 
+          ? this.formatSeasonRange(fruit.season_start_week, fruit.season_end_week)
+          : fruit.season_description || 'Season varies';
+        
         content += `<div class="popup__fruit-item">
-          <strong>${fruit.type.charAt(0).toUpperCase() + fruit.type.slice(1)}</strong> ${seasonStatus}
-          <small>${fruit.season_description}${reservationText}</small>
+          <strong ${fruitStyle}>${fruit.type.charAt(0).toUpperCase() + fruit.type.slice(1)}</strong> ${seasonStatus}
+          <small ${descriptionStyle}>${seasonInfo}${reservationText}</small>
         </div>`;
       });
       content += '</div>';
@@ -252,6 +306,42 @@ class FarmPopupBuilder extends PopupBuilder {
     // Fallback: assume in season if no map instance
     return true;
   }
+
+  // Convert season weeks to approximate human-readable date ranges
+  formatSeasonRange(startWeek, endWeek) {
+    if (!startWeek || !endWeek) return 'Season varies';
+    
+    const weekToApproximateDate = (week) => {
+      // Week 1 = January 1st, each week = 7 days
+      const startOfYear = new Date(2024, 0, 1); // January 1st
+      const weekDate = new Date(startOfYear.getTime() + (week - 1) * 7 * 24 * 60 * 60 * 1000);
+      const month = weekDate.getMonth();
+      const day = weekDate.getDate();
+      
+      const monthNames = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+      ];
+      
+      const monthName = monthNames[month];
+      
+      // Convert to approximate periods
+      if (day <= 7) {
+        return `early ${monthName}`;
+      } else if (day <= 14) {
+        return `mid-${monthName}`;
+      } else if (day <= 21) {
+        return `mid-${monthName}`;
+      } else {
+        return `late ${monthName}`;
+      }
+    };
+    
+    const startApprox = weekToApproximateDate(startWeek);
+    const endApprox = weekToApproximateDate(endWeek);
+    
+    return `Season runs from ${startApprox} to ${endApprox}`;
+  }
 }
 
 // ===== RESTAURANT POPUP BUILDER =====
@@ -259,7 +349,7 @@ class RestaurantPopupBuilder extends PopupBuilder {
   getMeta(data) {
     const meta = [];
     
-    if (data.location) meta.push(data.location);
+    // Location is already displayed as subtitle, so don't add it here
     if (data.cuisine) meta.push(`Cuisine: ${data.cuisine}`);
     if (data.price_range) meta.push(`Price: ${data.price_range}`);
     if (data.rating) meta.push(`⭐ ${data.rating}/5`);
@@ -281,7 +371,7 @@ class BreweryPopupBuilder extends PopupBuilder {
   getMeta(data) {
     const meta = [];
     
-    if (data.location) meta.push(data.location);
+    // Location is already displayed as subtitle, so don't add it here
     if (data.region) meta.push(`Region: ${data.region}`);
     if (data.specialty) meta.push(`Specialty: ${data.specialty}`);
     
@@ -309,7 +399,7 @@ class WaterfallPopupBuilder extends PopupBuilder {
   getMeta(data) {
     const meta = [];
     
-    if (data.location) meta.push(data.location);
+    // Location is already displayed as subtitle, so don't add it here
     if (data.height) meta.push(`Height: ${data.height}`);
     if (data.difficulty) meta.push(`Difficulty: ${data.difficulty}`);
     if (data.distance) meta.push(`Distance: ${data.distance}`);
@@ -354,7 +444,7 @@ class AirbnbPopupBuilder extends PopupBuilder {
   getMeta(data) {
     const meta = [];
     
-    if (data.location) meta.push(data.location);
+    // Location is already displayed as subtitle, so don't add it here
     if (data.price) meta.push(`Price: ${data.price}`);
     if (data.rating) meta.push(`⭐ ${data.rating}/5`);
     if (data.guests) meta.push(`Guests: ${data.guests}`);
@@ -376,7 +466,7 @@ class ChildrenPopupBuilder extends PopupBuilder {
   getMeta(data) {
     const meta = [];
     
-    if (data.location) meta.push(data.location);
+    // Location is already displayed as subtitle, so don't add it here
     if (data.cost) meta.push(`Cost: ${data.cost}`);
     if (data.season) meta.push(`Season: ${data.season}`);
     if (data.age_range) meta.push(`Ages: ${data.age_range}`);
@@ -398,7 +488,7 @@ class POIPopupBuilder extends PopupBuilder {
   getMeta(data) {
     const meta = [];
     
-    if (data.location) meta.push(data.location);
+    // Location is already displayed as subtitle, so don't add it here
     if (data.category) meta.push(`Category: ${data.category}`);
     if (data.rating) meta.push(`⭐ ${data.rating}/5`);
     
@@ -534,6 +624,15 @@ class PopupFactory {
     };
   }
 
+  // Update trip plan in all builders
+  updateTripPlan(tripPlan) {
+    console.log('PopupFactory.updateTripPlan called with:', tripPlan);
+    Object.values(this.builders).forEach(builder => {
+      builder.tripPlan = tripPlan;
+      console.log('Updated builder tripPlan:', builder.tripPlan);
+    });
+  }
+
   createPopup(data, type) {
     const builder = this.builders[type];
     if (!builder) {
@@ -541,7 +640,13 @@ class PopupFactory {
       return this.builders.farm.createBasePopup(data, type); // fallback
     }
 
+    // Ensure builder has current trip plan
+    builder.tripPlan = this.map.tripPlan;
+    console.log(`Creating popup for ${type}, builder tripPlan:`, builder.tripPlan);
     const popupOptions = builder.createBasePopup(data, type);
+    console.log(`Created popup for ${type}:`, popupOptions);
+    console.log('Links object:', popupOptions.links);
+    console.log('Directions link:', popupOptions.links?.directions);
     
     // Directions link is now automatically handled in the getDirectionsLink method
     // No need to manually add it here since it's part of the links structure
@@ -550,11 +655,33 @@ class PopupFactory {
   }
 
   bindPopupToMarker(marker, data, type) {
-    const popupOptions = this.createPopup(data, type);
-    const popupContent = this.map.createPopup(popupOptions);
-    const popup = L.popup(this.map.getPopupOptions(popupOptions.maxWidth || 350));
-    popup.setContent(popupContent);
-    marker.bindPopup(popup);
+    console.log(`bindPopupToMarker called for ${type} with data:`, data);
+    
+    // Store data in global store and get unique ID
+    const dataId = globalDataStore.storeData(data, type);
+    console.log(`Stored data with ID: ${dataId}`);
+    
+    // Create a popup that will be generated dynamically when opened
+    const popup = L.popup({
+      maxWidth: 350,
+      className: `popup--${type}`
+    });
+    
+    // Bind the popup with a dynamic content function that uses the global store
+    marker.bindPopup(() => {
+      console.log('Popup opened, retrieving data from global store');
+      const storeItem = globalDataStore.getData(dataId);
+      if (!storeItem) {
+        console.error('Data not found in global store for ID:', dataId);
+        return '<div class="popup">Error: Data not found</div>';
+      }
+      
+      console.log('Retrieved data:', storeItem);
+      const popupOptions = this.createPopup(storeItem.data, storeItem.type);
+      console.log('Dynamic popup options:', popupOptions);
+      return this.map.createPopup(popupOptions);
+    });
+    
     return popup;
   }
 }
@@ -575,4 +702,6 @@ if (typeof window !== 'undefined') {
   window.TrainStationPopupBuilder = TrainStationPopupBuilder;
   window.ScenicAreaPopupBuilder = ScenicAreaPopupBuilder;
   window.PopupFactory = PopupFactory;
+  window.GlobalDataStore = GlobalDataStore;
+  window.globalDataStore = globalDataStore;
 }
