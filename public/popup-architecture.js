@@ -164,25 +164,51 @@ class PopupBuilder {
 
   getDirectionsLink(data) {
     Logger.extend('getDirectionsLink called with tripPlan:', this.tripPlan);
-    
-    if (!this.tripPlan || !this.tripPlan.address || !this.tripPlan.lat || !this.tripPlan.lng) {
-      Logger.basic('No trip plan or missing coordinates/address');
+
+    // Require an origin (trip) coordinate
+    if (!this.tripPlan || this.tripPlan.lat == null || this.tripPlan.lng == null) {
+      Logger.basic('No trip plan or missing origin coordinates');
       return null;
     }
 
-    const coordinates = this.getCoordinates(data);
-    Logger.extend('Coordinates for directions:', coordinates);
-    if (!coordinates) return null;
+    // Prefer destination place_id if available
+    let destinationParam = null;
+    const placeId = data.place_id || null;
 
-    const [lat, lng] = coordinates;
-    const origin = `${this.tripPlan.lat},${this.tripPlan.lng}`;
-    const destination = `${lat},${lng}`;
-    const directionsUrl = `https://www.google.com/maps/dir/${origin}/${destination}`;
-    Logger.verbose('Creating directions link:', { origin, destination, directionsUrl });
-    
+    // Try to parse place_id from google_maps_url if not set directly
+    let parsedPlaceId = null;
+    if (!placeId && typeof data.google_maps_url === 'string') {
+      const match = data.google_maps_url.match(/place_id:([^&]+)/);
+      if (match && match[1]) parsedPlaceId = match[1];
+    }
+
+    if (placeId || parsedPlaceId) {
+      destinationParam = `place_id:${placeId || parsedPlaceId}`;
+    } else {
+      // Fallback to coordinates or address
+      const coordinates = this.getCoordinates(data);
+      Logger.extend('Coordinates for directions:', coordinates);
+      if (coordinates && Array.isArray(coordinates)) {
+        const [lat, lng] = coordinates;
+        destinationParam = `${lat},${lng}`;
+      } else if (data.address || data.location) {
+        destinationParam = encodeURIComponent(data.address || data.location);
+      }
+    }
+
+    if (!destinationParam) {
+      Logger.basic('No destination available for directions');
+      return null;
+    }
+
+    const originParam = `${this.tripPlan.lat},${this.tripPlan.lng}`;
+    // Use Google Maps Directions with api=1 to support place_id
+    const directionsUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(originParam)}&destination=${encodeURIComponent(destinationParam)}`;
+    Logger.verbose('Creating directions link:', { origin: originParam, destination: destinationParam, directionsUrl });
+
     return {
       url: directionsUrl,
-      text: `Directions from ${this.map.formatAddress(this.tripPlan.address)}`,
+      text: `Directions from ${this.map.formatAddress(this.tripPlan.address || 'trip')}`,
       icon: 'fa-directions',
       className: 'popup__link--primary'
     };
