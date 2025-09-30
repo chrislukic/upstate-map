@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Display Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-title {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .seasonal-status {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        .seasonal-item {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            min-width: 120px;
+            text-align: center;
+        }
+        .seasonal-item.in-season {
+            background-color: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+        .seasonal-item.out-of-season {
+            background-color: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+        .farm-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .farm-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background: white;
+        }
+        .farm-card h4 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .fruit-list {
+            margin: 10px 0;
+        }
+        .fruit-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+        }
+        .fruit-item.in-season {
+            background-color: #d4edda;
+        }
+        .fruit-item.out-of-season {
+            background-color: #f8d7da;
+        }
+        .status-icon {
+            font-size: 16px;
+        }
+        .current-week {
+            background-color: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Seasonal Display Test</h1>
+        <p>This test verifies that the seasonal display logic works correctly with the new consolidated fruit farms structure.</p>
+        
+        <div class="test-section">
+            <h3 class="test-title">Current Week & Seasonal Status</h3>
+            <div class="current-week">
+                <strong>Current Week:</strong> <span id="current-week"></span>
+            </div>
+            <div class="seasonal-status" id="seasonal-status">
+                <!-- Seasonal status will be populated here -->
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3 class="test-title">Farm Seasonal Analysis</h3>
+            <div class="farm-list" id="farm-list">
+                <!-- Farm cards will be populated here -->
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3 class="test-title">Test Different Weeks</h3>
+            <p>Test how the seasonal display changes for different weeks of the year:</p>
+            <div style="display: flex; gap: 10px; margin: 10px 0;">
+                <button onclick="testWeek(22)">Week 22 (Strawberries)</button>
+                <button onclick="testWeek(28)">Week 28 (Cherries)</button>
+                <button onclick="testWeek(34)">Week 34 (Apples)</button>
+                <button onclick="testWeek(50)">Week 50 (Winter)</button>
+                <button onclick="resetToCurrent()">Current Week</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mock seasonal logic from the map renderer
+        class MockSeasonalLogic {
+            constructor() {
+                this.currentWeek = this.getCurrentWeek();
+            }
+            
+            getCurrentWeek() {
+                const now = new Date();
+                const start = new Date(now.getFullYear(), 0, 1);
+                const days = Math.floor((now - start) / (24 * 60 * 60 * 1000));
+                return Math.ceil((days + start.getDay() + 1) / 7);
+            }
+            
+            isInSeason(startWeek, endWeek) {
+                const start = Number(startWeek);
+                const end = Number(endWeek);
+                if (!start || !end || isNaN(start) || isNaN(end)) {
+                    return true; // If missing data, default visible
+                }
+                if (start <= end) {
+                    // Normal range within same year
+                    return this.currentWeek >= start && this.currentWeek <= end;
+                }
+                // Wrap-around range (e.g., week 48 to week 5)
+                return this.currentWeek >= start || this.currentWeek <= end;
+            }
+            
+            getSeasonalStatus(farms) {
+                const status = { apples: false, strawberries: false, cherries: false, peaches: false };
+                
+                farms.forEach(farm => {
+                    if (farm.fruits && Array.isArray(farm.fruits)) {
+                        farm.fruits.forEach(fruit => {
+                            if (fruit.type && this.isInSeason(fruit.season_start_week, fruit.season_end_week)) {
+                                status[fruit.type] = true;
+                            }
+                        });
+                    }
+                });
+                
+                return status;
+            }
+        }
+        
+        // Sample fruit farms data
+        const sampleFarms = [
+            {
+                "name": "Fishkill Farms",
+                "address": "9 Fishkill Farm Rd, Hopewell Junction, NY 12533",
+                "lat": 41.5180421,
+                "lng": -73.82306009999999,
+                "website": "https://www.fishkillfarms.com/",
+                "place_id": "ChIJbUwNsDRI3YkR8aUEiWs_1MU",
+                "fruits": [
+                    {
+                        "type": "apples",
+                        "notes": "Organic & eco-grown blocks; book timed PYO slots in season",
+                        "season_description": "Apple picking season typically runs from September through November",
+                        "season_start_week": 34,
+                        "season_end_week": 42,
+                        "reservation_required": true,
+                        "season": "Fall",
+                        "organic": true
+                    },
+                    {
+                        "type": "strawberries",
+                        "notes": "Organic strawberries; early June PYO with online reservations",
+                        "season_description": "Strawberry picking season typically runs from late May through early July",
+                        "season_start_week": 22,
+                        "season_end_week": 28,
+                        "reservation_required": true,
+                        "season": "Spring/Summer",
+                        "organic": true
+                    },
+                    {
+                        "type": "cherries",
+                        "notes": "Historic 270-acre farm with organic practices; sweet cherry season in mid-July",
+                        "season_description": "Sweet cherry picking season typically runs from mid-July through early August",
+                        "season_start_week": 28,
+                        "season_end_week": 32,
+                        "reservation_required": true,
+                        "season": "Summer",
+                        "organic": true
+                    }
+                ]
+            },
+            {
+                "name": "Wilkens Fruit & Fir Farm",
+                "address": "1335 White Hill Rd, Yorktown Heights, NY 10598",
+                "lat": 41.2780064,
+                "lng": -73.825319,
+                "website": "https://wilkensfarm.com/",
+                "place_id": "ChIJZXLvw863wokR2JyXrb1MnAw",
+                "fruits": [
+                    {
+                        "type": "apples",
+                        "notes": "Classic Westchester PYO; bakery & market on site",
+                        "season_description": "Apple picking season typically runs from September through November",
+                        "season_start_week": 34,
+                        "season_end_week": 42,
+                        "reservation_required": false,
+                        "season": "Fall",
+                        "organic": false
+                    }
+                ]
+            },
+            {
+                "name": "Apple Ridge Orchards",
+                "address": "101 Jessup Rd, Warwick, NY 10990",
+                "lat": 41.256,
+                "lng": -74.36,
+                "website": "https://appleridgeorchards.com/",
+                "place_id": "ChIJr5Fg0-dYwokRVB0ArZg6x9E",
+                "fruits": [
+                    {
+                        "type": "peaches",
+                        "notes": "Peach picking in late summer",
+                        "season_description": "Late June through late August",
+                        "season_start_week": 26,
+                        "season_end_week": 35,
+                        "reservation_required": false,
+                        "season": "Peach Season",
+                        "organic": false
+                    }
+                ]
+            }
+        ];
+        
+        let seasonalLogic = new MockSeasonalLogic();
+        
+        function updateDisplay() {
+            // Update current week display
+            document.getElementById('current-week').textContent = seasonalLogic.currentWeek;
+            
+            // Get seasonal status
+            const seasonalStatus = seasonalLogic.getSeasonalStatus(sampleFarms);
+            
+            // Update seasonal status display
+            const statusContainer = document.getElementById('seasonal-status');
+            statusContainer.innerHTML = '';
+            
+            Object.keys(seasonalStatus).forEach(fruit => {
+                const statusDiv = document.createElement('div');
+                statusDiv.className = `seasonal-item ${seasonalStatus[fruit] ? 'in-season' : 'out-of-season'}`;
+                statusDiv.innerHTML = `
+                    <strong>${fruit.charAt(0).toUpperCase() + fruit.slice(1)}</strong><br>
+                    ${seasonalStatus[fruit] ? '✅ In Season' : '❌ Out of Season'}
+                `;
+                statusContainer.appendChild(statusDiv);
+            });
+            
+            // Update farm list
+            const farmList = document.getElementById('farm-list');
+            farmList.innerHTML = '';
+            
+            sampleFarms.forEach(farm => {
+                const farmCard = document.createElement('div');
+                farmCard.className = 'farm-card';
+                
+                let farmContent = `<h4>${farm.name}</h4>`;
+                farmContent += `<p><strong>Address:</strong> ${farm.address}</p>`;
+                
+                if (farm.fruits && farm.fruits.length > 0) {
+                    farmContent += '<div class="fruit-list">';
+                    farm.fruits.forEach(fruit => {
+                        const isInSeason = seasonalLogic.isInSeason(fruit.season_start_week, fruit.season_end_week);
+                        const statusIcon = isInSeason ? '✅' : '❌';
+                        const statusClass = isInSeason ? 'in-season' : 'out-of-season';
+                        
+                        farmContent += `
+                            <div class="fruit-item ${statusClass}">
+                                <span class="status-icon">${statusIcon}</span>
+                                <strong>${fruit.type.charAt(0).toUpperCase() + fruit.type.slice(1)}</strong>
+                                <span>(${fruit.season_start_week}-${fruit.season_end_week})</span>
+                                ${fruit.organic ? '<span style="color: #4CAF50;">🌱 Organic</span>' : ''}
+                                ${fruit.reservation_required ? '<span style="color: #ff6b6b;">📅 Reservation Required</span>' : ''}
+                            </div>
+                        `;
+                    });
+                    farmContent += '</div>';
+                }
+                
+                farmCard.innerHTML = farmContent;
+                farmList.appendChild(farmCard);
+            });
+        }
+        
+        function testWeek(week) {
+            seasonalLogic.currentWeek = week;
+            updateDisplay();
+        }
+        
+        function resetToCurrent() {
+            seasonalLogic = new MockSeasonalLogic();
+            updateDisplay();
+        }
+        
+        // Initialize display
+        updateDisplay();
+    </script>
+</body>
+</html>
+

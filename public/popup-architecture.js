@@ -11,13 +11,22 @@ class PopupBuilder {
   // Base popup creation - override in subclasses
   createBasePopup(data, type) {
     return {
-      title: this.getTitle(data, type),
-      subtitle: this.getSubtitle(data, type),
-      meta: this.getMeta(data, type),
-      description: this.getDescription(data, type),
-      links: this.getLinks(data, type),
+      // Core content structure
+      content: {
+        title: this.getTitle(data, type),
+        subtitle: this.getSubtitle(data, type),
+        meta: this.getMeta(data, type),
+        description: this.getDescription(data, type),
+        customContent: this.getCustomContent(data, type)
+      },
+      // Links structure - now part of the popup object
+      links: {
+        website: this.getWebsiteLink(data),
+        googleMaps: this.getGoogleMapsLink(data),
+        directions: this.getDirectionsLink(data)
+      },
+      // Technical properties
       coordinates: this.getCoordinates(data),
-      customContent: this.getCustomContent(data, type),
       maxWidth: this.getMaxWidth(type),
       className: this.getClassName(type)
     };
@@ -40,20 +49,46 @@ class PopupBuilder {
     return data.description || data.notes || null;
   }
 
-  getLinks(data, type) {
-    const links = [];
-    
-    // Add website link if available
-    if (data.website) {
-      links.push(this.createWebsiteLink(data.website));
+  // Individual link getters - now part of the popup object structure
+  getWebsiteLink(data) {
+    if (!data.website) return null;
+    return {
+      url: data.website,
+      text: 'Website',
+      icon: 'fa-external-link',
+      className: 'popup__link--secondary'
+    };
+  }
+
+  getGoogleMapsLink(data) {
+    if (!data.google_maps_url) return null;
+    return {
+      url: data.google_maps_url,
+      text: 'View on Google Maps',
+      icon: 'fa-map-marker',
+      className: 'popup__link--secondary'
+    };
+  }
+
+  getDirectionsLink(data) {
+    if (!this.tripPlan || !this.tripPlan.address || !this.tripPlan.lat || !this.tripPlan.lng) {
+      return null;
     }
+
+    const coordinates = this.getCoordinates(data);
+    if (!coordinates) return null;
+
+    const [lat, lng] = coordinates;
+    const origin = `${this.tripPlan.lat},${this.tripPlan.lng}`;
+    const destination = `${lat},${lng}`;
+    const directionsUrl = `https://www.google.com/maps/dir/${origin}/${destination}`;
     
-    // Add Google Maps link if available
-    if (data.google_maps_url) {
-      links.push(this.createGoogleMapsLink(data.google_maps_url));
-    }
-    
-    return links;
+    return {
+      url: directionsUrl,
+      text: `Directions from ${this.map.formatAddress(this.tripPlan.address)}`,
+      icon: 'fa-directions',
+      className: 'popup__link--primary'
+    };
   }
 
   getCoordinates(data) {
@@ -78,31 +113,11 @@ class PopupBuilder {
     return `popup--${type}`;
   }
 
-  // Helper methods
-  createWebsiteLink(url) {
-    return `<a href="${url}" target="_blank" rel="noopener" class="popup__link popup__link--secondary">
-      <i class="fa fa-external-link"></i> Website
-    </a>`;
-  }
-
-  createGoogleMapsLink(url) {
-    return `<a href="${url}" target="_blank" rel="noopener" class="popup__link popup__link--secondary">
-      <i class="fa fa-map-marker"></i> View on Google Maps
-    </a>`;
-  }
-
-  createDirectionsLink(coordinates) {
-    if (!this.tripPlan || !this.tripPlan.address || !this.tripPlan.lat || !this.tripPlan.lng) {
-      return null;
-    }
-
-    const [lat, lng] = coordinates;
-    const origin = `${this.tripPlan.lat},${this.tripPlan.lng}`;
-    const destination = `${lat},${lng}`;
-    const directionsUrl = `https://www.google.com/maps/dir/${origin}/${destination}`;
-    
-    return `<a href="${directionsUrl}" target="_blank" class="popup__link popup__link--primary">
-      <i class="fa fa-directions"></i> Directions from ${this.map.formatAddress(this.tripPlan.address)}
+  // Helper method to render a link object as HTML
+  renderLink(linkObj) {
+    if (!linkObj) return '';
+    return `<a href="${linkObj.url}" target="_blank" rel="noopener" class="popup__link ${linkObj.className}">
+      <i class="fa ${linkObj.icon}"></i> ${linkObj.text}
     </a>`;
   }
 }
@@ -163,36 +178,78 @@ class FarmPopupBuilder extends PopupBuilder {
   getMeta(data, type) {
     const meta = [];
     
-    if (data.address) meta.push(data.address);
-    if (data.approx_drive) meta.push(`<strong>Drive:</strong> ${data.approx_drive}`);
-    if (data.reservation_required) meta.push(`<strong>Reservation:</strong> ${data.reservation_required}`);
+    // Address is already displayed as subtitle, so don't add it here
     
-    // Add seasonal status
-    const farmInSeason = this.getSeasonalStatus(data, type);
-    if (!farmInSeason) {
-      meta.push('<span class="popup__meta--warning"><strong>⚠️ Out of Season</strong></span>');
+    // Add fruit types available
+    if (data.fruits && data.fruits.length > 0) {
+      const fruitTypes = data.fruits.map(fruit => fruit.type).join(', ');
+      meta.push(`<strong>Available:</strong> ${fruitTypes}`);
+    }
+    
+    // Add seasonal status for each fruit
+    if (data.fruits && data.fruits.length > 0) {
+      const inSeasonFruits = data.fruits.filter(fruit => this.getSeasonalStatus(fruit, type));
+      const outOfSeasonFruits = data.fruits.filter(fruit => !this.getSeasonalStatus(fruit, type));
+      
+      if (outOfSeasonFruits.length > 0) {
+        meta.push('<span class="popup__meta--warning"><strong>⚠️ Some fruits out of season</strong></span>');
+      }
     }
     
     return meta;
   }
 
   getDescription(data) {
+    // Combine notes from all fruits
+    if (data.fruits && data.fruits.length > 0) {
+      const allNotes = data.fruits
+        .map(fruit => fruit.notes)
+        .filter(note => note && note.trim())
+        .join(' • ');
+      return allNotes || '';
+    }
     return data.notes || '';
   }
 
   getCustomContent(data) {
-    const organicBadge = data.organic ? 
-      ' <span style="color: #4CAF50; font-size: 14px;">🌱 Organic</span>' : '';
-    return organicBadge;
+    let content = '';
+    
+    // Add organic badges for each fruit
+    if (data.fruits && data.fruits.length > 0) {
+      const organicFruits = data.fruits.filter(fruit => fruit.organic);
+      if (organicFruits.length > 0) {
+        const organicTypes = organicFruits.map(fruit => fruit.type).join(', ');
+        content += `<div style="color: #4CAF50; font-size: 14px;">🌱 Organic: ${organicTypes}</div>`;
+      }
+    }
+    
+    // Add fruit-specific information
+    if (data.fruits && data.fruits.length > 0) {
+      content += '<div class="popup__fruit-info">';
+      data.fruits.forEach(fruit => {
+        const seasonStatus = this.getSeasonalStatus(fruit, fruit.type) ? '✅' : '❌';
+        const reservationText = fruit.reservation_required ? ' (Reservation Required)' : '';
+        content += `<div class="popup__fruit-item">
+          <strong>${fruit.type.charAt(0).toUpperCase() + fruit.type.slice(1)}</strong> ${seasonStatus}
+          <small>${fruit.season_description}${reservationText}</small>
+        </div>`;
+      });
+      content += '</div>';
+    }
+    
+    return content;
   }
 
   getMaxWidth() {
-    return 300;
+    return 350;
   }
 
-  getSeasonalStatus(data, type) {
-    // This would integrate with the existing seasonal logic
-    // For now, return true as a placeholder
+  getSeasonalStatus(fruit, type) {
+    // Use the map instance's seasonal logic
+    if (this.map && this.map.isInSeason) {
+      return this.map.isInSeason(fruit.season_start_week, fruit.season_end_week);
+    }
+    // Fallback: assume in season if no map instance
     return true;
   }
 }
@@ -274,7 +331,7 @@ class TrailPopupBuilder extends PopupBuilder {
   getMeta(data) {
     const meta = [];
     
-    if (data.location) meta.push(data.location);
+    // Location is already displayed as subtitle, so don't add it here
     if (data.region) meta.push(`Region: ${data.region}`);
     if (data.difficulty) meta.push(`Difficulty: ${data.difficulty}`);
     if (data.distance) meta.push(`Distance: ${data.distance}`);
@@ -357,6 +414,106 @@ class POIPopupBuilder extends PopupBuilder {
   }
 }
 
+// ===== CITY POPUP BUILDER =====
+class CityPopupBuilder extends PopupBuilder {
+  getSubtitle(data) {
+    return data.scenicArea || data.region || null;
+  }
+
+  getMeta(data) {
+    const meta = [];
+    
+    if (data.population) {
+      meta.push(`Population: ${data.population.toLocaleString()}`);
+    }
+    
+    if (data.driveTime) {
+      meta.push(`Drive time: <strong>${data.driveTime}</strong>`);
+    }
+    
+    if (data.county) {
+      meta.push(`County: ${data.county}`);
+    }
+    
+    return meta;
+  }
+
+  getDescription(data) {
+    return data.description || '';
+  }
+
+  getMaxWidth() {
+    return 300;
+  }
+}
+
+// ===== TRAIN STATION POPUP BUILDER =====
+class TrainStationPopupBuilder extends PopupBuilder {
+  getSubtitle(data) {
+    return data.operator || data.route || null;
+  }
+
+  getMeta(data) {
+    const meta = [];
+    
+    if (data.type) {
+      const typeLabel = data.type === 'terminal' ? 'Terminal Station' : 'Station';
+      meta.push(`Type: ${typeLabel}`);
+    }
+    
+    if (data.route) {
+      meta.push(`Route: ${data.route}`);
+    }
+    
+    if (data.operator) {
+      meta.push(`Operator: ${data.operator}`);
+    }
+    
+    return meta;
+  }
+
+  getDescription(data) {
+    return data.description || data.notes || '';
+  }
+
+  getMaxWidth() {
+    return 280;
+  }
+}
+
+// ===== SCENIC AREA POPUP BUILDER =====
+class ScenicAreaPopupBuilder extends PopupBuilder {
+  getSubtitle(data) {
+    return data.region || data.county || null;
+  }
+
+  getMeta(data) {
+    const meta = [];
+    
+    if (data.county) {
+      meta.push(`County: ${data.county}`);
+    }
+    
+    if (data.region) {
+      meta.push(`Region: ${data.region}`);
+    }
+    
+    if (data.elevation) {
+      meta.push(`Elevation: ${data.elevation}`);
+    }
+    
+    return meta;
+  }
+
+  getDescription(data) {
+    return data.description || data.notes || '';
+  }
+
+  getMaxWidth() {
+    return 320;
+  }
+}
+
 // ===== POPUP FACTORY =====
 class PopupFactory {
   constructor(mapInstance) {
@@ -370,7 +527,10 @@ class PopupFactory {
       trail: new TrailPopupBuilder(mapInstance),
       airbnb: new AirbnbPopupBuilder(mapInstance),
       children: new ChildrenPopupBuilder(mapInstance),
-      poi: new POIPopupBuilder(mapInstance)
+      poi: new POIPopupBuilder(mapInstance),
+      city: new CityPopupBuilder(mapInstance),
+      trainStation: new TrainStationPopupBuilder(mapInstance),
+      scenicArea: new ScenicAreaPopupBuilder(mapInstance)
     };
   }
 
@@ -383,13 +543,8 @@ class PopupFactory {
 
     const popupOptions = builder.createBasePopup(data, type);
     
-    // Add trip-based directions if applicable
-    if (this.map.tripPlan && this.map.tripPlan.address && popupOptions.coordinates) {
-      const directionsLink = builder.createDirectionsLink(popupOptions.coordinates);
-      if (directionsLink) {
-        popupOptions.links.push(directionsLink);
-      }
-    }
+    // Directions link is now automatically handled in the getDirectionsLink method
+    // No need to manually add it here since it's part of the links structure
 
     return popupOptions;
   }
@@ -416,5 +571,8 @@ if (typeof window !== 'undefined') {
   window.AirbnbPopupBuilder = AirbnbPopupBuilder;
   window.ChildrenPopupBuilder = ChildrenPopupBuilder;
   window.POIPopupBuilder = POIPopupBuilder;
+  window.CityPopupBuilder = CityPopupBuilder;
+  window.TrainStationPopupBuilder = TrainStationPopupBuilder;
+  window.ScenicAreaPopupBuilder = ScenicAreaPopupBuilder;
   window.PopupFactory = PopupFactory;
 }

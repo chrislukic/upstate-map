@@ -15,6 +15,58 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
   </head>
   <body>
+    <!-- Trip Planning Widget -->
+    <div class="trip-planner" id="tripPlanner">
+        <!-- Loading State -->
+        <div class="trip-loading" id="tripLoading" style="display: flex; align-items: center; justify-content: center; padding: 20px;">
+            <i class="fa fa-spinner fa-spin" style="margin-right: 8px;"></i>
+            <span>Loading trip data...</span>
+        </div>
+        
+        <!-- Current Trip Display -->
+        <div class="current-trip" id="currentTrip" style="display: none;">
+            <div class="trip-header">
+                <h4><i class="fa fa-calendar-check-o"></i> Current Trip</h4>
+                <button class="btn-clear-subtle" onclick="clearTrip()" title="Clear trip">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="trip-details">
+                <div class="trip-location">
+                    <i class="fa fa-map-marker"></i>
+                    <span id="tripLocation"></span>
+                </div>
+                <div class="trip-dates">
+                    <i class="fa fa-calendar"></i>
+                    <span id="tripDates"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trip Planning Form -->
+        <div class="trip-form" id="tripForm" style="display: none;">
+            
+            <form onsubmit="setTrip(event)">
+                    <div class="form-group">
+                        <input type="text" id="tripAddress" placeholder="Where are you staying? (optional - e.g., Saugerties, NY)">
+                    </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="tripStartDate" required>
+                        <label>Start Date</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="tripEndDate" required>
+                        <label>End Date</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-check"></i> Set Trip
+                </button>
+            </form>
+        </div>
+    </div>
+    
     <div class="legend">
       <h3>NY Hiking & Scenery — Highlight Guide</h3>
       
@@ -161,7 +213,7 @@
     <!-- Popup architecture (attaches PopupFactory to window) -->
     <script src="/popup-architecture.js"></script>
     <!-- App entry -->
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
   </html>
 

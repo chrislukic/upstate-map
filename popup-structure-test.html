@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Structure Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-title {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .popup {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-height: 100px;
+            font-family: Arial, sans-serif;
+        }
+        .popup__title {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            line-height: 1.3;
+        }
+        .popup__subtitle {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+        .popup__meta-container {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin: 4px 0;
+        }
+        .popup__meta {
+            color: #666;
+            font-size: 12px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .popup__description {
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #444;
+        }
+        .popup__links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            font-size: 13px;
+        }
+        .popup__link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        .popup__link:hover {
+            color: #45a049;
+            text-decoration: underline;
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+        .popup__link--primary {
+            color: #1976d2;
+        }
+        .popup__link--primary:hover {
+            color: #1565c0;
+            background-color: rgba(25, 118, 210, 0.1);
+        }
+        .popup__link i {
+            color: inherit;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Popup Structure Test</h1>
+        <p>This page demonstrates the new generalized popup structure with standardized links.</p>
+        
+        <div class="test-section">
+            <h3 class="test-title">Test 1: Restaurant Popup (New Structure)</h3>
+            <div id="restaurant-popup"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3 class="test-title">Test 2: Farm Popup (New Structure)</h3>
+            <div id="farm-popup"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3 class="test-title">Test 3: Event Popup (New Structure)</h3>
+            <div id="event-popup"></div>
+        </div>
+    </div>
+
+    <script>
+        // Mock map instance for testing
+        const mockMap = {
+            tripPlan: {
+                address: "123 Main St, Albany, NY",
+                lat: 42.6526,
+                lng: -73.7562
+            },
+            formatAddress: function(address) {
+                return address;
+            }
+        };
+
+        // Mock popup builder classes
+        class PopupBuilder {
+            constructor(mapInstance) {
+                this.map = mapInstance;
+                this.tripPlan = mapInstance.tripPlan;
+            }
+
+            createBasePopup(data, type) {
+                return {
+                    content: {
+                        title: this.getTitle(data, type),
+                        subtitle: this.getSubtitle(data, type),
+                        meta: this.getMeta(data, type),
+                        description: this.getDescription(data, type),
+                        customContent: this.getCustomContent(data, type)
+                    },
+                    links: {
+                        website: this.getWebsiteLink(data),
+                        googleMaps: this.getGoogleMapsLink(data),
+                        directions: this.getDirectionsLink(data)
+                    },
+                    coordinates: this.getCoordinates(data),
+                    maxWidth: this.getMaxWidth(type),
+                    className: this.getClassName(type)
+                };
+            }
+
+            getTitle(data, type) {
+                return data.name || data.title || 'Unknown';
+            }
+
+            getSubtitle(data, type) {
+                return data.location || data.address || null;
+            }
+
+            getMeta(data, type) {
+                return [];
+            }
+
+            getDescription(data, type) {
+                return data.description || data.notes || null;
+            }
+
+            getCustomContent(data, type) {
+                return null;
+            }
+
+            getWebsiteLink(data) {
+                if (!data.website) return null;
+                return {
+                    url: data.website,
+                    text: 'Website',
+                    icon: 'fa-external-link',
+                    className: 'popup__link--secondary'
+                };
+            }
+
+            getGoogleMapsLink(data) {
+                if (!data.google_maps_url) return null;
+                return {
+                    url: data.google_maps_url,
+                    text: 'View on Google Maps',
+                    icon: 'fa-map-marker',
+                    className: 'popup__link--secondary'
+                };
+            }
+
+            getDirectionsLink(data) {
+                if (!this.tripPlan || !this.tripPlan.address || !this.tripPlan.lat || !this.tripPlan.lng) {
+                    return null;
+                }
+
+                const coordinates = this.getCoordinates(data);
+                if (!coordinates) return null;
+
+                const [lat, lng] = coordinates;
+                const origin = `${this.tripPlan.lat},${this.tripPlan.lng}`;
+                const destination = `${lat},${lng}`;
+                const directionsUrl = `https://www.google.com/maps/dir/${origin}/${destination}`;
+                
+                return {
+                    url: directionsUrl,
+                    text: `Directions from ${this.map.formatAddress(this.tripPlan.address)}`,
+                    icon: 'fa-directions',
+                    className: 'popup__link--primary'
+                };
+            }
+
+            getCoordinates(data) {
+                if (data.lat && data.lng) {
+                    return [data.lat, data.lng];
+                }
+                if (data.coords && Array.isArray(data.coords)) {
+                    return data.coords;
+                }
+                return null;
+            }
+
+            getMaxWidth(type) {
+                return 350;
+            }
+
+            getClassName(type) {
+                return `popup--${type}`;
+            }
+        }
+
+        class RestaurantPopupBuilder extends PopupBuilder {
+            getMeta(data) {
+                const meta = [];
+                if (data.location) meta.push(data.location);
+                if (data.cuisine) meta.push(`Cuisine: ${data.cuisine}`);
+                if (data.price_range) meta.push(`Price: ${data.price_range}`);
+                if (data.rating) meta.push(`⭐ ${data.rating}/5`);
+                return meta;
+            }
+        }
+
+        class FarmPopupBuilder extends PopupBuilder {
+            getMeta(data) {
+                const meta = [];
+                if (data.address) meta.push(data.address);
+                if (data.approx_drive) meta.push(`Drive: ${data.approx_drive}`);
+                if (data.reservation_required) meta.push(`Reservation: ${data.reservation_required}`);
+                return meta;
+            }
+        }
+
+        class EventPopupBuilder extends PopupBuilder {
+            getSubtitle(data) {
+                return data.location_name;
+            }
+
+            getMeta(data) {
+                const meta = [];
+                const startDate = new Date(data.start_date);
+                const dateFormat = startDate.toLocaleDateString('en-US', { 
+                    month: 'short', 
+                    day: 'numeric',
+                    year: startDate.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined
+                });
+                meta.push(`📅 ${dateFormat}`);
+                meta.push(`📍 ${data.location_name}`);
+                if (data.family_friendly === 'yes') {
+                    meta.push('👨‍👩‍👧‍👦 Family Friendly');
+                }
+                return meta;
+            }
+        }
+
+        // Create popup content function
+        function createPopup(options) {
+            let content, links, coordinates, maxWidth;
+            
+            if (options.content && options.links) {
+                content = options.content;
+                links = options.links;
+                coordinates = options.coordinates;
+                maxWidth = options.maxWidth || 350;
+            } else {
+                content = {
+                    title: options.title,
+                    subtitle: options.subtitle,
+                    meta: options.meta || [],
+                    description: options.description,
+                    customContent: options.customContent || ''
+                };
+                links = {
+                    website: options.website ? { url: options.website, text: 'Website', icon: 'fa-external-link', className: 'popup__link--secondary' } : null,
+                    googleMaps: options.google_maps_url ? { url: options.google_maps_url, text: 'View on Google Maps', icon: 'fa-map-marker', className: 'popup__link--secondary' } : null,
+                    directions: null
+                };
+                coordinates = options.coordinates;
+                maxWidth = options.maxWidth || 350;
+            }
+            
+            const metaHtml = content.meta && content.meta.length > 0 ? 
+                `<div class="popup__meta-container">${content.meta.map(item => `<span class="popup__meta">${item}</span>`).join('')}</div>` : '';
+            
+            const linkElements = [];
+            
+            if (links.website) {
+                linkElements.push(renderLink(links.website));
+            }
+            
+            if (links.googleMaps) {
+                linkElements.push(renderLink(links.googleMaps));
+            }
+            
+            if (links.directions) {
+                linkElements.push(renderLink(links.directions));
+            }
+            
+            const linksHtml = linkElements.length > 0 ? 
+                `<div class="popup__links">${linkElements.join(' • ')}</div>` : '';
+            
+            const descriptionHtml = content.description ? 
+                `<div class="popup__description">${content.description}</div>` : '';
+            
+            const subtitleHtml = content.subtitle ? 
+                `<div class="popup__subtitle">${content.subtitle}</div>` : '';
+            
+            return `
+                <div class="popup">
+                    <h3 class="popup__title">${content.title}</h3>
+                    ${subtitleHtml}
+                    ${metaHtml}
+                    ${descriptionHtml}
+                    ${content.customContent || ''}
+                    ${linksHtml}
+                </div>
+            `;
+        }
+
+        function renderLink(linkObj) {
+            if (!linkObj) return '';
+            return `<a href="${linkObj.url}" target="_blank" rel="noopener" class="popup__link ${linkObj.className}">
+                <i class="fa ${linkObj.icon}"></i> ${linkObj.text}
+            </a>`;
+        }
+
+        // Test data
+        const restaurantData = {
+            name: "The Capital Grille",
+            location: "Albany, NY",
+            cuisine: "Steakhouse",
+            price_range: "$$$$",
+            rating: "4.5",
+            description: "Upscale steakhouse with an extensive wine list and elegant atmosphere.",
+            website: "https://www.thecapitalgrille.com",
+            google_maps_url: "https://maps.google.com/?q=The+Capital+Grille+Albany",
+            lat: 42.6526,
+            lng: -73.7562
+        };
+
+        const farmData = {
+            name: "Indian Ladder Farms",
+            address: "342 Altamont Rd, Altamont, NY 12009",
+            approx_drive: "15 minutes",
+            reservation_required: "No",
+            description: "Family-owned farm offering pick-your-own apples, pumpkins, and seasonal activities.",
+            website: "https://www.indianladderfarms.com",
+            google_maps_url: "https://maps.google.com/?q=Indian+Ladder+Farms",
+            lat: 42.7000,
+            lng: -73.9000
+        };
+
+        const eventData = {
+            name: "Tulip Festival",
+            location_name: "Washington Park",
+            start_date: "2024-05-01",
+            end_date: "2024-05-31",
+            family_friendly: "yes",
+            description: "Annual celebration of spring with thousands of tulips in bloom.",
+            website: "https://www.albany.org/event/tulip-festival",
+            google_maps_url: "https://maps.google.com/?q=Washington+Park+Albany",
+            lat: 42.6500,
+            lng: -73.7600
+        };
+
+        // Create popups
+        const restaurantBuilder = new RestaurantPopupBuilder(mockMap);
+        const farmBuilder = new FarmPopupBuilder(mockMap);
+        const eventBuilder = new EventPopupBuilder(mockMap);
+
+        document.getElementById('restaurant-popup').innerHTML = createPopup(restaurantBuilder.createBasePopup(restaurantData, 'restaurant'));
+        document.getElementById('farm-popup').innerHTML = createPopup(farmBuilder.createBasePopup(farmData, 'farm'));
+        document.getElementById('event-popup').innerHTML = createPopup(eventBuilder.createBasePopup(eventData, 'event'));
+    </script>
+</body>
+</html>
+

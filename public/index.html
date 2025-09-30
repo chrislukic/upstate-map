@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    
+    <!-- External JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    
+    <!-- Popup Architecture -->
+    <script src="popup-architecture.js"></script>
+    
+    <script>
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
+</head>
+<body>
+    <!-- Trip Planning Widget -->
+    <div class="trip-planner" id="tripPlanner">
+        <!-- Loading State -->
+        <div class="trip-loading" id="tripLoading" style="display: flex; align-items: center; justify-content: center; padding: 20px;">
+            <i class="fa fa-spinner fa-spin" style="margin-right: 8px;"></i>
+            <span>Loading trip data...</span>
+        </div>
+        
+        <!-- Current Trip Display -->
+        <div class="current-trip" id="currentTrip" style="display: none;">
+            <div class="trip-header">
+                <h4><i class="fa fa-calendar-check-o"></i> Current Trip</h4>
+                <button class="btn-clear-subtle" onclick="clearTrip()" title="Clear trip">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="trip-details">
+                <div class="trip-location">
+                    <i class="fa fa-map-marker"></i>
+                    <span id="tripLocation"></span>
+                </div>
+                <div class="trip-dates">
+                    <i class="fa fa-calendar"></i>
+                    <span id="tripDates"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trip Planning Form -->
+        <div class="trip-form" id="tripForm" style="display: none;">
+            <h4><i class="fa fa-calendar"></i> Plan Your Trip</h4>
+            <form onsubmit="setTrip(event)">
+                    <div class="form-group">
+                        <input type="text" id="tripAddress" placeholder="Where are you staying? (optional - e.g., Saugerties, NY)">
+                    </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="tripStartDate" required>
+                        <label>Start Date</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="tripEndDate" required>
+                        <label>End Date</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-check"></i> Set Trip
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Legend -->
+    <div class="legend">
+        <h3>NY Hiking & Scenery — Highlight Guide</h3>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#c83737;"></span> World-class (9.2–10)
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#e06b2e;"></span> Exceptional (8.8–9.1)
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#d6a62e;"></span> Great (8.2–8.7)
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#7cb342;"></span> Strong (≤8.1)
+        </div>
+        <hr>
+        <div class="legend-section">
+            <b>Cities (by drive time from NYC):</b>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#228B22;"></span> 0-3 hours (Green to Orange)
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#FFA500;"></span> 3-4 hours (Orange to Red)
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#FF0000;"></span> 4+ hours (Red)
+        </div>
+        <div class="legend-item">
+            <small><i>Dot size ≈ population</i></small>
+        </div>
+        <hr>
+        <div class="legend-section">
+            <b>Orchards (PYO apples):</b>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#4CAF50;"></span> Orchard marker (click for details)
+        </div>
+        <hr>
+        <div class="legend-section">
+            <b>Train Routes:</b>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#003366;"></span> Metro-North Hudson Line
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#0066CC;"></span> Metro-North Harlem Line
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#FF6600;"></span> Metro-North New Haven Line
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#003399;"></span> Amtrak Empire Service
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#006600;"></span> Amtrak Adirondack
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#CC0000;"></span> Amtrak Lake Shore Limited
+        </div>
+        <hr>
+        <div class="legend-section">
+            <b>Trip Planning:</b>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#4CAF50; border-radius: 50%; width: 16px; height: 16px;"></span> Your trip location (25-mile radius)
+        </div>
+        <small><i>Populations are approximate (2020–2023 ACS). Drive times assume Midtown origin, off‑peak. Train times are approximate and may vary.</i></small>
+    </div>
+    
+    <!-- Map Container -->
+    <div class="folium-map" id="map_9eb96eb1fe9bc3ea56b51a20c1cf6a00"></div>
+    
+    <!-- Data-driven JavaScript -->
+    <script src="map-renderer.js"></script>
+</body>
+</html>

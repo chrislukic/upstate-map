@@ -1,0 +1,1222 @@
+[
+  {
+    "name": "Apple Dave’s Orchards",
+    "address": "82 Four Corners Rd, Warwick, NY 10990",
+    "lat": 41.2949097,
+    "lng": -74.3080258,
+    "website": "https://www.appledavesorchards.com/",
+    "place_id": "ChIJ-WKYqOElw4kRnrRX163_VpI",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Orchard + distillery; admission on peak weekends",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Apple Ridge Orchards",
+    "address": "101 Jessup Rd, Warwick, NY 10990",
+    "lat": 41.2908643,
+    "lng": -74.3831829,
+    "website": "https://appleridgeorchards.com/",
+    "place_id": "ChIJ9R6QZiIlw4kRFpVPNnUQzdk",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Thu–Sun hours; cash for admission/PYO; family activities",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Apple Ridge Orchards",
+    "address": "101 Jessup Rd, Warwick, NY 10990",
+    "lat": 41.256,
+    "lng": -74.36,
+    "website": "https://appleridgeorchards.com/",
+    "place_id": "ChIJr5Fg0-dYwokRVB0ArZg6x9E",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "Late June through late August",
+        "season_start_week": 26,
+        "season_end_week": 35,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Barton Orchards",
+    "address": "63 Apple Tree Ln, Poughquag, NY 12570",
+    "lat": 41.607343,
+    "lng": -73.7054021,
+    "website": "https://www.bartonorchards.com/",
+    "place_id": "ChIJIZmdtHxE3YkRY9bepNNHq2g",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Large festival-style farm; zipline/adventure features; Apple Core shop in Poughkeepsie",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Barton Orchards",
+    "address": "63 Apple Tree Ln, Poughquag, NY 12570",
+    "lat": 41.584,
+    "lng": -73.678,
+    "website": "https://www.bartonorchards.com/",
+    "place_id": "ChIJbY4WHpFM3IkRwxJJxNKIydw",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "Late July through early September",
+        "season_start_week": 30,
+        "season_end_week": 36,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Beak & Skiff Apple Orchards",
+    "address": "2708 Lords Hill Rd, LaFayette, NY 13084",
+    "lat": 42.903087,
+    "lng": -76.22279,
+    "website": "https://beakandskiff.com/",
+    "place_id": "ChIJs2zP3pvjj4cReqwNW9YNn6A",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Apple Hill PYO; large destination orchard (≈3.5–4h depending on traffic)",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Bowman Orchards",
+    "address": "147 Sugar Hill Rd, Rexford, NY 12148",
+    "lat": 42.8168812,
+    "lng": -73.8385153,
+    "website": "https://www.bowmanorchards.com/",
+    "place_id": "ChIJU-1VW8wS3okR4NTk-IEd-E0",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Capital Region PYO with many varieties; daily hours in season",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Dr. Davies Farm",
+    "address": "306 NY-304, Congers, NY 10920",
+    "lat": 41.171538,
+    "lng": -73.950537,
+    "website": "https://www.drdaviesfarm.com/",
+    "place_id": "ChIJJwma9O7DwokRT7MsJqwlvpU",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Daily PYO when in season; hayrides & pumpkin patch; cash only for PYO",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "DuBois Farms",
+    "address": "209 Perkinsville Rd, Highland, NY 12528",
+    "lat": 41.680432,
+    "lng": -73.969864,
+    "website": "https://duboisfarms.com/",
+    "place_id": "ChIJt7wgj0Q83YkRfimjpamfJ9E",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Large variety of apples; tavern, pizzeria, donuts",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "DuBois Farms",
+    "address": "209 Perkinsville Rd, Highland, NY 12528",
+    "lat": 41.69,
+    "lng": -74,
+    "website": "https://duboisfarms.com/",
+    "place_id": "ChIJd-6aNyJZ3YkRe0joIRsMEcA",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "Early July through late September",
+        "season_start_week": 27,
+        "season_end_week": 39,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Fishkill Farms",
+    "address": "9 Fishkill Farm Rd, Hopewell Junction, NY 12533",
+    "lat": 41.5180421,
+    "lng": -73.82306009999999,
+    "website": "https://www.fishkillfarms.com/",
+    "place_id": "ChIJbUwNsDRI3YkR8aUEiWs_1MU",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Organic & eco-grown blocks; book timed PYO slots in season",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": true
+      },
+      {
+        "type": "strawberries",
+        "notes": "Organic strawberries; early June PYO with online reservations",
+        "season_description": "Strawberry picking season typically runs from May through July",
+        "season_start_week": 21,
+        "season_end_week": 27,
+        "reservation_required": true,
+        "season": "Spring/Summer",
+        "organic": true
+      },
+      {
+        "type": "cherries",
+        "notes": "Historic 270-acre farm with organic practices; sweet cherry season in mid-July. $5 general admission per group for PYO.",
+        "season_description": "Cherry picking season typically runs from June through July",
+        "season_start_week": 25,
+        "season_end_week": 29,
+        "reservation_required": true,
+        "season": "Summer",
+        "organic": true
+      }
+    ]
+  },
+  {
+    "name": "Fishkill Farms",
+    "address": "9 Fishkill Farm Road, Hopewell Junction, NY 12533",
+    "lat": 41.537,
+    "lng": -73.748,
+    "website": "https://www.fishkillfarms.com/",
+    "place_id": "ChIJy2IlrPAb3IkRfO2M0JrNnlE",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "Mid-July through early September",
+        "season_start_week": 29,
+        "season_end_week": 36,
+        "reservation_required": true,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Fix Bros Fruit Farm",
+    "address": "215 White Birch Road, Hudson, NY 12534",
+    "lat": 42.1890551,
+    "lng": -73.83051499999999,
+    "website": "http://www.fixbrosfruitfarm.com",
+    "place_id": "ChIJQcoOjOWX3YkRMVQVFEgsnj8",
+    "fruits": [
+      {
+        "type": "cherries",
+        "notes": "5th-generation Hudson Valley farm. Sweet cherries usually ripen by end of June. Offers both sweet and sour (Montmorency, Morello) cherry varieties.",
+        "season_description": "Cherry picking season typically runs from June through July",
+        "season_start_week": 25,
+        "season_end_week": 29,
+        "reservation_required": false,
+        "season": "Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Fix Brothers Fruit Farm",
+    "address": "222 White Birch Rd, Hudson, NY 12534",
+    "lat": 42.1890551,
+    "lng": -73.83051499999999,
+    "website": "https://www.fixbrosfruitfarm.com/visit",
+    "place_id": "ChIJQcoOjOWX3YkRMVQVFEgsnj8",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "PYO apples daily in season 10–5; simple, low-key setup",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Golden Harvest Farms",
+    "address": "3074 US-9, Valatie, NY 12184",
+    "lat": 42.4353744,
+    "lng": -73.6865542,
+    "website": "https://www.goldenharvestfarms.com/",
+    "place_id": "ChIJM3wi87rv3YkRtEMGFDTrZUg",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Historic orchard; cider donuts & distillery; confirm PYO status each season",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Greig Farm",
+    "address": "227 Pitcher Ln, Red Hook, NY 12571",
+    "lat": 42.02818329999999,
+    "lng": -73.8538773,
+    "website": "https://www.thegreigfarm.com/",
+    "place_id": "ChIJW0ukxAmg3YkRUGLQv_Yc2Gw",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Scenic paths & goats; multiple apple varieties",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      },
+      {
+        "type": "strawberries",
+        "notes": "Daily strawberry picking late May–June; goats and trails on site",
+        "season_description": "Strawberry picking season typically runs from May through July",
+        "season_start_week": 21,
+        "season_end_week": 27,
+        "reservation_required": false,
+        "season": "Spring/Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Harbes Orchard (North Fork)",
+    "address": "5698 Sound Ave, Riverhead, NY 11901",
+    "lat": 40.978909,
+    "lng": -72.6039461,
+    "website": "https://harbesfamilyfarm.com/harbes-orchard/",
+    "place_id": "ChIJEboXVgKM6IkRcypwNG26FBM",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Big Long Island operation; orchard-only location in Riverhead",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Harvest Moon Farm & Orchard",
+    "address": "130 Hardscrabble Rd, North Salem, NY 10560",
+    "lat": 41.349961,
+    "lng": -73.635145,
+    "website": "https://harvestmoonfarmandorchard.com/",
+    "place_id": "ChIJt-i--GutwokRPyo0w5TWmfo",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Fall festival weekends, onsite cidery/food",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Harvest Moon Farm & Orchard",
+    "address": "130 Hardscrabble Rd, North Salem, NY 10560",
+    "lat": 41.347,
+    "lng": -73.622,
+    "website": "https://harvestmoonfarmandorchard.com/",
+    "place_id": "ChIJ3Wo3EnPLwokRL_N15sQZ-WA",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "Late July through late August",
+        "season_start_week": 30,
+        "season_end_week": 34,
+        "reservation_required": true,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Hurds Family Farm",
+    "address": "2187 NY-32, Modena, NY 12548",
+    "lat": 41.6753647,
+    "lng": -74.1046159,
+    "website": "https://www.hurdsfamilyfarm.com/",
+    "place_id": "ChIJ42yLnvUj3YkR7KpQiPODc5g",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Kid-maximal farm attractions; timed activities on certain days",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Hurds Family Farm",
+    "address": "2187 NY-32, Modena, NY 12548",
+    "lat": 41.675341,
+    "lng": -74.10454059999999,
+    "website": "https://www.hurdsfamilyfarm.com/",
+    "place_id": "ChIJ42yLnvUj3YkR7KpQiPODc5g",
+    "fruits": [
+      {
+        "type": "strawberries",
+        "notes": "125-acre farm; strawberry season early June with family activities",
+        "season_description": "Strawberry picking season typically runs from May through July",
+        "season_start_week": 21,
+        "season_end_week": 27,
+        "reservation_required": false,
+        "season": "Spring/Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Indian Ladder Farms",
+    "address": "342 Altamont Voorheesville Rd, Altamont, NY 12009",
+    "lat": 42.655366,
+    "lng": -73.97335199999999,
+    "website": "https://www.indianladderfarms.com/pick-your-own/",
+    "place_id": "ChIJy9vCWYLY3YkRiFl0KM-PU8Y",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Daily PYO (weather permitting); cidery & biergarten on site",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Lawrence Farms Orchards",
+    "address": "306 Frozen Ridge Rd, Newburgh, NY 12550",
+    "lat": 41.574655,
+    "lng": -74.02487119999999,
+    "website": "https://lawrencefarmsorchards.org/",
+    "place_id": "ChIJtUotWxww3YkRpx3IfbhQLVs",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Family orchard with wide mix of PYO; scenic hilltop views",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      },
+      {
+        "type": "strawberries",
+        "notes": "June strawberry PYO; family-friendly hillside farm",
+        "season_description": "Strawberry picking season typically runs from May through July",
+        "season_start_week": 21,
+        "season_end_week": 27,
+        "reservation_required": false,
+        "season": "Spring/Summer",
+        "organic": false
+      },
+      {
+        "type": "cherries",
+        "notes": "Diverse 30-year PYO farm with scenic views. Sweet cherry season typically late June–early July. Charges a per-person farm admission (applied to purchase).",
+        "season_description": "Cherry picking season typically runs from June through July",
+        "season_start_week": 25,
+        "season_end_week": 29,
+        "reservation_required": false,
+        "season": "Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Lawrence Farms Orchards",
+    "address": "39 Colandrea Rd, Newburgh, NY 12550",
+    "lat": 41.557,
+    "lng": -74.079,
+    "website": "https://lawrencefarmsorchards.org/",
+    "place_id": "ChIJ5ceUiEF91IkRML7Lsd7CVrk",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "Late July through August",
+        "season_start_week": 29,
+        "season_end_week": 35,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Lewin Farms",
+    "address": "812 Sound Ave, Calverton, NY 11933",
+    "lat": 40.9471371,
+    "lng": -72.81008489999999,
+    "website": "https://www.lewinfarm.com/new-page-1",
+    "place_id": "ChIJFfArEk5n6IkRtsa8BhztdPo",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Long Island original U-Pick; daily hours typically 9–4:30 (closed Tue)",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Lewin Farms",
+    "address": "812 Sound Ave, Calverton, NY 11933",
+    "lat": 40.939,
+    "lng": -72.728,
+    "website": "http://www.lewinfarm.com/",
+    "place_id": "ChIJvw1M_cNm6IkRXB72LSwzGg4",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "July through September",
+        "season_start_week": 28,
+        "season_end_week": 39,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Masker Orchards",
+    "address": "45 Ball Rd, Warwick, NY 10990",
+    "lat": 41.239093,
+    "lng": -74.3457698,
+    "website": "https://www.maskers.com/",
+    "place_id": "ChIJm1OL23kkw4kRY4nd7KwGHRo",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Drive-to-rows style; dog-friendly; one PYO bag per car policy",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Mead Orchards",
+    "address": "15 Scism Road, Tivoli, NY 12583",
+    "lat": 42.04425,
+    "lng": -73.8545456,
+    "website": "https://www.meadorchards.com",
+    "place_id": "ChIJJUQF7Reg3YkRFUNVkd2IDBw",
+    "fruits": [
+      {
+        "type": "cherries",
+        "notes": "100-acre family orchard; sweet cherries usually available late June through mid-July. Open on weekends for PYO in season.",
+        "season_description": "Cherry picking season typically runs from June through July",
+        "season_start_week": 25,
+        "season_end_week": 29,
+        "reservation_required": false,
+        "season": "Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Minard's Family Farm",
+    "address": "250 Hurds Rd, Clintondale, NY 12515",
+    "lat": 41.7086397,
+    "lng": -74.0695538,
+    "website": "https://www.minardsfamilyfarms.com/",
+    "place_id": "ChIJRceB4hgj3YkReyZIOcHLYog",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Large family attraction; U-Pick calendar; hayrides; kids activities",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": false
+      },
+      {
+        "type": "strawberries",
+        "notes": "June strawberry fields; kids' play areas & hayrides",
+        "season_description": "Strawberry picking season typically runs from May through July",
+        "season_start_week": 21,
+        "season_end_week": 27,
+        "reservation_required": true,
+        "season": "Spring/Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Ochs Orchard",
+    "address": "4 Ochs Ln, Warwick, NY 10990",
+    "lat": 41.2339691,
+    "lng": -74.365234,
+    "website": "http://ochsorchard.net/",
+    "place_id": "ChIJYdz0TXojw4kRf6owM41l_cs",
+    "fruits": [
+      {
+        "type": "strawberries",
+        "notes": "Warwick-area farm; June strawberry PYO plus scenic overlook",
+        "season_description": "Strawberry picking season typically runs from May through July",
+        "season_start_week": 21,
+        "season_end_week": 27,
+        "reservation_required": false,
+        "season": "Spring/Summer",
+        "organic": false
+      },
+      {
+        "type": "cherries",
+        "notes": "Family farm with farm stand and petting zoo. Sweet cherries available for PYO in late June to early July. Open daily in season (call ahead for crop updates).",
+        "season_description": "Cherry picking season typically runs from June through July",
+        "season_start_week": 25,
+        "season_end_week": 29,
+        "reservation_required": false,
+        "season": "Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Ochs Orchard",
+    "address": "4 Ochs Ln, Warwick, NY 10990",
+    "lat": 41.27,
+    "lng": -74.377,
+    "website": "https://www.ochsorchard.com/",
+    "place_id": "ChIJa-2b44TXwokRFpgUHlDmTaM",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "July through September",
+        "season_start_week": 28,
+        "season_end_week": 38,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Orchards of Concklin",
+    "address": "2 S Mountain Rd, Pomona, NY 10970",
+    "lat": 41.1786064,
+    "lng": -74.0320457,
+    "website": "https://www.orchardsofconcklin.com/",
+    "place_id": "ChIJO088Aa7cwokR8UR9tT5rG9U",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Weekend PYO with bag purchase; longtime Rockland fixture",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Outhouse Orchards",
+    "address": "139 Hardscrabble Rd, North Salem, NY 10560",
+    "lat": 41.3467189,
+    "lng": -73.6309866,
+    "website": "https://www.outhouseorchardsny.com/u-pick-1",
+    "place_id": "ChIJfei--GutwokRJ-e1ch6ip3g",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "PYO apples Sept–Oct; corn maze & hayrides",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Outhouse Orchards",
+    "address": "139 Hardscrabble Rd, North Salem, NY 10560",
+    "lat": 41.336,
+    "lng": -73.628,
+    "website": "https://www.outhouseorchardsny.com/",
+    "place_id": "ChIJv0YyVXfLwokRKskcV_-sCvw",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "August through early September",
+        "season_start_week": 32,
+        "season_end_week": 36,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Pennings Orchard",
+    "address": "169 State Route 94 S, Warwick, NY 10990",
+    "lat": 41.23568,
+    "lng": -74.38675,
+    "website": "https://www.penningsorchard.com/",
+    "place_id": "ChIJ9avc9kIjw4kRtffB80rcNMc",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Multiple sites (market, cidery, east/west orchards)",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Prospect Hill Orchards",
+    "address": "340 Milton Turnpike, Milton, NY 12547",
+    "lat": 41.6670029,
+    "lng": -73.9933614,
+    "website": "https://prospecthillorchards.com/",
+    "place_id": "ChIJXctnp3g83YkR_3WaPcgoGwU",
+    "fruits": [
+      {
+        "type": "strawberries",
+        "notes": "Weekend strawberry picking in June; family-run farm",
+        "season_description": "Strawberry picking season typically runs from May through July",
+        "season_start_week": 21,
+        "season_end_week": 27,
+        "reservation_required": false,
+        "season": "Spring/Summer",
+        "organic": false
+      },
+      {
+        "type": "cherries",
+        "notes": "7th-generation Hudson Valley orchard. PYO cherries held on weekends from end of June to early July; $5 parking fee during cherry season.",
+        "season_description": "Cherry picking season typically runs from June through July",
+        "season_start_week": 25,
+        "season_end_week": 29,
+        "reservation_required": false,
+        "season": "Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Prospect Hill Orchards",
+    "address": "340 Milton Turnpike, Milton, NY 12547",
+    "lat": 41.643,
+    "lng": -73.995,
+    "website": "http://www.prospecthillorchards.com/",
+    "place_id": "ChIJ3V9-9RNW3YkRCK2gTxPPWfA",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "July through August",
+        "season_start_week": 28,
+        "season_end_week": 35,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Prospect Hill Orchards (Hilltop)",
+    "address": "340 Milton Turnpike, Milton, NY 12547",
+    "lat": 41.6670029,
+    "lng": -73.9933614,
+    "website": "https://prospecthillorchards.com/",
+    "place_id": "ChIJXctnp3g83YkR_3WaPcgoGwU",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Multiple sites; Hilltop is the apple PYO location",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Rose Hill Farm",
+    "address": "19 Rose Hill Farm, Red Hook, NY 12571",
+    "lat": 42.0093311,
+    "lng": -73.84949139999999,
+    "website": "https://www.pickrosehillfarm.com/",
+    "place_id": "ChIJySsB7LYK3YkRV3SyLPKEKL4",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Historic orchard; quiet/low-key PYO; onsite cider/ferments nearby",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      },
+      {
+        "type": "cherries",
+        "notes": "Historic 1798 farm with IPM practices; offers 20+ varieties of sweet and tart cherries from late June to early July. Open Thurs–Sun in cherry season.",
+        "season_description": "Cherry picking season typically runs from June through July",
+        "season_start_week": 25,
+        "season_end_week": 29,
+        "reservation_required": false,
+        "season": "Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Samascott Orchards",
+    "address": "5 Sunset Ave, Kinderhook, NY 12106",
+    "lat": 42.3988457,
+    "lng": -73.70410389999999,
+    "website": "https://www.samascottorchards.com/",
+    "place_id": "ChIJ0Rpn9Yju3YkRSrbeGbj-MAM",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Open Wed–Mon 9–5 (last entry 4pm); broad crop list; check status",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Saratoga Apple",
+    "address": "1174 NY-29, Schuylerville, NY 12871",
+    "lat": 43.105695,
+    "lng": -73.58952339999999,
+    "website": "https://www.saratogaapple.farm/index.php/pick-your-own/",
+    "place_id": "ChIJT5BYHOYu3okR9EbbjFmTIsE",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Daily PYO during harvest; farm stand open year-round",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Soons Orchards",
+    "address": "23 Soons Cir, New Hampton, NY 10958",
+    "lat": 41.4026718,
+    "lng": -74.4036622,
+    "website": "https://www.soonsorchards.com/u-pick",
+    "place_id": "ChIJ5VfFQgAuw4kRNXhCq9dWTd0",
+    "fruits": [
+      {
+        "type": "strawberries",
+        "notes": "PYO strawberries weekends in June; check hotline for conditions",
+        "season_description": "Strawberry picking season typically runs from May through July",
+        "season_start_week": 21,
+        "season_end_week": 27,
+        "reservation_required": false,
+        "season": "Spring/Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Soons Orchards (U-Pick Orchard)",
+    "address": "634 County Route 50, New Hampton, NY 10958",
+    "lat": 41.4026718,
+    "lng": -74.4036622,
+    "website": "https://www.soonsorchards.com/u-pick",
+    "place_id": "ChIJ5VfFQgAuw4kRNXhCq9dWTd0",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Weekend PYO in season; check hotline for status",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Stone Ridge Orchard",
+    "address": "3012 NY-213, Stone Ridge, NY 12484",
+    "lat": 41.838664,
+    "lng": -74.1485038,
+    "website": "https://www.stoneridgeorchard.com/",
+    "place_id": "ChIJvUryiR4c3YkRMaqvMTTngnc",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "U-Pick apples & Asian pears from Labor Day weekend through Oct",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Stuart's Fruit Farm",
+    "address": "62 Granite Springs Rd, Granite Springs, NY 10527",
+    "lat": 41.314,
+    "lng": -73.756,
+    "website": "http://www.stuartsfarm.com/",
+    "place_id": "ChIJmWF32EQK6IkRNRhKtfu6zrk",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "August",
+        "season_start_week": 33,
+        "season_end_week": 35,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Stuart’s Fruit Farm",
+    "address": "62 Granite Springs Rd, Granite Springs, NY 10527",
+    "lat": 41.3084272,
+    "lng": -73.7662442,
+    "website": "https://www.stuartsfarm.com/",
+    "place_id": "ChIJGZ1WiqO2wokR7-7LGjMivgE",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Cash/check often preferred; low-key, old-school vibe",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "The Milk Pail U-Pick",
+    "address": "50 Horsemill Ln, Water Mill, NY 11976",
+    "lat": 40.9085078,
+    "lng": -72.32028489999999,
+    "website": "https://milk-pail.com/",
+    "place_id": "ChIJ-z9yoDq-6IkR68I8eP-Ie2M",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Hamptons U-Pick apples & pumpkins; typical hours 10–5:30 on weekends",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": "no (open Fri–Sun in season)",
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Twin Star Orchards",
+    "address": "155 N Ohioville Rd, New Paltz, NY 12561",
+    "lat": 41.7572604,
+    "lng": -74.04958839999999,
+    "website": "https://www.twinstarorchards.com/",
+    "place_id": "ChIJVZoPWRMY3YkRBbKNNVrLqPw",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "PYO + wood-fired pizza/BBQ & Brooklyn Cider House; coords approximate to New Paltz centroid",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Weed Orchards & Winery",
+    "address": "43 Mount Zion Rd, Marlboro, NY 12542",
+    "lat": 41.623137,
+    "lng": -74.0009154,
+    "website": "https://www.weedorchards.com/",
+    "place_id": "ChIJLyrEZB473YkRFkOx4bcPJGs",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Multiple apple varieties; live music & food on event weekends",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": true,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Weed Orchards & Winery",
+    "address": "43 Mount Zion Road, Marlboro, NY 12542",
+    "lat": 41.618,
+    "lng": -74.022,
+    "website": "https://www.weedorchards.com/",
+    "place_id": "ChIJCws5R8NZ3YkRX2Zx5EzrFQg",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "Late July through early September",
+        "season_start_week": 30,
+        "season_end_week": 36,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Wickham's Fruit Farm",
+    "address": "28700 Main Rd, Cutchogue, NY 11935",
+    "lat": 41.0121351,
+    "lng": -72.4840136,
+    "website": "https://wickhamsfruitfarm.com/",
+    "place_id": "ChIJXeGjPVCQ6IkRR-JIBvbB1Vk",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Historic North Fork farm; seasonal PYO incl. apples; closed Sundays",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      },
+      {
+        "type": "cherries",
+        "notes": "Large 300-acre North Fork farm (est. 1661). U-Pick is members-only ($20 annual family membership). Sweet cherries available for picking in early July.",
+        "season_description": "Cherry picking season typically runs from June through July",
+        "season_start_week": 25,
+        "season_end_week": 29,
+        "reservation_required": true,
+        "season": "Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Wilkens Fruit & Fir Farm",
+    "address": "1335 White Hill Rd, Yorktown Heights, NY 10598",
+    "lat": 41.2780064,
+    "lng": -73.825319,
+    "website": "https://wilkensfarm.com/",
+    "place_id": "ChIJZXLvw863wokR2JyXrb1MnAw",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Classic Westchester PYO; bakery & market on site",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Wilkens Fruit & Fir Farm",
+    "address": "1335 White Hill Rd, Yorktown Heights, NY 10598",
+    "lat": 41.27,
+    "lng": -73.803,
+    "website": "http://wilkensfarm.com/",
+    "place_id": "ChIJD2yrzY6HwokRI-aCr0y_sjE",
+    "fruits": [
+      {
+        "type": "peaches",
+        "notes": "",
+        "season_description": "Mid-August through early September",
+        "season_start_week": 33,
+        "season_end_week": 35,
+        "reservation_required": false,
+        "season": "Peach Season",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Wright's Farm",
+    "address": "699 NY-208, Gardiner, NY 12525",
+    "lat": 41.66738429999999,
+    "lng": -74.1375185,
+    "website": "https://eatapples.com/pick/",
+    "place_id": "ChIJeRc_77om3YkRi8ARdHWVEj4",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Daily PYO Sept–Oct; entrance closes ~4:30pm; dogs welcome",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      },
+      {
+        "type": "strawberries",
+        "notes": "Large farm; strawberry season mid-June; dogs welcome",
+        "season_description": "Strawberry picking season typically runs from May through July",
+        "season_start_week": 21,
+        "season_end_week": 27,
+        "reservation_required": false,
+        "season": "Spring/Summer",
+        "organic": false
+      },
+      {
+        "type": "cherries",
+        "notes": "5th-generation 453-acre farm known for apples and more. Cherry picking in late June through early July. No reservations needed; open daily for PYO when in season.",
+        "season_description": "Cherry picking season typically runs from June through July",
+        "season_start_week": 25,
+        "season_end_week": 29,
+        "reservation_required": false,
+        "season": "Summer",
+        "organic": false
+      }
+    ]
+  },
+  {
+    "name": "Yonder Fruit Farms",
+    "address": "Valatie, NY (see site for directions)",
+    "lat": 42.4516637,
+    "lng": -73.6942977,
+    "website": "https://www.yonderfruitfarms.com/",
+    "place_id": "ChIJaySqnMTv3YkRuvS4e0aUPyA",
+    "fruits": [
+      {
+        "type": "apples",
+        "notes": "Weekend PYO with posted variety/pricing; local favorite",
+        "season_description": "Apple picking season typically runs from September through November",
+        "season_start_week": 34,
+        "season_end_week": 42,
+        "reservation_required": false,
+        "season": "Fall",
+        "organic": false
+      }
+    ]
+  }
+]
