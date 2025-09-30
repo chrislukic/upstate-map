@@ -1665,7 +1665,8 @@
             -73.9772
           ],
           "travelTime": "0h 00m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.mta.info/stations/grand-central-terminal"
         },
         {
           "name": "Yonkers",
@@ -1674,7 +1675,8 @@
             -73.8988
           ],
           "travelTime": "0h 25m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/yonkers-ny-yny/"
         },
         {
           "name": "Tarrytown",
@@ -1683,7 +1685,8 @@
             -73.8587
           ],
           "travelTime": "0h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/tarrytown"
         },
         {
           "name": "Peekskill",
@@ -1692,7 +1695,8 @@
             -73.9204
           ],
           "travelTime": "1h 05m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/peekskill"
         },
         {
           "name": "Cold Spring",
@@ -1701,7 +1705,8 @@
             -73.9544
           ],
           "travelTime": "1h 20m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/cold-spring"
         },
         {
           "name": "Beacon",
@@ -1710,7 +1715,8 @@
             -73.9696
           ],
           "travelTime": "1h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/beacon"
         },
         {
           "name": "New Hamburg",
@@ -1719,7 +1725,8 @@
             -73.9487
           ],
           "travelTime": "1h 40m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/new-hamburg"
         },
         {
           "name": "Poughkeepsie",
@@ -1728,7 +1735,8 @@
             -73.9301
           ],
           "travelTime": "1h 50m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.greatamericanstations.com/stations/poughkeepsie-ny-pou/"
         }
       ]
     },
@@ -1745,7 +1753,8 @@
             -73.9772
           ],
           "travelTime": "0h 00m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.mta.info/stations/grand-central-terminal"
         },
         {
           "name": "Harlem-125th St",
@@ -1754,7 +1763,8 @@
             -73.9456
           ],
           "travelTime": "0h 10m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/harlem-125-street"
         },
         {
           "name": "Mount Vernon West",
@@ -1763,7 +1773,8 @@
             -73.8371
           ],
           "travelTime": "0h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/mount-vernon-west"
         },
         {
           "name": "White Plains",
@@ -1772,7 +1783,8 @@
             -73.7625
           ],
           "travelTime": "0h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/white-plains"
         },
         {
           "name": "North White Plains",
@@ -1781,7 +1793,8 @@
             -73.7778
           ],
           "travelTime": "0h 55m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/north-white-plains"
         },
         {
           "name": "Valhalla",
@@ -1790,7 +1803,8 @@
             -73.7778
           ],
           "travelTime": "1h 05m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/valhalla"
         },
         {
           "name": "Mount Kisco",
@@ -1799,7 +1813,8 @@
             -73.7292
           ],
           "travelTime": "1h 15m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/mount-kisco"
         },
         {
           "name": "Bedford Hills",
@@ -1808,7 +1823,8 @@
             -73.6944
           ],
           "travelTime": "1h 25m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/bedford-hills"
         },
         {
           "name": "Katonah",
@@ -1817,7 +1833,8 @@
             -73.6847
           ],
           "travelTime": "1h 35m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/katonah"
         },
         {
           "name": "Golden's Bridge",
@@ -1826,7 +1843,8 @@
             -73.6708
           ],
           "travelTime": "1h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/goldens-bridge"
         },
         {
           "name": "Purdy's",
@@ -1835,7 +1853,8 @@
             -73.6583
           ],
           "travelTime": "1h 55m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/purdys"
         },
         {
           "name": "Croton Falls",
@@ -1844,7 +1863,8 @@
             -73.6611
           ],
           "travelTime": "2h 05m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/croton-falls"
         },
         {
           "name": "Brewster",
@@ -1853,7 +1873,8 @@
             -73.6167
           ],
           "travelTime": "2h 15m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.mta.info/stations/brewster"
         }
       ]
     },
@@ -1870,7 +1891,8 @@
             -73.9772
           ],
           "travelTime": "0h 00m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.mta.info/stations/grand-central-terminal"
         },
         {
           "name": "Harlem-125th St",
@@ -1879,7 +1901,8 @@
             -73.9456
           ],
           "travelTime": "0h 10m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/harlem-125-street"
         },
         {
           "name": "Fordham",
@@ -1888,7 +1911,8 @@
             -73.8944
           ],
           "travelTime": "0h 20m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/fordham"
         },
         {
           "name": "Mount Vernon East",
@@ -1897,7 +1921,8 @@
             -73.8371
           ],
           "travelTime": "0h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/mount-vernon-east"
         },
         {
           "name": "Pelham",
@@ -1906,7 +1931,8 @@
             -73.8083
           ],
           "travelTime": "0h 40m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/pelham"
         },
         {
           "name": "New Rochelle",
@@ -1915,7 +1941,8 @@
             -73.7833
           ],
           "travelTime": "0h 50m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/new-rochelle-ny-nro/"
         },
         {
           "name": "Larchmont",
@@ -1924,7 +1951,8 @@
             -73.7583
           ],
           "travelTime": "1h 00m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/larchmont"
         },
         {
           "name": "Mamaroneck",
@@ -1933,7 +1961,8 @@
             -73.7333
           ],
           "travelTime": "1h 10m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/mamaroneck"
         },
         {
           "name": "Rye",
@@ -1942,7 +1971,8 @@
             -73.6833
           ],
           "travelTime": "1h 20m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/rye"
         },
         {
           "name": "Port Chester",
@@ -1951,7 +1981,8 @@
             -73.6667
           ],
           "travelTime": "1h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/port-chester"
         },
         {
           "name": "Greenwich",
@@ -1960,7 +1991,8 @@
             -73.625
           ],
           "travelTime": "1h 40m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/greenwich"
         },
         {
           "name": "Cos Cob",
@@ -1969,7 +2001,8 @@
             -73.6
           ],
           "travelTime": "1h 50m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/cos-cob"
         },
         {
           "name": "Riverside",
@@ -1978,7 +2011,8 @@
             -73.5833
           ],
           "travelTime": "2h 00m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/riverside"
         },
         {
           "name": "Old Greenwich",
@@ -1987,7 +2021,8 @@
             -73.5667
           ],
           "travelTime": "2h 10m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.mta.info/stations/old-greenwich"
         },
         {
           "name": "Stamford",
@@ -1996,7 +2031,8 @@
             -73.5333
           ],
           "travelTime": "2h 20m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.greatamericanstations.com/stations/stamford-ct-stm/"
         }
       ]
     },
@@ -2013,7 +2049,8 @@
             -73.9934
           ],
           "travelTime": "0h 00m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.greatamericanstations.com/stations/new-york-penn-station-ny-nyp/"
         },
         {
           "name": "Yonkers",
@@ -2022,7 +2059,8 @@
             -73.8988
           ],
           "travelTime": "0h 20m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/yonkers-ny-yny/"
         },
         {
           "name": "Croton-Harmon",
@@ -2031,7 +2069,8 @@
             -73.8889
           ],
           "travelTime": "0h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/croton-harmon-ny-crt/"
         },
         {
           "name": "Poughkeepsie",
@@ -2040,7 +2079,8 @@
             -73.9301
           ],
           "travelTime": "1h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/poughkeepsie-ny-pou/"
         },
         {
           "name": "Rhinecliff",
@@ -2049,7 +2089,8 @@
             -73.9528
           ],
           "travelTime": "1h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/rhinecliff-ny-rhi/"
         },
         {
           "name": "Hudson",
@@ -2058,7 +2099,8 @@
             -73.7917
           ],
           "travelTime": "2h 15m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/hudson-ny-hud/"
         },
         {
           "name": "Albany-Rensselaer",
@@ -2067,7 +2109,8 @@
             -73.7417
           ],
           "travelTime": "2h 45m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.greatamericanstations.com/stations/albany-rensselaer-ny-alb/"
         }
       ]
     },
@@ -2084,7 +2127,8 @@
             -73.9934
           ],
           "travelTime": "0h 00m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.greatamericanstations.com/stations/new-york-penn-station-ny-nyp/"
         },
         {
           "name": "Yonkers",
@@ -2093,7 +2137,8 @@
             -73.8988
           ],
           "travelTime": "0h 20m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/yonkers-ny-yny/"
         },
         {
           "name": "Croton-Harmon",
@@ -2102,7 +2147,8 @@
             -73.8889
           ],
           "travelTime": "0h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/croton-harmon-ny-crt/"
         },
         {
           "name": "Poughkeepsie",
@@ -2111,7 +2157,8 @@
             -73.9301
           ],
           "travelTime": "1h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/poughkeepsie-ny-pou/"
         },
         {
           "name": "Rhinecliff",
@@ -2120,7 +2167,8 @@
             -73.9528
           ],
           "travelTime": "1h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/rhinecliff-ny-rhi/"
         },
         {
           "name": "Hudson",
@@ -2129,7 +2177,8 @@
             -73.7917
           ],
           "travelTime": "2h 15m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/hudson-ny-hud/"
         },
         {
           "name": "Albany-Rensselaer",
@@ -2138,7 +2187,8 @@
             -73.7417
           ],
           "travelTime": "2h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/albany-rensselaer-ny-alb/"
         },
         {
           "name": "Schenectady",
@@ -2147,7 +2197,8 @@
             -73.9333
           ],
           "travelTime": "3h 15m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/schenectady-ny-sdy/"
         },
         {
           "name": "Saratoga Springs",
@@ -2156,7 +2207,8 @@
             -73.8167
           ],
           "travelTime": "3h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/saratoga-springs-ny-sar/"
         },
         {
           "name": "Fort Edward",
@@ -2165,7 +2217,8 @@
             -73.5833
           ],
           "travelTime": "4h 15m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/fort-edward-ny-fed/"
         },
         {
           "name": "Whitehall",
@@ -2174,7 +2227,8 @@
             -73.4
           ],
           "travelTime": "4h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/whitehall-ny-whl/"
         },
         {
           "name": "Ticonderoga",
@@ -2183,7 +2237,8 @@
             -73.4167
           ],
           "travelTime": "5h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/ticonderoga-ny-ftc/"
         },
         {
           "name": "Port Henry",
@@ -2192,7 +2247,8 @@
             -73.45
           ],
           "travelTime": "6h 00m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/port-henry-ny-poh/"
         },
         {
           "name": "Westport",
@@ -2201,7 +2257,8 @@
             -73.4333
           ],
           "travelTime": "6h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/westport-ny-wsp/"
         },
         {
           "name": "Port Kent",
@@ -2210,7 +2267,8 @@
             -73.4167
           ],
           "travelTime": "7h 15m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/port-kent-ny-prk/"
         },
         {
           "name": "Plattsburgh",
@@ -2219,7 +2277,8 @@
             -73.45
           ],
           "travelTime": "7h 45m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.greatamericanstations.com/stations/plattsburgh-ny-plb/"
         }
       ]
     },
@@ -2236,7 +2295,8 @@
             -73.9934
           ],
           "travelTime": "0h 00m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.greatamericanstations.com/stations/new-york-penn-station-ny-nyp/"
         },
         {
           "name": "Yonkers",
@@ -2245,7 +2305,8 @@
             -73.8988
           ],
           "travelTime": "0h 20m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/yonkers-ny-yny/"
         },
         {
           "name": "Croton-Harmon",
@@ -2254,7 +2315,8 @@
             -73.8889
           ],
           "travelTime": "0h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/croton-harmon-ny-crt/"
         },
         {
           "name": "Poughkeepsie",
@@ -2263,7 +2325,8 @@
             -73.9301
           ],
           "travelTime": "1h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/poughkeepsie-ny-pou/"
         },
         {
           "name": "Rhinecliff",
@@ -2272,7 +2335,8 @@
             -73.9528
           ],
           "travelTime": "1h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/rhinecliff-ny-rhi/"
         },
         {
           "name": "Hudson",
@@ -2281,7 +2345,8 @@
             -73.7917
           ],
           "travelTime": "2h 15m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/hudson-ny-hud/"
         },
         {
           "name": "Albany-Rensselaer",
@@ -2290,7 +2355,8 @@
             -73.7417
           ],
           "travelTime": "2h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/albany-rensselaer-ny-alb/"
         },
         {
           "name": "Schenectady",
@@ -2299,7 +2365,8 @@
             -73.9333
           ],
           "travelTime": "3h 15m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/schenectady-ny-sdy/"
         },
         {
           "name": "Amsterdam",
@@ -2308,7 +2375,8 @@
             -74.1833
           ],
           "travelTime": "3h 45m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/amsterdam-ny-ams/"
         },
         {
           "name": "Utica",
@@ -2317,7 +2385,8 @@
             -75.2333
           ],
           "travelTime": "4h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/utica-ny-uca/"
         },
         {
           "name": "Rome",
@@ -2326,7 +2395,8 @@
             -75.45
           ],
           "travelTime": "5h 00m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/rome-ny-rom/"
         },
         {
           "name": "Syracuse",
@@ -2335,7 +2405,8 @@
             -76.15
           ],
           "travelTime": "5h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/syracuse-ny-syr/"
         },
         {
           "name": "Rochester",
@@ -2344,7 +2415,8 @@
             -77.6167
           ],
           "travelTime": "6h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/rochester-ny-roc/"
         },
         {
           "name": "Buffalo-Depew",
@@ -2353,7 +2425,8 @@
             -78.7167
           ],
           "travelTime": "7h 30m",
-          "type": "station"
+          "type": "station",
+          "website": "https://www.greatamericanstations.com/stations/buffalo-ny-buf/"
         },
         {
           "name": "Buffalo-Exchange Street",
@@ -2362,7 +2435,8 @@
             -78.8667
           ],
           "travelTime": "7h 45m",
-          "type": "terminal"
+          "type": "terminal",
+          "website": "https://www.greatamericanstations.com/stations/buffalo-ny-bfx/"
         }
       ]
     }
