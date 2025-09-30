@@ -772,6 +772,12 @@ html, body {
   opacity: 0.7;
 }
 
+/* Strike through just the label on hover for out-of-season items */
+.pyo-item.out-of-season:hover .pyo-label {
+  text-decoration: line-through;
+  color: #999;
+}
+
 .pyo-item.out-of-season span {
   filter: grayscale(100%);
 }
