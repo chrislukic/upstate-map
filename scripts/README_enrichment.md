@@ -1,12 +1,13 @@
-# Google Maps Enrichment — Overview
+# Google Maps Enrichment Script
 
-Preferred script: `maintenance/enrich_with_google_maps_enhanced.py`
-
-Enriches datasets with Google Maps place IDs, direct Maps URLs, and authoritative coordinates. Creates timestamped backups automatically.
+This script enriches all datasets with Google Maps place IDs and creates direct links to Google Maps for each location.
 
 ## Setup
 
-1. **Install dependencies:** see `scripts/README_configuration.md`
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 2. **Set up your Google Maps API key:**
    
@@ -27,19 +28,20 @@ Enriches datasets with Google Maps place IDs, direct Maps URLs, and authoritativ
    - Create credentials (API key)
    - Restrict the API key to only the Places API for security
 
-## Usage (enhanced)
+## Usage
 
+Run the enrichment script:
 ```bash
 cd scripts
-python maintenance/enrich_with_google_maps_enhanced.py --dry-run   # safe preview
-python maintenance/enrich_with_google_maps_enhanced.py             # apply changes
+python enrich_with_google_maps.py
 ```
 
 The script will:
-- Process datasets (waterfalls, breweries, restaurants, PYO, POIs, cities, etc.)
-- Find Google Place IDs; add `place_id` and `google_maps_url`
-- Update coordinates from Google (when confident)
-- Write backups to `/backups` and show progress/stats
+- Process all datasets: waterfalls, breweries, restaurants, cities
+- Find Google Maps place IDs for each location
+- Add `place_id` and `google_maps_url` fields to each record
+- Save the enriched data back to the original files
+- Show progress and results for each dataset
 
 ## What it adds
 
@@ -49,11 +51,11 @@ Each location will get two new fields:
 
 ## Features
 
-- **Backups**: timestamped backups to `/backups`
-- **Retry & error recovery**: resilient requests with limited retries
-- **Skip existing**: won’t re-process already enriched items
-- **Context-aware**: smarter queries (e.g., “waterfall”, “brewery”)
-- **Progress & logging**: console + file logs
+- **Rate limiting**: Respects Google's API limits with 100ms delays
+- **Error handling**: Continues processing even if some locations fail
+- **Skip existing**: Won't re-process already enriched locations
+- **Context-aware**: Uses location context (e.g., "waterfall", "brewery") for better matching
+- **Progress tracking**: Shows detailed progress for each dataset
 
 ## After running
 
