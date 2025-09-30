@@ -457,7 +457,12 @@ class ImprovedGoogleMapsEnricher:
             ("waterfalls.json", "waterfall", False),
             ("breweries.json", "brewery", False),
             ("restaurants.json", "restaurant", False),
-            ("orchards_points.json", "orchard", False),
+            # Consolidated PYO farms dataset
+            ("pyo-fruit-farms.json", "farm", False),
+            # Enabled additional datasets
+            ("points_of_interest.json", "poi", False),
+            ("children.json", "children", False),
+            # Note: our-airbnbs.json intentionally excluded per request
         ]
         
         # Enrich individual datasets
