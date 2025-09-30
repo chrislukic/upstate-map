@@ -171,28 +171,23 @@ class PopupBuilder {
       return null;
     }
 
-    // Prefer destination place_id if available
-    let destinationParam = null;
-    const placeId = data.place_id || null;
+    // Build destination using name + full address (no place_id)
+    const name = data.name || data.title || '';
+    const fullAddress = data.formatted_address || data.geocodedAddress || data.address || data.location || '';
 
-    // Try to parse place_id from google_maps_url if not set directly
-    let parsedPlaceId = null;
-    if (!placeId && typeof data.google_maps_url === 'string') {
-      const match = data.google_maps_url.match(/place_id:([^&]+)/);
-      if (match && match[1]) parsedPlaceId = match[1];
-    }
-
-    if (placeId || parsedPlaceId) {
-      destinationParam = `place_id:${placeId || parsedPlaceId}`;
+    let destinationParam = '';
+    if (name && fullAddress) {
+      destinationParam = `${name}, ${fullAddress}`;
+    } else if (fullAddress) {
+      destinationParam = fullAddress;
+    } else if (name) {
+      destinationParam = name;
+    } else if (data.lat != null && data.lng != null) {
+      destinationParam = `${data.lat},${data.lng}`;
     } else {
-      // Fallback to coordinates or address
-      const coordinates = this.getCoordinates(data);
-      Logger.extend('Coordinates for directions:', coordinates);
-      if (coordinates && Array.isArray(coordinates)) {
-        const [lat, lng] = coordinates;
-        destinationParam = `${lat},${lng}`;
-      } else if (data.address || data.location) {
-        destinationParam = encodeURIComponent(data.address || data.location);
+      const coords = this.getCoordinates(data);
+      if (coords && Array.isArray(coords)) {
+        destinationParam = `${coords[0]},${coords[1]}`;
       }
     }
 
@@ -202,7 +197,6 @@ class PopupBuilder {
     }
 
     const originParam = `${this.tripPlan.lat},${this.tripPlan.lng}`;
-    // Use Google Maps Directions with api=1 to support place_id
     const directionsUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(originParam)}&destination=${encodeURIComponent(destinationParam)}`;
     Logger.verbose('Creating directions link:', { origin: originParam, destination: destinationParam, directionsUrl });
 
