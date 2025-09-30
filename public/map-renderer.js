@@ -985,17 +985,32 @@ class ScenicNYMap {
     }
 
     async loadData() {
+        const safeJson = async (res, name, fallback) => {
+            try {
+                if (!res || !res.ok) {
+                    Logger.warn(`Fetch failed for ${name}:`, res && res.status, res && res.statusText);
+                    return fallback;
+                }
+                const ct = (res.headers.get('content-type') || '').toLowerCase();
+                if (!ct.includes('application/json') && !ct.includes('application/geo+json')) {
+                    Logger.warn(`Unexpected content-type for ${name}:`, ct);
+                    return fallback;
+                }
+                return await res.json();
+            } catch (e) {
+                Logger.error(`Failed to parse JSON for ${name}:`, e);
+                return fallback;
+            }
+        };
+
         try {
             const ts = Date.now();
-            const [mapRes, wfRes, brRes, rsRes, orchRes, strawRes, cherryRes, peachRes, childrenRes, trailheadsRes, airbnbsRes, poiRes, regionsRes, eventsRes] = await Promise.all([
+            const [mapRes, wfRes, brRes, rsRes, pyoFarmsRes, childrenRes, trailheadsRes, airbnbsRes, poiRes, regionsRes, eventsRes] = await Promise.all([
                 fetch(`/data/map-data.json?t=${ts}`),
                 fetch(`/data/waterfalls.json?t=${ts}`),
                 fetch(`/data/breweries.json?t=${ts}`),
                 fetch(`/data/restaurants.json?t=${ts}`),
-                fetch(`/data/pyo_apples.json?t=${ts}`),
-                fetch(`/data/pyo_strawberries.json?t=${ts}`),
-                fetch(`/data/pyo_cherries.json?t=${ts}`),
-                fetch(`/data/pyo_peaches.json?t=${ts}`),
+                fetch(`/data/pyo-fruit-farms.json?t=${ts}`),
                 fetch(`/data/children.json?t=${ts}`),
                 fetch(`/data/trail-heads.json?t=${ts}`),
                 fetch(`/data/our-airbnbs.json?t=${ts}`),
@@ -1004,40 +1019,63 @@ class ScenicNYMap {
                 fetch(`/data/events.json?t=${ts}`)
             ]);
 
-            this.data = await mapRes.json();
+            // Map config with fallback to sensible defaults
+            const mapData = await safeJson(mapRes, 'map-data.json', null);
+            if (mapData) {
+                this.data = mapData;
+            } else {
+                Logger.error('map-data.json missing or invalid. Using fallback config.');
+                this.data = {
+                    mapConfig: { center: [42.9, -75.0], zoom: 7 },
+                    tileLayer: {
+                        url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                        attribution: '&copy; OpenStreetMap contributors',
+                        options: {}
+                    },
+                    scenicAreas: [],
+                    cities: [],
+                    trainRoutes: []
+                };
+            }
             this.scenicAreas = this.data.scenicAreas || [];
             this.cities = this.data.cities || [];
 
-            this.waterfalls = wfRes.ok ? await wfRes.json() : [];
-            this.breweries = brRes.ok ? await brRes.json() : [];
-            this.restaurants = rsRes.ok ? await rsRes.json() : [];
-            this.orchardPoints = orchRes.ok ? await orchRes.json() : [];
-            this.strawberryPoints = strawRes.ok ? await strawRes.json() : [];
-            this.cherryPoints = cherryRes.ok ? await cherryRes.json() : [];
-            this.peachPoints = peachRes.ok ? await peachRes.json() : [];
-            this.childrenActivities = childrenRes.ok ? await childrenRes.json() : [];
-            this.trailheads = trailheadsRes.ok ? await trailheadsRes.json() : [];
-            this.airbnbs = airbnbsRes.ok ? await airbnbsRes.json() : [];
-            this.pointsOfInterest = poiRes.ok ? await poiRes.json() : [];
-            if (regionsRes.ok) {
-                this.regions = await regionsRes.json();
-                console.log('Regions loaded:', this.regions.features?.length || 0, 'features');
-            } else {
-            Logger.error('Failed to load regions:', regionsRes.status, regionsRes.statusText);
-                this.regions = [];
-            }
-            // Handle optional events.json gracefully (avoid parsing HTML fallback)
-            try {
-                const isJson = eventsRes.ok && (eventsRes.headers.get('content-type') || '').includes('application/json');
-                this.events = isJson ? await eventsRes.json() : null;
-            } catch (_) {
-                this.events = null;
-            }
+            this.waterfalls = await safeJson(wfRes, 'waterfalls.json', []);
+            this.breweries = await safeJson(brRes, 'breweries.json', []);
+            this.restaurants = await safeJson(rsRes, 'restaurants.json', []);
+            // Consolidated PYO dataset
+            this.orchardPoints = await safeJson(pyoFarmsRes, 'pyo-fruit-farms.json', []);
+            // Clear legacy per-fruit arrays
+            this.strawberryPoints = [];
+            this.cherryPoints = [];
+            this.peachPoints = [];
+
+            this.childrenActivities = await safeJson(childrenRes, 'children.json', []);
+            this.trailheads = await safeJson(trailheadsRes, 'trail-heads.json', []);
+            this.airbnbs = await safeJson(airbnbsRes, 'our-airbnbs.json', []);
+            this.pointsOfInterest = await safeJson(poiRes, 'points_of_interest.json', []);
+
+            this.regions = await safeJson(regionsRes, 'regions.geojson', { type: 'FeatureCollection', features: [] });
+            Logger.basic('Regions loaded:', this.regions.features?.length || 0, 'features');
+
+            // Optional events
+            this.events = await safeJson(eventsRes, 'events.json', null);
 
             return this.data;
         } catch (error) {
             Logger.error('Error loading map data:', error);
-            throw error;
+            // Ensure minimal data so the map can still initialize
+            if (!this.data) {
+                this.data = {
+                    mapConfig: { center: [42.9, -75.0], zoom: 7 },
+                    tileLayer: {
+                        url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                        attribution: '&copy; OpenStreetMap contributors',
+                        options: {}
+                    }
+                };
+            }
+            return this.data;
         }
     }
 
