@@ -46,6 +46,33 @@ npm run build
 - 404 on data: run Vite from the repo root; data is served from `public/` at `/`.
 - `events.json` missing: it’s optional; the map loads without it.
 
+## Logging (development)
+
+A lightweight, runtime-configurable logger helps control console noise.
+
+- Levels: `none`, `basic` (default), `extend`, `verbose`
+- Namespaces: `popup`, `bind`, `trip`, `geocode`, `map`, `regions`, `pyo`, `events`, `airbnbs`, `poi`
+
+Configure in the browser console at runtime:
+
+```js
+// Global level (applies to all unless overridden by namespaces)
+window.LOG_LEVEL = 'basic' // 'none' | 'basic' | 'extend' | 'verbose'
+
+// Optional per-namespace overrides
+window.LOG_NAMESPACES = {
+  bind: 'basic',      // marker binding + global store
+  popup: 'extend',    // popup building
+  trip: 'extend',     // trip load/display/plotting
+  geocode: 'extend',  // address geocoding
+  pyo: 'basic'        // fruit rendering + season filtering
+}
+```
+
+Notes:
+- Namespaces not listed in `LOG_NAMESPACES` fall back to `LOG_LEVEL`.
+- Logger is defined in `public/popup-architecture.js` and used across `public/*.js`.
+
 ## License & contributions
 
 Internal project. PRs welcome from collaborators.
