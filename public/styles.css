@@ -557,6 +557,15 @@ html, body {
     min-width: 200px !important;
 }
 
+/* Seasonal styling inside farm tooltips */
+.leaflet-tooltip .fruit-out-of-season {
+  color: #999;
+  text-decoration: line-through;
+}
+.leaflet-tooltip .fruit-in-season {
+  color: #333;
+}
+
 /* Legend Styles */
 .legend {
     position: fixed;

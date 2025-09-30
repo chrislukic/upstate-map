@@ -1565,10 +1565,18 @@ class ScenicNYMap {
                 
                 // Only show tooltips on non-mobile devices
                 if (!this.isMobile) {
-                    const fruitTypes = farm.fruits.map(f => f.type).join(', ');
-                    const tooltipLine = hasInSeasonFruits ? 
-                        `<br/><small>${fruitTypes}</small>` : 
-                        '<br/><small>All fruits out of season</small>';
+                    const usingTripDates = this.tripPlan && this.tripPlan.startDate && this.tripPlan.endDate;
+                    const fruitLabels = Array.isArray(farm.fruits) ? farm.fruits.map(fruit => {
+                        const inSeason = usingTripDates
+                            ? this.isInSeasonForTrip(fruit.season_start_week, fruit.season_end_week, this.tripPlan.startDate, this.tripPlan.endDate)
+                            : this.isInSeason(fruit.season_start_week, fruit.season_end_week);
+                        const cls = inSeason ? 'fruit-in-season' : 'fruit-out-of-season';
+                        const label = (fruit.type || '').charAt(0).toUpperCase() + (fruit.type || '').slice(1);
+                        return `<span class="${cls}">${label}</span>`;
+                    }).join(', ') : '';
+                    const tooltipLine = fruitLabels
+                        ? `<br/><small>${fruitLabels}</small>`
+                        : '<br/><small>No fruit data</small>';
                     marker.bindTooltip(`<div class="map-tooltip">${farm.name}${tooltipLine}</div>`, { sticky: true });
                 }
                 
