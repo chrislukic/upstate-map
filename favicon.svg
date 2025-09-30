@@ -1,14 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
   <defs>
     <style>
-      .nys-outline { fill: #2E8B57; stroke: #1F5F3F; stroke-width: 0.5; }
+      .bg { fill: #2E8B57; }
+      .text { fill: #ffffff; font: 700 26px sans-serif; }
     </style>
   </defs>
-  
-  <!-- Simplified NYS outline -->
-  <path class="nys-outline" d="M10,90 
-    L15,85 L20,80 L25,75 L30,70 L35,65 L40,60 L45,55 L50,50 L55,45 L60,40 L65,35 L70,30 L75,25 L80,20 L85,15 L90,10 L95,5 L100,0
-    L100,10 L95,15 L90,20 L85,25 L80,30 L75,35 L70,40 L65,45 L60,50 L55,55 L50,60 L45,65 L40,70 L35,75 L30,80 L25,85 L20,90 L15,95 L10,100
-    L5,95 L0,90 L5,85 L10,80 L15,75 L20,70 L25,65 L30,60 L35,55 L40,50 L45,45 L50,40 L55,35 L60,30 L65,25 L70,20 L75,15 L80,10 L85,5 L90,0
-    L85,5 L80,10 L75,15 L70,20 L65,25 L60,30 L55,35 L50,40 L45,45 L40,50 L35,55 L30,60 L25,65 L20,70 L15,75 L10,80 L5,85 Z"/>
+  <circle class="bg" cx="32" cy="32" r="28" />
+  <text class="text" x="32" y="38" text-anchor="middle">NY</text>
 </svg>
