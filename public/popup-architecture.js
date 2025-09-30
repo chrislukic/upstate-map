@@ -4,15 +4,43 @@
 // ===== GLOBAL LOGGER =====
 const Logger = (() => {
   const LEVELS = { none: 0, basic: 1, extend: 2, verbose: 3 };
-  function getLevel() {
-    const level = (typeof window !== 'undefined' && window.LOG_LEVEL) ? window.LOG_LEVEL : 'basic';
+  function resolveLevel(level) {
     return LEVELS[level] ?? LEVELS.basic;
   }
+  function getGlobalLevel() {
+    const level = (typeof window !== 'undefined' && window.LOG_LEVEL) ? window.LOG_LEVEL : 'basic';
+    return resolveLevel(level);
+  }
+  function getNamespaceLevel(namespace) {
+    if (typeof window === 'undefined') return null;
+    const nsMap = window.LOG_NAMESPACES || null;
+    if (!nsMap) return null;
+    const nsLevel = nsMap[namespace];
+    return typeof nsLevel === 'string' ? resolveLevel(nsLevel) : null;
+  }
+  function shouldLog(required, namespace) {
+    const nsLevel = namespace ? getNamespaceLevel(namespace) : null;
+    const levelToUse = nsLevel ?? getGlobalLevel();
+    return levelToUse >= required;
+  }
+  function makeNamespace(namespace) {
+    return {
+      basic: (...args) => { if (shouldLog(LEVELS.basic, namespace)) console.log(...args); },
+      extend: (...args) => { if (shouldLog(LEVELS.extend, namespace)) console.log(...args); },
+      verbose: (...args) => { if (shouldLog(LEVELS.verbose, namespace)) console.log(...args); },
+      warn: (...args) => console.warn(...args),
+      error: (...args) => console.error(...args)
+    };
+  }
   const api = {
+    LEVELS,
     setLevel(level) { if (typeof window !== 'undefined') window.LOG_LEVEL = level; },
-    basic(...args) { if (getLevel() >= LEVELS.basic) console.log(...args); },
-    extend(...args) { if (getLevel() >= LEVELS.extend) console.log(...args); },
-    verbose(...args) { if (getLevel() >= LEVELS.verbose) console.log(...args); },
+    setNamespaces(map) { if (typeof window !== 'undefined') window.LOG_NAMESPACES = map; },
+    get: (namespace) => makeNamespace(namespace),
+    // Global fallback (no namespace)
+    basic: (...args) => { if (shouldLog(LEVELS.basic, null)) console.log(...args); },
+    extend: (...args) => { if (shouldLog(LEVELS.extend, null)) console.log(...args); },
+    verbose: (...args) => { if (shouldLog(LEVELS.verbose, null)) console.log(...args); },
     warn: (...args) => console.warn(...args),
     error: (...args) => console.error(...args)
   };
@@ -660,11 +688,11 @@ class PopupFactory {
 
     // Ensure builder has current trip plan
     builder.tripPlan = this.map.tripPlan;
-    console.log(`Creating popup for ${type}, builder tripPlan:`, builder.tripPlan);
+    Logger.get('popup').extend(`Creating popup for ${type}, builder tripPlan:`, builder.tripPlan);
     const popupOptions = builder.createBasePopup(data, type);
-    console.log(`Created popup for ${type}:`, popupOptions);
-    console.log('Links object:', popupOptions.links);
-    console.log('Directions link:', popupOptions.links?.directions);
+    Logger.get('popup').verbose(`Created popup for ${type}:`, popupOptions);
+    Logger.get('popup').extend('Links object:', popupOptions.links);
+    Logger.get('popup').extend('Directions link:', popupOptions.links?.directions);
     
     // Directions link is now automatically handled in the getDirectionsLink method
     // No need to manually add it here since it's part of the links structure
@@ -673,11 +701,12 @@ class PopupFactory {
   }
 
   bindPopupToMarker(marker, data, type) {
-    console.log(`bindPopupToMarker called for ${type} with data:`, data);
+    Logger.get('bind').basic(`bindPopupToMarker called for ${type}`);
+    Logger.get('bind').extend('bindPopupToMarker data:', data);
     
     // Store data in global store and get unique ID
     const dataId = globalDataStore.storeData(data, type);
-    console.log(`Stored data with ID: ${dataId}`);
+    Logger.get('bind').extend(`Stored data with ID: ${dataId}`);
     
     // Create a popup that will be generated dynamically when opened
     const popup = L.popup({
@@ -687,16 +716,16 @@ class PopupFactory {
     
     // Bind the popup with a dynamic content function that uses the global store
     marker.bindPopup(() => {
-      console.log('Popup opened, retrieving data from global store');
+      Logger.get('bind').extend('Popup opened, retrieving data from global store');
       const storeItem = globalDataStore.getData(dataId);
       if (!storeItem) {
-        console.error('Data not found in global store for ID:', dataId);
+        Logger.get('bind').error('Data not found in global store for ID:', dataId);
         return '<div class="popup">Error: Data not found</div>';
       }
       
-      console.log('Retrieved data:', storeItem);
+      Logger.get('bind').verbose('Retrieved data:', storeItem);
       const popupOptions = this.createPopup(storeItem.data, storeItem.type);
-      console.log('Dynamic popup options:', popupOptions);
+      Logger.get('bind').verbose('Dynamic popup options:', popupOptions);
       return this.map.createPopup(popupOptions);
     });
     
