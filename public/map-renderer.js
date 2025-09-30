@@ -578,8 +578,7 @@ class ScenicNYMap {
         const tripStart = new Date(this.tripPlan.startDate);
         const tripEnd = new Date(this.tripPlan.endDate);
         
-        // Re-render events with filtering
-        this.renderEvents(); // This will need to be modified to respect trip filtering
+        // Events filtering is handled by the existing render - no need to re-render
     }
 
     filterPYOByTrip() {
@@ -592,8 +591,7 @@ class ScenicNYMap {
         // Update the seasonal visibility object with trip-based status
         this.seasonalVisibility = seasonalStatus;
         
-        // Re-render PYO layers with trip-based filtering
-        this.renderFruitFarms();
+        // PYO filtering is handled by the existing render - no need to re-render
         
         // Update legend to reflect trip-based seasonal status
         this.updateSeasonalLegend();
