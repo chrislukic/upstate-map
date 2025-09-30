@@ -31,6 +31,17 @@ class ScenicNYMap {
             peaches: true
         };
         this.popupFactory = null; // Will be initialized after map is ready
+        // Ensure logger is available (defined in popup-architecture.js); provide a fallback
+        if (typeof window !== 'undefined' && !window.Logger) {
+            window.Logger = {
+                setLevel() {},
+                basic: (...args) => console.log(...args),
+                extend: (...args) => console.log(...args),
+                verbose: (...args) => console.log(...args),
+                warn: (...args) => console.warn(...args),
+                error: (...args) => console.error(...args)
+            };
+        }
     }
 
     // Detect if the device is mobile/touch
@@ -186,9 +197,9 @@ class ScenicNYMap {
 
     // Trip planning functionality
     initializeTripPlanning() {
-        console.log('Initializing trip planning...');
+        Logger.basic('Initializing trip planning...');
         this.tripPlan = this.loadTripPlan();
-        console.log('Loaded trip plan:', this.tripPlan);
+        Logger.extend('Loaded trip plan:', this.tripPlan);
         this.updateTripDisplay();
         this.setInitialDateValues();
         
@@ -199,7 +210,7 @@ class ScenicNYMap {
             }, 60 * 60 * 1000); // Update every hour
         }
         
-        console.log('Trip planning initialized');
+        Logger.basic('Trip planning initialized');
     }
 
     loadTripPlan() {
@@ -208,7 +219,7 @@ class ScenicNYMap {
             try {
                 return JSON.parse(decodeURIComponent(cookie.split('=')[1]));
             } catch (e) {
-                console.warn('Error parsing trip plan cookie:', e);
+                Logger.warn('Error parsing trip plan cookie:', e);
             }
         }
         return null;
@@ -431,13 +442,13 @@ class ScenicNYMap {
     }
 
     updateTripDisplay() {
-        console.log('Updating trip display...');
+        Logger.extend('Updating trip display...');
         const currentTripEl = document.getElementById('currentTrip');
         const tripFormEl = document.getElementById('tripForm');
         const tripDisplayEl = document.getElementById('tripDisplay');
         const tripLoadingEl = document.getElementById('tripLoading');
         
-        console.log('DOM elements found:', {
+        Logger.verbose('DOM elements found:', {
             currentTrip: !!currentTripEl,
             tripForm: !!tripFormEl,
             tripLoading: !!tripLoadingEl
@@ -445,7 +456,7 @@ class ScenicNYMap {
         
         // Safety check for DOM elements
         if (!currentTripEl || !tripFormEl || !tripLoadingEl) {
-            console.warn('Trip planning DOM elements not found');
+                Logger.warn('Trip planning DOM elements not found');
             return;
         }
         
@@ -521,7 +532,7 @@ class ScenicNYMap {
                 this.geocodeTripAddress();
             }
         } else {
-            console.log('No trip plan - showing form');
+            Logger.basic('No trip plan - showing form');
             currentTripEl.style.display = 'none';
             tripFormEl.style.display = 'block';
             
@@ -554,7 +565,7 @@ class ScenicNYMap {
         this.renderTrailheads();
         this.renderAirbnbs();
         
-        console.log('Applied trip filtering for:', this.tripPlan);
+        Logger.extend('Applied trip filtering for:', this.tripPlan);
     }
 
     filterEventsByTrip() {
@@ -777,17 +788,17 @@ class ScenicNYMap {
 
     async geocodeTripAddress() {
         if (!this.tripPlan || !this.tripPlan.address) {
-            console.log('No trip plan or address to geocode');
+            Logger.basic('No trip plan or address to geocode');
             return;
         }
         
         try {
-            console.log('Geocoding trip address:', this.tripPlan.address);
+            Logger.extend('Geocoding trip address:', this.tripPlan.address);
             
             // Use a simple geocoding service (Nominatim - free and no API key required)
             const encodedAddress = encodeURIComponent(this.tripPlan.address);
             const geocodingUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodedAddress}&limit=1&countrycodes=us`;
-            console.log('Geocoding URL:', geocodingUrl);
+            Logger.verbose('Geocoding URL:', geocodingUrl);
             
             const response = await fetch(geocodingUrl);
             
@@ -796,14 +807,14 @@ class ScenicNYMap {
             }
             
             const data = await response.json();
-            console.log('Geocoding response:', data);
+            Logger.verbose('Geocoding response:', data);
             
             if (data && data.length > 0) {
                 const result = data[0];
                 const lat = parseFloat(result.lat);
                 const lng = parseFloat(result.lon);
                 
-                console.log('Geocoding successful:', { lat, lng, display_name: result.display_name });
+                Logger.extend('Geocoding successful:', { lat, lng, display_name: result.display_name });
                 
                 // Update trip plan with coordinates
                 this.tripPlan.lat = lat;
@@ -816,21 +827,22 @@ class ScenicNYMap {
                 // Plot the location
                 this.plotTripLocation();
                 
-                console.log('Trip address geocoded successfully:', lat, lng);
+                Logger.basic('Trip address geocoded successfully:', lat, lng);
             } else {
-                console.warn('No geocoding results found for:', this.tripPlan.address);
+                Logger.warn('No geocoding results found for:', this.tripPlan.address);
                 this.showGeocodingError();
             }
         } catch (error) {
-            console.error('Error geocoding trip address:', error);
+            Logger.error('Error geocoding trip address:', error);
             this.showGeocodingError();
         }
     }
 
     plotTripLocation() {
-        if (!this.tripPlan || !this.tripPlan.address || !this.tripPlan.lat || !this.tripPlan.lng) return;
+        // Plot trip marker/radius whenever coordinates exist, even if address is missing
+        if (!this.tripPlan || this.tripPlan.lat == null || this.tripPlan.lng == null) return;
         if (!this.map) {
-            console.warn('Map not ready for plotting trip location');
+            Logger.warn('Map not ready for plotting trip location');
             return;
         }
         
@@ -864,13 +876,15 @@ class ScenicNYMap {
         }).addTo(this.map);
         
         // Create popup content
-        const startDate = new Date(this.tripPlan.startDate + 'T00:00:00').toLocaleDateString();
-        const endDate = new Date(this.tripPlan.endDate + 'T00:00:00').toLocaleDateString();
+        const startDate = this.tripPlan.startDate ? new Date(this.tripPlan.startDate + 'T00:00:00').toLocaleDateString() : null;
+        const endDate = this.tripPlan.endDate ? new Date(this.tripPlan.endDate + 'T00:00:00').toLocaleDateString() : null;
+        const addressHtml = this.tripPlan.address ? `<p><strong>${this.formatAddress(this.tripPlan.address)}</strong></p>` : '';
+        const datesHtml = (startDate && endDate) ? `<p><i class="fa fa-calendar"></i> ${startDate} - ${endDate}</p>` : '';
         const popupContent = `
             <div class="trip-popup">
                 <h4><i class="fa fa-home"></i> Your Trip Location</h4>
-                <p><strong>${this.formatAddress(this.tripPlan.address)}</strong></p>
-                <p><i class="fa fa-calendar"></i> ${startDate} - ${endDate}</p>
+                ${addressHtml}
+                ${datesHtml}
                 <p><i class="fa fa-circle-o"></i> 25-mile exploration radius</p>
             </div>
         `;
@@ -883,20 +897,20 @@ class ScenicNYMap {
         // Center map on trip location with appropriate zoom
         this.map.setView([this.tripPlan.lat, this.tripPlan.lng], Math.max(this.map.getZoom(), 10));
         
-        console.log('Trip location plotted:', this.tripPlan.lat, this.tripPlan.lng);
+        Logger.basic('Trip location plotted:', this.tripPlan.lat, this.tripPlan.lng);
     }
 
     removeTripLocationMarker() {
         if (this.tripLocationMarker) {
             this.map.removeLayer(this.tripLocationMarker);
             this.tripLocationMarker = null;
-            console.log('Trip location marker removed');
+            Logger.extend('Trip location marker removed');
         }
         
         if (this.tripRadiusCircle) {
             this.map.removeLayer(this.tripRadiusCircle);
             this.tripRadiusCircle = null;
-            console.log('Trip radius circle removed');
+            Logger.extend('Trip radius circle removed');
         }
     }
 
@@ -1007,7 +1021,7 @@ class ScenicNYMap {
                 this.regions = await regionsRes.json();
                 console.log('Regions loaded:', this.regions.features?.length || 0, 'features');
             } else {
-                console.error('Failed to load regions:', regionsRes.status, regionsRes.statusText);
+            Logger.error('Failed to load regions:', regionsRes.status, regionsRes.statusText);
                 this.regions = [];
             }
             // Handle optional events.json gracefully (avoid parsing HTML fallback)
@@ -1020,7 +1034,7 @@ class ScenicNYMap {
 
             return this.data;
         } catch (error) {
-            console.error('Error loading map data:', error);
+            Logger.error('Error loading map data:', error);
             throw error;
         }
     }
@@ -1097,7 +1111,7 @@ class ScenicNYMap {
 
         // Initialize popup factory after map is ready
         this.popupFactory = new PopupFactory(this);
-        console.log('PopupFactory initialized:', this.popupFactory);
+        Logger.extend('PopupFactory initialized:', this.popupFactory);
     }
 
     renderScenicAreas() {
@@ -1156,11 +1170,11 @@ class ScenicNYMap {
 
     renderRegions() {
         if (!this.regions || !this.regions.features || !Array.isArray(this.regions.features) || !this.regions.features.length) {
-            console.log('No regions data to render');
+            Logger.basic('No regions data to render');
             return;
         }
 
-        console.log('Rendering regions:', this.regions.features.length, 'regions from GeoJSON');
+        Logger.extend('Rendering regions:', this.regions.features.length, 'regions from GeoJSON');
         const regionGroup = L.featureGroup({}).addTo(this.map);
 
         // Define colors for each region (NYS REDC 10 regions)
@@ -1179,21 +1193,21 @@ class ScenicNYMap {
 
         this.regions.features.forEach((feature, index) => {
             if (!feature.properties || !feature.properties.name) {
-                console.log('Skipping feature with no name:', feature);
+                Logger.extend('Skipping feature with no name:', feature);
                 return;
             }
 
             // Skip features with empty or invalid coordinates
             if (!feature.geometry || !feature.geometry.coordinates || !feature.geometry.coordinates[0] || feature.geometry.coordinates[0].length === 0) {
-                console.log('Skipping feature with empty coordinates:', feature.properties.name);
+                Logger.extend('Skipping feature with empty coordinates:', feature.properties.name);
                 return;
             }
 
             const regionName = feature.properties.name;
             const color = regionColors[regionName] || '#CCCCCC';
-            console.log(`Creating region ${index + 1}:`, regionName);
-            console.log('Feature geometry type:', feature.geometry.type);
-            console.log('Feature coordinates sample:', feature.geometry.coordinates[0].slice(0, 3));
+            Logger.verbose(`Creating region ${index + 1}:`, regionName);
+            Logger.verbose('Feature geometry type:', feature.geometry.type);
+            Logger.verbose('Feature coordinates sample:', feature.geometry.coordinates[0].slice(0, 3));
             
             // Just log coordinate ranges without filtering - let Leaflet handle any coordinate issues
             try {
@@ -1202,13 +1216,13 @@ class ScenicNYMap {
                 const latValues = coords.map(c => c[1]).filter(v => typeof v === 'number' && !isNaN(v));
                 
                 if (lngValues.length > 0 && latValues.length > 0) {
-                    console.log('Coordinate range - Longitude:', Math.min(...lngValues), 'to', Math.max(...lngValues));
-                    console.log('Coordinate range - Latitude:', Math.min(...latValues), 'to', Math.max(...latValues));
+                    Logger.extend('Coordinate range - Longitude:', Math.min(...lngValues), 'to', Math.max(...lngValues));
+                    Logger.extend('Coordinate range - Latitude:', Math.min(...latValues), 'to', Math.max(...latValues));
                 } else {
-                    console.log('No valid coordinates found for region:', regionName);
+                    Logger.extend('No valid coordinates found for region:', regionName);
                 }
             } catch (error) {
-                console.log('Error calculating coordinate ranges for region:', regionName, error);
+                Logger.warn('Error calculating coordinate ranges for region:', regionName, error);
             }
             
             // Use Leaflet's built-in GeoJSON support with explicit coordinate handling
@@ -1227,8 +1241,8 @@ class ScenicNYMap {
                 }
             }).addTo(regionGroup);
 
-            console.log('GeoJSON layer created and added to group:', regionName);
-            console.log('Layer bounds:', geoJsonLayer.getBounds());
+            Logger.verbose('GeoJSON layer created and added to group:', regionName);
+            Logger.verbose('Layer bounds:', geoJsonLayer.getBounds());
 
             // Add tooltip (only on non-mobile devices)
             if (!this.isMobile) {
@@ -1253,55 +1267,55 @@ class ScenicNYMap {
             geoJsonLayer.bindPopup(popup);
         });
 
-        console.log('All regions processed. Region group has', regionGroup.getLayers().length, 'layers');
-        console.log('Region group bounds:', regionGroup.getBounds());
+        Logger.extend('All regions processed. Region group has', regionGroup.getLayers().length, 'layers');
+        Logger.verbose('Region group bounds:', regionGroup.getBounds());
         
         // Add regions directly to map first to test visibility
         regionGroup.addTo(this.map);
-        console.log('Regions added directly to map');
+        Logger.extend('Regions added directly to map');
 
         // Register regions as an overlay for toggling
         if (this.layerControl) {
             this.layerControl.addOverlay(regionGroup, 'NY Regions');
-            console.log('Regions layer registered with layer control');
-            console.log('Layer control overlays:', this.layerControl._overlays ? Object.keys(this.layerControl._overlays) : 'No overlays object');
-            console.log('Layer control base layers:', this.layerControl._layers ? Object.keys(this.layerControl._layers) : 'No layers object');
+            Logger.extend('Regions layer registered with layer control');
+            Logger.verbose('Layer control overlays:', this.layerControl._overlays ? Object.keys(this.layerControl._overlays) : 'No overlays object');
+            Logger.verbose('Layer control base layers:', this.layerControl._layers ? Object.keys(this.layerControl._layers) : 'No layers object');
         } else {
-            console.log('No layer control available for regions');
+            Logger.basic('No layer control available for regions');
         }
         
-        console.log('Regions layer added to map with', this.regions.features.length, 'regions');
+        Logger.extend('Regions layer added to map with', this.regions.features.length, 'regions');
         
         // Force a map refresh to ensure visibility
         this.map.invalidateSize();
         
         // Try to fit the map to show the regions
         if (regionGroup.getBounds().isValid()) {
-            console.log('Fitting map to region bounds');
-            console.log('Region group bounds:', regionGroup.getBounds());
-            console.log('Map center:', this.map.getCenter());
-            console.log('Map zoom:', this.map.getZoom());
+            Logger.extend('Fitting map to region bounds');
+            Logger.verbose('Region group bounds:', regionGroup.getBounds());
+            Logger.verbose('Map center:', this.map.getCenter());
+            Logger.verbose('Map zoom:', this.map.getZoom());
             this.map.fitBounds(regionGroup.getBounds());
         }
     }
 
     async renderEvents() {
         if (!this.events || !this.events.events || !Array.isArray(this.events.events) || !this.events.events.length) {
-            console.log('No events data to render');
+            Logger.basic('No events data to render');
             return;
         }
 
-        console.log('Rendering events:', this.events.events.length, 'events');
+        Logger.extend('Rendering events:', this.events.events.length, 'events');
         const eventGroup = L.featureGroup({}).addTo(this.map);
 
         for (const event of this.events.events) {
             // Require precomputed coordinates
             if (typeof event.lat !== 'number' || typeof event.lng !== 'number') {
-                console.warn('Skipping event without coordinates:', event.name, event.address);
+                Logger.warn('Skipping event without coordinates:', event.name, event.address);
                 continue;
             }
 
-            console.log(`Creating event marker: ${event.name} at ${event.lat}, ${event.lng}`);
+            Logger.verbose(`Creating event marker: ${event.name} at ${event.lat}, ${event.lng}`);
 
             // Check if event is relevant to trip
             const isRelevant = this.isEventRelevantToTrip(event);
@@ -1353,15 +1367,15 @@ class ScenicNYMap {
             this.popupFactory.bindPopupToMarker(marker, event, 'event');
         }
 
-        console.log('Events processed. Group has', eventGroup.getLayers().length, 'markers');
+        Logger.extend('Events processed. Group has', eventGroup.getLayers().length, 'markers');
         
         // Register as an overlay for toggling
         if (this.layerControl) {
             this.layerControl.addOverlay(eventGroup, 'Events');
-            console.log('Events layer registered with layer control');
+            Logger.extend('Events layer registered with layer control');
         }
         
-        console.log('Events layer added to map with', eventGroup.getLayers().length, 'events');
+        Logger.extend('Events layer added to map with', eventGroup.getLayers().length, 'events');
     }
 
 
@@ -1480,13 +1494,13 @@ class ScenicNYMap {
             // Load the new consolidated fruit farms data
             const response = await fetch('/data/pyo-fruit-farms.json');
             if (!response.ok) {
-                console.error('Failed to load fruit farms data');
+                Logger.error('Failed to load fruit farms data');
                 return;
             }
             
             const farms = await response.json();
             if (!Array.isArray(farms) || !farms.length) {
-                console.log('No fruit farms data found');
+                Logger.basic('No fruit farms data found');
                 return;
             }
             
@@ -1495,7 +1509,7 @@ class ScenicNYMap {
             
             // Debug current week
             const currentWeek = this.getCurrentWeek();
-            console.log(`Current week: ${currentWeek}`);
+            Logger.extend(`Current week: ${currentWeek}`);
             
             const farmGroup = L.featureGroup({});
             
@@ -1523,13 +1537,13 @@ class ScenicNYMap {
                 
                 // Debug logging
                 const usingTripDates = this.tripPlan && this.tripPlan.startDate && this.tripPlan.endDate;
-                console.log(`Farm: ${farm.name}, Fruits: ${farm.fruits.map(f => f.type).join(', ')}, In Season: ${inSeasonFruits.map(f => f.type).join(', ')} (using ${usingTripDates ? 'trip dates' : 'current date'})`);
+                Logger.verbose(`Farm: ${farm.name}, Fruits: ${farm.fruits.map(f => f.type).join(', ')}, In Season: ${inSeasonFruits.map(f => f.type).join(', ')} (using ${usingTripDates ? 'trip dates' : 'current date'})`);
                 
                 // Use the first in-season fruit icon, or first fruit if none in season
                 const displayFruit = inSeasonFruits.length > 0 ? inSeasonFruits[0] : farm.fruits[0];
                 const iconData = fruitIcons[displayFruit.type] || { icon: 'fa-seedling', color: '#8B4513' };
                 
-                console.log(`Displaying fruit: ${displayFruit.type} for ${farm.name}`);
+                Logger.verbose(`Displaying fruit: ${displayFruit.type} for ${farm.name}`);
                 
                 // Determine if any fruits are in season for styling
                 const hasInSeasonFruits = inSeasonFruits.length > 0;
@@ -1557,7 +1571,7 @@ class ScenicNYMap {
                 }
                 
                 // Use popup architecture for farms
-                console.log('Binding popup to farm marker, popupFactory available:', !!this.popupFactory);
+                Logger.extend('Binding popup to farm marker, popupFactory available:', !!this.popupFactory);
                 this.popupFactory.bindPopupToMarker(marker, farm, 'farm');
             });
             
@@ -1565,9 +1579,9 @@ class ScenicNYMap {
             this.overlays['Fruit Farms (PYO)'] = farmGroup;
             farmGroup.addTo(this.map);
             
-            console.log('Fruit farms rendered:', farms.length);
+            Logger.extend('Fruit farms rendered:', farms.length);
         } catch (e) {
-            console.error('Error rendering fruit farms:', e);
+            Logger.error('Error rendering fruit farms:', e);
         }
     }
 
@@ -2016,10 +2030,10 @@ class ScenicNYMap {
     async renderAirbnbs() {
         try {
             const airbnbs = Array.isArray(this.airbnbs) ? this.airbnbs : [];
-            console.log('Airbnbs loaded:', airbnbs.length);
+            Logger.extend('Airbnbs loaded:', airbnbs.length);
 
             if (!airbnbs.length) {
-                console.log('No airbnbs found');
+                Logger.basic('No airbnbs found');
                 return;
             }
 
@@ -2033,10 +2047,10 @@ class ScenicNYMap {
 
             airbnbs.forEach(airbnb => {
                 if (!airbnb.lat || !airbnb.lng || isNaN(airbnb.lat) || isNaN(airbnb.lng)) {
-                    console.log('Invalid coordinates for:', airbnb.name, airbnb.lat, airbnb.lng);
+                    Logger.warn('Invalid coordinates for:', airbnb.name, airbnb.lat, airbnb.lng);
                     return;
                 }
-                console.log('Adding Airbnb:', airbnb.name, 'at', airbnb.lat, airbnb.lng);
+                Logger.verbose('Adding Airbnb:', airbnb.name, 'at', airbnb.lat, airbnb.lng);
                 const marker = L.marker([airbnb.lat, airbnb.lng], { icon: airbnbDivIcon }).addTo(airbnbGroup);
                 
                 // Only show tooltips on non-mobile devices
@@ -2058,9 +2072,9 @@ class ScenicNYMap {
             this.overlays = this.overlays || {};
             this.overlays['Our Airbnbs'] = airbnbGroup;
             airbnbGroup.addTo(this.map);
-            console.log('Airbnbs layer added to map');
+            Logger.extend('Airbnbs layer added to map');
         } catch (e) {
-            console.error('Error rendering airbnbs:', e);
+            Logger.error('Error rendering airbnbs:', e);
         }
     }
 
@@ -2130,7 +2144,7 @@ class ScenicNYMap {
                 this.layerControl.addOverlay(wfGroup, 'Waterfalls');
             }
         } catch (e) {
-            console.error('Failed to load waterfalls:', e);
+            Logger.error('Failed to load waterfalls:', e);
         }
     }
 
@@ -2182,7 +2196,7 @@ class ScenicNYMap {
                 this.layerControl.addOverlay(brGroup, 'Breweries');
             }
         } catch (e) {
-            console.error('Failed to load breweries:', e);
+            Logger.error('Failed to load breweries:', e);
         }
     }
 
@@ -2237,14 +2251,14 @@ class ScenicNYMap {
                 this.layerControl.addOverlay(rsGroup, 'Restaurants');
             }
         } catch (e) {
-            console.error('Failed to load restaurants:', e);
+            Logger.error('Failed to load restaurants:', e);
         }
     }
 
     async renderPointsOfInterest() {
         try {
             if (!this.pointsOfInterest || !Array.isArray(this.pointsOfInterest) || !this.pointsOfInterest.length) {
-                console.log('No points of interest data to render');
+            Logger.basic('No points of interest data to render');
                 return;
             }
 
@@ -2339,9 +2353,9 @@ class ScenicNYMap {
                 this.layerControl.addOverlay(poiGroup, 'Points of Interest');
             }
 
-            console.log(`Rendered ${this.pointsOfInterest.length} points of interest`);
+            Logger.extend(`Rendered ${this.pointsOfInterest.length} points of interest`);
         } catch (e) {
-            console.error('Failed to load points of interest:', e);
+            Logger.error('Failed to load points of interest:', e);
         }
     }
 
@@ -2478,7 +2492,7 @@ class ScenicNYMap {
         // Open the popup automatically
         marker.openPopup();
 
-        console.log('Custom marker added:', customLocation);
+        Logger.extend('Custom marker added:', customLocation);
     }
 
     async render() {
@@ -2513,17 +2527,17 @@ class ScenicNYMap {
             window.mapInstance = this;
             
             // Test if setTrip function is accessible
-            console.log('setTrip function available:', typeof window.setTrip);
-            console.log('setTrip function available globally:', typeof setTrip);
+            Logger.verbose('setTrip function available:', typeof window.setTrip);
+            Logger.verbose('setTrip function available globally:', typeof setTrip);
             
             // Add event listener directly to the form
             const tripForm = document.getElementById('tripForm');
             if (tripForm) {
                 const form = tripForm.querySelector('form');
                 if (form) {
-                    console.log('Adding event listener to form');
+                    Logger.extend('Adding event listener to form');
                     form.addEventListener('submit', function(event) {
-                        console.log('Form submit event listener triggered');
+                        Logger.verbose('Form submit event listener triggered');
                         event.preventDefault();
                         window.setTrip(event);
                     });
@@ -2532,13 +2546,13 @@ class ScenicNYMap {
             
             // Debug: Log current week and seasonal status
             const currentWeek = this.getCurrentWeek();
-            console.log('Current week:', currentWeek);
-            console.log('Seasonal status:', this.getSeasonalStatus());
+            Logger.extend('Current week:', currentWeek);
+            Logger.extend('Seasonal status:', this.getSeasonalStatus());
             
             // Debug: Show sample of individual farm seasonal data
             if (this.orchardPoints && this.orchardPoints.length > 0) {
                 const sampleFarm = this.orchardPoints[0];
-                console.log('Sample apple farm seasonal data:', {
+                Logger.verbose('Sample apple farm seasonal data:', {
                     name: sampleFarm.name,
                     season_start_week: sampleFarm.season_start_week,
                     season_end_week: sampleFarm.season_end_week,
@@ -2546,21 +2560,21 @@ class ScenicNYMap {
                 });
             }
             
-            console.log('Map rendered successfully with', this.scenicAreas.length, 'scenic areas,', this.cities.length, 'cities, and', this.data.trainRoutes.length, 'train routes');
+            Logger.basic('Map rendered successfully with', this.scenicAreas.length, 'scenic areas,', this.cities.length, 'cities, and', this.data.trainRoutes.length, 'train routes');
         } catch (error) {
-            console.error('Error rendering map:', error);
+            Logger.error('Error rendering map:', error);
         }
     }
 }
 
 // Global functions for trip planning
 window.setTrip = function(event) {
-    console.log('setTrip function called');
+    Logger.extend('setTrip function called');
     event.preventDefault();
-    console.log('Event prevented, continuing...');
+    Logger.verbose('Event prevented, continuing...');
     
     if (!window.mapInstance) {
-        console.error('Map instance not available yet');
+        Logger.error('Map instance not available yet');
         alert('Map is still loading. Please wait a moment and try again.');
         return;
     }
@@ -2586,7 +2600,7 @@ window.setTrip = function(event) {
         createdAt: new Date().toISOString()
     };
     
-    console.log('Setting trip plan:', tripPlan);
+    Logger.basic('Setting trip plan:', tripPlan);
     
     // Save trip plan
     window.mapInstance.saveTripPlan(tripPlan);
@@ -2595,7 +2609,7 @@ window.setTrip = function(event) {
 
 window.clearTrip = function() {
     if (!window.mapInstance) {
-        console.error('Map instance not available yet');
+        Logger.error('Map instance not available yet');
         alert('Map is still loading. Please wait a moment and try again.');
         return;
     }
@@ -2665,7 +2679,7 @@ window.clearTripDates = function() {
 
 window.setTripLocation = function() {
     if (!window.mapInstance) {
-        console.error('Map instance not available yet');
+        Logger.error('Map instance not available yet');
         alert('Map is still loading. Please wait a moment and try again.');
         return;
     }

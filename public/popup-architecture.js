@@ -1,6 +1,25 @@
 // Popup Architecture Implementation
 // Base classes for the new popup system
 
+// ===== GLOBAL LOGGER =====
+const Logger = (() => {
+  const LEVELS = { none: 0, basic: 1, extend: 2, verbose: 3 };
+  function getLevel() {
+    const level = (typeof window !== 'undefined' && window.LOG_LEVEL) ? window.LOG_LEVEL : 'basic';
+    return LEVELS[level] ?? LEVELS.basic;
+  }
+  const api = {
+    setLevel(level) { if (typeof window !== 'undefined') window.LOG_LEVEL = level; },
+    basic(...args) { if (getLevel() >= LEVELS.basic) console.log(...args); },
+    extend(...args) { if (getLevel() >= LEVELS.extend) console.log(...args); },
+    verbose(...args) { if (getLevel() >= LEVELS.verbose) console.log(...args); },
+    warn: (...args) => console.warn(...args),
+    error: (...args) => console.error(...args)
+  };
+  if (typeof window !== 'undefined') window.Logger = api;
+  return api;
+})();
+
 // ===== GLOBAL DATA STORE =====
 class GlobalDataStore {
   constructor() {
@@ -116,23 +135,22 @@ class PopupBuilder {
   }
 
   getDirectionsLink(data) {
-    console.log('getDirectionsLink called with tripPlan:', this.tripPlan);
+    Logger.extend('getDirectionsLink called with tripPlan:', this.tripPlan);
     
     if (!this.tripPlan || !this.tripPlan.address || !this.tripPlan.lat || !this.tripPlan.lng) {
-      console.log('No trip plan or missing coordinates/address');
+      Logger.basic('No trip plan or missing coordinates/address');
       return null;
     }
 
     const coordinates = this.getCoordinates(data);
-    console.log('Coordinates for directions:', coordinates);
+    Logger.extend('Coordinates for directions:', coordinates);
     if (!coordinates) return null;
 
     const [lat, lng] = coordinates;
     const origin = `${this.tripPlan.lat},${this.tripPlan.lng}`;
     const destination = `${lat},${lng}`;
     const directionsUrl = `https://www.google.com/maps/dir/${origin}/${destination}`;
-    
-    console.log('Creating directions link:', { origin, destination, directionsUrl });
+    Logger.verbose('Creating directions link:', { origin, destination, directionsUrl });
     
     return {
       url: directionsUrl,
