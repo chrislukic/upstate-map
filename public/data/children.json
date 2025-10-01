@@ -1,8 +1,8 @@
 [
   {
     "name": "Forsyth Nature Center",
-    "lat": 41.8476108,
-    "lng": -73.990622,
+    "lat": 43.9479417,
+    "lng": -76.1206972,
     "location": "125 Lucas Ave, Kingston, NY 12401",
     "cost": "Free",
     "description": "A compact petting zoo and garden just the right size for small children, with a fantastic playground nearby.",
@@ -11,7 +11,12 @@
     "place_query": "Forsyth Nature Center, Kingston, NY",
     "season": "Year-round",
     "full_description": "The Forsyth Nature Center offers more than two dozen animal exhibits and seasonal gardens that encourage a connection to the natural world. Open year-round and free to the public, it’s a small, kid-friendly petting zoo featuring peacocks, goats, alpacas, and other animals in an intimate setting. Adjacent to the nature center is Forsyth Park’s large wooden playground—designed like a castle with towers and parapets—providing additional space for imaginative play.",
-    "website": "https://www.kingston-ny.gov/forsyth-nature-center"
+    "website": "https://www.kingston-ny.gov/forsyth-nature-center",
+    "google_verified_lat": 43.9479417,
+    "google_verified_lng": -76.1206972,
+    "formatted_address": "212 W Main St, Sackets Harbor, NY 13685, USA",
+    "google_verified_at": "2025-09-30T18:02:53.236651+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Strong National Museum of Play",
@@ -25,7 +30,12 @@
     "season": "Year-round",
     "full_description": "The Strong Museum is a massive, hands-on museum dedicated entirely to the importance of play. It features interactive exhibits on favorite childhood toys, classic arcade and video games, Sesame Street, and more. Home to the National Toy Hall of Fame and World Video Game Hall of Fame, this museum offers endless imaginative experiences for kids (and nostalgic adults) across its two floors, including a butterfly garden, indoor playgrounds, a miniature Wegmans grocery store, and a historic carousel.",
     "website": "https://www.museumofplay.org/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8V4sPge11okRpmQC_nR4DQo"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8V4sPge11okRpmQC_nR4DQo",
+    "google_verified_lat": 43.1525482,
+    "google_verified_lng": -77.601629,
+    "formatted_address": "1 Manhattan Square Dr, Rochester, NY 14607, USA",
+    "google_verified_at": "2025-09-30T18:02:53.481445+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Rosamond Gifford Zoo",
@@ -39,7 +49,12 @@
     "season": "Year-round",
     "full_description": "The Rosamond Gifford Zoo at Burnet Park is a mid-sized AZA-accredited zoo home to over 700 animals on 43 acres. Popular residents include Asian elephants, lions, Amur tigers, penguins, and red pandas. The zoo features indoor exhibits (helpful in winter) like the tropical aviary and aquarium, as well as outdoor trails for larger animals. It offers interactive experiences such as feeding lorikeets and a barn area, making it a fun, educational outing that’s open all year (with shortened hours in winter).",
     "website": "https://www.rosamondgiffordzoo.org/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBytUbeDz2YkREmii33QAD7o"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBytUbeDz2YkREmii33QAD7o",
+    "google_verified_lat": 43.0431701,
+    "google_verified_lng": -76.1810721,
+    "formatted_address": "1 Conservation Pl, Syracuse, NY 13204, USA",
+    "google_verified_at": "2025-09-30T18:02:53.695789+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Buffalo Zoo",
@@ -53,7 +68,12 @@
     "season": "Year-round",
     "full_description": "Founded in 1875, the Buffalo Zoo is the third-oldest zoo in the United States. It spans 23 acres and houses hundreds of animals, including big cats, gorillas, giraffes, and a renowned Arctic Edge exhibit with polar bears and Arctic wolves. The zoo offers interactive experiences like giraffe feedings and a petting zoo area for farm animals. With modern habitats (rainforest, reptiles, and more) and year-round operations (outdoor animals may be off-display in extreme cold), it’s a beloved family attraction in Buffalo’s Delaware Park.",
     "website": "https://buffalozoo.org/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4eSGubIS04kRd-1TTcybNYk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4eSGubIS04kRd-1TTcybNYk",
+    "google_verified_lat": 42.9371231,
+    "google_verified_lng": -78.85160909999999,
+    "formatted_address": "300 Parkside Ave, Buffalo, NY 14214, USA",
+    "google_verified_at": "2025-09-30T18:02:53.923273+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Seneca Park Zoo",
@@ -67,7 +87,12 @@
     "season": "Year-round",
     "full_description": "Seneca Park Zoo is an intimate zoo situated in a scenic park along Rochester’s Genesee River. Recent expansions have added African savanna animals like Masai giraffes, zebras, and a white rhino, complementing longtime residents such as lions, elephants, and penguins. The zoo emphasizes conservation and education, offering interactive experiences like a large playground and a “Discovery Zone” for kids. It’s manageable in size — perfect for a 1-2 hour family visit — and open year-round (with indoor viewing areas for colder months).",
     "website": "https://senecaparkzoo.org/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJnYFx5JC21okRtvCHJuRTHQ4"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJnYFx5JC21okRtvCHJuRTHQ4",
+    "google_verified_lat": 43.2048845,
+    "google_verified_lng": -77.6238437,
+    "formatted_address": "2222 St Paul St, Rochester, NY 14621, USA",
+    "google_verified_at": "2025-09-30T18:02:54.147363+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Wild Animal Park",
@@ -132,7 +157,12 @@
     "season": "Spring–Fall",
     "full_description": "Hidden Valley Animal Adventure offers an up-close safari experience in the hills of Wyoming County. Guests can take a guided trolley tour or self-drive through the park’s 60+ acres to see and feed over 300 animals representing 40 species, including bison, water buffalo, elk, zebras, emus, and Scottish highland cattle. Animals often walk right up to the vehicle, eagerly taking feed from cups. After the safari, families can visit the small petting zoo area to interact with friendly farm animals like goats and llamas. The park also features a lodge-style restaurant and viewing deck overlooking the scenic grounds. It’s a seasonal attraction typically open from May through October.",
     "website": "https://www.hiddenvalleyadventure.com/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQVKPIwm404kRWeJngkIYbB8"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQVKPIwm404kRWeJngkIYbB8",
+    "google_verified_lat": 42.7424816,
+    "google_verified_lng": -78.2997687,
+    "formatted_address": "2887 Royce Rd, Varysburg, NY 14167, USA",
+    "google_verified_at": "2025-09-30T18:02:56.727218+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Explore & More Children’s Museum",
@@ -145,7 +175,12 @@
     "place_query": "Explore & More Children's Museum, Buffalo, NY",
     "season": "Year-round",
     "full_description": "Explore & More – The Ralph C. Wilson, Jr. Children’s Museum is a 43,000-square-foot facility filled with interactive, play-based exhibits. Located at Canalside on the Buffalo waterfront, the museum’s themed areas let kids learn through play about architecture, sports, farm-to-table nutrition, local Buffalo history, and more. Children can build in the Construction Zone, create art in the Art Studio, climb and slide through a two-story treehouse, and even explore a mini Buffalo waterfront with replica boats and bridges. With water play tables, a moving STEM lab, and toddler-specific zones, Explore & More offers a diverse, inclusive play environment that’s open all year (closed on some Mondays/Tuesdays in winter).",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWov6H-o04kRmloLkchc8KE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWov6H-o04kRmloLkchc8KE",
+    "google_verified_lat": 42.8778245,
+    "google_verified_lng": -78.87802769999999,
+    "formatted_address": "130 Main St, Buffalo, NY 14202, USA",
+    "google_verified_at": "2025-09-30T18:02:56.940847+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Sciencenter",
@@ -159,7 +194,12 @@
     "season": "Year-round",
     "full_description": "The Sciencenter in Ithaca is an interactive science museum geared toward kids of all ages. Inside, it features over 250 exhibits that invite children to experiment and learn by doing — from a giant physics playground of pulleys and levers to a tide-pool touch tank with starfish and sea urchins. Young visitors can climb through a multistory play structure or try hands-on activities in the Discovery Space. Outside, the Sciencenter’s courtyard houses a musical instrument playground and a mini-golf course that teaches about sound and astronomy. Open year-round (with rotating exhibits and special programs), the Sciencenter makes STEM learning fun in a family-friendly way.",
     "website": "https://www.sciencenter.org/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj4MZoH-B0IkRyGBFpk7ffSA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj4MZoH-B0IkRyGBFpk7ffSA",
+    "google_verified_lat": 42.449849,
+    "google_verified_lng": -76.50406500000001,
+    "formatted_address": "601 1st St, Ithaca, NY 14850, USA",
+    "google_verified_at": "2025-09-30T18:02:57.166742+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Children’s Museum at Saratoga",
@@ -172,7 +212,12 @@
     "place_query": "Children's Museum at Saratoga, Saratoga Springs, NY",
     "season": "Year-round",
     "full_description": "The Children’s Museum at Saratoga is a charming play space in downtown Saratoga Springs that encourages young kids (primarily ages 0–7) to explore and pretend. The museum’s intimate, two-floor setup includes a variety of themed rooms: little ones can shop at a kid-sized grocery store, perform check-ups in a pretend veterinary clinic, serve food in a 1950s-style diner, and climb aboard a life-size fire engine. There’s also a dedicated toddler play area and rotating hands-on science and art stations. The museum hosts frequent story times and craft activities, making it a wonderful year-round destination for families with small children.",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQXGZ7dk53okRexjr7LOncik"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQXGZ7dk53okRexjr7LOncik",
+    "google_verified_lat": 43.0646321,
+    "google_verified_lng": -73.7904313,
+    "formatted_address": "65 S Broadway, Saratoga Springs, NY 12866, USA",
+    "google_verified_at": "2025-09-30T18:02:57.458561+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Discovery Center of the Southern Tier",
@@ -186,7 +231,12 @@
     "season": "Year-round",
     "full_description": "The Discovery Center of the Southern Tier in Binghamton is a vibrant hands-on museum where children can role-play and explore various real-world environments. Indoors, kids can pretend to be a dentist, shop in a mini grocery store, milk a life-size model cow on a pretend farm, anchor the news in a TV studio, and more among the 30+ interactive exhibits. Outside, the Story Garden brings beloved children’s books to life with themed playhouses and sculptures (like the Goodnight Moon room and Peter Rabbit’s garden) in a safe, enclosed garden setting. Geared toward ages 1–10, the Discovery Center provides an enriching, imaginative play experience year-round, with outdoor exhibits best enjoyed in warm weather.",
     "website": "https://www.discoverycenter.org/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBVeriFHv2okR9sHoHXq_uMg"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBVeriFHv2okR9sHoHXq_uMg",
+    "google_verified_lat": 42.0738133,
+    "google_verified_lng": -75.9037491,
+    "formatted_address": "60 Morgan Rd, Binghamton, NY 13903, USA",
+    "google_verified_at": "2025-09-30T18:02:57.669966+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Legoland New York Resort",
@@ -225,7 +275,12 @@
     "season": "Summer",
     "full_description": "Enchanted Forest Water Safari is a summertime favorite, offering a mix of water park thrills and amusement park charm amidst the Adirondack Mountains. The park boasts more than 50 attractions, including 33 water rides – from kid-friendly splash pads and tube floats to adrenaline-pumping slides like the Killermanjaro (one of the tallest free-fall slides in the Northeast). All the water is heated to a comfortable ~80°F, ensuring fun even if the mountain air is brisk. In addition to water rides, the park maintains a retro “Enchanted Forest” vibe with storybook-themed displays, a family circus show, classic dry rides (bumper cars, a vintage carousel, a Ferris wheel), and even a small petting zoo. Open roughly from late June through Labor Day, Water Safari delivers a full day of cooling fun for families, with plenty of Adirondack flavor.",
     "website": "https://www.watersafari.com/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIzZ0VFO12IkRwPvfqOicof0"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIzZ0VFO12IkRwPvfqOicof0",
+    "google_verified_lat": 43.7171694,
+    "google_verified_lng": -74.96661329999999,
+    "formatted_address": "3183 NY-28, Old Forge, NY 13420, USA",
+    "google_verified_at": "2025-09-30T18:02:59.468512+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Six Flags Great Escape & Hurricane Harbor",
@@ -239,7 +294,12 @@
     "season": "Late Spring–Fall",
     "full_description": "Six Flags Great Escape is a long-standing amusement park (opened in 1954 as Storytown USA) that provides fun for all ages in the Lake George region. The park has over 135 rides, shows, and attractions. For adrenaline seekers, there are roller coasters like the wooden classic Comet and the looping Boomerang. Younger kids will love Timbertown and Storytown sections, which retain a fairy-tale theme with gentle rides like spinning teacups, a Cinderella coach, and a petting zoo atmosphere. The attached Hurricane Harbor water park (included with admission) offers wave pools, water slides, and a lazy river to cool off on hot days. Great Escape operates seasonally from late spring through Halloween, when it transforms for “Fright Fest” in October. Its blend of kiddie nostalgia and modern thrills — plus an on-site lodge with an indoor water park — makes it a top family destination in upstate NY.",
     "website": "https://www.sixflags.com/greatescape",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJr5YIqArP34kRDiWXeBkIJzE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJr5YIqArP34kRDiWXeBkIJzE",
+    "google_verified_lat": 43.3510828,
+    "google_verified_lng": -73.6892326,
+    "formatted_address": "89 Six Flags Drive, Queensbury, NY 12804, USA",
+    "google_verified_at": "2025-09-30T18:02:59.696850+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Seabreeze Amusement Park",
@@ -253,7 +313,12 @@
     "season": "Summer",
     "full_description": "Seabreeze is a beloved traditional amusement park that has entertained Rochester families for generations (it opened in 1879!). Perched on a bluff by Lake Ontario, Seabreeze packs an impressive variety of attractions into its footprint. The park’s four roller coasters include the Jack Rabbit (a 102-year-old wooden coaster, one of the oldest operating in the world) and the spinning Whirlwind coaster. There are plenty of classic rides like the carousel, bumper cars, train, Ferris wheel, and a log flume, as well as kiddie rides for little ones. On hot days, the attached Raging Rivers Waterpark offers a wave pool, lazy river, and several waterslides (and even those are included in admission). Seabreeze’s manageable size, picturesque lake views, free parking, and frequent live shows (like musical revues and magic acts) make it an easy, fun outing for families during its summer season (late May through early September).",
     "website": "https://seabreeze.com/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJLboTEDfI1okR4KUv0b0xdAM"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJLboTEDfI1okR4KUv0b0xdAM",
+    "google_verified_lat": 43.23221520000001,
+    "google_verified_lng": -77.5423136,
+    "formatted_address": "4600 Culver Rd, Rochester, NY 14622, USA",
+    "google_verified_at": "2025-09-30T18:02:59.919912+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Six Flags Darien Lake",
@@ -267,7 +332,12 @@
     "season": "Summer",
     "full_description": "Six Flags Darien Lake is a sprawling amusement park and resort located between Buffalo and Rochester. It offers a full spectrum of thrill rides, including the Ride of Steel hypercoaster (over 200 feet tall), the looping Tantrum coaster, and classics like the wooden Predator. Families will find plenty of milder rides as well, from the Big Wheel and antique cars to a Looney Tunes kids area with pint-sized rides. Darien Lake’s SplashTown water park (included with admission) boasts a large wave pool, a lazy river, and numerous water slides for all ages. Uniquely, the property also includes a large campground and hotel, allowing guests to stay overnight and enjoy park amenities like evening concerts at the on-site amphitheater. Operating roughly May through October (with a big Halloween festival), Darien Lake is the premier summer theme park experience in Western NY.",
     "website": "https://www.sixflags.com/darienlake",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJY6dTF9WV04kRAXEZBjwF0fo"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJY6dTF9WV04kRAXEZBjwF0fo",
+    "google_verified_lat": 42.9271561,
+    "google_verified_lng": -78.3854439,
+    "formatted_address": "9993 Alleghany Rd, Corfu, NY 14036, USA",
+    "google_verified_at": "2025-09-30T18:03:00.135635+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Watkins Glen State Park",
@@ -281,7 +351,12 @@
     "season": "Spring–Fall (gorge trail)",
     "full_description": "Watkins Glen State Park is often considered one of the most beautiful state parks in the country, famous for its dramatic gorge trail. Over the course of a roughly 2-mile hike (with shuttle options available), visitors climb and descend alongside Glen Creek, encountering 19 waterfalls that tumble through the ancient shale and limestone cliffs. Families will walk behind the curtain of water at Cavern Cascade, spiral up stone steps in the Tunnel behind Rainbow Falls, and cross picturesque stone bridges arching over cascades. The gorge trail is well-maintained but has about 800 stone steps, so it’s best for school-age kids and up (or little ones in carriers). In addition to the gorge, the park offers a large playground, an Olympic-size swimming pool (summer), and picnic facilities. The gorge trail is open roughly May through October (closed in winter due to ice), during which time Watkins Glen provides a truly magical outdoor adventure for families.",
     "website": "https://parks.ny.gov/parks/142",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJS_CTFgBf0IkR3hZneHJBI38"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJS_CTFgBf0IkR3hZneHJBI38",
+    "google_verified_lat": 42.3672123,
+    "google_verified_lng": -76.901592,
+    "formatted_address": "1009 N Franklin St, Watkins Glen, NY 14891, USA",
+    "google_verified_at": "2025-09-30T18:03:00.373070+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Letchworth State Park",
@@ -308,7 +383,12 @@
     "season": "May–October",
     "full_description": "Boldt Castle is a magnificent 120-room castle set on Heart Island in the St. Lawrence River, built in the early 1900s and left abandoned for decades before being restored. Visiting is like stepping into a fairy tale. Families take a short ferry or tour boat from Alexandria Bay to reach the island. Once there, you can explore the castle’s grand halls, sweeping staircase, and furnished rooms (children often love imagining princesses and knights roaming the corridors). The grounds feature beautiful gardens, a stone children’s playhouse, and a picturesque Power House and clock tower by the water’s edge. Informational displays tell the romantic and tragic story of how the castle came to be. Kids will especially enjoy the winding staircase to the castle dome for a view, and feeding the giant fish visible in the clear river waters from the docks. Open from mid-May through mid-October, Boldt Castle makes for a magical half-day adventure in the Thousand Islands.",
     "website": "https://www.boldtcastle.com/",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWCVKDk5zUwRyi6yl4SMmGc"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWCVKDk5zUwRyi6yl4SMmGc",
+    "google_verified_lat": 44.34434,
+    "google_verified_lng": -75.92265300000001,
+    "formatted_address": "1 Heart Island, Alexandria Bay, NY 13607, USA",
+    "google_verified_at": "2025-09-30T18:03:01.226634+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Farmers’ Museum",
@@ -321,7 +401,12 @@
     "place_query": "The Farmers' Museum, Cooperstown, NY",
     "season": "Spring–Fall (limited winter hours)",
     "full_description": "The Farmers’ Museum immerses families in rural American life circa 1845. This open-air museum features a recreated country village with historic buildings (blacksmith shop, one-room schoolhouse, general store, etc.) populated by costumed interpreters demonstrating period crafts and chores. Children can watch (or help) the printer set type, see a blacksmith hammering iron, or try traditional games on the village green. The working farm has barns with friendly heritage-breed animals — think sheep, pigs, chickens, and Milking Shorthorn cows — and daily activities like cow milking or feeding time that kids can observe. A highlight for many families is the Empire State Carousel: a beautiful hand-carved merry-go-round featuring 25 animals native to New York (like a deer, eagle, or beaver) to ride on. The museum is generally open April through October, with special events and limited operations in winter, and provides a fun, educational glimpse into the past in a very kid-friendly way.",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJkUzZ3tIA3IkRnupy6ccHB30"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJkUzZ3tIA3IkRnupy6ccHB30",
+    "google_verified_lat": 42.7141055,
+    "google_verified_lng": -74.9285495,
+    "formatted_address": "5775 NY-80, Cooperstown, NY 13326, USA",
+    "google_verified_at": "2025-09-30T18:03:01.452769+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Mid-Hudson Children’s Museum (MHCM)",
@@ -334,7 +419,12 @@
     "place_query": "Mid-Hudson Children's Museum, Poughkeepsie, NY",
     "season": "Year-round",
     "full_description": "The Mid-Hudson Children’s Museum (recently renamed the Mid-Hudson Discovery Museum) offers a variety of hands-on exhibits tailored for infants to early elementary kids. Located on the Poughkeepsie waterfront, the museum has bright, engaging play areas: little ones can shop and cook in the Hudson Valley Farm stand market, climb aboard a river ferry boat replica, experiment with air and physics at the Ballfall Mountain exhibit, and create giant bubbles in the Bubble Garden. There’s also an Early Learning Junction with train tables and toddler-friendly toys. Outside, the museum has a fun new Science Garden with interactive musical instruments and sensory play equipment. MHCM is open all year (closed on some Mondays) and frequently hosts special programs like storytimes and science workshops, making it a wonderful indoor play and learning destination in the Hudson Valley.",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMYceRt493YkRBINBQDYDsQI"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMYceRt493YkRBINBQDYDsQI",
+    "google_verified_lat": 41.708847,
+    "google_verified_lng": -73.9392633,
+    "formatted_address": "75 N Water St, Poughkeepsie, NY 12601, USA",
+    "google_verified_at": "2025-09-30T18:03:01.665215+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Animal Adventure Park",
@@ -349,76 +439,86 @@
     "full_description": "Animal Adventure Park is an interactive zoo in rural Broome County that gained worldwide fame in 2017 when its giraffe, April, gave birth live on camera. Today, visitors can meet April’s offspring — giraffes Oliver and Tajiri — up close at the giraffe deck, feeding them lettuce by hand. The park features over 300 animals of 100 species, from big cats like Jaguars and lions to kangaroos, wallabies, zebra, bison, and capybara. Many exhibits are designed for interaction: you can hand-feed apples to camels, brush Nigerian dwarf goats in the petting area, and even book special encounters to hold a sloth or pet an anteater. There are multiple play areas for kids, including a prehistoric themed playground and a small dinosaur park with animatronic dinos. Generally open mid-April through late fall, Animal Adventure Park provides an unforgettable, hands-on animal experience that’s both fun and educational for children and adults.",
     "website": "https://www.theanimaladventurepark.com/"
   },
-    {
-      "name": "Catskill Animal Sanctuary",
-      "lat": 42.0487,
-      "lng": -74.0063,
-      "location": "316 Old Stage Rd, Saugerties, NY 12477",
-      "cost": "Admission fee (free under age 3)",
-      "description": "A 150-acre refuge for rescued farm animals, with family tours that let kids meet friendly cows, pigs, goats, and more.",
-      "place_id": null,
-      "place_query": "Catskill Animal Sanctuary, Saugerties, NY",
-      "season": "Spring–Fall (limited winter hours)",
-      "full_description": "Catskill Animal Sanctuary is a nonprofit refuge for rescued farm animals on 150 acres in Saugerties. Families can join guided tours to meet more than 300 residents—cows, pigs, goats, sheep, chickens, and horses—all living in a safe, humane environment. The sanctuary emphasizes kindness and education, giving children a chance to pet goats, scratch pigs behind the ears, and hear rescue stories that foster empathy. A small kids’ barnyard area and shaded walking paths make it manageable for little legs. Tours run April through November, with occasional winter events."
-    },
-    {
-      "name": "Rail Explorers Catskills",
-      "lat": 42.0847,
-      "lng": -74.3136,
-      "location": "70 Lower High St, Phoenicia, NY 12464",
-      "cost": "Ticketed admission",
-      "description": "Pedal-powered rail bikes that roll along scenic Esopus Creek, suitable for families with kids (child seats available).",
-      "place_id": null,
-      "place_query": "Rail Explorers Catskills, Phoenicia, NY",
-      "season": "Spring–Fall",
-      "full_description": "Rail Explorers offers a novel way for families to explore the Catskills: four- and two-seat pedal-powered rail bikes that glide along a historic Ulster & Delaware rail line. The 8-mile round trip hugs the Esopus Creek and winds through forested scenery. It’s safe and easy—geared for all ages—and child seats are available for toddlers. Kids love the novelty of riding the rails, while adults enjoy the leisurely pace and views. Tours operate seasonally from spring through late fall."
-    },
-    {
-      "name": "Ashokan Rail Trail",
-      "lat": 41.9619,
-      "lng": -74.2478,
-      "location": "1285 NY-28, West Hurley, NY 12491 (Trailhead)",
-      "cost": "Free",
-      "description": "An 11.5-mile, stroller-friendly trail along the Ashokan Reservoir with mountain views and birdwatching opportunities.",
-      "place_id": null,
-      "place_query": "Ashokan Rail Trail, West Hurley, NY",
-      "season": "Year-round",
-      "full_description": "The Ashokan Rail Trail is a smooth, wide, car-free path that runs 11.5 miles along the northern edge of the Ashokan Reservoir. Families can walk, bike, or push strollers while enjoying sweeping views of the water and Catskill peaks. Kids may spot bald eagles, herons, or turtles along the way. Multiple access points have parking and restrooms, and the trail surface is crushed stone, making it stroller- and wheelchair-friendly. Open year-round, it’s especially beautiful in fall foliage season."
-    },
-    {
-      "name": "Belleayre Mountain Beach",
-      "lat": 42.1413,
-      "lng": -74.4945,
-      "location": "33 Friendship Manor Rd, Pine Hill, NY 12465",
-      "cost": "Admission fee (per person, free under age 7)",
-      "description": "A family beach on a Catskills lake with swimming, pedal boats, picnic areas, and a sandy shoreline for young children.",
-      "place_id": null,
-      "place_query": "Belleayre Beach at Pine Hill Lake, NY",
-      "season": "Summer",
-      "full_description": "Belleayre Beach at Pine Hill Lake is a family-friendly summer spot in the Catskills. It offers a sandy swimming area with lifeguards, shallow entry for kids, and water rentals like pedal boats and kayaks. The park also features shaded picnic pavilions, a volleyball court, and a playground. With clean facilities and mountain scenery, it’s a low-key and affordable way to spend a warm day with children. Open Memorial Day through Labor Day."
-    },
-    {
-      "name": "Time and the Valleys Museum",
-      "lat": 41.8975,
-      "lng": -74.5219,
-      "location": "332 Main St, Grahamsville, NY 12740",
-      "cost": "Admission fee (free under age 6)",
-      "description": "A small history and water museum with interactive exhibits on local farms, reservoirs, and old-time Catskills life.",
-      "place_id": null,
-      "place_query": "Time and the Valleys Museum, Grahamsville, NY",
-      "season": "Spring–Fall",
-      "full_description": "The Time and the Valleys Museum brings Catskills history alive in a family-friendly way. Kids can step into a 1930s general store, handle old farming tools, and explore an interactive exhibit about how the New York City water supply reservoirs were built. The recreated one-room schoolhouse is a highlight for children who like role-playing. Seasonal outdoor programs and family days add hands-on crafts and demonstrations. Open April through October."
-    },
-    {
-      "name": "Woodstock Farm Sanctuary",
-      "lat": 41.6538,
-      "lng": -74.2796,
-      "location": "2 Rescue Rd, High Falls, NY 12440",
-      "cost": "Admission fee",
-      "description": "A nonprofit animal sanctuary where families can tour barns, meet rescued cows and goats, and picnic in a peaceful Catskills setting.",
-      "place_id": null,
-      "place_query": "Woodstock Farm Sanctuary, High Falls, NY",
-      "season": "Spring–Fall",
-      "full_description": "Woodstock Farm Sanctuary offers guided weekend tours introducing families to hundreds of rescued farm animals — from cows lounging in fields to friendly goats eager for attention. The sanctuary emphasizes compassion and humane education, making it both fun and meaningful for children. Picnic areas and wide open spaces add to the appeal. Tours are seasonal, typically running April through November."
-    }
-  ]
+  {
+    "name": "Catskill Animal Sanctuary",
+    "lat": 42.0487,
+    "lng": -74.0063,
+    "location": "316 Old Stage Rd, Saugerties, NY 12477",
+    "cost": "Admission fee (free under age 3)",
+    "description": "A 150-acre refuge for rescued farm animals, with family tours that let kids meet friendly cows, pigs, goats, and more.",
+    "place_id": null,
+    "place_query": "Catskill Animal Sanctuary, Saugerties, NY",
+    "season": "Spring–Fall (limited winter hours)",
+    "full_description": "Catskill Animal Sanctuary is a nonprofit refuge for rescued farm animals on 150 acres in Saugerties. Families can join guided tours to meet more than 300 residents—cows, pigs, goats, sheep, chickens, and horses—all living in a safe, humane environment. The sanctuary emphasizes kindness and education, giving children a chance to pet goats, scratch pigs behind the ears, and hear rescue stories that foster empathy. A small kids’ barnyard area and shaded walking paths make it manageable for little legs. Tours run April through November, with occasional winter events."
+  },
+  {
+    "name": "Rail Explorers Catskills",
+    "lat": 42.0801662,
+    "lng": -74.30804289999999,
+    "location": "70 Lower High St, Phoenicia, NY 12464",
+    "cost": "Ticketed admission",
+    "description": "Pedal-powered rail bikes that roll along scenic Esopus Creek, suitable for families with kids (child seats available).",
+    "place_id": "ChIJG4V0vRX_3IkRwa4azU5Y2tw",
+    "place_query": "Rail Explorers Catskills, Phoenicia, NY",
+    "season": "Spring–Fall",
+    "full_description": "Rail Explorers offers a novel way for families to explore the Catskills: four- and two-seat pedal-powered rail bikes that glide along a historic Ulster & Delaware rail line. The 8-mile round trip hugs the Esopus Creek and winds through forested scenery. It’s safe and easy—geared for all ages—and child seats are available for toddlers. Kids love the novelty of riding the rails, while adults enjoy the leisurely pace and views. Tours operate seasonally from spring through late fall.",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJG4V0vRX_3IkRwa4azU5Y2tw",
+    "google_verified_lat": 42.0801662,
+    "google_verified_lng": -74.30804289999999,
+    "google_verified_at": "2025-09-30T18:03:03.678524+00:00",
+    "google_place_source": "places_details_v1"
+  },
+  {
+    "name": "Ashokan Rail Trail",
+    "lat": 41.9619,
+    "lng": -74.2478,
+    "location": "1285 NY-28, West Hurley, NY 12491 (Trailhead)",
+    "cost": "Free",
+    "description": "An 11.5-mile, stroller-friendly trail along the Ashokan Reservoir with mountain views and birdwatching opportunities.",
+    "place_id": null,
+    "place_query": "Ashokan Rail Trail, West Hurley, NY",
+    "season": "Year-round",
+    "full_description": "The Ashokan Rail Trail is a smooth, wide, car-free path that runs 11.5 miles along the northern edge of the Ashokan Reservoir. Families can walk, bike, or push strollers while enjoying sweeping views of the water and Catskill peaks. Kids may spot bald eagles, herons, or turtles along the way. Multiple access points have parking and restrooms, and the trail surface is crushed stone, making it stroller- and wheelchair-friendly. Open year-round, it’s especially beautiful in fall foliage season."
+  },
+  {
+    "name": "Belleayre Mountain Beach",
+    "lat": 42.1269891,
+    "lng": -74.47389199999999,
+    "location": "33 Friendship Manor Rd, Pine Hill, NY 12465",
+    "cost": "Admission fee (per person, free under age 7)",
+    "description": "A family beach on a Catskills lake with swimming, pedal boats, picnic areas, and a sandy shoreline for young children.",
+    "place_id": "ChIJbXzLF2VZ3IkRLkuQRa-je-U",
+    "place_query": "Belleayre Beach at Pine Hill Lake, NY",
+    "season": "Summer",
+    "full_description": "Belleayre Beach at Pine Hill Lake is a family-friendly summer spot in the Catskills. It offers a sandy swimming area with lifeguards, shallow entry for kids, and water rentals like pedal boats and kayaks. The park also features shaded picnic pavilions, a volleyball court, and a playground. With clean facilities and mountain scenery, it’s a low-key and affordable way to spend a warm day with children. Open Memorial Day through Labor Day.",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbXzLF2VZ3IkRLkuQRa-je-U",
+    "google_verified_lat": 42.1269891,
+    "google_verified_lng": -74.47389199999999,
+    "google_verified_at": "2025-09-30T18:03:05.061747+00:00",
+    "google_place_source": "places_details_v1"
+  },
+  {
+    "name": "Time and the Valleys Museum",
+    "lat": 41.8975,
+    "lng": -74.5219,
+    "location": "332 Main St, Grahamsville, NY 12740",
+    "cost": "Admission fee (free under age 6)",
+    "description": "A small history and water museum with interactive exhibits on local farms, reservoirs, and old-time Catskills life.",
+    "place_id": null,
+    "place_query": "Time and the Valleys Museum, Grahamsville, NY",
+    "season": "Spring–Fall",
+    "full_description": "The Time and the Valleys Museum brings Catskills history alive in a family-friendly way. Kids can step into a 1930s general store, handle old farming tools, and explore an interactive exhibit about how the New York City water supply reservoirs were built. The recreated one-room schoolhouse is a highlight for children who like role-playing. Seasonal outdoor programs and family days add hands-on crafts and demonstrations. Open April through October."
+  },
+  {
+    "name": "Woodstock Farm Sanctuary",
+    "lat": 41.6538,
+    "lng": -74.2796,
+    "location": "2 Rescue Rd, High Falls, NY 12440",
+    "cost": "Admission fee",
+    "description": "A nonprofit animal sanctuary where families can tour barns, meet rescued cows and goats, and picnic in a peaceful Catskills setting.",
+    "place_id": null,
+    "place_query": "Woodstock Farm Sanctuary, High Falls, NY",
+    "season": "Spring–Fall",
+    "full_description": "Woodstock Farm Sanctuary offers guided weekend tours introducing families to hundreds of rescued farm animals — from cows lounging in fields to friendly goats eager for attention. The sanctuary emphasizes compassion and humane education, making it both fun and meaningful for children. Picnic areas and wide open spaces add to the appeal. Tours are seasonal, typically running April through November."
+  }
+]

@@ -2,8 +2,8 @@
   {
     "name": "Apple Dave’s Orchards",
     "address": "82 Four Corners Rd, Warwick, NY 10990",
-    "lat": 41.2949097,
-    "lng": -74.3080258,
+    "lat": 41.2942004,
+    "lng": -74.3080298,
     "website": "https://www.appledavesorchards.com/",
     "place_id": "ChIJ-WKYqOElw4kRnrRX163_VpI",
     "fruits": [
@@ -17,7 +17,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.2942004,
+    "google_verified_lng": -74.3080298,
+    "formatted_address": "82 4 Corners Rd, Warwick, NY 10990, USA",
+    "google_verified_at": "2025-09-30T18:02:30.869427+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Apple Ridge Orchards",
@@ -37,7 +42,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.2908643,
+    "google_verified_lng": -74.3831829,
+    "formatted_address": "101 Jessup Rd, Warwick, NY 10990, USA",
+    "google_verified_at": "2025-09-30T18:02:31.112242+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Apple Ridge Orchards",
@@ -77,7 +87,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.607343,
+    "google_verified_lng": -73.7054021,
+    "formatted_address": "63 Apple Tree Ln, Poughquag, NY 12570, USA",
+    "google_verified_at": "2025-09-30T18:02:31.553806+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Barton Orchards",
@@ -117,7 +132,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.903087,
+    "google_verified_lng": -76.22279,
+    "formatted_address": "2708 Lords Hill Rd, Lafayette, NY 13084, USA",
+    "google_verified_at": "2025-09-30T18:02:32.011316+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Bowman Orchards",
@@ -137,7 +157,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.8168812,
+    "google_verified_lng": -73.8385153,
+    "formatted_address": "147 Sugar Hill Rd, Rexford, NY 12148, USA",
+    "google_verified_at": "2025-09-30T18:02:32.265922+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Dr. Davies Farm",
@@ -157,7 +182,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.171538,
+    "google_verified_lng": -73.95053700000001,
+    "formatted_address": "306 NY-304, Congers, NY 10920, USA",
+    "google_verified_at": "2025-09-30T18:02:32.521098+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "DuBois Farms",
@@ -177,7 +207,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.680468,
+    "google_verified_lng": -73.96979999999999,
+    "formatted_address": "209 Perkinsville Rd, Highland, NY 12528, USA",
+    "google_verified_at": "2025-09-30T18:02:32.772838+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "DuBois Farms",
@@ -237,7 +272,12 @@
         "season": "Summer",
         "organic": true
       }
-    ]
+    ],
+    "google_verified_lat": 41.5180421,
+    "google_verified_lng": -73.82306009999999,
+    "formatted_address": "9 Fishkill Farm Rd, Hopewell Junction, NY 12533, USA",
+    "google_verified_at": "2025-09-30T18:02:33.222067+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Fishkill Farms",
@@ -277,7 +317,12 @@
         "season": "Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.1890551,
+    "google_verified_lng": -73.83051499999999,
+    "formatted_address": "215 White Birch Rd, Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:02:33.657209+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Fix Brothers Fruit Farm",
@@ -297,7 +342,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.1890551,
+    "google_verified_lng": -73.83051499999999,
+    "formatted_address": "215 White Birch Rd, Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:02:33.760606+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Golden Harvest Farms",
@@ -317,7 +367,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.4353744,
+    "google_verified_lng": -73.6865542,
+    "formatted_address": "3074 US-9, Valatie, NY 12184, USA",
+    "google_verified_at": "2025-09-30T18:02:33.996815+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Greig Farm",
@@ -347,7 +402,12 @@
         "season": "Spring/Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.02818329999999,
+    "google_verified_lng": -73.8538773,
+    "formatted_address": "227 Pitcher Ln, Red Hook, NY 12571, USA",
+    "google_verified_at": "2025-09-30T18:02:34.205557+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Harbes Orchard (North Fork)",
@@ -367,7 +427,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 40.978909,
+    "google_verified_lng": -72.6039461,
+    "formatted_address": "5698 Sound Ave, Riverhead, NY 11901, USA",
+    "google_verified_at": "2025-09-30T18:02:34.432117+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Harvest Moon Farm & Orchard",
@@ -387,7 +452,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.3498731,
+    "google_verified_lng": -73.6349376,
+    "formatted_address": "130 Hardscrabble Rd, North Salem, NY 10560, USA",
+    "google_verified_at": "2025-09-30T18:02:34.648070+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Harvest Moon Farm & Orchard",
@@ -427,7 +497,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.675341,
+    "google_verified_lng": -74.10454059999999,
+    "formatted_address": "2187 NY-32, Modena, NY 12548, USA",
+    "google_verified_at": "2025-09-30T18:02:35.107216+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Hurds Family Farm",
@@ -447,7 +522,12 @@
         "season": "Spring/Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.675341,
+    "google_verified_lng": -74.10454059999999,
+    "formatted_address": "2187 NY-32, Modena, NY 12548, USA",
+    "google_verified_at": "2025-09-30T18:02:35.209017+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Indian Ladder Farms",
@@ -467,13 +547,18 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.655366,
+    "google_verified_lng": -73.97335199999999,
+    "formatted_address": "342 Altamont Rd, Altamont, NY 12009, USA",
+    "google_verified_at": "2025-09-30T18:02:35.421034+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Lawrence Farms Orchards",
     "address": "306 Frozen Ridge Rd, Newburgh, NY 12550",
-    "lat": 41.574655,
-    "lng": -74.02487119999999,
+    "lat": 41.5758686,
+    "lng": -74.0220818,
     "website": "https://lawrencefarmsorchards.org/",
     "place_id": "ChIJtUotWxww3YkRpx3IfbhQLVs",
     "fruits": [
@@ -507,7 +592,12 @@
         "season": "Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.5758686,
+    "google_verified_lng": -74.0220818,
+    "formatted_address": "39 Colandrea Rd, Newburgh, NY 12550, USA",
+    "google_verified_at": "2025-09-30T18:02:35.652913+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Lawrence Farms Orchards",
@@ -547,7 +637,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 40.9471371,
+    "google_verified_lng": -72.81008489999999,
+    "formatted_address": "812 Sound Ave, Calverton, NY 11933, USA",
+    "google_verified_at": "2025-09-30T18:02:36.112604+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Lewin Farms",
@@ -587,7 +682,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.239093,
+    "google_verified_lng": -74.3457698,
+    "formatted_address": "45 Ball Rd, Warwick, NY 10990, USA",
+    "google_verified_at": "2025-09-30T18:02:36.598387+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Mead Orchards",
@@ -607,7 +707,12 @@
         "season": "Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.04425,
+    "google_verified_lng": -73.8545456,
+    "formatted_address": "15 Scism Rd, Tivoli, NY 12583, USA",
+    "google_verified_at": "2025-09-30T18:02:36.828924+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Minard's Family Farm",
@@ -637,7 +742,12 @@
         "season": "Spring/Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.7086397,
+    "google_verified_lng": -74.0695538,
+    "formatted_address": "250 Hurds Rd, Clintondale, NY 12515, USA",
+    "google_verified_at": "2025-09-30T18:02:37.068068+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Ochs Orchard",
@@ -667,7 +777,12 @@
         "season": "Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.2339691,
+    "google_verified_lng": -74.365234,
+    "formatted_address": "4 Ochs Ln, Warwick, NY 10990, USA",
+    "google_verified_at": "2025-09-30T18:02:37.300513+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Ochs Orchard",
@@ -707,7 +822,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.1786064,
+    "google_verified_lng": -74.0320457,
+    "formatted_address": "2 S Mountain Rd, Pomona, NY 10970, USA",
+    "google_verified_at": "2025-09-30T18:02:37.792714+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Outhouse Orchards",
@@ -727,7 +847,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.3467189,
+    "google_verified_lng": -73.6309866,
+    "formatted_address": "139 Hardscrabble Rd, North Salem, NY 10560, USA",
+    "google_verified_at": "2025-09-30T18:02:38.033224+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Outhouse Orchards",
@@ -767,7 +892,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.2356034,
+    "google_verified_lng": -74.3868222,
+    "formatted_address": "169 NY-94, Warwick, NY 10990, USA",
+    "google_verified_at": "2025-09-30T18:02:38.486941+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Prospect Hill Orchards",
@@ -797,7 +927,12 @@
         "season": "Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.6670029,
+    "google_verified_lng": -73.9933614,
+    "formatted_address": "340 Milton Turnpike, Milton, NY 12547, USA",
+    "google_verified_at": "2025-09-30T18:02:38.704804+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Prospect Hill Orchards",
@@ -837,7 +972,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.6670029,
+    "google_verified_lng": -73.9933614,
+    "formatted_address": "340 Milton Turnpike, Milton, NY 12547, USA",
+    "google_verified_at": "2025-09-30T18:02:39.016294+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Rose Hill Farm",
@@ -867,7 +1007,12 @@
         "season": "Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.0093311,
+    "google_verified_lng": -73.84949139999999,
+    "formatted_address": "19 Rose Hill, Red Hook, NY 12571, USA",
+    "google_verified_at": "2025-09-30T18:02:39.257744+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Samascott Orchards",
@@ -887,7 +1032,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.3988457,
+    "google_verified_lng": -73.70410389999999,
+    "formatted_address": "5 Sunset Ave, Kinderhook, NY 12106, USA",
+    "google_verified_at": "2025-09-30T18:02:39.506270+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Saratoga Apple",
@@ -907,7 +1057,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 43.105695,
+    "google_verified_lng": -73.58952339999999,
+    "formatted_address": "1174 NY-29, Schuylerville, NY 12871, USA",
+    "google_verified_at": "2025-09-30T18:02:39.752306+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Soons Orchards",
@@ -927,7 +1082,12 @@
         "season": "Spring/Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.4026718,
+    "google_verified_lng": -74.4036622,
+    "formatted_address": "23 Soons Cir, New Hampton, NY 10958, USA",
+    "google_verified_at": "2025-09-30T18:02:40.020417+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Soons Orchards (U-Pick Orchard)",
@@ -947,7 +1107,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.4026718,
+    "google_verified_lng": -74.4036622,
+    "formatted_address": "23 Soons Cir, New Hampton, NY 10958, USA",
+    "google_verified_at": "2025-09-30T18:02:40.124731+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Stone Ridge Orchard",
@@ -967,7 +1132,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.838664,
+    "google_verified_lng": -74.1485038,
+    "formatted_address": "3012 NY-213, Stone Ridge, NY 12484, USA",
+    "google_verified_at": "2025-09-30T18:02:40.371987+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Stuart's Fruit Farm",
@@ -992,8 +1162,8 @@
   {
     "name": "Stuart’s Fruit Farm",
     "address": "62 Granite Springs Rd, Granite Springs, NY 10527",
-    "lat": 41.3084272,
-    "lng": -73.7662442,
+    "lat": 41.3077182,
+    "lng": -73.7661176,
     "website": "https://www.stuartsfarm.com/",
     "place_id": "ChIJGZ1WiqO2wokR7-7LGjMivgE",
     "fruits": [
@@ -1007,7 +1177,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.3077182,
+    "google_verified_lng": -73.7661176,
+    "formatted_address": "62 Granite Springs Rd, Granite Springs, NY 10527, USA",
+    "google_verified_at": "2025-09-30T18:02:40.846692+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Milk Pail U-Pick",
@@ -1027,7 +1202,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 40.9085078,
+    "google_verified_lng": -72.32028489999999,
+    "formatted_address": "50 Horsemill Ln, Water Mill, NY 11976, USA",
+    "google_verified_at": "2025-09-30T18:02:41.088324+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Twin Star Orchards",
@@ -1047,7 +1227,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.7572604,
+    "google_verified_lng": -74.04958839999999,
+    "formatted_address": "155 N Ohioville Rd, New Paltz, NY 12561, USA",
+    "google_verified_at": "2025-09-30T18:02:41.372107+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Weed Orchards & Winery",
@@ -1067,7 +1252,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.623137,
+    "google_verified_lng": -74.0009154,
+    "formatted_address": "43 Mt Zion Rd, Marlboro, NY 12542, USA",
+    "google_verified_at": "2025-09-30T18:02:41.651764+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Weed Orchards & Winery",
@@ -1117,7 +1307,12 @@
         "season": "Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.0121351,
+    "google_verified_lng": -72.4840136,
+    "formatted_address": "28700 Main Rd, Cutchogue, NY 11935, USA",
+    "google_verified_at": "2025-09-30T18:02:42.071750+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Wilkens Fruit & Fir Farm",
@@ -1137,7 +1332,12 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.2780064,
+    "google_verified_lng": -73.825319,
+    "formatted_address": "1335 White Hill Rd, Yorktown Heights, NY 10598, USA",
+    "google_verified_at": "2025-09-30T18:02:42.318138+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Wilkens Fruit & Fir Farm",
@@ -1197,7 +1397,12 @@
         "season": "Summer",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 41.66738429999999,
+    "google_verified_lng": -74.1375185,
+    "formatted_address": "699 NY-208, Gardiner, NY 12525, USA",
+    "google_verified_at": "2025-09-30T18:02:42.802219+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Yonder Fruit Farms",
@@ -1217,7 +1422,11 @@
         "season": "Fall",
         "organic": false
       }
-    ]
+    ],
+    "google_verified_lat": 42.4516637,
+    "google_verified_lng": -73.6942977,
+    "formatted_address": "3167 US-9, Valatie, NY 12184, USA",
+    "google_verified_at": "2025-09-30T18:02:43.056150+00:00",
+    "google_place_source": "places_details_v1"
   }
 ]
-

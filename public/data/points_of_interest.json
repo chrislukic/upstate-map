@@ -19,7 +19,12 @@
     "location": "Corning, NY",
     "scenicArea": "Finger Lakes",
     "place_id": "ChIJNaqG8kpI0IkRUv08p7B9GIY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJNaqG8kpI0IkRUv08p7B9GIY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJNaqG8kpI0IkRUv08p7B9GIY",
+    "google_verified_lat": 42.14980449999999,
+    "google_verified_lng": -77.0541959,
+    "formatted_address": "1 Museum Way, Corning, NY 14830, USA",
+    "google_verified_at": "2025-09-30T18:02:44.010820+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Storm King Art Center",
@@ -31,7 +36,12 @@
     "location": "New Windsor, NY",
     "scenicArea": "Hudson Valley",
     "place_id": "ChIJ1-kIX87SwokRzr_EFr3Htkc",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ1-kIX87SwokRzr_EFr3Htkc"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ1-kIX87SwokRzr_EFr3Htkc",
+    "google_verified_lat": 41.4233906,
+    "google_verified_lng": -74.0622764,
+    "formatted_address": "1 Museum Rd, New Windsor, NY 12553, USA",
+    "google_verified_at": "2025-09-30T18:02:44.237661+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Bethel Woods Center for the Arts",
@@ -43,7 +53,12 @@
     "location": "Bethel, NY",
     "scenicArea": "Catskills",
     "place_id": "ChIJe5zbXayo3IkRmc5Bi-vT8iY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJe5zbXayo3IkRmc5Bi-vT8iY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJe5zbXayo3IkRmc5Bi-vT8iY",
+    "google_verified_lat": 41.6971535,
+    "google_verified_lng": -74.8776143,
+    "formatted_address": "200 Hurd Rd, Bethel, NY 12720, USA",
+    "google_verified_at": "2025-09-30T18:02:44.474622+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Cooperstown Baseball Hall of Fame",
@@ -55,7 +70,12 @@
     "location": "Cooperstown, NY",
     "scenicArea": "Central New York",
     "place_id": "ChIJiyz7EScH3IkRhQO_m7d9hUw",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJiyz7EScH3IkRhQO_m7d9hUw"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJiyz7EScH3IkRhQO_m7d9hUw",
+    "google_verified_lat": 42.6999368,
+    "google_verified_lng": -74.92321369999999,
+    "formatted_address": "25 Main St, Cooperstown, NY 13326, USA",
+    "google_verified_at": "2025-09-30T18:02:44.695180+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Fenimore Art Museum",
@@ -67,7 +87,12 @@
     "location": "Cooperstown, NY",
     "scenicArea": "Central New York",
     "place_id": "ChIJdzgEgtMA3IkRkoNmoTmAaFs",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdzgEgtMA3IkRkoNmoTmAaFs"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdzgEgtMA3IkRkoNmoTmAaFs",
+    "google_verified_lat": 42.7157701,
+    "google_verified_lng": -74.927101,
+    "formatted_address": "5798 NY-80, Cooperstown, NY 13326, USA",
+    "google_verified_at": "2025-09-30T18:02:44.926303+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Olana State Historic Site",
@@ -79,7 +104,12 @@
     "location": "Hudson, NY",
     "scenicArea": "Hudson Valley",
     "place_id": "ChIJbU8XRyyW3YkRejUklP-xgFY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbU8XRyyW3YkRejUklP-xgFY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbU8XRyyW3YkRejUklP-xgFY",
+    "google_verified_lat": 42.2189213,
+    "google_verified_lng": -73.83267130000002,
+    "formatted_address": "Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:02:45.191181+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Dia:Beacon",
@@ -91,7 +121,12 @@
     "location": "Beacon, NY",
     "scenicArea": "Hudson Valley",
     "place_id": "ChIJFQDsU9Uz3YkR_pQqgPsR8I4",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJFQDsU9Uz3YkR_pQqgPsR8I4"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJFQDsU9Uz3YkR_pQqgPsR8I4",
+    "google_verified_lat": 41.5000753,
+    "google_verified_lng": -73.9825664,
+    "formatted_address": "3 Beekman St, Beacon, NY 12508, USA",
+    "google_verified_at": "2025-09-30T18:02:45.405772+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Franklin D. Roosevelt Presidential Library and Museum",
@@ -103,7 +138,12 @@
     "location": "Hyde Park, NY",
     "scenicArea": "Hudson Valley",
     "place_id": "ChIJ6cVqwyoU3YkRHUdQGGmRN8s",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ6cVqwyoU3YkRHUdQGGmRN8s"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ6cVqwyoU3YkRHUdQGGmRN8s",
+    "google_verified_lat": 41.7686596,
+    "google_verified_lng": -73.93441849999999,
+    "formatted_address": "4079 Albany Post Rd, Hyde Park, NY 12538, USA",
+    "google_verified_at": "2025-09-30T18:02:45.632096+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Vanderbilt Mansion National Historic Site",
@@ -125,7 +165,12 @@
     "location": "West Point, NY",
     "scenicArea": "Hudson Valley",
     "place_id": "ChIJvx7sOJLMwokRofBbRROtFlE",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvx7sOJLMwokRofBbRROtFlE"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvx7sOJLMwokRofBbRROtFlE",
+    "google_verified_lat": 41.3914526,
+    "google_verified_lng": -73.9554952,
+    "formatted_address": "Jefferson Hall Library and Learning Center, 758 Cullum Rd, West Point, NY 10996, USA",
+    "google_verified_at": "2025-09-30T18:02:46.427018+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Woodstock Artists Association & Museum",
@@ -137,7 +182,12 @@
     "location": "Woodstock, NY",
     "scenicArea": "Catskills",
     "place_id": "ChIJA2H8PzQH3YkR5EVX40Gu1t4",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJA2H8PzQH3YkR5EVX40Gu1t4"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJA2H8PzQH3YkR5EVX40Gu1t4",
+    "google_verified_lat": 42.0408333,
+    "google_verified_lng": -74.11944439999999,
+    "formatted_address": "28 Tinker St, Woodstock, NY 12498, USA",
+    "google_verified_at": "2025-09-30T18:02:46.664545+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Howe Caverns",
@@ -149,7 +199,12 @@
     "location": "Howes Cave, NY",
     "scenicArea": "Central New York",
     "place_id": "ChIJ-zMYfnMo3IkRTYbvGaaM4pY",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-zMYfnMo3IkRTYbvGaaM4pY"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-zMYfnMo3IkRTYbvGaaM4pY",
+    "google_verified_lat": 42.696241,
+    "google_verified_lng": -74.39863799999999,
+    "formatted_address": "255 Discovery Dr, Howes Cave, NY 12092, USA",
+    "google_verified_at": "2025-09-30T18:02:46.894229+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Saratoga Performing Arts Center",
@@ -161,7 +216,12 @@
     "location": "Saratoga Springs, NY",
     "scenicArea": "Adirondacks",
     "place_id": "ChIJayFbLlc43okRiFrhzwWyT4k",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJayFbLlc43okRiFrhzwWyT4k"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJayFbLlc43okRiFrhzwWyT4k",
+    "google_verified_lat": 43.055381,
+    "google_verified_lng": -73.80593,
+    "formatted_address": "108 Avenue of the Pines, Saratoga Springs, NY 12866, USA",
+    "google_verified_at": "2025-09-30T18:02:47.220004+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "National Museum of Racing and Hall of Fame",
@@ -173,7 +233,12 @@
     "location": "Saratoga Springs, NY",
     "scenicArea": "Adirondacks",
     "place_id": "ChIJz6d0O9053okR4qVQOObquxA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJz6d0O9053okR4qVQOObquxA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJz6d0O9053okR4qVQOObquxA",
+    "google_verified_lat": 43.076127,
+    "google_verified_lng": -73.77351399999999,
+    "formatted_address": "191 Union Ave, Saratoga Springs, NY 12866, USA",
+    "google_verified_at": "2025-09-30T18:02:47.443167+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "George Eastman Museum",
@@ -185,7 +250,12 @@
     "location": "Rochester, NY",
     "scenicArea": "Finger Lakes",
     "place_id": "ChIJzZVna5611okRr5EKId-9lJg",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJzZVna5611okRr5EKId-9lJg"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJzZVna5611okRr5EKId-9lJg",
+    "google_verified_lat": 43.1528123,
+    "google_verified_lng": -77.5802521,
+    "formatted_address": "900 East Ave, Rochester, NY 14607, USA",
+    "google_verified_at": "2025-09-30T18:02:47.670890+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Seneca Falls National Women's Rights Historical Park",
@@ -197,7 +267,12 @@
     "location": "Seneca Falls, NY",
     "scenicArea": "Finger Lakes",
     "place_id": "ChIJ_9IMOtK30IkRP_-Gek0dWMs",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_9IMOtK30IkRP_-Gek0dWMs"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_9IMOtK30IkRP_-Gek0dWMs",
+    "google_verified_lat": 42.9107583,
+    "google_verified_lng": -76.799964,
+    "formatted_address": "136 Fall St, Seneca Falls, NY 13148, USA",
+    "google_verified_at": "2025-09-30T18:02:47.898721+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Watkins Glen International",
@@ -219,7 +294,12 @@
     "location": "Castile, NY",
     "scenicArea": "Finger Lakes",
     "place_id": "ChIJhz7XjTfT04kRblD0QJU8tA0",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhz7XjTfT04kRblD0QJU8tA0"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhz7XjTfT04kRblD0QJU8tA0",
+    "google_verified_lat": 42.6010498,
+    "google_verified_lng": -78.0372025,
+    "formatted_address": "6787 Denton Corners Rd, Castile, NY 14427, USA",
+    "google_verified_at": "2025-09-30T18:02:48.663626+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Niagara Falls State Park",
@@ -231,7 +311,12 @@
     "location": "Niagara Falls, NY",
     "scenicArea": "Western New York",
     "place_id": "ChIJXacn7eJC04kRFwjMq0i1VtU",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXacn7eJC04kRFwjMq0i1VtU"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXacn7eJC04kRFwjMq0i1VtU",
+    "google_verified_lat": 43.0862951,
+    "google_verified_lng": -79.06642459999999,
+    "formatted_address": "332 Prospect St, Niagara Falls, NY 14303, USA",
+    "google_verified_at": "2025-09-30T18:02:48.876188+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Albany Institute of History & Art",
@@ -243,7 +328,12 @@
     "location": "Albany, NY",
     "scenicArea": "Capital Region",
     "place_id": "ChIJV1eNBTAK3okRreq4sFdrGa8",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJV1eNBTAK3okRreq4sFdrGa8"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJV1eNBTAK3okRreq4sFdrGa8",
+    "google_verified_lat": 42.655725,
+    "google_verified_lng": -73.760233,
+    "formatted_address": "125 Washington Ave, Albany, NY 12210, USA",
+    "google_verified_at": "2025-09-30T18:02:49.128366+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Sagamore Hill National Historic Site",
@@ -255,7 +345,12 @@
     "location": "Oyster Bay, NY",
     "scenicArea": "Long Island",
     "place_id": "ChIJncSsvjOdwokRW2WmvuaOBW0",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJncSsvjOdwokRW2WmvuaOBW0"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJncSsvjOdwokRW2WmvuaOBW0",
+    "google_verified_lat": 40.88552929999999,
+    "google_verified_lng": -73.5010296,
+    "formatted_address": "20 Sagamore Hill Rd, Oyster Bay, NY 11771, USA",
+    "google_verified_at": "2025-09-30T18:02:49.346098+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Old Westbury Gardens",
@@ -267,7 +362,12 @@
     "location": "Old Westbury, NY",
     "scenicArea": "Long Island",
     "place_id": "ChIJT8aGDwGHwokR8Tg_-DkoXoI",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJT8aGDwGHwokR8Tg_-DkoXoI"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJT8aGDwGHwokR8Tg_-DkoXoI",
+    "google_verified_lat": 40.7746254,
+    "google_verified_lng": -73.6018285,
+    "formatted_address": "71 Old Westbury Rd, Old Westbury, NY 11568, USA",
+    "google_verified_at": "2025-09-30T18:02:49.600152+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Storm King State Park",
@@ -289,7 +389,12 @@
     "location": "Blue Mountain Lake, NY",
     "scenicArea": "Adirondacks",
     "place_id": "ChIJXTBX6Wpj34kRLYUmrVGCGUk",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXTBX6Wpj34kRLYUmrVGCGUk"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXTBX6Wpj34kRLYUmrVGCGUk",
+    "google_verified_lat": 43.8694666,
+    "google_verified_lng": -74.4321156,
+    "formatted_address": "9097 NY-30, Blue Mountain Lake, NY 12812, USA",
+    "google_verified_at": "2025-09-30T18:02:50.555513+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Wild Center",
@@ -311,7 +416,12 @@
     "location": "Binghamton, NY",
     "scenicArea": "Southern Tier",
     "place_id": "ChIJm7PolWvv2okRnbwE4r14MxU",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm7PolWvv2okRnbwE4r14MxU"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm7PolWvv2okRnbwE4r14MxU",
+    "google_verified_lat": 42.0938996,
+    "google_verified_lng": -75.91858119999999,
+    "formatted_address": "30 Front St, Binghamton, NY 13905, USA",
+    "google_verified_at": "2025-09-30T18:02:51.567438+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Munson-Williams-Proctor Arts Institute",
@@ -323,7 +433,12 @@
     "location": "Utica, NY",
     "scenicArea": "Central New York",
     "place_id": "ChIJSYm7HNZG2YkRbaBOoNwjOeU",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSYm7HNZG2YkRbaBOoNwjOeU"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSYm7HNZG2YkRbaBOoNwjOeU",
+    "google_verified_lat": 43.0975578,
+    "google_verified_lng": -75.24016859999999,
+    "formatted_address": "310 Genesee St, Utica, NY 13502, USA",
+    "google_verified_at": "2025-09-30T18:02:51.801740+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Erie Canal Museum",
@@ -335,7 +450,12 @@
     "location": "Syracuse, NY",
     "scenicArea": "Central New York",
     "place_id": "ChIJPc8GGbrz2YkRpZ7dxFRlIkA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPc8GGbrz2YkRpZ7dxFRlIkA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPc8GGbrz2YkRpZ7dxFRlIkA",
+    "google_verified_lat": 43.050679,
+    "google_verified_lng": -76.14882899999999,
+    "formatted_address": "318 Erie Blvd E, Syracuse, NY 13202, USA",
+    "google_verified_at": "2025-09-30T18:02:52.044344+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Saratoga National Historical Park",
@@ -347,7 +467,12 @@
     "location": "Stillwater, NY",
     "scenicArea": "Capital Region",
     "place_id": "ChIJ-_m-2dEk3okRGXKXwMq9TE8",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-_m-2dEk3okRGXKXwMq9TE8"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-_m-2dEk3okRGXKXwMq9TE8",
+    "google_verified_lat": 43.0121285,
+    "google_verified_lng": -73.648809,
+    "formatted_address": "648 NY-32, Stillwater, NY 12170, USA",
+    "google_verified_at": "2025-09-30T18:02:52.285283+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Fort Ticonderoga",
@@ -359,7 +484,12 @@
     "location": "Ticonderoga, NY",
     "scenicArea": "Adirondacks",
     "place_id": "ChIJvWTTPdpVtUwRc_fye8CY2nA",
-    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvWTTPdpVtUwRc_fye8CY2nA"
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvWTTPdpVtUwRc_fye8CY2nA",
+    "google_verified_lat": 43.8416766,
+    "google_verified_lng": -73.38753960000001,
+    "formatted_address": "102 Fort Ti Rd, Ticonderoga, NY 12883, USA",
+    "google_verified_at": "2025-09-30T18:02:52.504131+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Hyde Hall",

@@ -156,7 +156,7 @@ class PopupBuilder {
     if (!data.google_maps_url) return null;
     return {
       url: data.google_maps_url,
-      text: 'View on Google Maps',
+      text: 'Google Maps',
       icon: 'fa-map-marker',
       className: 'popup__link--secondary'
     };
@@ -200,11 +200,16 @@ class PopupBuilder {
     const directionsUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(originParam)}&destination=${encodeURIComponent(destinationParam)}`;
     Logger.verbose('Creating directions link:', { origin: originParam, destination: destinationParam, directionsUrl });
 
+    const originLabel = this.map && typeof this.map.formatAddress === 'function'
+      ? this.map.formatAddress(this.tripPlan.address)
+      : (this.tripPlan.address || originParam);
+
     return {
       url: directionsUrl,
-      text: `Directions from ${this.map.formatAddress(this.tripPlan.address || 'trip')}`,
+      text: 'Directions',
       icon: 'fa-directions',
-      className: 'popup__link--primary'
+      className: 'popup__link--primary',
+      title: originLabel ? `Directions from ${originLabel}` : null
     };
   }
 
@@ -233,7 +238,12 @@ class PopupBuilder {
   // Helper method to render a link object as HTML
   renderLink(linkObj) {
     if (!linkObj) return '';
-    return `<a href="${linkObj.url}" target="_blank" rel="noopener" class="popup__link ${linkObj.className}">
+    const classes = ['popup__link'];
+    if (linkObj.className) {
+      classes.push(linkObj.className);
+    }
+    const titleAttr = linkObj.title ? ` title="${linkObj.title.replace(/"/g, '&quot;')}"` : '';
+    return `<a href="${linkObj.url}" target="_blank" rel="noopener" class="${classes.join(' ')}"${titleAttr}>
       <i class="fa ${linkObj.icon}"></i> ${linkObj.text}
     </a>`;
   }

@@ -10,7 +10,12 @@
     "family_friendly": true,
     "place_id": "ChIJDQ64ybr43IkRrTaCpz0syFQ",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJDQ64ybr43IkRrTaCpz0syFQ",
-    "place_query": "Phoenicia Diner, Phoenicia, NY"
+    "place_query": "Phoenicia Diner, Phoenicia, NY",
+    "google_verified_lat": 42.0710505,
+    "google_verified_lng": -74.3077531,
+    "formatted_address": "5681 NY-28, Phoenicia, NY 12464, USA",
+    "google_verified_at": "2025-09-30T18:02:14.148764+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Cochecton Pump House",
@@ -23,7 +28,12 @@
     "family_friendly": true,
     "place_id": "ChIJF7Wl6dNX24kRn6ztBiO53VI",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJF7Wl6dNX24kRn6ztBiO53VI",
-    "place_query": "Cochecton Pump House, Cochecton, NY"
+    "place_query": "Cochecton Pump House, Cochecton, NY",
+    "google_verified_lat": 41.6850422,
+    "google_verified_lng": -75.04778619999999,
+    "formatted_address": "7895 NY-97, Cochecton, NY 12726, USA",
+    "google_verified_at": "2025-09-30T18:02:14.363701+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Stissing House",
@@ -36,7 +46,12 @@
     "family_friendly": true,
     "place_id": "ChIJZ0ke4PR33YkRxij7SvRy2V0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ0ke4PR33YkRxij7SvRy2V0",
-    "place_query": "Stissing House, Pine Plains, NY"
+    "place_query": "Stissing House, Pine Plains, NY",
+    "google_verified_lat": 41.9795121,
+    "google_verified_lng": -73.6564422,
+    "formatted_address": "7801 S Main St, Pine Plains, NY 12567, USA",
+    "google_verified_at": "2025-09-30T18:02:14.613853+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Gracie’s Luncheonette",
@@ -49,7 +64,12 @@
     "family_friendly": true,
     "place_id": "ChIJ2_wSAjK83YkRwv4qMsr1-9s",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2_wSAjK83YkRwv4qMsr1-9s",
-    "place_query": "Gracie’s Luncheonette, Leeds, NY"
+    "place_query": "Gracie’s Luncheonette, Leeds, NY",
+    "google_verified_lat": 42.253562,
+    "google_verified_lng": -73.8947084,
+    "formatted_address": "969 Main St, Leeds, NY 12451, USA",
+    "google_verified_at": "2025-09-30T18:02:14.833186+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Lil' Deb's Oasis",
@@ -62,7 +82,12 @@
     "family_friendly": true,
     "place_id": "ChIJ3dZzhSeU3YkRfKEwhHXup-w",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3dZzhSeU3YkRfKEwhHXup-w",
-    "place_query": "Lil' Deb's Oasis, Hudson, NY"
+    "place_query": "Lil' Deb's Oasis, Hudson, NY",
+    "google_verified_lat": 42.2472782,
+    "google_verified_lng": -73.7807923,
+    "formatted_address": "747 Columbia St, Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:02:15.084003+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Roscoe Diner",
@@ -75,7 +100,12 @@
     "family_friendly": true,
     "place_id": "ChIJXekLV4We3IkRXQTw5pR0OBE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXekLV4We3IkRXQTw5pR0OBE",
-    "place_query": "Roscoe Diner, Roscoe, NY"
+    "place_query": "Roscoe Diner, Roscoe, NY",
+    "google_verified_lat": 41.9308339,
+    "google_verified_lng": -74.9090858,
+    "formatted_address": "1908 Old Rte 17, Roscoe, NY 12776, USA",
+    "google_verified_at": "2025-09-30T18:02:15.392374+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Deer Mountain Inn",
@@ -88,12 +118,17 @@
     "family_friendly": true,
     "place_id": "ChIJQ6v75v2x3YkRwPpalS4DT_s",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQ6v75v2x3YkRwPpalS4DT_s",
-    "place_query": "Deer Mountain Inn, Tannersville, NY"
+    "place_query": "Deer Mountain Inn, Tannersville, NY",
+    "google_verified_lat": 42.2207973,
+    "google_verified_lng": -74.1193351,
+    "formatted_address": "790 Co Rd 25, Tannersville, NY 12485, USA",
+    "google_verified_at": "2025-09-30T18:02:15.625602+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Blue Hill at Stone Barns",
-    "lat": 41.1036,
-    "lng": -73.8291,
+    "lat": 41.1042276,
+    "lng": -73.8285566,
     "location": "Pocantico Hills, NY",
     "atmosphere": "Modern farmhouse setting at a working farm and education center.",
     "specialty": "Innovative farm-to-table tasting menus.",
@@ -101,7 +136,12 @@
     "family_friendly": true,
     "place_id": "ChIJExcPIfK_wokRtc6K_3jkhgM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJExcPIfK_wokRtc6K_3jkhgM",
-    "place_query": "Blue Hill at Stone Barns, Pocantico Hills, NY"
+    "place_query": "Blue Hill at Stone Barns, Pocantico Hills, NY",
+    "google_verified_lat": 41.1042276,
+    "google_verified_lng": -73.8285566,
+    "formatted_address": "630 Bedford Rd, Tarrytown, NY 10591, USA",
+    "google_verified_at": "2025-09-30T18:02:15.871546+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Brushland Eating House",
@@ -114,7 +154,12 @@
     "family_friendly": true,
     "place_id": "ChIJZ535hi173IkR0GgCgTlWdOY",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ535hi173IkR0GgCgTlWdOY",
-    "place_query": "Brushland Eating House, Bovina, NY"
+    "place_query": "Brushland Eating House, Bovina, NY",
+    "google_verified_lat": 42.2622347,
+    "google_verified_lng": -74.7840167,
+    "formatted_address": "1927 County Hwy 6, Bovina Center, NY 13740, USA",
+    "google_verified_at": "2025-09-30T18:02:16.093224+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Peekamoose Restaurant",
@@ -127,7 +172,12 @@
     "family_friendly": true,
     "place_id": "ChIJx-od54BY3IkR7dx2QbSxCnE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJx-od54BY3IkR7dx2QbSxCnE",
-    "place_query": "Peekamoose Restaurant, Big Indian, NY"
+    "place_query": "Peekamoose Restaurant, Big Indian, NY",
+    "google_verified_lat": 42.1075361,
+    "google_verified_lng": -74.4504917,
+    "formatted_address": "8373 NY-28, Big Indian, NY 12410, USA",
+    "google_verified_at": "2025-09-30T18:02:16.325478+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "West Taghkanic Diner",
@@ -140,7 +190,12 @@
     "family_friendly": true,
     "place_id": "ChIJR9oba6ib3YkRgl8lUXKud9o",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJR9oba6ib3YkRgl8lUXKud9o",
-    "place_query": "West Taghkanic Diner, Ancram, NY"
+    "place_query": "West Taghkanic Diner, Ancram, NY",
+    "google_verified_lat": 42.1195294,
+    "google_verified_lng": -73.7173729,
+    "formatted_address": "1016 NY-82, Ancram, NY 12502, USA",
+    "google_verified_at": "2025-09-30T18:02:16.543991+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Amsterdam",
@@ -153,7 +208,12 @@
     "family_friendly": true,
     "place_id": "ChIJiyw6JkgM3YkRJPE6_u08-pw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJiyw6JkgM3YkRJPE6_u08-pw",
-    "place_query": "The Amsterdam, Rhinebeck, NY"
+    "place_query": "The Amsterdam, Rhinebeck, NY",
+    "google_verified_lat": 41.9262769,
+    "google_verified_lng": -73.91225709999999,
+    "formatted_address": "6380 Mill St, Rhinebeck, NY 12572, USA",
+    "google_verified_at": "2025-09-30T18:02:16.766389+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Terrapin Restaurant",
@@ -166,7 +226,12 @@
     "family_friendly": true,
     "place_id": "ChIJJWLiADgM3YkRvu4eiB5eucY",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJWLiADgM3YkRvu4eiB5eucY",
-    "place_query": "Terrapin Restaurant, Rhinebeck, NY"
+    "place_query": "Terrapin Restaurant, Rhinebeck, NY",
+    "google_verified_lat": 41.92828,
+    "google_verified_lng": -73.912547,
+    "formatted_address": "6426 Montgomery St, Rhinebeck, NY 12572, USA",
+    "google_verified_at": "2025-09-30T18:02:16.992418+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Roundhouse",
@@ -179,7 +244,12 @@
     "family_friendly": true,
     "place_id": "ChIJhwhP1mAx3YkRO3FXmFj7Dkk",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhwhP1mAx3YkRO3FXmFj7Dkk",
-    "place_query": "The Roundhouse, Beacon, NY"
+    "place_query": "The Roundhouse, Beacon, NY",
+    "google_verified_lat": 41.5025939,
+    "google_verified_lng": -73.962295,
+    "formatted_address": "2 E Main St, Beacon, NY 12508, USA",
+    "google_verified_at": "2025-09-30T18:02:17.249341+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Cochecton Fire Station",
@@ -192,7 +262,12 @@
     "family_friendly": true,
     "place_id": "ChIJ7z3yLqRR24kRAPsowCXmI18",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ7z3yLqRR24kRAPsowCXmI18",
-    "place_query": "Cochecton Fire Station, Cochecton, NY"
+    "place_query": "Cochecton Fire Station, Cochecton, NY",
+    "google_verified_lat": 41.7078582,
+    "google_verified_lng": -75.0619481,
+    "formatted_address": "1 Depot Rd, Cochecton, NY 12726, USA",
+    "google_verified_at": "2025-09-30T18:02:17.619251+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Prospect at Scribner’s Lodge",
@@ -205,7 +280,12 @@
     "family_friendly": true,
     "place_id": "ChIJn-N_sT2t3YkRcbsjslnnOIY",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJn-N_sT2t3YkRcbsjslnnOIY",
-    "place_query": "Prospect at Scribner’s Lodge, Hunter, NY"
+    "place_query": "Prospect at Scribner’s Lodge, Hunter, NY",
+    "google_verified_lat": 42.203389,
+    "google_verified_lng": -74.19676319999999,
+    "formatted_address": "13 Scribner Hollow Rd, Hunter, NY 12442, USA",
+    "google_verified_at": "2025-09-30T18:02:17.899121+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Troutbeck Dining Room",
@@ -218,7 +298,12 @@
     "family_friendly": true,
     "place_id": "ChIJh-gIjv183YkRqrSPG325fgI",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJh-gIjv183YkRqrSPG325fgI",
-    "place_query": "Troutbeck Dining Room, Amenia, NY"
+    "place_query": "Troutbeck Dining Room, Amenia, NY",
+    "google_verified_lat": 41.854537,
+    "google_verified_lng": -73.51648519999999,
+    "formatted_address": "515 Leedsville Rd, Amenia, NY 12501, USA",
+    "google_verified_at": "2025-09-30T18:02:18.127522+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The DeBruce",
@@ -231,7 +316,12 @@
     "family_friendly": true,
     "place_id": "ChIJIYyfKbWW3IkRgDTzL21PWmU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIYyfKbWW3IkRgDTzL21PWmU",
-    "place_query": "The DeBruce, Livingston Manor, NY"
+    "place_query": "The DeBruce, Livingston Manor, NY",
+    "google_verified_lat": 41.9105274,
+    "google_verified_lng": -74.7472513,
+    "formatted_address": "982 Debruce Rd, Livingston Manor, NY 12758, USA",
+    "google_verified_at": "2025-09-30T18:02:18.352690+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Maker Restaurant",
@@ -244,7 +334,12 @@
     "family_friendly": true,
     "place_id": "ChIJpSEo2QqV3YkRXbpSDtiGHSM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJpSEo2QqV3YkRXbpSDtiGHSM",
-    "place_query": "The Maker Restaurant, Hudson, NY"
+    "place_query": "The Maker Restaurant, Hudson, NY",
+    "google_verified_lat": 42.2528966,
+    "google_verified_lng": -73.79084449999999,
+    "formatted_address": "306 Warren St, Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:02:18.587593+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Wm. Farmer and Sons",
@@ -257,7 +352,12 @@
     "family_friendly": false,
     "place_id": "ChIJ4cM-H9OV3YkRdzbbJJKMOX0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4cM-H9OV3YkRdzbbJJKMOX0",
-    "place_query": "Wm. Farmer and Sons, Hudson, NY"
+    "place_query": "Wm. Farmer and Sons, Hudson, NY",
+    "google_verified_lat": 42.2557142,
+    "google_verified_lng": -73.79628249999999,
+    "formatted_address": "20 S Front St, Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:02:18.833994+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Rivertown Lodge Tavern",
@@ -270,7 +370,12 @@
     "family_friendly": false,
     "place_id": "ChIJLV4xfnCX3YkRBjDCgpfsSgM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJLV4xfnCX3YkRBjDCgpfsSgM",
-    "place_query": "Rivertown Lodge Tavern, Hudson, NY"
+    "place_query": "Rivertown Lodge Tavern, Hudson, NY",
+    "google_verified_lat": 42.24639270000001,
+    "google_verified_lng": -73.78276439999999,
+    "formatted_address": "731 Warren St, Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:02:19.052994+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Ole Savannah Southern Table & Bar",
@@ -283,7 +388,12 @@
     "family_friendly": true,
     "place_id": "ChIJleW1XVIO3YkRoXhKN0uof6w",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJleW1XVIO3YkRoXhKN0uof6w",
-    "place_query": "Ole Savannah Southern Table & Bar, Kingston, NY"
+    "place_query": "Ole Savannah Southern Table & Bar, Kingston, NY",
+    "google_verified_lat": 41.9196284,
+    "google_verified_lng": -73.97958430000001,
+    "formatted_address": "100 Rondout Landing, Kingston, NY 12401, USA",
+    "google_verified_at": "2025-09-30T18:02:19.277856+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Diamond Mills Tavern",
@@ -296,7 +406,12 @@
     "family_friendly": true,
     "place_id": "ChIJlZ_bWiSn3YkR2YzOdTUWiaI",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlZ_bWiSn3YkR2YzOdTUWiaI",
-    "place_query": "Diamond Mills Tavern, Saugerties, NY"
+    "place_query": "Diamond Mills Tavern, Saugerties, NY",
+    "google_verified_lat": 42.0727778,
+    "google_verified_lng": -73.95027780000001,
+    "formatted_address": "25 S Partition St, Saugerties, NY 12477, USA",
+    "google_verified_at": "2025-09-30T18:02:19.518328+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Hotel Kinsley (Restaurant Kinsley)",
@@ -309,7 +424,12 @@
     "family_friendly": true,
     "place_id": "ChIJS8bIzbcP3YkRwlV3XHRVjEA",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJS8bIzbcP3YkRwlV3XHRVjEA",
-    "place_query": "Hotel Kinsley, Restaurant Kinsley, NY"
+    "place_query": "Hotel Kinsley, Restaurant Kinsley, NY",
+    "google_verified_lat": 41.9338881,
+    "google_verified_lng": -74.02002829999999,
+    "formatted_address": "301 Wall St, Kingston, NY 12401, USA",
+    "google_verified_at": "2025-09-30T18:02:19.752144+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Heron",
@@ -322,7 +442,12 @@
     "family_friendly": true,
     "place_id": "ChIJUf-91n9T24kR0-4vSw5HrS4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUf-91n9T24kR0-4vSw5HrS4",
-    "place_query": "The Heron, Narrowsburg, NY"
+    "place_query": "The Heron, Narrowsburg, NY",
+    "google_verified_lat": 41.6085952,
+    "google_verified_lng": -75.0613802,
+    "formatted_address": "40 Main St, Narrowsburg, NY 12764, USA",
+    "google_verified_at": "2025-09-30T18:02:20.000795+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Callicoon Hills (The Conover Club)",
@@ -335,7 +460,12 @@
     "family_friendly": true,
     "place_id": "ChIJeS-APgOh3IkRxu_814m8Ob4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeS-APgOh3IkRxu_814m8Ob4",
-    "place_query": "Callicoon Hills, The Conover Club, NY"
+    "place_query": "Callicoon Hills, The Conover Club, NY",
+    "google_verified_lat": 41.8401783,
+    "google_verified_lng": -74.94623109999999,
+    "formatted_address": "1 Hills Resort Rd, Callicoon Center, NY 12724, USA",
+    "google_verified_at": "2025-09-30T18:02:20.226082+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "North Branch Inn Restaurant & Bar Room",
@@ -348,7 +478,12 @@
     "family_friendly": true,
     "place_id": "ChIJeTsJCTdf24kRrfnEn_i2V74",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeTsJCTdf24kRrfnEn_i2V74",
-    "place_query": "North Branch Inn Restaurant & Bar Room, North Branch, NY"
+    "place_query": "North Branch Inn Restaurant & Bar Room, North Branch, NY",
+    "google_verified_lat": 41.8061094,
+    "google_verified_lng": -74.9925998,
+    "formatted_address": "869 N Branch Rd, North Branch, NY 12766, USA",
+    "google_verified_at": "2025-09-30T18:02:20.468800+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Kenoza Hall Restaurant",
@@ -361,7 +496,12 @@
     "family_friendly": true,
     "place_id": "ChIJ0_0OMqin3IkRUGDYt_q7_Xo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0_0OMqin3IkRUGDYt_q7_Xo",
-    "place_query": "Kenoza Hall Restaurant, Kenoza Lake, NY"
+    "place_query": "Kenoza Hall Restaurant, Kenoza Lake, NY",
+    "google_verified_lat": 41.7281455,
+    "google_verified_lng": -74.9517288,
+    "formatted_address": "5762 NY-52, Kenoza Lake, NY 12750, USA",
+    "google_verified_at": "2025-09-30T18:02:20.703758+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Bluebird Hunter Tavern",
@@ -374,7 +514,12 @@
     "family_friendly": true,
     "place_id": "ChIJq6q64jyt3YkRu1uBd-IBiM4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJq6q64jyt3YkRu1uBd-IBiM4",
-    "place_query": "Bluebird Hunter Tavern, Hunter, NY"
+    "place_query": "Bluebird Hunter Tavern, Hunter, NY",
+    "google_verified_lat": 42.2020045,
+    "google_verified_lng": -74.1974316,
+    "formatted_address": "7433 Main St, Hunter, NY 12442, USA",
+    "google_verified_at": "2025-09-30T18:02:20.921793+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Hutton Brickyards (Seasonal Dining)",
@@ -387,7 +532,12 @@
     "family_friendly": true,
     "place_id": "ChIJUwKzMw8P3YkR94e0Y7KRbyE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUwKzMw8P3YkR94e0Y7KRbyE",
-    "place_query": "Hutton Brickyards, Seasonal Dining, NY"
+    "place_query": "Hutton Brickyards, Seasonal Dining, NY",
+    "google_verified_lat": 41.932923,
+    "google_verified_lng": -73.96678519999999,
+    "formatted_address": "200 North St Lot E, Kingston, NY 12401, USA",
+    "google_verified_at": "2025-09-30T18:02:21.163843+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "American Bounty (CIA)",
@@ -400,7 +550,12 @@
     "family_friendly": true,
     "place_id": "ChIJey_Z8OAV3YkRl5QmS6H-qeQ",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJey_Z8OAV3YkRl5QmS6H-qeQ",
-    "place_query": "American Bounty, CIA, NY"
+    "place_query": "American Bounty, CIA, NY",
+    "google_verified_lat": 41.7455155,
+    "google_verified_lng": -73.9328702,
+    "formatted_address": "1946 Campus Dr, Hyde Park, NY 12538, USA",
+    "google_verified_at": "2025-09-30T18:02:21.437234+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The View (Mirror Lake Inn)",
@@ -413,7 +568,12 @@
     "family_friendly": true,
     "place_id": "ChIJ-3AurpniykwRhwYKy6Gdr84",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-3AurpniykwRhwYKy6Gdr84",
-    "place_query": "The View, Mirror Lake Inn, NY"
+    "place_query": "The View, Mirror Lake Inn, NY",
+    "google_verified_lat": 44.293927,
+    "google_verified_lng": -73.98263109999999,
+    "formatted_address": "77 Mirror Lake Dr, Lake Placid, NY 12946, USA",
+    "google_verified_at": "2025-09-30T18:02:21.812534+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Roycroft Inn Restaurant",
@@ -426,7 +586,12 @@
     "family_friendly": true,
     "place_id": "ChIJC8JNVNGn04kRfwH73YiAQwc",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJC8JNVNGn04kRfwH73YiAQwc",
-    "place_query": "Roycroft Inn Restaurant, East Aurora, NY"
+    "place_query": "Roycroft Inn Restaurant, East Aurora, NY",
+    "google_verified_lat": 42.7669454,
+    "google_verified_lng": -78.61754789999999,
+    "formatted_address": "40 S Grove St, East Aurora, NY 14052, USA",
+    "google_verified_at": "2025-09-30T18:02:22.056390+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Radio Social",
@@ -439,7 +604,12 @@
     "family_friendly": false,
     "place_id": "ChIJsTO_63_K1okR5NDixR-ikKw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsTO_63_K1okR5NDixR-ikKw",
-    "place_query": "Radio Social, Rochester, NY"
+    "place_query": "Radio Social, Rochester, NY",
+    "google_verified_lat": 43.1504168,
+    "google_verified_lng": -77.5610609,
+    "formatted_address": "20 Carlson Rd, Rochester, NY 14610, USA",
+    "google_verified_at": "2025-09-30T18:02:22.336755+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Cub Room",
@@ -452,7 +622,12 @@
     "family_friendly": true,
     "place_id": "ChIJ1wDTEBu11okRXrnQQp3SP0M",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ1wDTEBu11okRXrnQQp3SP0M",
-    "place_query": "The Cub Room, Rochester, NY"
+    "place_query": "The Cub Room, Rochester, NY",
+    "google_verified_lat": 43.1430156,
+    "google_verified_lng": -77.59985499999999,
+    "formatted_address": "739 S Clinton Ave, Rochester, NY 14620, USA",
+    "google_verified_at": "2025-09-30T18:02:22.585839+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Good Luck",
@@ -465,7 +640,12 @@
     "family_friendly": true,
     "place_id": "ChIJG-nPopi11okRlRujsz5PfRE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJG-nPopi11okRlRujsz5PfRE",
-    "place_query": "Good Luck, Rochester, NY"
+    "place_query": "Good Luck, Rochester, NY",
+    "google_verified_lat": 43.1579538,
+    "google_verified_lng": -77.5841054,
+    "formatted_address": "50 Anderson Ave, Rochester, NY 14607, USA",
+    "google_verified_at": "2025-09-30T18:02:22.812991+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Genesee Brew House Restaurant",
@@ -478,7 +658,12 @@
     "family_friendly": true,
     "place_id": "ChIJsV5Z9VG01okRe3DPZHBhekk",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsV5Z9VG01okRe3DPZHBhekk",
-    "place_query": "Genesee Brew House Restaurant, Rochester, NY"
+    "place_query": "Genesee Brew House Restaurant, Rochester, NY",
+    "google_verified_lat": 43.163626,
+    "google_verified_lng": -77.6146588,
+    "formatted_address": "25 Cataract St, Rochester, NY 14605, USA",
+    "google_verified_at": "2025-09-30T18:02:22.917717+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "FLX Table",
@@ -491,7 +676,12 @@
     "family_friendly": true,
     "place_id": "ChIJW4rY7hbF0IkRoFY6xW1bKMw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJW4rY7hbF0IkRoFY6xW1bKMw",
-    "place_query": "FLX Table, Geneva, NY"
+    "place_query": "FLX Table, Geneva, NY",
+    "google_verified_lat": 42.8675513,
+    "google_verified_lng": -76.9836083,
+    "formatted_address": "22 Linden St, Geneva, NY 14456, USA",
+    "google_verified_at": "2025-09-30T18:02:23.147690+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Kindred Fare",
@@ -504,7 +694,12 @@
     "family_friendly": true,
     "place_id": "ChIJWfRvk9XE0IkRwgoAybxKdo8",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWfRvk9XE0IkRwgoAybxKdo8",
-    "place_query": "Kindred Fare, Geneva, NY"
+    "place_query": "Kindred Fare, Geneva, NY",
+    "google_verified_lat": 42.8570029,
+    "google_verified_lng": -77.0070739,
+    "formatted_address": "512 Hamilton St, Geneva, NY 14456, USA",
+    "google_verified_at": "2025-09-30T18:02:23.374286+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "1833 Kitchen & Bar (Inns of Aurora)",
@@ -517,7 +712,12 @@
     "family_friendly": true,
     "place_id": "ChIJj1Pp_QS90IkRrleskvclhaY",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj1Pp_QS90IkRrleskvclhaY",
-    "place_query": "1833 Kitchen & Bar, Inns of Aurora, NY"
+    "place_query": "1833 Kitchen & Bar, Inns of Aurora, NY",
+    "google_verified_lat": 42.75455849999999,
+    "google_verified_lng": -76.70288839999999,
+    "formatted_address": "391 Main St, Aurora, NY 13026, USA",
+    "google_verified_at": "2025-09-30T18:02:23.591897+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Belhurst Castle (Edgar’s)",
@@ -530,7 +730,12 @@
     "family_friendly": true,
     "place_id": "ChIJGVfl--3E0IkRX4ompBHlECQ",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGVfl--3E0IkRX4ompBHlECQ",
-    "place_query": "Belhurst Castle, Edgar’s, NY"
+    "place_query": "Belhurst Castle, Edgar’s, NY",
+    "google_verified_lat": 42.8388948,
+    "google_verified_lng": -76.97482219999999,
+    "formatted_address": "4069 W Lake Rd, Geneva, NY 14456, USA",
+    "google_verified_at": "2025-09-30T18:02:23.830361+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Tailor & The Cook",
@@ -543,7 +748,12 @@
     "family_friendly": true,
     "place_id": "ChIJDV2TACNH2YkRc8rDJXS4azk",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJDV2TACNH2YkRc8rDJXS4azk",
-    "place_query": "Tailor & The Cook, Utica, NY"
+    "place_query": "Tailor & The Cook, Utica, NY",
+    "google_verified_lat": 43.104257,
+    "google_verified_lng": -75.2240679,
+    "formatted_address": "311 Main St, Utica, NY 13501, USA",
+    "google_verified_at": "2025-09-30T18:02:24.082325+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "City Beer Hall",
@@ -556,7 +766,12 @@
     "family_friendly": false,
     "place_id": "ChIJoVmR9CMK3okRM47bivOAQoA",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoVmR9CMK3okRM47bivOAQoA",
-    "place_query": "City Beer Hall, Albany, NY"
+    "place_query": "City Beer Hall, Albany, NY",
+    "google_verified_lat": 42.6496204,
+    "google_verified_lng": -73.754931,
+    "formatted_address": "42 Howard St, Albany, NY 12207, USA",
+    "google_verified_at": "2025-09-30T18:02:24.355413+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Mouzon House",
@@ -569,12 +784,17 @@
     "family_friendly": true,
     "place_id": "ChIJv1wEFtg53okR4LQtI-Lm1_Q",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJv1wEFtg53okR4LQtI-Lm1_Q",
-    "place_query": "The Mouzon House, Saratoga Springs, NY"
+    "place_query": "The Mouzon House, Saratoga Springs, NY",
+    "google_verified_lat": 43.08472219999999,
+    "google_verified_lng": -73.7819444,
+    "formatted_address": "1 York St, Saratoga Springs, NY 12866, USA",
+    "google_verified_at": "2025-09-30T18:02:24.619705+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Morrissey's Lounge & Bistro (The Adelphi)",
-    "lat": 43.08,
-    "lng": -73.7856,
+    "lat": 43.0806724,
+    "lng": -73.78623,
     "location": "Saratoga Springs, NY",
     "atmosphere": "Glam hotel lounge with gilded mirrors and vintage racing lore.",
     "specialty": "Raw bar, sushi, and bistro classics.",
@@ -582,7 +802,12 @@
     "family_friendly": false,
     "place_id": "ChIJBeVvINE53okRpZJWPX1dchI",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBeVvINE53okRpZJWPX1dchI",
-    "place_query": "Morrissey's Lounge & Bistro, The Adelphi, NY"
+    "place_query": "Morrissey's Lounge & Bistro, The Adelphi, NY",
+    "google_verified_lat": 43.0806724,
+    "google_verified_lng": -73.78623,
+    "formatted_address": "365 Broadway, Saratoga Springs, NY 12866, USA",
+    "google_verified_at": "2025-09-30T18:02:24.869798+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Amsterdam (Saratoga satellite)",
@@ -595,7 +820,12 @@
     "family_friendly": true,
     "place_id": "ChIJ80M3-ugJxkcRCFAyQobPpRM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ80M3-ugJxkcRCFAyQobPpRM",
-    "place_query": "The Amsterdam, Saratoga satellite, NY"
+    "place_query": "The Amsterdam, Saratoga satellite, NY",
+    "google_verified_lat": 52.3640585,
+    "google_verified_lng": 4.8834947,
+    "formatted_address": "Leidseplein 11, 1017 PS Amsterdam, Netherlands",
+    "google_verified_at": "2025-09-30T18:02:25.339395+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Cafe Mutton",
@@ -608,7 +838,12 @@
     "family_friendly": true,
     "place_id": "ChIJm30q7XiV3YkRQDqssuycFkE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm30q7XiV3YkRQDqssuycFkE",
-    "place_query": "Cafe Mutton, Hudson, NY"
+    "place_query": "Cafe Mutton, Hudson, NY",
+    "google_verified_lat": 42.2471202,
+    "google_verified_lng": -73.78039749999999,
+    "formatted_address": "757 Columbia St, Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:02:25.565095+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Silvia",
@@ -621,7 +856,12 @@
     "family_friendly": true,
     "place_id": "ChIJhyVCzzYH3YkRZWFfV8TAJOw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhyVCzzYH3YkRZWFfV8TAJOw",
-    "place_query": "Silvia, Woodstock, NY"
+    "place_query": "Silvia, Woodstock, NY",
+    "google_verified_lat": 42.039886,
+    "google_verified_lng": -74.11621,
+    "formatted_address": "42 Mill Hill Rd, Woodstock, NY 12498, USA",
+    "google_verified_at": "2025-09-30T18:02:25.819762+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Cucina",
@@ -634,7 +874,12 @@
     "family_friendly": true,
     "place_id": "ChIJNb7zMDoH3YkR16KUq-HAY4Y",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJNb7zMDoH3YkR16KUq-HAY4Y",
-    "place_query": "Cucina, Woodstock, NY"
+    "place_query": "Cucina, Woodstock, NY",
+    "google_verified_lat": 42.0372759,
+    "google_verified_lng": -74.1100859,
+    "formatted_address": "109 Mill Hill Rd, Woodstock, NY 12498, USA",
+    "google_verified_at": "2025-09-30T18:02:26.033603+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Butterfield at Hasbrouck House",
@@ -647,7 +892,12 @@
     "family_friendly": true,
     "place_id": "ChIJQRlQ7xcc3YkR23OmzjYYJto",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQRlQ7xcc3YkR23OmzjYYJto",
-    "place_query": "Butterfield at Hasbrouck House, Stone Ridge, NY"
+    "place_query": "Butterfield at Hasbrouck House, Stone Ridge, NY",
+    "google_verified_lat": 41.8458087,
+    "google_verified_lng": -74.1464215,
+    "formatted_address": "3805 Main St, Stone Ridge, NY 12484, USA",
+    "google_verified_at": "2025-09-30T18:02:26.429098+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Foxfire Mountain House",
@@ -660,7 +910,12 @@
     "family_friendly": true,
     "place_id": "ChIJ54CR2yD_3IkRHWULMvXbeFM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ54CR2yD_3IkRHWULMvXbeFM",
-    "place_query": "Foxfire Mountain House, Mount Tremper, NY"
+    "place_query": "Foxfire Mountain House, Mount Tremper, NY",
+    "google_verified_lat": 42.0515628,
+    "google_verified_lng": -74.2921995,
+    "formatted_address": "72 Andrew Ln, Mt Tremper, NY 12457, USA",
+    "google_verified_at": "2025-09-30T18:02:26.653297+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Arnold House Tavern",
@@ -673,7 +928,12 @@
     "family_friendly": true,
     "place_id": "ChIJswRQ7kyf3IkR3GommTrPZng",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJswRQ7kyf3IkR3GommTrPZng",
-    "place_query": "The Arnold House Tavern, Livingston Manor, NY"
+    "place_query": "The Arnold House Tavern, Livingston Manor, NY",
+    "google_verified_lat": 41.871257,
+    "google_verified_lng": -74.876043,
+    "formatted_address": "839 Shandelee Rd, Livingston Manor, NY 12758, USA",
+    "google_verified_at": "2025-09-30T18:02:26.856820+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Laundrette",
@@ -686,7 +946,12 @@
     "family_friendly": true,
     "place_id": "ChIJnyNhOH5T24kRc9USAj3Vzrs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJnyNhOH5T24kRc9USAj3Vzrs",
-    "place_query": "The Laundrette, Narrowsburg, NY"
+    "place_query": "The Laundrette, Narrowsburg, NY",
+    "google_verified_lat": 41.6073231,
+    "google_verified_lng": -75.0625486,
+    "formatted_address": "20 5th St, Narrowsburg, NY 12764, USA",
+    "google_verified_at": "2025-09-30T18:02:27.110192+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Seminary Hill Cidery Restaurant",
@@ -699,7 +964,12 @@
     "family_friendly": true,
     "place_id": "ChIJl7Xll5xZ24kRaQSaQiA39Bs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl7Xll5xZ24kRaQSaQiA39Bs",
-    "place_query": "Seminary Hill Cidery Restaurant, Callicoon, NY"
+    "place_query": "Seminary Hill Cidery Restaurant, Callicoon, NY",
+    "google_verified_lat": 41.7751068,
+    "google_verified_lng": -75.05463209999999,
+    "formatted_address": "43 Wagner Ln, Callicoon, NY 12723, USA",
+    "google_verified_at": "2025-09-30T18:02:27.368148+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Rose Tavern at The Lake House",
@@ -712,7 +982,12 @@
     "family_friendly": true,
     "place_id": "ChIJiw651Mwn0YkR8X56jhbFFNA",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJiw651Mwn0YkR8X56jhbFFNA",
-    "place_query": "Rose Tavern at The Lake House, Canandaigua, NY"
+    "place_query": "Rose Tavern at The Lake House, Canandaigua, NY",
+    "google_verified_lat": 42.8745498,
+    "google_verified_lng": -77.27440639999999,
+    "formatted_address": "770 S Main St, Canandaigua, NY 14424, USA",
+    "google_verified_at": "2025-09-30T18:02:27.608617+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Park Inn",
@@ -725,7 +1000,12 @@
     "family_friendly": true,
     "place_id": "ChIJ4eogTxer0YkRamlNt1Vpk4Y",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4eogTxer0YkRamlNt1Vpk4Y",
-    "place_query": "The Park Inn, Hammondsport, NY"
+    "place_query": "The Park Inn, Hammondsport, NY",
+    "google_verified_lat": 42.4091864,
+    "google_verified_lng": -77.2223054,
+    "formatted_address": "37 Shethar St, Hammondsport, NY 14840, USA",
+    "google_verified_at": "2025-09-30T18:02:27.818369+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Local 111",
@@ -738,7 +1018,12 @@
     "family_friendly": true,
     "place_id": "ChIJR7vk3nSS3YkRCSImJ92Hbp8",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJR7vk3nSS3YkRCSImJ92Hbp8",
-    "place_query": "Local 111, Philmont, NY"
+    "place_query": "Local 111, Philmont, NY",
+    "google_verified_lat": 42.2488791,
+    "google_verified_lng": -73.64922729999999,
+    "formatted_address": "111 Main St, Philmont, NY 12565, USA",
+    "google_verified_at": "2025-09-30T18:02:28.034796+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Brewster Inn",
@@ -751,7 +1036,12 @@
     "family_friendly": true,
     "place_id": "ChIJxctJHZmH2YkR0szFfJTb8xw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxctJHZmH2YkR0szFfJTb8xw",
-    "place_query": "The Brewster Inn, Cazenovia, NY"
+    "place_query": "The Brewster Inn, Cazenovia, NY",
+    "google_verified_lat": 42.92758,
+    "google_verified_lng": -75.861437,
+    "formatted_address": "6 Ledyard Ave, Cazenovia, NY 13035, USA",
+    "google_verified_at": "2025-09-30T18:02:28.252339+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Grist Mill",
@@ -764,7 +1054,12 @@
     "family_friendly": true,
     "place_id": "ChIJp_sk3GLB34kRl7ag3QkwGLw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJp_sk3GLB34kRl7ag3QkwGLw",
-    "place_query": "The Grist Mill, Warrensburg, NY"
+    "place_query": "The Grist Mill, Warrensburg, NY",
+    "google_verified_lat": 43.4962573,
+    "google_verified_lng": -73.77672059999999,
+    "formatted_address": "3 Hudson St, Warrensburg, NY 12885, USA",
+    "google_verified_at": "2025-09-30T18:02:28.494089+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Friends Lake Inn (Dining Room)",
@@ -777,7 +1072,12 @@
     "family_friendly": true,
     "place_id": "ChIJ8yl2IUiT34kRBc_KwV_L8_w",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8yl2IUiT34kRBc_KwV_L8_w",
-    "place_query": "Friends Lake Inn, Dining Room, NY"
+    "place_query": "Friends Lake Inn, Dining Room, NY",
+    "google_verified_lat": 43.6411111,
+    "google_verified_lng": -73.8519444,
+    "formatted_address": "963 Friends Lake Rd, Chestertown, NY 12817, USA",
+    "google_verified_at": "2025-09-30T18:02:28.769045+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Chateau on the Lake",
@@ -790,7 +1090,12 @@
     "family_friendly": false,
     "place_id": "ChIJWQuJpyrm34kRlQ0SPVnGslc",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWQuJpyrm34kRlQ0SPVnGslc",
-    "place_query": "The Chateau on the Lake, Bolton Landing, NY"
+    "place_query": "The Chateau on the Lake, Bolton Landing, NY",
+    "google_verified_lat": 43.557333,
+    "google_verified_lng": -73.6532415,
+    "formatted_address": "15 Allens Alley, Bolton Landing, NY 12814, USA",
+    "google_verified_at": "2025-09-30T18:02:29.006428+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Fiddlehead Bistro",
@@ -803,12 +1108,17 @@
     "family_friendly": true,
     "place_id": "ChIJl9vaetcay0wRHn79V8FQnjU",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl9vaetcay0wRHn79V8FQnjU",
-    "place_query": "Fiddlehead Bistro, Saranac Lake, NY"
+    "place_query": "Fiddlehead Bistro, Saranac Lake, NY",
+    "google_verified_lat": 44.3279376,
+    "google_verified_lng": -74.1319745,
+    "formatted_address": "33 Broadway, Saranac Lake, NY 12983, USA",
+    "google_verified_at": "2025-09-30T18:02:29.227833+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Origins Café at Carefree Gardens",
-    "lat": 42.6742477,
-    "lng": -74.9152374,
+    "lat": 42.6897393,
+    "lng": -74.913956,
     "location": "Cooperstown, NY",
     "atmosphere": "Greenhouse café among plants and sculpture.",
     "specialty": "Ultra-seasonal, vegetable-forward plates; brunch hero.",
@@ -816,12 +1126,17 @@
     "family_friendly": true,
     "place_id": "ChIJ20WLSf8G3IkRrWCR761LgKk",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ20WLSf8G3IkRrWCR761LgKk",
-    "place_query": "Origins Café at Carefree Gardens, Cooperstown, NY"
+    "place_query": "Origins Café at Carefree Gardens, Cooperstown, NY",
+    "google_verified_lat": 42.6897393,
+    "google_verified_lng": -74.913956,
+    "formatted_address": "558 Beaver Meadow Rd, Cooperstown, NY 13326, USA",
+    "google_verified_at": "2025-09-30T18:02:29.434509+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Hawkeye Bar & Grill (The Otesaga)",
-    "lat": 42.7044304,
-    "lng": -74.9267643,
+    "lat": 42.70475,
+    "lng": -74.9268798,
     "location": "Cooperstown, NY",
     "atmosphere": "Lakeside resort tavern with veranda seating.",
     "specialty": "Casual regional staples; kid-friendly menus.",
@@ -829,7 +1144,12 @@
     "family_friendly": true,
     "place_id": "ChIJtwu0ASYH3IkR1rL-v5i7nec",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtwu0ASYH3IkR1rL-v5i7nec",
-    "place_query": "Hawkeye Bar & Grill, The Otesaga, NY"
+    "place_query": "Hawkeye Bar & Grill, The Otesaga, NY",
+    "google_verified_lat": 42.70475,
+    "google_verified_lng": -74.9268798,
+    "formatted_address": "60 Lake St, Cooperstown, NY 13326, USA",
+    "google_verified_at": "2025-09-30T18:02:29.685641+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Aviary",
@@ -842,7 +1162,12 @@
     "family_friendly": false,
     "place_id": "ChIJYwZvw5Dv3YkRnbs5mMJvbUY",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJYwZvw5Dv3YkRnbs5mMJvbUY",
-    "place_query": "The Aviary, Kinderhook, NY"
+    "place_query": "The Aviary, Kinderhook, NY",
+    "google_verified_lat": 42.3948641,
+    "google_verified_lng": -73.698253,
+    "formatted_address": "4 Hudson St, Kinderhook, NY 12106, USA",
+    "google_verified_at": "2025-09-30T18:02:29.925077+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Morningbird",
@@ -855,7 +1180,12 @@
     "family_friendly": true,
     "place_id": "ChIJJ0Z9ZOzv3YkRMvdz39477oY",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJ0Z9ZOzv3YkRMvdz39477oY",
-    "place_query": "Morningbird, Kinderhook, NY"
+    "place_query": "Morningbird, Kinderhook, NY",
+    "google_verified_lat": 42.3948641,
+    "google_verified_lng": -73.698253,
+    "formatted_address": "4 Hudson St, Kinderhook, NY 12106, USA",
+    "google_verified_at": "2025-09-30T18:02:30.160757+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Feast & Floret",
@@ -868,12 +1198,17 @@
     "family_friendly": true,
     "place_id": "ChIJdWQzHHKV3YkRpIVefILlOy4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdWQzHHKV3YkRpIVefILlOy4",
-    "place_query": "Feast & Floret, Hudson, NY"
+    "place_query": "Feast & Floret, Hudson, NY",
+    "google_verified_lat": 42.2527188,
+    "google_verified_lng": -73.7918413,
+    "formatted_address": "13 S 3rd St, Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:02:30.411097+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Saint Lawrence Spirits Chateau Restaurant",
-    "lat": 44.224097,
-    "lng": -76.1223047,
+    "lat": 44.2238096,
+    "lng": -76.1226176,
     "location": "Clayton, NY",
     "atmosphere": "River-view château on a distillery property.",
     "specialty": "Farm-to-table with spirits pairings; seasonal hours.",
@@ -881,6 +1216,11 @@
     "family_friendly": true,
     "place_id": "ChIJWQSCeuBLzUwRGhKLXCzppp8",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWQSCeuBLzUwRGhKLXCzppp8",
-    "place_query": "Saint Lawrence Spirits Chateau Restaurant, Clayton, NY"
+    "place_query": "Saint Lawrence Spirits Chateau Restaurant, Clayton, NY",
+    "google_verified_lat": 44.2238096,
+    "google_verified_lng": -76.1226176,
+    "formatted_address": "38289 NY-12E Building 1, Clayton, NY 13624, USA",
+    "google_verified_at": "2025-09-30T18:02:30.653738+00:00",
+    "google_place_source": "places_details_v1"
   }
 ]

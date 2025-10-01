@@ -11,7 +11,12 @@
     "description": "Iconic two-tier plunge; one of NY’s tallest and most photographed waterfalls.",
     "place_id": "ChIJGUwPTcav3YkRGp21Rj0dUgY",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJGUwPTcav3YkRGp21Rj0dUgY",
-    "place_query": "Kaaterskill Falls, waterfall, NY"
+    "place_query": "Kaaterskill Falls, waterfall, NY",
+    "google_verified_lat": 42.1934218,
+    "google_verified_lng": -74.06319239999999,
+    "formatted_address": "Kaaterskill Falls, Hunter, NY 12436, USA",
+    "google_verified_at": "2025-09-30T18:01:32.566559+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Bastion Falls (Lower Kaaterskill)",
@@ -25,7 +30,12 @@
     "description": "Roadside cascade at the mouth of Kaaterskill Clove; gateway to the main falls.",
     "place_id": "ChIJcZpQA7av3YkRD1cNt3kgKQ4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcZpQA7av3YkRD1cNt3kgKQ4",
-    "place_query": "Bastion Falls, Lower Kaaterskill, NY"
+    "place_query": "Bastion Falls, Lower Kaaterskill, NY",
+    "google_verified_lat": 42.1916379,
+    "google_verified_lng": -74.07044479999999,
+    "formatted_address": "Haines Falls, NY 12436, USA",
+    "google_verified_at": "2025-09-30T18:01:32.867772+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Plattekill Falls",
@@ -39,7 +49,12 @@
     "description": "Sheer drop into a narrow, dramatic clove; slippery rock—use caution.",
     "place_id": "ChIJV6KfNiyp3YkR3ri77EVlxps",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJV6KfNiyp3YkR3ri77EVlxps",
-    "place_query": "Plattekill Falls, waterfall, NY"
+    "place_query": "Plattekill Falls, waterfall, NY",
+    "google_verified_lat": 42.13238860000001,
+    "google_verified_lng": -74.08544429999999,
+    "formatted_address": "Plattekill Falls, Hunter, NY 12427, USA",
+    "google_verified_at": "2025-09-30T18:01:33.185746+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Diamond Notch Falls",
@@ -53,7 +68,12 @@
     "description": "Twin-drop falls in a deep forest notch; classic Catskills backcountry vibe.",
     "place_id": "ChIJ83UiT3pT3IkRnwZyXXQrgUQ",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ83UiT3pT3IkRnwZyXXQrgUQ",
-    "place_query": "Diamond Notch Falls, waterfall, NY"
+    "place_query": "Diamond Notch Falls, waterfall, NY",
+    "google_verified_lat": 42.1681441,
+    "google_verified_lng": -74.2570894,
+    "formatted_address": "Diamond Notch Falls, Lexington, NY 12492, USA",
+    "google_verified_at": "2025-09-30T18:01:33.486412+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Awosting Falls",
@@ -67,7 +87,12 @@
     "description": "Graceful plunge into a broad amphitheater pool; easy access with big payoff.",
     "place_id": "ChIJsap49J7f3IkRZn6AMMA-170",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsap49J7f3IkRZn6AMMA-170",
-    "place_query": "Awosting Falls, waterfall, NY"
+    "place_query": "Awosting Falls, waterfall, NY",
+    "google_verified_lat": 41.7345911,
+    "google_verified_lng": -74.23721979999999,
+    "formatted_address": "Awosting Falls, Rochester, NY 12525, USA",
+    "google_verified_at": "2025-09-30T18:01:33.772394+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Stony Kill Falls (Minnewaska)",
@@ -81,7 +106,12 @@
     "description": "Tall horsetail drop with ledge views; great volume after rain.",
     "place_id": "ChIJu8ULapre3IkR_EsLfUu1al0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJu8ULapre3IkR_EsLfUu1al0",
-    "place_query": "Stony Kill Falls, Minnewaska, NY"
+    "place_query": "Stony Kill Falls, Minnewaska, NY",
+    "google_verified_lat": 41.7275935,
+    "google_verified_lng": -74.30153969999999,
+    "formatted_address": "Stony Kill Falls, Wawarsing, NY 12446, USA",
+    "google_verified_at": "2025-09-30T18:01:34.060802+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Verkeerderkill Falls",
@@ -95,7 +125,12 @@
     "description": "One of the tallest Shawangunk falls, dropping off the Shawangunk Ridge escarpment.",
     "place_id": "ChIJ-XKtBYPc3IkRInp0V2auRIg",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-XKtBYPc3IkRInp0V2auRIg",
-    "place_query": "Verkeerderkill Falls, waterfall, NY"
+    "place_query": "Verkeerderkill Falls, waterfall, NY",
+    "google_verified_lat": 41.67043,
+    "google_verified_lng": -74.36085059999999,
+    "formatted_address": "400 Sams Point Rd, Cragsmoor, NY 12420, USA",
+    "google_verified_at": "2025-09-30T18:01:34.383263+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Taughannock Falls",
@@ -109,7 +144,12 @@
     "description": "Towering free-fall drop higher than Niagara’s American Falls; classic shale amphitheater.",
     "place_id": "ChIJI-5UFjGF0IkRHdu1Ky5auhw",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJI-5UFjGF0IkRHdu1Ky5auhw",
-    "place_query": "Taughannock Falls, waterfall, NY"
+    "place_query": "Taughannock Falls, waterfall, NY",
+    "google_verified_lat": 42.5356258,
+    "google_verified_lng": -76.6107735,
+    "formatted_address": "Taughannock Falls, Ulysses, NY 14886, USA",
+    "google_verified_at": "2025-09-30T18:01:34.672576+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Buttermilk Falls (Ithaca)",
@@ -123,7 +163,12 @@
     "description": "Series of cascades over sculpted shale; quintessential Finger Lakes gorge.",
     "place_id": "ChIJ4ZlsaR6B0IkRx_TASduKuRM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4ZlsaR6B0IkRx_TASduKuRM",
-    "place_query": "Buttermilk Falls, Ithaca, NY"
+    "place_query": "Buttermilk Falls, Ithaca, NY",
+    "google_verified_lat": 42.4077016,
+    "google_verified_lng": -76.5118592,
+    "formatted_address": "106 E Buttermilk Falls Rd, Ithaca, NY 14850, USA",
+    "google_verified_at": "2025-09-30T18:01:34.965734+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Lucifer Falls (Robert H. Treman)",
@@ -137,7 +182,12 @@
     "description": "Dramatic curtain of water framed by towering gorge walls and stonework.",
     "place_id": "ChIJhyW3cXKH0IkREv06g0utYtg",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhyW3cXKH0IkREv06g0utYtg",
-    "place_query": "Lucifer Falls, Robert H. Treman, NY"
+    "place_query": "Lucifer Falls, Robert H. Treman, NY",
+    "google_verified_lat": 42.400628,
+    "google_verified_lng": -76.5841109,
+    "formatted_address": "Lucifer Falls, Enfield, NY 14850, USA",
+    "google_verified_at": "2025-09-30T18:01:35.273491+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Ithaca Falls",
@@ -151,7 +201,12 @@
     "description": "Powerful urban waterfall at the mouth of Fall Creek; impressive even at low flow.",
     "place_id": "ChIJlfRieyiC0IkRwKCvYP5XxCs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlfRieyiC0IkRwKCvYP5XxCs",
-    "place_query": "Ithaca Falls, waterfall, NY"
+    "place_query": "Ithaca Falls, waterfall, NY",
+    "google_verified_lat": 42.4529252,
+    "google_verified_lng": -76.4916542,
+    "formatted_address": "Ithaca Falls, Ithaca, NY 14850, USA",
+    "google_verified_at": "2025-09-30T18:01:35.576431+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Triphammer Falls",
@@ -165,7 +220,12 @@
     "description": "Historic mill falls split by an island; scenic from the Thurston Ave bridge.",
     "place_id": "ChIJeYCkWSCC0IkR4lc5DpbABoA",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJeYCkWSCC0IkR4lc5DpbABoA",
-    "place_query": "Triphammer Falls, waterfall, NY"
+    "place_query": "Triphammer Falls, waterfall, NY",
+    "google_verified_lat": 42.4515727,
+    "google_verified_lng": -76.4803428,
+    "formatted_address": "University Ave & East Ave, Ithaca, NY 14850, USA",
+    "google_verified_at": "2025-09-30T18:01:35.864612+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Cascadilla Falls",
@@ -179,7 +239,12 @@
     "description": "Tight series of drops through a narrow gorge with classic stonework.",
     "place_id": "ChIJMyyCHYWB0IkRiSh1RGfEJag",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMyyCHYWB0IkRiSh1RGfEJag",
-    "place_query": "Cascadilla Falls, waterfall, NY"
+    "place_query": "Cascadilla Falls, waterfall, NY",
+    "google_verified_lat": 42.4429001,
+    "google_verified_lng": -76.4940396,
+    "formatted_address": "Cascadilla Gorge Trail, Ithaca, NY 14850, USA",
+    "google_verified_at": "2025-09-30T18:01:36.307430+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Hector Falls",
@@ -193,7 +258,12 @@
     "description": "Long, layered cascade tumbling toward Seneca Lake; roadside spectacle.",
     "place_id": "ChIJJS_883310IkRwnVsZg8veW0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJS_883310IkRwnVsZg8veW0",
-    "place_query": "Hector Falls, waterfall, NY"
+    "place_query": "Hector Falls, waterfall, NY",
+    "google_verified_lat": 42.41785040000001,
+    "google_verified_lng": -76.86523609999999,
+    "formatted_address": "Hector Falls, Hector, NY 14818, USA",
+    "google_verified_at": "2025-09-30T18:01:36.545498+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Watkins Glen (Rainbow Falls)",
@@ -207,7 +277,12 @@
     "description": "Signature curtain fall beneath a stone bridge—NY’s most famous gorge walk.",
     "place_id": "ChIJyXgDpRFf0IkRm9D5PEwTujA",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJyXgDpRFf0IkRm9D5PEwTujA",
-    "place_query": "Watkins Glen, Rainbow Falls, NY"
+    "place_query": "Watkins Glen, Rainbow Falls, NY",
+    "google_verified_lat": 42.372588,
+    "google_verified_lng": -76.8825703,
+    "formatted_address": "Gorge Trail, Watkins Glen, NY 14891, USA",
+    "google_verified_at": "2025-09-30T18:01:36.776345+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Shequaga Falls (Montour Falls)",
@@ -221,7 +296,12 @@
     "description": "Tall plunge right in the village; dramatic after rains.",
     "place_id": "ChIJl_o6EnNe0IkRsHkD2kzlsFo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_o6EnNe0IkRsHkD2kzlsFo",
-    "place_query": "Shequaga Falls, Montour Falls, NY"
+    "place_query": "Shequaga Falls, Montour Falls, NY",
+    "google_verified_lat": 42.3446586,
+    "google_verified_lng": -76.851546,
+    "formatted_address": "Shequaga Falls, Montour Falls, NY, USA",
+    "google_verified_at": "2025-09-30T18:01:37.009632+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Aunt Sarah’s Falls",
@@ -235,7 +315,12 @@
     "description": "Seasonal roadside horsetail—often paired with Shequaga on quick tours.",
     "place_id": "ChIJz-cmpW9e0IkR63qMyFm3e7s",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJz-cmpW9e0IkR63qMyFm3e7s",
-    "place_query": "Aunt Sarah’s Falls, waterfall, NY"
+    "place_query": "Aunt Sarah’s Falls, waterfall, NY",
+    "google_verified_lat": 42.3509069,
+    "google_verified_lng": -76.8585691,
+    "formatted_address": "Aunt Sarahs Falls, Montour Falls, NY 14891, USA",
+    "google_verified_at": "2025-09-30T18:01:37.237555+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Eagle Cliff Falls (Havana Glen)",
@@ -249,7 +334,12 @@
     "description": "Photogenic plunge into a round pool hemmed by fluted walls.",
     "place_id": "ChIJ12z3pwBe0IkRDf8JuqOyF9w",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ12z3pwBe0IkRDf8JuqOyF9w",
-    "place_query": "Eagle Cliff Falls, Havana Glen, NY"
+    "place_query": "Eagle Cliff Falls, Havana Glen, NY",
+    "google_verified_lat": 42.3358429,
+    "google_verified_lng": -76.8295504,
+    "formatted_address": "135 Havana Gln Pk Rd, Montour Falls, NY 14865, USA",
+    "google_verified_at": "2025-09-30T18:01:37.492753+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Deckertown Falls",
@@ -263,7 +353,12 @@
     "description": "Compact gorge with a trio of small drops—quiet alternative to the main parks.",
     "place_id": "ChIJdUM5dgNe0IkR6qjOBvt_h88",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdUM5dgNe0IkR6qjOBvt_h88",
-    "place_query": "Deckertown Falls, waterfall, NY"
+    "place_query": "Deckertown Falls, waterfall, NY",
+    "google_verified_lat": 42.3434453,
+    "google_verified_lng": -76.8307683,
+    "formatted_address": "117 E Catlin St, Montour Falls, NY 14865, USA",
+    "google_verified_at": "2025-09-30T18:01:37.735755+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Chittenango Falls",
@@ -277,7 +372,12 @@
     "description": "Broad wedding-cake cascade; powerful after snowmelt.",
     "place_id": "ChIJcbT3qoOG2YkR9PNIey8jovQ",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcbT3qoOG2YkR9PNIey8jovQ",
-    "place_query": "Chittenango Falls, waterfall, NY"
+    "place_query": "Chittenango Falls, waterfall, NY",
+    "google_verified_lat": 42.9777694,
+    "google_verified_lng": -75.8425178,
+    "formatted_address": "5241 Gorge Rd #13, Cazenovia, NY 13035, USA",
+    "google_verified_at": "2025-09-30T18:01:38.027123+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Carpenter Falls",
@@ -291,7 +391,12 @@
     "description": "Free-fall drop into a lush ravine feeding Skaneateles Lake.",
     "place_id": "ChIJ36Wmy10P2okRLoq3reUWfUI",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ36Wmy10P2okRLoq3reUWfUI",
-    "place_query": "Carpenter Falls, waterfall, NY"
+    "place_query": "Carpenter Falls, waterfall, NY",
+    "google_verified_lat": 42.8117349,
+    "google_verified_lng": -76.3432658,
+    "formatted_address": "Carpenter Falls, Niles, NY 13118, USA",
+    "google_verified_at": "2025-09-30T18:01:38.325637+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Tinker Falls",
@@ -305,7 +410,12 @@
     "description": "Classic curtain you can go behind; family-friendly outing.",
     "place_id": "ChIJlUwQZysj2okRUEHvdumkuew",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlUwQZysj2okRUEHvdumkuew",
-    "place_query": "Tinker Falls, waterfall, NY"
+    "place_query": "Tinker Falls, waterfall, NY",
+    "google_verified_lat": 42.782557,
+    "google_verified_lng": -76.0331288,
+    "formatted_address": "Tinker Falls Trail, Tully, NY 13159, USA",
+    "google_verified_at": "2025-09-30T18:01:38.561113+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Fillmore Glen (Cowsheds Falls)",
@@ -319,12 +429,17 @@
     "description": "Picturesque shale gorge with multiple small falls and stone bridges.",
     "place_id": "ChIJ6wVIphUL2okR6noBYlczIMY",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ6wVIphUL2okR6noBYlczIMY",
-    "place_query": "Fillmore Glen, Cowsheds Falls, NY"
+    "place_query": "Fillmore Glen, Cowsheds Falls, NY",
+    "google_verified_lat": 42.6920639,
+    "google_verified_lng": -76.390018,
+    "formatted_address": "1686 NY-38, Moravia, NY 13118, USA",
+    "google_verified_at": "2025-09-30T18:01:38.802476+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "High Falls (Rochester)",
-    "lat": 43.161,
-    "lng": -77.6156,
+    "lat": 43.161406,
+    "lng": -77.6154138,
     "height_ft": 96,
     "park_or_area": "High Falls District",
     "nearby_town": "Rochester",
@@ -333,12 +448,17 @@
     "description": "Urban powerhouse drop on the Genesee River amid old mills and rail bridges.",
     "place_id": "ChIJe73o4VO01okRt8A8pRnpgEQ",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJe73o4VO01okRt8A8pRnpgEQ",
-    "place_query": "High Falls, Rochester, NY"
+    "place_query": "High Falls, Rochester, NY",
+    "google_verified_lat": 43.161406,
+    "google_verified_lng": -77.6154138,
+    "formatted_address": "4 Commercial St, Rochester, NY 14614, USA",
+    "google_verified_at": "2025-09-30T18:01:39.048708+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Middle Falls (Letchworth)",
-    "lat": 42.5831218,
-    "lng": -78.042675,
+    "lat": 42.58284099999999,
+    "lng": -78.04250619999999,
     "height_ft": 107,
     "park_or_area": "Letchworth State Park",
     "nearby_town": "Castile",
@@ -347,7 +467,12 @@
     "description": "The park’s marquee waterfall with constant mist and rainbows.",
     "place_id": "ChIJp0wNSwvT04kRnEYVfStmjCg",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJp0wNSwvT04kRnEYVfStmjCg",
-    "place_query": "Middle Falls, Letchworth, NY"
+    "place_query": "Middle Falls, Letchworth, NY",
+    "google_verified_lat": 42.58284099999999,
+    "google_verified_lng": -78.04250619999999,
+    "formatted_address": "Middle Falls, Portage, NY 14846, USA",
+    "google_verified_at": "2025-09-30T18:01:39.360797+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Upper Falls (Letchworth)",
@@ -361,7 +486,12 @@
     "description": "Graceful horseshoe beneath the high railroad arch (replaced by new bridge).",
     "place_id": "ChIJIUCtcg7T04kRrhJwNao-nCI",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIUCtcg7T04kRrhJwNao-nCI",
-    "place_query": "Upper Falls, Letchworth, NY"
+    "place_query": "Upper Falls, Letchworth, NY",
+    "google_verified_lat": 42.5785169,
+    "google_verified_lng": -78.0488712,
+    "formatted_address": "1 Letchworth State Park Castile NY 14427, Hunt, NY 14846, USA",
+    "google_verified_at": "2025-09-30T18:01:39.654559+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Lower Falls (Letchworth)",
@@ -375,7 +505,12 @@
     "description": "Remote-feeling segment with stone bridges and deep gorge views.",
     "place_id": "ChIJ2ZLtE4DT04kRZwAwjBPOdZ8",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2ZLtE4DT04kRZwAwjBPOdZ8",
-    "place_query": "Lower Falls, Letchworth, NY"
+    "place_query": "Lower Falls, Letchworth, NY",
+    "google_verified_lat": 42.5853411,
+    "google_verified_lng": -78.020561,
+    "formatted_address": "Lower Falls, Portage, NY 14846, USA",
+    "google_verified_at": "2025-09-30T18:01:39.880371+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Niagara Falls (American Falls & Bridal Veil)",
@@ -389,7 +524,12 @@
     "description": "World-class set of drops on the Niagara River; thunderous flow and constant mist.",
     "place_id": "ChIJiQiWmgRD04kRfUK6HRoEaMM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJiQiWmgRD04kRfUK6HRoEaMM",
-    "place_query": "Niagara Falls, American Falls & Bridal Veil, NY"
+    "place_query": "Niagara Falls, American Falls & Bridal Veil, NY",
+    "google_verified_lat": 43.0835108,
+    "google_verified_lng": -79.0707955,
+    "formatted_address": "Bridal Veil Falls, Niagara Falls, NY 14303, USA",
+    "google_verified_at": "2025-09-30T18:01:40.103146+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Eternal Flame Falls",
@@ -403,7 +543,12 @@
     "description": "Small cascade with a natural gas ‘flame’ flickering in a niche behind the water.",
     "place_id": "ChIJ_6tDDQEE04kRQ0IG6MeyR6s",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_6tDDQEE04kRQ0IG6MeyR6s",
-    "place_query": "Eternal Flame Falls, waterfall, NY"
+    "place_query": "Eternal Flame Falls, waterfall, NY",
+    "google_verified_lat": 42.7016984,
+    "google_verified_lng": -78.75156059999999,
+    "formatted_address": "Eternal Flame Hiking Trail, Orchard Park, NY 14127, USA",
+    "google_verified_at": "2025-09-30T18:01:40.307535+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Akron Falls",
@@ -417,7 +562,12 @@
     "description": "Pretty ribbon drop in a wooded ravine; easy family outing.",
     "place_id": "ChIJdZOEeGWa04kRDUHv3XkioEM",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdZOEeGWa04kRDUHv3XkioEM",
-    "place_query": "Akron Falls, waterfall, NY"
+    "place_query": "Akron Falls, waterfall, NY",
+    "google_verified_lat": 43.01448690000001,
+    "google_verified_lng": -78.4952686,
+    "formatted_address": "44 Parkview Dr, Akron, NY 14001, USA",
+    "google_verified_at": "2025-09-30T18:01:40.559942+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Wiscoy Falls",
@@ -431,7 +581,12 @@
     "description": "Wide cascade series over limestone shelves; photogenic at moderate flow.",
     "place_id": "ChIJg3boWi0t0okRrCHsf7I-11Y",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg3boWi0t0okRrCHsf7I-11Y",
-    "place_query": "Wiscoy Falls, waterfall, NY"
+    "place_query": "Wiscoy Falls, waterfall, NY",
+    "google_verified_lat": 42.5048294,
+    "google_verified_lng": -78.0824471,
+    "formatted_address": "02580001600200010590000000, Portageville, NY 14536, USA",
+    "google_verified_at": "2025-09-30T18:01:40.803468+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Cohoes Falls",
@@ -445,7 +600,12 @@
     "description": "Massive curtain falls on the Mohawk River; awe-inspiring at high water.",
     "place_id": "ChIJx2nJUsgR3okREyGBwJgpkTI",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJx2nJUsgR3okREyGBwJgpkTI",
-    "place_query": "Cohoes Falls, waterfall, NY"
+    "place_query": "Cohoes Falls, waterfall, NY",
+    "google_verified_lat": 42.7889667,
+    "google_verified_lng": -73.7095633,
+    "formatted_address": "Cohoes Falls, Cohoes, NY 12188, USA",
+    "google_verified_at": "2025-09-30T18:01:41.057543+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Barberville Falls",
@@ -459,7 +619,12 @@
     "description": "Elegant plunge over a clean rock face into a tight amphitheater.",
     "place_id": "ChIJTe3SPeoD3okRbGS26L8Nfj4",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTe3SPeoD3okRbGS26L8Nfj4",
-    "place_query": "Barberville Falls, waterfall, NY"
+    "place_query": "Barberville Falls, waterfall, NY",
+    "google_verified_lat": 42.6837429,
+    "google_verified_lng": -73.5383113,
+    "formatted_address": "23 Blue Factory Rd, Poestenkill, NY 12140, USA",
+    "google_verified_at": "2025-09-30T18:01:41.299489+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Mine Kill Falls",
@@ -473,7 +638,12 @@
     "description": "Tiered falls cutting through a narrow gorge above the Schoharie Creek.",
     "place_id": "ChIJIfv1pJk43IkRS0ItVqsROLo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIfv1pJk43IkRS0ItVqsROLo",
-    "place_query": "Mine Kill Falls, waterfall, NY"
+    "place_query": "Mine Kill Falls, waterfall, NY",
+    "google_verified_lat": 42.4289682,
+    "google_verified_lng": -74.4720916,
+    "formatted_address": "Mine Kill Falls, Gilboa, NY 12076, USA",
+    "google_verified_at": "2025-09-30T18:01:41.538366+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Shelving Rock Falls",
@@ -487,7 +657,12 @@
     "description": "Graceful cascade near Lake George’s quiet eastern shore.",
     "place_id": "ChIJxRjKyf7m34kRaZeAau9SPAo",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxRjKyf7m34kRaZeAau9SPAo",
-    "place_query": "Shelving Rock Falls, waterfall, NY"
+    "place_query": "Shelving Rock Falls, waterfall, NY",
+    "google_verified_lat": 43.5535108,
+    "google_verified_lng": -73.6021949,
+    "formatted_address": "Fort Ann, NY 12827, USA",
+    "google_verified_at": "2025-09-30T18:01:41.784011+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "OK Slip Falls",
@@ -501,7 +676,12 @@
     "description": "One of the Adirondacks’ tallest free-falls into a wild, roadless gorge.",
     "place_id": "ChIJ14EPiXmD34kRr6nF4UwPZnE",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ14EPiXmD34kRr6nF4UwPZnE",
-    "place_query": "OK Slip Falls, waterfall, NY"
+    "place_query": "OK Slip Falls, waterfall, NY",
+    "google_verified_lat": 43.772307,
+    "google_verified_lng": -74.12968280000001,
+    "formatted_address": "NY-28, Indian Lake, NY 12842, USA",
+    "google_verified_at": "2025-09-30T18:01:42.029621+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Split Rock Falls",
@@ -515,7 +695,12 @@
     "description": "Multiple punchbowl drops and flumes carved into smooth anorthosite.",
     "place_id": "ChIJ6VIQQ12VykwRQXTA1pqCo8o",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ6VIQQ12VykwRQXTA1pqCo8o",
-    "place_query": "Split Rock Falls, waterfall, NY"
+    "place_query": "Split Rock Falls, waterfall, NY",
+    "google_verified_lat": 44.12389450000001,
+    "google_verified_lng": -73.6574665,
+    "formatted_address": "Split Rock Falls, Elizabethtown, NY 12964, USA",
+    "google_verified_at": "2025-09-30T18:01:42.274653+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Roaring Brook Falls",
@@ -543,7 +728,12 @@
     "description": "Series of powerful drops through a tight volcanic dike gorge with safe viewpoints.",
     "place_id": "ChIJsWIiQ2_8ykwRxH9mgS7ml9s",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsWIiQ2_8ykwRxH9mgS7ml9s",
-    "place_query": "High Falls Gorge, AuSable, NY"
+    "place_query": "High Falls Gorge, AuSable, NY",
+    "google_verified_lat": 44.3475359,
+    "google_verified_lng": -73.87685909999999,
+    "formatted_address": "4761 NY-86, Wilmington, NY 12997, USA",
+    "google_verified_at": "2025-09-30T18:01:43.150473+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Rainbow Falls (Ausable Lakes)",
@@ -557,7 +747,12 @@
     "description": "Tall, photogenic plume near the Lower Ausable Lake spillway.",
     "place_id": "ChIJc9ZwVFvCykwRJCwVy9b6E7M",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJc9ZwVFvCykwRJCwVy9b6E7M",
-    "place_query": "Rainbow Falls, Ausable Lakes, NY"
+    "place_query": "Rainbow Falls, Ausable Lakes, NY",
+    "google_verified_lat": 44.1186634,
+    "google_verified_lng": -73.8245831,
+    "formatted_address": "Rainbow Falls, Keene, NY 12943, USA",
+    "google_verified_at": "2025-09-30T18:01:43.386205+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Lampson Falls",
@@ -571,7 +766,12 @@
     "description": "Wide, powerful sheet drop in a remote northern forest setting.",
     "place_id": "ChIJd7_9N-mTzEwRM7Vg6XnPwc0",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJd7_9N-mTzEwRM7Vg6XnPwc0",
-    "place_query": "Lampson Falls, waterfall, NY"
+    "place_query": "Lampson Falls, waterfall, NY",
+    "google_verified_lat": 44.4056176,
+    "google_verified_lng": -75.0713116,
+    "formatted_address": "Lampsons Falls, Clare, NY 13684, USA",
+    "google_verified_at": "2025-09-30T18:01:43.642662+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Indian Brook Falls",
@@ -585,7 +785,12 @@
     "description": "Small but photogenic fall tucked in a ravine above Constitution Marsh.",
     "place_id": "ChIJmT1u3IPLwokRJGlmbLoAL1c",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJmT1u3IPLwokRJGlmbLoAL1c",
-    "place_query": "Indian Brook Falls, waterfall, NY"
+    "place_query": "Indian Brook Falls, waterfall, NY",
+    "google_verified_lat": 41.4036149,
+    "google_verified_lng": -73.9268889,
+    "formatted_address": "1362 NY-9D, Garrison, NY 10524, USA",
+    "google_verified_at": "2025-09-30T18:01:43.868810+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Oxbow Falls",
@@ -599,6 +804,11 @@
     "description": "Series of seasonal cascades along limestone ledges in a quiet county park.",
     "place_id": "ChIJoay3YMyD2YkRkoBl3tjQiXs",
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoay3YMyD2YkRkoBl3tjQiXs",
-    "place_query": "Oxbow Falls, waterfall, NY"
+    "place_query": "Oxbow Falls, waterfall, NY",
+    "google_verified_lat": 43.031118,
+    "google_verified_lng": -75.74262399999999,
+    "formatted_address": "6919 Oxbow Rd, Canastota, NY 13032, USA",
+    "google_verified_at": "2025-09-30T18:01:44.106911+00:00",
+    "google_place_source": "places_details_v1"
   }
 ]

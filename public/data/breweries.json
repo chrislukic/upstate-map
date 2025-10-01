@@ -11,12 +11,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoWJgWtK93YkRlq2zQmUpCFQ",
     "place_query": "Crossroads Brewing Company, Athens, NY",
     "full_description": "Comfortable rooms, approachable beers, and easy access from the riverfront.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "google_verified_lat": 42.2167307,
+    "google_verified_lng": -73.8729178,
+    "formatted_address": "96 W Bridge St, Catskill, NY 12414, USA",
+    "google_verified_at": "2025-09-30T18:01:44.339259+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "West Kill Brewing",
-    "lat": 42.1973,
-    "lng": -74.3699,
+    "lat": 42.1915514,
+    "lng": -74.29192309999999,
     "location": "West Kill, NY",
     "specialty": "Small-batch ales and lagers using foraged/local ingredients",
     "visitor_experience": "Barn-style taproom on a former dairy farm beside a creek; mountain views.",
@@ -25,7 +30,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ4XLwt8ZT3IkRq_z1DB_vzyk",
     "place_query": "West Kill Brewing, West Kill, NY, NY",
     "full_description": "127-acre property with hiking-trail vibes and a cozy taproom; Kingston satellite taproom exists, but the farm is the destination. Address/hours reference: site & listing.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "google_verified_lat": 42.1915514,
+    "google_verified_lng": -74.29192309999999,
+    "formatted_address": "2173 Spruceton Rd, West Kill, NY 12492, USA",
+    "google_verified_at": "2025-09-30T18:01:44.575645+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Woodstock Brewing",
@@ -39,7 +49,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJD7Qql7L43IkR4868BkTTOlM",
     "place_query": "Woodstock Brewing, Phoenicia, NY",
     "full_description": "A laid-back stop off Route 28 where creative sours and hop-forward releases rotate through regularly.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "google_verified_lat": 42.0627376,
+    "google_verified_lng": -74.3073886,
+    "formatted_address": "5581 NY-28, Phoenicia, NY 12464, USA",
+    "google_verified_at": "2025-09-30T18:01:44.802586+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Indian Ladder Farms Cidery & Brewery",
@@ -82,42 +97,57 @@
   },
   {
     "name": "Chatham Brewing",
-    "lat": 42.364,
-    "lng": -73.5948,
+    "lat": 42.3633333,
+    "lng": -73.59527779999999,
     "location": "Chatham, NY",
     "specialty": "Balanced tap list; IPAs to lagers; pub fare",
     "visitor_experience": "Village-center taproom with a tucked-away back patio/beer garden; dog-friendly outside.",
     "description": "Main-street brewery with a legit patio, not a parking lot.",
     "place_query": "Chatham Brewing, Chatham, NY",
-    "google_maps_url": "https://maps.google.com/?q=Chatham+Brewing+Chatham+NY",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJv81s6c_z3YkRhvP7nzankos",
     "full_description": "Slip through to the patio for shaded tables and small-town ambiance; easy to combine with a stroll and a bite from the taproom kitchen.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "place_id": "ChIJv81s6c_z3YkRhvP7nzankos",
+    "google_verified_lat": 42.3633333,
+    "google_verified_lng": -73.59527779999999,
+    "google_verified_at": "2025-09-30T18:01:47.272768+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Common Roots Brewing Company",
-    "lat": 43.3009,
-    "lng": -73.6408,
+    "lat": 43.2952392,
+    "lng": -73.6365465,
     "location": "South Glens Falls, NY",
     "specialty": "Modern lagers, IPAs, and crisp, clean styles with a scratch kitchen",
     "visitor_experience": "Expansive outdoor biergarten with fire pits, Adirondack chairs, and event pavilion.",
     "description": "Polished taproom plus a big, comfortable biergarten built for lingering.",
     "place_query": "Common Roots Brewing Company, South Glens Falls, NY",
-    "google_maps_url": "https://maps.google.com/?q=Common+Roots+Brewing+Company+South+Glens+Falls+NY",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQQkGpfbR34kRBSVPp1cqRpQ",
     "full_description": "Spacious, family-friendly outdoor setup—multiple fire pits, Adirondack seating, and easy food service—so the place works in shoulder seasons, too.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "place_id": "ChIJQQkGpfbR34kRBSVPp1cqRpQ",
+    "google_verified_lat": 43.2952392,
+    "google_verified_lng": -73.6365465,
+    "google_verified_at": "2025-09-30T18:01:48.003470+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Bound by Fate Brewing",
-    "lat": 43.1004,
-    "lng": -73.5815,
+    "lat": 43.0995082,
+    "lng": -73.5804386,
     "location": "Schuylerville, NY",
     "specialty": "Farm-brewery beers (lagers and English-leaning ales) with a tight food menu",
     "visitor_experience": "Deck overlooking the Empire State Trail/canal in the historic village core.",
     "description": "Small canal-side brewery with an outdoor deck and low-key charm.",
     "place_query": "Bound by Fate Brewing, Schuylerville, NY",
-    "google_maps_url": "https://maps.google.com/?q=Bound+by+Fate+Brewing+Schuylerville+NY",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ___DgOAu3okR_9thHVWAZYY",
     "full_description": "Grab a pint on the deck and watch cyclists on the trail and boats on the water. Simple, well-made beers, community vibe, and a legit view for sunset.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "place_id": "ChIJ___DgOAu3okR_9thHVWAZYY",
+    "google_verified_lat": 43.0995082,
+    "google_verified_lng": -73.5804386,
+    "google_verified_at": "2025-09-30T18:01:48.736211+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "R.S. Taylor & Sons Brewery",
@@ -134,16 +164,21 @@
   },
   {
     "name": "Subversive Malting + Brewing",
-    "lat": 42.2178,
-    "lng": -73.8666,
+    "lat": 42.2167307,
+    "lng": -73.8729178,
     "location": "Catskill, NY",
     "specialty": "House-malted, locally sourced ‘farmhouse’ beers; smash-burger kitchen",
     "visitor_experience": "Outdoor garden with picnic tables and fire features at the foot of the Catskills; indoor malt-house vibe.",
     "description": "House-malting, garden seating, and Catskill foothill air.",
     "place_query": "Subversive Malting + Brewing, Catskill, NY",
-    "google_maps_url": "https://maps.google.com/?q=Subversive+Malting+%2B+Brewing+Catskill+NY",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoWJgWtK93YkRlq2zQmUpCFQ",
     "full_description": "A rare U.S. brewery that floor-malts its own grain. Grab a table outside for their seasonal lagers/ales and one of the region’s best burgers.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "place_id": "ChIJoWJgWtK93YkRlq2zQmUpCFQ",
+    "google_verified_lat": 42.2167307,
+    "google_verified_lng": -73.8729178,
+    "google_verified_at": "2025-09-30T18:01:49.960023+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Old Klaverack Brewery — Hop Farm",
@@ -170,7 +205,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvQ37ngMH3IkR5IUUwPQdxX4",
     "place_query": "Ommegang Brewery, Cooperstown, NY",
     "full_description": "Founded in 1997, Ommegang helped bring Belgian traditions to upstate NY. The estate-like brewery offers wide lawns, a café, and frequent events—great for lingering with a flight and a view of the surrounding hills.",
-    "region": "Central NY"
+    "region": "Central NY",
+    "google_verified_lat": 42.6264642,
+    "google_verified_lng": -74.9445514,
+    "formatted_address": "656 Co Hwy 33, Cooperstown, NY 13326, USA",
+    "google_verified_at": "2025-09-30T18:01:50.884163+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Catskill Brewery",
@@ -184,7 +224,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJO6QEAqGZ3IkREsSJipJtWfg",
     "place_query": "Catskill Brewery, Livingston Manor, NY",
     "full_description": "Wood-rich interior and a green footprint; beers skew balanced and highly drinkable.",
-    "region": "Catskills"
+    "region": "Catskills",
+    "google_verified_lat": 41.9067953,
+    "google_verified_lng": -74.8244409,
+    "formatted_address": "672 Old Rte 17, Livingston Manor, NY 12758, USA",
+    "google_verified_at": "2025-09-30T18:01:51.140632+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Suarez Family Brewery",
@@ -198,12 +243,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTTz58sOY3YkRwVNTY8_v1xE",
     "place_query": "Suarez Family Brewery, Livingston, NY",
     "full_description": "Beer for people who appreciate restraint and precision: elegant foam, soft profiles, and perfect balance.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 42.110981,
+    "google_verified_lng": -73.812344,
+    "formatted_address": "2278 US-9, Hudson, NY 12534, USA",
+    "google_verified_at": "2025-09-30T18:01:51.386168+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Upward Brewing Company",
-    "lat": 41.9012,
-    "lng": -74.8277,
+    "lat": 41.8922639,
+    "lng": -74.8316628,
     "location": "Livingston Manor, NY",
     "specialty": "IPAs, lagers, and clean saisons brewed with spring water",
     "visitor_experience": "120-acre “Beer Mountain” property with hiking trails, pond, and large lawn.",
@@ -212,35 +262,48 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAdwpXnSZ3IkR-CioY5YL5ak",
     "place_query": "Upward Brewing Company, Livingston Manor, NY, NY",
     "full_description": "Modern taproom anchors a hilltop preserve; short trail to the ‘Beer Mountain’ overlook. Overview corroborated by visitor info.",
-    "region": "Catskills"
+    "region": "Catskills",
+    "google_verified_lat": 41.8922639,
+    "google_verified_lng": -74.8316628,
+    "formatted_address": "171 Main St Box 1015, Livingston Manor, NY 12758, USA",
+    "google_verified_at": "2025-09-30T18:01:51.620455+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Obercreek Brewing Company",
-    "lat": 41.6079,
-    "lng": -73.9161,
+    "lat": 41.5874709,
+    "lng": -73.932689,
     "location": "Wappingers Falls, NY",
     "specialty": "Farm-adjacent saisons and hop-forward ales",
     "visitor_experience": "Tiny indoor bar on an organic farm with plenty of outdoor tables and tented seating.",
     "description": "Organic-farm brewery with a mellow lawn scene.",
-    "place_id": "",
-    "google_maps_url": "https://maps.google.com/?q=Obercreek+Brewing+Company+Wappingers+Falls+NY",
+    "place_id": "ChIJDyoca_Q53YkREAqfW2PG4_A",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJDyoca_Q53YkREAqfW2PG4_A",
     "place_query": "Obercreek Brewing Company, Wappingers Falls NY",
     "full_description": "Brewed beside the fields of Obercreek Farm; come for fresh IPAs and saisons, stay for the relaxed, kid- and dog-friendly yard and frequent pop-ups.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.5874709,
+    "google_verified_lng": -73.932689,
+    "google_verified_at": "2025-09-30T18:01:52.247579+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Gardiner Brewing Company (Wright’s Farm)",
-    "lat": 41.6611,
-    "lng": -74.1547,
+    "lat": 41.6673942,
+    "lng": -74.13706549999999,
     "location": "Gardiner, NY",
     "specialty": "Easy-drinking farm ales and seasonal taps",
     "visitor_experience": "Barn taproom behind an active fruit farm; live music on weekends; lawn + picnic tables with Shawangunk views.",
     "description": "True barn brewery with orchard vibes.",
-    "place_id": "",
-    "google_maps_url": "https://maps.google.com/?q=Gardiner+Brewing+Company+Gardiner+NY",
+    "place_id": "ChIJJ-uIV1Yn3YkR_VFjsNQXfhA",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJ-uIV1Yn3YkR_VFjsNQXfhA",
     "place_query": "Gardiner Brewing Company, Gardiner NY",
     "full_description": "Open Sat–Sun with bands and farm snacks; grab a pint in the old dairy barn or out on the grass after a pick-your-own loop.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.6673942,
+    "google_verified_lng": -74.13706549999999,
+    "google_verified_at": "2025-09-30T18:01:52.913179+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Treasury Cider at Fishkill Farms",
@@ -258,17 +321,21 @@
   },
   {
     "name": "Pennings Farm Cidery",
-    "lat": 41.2422,
-    "lng": -74.3605,
+    "lat": 41.2340812,
+    "lng": -74.3824996,
     "location": "Warwick, NY",
     "specialty": "Draft ciders from estate fruit; occasional small-batch beer/collabs",
     "visitor_experience": "Hilltop taproom/deck above the farm market with valley views; frequent live music.",
     "description": "Panoramic deck on a working farm.",
-    "place_id": "",
-    "google_maps_url": "https://maps.google.com/?q=Pennings+Farm+Cidery+Warwick+NY",
+    "place_id": "ChIJH4TseV0jw4kRyW9B4nBjwE8",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJH4TseV0jw4kRyW9B4nBjwE8",
     "place_query": "Pennings Farm Cidery, Warwick NY",
     "full_description": "Ride the hill up behind the market to a sprawling deck, stage, and lawn—good crowds, golden-hour light, and orchard air.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.2340812,
+    "google_verified_lng": -74.3824996,
+    "google_verified_at": "2025-09-30T18:01:54.253537+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Bad Seed Cider Company",
@@ -286,59 +353,75 @@
   },
   {
     "name": "Newburgh Brewing Company",
-    "lat": 41.4977,
-    "lng": -74.0119,
+    "lat": 41.497384,
+    "lng": -74.0079682,
     "location": "Newburgh, NY",
     "specialty": "Classic lagers, ESB, cream ale, rotating seasonals",
     "visitor_experience": "Vast, high-ceiling taproom in a historic warehouse with sweeping Hudson River views from upper floors.",
     "description": "River-view beer hall in a 19th-century mill space.",
-    "place_id": "",
-    "google_maps_url": "https://maps.google.com/?q=Newburgh+Brewing+Company+88+S+Colden+St",
+    "place_id": "ChIJh7-KXxgy3YkRCqoRbdPtKd8",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJh7-KXxgy3YkRCqoRbdPtKd8",
     "place_query": "Newburgh Brewing Company, 88 S Colden St, Newburgh NY",
     "full_description": "A genuine Hudson-facing room: long tables, tall windows, live music, and a beer list that rewards lingering as barges drift by.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.497384,
+    "google_verified_lng": -74.0079682,
+    "google_verified_at": "2025-09-30T18:01:55.634744+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "River Outpost Brewing Co.",
-    "lat": 41.2877,
-    "lng": -73.9313,
+    "lat": 41.275648,
+    "lng": -73.94300969999999,
     "location": "Peekskill, NY",
     "specialty": "IPAs, pilsners, fruited seasonals; waterfront crowd-pleasers",
     "visitor_experience": "Large riverfront patio at Charles Point Harbor; marina + Hudson views.",
     "description": "Breezy Hudson harbor deck built for sunsets.",
-    "place_id": "",
-    "google_maps_url": "https://maps.google.com/?q=River+Outpost+Brewing+Peekskill+NY",
+    "place_id": "ChIJwx72pEvPwokRsM2-U5aNXj0",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJwx72pEvPwokRsM2-U5aNXj0",
     "place_query": "River Outpost Brewing Co., Peekskill NY",
     "full_description": "Umbrella tables on the water, boat traffic for ambience, and a menu made for groups—one of the few true feet-on-the-river breweries.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.275648,
+    "google_verified_lng": -73.94300969999999,
+    "google_verified_at": "2025-09-30T18:01:56.357808+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Industrial Arts Brewing Company (Garnerville)",
-    "lat": 41.2089,
-    "lng": -73.9883,
+    "lat": 41.208345,
+    "lng": -73.99116889999999,
     "location": "Garnerville, NY",
     "specialty": "Exceptionally clean, modern lagers and hop-driven pale ales",
     "visitor_experience": "Historic 19th-century brick mill complex (GARNER Historic District) with courtyard seating and creek/waterfall ambience.",
     "description": "Sleek beer in a romantic ruins-meets-arts-campus setting.",
-    "place_id": "",
-    "google_maps_url": "https://maps.google.com/?q=Industrial+Arts+Brewing+Garnerville+NY",
+    "place_id": "ChIJHfiETPPEwokRrsfYgqL1TJ4",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJHfiETPPEwokRrsfYgqL1TJ4",
     "place_query": "Industrial Arts Brewing, Garnerville NY",
     "full_description": "Brick smokestacks, cobblestone alleys, and a creative campus vibe—more character than any strip mall could dream of; the beer’s as dialed as the setting.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.208345,
+    "google_verified_lng": -73.99116889999999,
+    "google_verified_at": "2025-09-30T18:01:56.959355+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Industrial Arts Brewing Company (Beacon Taproom)",
-    "lat": 41.4981,
-    "lng": -73.9568,
+    "lat": 41.516946,
+    "lng": -73.9465929,
     "location": "Beacon, NY",
     "specialty": "Hudson-Highlands-inspired lagers and IPAs",
     "visitor_experience": "Spacious modern taproom with deck seating and views toward the Highlands.",
     "description": "Contemporary river-town taproom with a deck.",
-    "place_id": "",
-    "google_maps_url": "https://maps.google.com/?q=Industrial+Arts+Brewing+Beacon+NY",
+    "place_id": "ChIJP8dJSdgx3YkRqSkcI51h_NM",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP8dJSdgx3YkRqSkcI51h_NM",
     "place_query": "Industrial Arts Brewing Company, Beacon NY",
     "full_description": "Clean lines, clean beers, and sightlines toward the hills; easy to fold into a Dia Beacon or riverfront day.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.516946,
+    "google_verified_lng": -73.9465929,
+    "google_verified_at": "2025-09-30T18:01:57.660230+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Angry Orchard Cider House",
@@ -352,12 +435,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTQKWF9nX3IkRMgBMzvYNafI",
     "place_query": "Angry Orchard Cider House, Walden, NY, NY",
     "full_description": "Expect polished hospitality and exclusive on-site releases with broad orchard views.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.5900972,
+    "google_verified_lng": -74.224068,
+    "formatted_address": "2241 Albany Post Rd, Walden, NY 12586, USA",
+    "google_verified_at": "2025-09-30T18:01:57.867152+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Arrowood Farms",
-    "lat": 41.8003,
-    "lng": -74.2365,
+    "lat": 41.8042747,
+    "lng": -74.2468122,
     "location": "Accord, NY",
     "specialty": "Farm beers and small-batch spirits using locally sourced grain and hops",
     "visitor_experience": "Farm brewery/distillery with fields, trails, and a full kitchen (The Apiary).",
@@ -366,7 +454,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJqZoeik7g3IkRDW5zZar0OyU",
     "place_query": "Arrowood Farms, Accord, NY, NY",
     "full_description": "A true agritourism campus—beer, spirits, and a restaurant set among hop yards and grain fields with regular music and seasonal events. Hours and address: 236 Lower Whitfield Rd.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.8042747,
+    "google_verified_lng": -74.2468122,
+    "formatted_address": "236 Lower Whitfield Rd, Accord, NY 12404, USA",
+    "google_verified_at": "2025-09-30T18:01:58.085397+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Equilibrium Brewery",
@@ -380,7 +473,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJKV4hjk8zw4kReJUMS9kmsaY",
     "place_query": "Equilibrium Brewery, Middletown, NY",
     "full_description": "Plan for lines on major can days; the on-site experience is relaxed midweek with patio seating.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.4445578,
+    "google_verified_lng": -74.4196852,
+    "formatted_address": "4 South St, Middletown, NY 10940, USA",
+    "google_verified_at": "2025-09-30T18:01:58.292471+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Hudson Valley Brewery",
@@ -394,7 +492,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj8DOGGEx3YkRtiDRswEn-uk",
     "place_query": "Hudson Valley Brewery, Beacon, NY",
     "full_description": "Known for category-bending sour-IPA hybrids with striking design—often polarizing, always interesting.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.5015261,
+    "google_verified_lng": -73.9630052,
+    "formatted_address": "7 E Main St, Beacon, NY 12508, USA",
+    "google_verified_at": "2025-09-30T18:01:58.515883+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Plan Bee Farm Brewery",
@@ -408,7 +511,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbe4oqdU_3YkRKAGcKq7anU8",
     "place_query": "Plan Bee Farm Brewery, Poughkeepsie, NY",
     "full_description": "Expect mixed-culture funk and local fruit/honey expressions poured on a quiet bit of countryside.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.71909710000001,
+    "google_verified_lng": -73.886528,
+    "formatted_address": "115 Underhill Rd, Poughkeepsie, NY 12603, USA",
+    "google_verified_at": "2025-09-30T18:01:58.753292+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Rushing Duck Brewing Company",
@@ -422,12 +530,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3azbdAwpw4kRg2rqWM0aWME",
     "place_query": "Rushing Duck Brewing Company, Chester, NY",
     "full_description": "Longtime favorite for locals; releases tend toward hop-forward and roasty styles.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.3620328,
+    "google_verified_lng": -74.2694956,
+    "formatted_address": "2 Greycourt Ave, Chester, NY 10918, USA",
+    "google_verified_at": "2025-09-30T18:01:58.985102+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "The Drowned Lands Brewery",
-    "lat": 41.2623,
-    "lng": -74.3587,
+    "lat": 41.2800265,
+    "lng": -74.3064675,
     "location": "Warwick, NY",
     "specialty": "Foeder saisons, rustic lagers, hazy IPAs",
     "visitor_experience": "High-ceiling taproom and outdoor beer garden facing black-dirt fields.",
@@ -436,12 +549,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMaVxeXkmw4kReP4XyA1ClSo",
     "place_query": "The Drowned Lands Brewery, Warwick, NY, NY",
     "full_description": "A modern aesthetic meets farm country; mixed-fermentation is a house strength.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.2800265,
+    "google_verified_lng": -74.3064675,
+    "formatted_address": "251 State School Rd, Warwick, NY 10990, USA",
+    "google_verified_at": "2025-09-30T18:01:59.218503+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Tin Barn Brewing",
-    "lat": 41.312,
-    "lng": -74.2793,
+    "lat": 41.3181145,
+    "lng": -74.2844741,
     "location": "Chester, NY",
     "specialty": "New England–style IPAs, fruited sours; wood-fired pizza",
     "visitor_experience": "Huge barn-style brewery with mezzanine and rooftop deck; frequent live music.",
@@ -450,12 +568,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPzsaQDQpw4kRfXN2pPfPeEI",
     "place_query": "Tin Barn Brewing, Chester, NY, NY",
     "full_description": "Industrial-chic meets bucolic; families and large groups fit easily here.",
-    "region": "Hudson Valley"
+    "region": "Hudson Valley",
+    "google_verified_lat": 41.3181145,
+    "google_verified_lng": -74.2844741,
+    "formatted_address": "62 Kings Hwy Bypass, Chester, NY 10918, USA",
+    "google_verified_at": "2025-09-30T18:01:59.431401+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Bolton Landing Brewing Company",
-    "lat": 43.5547,
-    "lng": -73.6545,
+    "lat": 43.5557056,
+    "lng": -73.6557444,
     "location": "Bolton Landing, NY",
     "specialty": "Small-batch ales from blonde to IPA; Adirondack-named specials",
     "visitor_experience": "Cozy taproom with sidewalk patio a short walk from Lake George.",
@@ -464,7 +587,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJoWv_uH_o34kRWftbY6je8wg",
     "place_query": "Bolton Landing Brewing Company, Bolton Landing, NY, NY",
     "full_description": "Easygoing stop in summer; expect a tourist-friendly lineup and quick turnover.",
-    "region": "North Country"
+    "region": "North Country",
+    "google_verified_lat": 43.5557056,
+    "google_verified_lng": -73.6557444,
+    "formatted_address": "4933 Lake Shore Dr, Bolton Landing, NY 12814, USA",
+    "google_verified_at": "2025-09-30T18:01:59.633999+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Brown’s Brewing Company",
@@ -478,12 +606,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJrfIU5aUP3okRRq4zNu2eFkk",
     "place_query": "Brown’s Brewing Company, Troy, NY",
     "full_description": "A staple of downtown Troy with river views and an approachable beer list that pairs well with a full kitchen and regular events.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "google_verified_lat": 42.73573589999999,
+    "google_verified_lng": -73.6875501,
+    "formatted_address": "417 River St, Troy, NY 12180, USA",
+    "google_verified_at": "2025-09-30T18:01:59.881051+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Paradox Brewery",
-    "lat": 43.9803,
-    "lng": -73.6318,
+    "lat": 43.9449388,
+    "lng": -73.7314537,
     "location": "North Hudson, NY",
     "specialty": "Crisp lagers, IPAs, approachable sours",
     "visitor_experience": "Modern Adirondack Park taproom with an outdoor deck and forest views.",
@@ -492,7 +625,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJVwUTSSq3ykwRSkXp8O0BtDg",
     "place_query": "Paradox Brewery, North Hudson, NY, NY",
     "full_description": "Easy stop en route to the mountains; clear, clean beers fit the scenery.",
-    "region": "North Country"
+    "region": "North Country",
+    "google_verified_lat": 43.9449388,
+    "google_verified_lng": -73.7314537,
+    "formatted_address": "2781 US-9, North Hudson, NY 12855, USA",
+    "google_verified_at": "2025-09-30T18:02:00.129372+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Rare Form Brewing Company",
@@ -506,12 +644,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP2g0RBkP3okRiVAQkC5CzKA",
     "place_query": "Rare Form Brewing Company, Troy, NY",
     "full_description": "A playground for styles—expect spice, fruit, and barrel experiments.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "google_verified_lat": 42.7285026,
+    "google_verified_lng": -73.690044,
+    "formatted_address": "90 Congress St, Troy, NY 12180, USA",
+    "google_verified_at": "2025-09-30T18:02:00.361274+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Big Slide Brewery & Public House",
-    "lat": 44.2645,
-    "lng": -73.991,
+    "lat": 44.266075,
+    "lng": -73.97008699999999,
     "location": "Lake Placid, NY",
     "specialty": "Farm-to-table brewpub: creative IPAs, sours, barrel-aged beers",
     "visitor_experience": "Industrial-chic room with wood-fired kitchen; patio with High Peaks views.",
@@ -520,12 +663,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWQFJ9k_iykwRMvXe8_skOdY",
     "place_query": "Big Slide Brewery & Public House, Lake Placid, NY, NY",
     "full_description": "Post-ski or post-hike, this is where plates and pints both carry their weight.",
-    "region": "North Country"
+    "region": "North Country",
+    "google_verified_lat": 44.266075,
+    "google_verified_lng": -73.97008699999999,
+    "formatted_address": "5686 Cascade Rd, Lake Placid, NY 12946, USA",
+    "google_verified_at": "2025-09-30T18:02:00.578291+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Raquette River Brewing",
-    "lat": 44.2236,
-    "lng": -74.4583,
+    "lat": 44.2431724,
+    "lng": -74.4868419,
     "location": "Tupper Lake, NY",
     "specialty": "Adirondack-inspired lineup from fruit wheats to IPAs",
     "visitor_experience": "Large outdoor beer garden with food trucks, picnic tables, and fire pits.",
@@ -534,12 +682,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJN2NgOl1ry0wRY5NAsY0sNRc",
     "place_query": "Raquette River Brewing, Tupper Lake, NY, NY",
     "full_description": "Casual, communal space under string lights; expect a family-friendly scene.",
-    "region": "North Country"
+    "region": "North Country",
+    "google_verified_lat": 44.2431724,
+    "google_verified_lng": -74.4868419,
+    "formatted_address": "11 Balsam St, Tupper Lake, NY 12986, USA",
+    "google_verified_at": "2025-09-30T18:02:00.779800+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Callicoon Brewing Company",
-    "lat": 41.7643,
-    "lng": -75.0572,
+    "lat": 41.7665045,
+    "lng": -75.0570146,
     "location": "Callicoon, NY",
     "specialty": "English-leaning pub ales and approachable house styles",
     "visitor_experience": "Historic hotel building with a wraparound porch over the Delaware River.",
@@ -548,67 +701,102 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJt9NwbH9Z24kR17FGsVl4h5g",
     "place_query": "Callicoon Brewing Company, Callicoon, NY, NY",
     "full_description": "Rocking chairs, river breezes, and easy pints; live music pops up often.",
-    "region": "Southern Tier"
+    "region": "Southern Tier",
+    "google_verified_lat": 41.7665045,
+    "google_verified_lng": -75.0570146,
+    "formatted_address": "15 Upper Main St, Callicoon, NY 12723, USA",
+    "google_verified_at": "2025-09-30T18:02:01.009802+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Southern Tier Brewing Company",
-    "lat": 42.0871,
-    "lng": -79.348,
+    "lat": 42.0889244,
+    "lng": -79.3491744,
     "location": "Lakewood, NY",
     "specialty": "Bold, flavorful brews (like the famed Pumking Imperial Ale and 2XIPA):contentReference[oaicite:4]{index=4}",
     "visitor_experience": "Large craft brewery with a cozy taproom and a scenic outdoor patio at the brewery’s woodsy property:contentReference[oaicite:5]{index=5}. Frequent events (live music, trivia) add to the lively atmosphere:contentReference[oaicite:6]{index=6}.",
     "description": "Flagship Southern Tier brewery featuring an expansive beer garden and family-friendly vibe.",
     "place_query": "Southern Tier Brewing Company, Lakewood, NY",
     "full_description": "A top regional brewery known for big beers and good times. The Lakewood taproom offers fresh pints of Southern Tier’s famous ales in a lodge-like taproom and outdoor beer garden, with regular live entertainment and food to match.",
-    "region": "Southern Tier"
+    "region": "Southern Tier",
+    "place_id": "ChIJbYsFSPyr0okRo5bTWrIGxoA",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbYsFSPyr0okRo5bTWrIGxoA",
+    "google_verified_lat": 42.0889244,
+    "google_verified_lng": -79.3491744,
+    "google_verified_at": "2025-09-30T18:02:01.629910+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Ellicottville Brewing Company",
-    "lat": 42.2759,
-    "lng": -78.67,
+    "lat": 42.275106,
+    "lng": -78.6704809,
     "location": "Ellicottville, NY",
     "specialty": "Wide variety of craft beers (from fruity wheat ales to bold IPAs) paired with creative pub cuisine:contentReference[oaicite:21]{index=21}",
     "visitor_experience": "Brewpub in a restored 19th-century mill with a cozy interior, on-site brewery tours, and a landscaped beer garden by a creek:contentReference[oaicite:22]{index=22}. Located in a scenic ski town village.",
     "description": "Historic brewpub with house ales and a creekside beer garden in ski country.",
     "place_query": "Ellicottville Brewing Company, Ellicottville, NY",
     "full_description": "EBC’s flagship location offers the charm of an Alpine village pub – enjoy a pint of their famous Blueberry Wheat or IPA inside the antique-filled brewery (a former mill) or outdoors in the beer garden. It’s a cornerstone of Ellicottville’s après-ski and summer scene, where craft beer meets small-town hospitality.",
-    "region": "Southern Tier"
+    "region": "Southern Tier",
+    "place_id": "ChIJJ9pKVJCK0okRP9ZDmauxqR4",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJJ9pKVJCK0okRP9ZDmauxqR4",
+    "google_verified_lat": 42.275106,
+    "google_verified_lng": -78.6704809,
+    "google_verified_at": "2025-09-30T18:02:02.471929+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Five & 20 Spirits & Brewing",
-    "lat": 42.3076,
-    "lng": -79.6056,
+    "lat": 42.3096522,
+    "lng": -79.6047521,
     "location": "Westfield, NY",
     "specialty": "Small-batch farm brewery (and distillery) using home-grown grains and local ingredients:contentReference[oaicite:30]{index=30}:contentReference[oaicite:31]{index=31}",
     "visitor_experience": "Tasting room on an 80-acre farm with a patio overlooking vineyards and fields:contentReference[oaicite:32]{index=32}. Guests can enjoy beer, wine, or spirits in a relaxed rural setting; firepits and live music events add to the ambiance:contentReference[oaicite:33]{index=33}.",
     "description": "Farm brewery-distillery with vineyard views and a spacious outdoor patio.",
     "place_query": "Five & 20 Spirits & Brewing, Westfield, NY",
     "full_description": "New York’s first combined winery, brewery, and distillery – dubbed the “Westfield Wonder”:contentReference[oaicite:34]{index=34} – Five & 20 invites you to sip craft beer right where its ingredients are grown. The lush farm setting features picnic tables and Adirondack chairs overlooking fields of grain and grapes. It’s an idyllic spot to sample their beers (or spirits) and watch the sunset over Lake Erie’s wine country.",
-    "region": "Southern Tier"
+    "region": "Southern Tier",
+    "place_id": "ChIJMfDYuSxELYgR17n4RsGF-kM",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMfDYuSxELYgR17n4RsGF-kM",
+    "google_verified_lat": 42.3096522,
+    "google_verified_lng": -79.6047521,
+    "google_verified_at": "2025-09-30T18:02:03.314110+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Beer Tree Brew (Farm)",
-    "lat": 42.1704,
-    "lng": -75.8321,
+    "lat": 42.1710234,
+    "lng": -75.8309479,
     "location": "Port Crane, NY",
     "specialty": "Innovative craft brewery known for hazy IPAs and creative brews, brewed fresh at their farm location",
     "visitor_experience": "Rustic timber-frame taproom with a fireplace, plus a large deck overlooking the Chenango River and surrounding farm property:contentReference[oaicite:40]{index=40}. Expansive beer garden with picnic tables, yard games, and an on-site kitchen.",
     "description": "Scenic riverside brewery with a sprawling outdoor beer garden and farm vibe.",
     "place_query": "Beer Tree Brew Farm, Port Crane, NY",
     "full_description": "Beer Tree’s original farm brewery offers a laid-back atmosphere with *scenic views of the surrounding farm* and river:contentReference[oaicite:41]{index=41}. Enjoy a pint on the deck or in the field, play cornhole under the sun, and savor their farm-to-table comfort food. It’s a slice of hop heaven just outside Binghamton, perfect for beer lovers who enjoy the outdoors.",
-    "region": "Southern Tier"
+    "region": "Southern Tier",
+    "place_id": "ChIJ2z7u7Az72okRLjPdBPFrc6A",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2z7u7Az72okRLjPdBPFrc6A",
+    "google_verified_lat": 42.1710234,
+    "google_verified_lng": -75.8309479,
+    "google_verified_at": "2025-09-30T18:02:04.091281+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Roscoe Beer Company",
-    "lat": 41.9462,
-    "lng": -74.9131,
+    "lat": 41.9461111,
+    "lng": -74.9127778,
     "location": "Roscoe, NY",
     "specialty": "Easy-drinking ales and lagers inspired by \"Trout Town USA\" (award-winning house brews named after local fishing lore)",
     "visitor_experience": "Spacious taproom with a 300-gallon trout aquarium and rustic decor:contentReference[oaicite:49]{index=49}, plus a huge outdoor beer garden with tented seating and picnic tables:contentReference[oaicite:50]{index=50}. Live music and community events often enliven the patio:contentReference[oaicite:51]{index=51}.",
     "description": "Award-winning small-town brewery with a trout tank and a big backyard beer garden.",
     "place_query": "Roscoe Beer Company, Roscoe, NY",
     "full_description": "Proudly brewed in Trout Town USA, Roscoe Beer Co. delivers fresh beer in a unique setting. The indoor taproom (with its trout tank and fishing memorabilia) opens to an expansive outdoor area where you can sip a Cold Spring Lager or Trout Town IPA under the Catskills sky:contentReference[oaicite:52]{index=52}. It’s a year-round destination for beer lovers who appreciate a friendly atmosphere and the great outdoors.",
-    "region": "Southern Tier"
+    "region": "Southern Tier",
+    "place_id": "ChIJob0fzy6c3IkRnNmG6DmjiHI",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJob0fzy6c3IkRnNmG6DmjiHI",
+    "google_verified_lat": 41.9461111,
+    "google_verified_lng": -74.9127778,
+    "google_verified_at": "2025-09-30T18:02:04.710820+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Hidden Springs Brewhouse",
@@ -620,19 +808,31 @@
     "description": "Hop-farm-turned-brewery offering craft beer in a relaxed outdoor country setting.",
     "place_query": "Hidden Springs Brewhouse, Norwich, NY",
     "full_description": "Set on a former hop farm outside Norwich, Hidden Springs Brewhouse has quickly become a community gathering spot. The taproom opens to a wide grassy area where families and friends spread out by the pond, play yard games, and enjoy local food truck fare. It’s *“not dominated by any one style”*:contentReference[oaicite:71]{index=71} of beer here – instead you’ll find an award-winning mix of brews to suit every taste, all served with a side of scenic views and small-town hospitality.",
-    "region": "Southern Tier"
+    "region": "Southern Tier",
+    "place_id": "ChIJm99uX_rH24kRPNY3MWZZCcQ",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJm99uX_rH24kRPNY3MWZZCcQ",
+    "google_verified_lat": 42.5611,
+    "google_verified_lng": -75.4588,
+    "google_verified_at": "2025-09-30T18:02:05.377675+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Brewery Ommegang",
-    "lat": 42.6269,
-    "lng": -74.9453,
+    "lat": 42.6264642,
+    "lng": -74.9445514,
     "location": "Cooperstown, NY",
     "specialty": "Belgian-style ales (farmhouse saisons, abbey ales, witbiers, etc.), brewed in the authentic Belgian tradition:contentReference[oaicite:79]{index=79}",
     "visitor_experience": "Beautiful farmstead brewery on a 136-acre former hop farm:contentReference[oaicite:80]{index=80}. Features include a spacious tasting room, an outdoor café, and large fields for concerts and bonfires (stunning rural vistas all around):contentReference[oaicite:81]{index=81}.",
     "description": "Renowned farmhouse brewery with Belgian ales and a festival-like outdoor venue in the rolling hills.",
     "place_query": "Brewery Ommegang, Cooperstown, NY",
     "full_description": "Brewery Ommegang combines Old World beer craftsmanship with a grand scenic setting. Guests are treated to **“stunning views”** of the Cooperstown countryside while sampling legendary beers like Three Philosophers:contentReference[oaicite:82]{index=82}. The property’s expansive lawns double as an event space for concerts, and even casual visitors might find live music and a roaring bonfire on weekends. It’s an **“enchanted”** beer destination where every sip of Belgian ale comes with fresh air and a view.",
-    "region": "Central NY"
+    "region": "Central NY",
+    "place_id": "ChIJvQ37ngMH3IkR5IUUwPQdxX4",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvQ37ngMH3IkR5IUUwPQdxX4",
+    "google_verified_lat": 42.6264642,
+    "google_verified_lng": -74.9445514,
+    "google_verified_at": "2025-09-30T18:02:06.105618+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Steuben Brewing Company",
@@ -644,31 +844,49 @@
     "description": "Family-run brewery on a Keuka Lake hillside, featuring local brews and a ‘brew with a view’ experience.",
     "place_query": "Steuben Brewing Company, Hammondsport, NY",
     "full_description": "Steuben Brewing offers more than just great beer – it offers an entire Finger Lakes experience. **“The view really is inspiring,”** inviting you to sip slowly on the deck and take in the vineyard-dotted hills and shimmering lake:contentReference[oaicite:93]{index=93}. From hoppy IPAs to malty farm ales, each brew comes with a story of local ingredients. It’s a laid-back, scenic getaway for beer enthusiasts exploring the Southern Tier and Finger Lakes regions.",
-    "region": "Finger Lakes"
+    "region": "Finger Lakes",
+    "place_id": "ChIJTzjHJS_-0IkRXHr00RIivGk",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTzjHJS_-0IkRXHr00RIivGk",
+    "google_verified_lat": 42.5015,
+    "google_verified_lng": -77.187,
+    "google_verified_at": "2025-09-30T18:02:06.781422+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Two Goats Brewing",
-    "lat": 42.4769,
-    "lng": -76.869,
+    "lat": 42.4766803,
+    "lng": -76.869697,
     "location": "Burdett, NY",
     "specialty": "Small-batch brews in various styles (paired with their famous roast beef sandwich and free peanuts):contentReference[oaicite:99]{index=99}",
     "visitor_experience": "Renovated 19th-century barn brewery with a large deck offering sweeping Seneca Lake views:contentReference[oaicite:100]{index=100}. Chill, music-filled atmosphere (often with live bands) and incredible sunset spots; quintessential rustic vibe.",
     "description": "Rustic barn brewery on a hill, featuring stellar lake sunsets, live music, and a no-frills friendly vibe.",
     "place_query": "Two Goats Brewing, Burdett, NY",
     "full_description": "A Finger Lakes favorite, Two Goats combines craft beer with one of the region’s best viewpoints. Enjoy a hoppy ale or rich stout on their deck as the sun sets over Seneca Lake – *“epic sunsets”* come standard:contentReference[oaicite:101]{index=101}. Inside, the taproom’s barnwood walls, peanut-shell-covered floor, and frequent live music make you feel right at home. It’s a truly unique spot where great beer meets great scenery, encapsulating the spirit of the Southern Tier’s scenic breweries.",
-    "region": "Southern Tier"
+    "region": "Southern Tier",
+    "place_id": "ChIJg8S-IYv00IkRDGrOIGcQLEA",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJg8S-IYv00IkRDGrOIGcQLEA",
+    "google_verified_lat": 42.4766803,
+    "google_verified_lng": -76.869697,
+    "google_verified_at": "2025-09-30T18:02:07.547669+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Grist Iron Brewing Company",
-    "lat": 42.4701,
-    "lng": -76.8668,
+    "lat": 42.4707942,
+    "lng": -76.865742,
     "location": "Burdett, NY",
     "specialty": "Wide range of beers (15 taps) from IPAs and sours to lagers – something for every taste:contentReference[oaicite:111]{index=111}",
     "visitor_experience": "150-acre hilltop brewery with panoramic Seneca Lake views:contentReference[oaicite:112]{index=112}. Features a large patio and lawn for events, an on-site inn for overnight stays, live music/festivals year-round, and a farm-inspired kitchen for BBQ and pizzas:contentReference[oaicite:113]{index=113}:contentReference[oaicite:114]{index=114}.",
     "description": "Lakeside brewery resort offering craft beer with a view, live entertainment, and on-site lodging.",
     "place_query": "Grist Iron Brewing Company, Burdett, NY",
     "full_description": "At Grist Iron, *“Good times are always on tap!”*:contentReference[oaicite:115]{index=115} This destination brewery combines scenic beauty with a fun, festive atmosphere. Enjoy a flight on the deck as you look out over miles of lake and vineyards, or join one of their many events on the sprawling grounds:contentReference[oaicite:116]{index=116}. With its combination of top-notch beers, delicious food, live entertainment, and even lodging, Grist Iron is more than a brewery – it’s a Finger Lakes experience unto itself.",
-    "region": "Southern Tier"
+    "region": "Southern Tier",
+    "place_id": "ChIJk4Sz0Pb00IkRd9blADQHL-M",
+    "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJk4Sz0Pb00IkRd9blADQHL-M",
+    "google_verified_lat": 42.4707942,
+    "google_verified_lng": -76.865742,
+    "google_verified_at": "2025-09-30T18:02:08.782346+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Big Inlet Brewing",
@@ -684,8 +902,8 @@
   },
   {
     "name": "Beak & Skiff (1911 Established)",
-    "lat": 42.8781,
-    "lng": -76.2568,
+    "lat": 42.903087,
+    "lng": -76.22279,
     "location": "LaFayette, NY",
     "specialty": "Hard ciders under 1911 Established; small-batch spirits and wines",
     "visitor_experience": "Orchard campus with tasting room(s), U-pick, café, concerts, and valley views.",
@@ -694,7 +912,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJkbBgLV8c2okRHnSkqSCGN74",
     "place_query": "Beak & Skiff (1911 Established), LaFayette, NY, NY",
     "full_description": "Peak fall vibes with cider donuts, tractor rides, and a polished 1911 tasting program; notable summer concert series.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.903087,
+    "google_verified_lng": -76.22279,
+    "formatted_address": "2708 Lords Hill Rd, Lafayette, NY 13084, USA",
+    "google_verified_at": "2025-09-30T18:02:09.519500+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Big Ditch Brewing Company",
@@ -708,12 +931,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJU62G4EUS04kRWLcUPix2qpE",
     "place_query": "Big Ditch Brewing Company, Buffalo, NY",
     "full_description": "A post-work and pre-game magnet; the kitchen keeps pace with a busy taproom.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.8880772,
+    "google_verified_lng": -78.8709245,
+    "formatted_address": "55 E Huron St, Buffalo, NY 14203, USA",
+    "google_verified_at": "2025-09-30T18:02:09.755665+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Brewery Ardennes",
-    "lat": 42.8726,
-    "lng": -76.979,
+    "lat": 42.8294186,
+    "lng": -77.00032159999999,
     "location": "Geneva, NY",
     "specialty": "Belgian-style dubbel, tripel, saisons; European-inspired farm cuisine",
     "visitor_experience": "Stone manor taproom with gardens and courtyards; near Seneca Lake.",
@@ -722,12 +950,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJI5mbwBTF0IkRi-5EYHsCj9s",
     "place_query": "Brewery Ardennes, Geneva, NY, NY",
     "full_description": "A storybook farmhouse setting for chalice-worthy ales and seasonal plates.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.8294186,
+    "google_verified_lng": -77.00032159999999,
+    "formatted_address": "570 Snell Rd, Geneva, NY 14456, USA",
+    "google_verified_at": "2025-09-30T18:02:09.966884+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Climbing Bines Hop Farm Brewery",
-    "lat": 42.6835,
-    "lng": -76.932,
+    "lat": 42.6595488,
+    "lng": -76.941451,
     "location": "Penn Yan, NY",
     "specialty": "Hop-forward ales using estate-grown hops; classic styles",
     "visitor_experience": "Working hop farm with taproom/beer garden amid trellised vines near Keuka Lake.",
@@ -736,7 +969,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJpagqhkvp0IkRKntbHe8Ku6c",
     "place_query": "Climbing Bines Hop Farm Brewery, Penn Yan, NY, NY",
     "full_description": "Drink where the hops grow; summer brings dramatic green walls of bines and a mellow agrarian pace.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.6595488,
+    "google_verified_lng": -76.941451,
+    "formatted_address": "511 Hansen Point Rd, Penn Yan, NY 14527, USA",
+    "google_verified_at": "2025-09-30T18:02:10.216050+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Community Beer Works",
@@ -750,7 +988,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJKfZgumkT04kRyM8l85r9mio",
     "place_query": "Community Beer Works, Buffalo, NY",
     "full_description": "A mission-driven team pouring approachable, often collaboration-forward beers.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.8986651,
+    "google_verified_lng": -78.8918783,
+    "formatted_address": "520 Seventh St, Buffalo, NY 14201, USA",
+    "google_verified_at": "2025-09-30T18:02:10.438375+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Druthers Brewing Company",
@@ -764,12 +1007,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJP-GoINE53okRMhKuV5jYycY",
     "place_query": "Druthers Brewing Company, Saratoga Springs, NY",
     "full_description": "A reliable choice for mixed parties—broad tap lists, full menus, and plenty of seating in bustling downtown spots.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "google_verified_lat": 43.0808898,
+    "google_verified_lng": -73.7860269,
+    "formatted_address": "381 Broadway, Saratoga Springs, NY 12866, USA",
+    "google_verified_at": "2025-09-30T18:02:10.651174+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Finger Lakes Cider House",
-    "lat": 42.5643,
-    "lng": -76.7126,
+    "lat": 42.6083183,
+    "lng": -76.6990162,
     "location": "Interlaken, NY",
     "specialty": "Heritage-apple ciders from Good Life Farm; cheese and farm snacks",
     "visitor_experience": "Hilltop tasting barn with big deck and lawn over Cayuga Lake; frequent music.",
@@ -778,7 +1026,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0fSvJReR0IkRPgbx0Jt8TV4",
     "place_query": "Finger Lakes Cider House, Interlaken, NY, NY",
     "full_description": "Flights run dry to funky; orchard walks and family-friendly space make it an easy afternoon stop.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.6083183,
+    "google_verified_lng": -76.6990162,
+    "formatted_address": "4017 Hickok Rd, Interlaken, NY 14847, USA",
+    "google_verified_at": "2025-09-30T18:02:10.872343+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Genesee Brewing Company",
@@ -792,12 +1045,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsV5Z9VG01okRe3DPZHBhekk",
     "place_query": "Genesee Brewing Company, Rochester, NY",
     "full_description": "Few taprooms deliver a view like this—High Falls thundering below the deck. Classic recipes anchor a portfolio that’s defined Western NY beer for generations.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 43.163626,
+    "google_verified_lng": -77.6146588,
+    "formatted_address": "25 Cataract St, Rochester, NY 14605, USA",
+    "google_verified_at": "2025-09-30T18:02:11.092316+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Hamburg Brewing Company",
-    "lat": 42.7247,
-    "lng": -78.8153,
+    "lat": 42.7109954,
+    "lng": -78.80286389999999,
     "location": "Hamburg, NY",
     "specialty": "Wide range from lagers to big stouts (Vanilla Bourbon stout noted)",
     "visitor_experience": "Timber-framed taproom over a landscaped pond; outdoor lawn and patio.",
@@ -806,12 +1064,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJhaOGF4UE04kRjHRZUsnMwpA",
     "place_query": "Hamburg Brewing Company, Hamburg, NY, NY",
     "full_description": "Think lodge meets beer garden; the setting overdelivers for a suburban address.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.7109954,
+    "google_verified_lng": -78.80286389999999,
+    "formatted_address": "6553 Boston State Rd, Hamburg, NY 14075, USA",
+    "google_verified_at": "2025-09-30T18:02:11.323931+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Heritage Hill Brewhouse",
-    "lat": 42.8997,
-    "lng": -76.0045,
+    "lat": 42.9232066,
+    "lng": -76.01837499999999,
     "location": "Pompey, NY",
     "specialty": "Estate-grown hops/barley ales and lagers; BBQ kitchen",
     "visitor_experience": "Hilltop farm brewhouse with wraparound views, deck seating, and family activities.",
@@ -820,7 +1083,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAc_Ba4sh2okR1Z9advFzgIY",
     "place_query": "Heritage Hill Brewhouse, Pompey, NY, NY",
     "full_description": "On clear evenings you can spot the Syracuse skyline; kids and dogs welcome.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.9232066,
+    "google_verified_lng": -76.01837499999999,
+    "formatted_address": "3149 Sweet Rd, Pompey, NY 13138, USA",
+    "google_verified_at": "2025-09-30T18:02:11.561049+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Ithaca Beer Company",
@@ -834,12 +1102,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJqZyIGdmA0IkRiFPSkwebidY",
     "place_query": "Ithaca Beer Company, Ithaca, NY",
     "full_description": "Plenty of outdoor space and a kitchen that treats beer as a food partner—not just a beverage.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.4164137,
+    "google_verified_lng": -76.5351988,
+    "formatted_address": "122 Ithaca Beer Dr, Ithaca, NY 14850, USA",
+    "google_verified_at": "2025-09-30T18:02:11.796570+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Lucky Hare Brewing Company",
-    "lat": 42.5444,
-    "lng": -76.8667,
+    "lat": 42.528408,
+    "lng": -76.87458029999999,
     "location": "Hector, NY",
     "specialty": "Farmhouse ales, IPAs, barrel-aged sours",
     "visitor_experience": "Rural farm taproom with Seneca Lake glimpses; picnic tables and lawn games.",
@@ -848,7 +1121,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJf76-oKnz0IkRz9xvaroZE1k",
     "place_query": "Lucky Hare Brewing Company, Hector, NY, NY",
     "full_description": "Hector taproom sits amid vineyards/farmland; expect food trucks and relaxed vibes. Company site and local listing confirm venues.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.528408,
+    "google_verified_lng": -76.87458029999999,
+    "formatted_address": "6085 Beckhorn Rd, Hector, NY 14841, USA",
+    "google_verified_at": "2025-09-30T18:02:12.038714+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Nine Pin Ciderworks",
@@ -862,7 +1140,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlRNexYEJ3okRll4mvPcFmSk",
     "place_query": "Nine Pin Ciderworks, Albany, NY",
     "full_description": "A hub for cider experimentation in the Capital Region; expect variety and frequent releases.",
-    "region": "Capital Region"
+    "region": "Capital Region",
+    "google_verified_lat": 42.6618766,
+    "google_verified_lng": -73.743796,
+    "formatted_address": "929 Broadway, Albany, NY 12207, USA",
+    "google_verified_at": "2025-09-30T18:02:12.273573+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Prison City Pub & Brewery",
@@ -876,7 +1159,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcbHzches0IkRrZhtSDlWWqQ",
     "place_query": "Prison City Pub & Brewery, Auburn, NY",
     "full_description": "Expect frequent can drops and a lively outdoor space in good weather.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.9318309,
+    "google_verified_lng": -76.56834549999999,
+    "formatted_address": "28 State St, Auburn, NY 13021, USA",
+    "google_verified_at": "2025-09-30T18:02:12.528004+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Resurgence Brewing Company",
@@ -890,12 +1178,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_7isEhET04kRw9GsTic7deA",
     "place_query": "Resurgence Brewing Company, Buffalo, NY",
     "full_description": "Known for crowd-pleasing fruited options and a steady core lineup.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.8695957,
+    "google_verified_lng": -78.86862649999999,
+    "formatted_address": "55 Chicago St, Buffalo, NY 14204, USA",
+    "google_verified_at": "2025-09-30T18:02:12.744583+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Sackets Harbor Brewing Company",
-    "lat": 43.9469,
-    "lng": -76.1196,
+    "lat": 43.9479417,
+    "lng": -76.1206972,
     "location": "Sackets Harbor, NY",
     "specialty": "Traditional ales and lagers (War of 1812 Amber)",
     "visitor_experience": "Historic lakeside brewpub with indoor dining and seasonal deck.",
@@ -904,7 +1197,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAYk4eQ0T2IkRL8Ea14UKjVs",
     "place_query": "Sackets Harbor Brewing Company, Sackets Harbor, NY, NY",
     "full_description": "Boaters dock for pints; thick stone walls and old hardwoods set the scene.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 43.9479417,
+    "google_verified_lng": -76.1206972,
+    "formatted_address": "212 W Main St, Sackets Harbor, NY 13685, USA",
+    "google_verified_at": "2025-09-30T18:02:12.988284+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Saranac Brewery (Matt Brewing Company)",
@@ -918,12 +1216,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRUoXCYxH2YkRZFpGqjlzUuk",
     "place_query": "Saranac Brewery (Matt Brewing Company), Utica, NY",
     "full_description": "A pillar of NY beer history. The campus-style brewery and museum highlight more than a century of brewing; the outdoor events and broad portfolio make it an easy stop for mixed groups.",
-    "region": "Mohawk Valley"
+    "region": "Mohawk Valley",
+    "google_verified_lat": 43.10444589999999,
+    "google_verified_lng": -75.2455361,
+    "formatted_address": "811 Edward St, Utica, NY 13502, USA",
+    "google_verified_at": "2025-09-30T18:02:13.230349+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "South Hill Cider",
-    "lat": 42.3975,
-    "lng": -76.5014,
+    "lat": 42.3937648,
+    "lng": -76.52519649999999,
     "location": "Ithaca, NY",
     "specialty": "Small-batch ciders from wild and heirloom apples",
     "visitor_experience": "Post-and-beam tasting barn with valley views; farm-to-table bites.",
@@ -932,7 +1235,12 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvZDagpaA0IkRV5fhxvZyE6k",
     "place_query": "South Hill Cider, Ithaca, NY, NY",
     "full_description": "Lean, elegant ciders poured with a view; sunsets over the orchards are a thing.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.3937648,
+    "google_verified_lng": -76.52519649999999,
+    "formatted_address": "550 Sandbank Rd, Ithaca, NY 14850, USA",
+    "google_verified_at": "2025-09-30T18:02:13.461355+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Swiftwater Brewing Company",
@@ -946,12 +1254,17 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJQb9FvOO01okRPiKZVPT9wik",
     "place_query": "Swiftwater Brewing Company, Rochester, NY",
     "full_description": "Plays equally well to hopheads and farmhouse fans with a food menu to match.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 43.1424151,
+    "google_verified_lng": -77.6119478,
+    "formatted_address": "378 Mt Hope Ave, Rochester, NY 14620, USA",
+    "google_verified_at": "2025-09-30T18:02:13.692693+00:00",
+    "google_place_source": "places_details_v1"
   },
   {
     "name": "Wagner Valley Brewing Co.",
-    "lat": 42.5783,
-    "lng": -76.8669,
+    "lat": 42.5721676,
+    "lng": -76.85945400000001,
     "location": "Lodi, NY",
     "specialty": "Classic styles (pilsner, porter, IPA) brewed alongside a major winery",
     "visitor_experience": "Part of Wagner Vineyards estate with panoramic Seneca Lake views.",
@@ -960,6 +1273,11 @@
     "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJV7QEvGLt0IkRl45E9FM3rHs",
     "place_query": "Wagner Valley Brewing Co., Lodi, NY, NY",
     "full_description": "Easy one-stop for mixed beer/wine groups; the deck looks across vines to deep-blue Seneca.",
-    "region": "Western New York"
+    "region": "Western New York",
+    "google_verified_lat": 42.5721676,
+    "google_verified_lng": -76.85945400000001,
+    "formatted_address": "9322 NY-414, Lodi, NY 14860, USA",
+    "google_verified_at": "2025-09-30T18:02:13.912778+00:00",
+    "google_place_source": "places_details_v1"
   }
 ]

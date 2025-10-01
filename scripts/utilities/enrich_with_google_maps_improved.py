@@ -449,8 +449,9 @@ class ImprovedGoogleMapsEnricher:
         print("- More lenient distance matching for cities")
         print("=" * 60)
         
-        # Define data directory
-        data_dir = Path(__file__).parent.parent / "public" / "data"
+        # Define data directory (repo root -> public/data). This file lives in scripts/utilities/
+        # So repo root is parents[2]
+        data_dir = Path(__file__).resolve().parents[2] / "public" / "data"
         
         # List of datasets to enrich
         datasets = [

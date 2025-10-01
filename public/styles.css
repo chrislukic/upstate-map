@@ -1116,10 +1116,11 @@ html, body {
     font-style: italic;
 }
 
+
 .popup__links {
     margin-top: auto;
     padding-top: 8px;
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -1128,36 +1129,64 @@ html, body {
 }
 
 .popup__link {
-    color: #4CAF50;
-    text-decoration: none;
-    font-size: 13px;
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    padding: 4px 8px;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-    background: transparent;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(31, 58, 68, 0.12);
+    background: rgba(31, 58, 68, 0.05);
+    color: #1f3a44;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
 .popup__link:hover {
-    color: #45a049;
-    text-decoration: underline;
-    background-color: rgba(76, 175, 80, 0.1);
+    background: rgba(31, 58, 68, 0.12);
+    border-color: rgba(31, 58, 68, 0.2);
+}
+
+.popup__link:active {
+    background: rgba(31, 58, 68, 0.16);
+    border-color: rgba(31, 58, 68, 0.24);
 }
 
 .popup__link--primary {
-    color: #4CAF50;
-    font-weight: 500;
+    color: inherit;
+    border-color: rgba(31, 58, 68, 0.12);
+    background: rgba(31, 58, 68, 0.05);
+}
+
+.popup__link--primary:hover {
+    color: inherit;
+    background: rgba(31, 58, 68, 0.12);
+    border-color: rgba(31, 58, 68, 0.2);
+}
+
+.popup__link--primary:active {
+    color: inherit;
+    background: rgba(31, 58, 68, 0.16);
+    border-color: rgba(31, 58, 68, 0.24);
 }
 
 .popup__link--secondary {
-    color: #1976d2;
+    color: inherit;
+    border-color: rgba(31, 58, 68, 0.12);
+    background: rgba(31, 58, 68, 0.05);
 }
 
 .popup__link--secondary:hover {
-    color: #1565c0;
-    background-color: rgba(25, 118, 210, 0.1);
+    color: inherit;
+    background: rgba(31, 58, 68, 0.12);
+    border-color: rgba(31, 58, 68, 0.2);
+}
+
+.popup__link--secondary:active {
+    color: inherit;
+    background: rgba(31, 58, 68, 0.16);
+    border-color: rgba(31, 58, 68, 0.24);
 }
 
 .popup__link i {
