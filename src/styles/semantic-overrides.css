@@ -1,0 +1,66 @@
+:root {
+  --brand-primary: #1f3a44;
+  --brand-accent: #4caf50;
+  --brand-muted: #6b7a86;
+  --brand-bg: #f5f7f8;
+}
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.ui.segment.trip-planner-segment {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(31, 58, 68, 0.08);
+  border: 1px solid rgba(31, 58, 68, 0.1);
+}
+
+.ui.menu.legend-menu {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(31, 58, 68, 0.08);
+}
+
+.ui.button,
+.ui.buttons .button {
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.ui.button.primary {
+  background-color: var(--brand-accent);
+  color: #fff;
+}
+
+.ui.button.basic {
+  border-color: rgba(31, 58, 68, 0.28);
+  color: var(--brand-primary);
+}
+
+.ui.button.basic:hover {
+  background: rgba(31, 58, 68, 0.08);
+}
+
+.ui.card.trip-card {
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(31, 58, 68, 0.08);
+  border: 1px solid rgba(31, 58, 68, 0.1);
+}
+
+.ui.list.legend-list .item {
+  color: var(--brand-primary);
+}
+
+.ui.list.legend-list .item .icon {
+  color: var(--brand-accent);
+}
+
+@media (max-width: 768px) {
+  .ui.segment.trip-planner-segment {
+    box-shadow: 0 8px 18px rgba(31, 58, 68, 0.06);
+  }
+}
+
+
