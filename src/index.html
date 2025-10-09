@@ -19,75 +19,77 @@
   <body>
     <!-- Trip Planning Widget -->
     <div class="trip-planner" id="tripPlanner">
-        <!-- Loading State -->
-        <div class="trip-loading" id="tripLoading" style="display: flex; align-items: center; justify-content: center; padding: 20px;">
-            <i class="fa fa-spinner fa-spin" style="margin-right: 8px;"></i>
-            <span>Loading trip data...</span>
-        </div>
-        
-        <!-- Current Trip Display -->
-        <div class="current-trip" id="currentTrip" style="display: none;">
-            <div class="trip-header">
-                <h4><i class="fa fa-calendar-check-o"></i> Current Trip</h4>
-                <button class="btn-clear-subtle" onclick="clearTrip()" title="Clear trip">
-                    <i class="fa fa-times"></i>
-                </button>
+        <div class="trip-panel surface raised">
+            <!-- Loading State -->
+            <div class="trip-loading layout inline layout center layout space-between" id="tripLoading" style="display: flex; align-items: center; justify-content: center; padding: 20px;">
+                <i class="fa fa-spinner fa-spin" style="margin-right: 8px;"></i>
+                <span>Loading trip data...</span>
             </div>
-            <div class="trip-details">
-                <div class="trip-location">
-                    <i class="fa fa-map-marker"></i>
-                    <span id="tripLocation"></span>
-                    <button class="btn-clear-location" onclick="clearTripLocation()" title="Clear location">
-                        <i class="fa fa-times"></i>
-                    </button>
-                    <button class="btn-set-location" onclick="setTripLocation()" title="Set location">
-                        <i class="fa fa-plus"></i>
-                    </button>
-                </div>
-                <div class="trip-dates">
-                    <i class="fa fa-calendar"></i>
-                    <span id="tripDates"></span>
-                    <button class="btn-clear-dates" onclick="clearTripDates()" title="Clear dates">
-                        <i class="fa fa-times"></i>
-                    </button>
-                </div>
-                <div class="trip-countdown">
-                    <i class="fa fa-clock-o"></i>
-                    <span id="tripCountdown"></span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Trip Planning Form -->
-        <div class="trip-form" id="tripForm" style="display: none;">
             
-            <form onsubmit="setTrip(event)">
-                    <div class="form-group">
+            <!-- Current Trip Display -->
+            <div class="trip-current" id="currentTrip" style="display: none;">
+                <div class="trip-header">
+                    <h4 class="trip-title"><i class="fa fa-calendar-check-o"></i> Current Trip</h4>
+                    <button class="button tiny" onclick="clearTrip()" title="Clear trip">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+                <div class="trip-details">
+                    <div class="trip-location">
+                        <i class="fa fa-map-marker"></i>
+                        <span id="tripLocation"></span>
+                        <button class="button-clear-location" onclick="clearTripLocation()" title="Clear location">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <button class="button-set-location" onclick="setTripLocation()" title="Set location">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="trip-dates">
+                        <i class="fa fa-calendar"></i>
+                        <span id="tripDates"></span>
+                        <button class="button-clear-dates" onclick="clearTripDates()" title="Clear dates">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="trip-countdown badge positive">
+                        <i class="fa fa-clock-o"></i>
+                        <span id="tripCountdown"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trip Planning Form -->
+            <div class="trip-form" id="tripForm" style="display: none;">
+                
+                <form onsubmit="setTrip(event)">
+                    <div class="field-group">
                         <input type="text" id="tripAddress" placeholder="Where are you staying? (optional - e.g., Saugerties, NY)">
                     </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="date" id="tripStartDate" required>
-                        <label>Start Date</label>
+                    <div class="field-row">
+                        <div class="field-group">
+                            <input type="date" id="tripStartDate" required>
+                            <label>Start Date</label>
+                        </div>
+                        <div class="field-group">
+                            <input type="date" id="tripEndDate" required>
+                            <label>End Date</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="date" id="tripEndDate" required>
-                        <label>End Date</label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">
-                    <i class="fa fa-check"></i> Set Trip
-                </button>
-            </form>
+                    <button type="submit" class="button primary">
+                        <i class="fa fa-check"></i> Set Trip
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
     
-    <div class="legend">
-      <h3>NY Hiking & Scenery — Highlight Guide</h3>
+    <div class="legend-panel" id="legendPanel">
+      <h3 class="legend-title">NY Hiking &amp; Scenery — Highlight Guide</h3>
       
       <!-- Toggle Button (always visible) -->
-      <div class="legend-toggle">
-        <button id="legendToggle" class="btn btn-sm btn-default">
+      <div class="legend-toggle-bar">
+        <button id="legendToggle" class="button size small">
           <i class="fa fa-chevron-down"></i> Show Legend
         </button>
       </div>
@@ -96,119 +98,119 @@
       <div class="legend-content" id="legendContent" style="display: none;">
         <!-- Essential Legend -->
         <div class="legend-essential">
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#c83737;"></span> World-class (9.2–10)
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#e06b2e;"></span> Exceptional (8.8–9.1)
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#d6a62e;"></span> Great (8.2–8.7)
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#7cb342;"></span> Strong (≤8.1)
           </div>
-          <hr />
-          <div class="legend-section"><b>Cities (by drive time from NYC):</b></div>
-          <div class="legend-item">
+          <hr class="legend-divider" />
+          <div class="legend-section-title"><b>Cities (by drive time from NYC):</b></div>
+          <div class="legend-row">
             <span class="legend-color" style="background:#228B22;"></span> 0-3 hours (Green to Orange)
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#FFA500;"></span> 3-4 hours (Orange to Red)
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#FF0000;"></span> 4+ hours (Red)
           </div>
-          <div class="legend-item"><small><i>Dot size ≈ population</i></small></div>
-          <hr />
-          <div class="legend-section"><b>Pick Your Own (PYO):</b></div>
-          <div class="legend-item pyo-item" data-crop="apples">
+          <div class="legend-row"><small class="legend-note"><i>Dot size ≈ population</i></small></div>
+          <hr class="legend-divider" />
+          <div class="legend-section-title"><b>Pick Your Own (PYO):</b></div>
+          <div class="legend-row pyo-item" data-crop="apples">
             <span style="font-size: 16px; margin-right: 8px;">🍎</span><span class="pyo-label">Apples</span>
           </div>
-          <div class="legend-item pyo-item" data-crop="strawberries">
+          <div class="legend-row pyo-item" data-crop="strawberries">
             <span style="font-size: 16px; margin-right: 8px;">🍓</span><span class="pyo-label">Strawberries</span>
           </div>
-          <div class="legend-item pyo-item" data-crop="cherries">
+          <div class="legend-row pyo-item" data-crop="cherries">
             <span style="font-size: 16px; margin-right: 8px;">🍒</span><span class="pyo-label">Cherries</span>
           </div>
-          <div class="legend-item pyo-item" data-crop="peaches">
+          <div class="legend-row pyo-item" data-crop="peaches">
             <span style="font-size: 16px; margin-right: 8px;">🍑</span><span class="pyo-label">Peaches</span>
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span style="color: #4CAF50; font-size: 14px;">🌱</span> Organic certification (when available)
           </div>
         </div>
         
         <!-- Expandable Legend (collapsed by default) -->
         <div class="legend-expandable" id="legendExpandable" style="display: none;">
-          <hr />
-          <div class="legend-section"><b>Points of Interest:</b></div>
-          <div class="legend-item">
+          <hr class="legend-divider" />
+          <div class="legend-section-title"><b>Points of Interest:</b></div>
+          <div class="legend-row">
             <i class="fa fa-university" style="color: #4169E1;"></i> Museums
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <i class="fa fa-paint-brush" style="color: #FF6347;"></i> Art Centers
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <i class="fa fa-building" style="color: #8B4513;"></i> Historic Sites
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <i class="fa fa-graduation-cap" style="color: #228B22;"></i> Educational
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <i class="fa fa-music" style="color: #9370DB;"></i> Performing Arts
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <i class="fa fa-trophy" style="color: #FFD700;"></i> Sports Venues
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <i class="fa fa-tree" style="color: #32CD32;"></i> Natural Attractions
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <i class="fa fa-leaf" style="color: #228B22;"></i> Historic Gardens
           </div>
-          <hr />
-          <div class="legend-section"><b>Children's Activities:</b></div>
-          <div class="legend-item">
+          <hr class="legend-divider" />
+          <div class="legend-section-title"><b>Children's Activities:</b></div>
+          <div class="legend-row">
             <span style="font-size: 16px;">🎠</span> Family-friendly attractions
           </div>
-          <hr />
-          <div class="legend-section"><b>Trailheads:</b></div>
-          <div class="legend-item">
+          <hr class="legend-divider" />
+          <div class="legend-section-title"><b>Trailheads:</b></div>
+          <div class="legend-row">
             <span style="font-size: 16px; color: #2E8B57;">▲</span> Hiking trail access points
           </div>
-          <hr />
-          <div class="legend-section"><b>Our Airbnbs:</b></div>
-          <div class="legend-item">
+          <hr class="legend-divider" />
+          <div class="legend-section-title"><b>Our Airbnbs:</b></div>
+          <div class="legend-row">
             <span style="font-size: 16px;">🏠</span> Places we've stayed
           </div>
-          <hr />
-          <div class="legend-section"><b>Train Routes:</b></div>
-          <div class="legend-item">
+          <hr class="legend-divider" />
+          <div class="legend-section-title"><b>Train Routes:</b></div>
+          <div class="legend-row">
             <span class="legend-color" style="background:#003366;"></span> Metro-North Hudson Line
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#0066CC;"></span> Metro-North Harlem Line
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#FF6600;"></span> Metro-North New Haven Line
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#003399;"></span> Amtrak Empire Service
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#006600;"></span> Amtrak Adirondack
           </div>
-          <div class="legend-item">
+          <div class="legend-row">
             <span class="legend-color" style="background:#CC0000;"></span> Amtrak Lake Shore Limited
           </div>
-          <hr />
-          <small><i>Populations are approximate (2020–2023 ACS). Drive times assume Midtown origin, off‑peak. Train times are approximate and may vary.</i></small>
+          <hr class="legend-divider" />
+          <small class="legend-note"><i>Populations are approximate (2020–2023 ACS). Drive times assume Midtown origin, off‑peak. Train times are approximate and may vary.</i></small>
         </div>
         
         <!-- Secondary Toggle Button for POI/Train details -->
         <div class="legend-toggle-secondary">
-          <button id="legendToggleSecondary" class="btn btn-sm btn-default">
+          <button id="legendToggleSecondary" class="button size small">
             <i class="fa fa-chevron-down"></i> Show More
           </button>
         </div>

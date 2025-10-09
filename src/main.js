@@ -1,8 +1,7 @@
 // Entry point for Vite
 // We keep data JSON under public/data; renderer remains plain JS
 
-import 'semantic-ui-css/semantic.min.css';
-import './styles/semantic-overrides.css';
+import './styles/utilities.css';
 import '../public/styles.css';
 import '../public/map-renderer.js';
 
